@@ -1277,8 +1277,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         
          try {
 
-            //iconImage = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Bilder/16x16/icon.png"));
-            //setIconImage(iconImage);            ?
             iconImage = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Bilder/icon_16.png"));
             Image iconImage32 = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Bilder/icon_32.png"));
             Image iconImage64 = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Bilder/icon_64.png"));
@@ -1289,23 +1287,16 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             images.add(iconImage64);
             setIconImages(images);
             
-            // for mac os!
-            //Application application = Application.getApplication();
-            //application.setDockIconImage(iconImage64);
-
         } catch (Exception ex) {
             Tools.showMessage("Fehler : " + ex.toString());
         }
 
-        //JDialog.setDefaultLookAndFeelDecorated(true);
-        //driverPath = elementPath + "/Drivers";
         driverPath = elementPath + File.separator+"Drivers";
 
         LoadConfigFile();
 
         Tools.settings = settings;
 
-        //String fileName = getUserURL().getFile() + "/projects.file";
         String fileName = getUserURL().getFile() + File.separator+"projects.file";
 
         if (!new File(fileName).exists()) {
@@ -1318,22 +1309,15 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         ArrayList<String> projectsX = Tools.loadProjectsFile(new File(fileName));
 
-        //ArrayList<String> projects = new ArrayList<>();
         projects = new ArrayList<>();
 
         String vms = "VirtualMachines";
 
-        //projects.add(new File(elementPath + "/" + vms).getAbsolutePath());
         projects.add(new File(elementPath + File.separator + vms).getAbsolutePath());
 
-        for (String project : projectsX) {
-            File f = new File(project);
-
-            if (!f.getName().equalsIgnoreCase(vms)) {
-                projects.add(f.getAbsolutePath());
-            }
-
-        }
+        projectsX.stream().map((project) -> new File(project)).filter((f) -> (!f.getName().equalsIgnoreCase(vms))).forEachOrdered((f) -> {
+            projects.add(f.getAbsolutePath());
+        });
 
         handleUserElementDirectory();
 
@@ -1341,7 +1325,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         // myopenlab.path speichert immer das verzeichniss wo
         // sich MyOpenLab befindet!
-        //fileName = getUserURL().getFile() + "/myopenlab.path";
         fileName = getUserURL().getFile() + File.separator+"myopenlab.path";
 
         if (!new File(fileName).exists()) {
@@ -1419,7 +1402,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         jmiSaveAsModul.setVisible(false);
 
-        //jButton1.setVisible(false);
         initApp();
 
         if (!settings.getVersion().equalsIgnoreCase(Version.strApplicationVersion)) {
@@ -1465,8 +1447,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             activate_DocFrame(null);
         }
 
-        //JLayeredPane mnu = getLayeredPane();
-        SpinnerNumberModel model = new SpinnerNumberModel(new Integer(100), new Integer(0), new Integer(5000), new Integer(1));
+        SpinnerNumberModel model = new SpinnerNumberModel(100, 0, 5000, 1);
         jSpinnerDebugDelayTime.setModel(model);
         JSpinner.NumberEditor editor = new JSpinner.NumberEditor(jSpinnerDebugDelayTime, "####0000");
         jSpinnerDebugDelayTime.setEditor(editor);
@@ -1492,17 +1473,11 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         elementPaletteCircuit.init(this, null, elementPath, "/CircuitElements");
         elementPaletteFront.init(this, null, elementPath, "/FrontElements");
 
-        /*elementPaletteCircuit.aktuellesVerzeichniss=;
-        elementPaletteFront.aktuellesVerzeichniss=oldPanelDirectory;*/
-        //elementPalette.aktuellesVerzeichniss=oldPanelDirectory;
         jPanelElementPalette.add(elementPaletteCircuit);
-        //jPanelElementPalette.add(elementPaletteFront);
 
         reloadProjectPanel();
 
         startButtonHandler();
-
-        //SwingUtilities.updateComponentTreeUI()
 
     }
 
@@ -2091,21 +2066,15 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             System.out.println("Arg[1]=" + args[1]);
 
             arg1 = args[1];
-            java.awt.EventQueue.invokeLater(new Runnable() {
-
-                public void run() {
-                    String projectPath = getArg1();
-
-                    ProjectProperties props = Tools.openProjectFile(new File(projectPath));
-                    frm.openFileAsFront(projectPath, props.mainVM);
-                }
+            java.awt.EventQueue.invokeLater(() -> {
+                String projectPath = getArg1();
+                
+                ProjectProperties props = Tools.openProjectFile(new File(projectPath));
+                frm.openFileAsFront(projectPath, props.mainVM);
             });
         } else {
-            java.awt.EventQueue.invokeLater(new Runnable() {
-
-                public void run() {
-                    frm.setVisible(true);
-                }
+            java.awt.EventQueue.invokeLater(() -> {
+                frm.setVisible(true);
             });
         }
 

@@ -191,7 +191,7 @@ public class Scanner
   }
 
   // auxiliary constant:
-  private final Boolean True = new Boolean(true);
+  private final Boolean True = true;
 
   // the scanned string:
   private String str;

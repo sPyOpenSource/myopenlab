@@ -51,7 +51,7 @@ public class MyGraphX extends javax.swing.JPanel
     public boolean yAxisVisible=true;
     
     public boolean xyAxisVisible=true;
-    public int bufferLen= new Integer(600);
+    public int bufferLen= 600;
     
     
     public void setbufferLen(Integer Interval){

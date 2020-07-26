@@ -907,9 +907,9 @@ public class Parser
         {
             switch (type)
             {
-                case 0 : return new Double(calcDouble(vector)); 
-                case 1 : return new Boolean(calcBoolean(vector));
-                case 2 : return new String(calcString(vector));
+                case 0 : return calcDouble(vector); 
+                case 1 : return calcBoolean(vector);
+                case 2 : return calcString(vector);
             }
             
         }else

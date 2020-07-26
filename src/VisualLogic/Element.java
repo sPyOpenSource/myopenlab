@@ -2526,17 +2526,17 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
     @Override
     public void writePinBoolean(int index, boolean value) {
-        writeInformationToDest(index, new Boolean(value));
+        writeInformationToDest(index, value);
     }
 
     @Override
     public void writePinInteger(int index, int value) {
-        writeInformationToDest(index, new Integer(value));
+        writeInformationToDest(index, value);
     }
 
     @Override
     public void writePinDouble(int index, double value) {
-        writeInformationToDest(index, new Double(value));
+        writeInformationToDest(index, value);
     }
 
     @Override

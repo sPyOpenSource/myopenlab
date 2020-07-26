@@ -3319,8 +3319,8 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                 if (fromAblage) {
                     id = getObjectID();
 
-                    oldElementID = new Integer(oldid);
-                    newElementID = new Integer(id);
+                    oldElementID = oldid;
+                    newElementID = id;
 
                     ElemetTabelle.add(oldElementID);
                     ElemetTabelle.add(newElementID);

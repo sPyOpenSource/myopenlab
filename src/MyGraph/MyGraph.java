@@ -114,50 +114,50 @@ public class MyGraph extends javax.swing.JPanel
     public void setYAxisText(String text)                   { labelLeft.setText(text);}
     public void setYAxisTextFont(Font font)                 { labelLeft.setFont(font); }
     public void setYAxisTextFontColor(Color color)          { labelLeft.setForeground(color); }       
-    public void setCoordinatesVisible(Boolean value)        { graph.back.jLabel1.setVisible(value.booleanValue()); }        
-    public void setPointType(Integer value)                 { if (graph.graphRenderer.length>0) graph.graphRenderer[0].pointType=value.intValue(); } // Dummy!
-    public void setbufferLen(Integer value)         { if (graph.graphRenderer.length>0) graph.graphRenderer[0].bufferLen=value.intValue(); } // Dummy!
+    public void setCoordinatesVisible(Boolean value)        { graph.back.jLabel1.setVisible(value); }        
+    public void setPointType(Integer value)                 { if (graph.graphRenderer.length>0) graph.graphRenderer[0].pointType=value; } // Dummy!
+    public void setbufferLen(Integer value)         { if (graph.graphRenderer.length>0) graph.graphRenderer[0].bufferLen=value; } // Dummy!
     public void setLineColor(Color color)                   { if (graph.graphRenderer.length>0) graph.graphRenderer[0].setLineColor(color);}  // Dummy!
-    public void setAutoScroll(Boolean value)                { graph.autoscroll=value.booleanValue(); } 
+    public void setAutoScroll(Boolean value)                { graph.autoscroll=value; } 
     
     // ----------- GETTER ---------
-    public Boolean getBackgroundTransparent( )  {return new Boolean(graph.back.getBackgroundTransparent());}
+    public Boolean getBackgroundTransparent( )  {return graph.back.getBackgroundTransparent();}
     public Color getGridBackgroundColor( )      {return graph.back.getBackground(); }
     public Color getGridLineColor( )            {return graph.back.colorGrid; }    
     public Color getGridSublineColor( )         {return graph.back.colorSubGrid;  }        
-    public Boolean getNullLineVisible( )        {return new Boolean(graph.back.nullLineVisible); }
+    public Boolean getNullLineVisible( )        {return graph.back.nullLineVisible; }
     public Color getNullLineColor( )            {return graph.back.nullLineColor;  }  
     public Font getXYAxisFont( )                {return graph.xaxis.stdFont;} 
     public Color getXYAxisFontColor( )          {return graph.xaxis.getFontColor();}
-    public Boolean getXYAxisVisible( )          {return new Boolean(graph.xyAxisVisible); }
-    public Double getMinX( )                    {return new Double(graph.xaxis.getMin()); }    
-    public Double getMaxX( )                    {return new Double(graph.xaxis.getMax()); }            
-    public Boolean getAutoZoomX( )              {return new Boolean(graph.back.autoScaleX); } 
+    public Boolean getXYAxisVisible( )          {return graph.xyAxisVisible; }
+    public Double getMinX( )                    {return graph.xaxis.getMin(); }    
+    public Double getMaxX( )                    {return graph.xaxis.getMax(); }            
+    public Boolean getAutoZoomX( )              {return graph.back.autoScaleX; } 
     public Font getXAxisTextFont( )             {return jLabel1.getFont();}
     public Color getXAxisTextFontColor( )       {return jLabel1.getForeground(); }
     public String getXAxisFormatString( )       {return graph.xaxis.getFormatString(); }    
     public String getXAxisText( )               {return jLabel1.getText(); }
-    public Double getMinY( )                    {return new Double(graph.yaxis.getMin()); }    
-    public Double getMaxY( )                    {return new Double(graph.yaxis.getMax()); }          
-    public Boolean getAutoZoomY( )              {return new Boolean(graph.back.autoScaleY); }    
+    public Double getMinY( )                    {return graph.yaxis.getMin(); }    
+    public Double getMaxY( )                    {return graph.yaxis.getMax(); }          
+    public Boolean getAutoZoomY( )              {return graph.back.autoScaleY; }    
     public String getYAxisFormatString( )       {return graph.yaxis.getFormatString(); }
     public String getYAxisText( )               {return labelLeft.getText();}
     public Font getYAxisTextFont( )             {return labelLeft.getFont(); }
     public Color getYAxisTextFontColor( )       {return labelLeft.getForeground(); }    
-    public Boolean getAutoScroll()              {return new Boolean(graph.autoscroll);}
-    public Boolean getCoordinatesVisible()      {return new Boolean(graph.back.jLabel1.isVisible());}
+    public Boolean getAutoScroll()              {return graph.autoscroll;}
+    public Boolean getCoordinatesVisible()      {return graph.back.jLabel1.isVisible();}
     
     
     public Integer getPointType( )              
     {
-        if (graph.graphRenderer.length>0) return new Integer(graph.graphRenderer[0].pointType); 
-        else return new Integer(GraphRenderer.P_LINE_VBIG); 
+        if (graph.graphRenderer.length>0) return graph.graphRenderer[0].pointType; 
+        else return GraphRenderer.P_LINE_VBIG; 
     
     }
     public Integer getbufferLen( )              
     {
-        if (graph.graphRenderer.length>0) return new Integer(graph.graphRenderer[0].bufferLen); 
-        else return new Integer(600); 
+        if (graph.graphRenderer.length>0) return graph.graphRenderer[0].bufferLen; 
+        else return 600; 
     
     }
     public Color getLineColor( )                
