@@ -18,6 +18,8 @@ package VisualLogic;
 
 import VisualLogic.variables.VSserialPort;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import jssc.SerialPort;
 import jssc.SerialPortException;
 
@@ -38,10 +40,10 @@ private static int PortsOpened=0;
 
     public static int getPortsOpened() {
         PortsOpened=serialPortsArray.size();
-        for(VSserialPort vsTemp:serialPortsArray){
+        serialPortsArray.forEach((vsTemp) -> {
             int i=0;
             System.out.println(i+" Element: "+vsTemp.getValue().getPortName());
-        }
+    });
         
         return PortsOpened;
     }
@@ -51,7 +53,7 @@ public static FrameMain frameCircuit;
 public static void NewDriverManager(FrameMain frameCircuitIn){
 frameCircuit=frameCircuitIn;    
 PortsOpened=0;
-serialPortsArray=new ArrayList<VSserialPort>();   
+serialPortsArray=new ArrayList<>();   
 }
 public VSserialPort NewSerialPort(String PortNameIN) throws InterruptedException, Exception{
     VSserialPort vsSerialTemp= new VSserialPort();
@@ -70,23 +72,15 @@ public VSserialPort NewSerialPort(String PortNameIN) throws InterruptedException
 }
 
 public static boolean PortNameExist(String PortNameIN){
-    for(VSserialPort vsTemp:serialPortsArray){
-        if(vsTemp.getValue().getPortName().equalsIgnoreCase(PortNameIN))
-        {
-         return true;
-        }
-    }
-    return false;
+    return serialPortsArray.stream().anyMatch((vsTemp) -> (vsTemp.getValue().getPortName().equalsIgnoreCase(PortNameIN)));
 }
 
 public static VSserialPort FindSerialPortByPortName(String PortNameIN){
     VSserialPort vsSerialTemp= new VSserialPort();
-    //System.out.println("Searching Port:"+PortNameIN);
     for(VSserialPort vsTemp:serialPortsArray){
         if(vsTemp.getValue().getPortName().equalsIgnoreCase(PortNameIN))
         {
             vsSerialTemp=vsTemp;
-            //System.out.println("Port "+PortNameIN+" Found!");
             return vsSerialTemp;
             
         }
@@ -96,31 +90,28 @@ public static VSserialPort FindSerialPortByPortName(String PortNameIN){
 }
 public static void UpdateSerialPortByPortName(VSserialPort vsPortIn, String PortNameIN){
     
-    for(VSserialPort vsTemp:serialPortsArray){
-        if(vsTemp.getSerialPort().getPortName().equalsIgnoreCase(PortNameIN))
-        {
-            serialPortsArray.remove(vsTemp);
-            serialPortsArray.add(vsPortIn);  
-        }
-    }
+    serialPortsArray.stream().filter((vsTemp) -> (vsTemp.getSerialPort().getPortName().equalsIgnoreCase(PortNameIN))).map((vsTemp) -> {
+        serialPortsArray.remove(vsTemp);
+        return vsTemp;
+    }).forEachOrdered((_item) -> {
+        serialPortsArray.add(vsPortIn);
+    });
     
 }
 public static void RemoveSerialPortByPortName(String PortNameIN){
     
-    for(VSserialPort vsTemp:serialPortsArray){
-        if(vsTemp.getSerialPort().getPortName().equalsIgnoreCase(PortNameIN))
-        {
-            if(vsTemp.getSerialPort().isOpened()){
-                try {
-                    vsTemp.getSerialPort().closePort();
-                } catch (SerialPortException ex) {
-                    //Logger.getLogger(NewSerialDriverManager.class.getName()).log(Level.SEVERE, null, ex);
-                }
+    serialPortsArray.stream().filter((vsTemp) -> (vsTemp.getSerialPort().getPortName().equalsIgnoreCase(PortNameIN))).map((vsTemp) -> {
+        if(vsTemp.getSerialPort().isOpened()){
+            try {
+                vsTemp.getSerialPort().closePort();
+            } catch (SerialPortException ex) {
+                Logger.getLogger(NewSerialDriverManager.class.getName()).log(Level.SEVERE, null, ex);
             }
-            serialPortsArray.remove(vsTemp);
-            
         }
-    }
+        return vsTemp;
+    }).forEachOrdered((vsTemp) -> {
+        serialPortsArray.remove(vsTemp);
+    });
     
 }
 
@@ -128,7 +119,7 @@ public static void RemoveSerialPortByPortName(String PortNameIN){
 
 private SerialPort OpenPort(String PortName) throws SerialPortException, InterruptedException, Exception{
          
-         this.PortName=PortName;
+         NewSerialDriverManager.PortName=PortName;
          serialPortTemp = new SerialPort(PortName);    
          if(serialPortTemp.isOpened()) serialPortTemp.closePort();
          serialPortTemp.openPort();

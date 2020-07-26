@@ -1012,7 +1012,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             }
         });
 
-        String str = System.getProperty("java.version");
+        /*String str = System.getProperty("java.version");
 
         int intVerMain = Integer.parseInt(str.substring(0, 1));
         int intVerSub = Integer.parseInt(str.substring(2, 3));
@@ -1023,7 +1023,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         } else {
             JOptionPane.showMessageDialog((Component) null, "Sie benutzen eine aeltere Java-Version: \"" + str + "\"\nSie brauchen mindestens Java 1.5 oder besser.\nDie aktuelle Version finden Sie unter \"http://java.sun.com/\"", "Achtung", JOptionPane.WARNING_MESSAGE);
-        }
+        }*/
     }
 
     private String createDefString(String path) {
@@ -1377,25 +1377,13 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                     || OS_name.contains("linux") || OS_name.contains("LINUX")
                     || OS_name.contains("mac")   || OS_name.contains("MAC")
                     || OS_name.contains("Mac")){
-                
-             //System.setProperty( "sun.java2d.xrender","True"); //sun.java2d.xrender=True
-                        //xrender Intended use: To enable the XRender-based Java 2D rendering pipeline for modern X11-based desktops, offering improved graphics performance.
 
-             //System.setProperty( "sun.java2d.d3d","false"); //sun.java2d.d3d=false //d3d
-             //Intended use: To turn off the Java 2D system's use of Direct3D.   
-             //https://docs.oracle.com/javase/7/docs/technotes/guides/2d/flags.html#xrender   
             }    
             
             }catch(Exception e){
                 System.out.println(e);   
             }
 
-        /*DialogLanguage lan = new DialogLanguage(this, true);
-
-        lan.execute(settings.language);
-
-        settings.language = lan.result;      */
-        //jMenuBar2.setFont(new Font("Tahoma", Font.PLAIN, 21));
         Font f = new Font("Dialog", Font.PLAIN, 13);
         UIManager.put("Menu.font", f);
         UIManager.put("MenuItem.font", f);
@@ -1490,7 +1478,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         layedLabel.setSize(0, 0);
         mnu.add(layedLabel);
 
-        //this.frameMain=frameMain;
         propertyEditor = new PropertyEditor(this);
         jTabPropertyEditor.addTab(java.util.ResourceBundle.getBundle("VisualLogic/FrameCircuit").getString("Property-Editor"), propertyEditor);
 
@@ -1551,9 +1538,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     }
 
     public void startButtonHandler() {
-        timer = new javax.swing.Timer(300, (ActionEvent evt) -> {
-            //settings.rightSplitterPos=jTabbedPane1.getWidth()+15;
-            
+        timer = new javax.swing.Timer(300, (ActionEvent evt) -> {            
             Basis basis = getActualBasis();
             
             if (basis == null) {
@@ -1581,8 +1566,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 jSpinnerDebugDelayTime.setEnabled(false);
                 jButtonConsoleOut_S.setEnabled(false);
                 
-                //elementPaletteCircuit.setEnabled(false);
-                //elementPaletteFront.setEnabled(false);
                 jmniDefineVariables.setEnabled(false);
                 jmniPasswordProtection.setEnabled(false);
                 jmniDeletePasswordProtection.setEnabled(false);
@@ -1597,7 +1580,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 
                 jmiSave.setEnabled(false);
                 jmniSaveAsSingleVM.setEnabled(false);
-                //jmniSaveAs.setEnabled(false);
                 jmiSaveAsModul.setEnabled(false);
                 jmiSaveAsJPG.setEnabled(false);
                 
@@ -1614,8 +1596,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             jmiShowDigitalWindow.setEnabled(true);
             jmiShowTestpointWindow.setEnabled(true);
             
-            //elementPaletteCircuit.setEnabled(true);
-            //elementPaletteFront.setEnabled(true);
             jmniDeletePasswordProtection.setEnabled(true);
             jmiEigenschaten.setEnabled(true);
             jmiUndo.setEnabled(true);
@@ -1628,7 +1608,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             
             jmiSave.setEnabled(true);
             jmniSaveAsSingleVM.setEnabled(true);
-            //jmniSaveAs.setEnabled(true);
             jmiSaveAsModul.setEnabled(true);
             jmiSaveAsJPG.setEnabled(true);
             
@@ -1678,18 +1657,12 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 }
                 oldElement = element;
             }
-            /*if (getVMObject().getElementCount()!=oldElementCount)
-            {
-            oldElementCount=getVMObject().getElementCount();
-            }*/
             
             jButtonStart_J.setEnabled(true);
             
             jmiSave.setEnabled(true);
-            //jmiSaveAsModul.setEnabled(true);
             jmiSelectAny.setEnabled(true);
             jmiStart.setEnabled(true);
-            //jButtonDebug.setEnabled(true);
             jmiStop.setEnabled(true);
             
             jButtonRefreshVM_F.setEnabled(true);
@@ -1700,8 +1673,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             jmiResume.setEnabled(true);
             jmiStep.setEnabled(true);
             
-            //jComboBox1.setEnabled(true);
-            //jComboBox1.setSelectedItem(""+getVMObject().owner.getDelay());
             if (getVMObject().owner.getUndoPointer() > 1) {
                 jmiUndo.setEnabled(true);
                 jButtonUndo_D.setEnabled(true);
@@ -1727,7 +1698,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 
                 jButtonStep_O.setEnabled(true);
                 jmiStep.setEnabled(true);
-                //setBarsEnabled(false);
                 
                 jButtonRefreshVM_F.setEnabled(false);
                 
@@ -1788,7 +1758,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             comboIsEditing = false;
         }
     }
-    private ArrayList<String> selectedPaths = new ArrayList<String>();
+    private ArrayList<String> selectedPaths = new ArrayList<>();
 
     public void recursionSaveProjectStatus(MyNode node) {
         if (node instanceof MyNode) {
@@ -1854,23 +1824,12 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         String nativeLF = UIManager.getSystemLookAndFeelClassName();
         
         try {  
-        //SwingUtilities.updateComponentTreeUI(this);
-        //this.pack();       
-        
-
-                //UIManager.setLookAndFeel(nativeLF);
                 for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
                     System.out.println(info.getName());
-                    //UIManager.setLookAndFeel( "com.seaglasslookandfeel.SeaGlassLookAndFeel" );
                     
-                    //System.out.println("SYSTEM_laf:"+UIManager.getSystemLookAndFeelClassName()); //SYSTEM
-
                     if ("Nimbus".equals(info.getName())) {
                         
-                        //MetalLookAndFeel.setCurrentTheme(new DefaultMetalTheme());
-                        //MetalLookAndFeel.setCurrentTheme(new OceanTheme());
                         MetalLookAndFeel.setCurrentTheme(new TestTheme());
-                        //UIManager.setLookAndFeel(info.getClassName());
                         UIManager.setLookAndFeel(new MetalLookAndFeel()); 
                         UIManager.put("CheckBox.background", new Color(255,255,255));
                         UIManager.put("ComboBox.background",new Color(233,236,242));
@@ -1898,7 +1857,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                         UIManager.put("SplitPane.background",new Color(214,217,223));
                         UIManager.put("Separator.foreground",new Color(214,217,223));
                         
-                        //jPanelProjectExplorer.setBackground(new Color(214,217,223));
                         UIManager.put("TextPane.inactiveBackground",new Color(214,217,223));
                         UIManager.put("ToolTip.background",new Color(255,242,181));
                         
@@ -1951,26 +1909,19 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                         UIManager.put("Table.dropLineColor",Color.red);
                         UIManager.put("List.selectionBackground",new Color(115,164,209));
                         UIManager.put("Table.selectionBackground",new Color(115,164,209));
-                        //UIManager.put("List.focusCellHighlightBorder",Color.green);
-                       // UIManager.put("Table.focusCellHighlightBorder",Color.green);
                         UIManager.put("List.selectionForeground",Color.WHITE);
                         UIManager.put("Table.selectionForeground",Color.WHITE);
-                        //UIManager.put("TableHeader.cellBorder",false);
                         
                         UIManager.put("Panel.opaque",true);
                         UIManager.put("Panel.background",new Color(214,217,223));
                         UIManager.put("Panel.foreground",new Color(214,217,223));
                         UIManager.put("Separator.foreground",new Color(214,217,223));
-                        //UIManager.put("TabbedPane.tabsOverlapBorder",true);
                         UIManager.put("TabbedPane.focus",new Color(51,98,140));
                         UIManager.put("TabbedPane.shadow",Color.black);
                         UIManager.put("TabbedPane.highlight",new Color(51,98,140));
                         UIManager.put("TabbedPane.light",Color.WHITE);
-                        //UIManager.put("TabbedPane.leftTabInsets",new Color(51,98,140));
-                        //UIManager.put("TabbedPane.darkShadow",new Color(191,98,4)); 
                         UIManager.put("TabbedPane.background",new Color(115,164,209)); // Relleno de la Pestaña Deshabilitada
                         
-                        //UIManager.put("ScrollBar.background",new Color(214,217,223));
                         UIManager.put("ScrollBar.background",new Color(233,236,242));
                         UIManager.put("ScrollBar.foreground",Color.DARK_GRAY);
                         UIManager.put("ScrollBar.thumbDarkShadow",Color.black);
@@ -1978,27 +1929,9 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                         UIManager.put("ScrollBar.thumbHighlight",Color.lightGray);
                         UIManager.put("ScrollBar.thumbShadow",Color.gray);
 
-                        
-                        //SwingUtilities.updateComponentTreeUI(this);
-                        //pack();
-                        
-                        // Specify the theme to use by defining the THEME constant
-                        // Valid values are: "DefaultMetal", "Ocean",  and "Test"
-                        //MetalLookAndFeel.setCurrentTheme(new DefaultMetalTheme());
-                        //UIManager.setLookAndFeel(nativeLF);
-                        
-                        //System.setProperty( "sun.java2d.xrender","false"); //sun.java2d.xrender=True
-                        //xrender Intended use: To enable the XRender-based Java 2D rendering pipeline for modern X11-based desktops, offering improved graphics performance.
-
-                        //System.setProperty( "sun.java2d.d3d","false"); //sun.java2d.d3d=false //d3d
-                        //Intended use: To turn off the Java 2D system's use of Direct3D.
-                        
-                        //-Dsun.java2d.xrender=false -Dsun.java2d.d3d=false
                         break;
                     }
                 }
-                 // Set cross-platform Java L&F (also called "Metal")
-                 //UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
                  
             } catch (Exception e) {
                 // If Nimbus is not available, you can set the GUI to another look and feel.
@@ -2013,10 +1946,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             }
         
     }
-            
-        
-
-    
 
     public void removeVMPanel(VMEditorPanel panel) {
         jPaneVMPanels.remove(panel);
@@ -2077,17 +2006,12 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     }
 
     public static void handleLicense() {
-        //String licenseFile = FrameMain.userURL.getPath() + "/Licences1.Accepted";
         String licenseFile = FrameMain.userURL.getPath() + File.separator+"Licences1.Accepted";
         File file = new File(licenseFile);
 
         boolean licencesAccepted = false;
 
-        if (file.exists()) {
-            licencesAccepted = true;
-        } else {
-            licencesAccepted = false;
-        }
+        licencesAccepted = file.exists();
 
         if (licencesAccepted == false) {
             DialogLicence frmLicence = new DialogLicence(null, true);
@@ -2161,7 +2085,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             Tools.elementPath = FrameMain.elementPath;
         }
 
-        //JFrame.setDefaultLookAndFeelDecorated(false);
         frm = new FrameMain(args);
 
         if (args.length >= 2) {
@@ -2189,7 +2112,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     }
 
     public void openFileAsFront(String projectPath, String vmName) {
-        //globalPath = projectPath + "/" + vmName;
         globalPath = projectPath + File.separator + vmName;
         globalProjectPath = projectPath;
         SwingWorker<Object, Object> worker = new SwingWorker<Object, Object>() {
@@ -2224,17 +2146,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         worker.execute();
 
-
-        /*Basis basis = new Basis(this, elementPath);
-    basis.panelMode=true;
-    addBasisToVMPanel(filename);
-    /*basis.loadFromFile(filename,false);
-    basis.vmFilename=filename;
-    basis.fileName=filename;
-    addBasisToVMPanel(basis);
-    basis.frameCircuit=this;*/
-        //basis.startInFrontMode=true;
-        //basis.loading=false;
     }
 
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -3374,11 +3285,10 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
                 for (int i = 0; i < Expression.liste.size(); i++) {
                     result += Expression.liste.get(i) + "\n";
-                    //System.err.println(""+Expression.liste.get(i));
                 }
                 break;
 
-            } catch (Exception ye) {
+            } catch (Expression.yyException | IOException ye) {
                 System.err.println(scanner + ": " + ye);
             }
         }
@@ -3478,17 +3388,11 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
                 if (pin.draht != null) {
                     int id = pin.draht.getDestElementID();
-                    /*if (id==element.getID())
-                    {
-                    newString+="element_"+element.getID()+"_pin"+number;
-                    }else*/
                     {
                         int destPinNr = pin.draht.getDestPin();
                         String elementPin = "ELEMENT" + id + "_PIN" + destPinNr;
 
                         newString += elementPin;
-                        //int regNr=suchNachEntsprechenderRegisterNr(elementPin);
-                        //newString+="R"+regNr;
                     }
                 } else {
                     newString += "R0";
@@ -3534,7 +3438,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 // Lösche das Wort aus dem String!
                 String newString = str.substring(0, index);
 
-                //newString+="NOTIFY";
                 JPin pin = element.getPin(Integer.parseInt(number));
                 if (number.trim().equalsIgnoreCase("")) {
                     Tools.showMessage(this, "Notify Number not found!");
@@ -3570,7 +3473,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 // Lösche das Wort aus dem String!
                 String newString = str.substring(0, index);
 
-                //newString+="NOTIFY";
                 JPin pin = element.getPin(Integer.parseInt(number));
                 if (number.trim().equalsIgnoreCase("")) {
                     Tools.showMessage(this, "nextElement-PinNr not found!");
@@ -3579,15 +3481,9 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
                 if (pin.draht != null) {
                     int id = pin.draht.getDestElementID();
-                    /*if (id==element.getID())
-                    {
-                    Tools.showMessage(this,"NotifyID==elementID!");
-                    return str;
-                    }else*/
                     {
                         int destPinNr = pin.draht.getDestPin();
                         newString += "ELEMENT" + id;
-                        //newString += "ADD_NEXTELEMENT // Adress in NextElement Queue FIFO!\n";
                     }
                 } else {
                     newString += "";
@@ -3613,7 +3509,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             if (ch.equalsIgnoreCase("\n")) {
                 String aa = str.substring(old, i).trim() + "\n";
                 result += "  " + aa;
-                //System.out.println("aa="+aa);
                 old = i;
             }
             i++;
@@ -3625,7 +3520,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     // Ergebnis ist der Code der Linken, eigener und Rechten Elemente
     // PinNr ist der zu analysierende Pin des Elements
     private String recursion(VMObject circuit, int srcElementID, Element element) {
-        //System.out.println(element.getCaption());
         element.isAlreadyCompiled = true;
         String code = "";
         // Alle Inputs 
@@ -3645,8 +3539,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             }
         }
         String eigenerCode = (String) element.jGetTag(2);
-        //code += eigenerCode;
-        //code += substitudeMCUFlowChart(eigenerCode, element);
         code += substitude(eigenerCode, element);
 
         // Alle Outputs
@@ -3679,7 +3571,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         code += "// * Date : " + new java.util.Date() + " \n";
         code += "// *********************************************************\n\n";
 
-        //code+="GOTO MAIN  // JUMP To Main Routine\n\n";
         if (basis != null) {
             VMObject circuit = basis.getCircuitBasis();
 
@@ -3713,36 +3604,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         return code;
     }
-
-    /*private String substitudeMCUFlowChart(String str, Element element)
-    {
-    int index;
-    while (true)
-    {
-    index = str.indexOf("%pin");
-    if (index > -1)
-    {
-    String number = extraceNumber(str, index + 4);
-    // Lösche das Wort aus dem String!
-    String newString = str.substring(0, index);
-    JPin pin = element.getPin(Integer.parseInt(number));
-    if (pin.draht != null)
-    {
-    int id = pin.draht.getDestElementID();
-    //int destPinNr = pin.draht.getDestPin();
-    String elementPin = "ELEMENT" + id;
-    newString += elementPin;
-    }
-    newString += str.substring(index + 4 + number.length() + 1, str.length());
-    str = newString;
-    }
-    if (index == -1)
-    {
-    break;
-    }
-    }
-    return str;
-    }*/
+    
     // Ergebnis ist der Code der Linken, eigener und Rechten Elemente
     // PinNr ist der zu analysierende Pin des Elements
     private String recursionMCUFlowChart(VMObject circuit, Element element) {
@@ -3752,7 +3614,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         String eigenerCode = (String) element.jGetTag(2);
 
-        //code += substitudeMCUFlowChart(eigenerCode, element);
         code += substitude(eigenerCode, element);
 
         // Alle Outputs
@@ -3760,7 +3621,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             JPin pin = element.getPin(i);
             if (pin.draht != null && pin.pinIO == JPin.PIN_OUTPUT) {
                 int dstID = pin.draht.getDestElementID();
-                //int dstPin = pin.draht.getDestPin();
 
                 Element dstElement = circuit.getElementWithID(dstID);
                 if (!dstElement.isAlreadyCompiled) {
@@ -3784,7 +3644,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         code += "// * Date : " + new java.util.Date() + " \n";
         code += "// *********************************************************\n\n";
 
-        //code+="GOTO MAIN  // JUMP To Main Routine\n\n";
         if (basis != null) {
             VMObject circuit = basis.getCircuitBasis();
 
@@ -3808,8 +3667,8 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
             String[] vars = basis.vsGetVariablesNames();
 
-            for (int j = 0; j < vars.length; j++) {
-                code += "  DIM " + vars[j] + ", SSHORT\n";
+            for (String var : vars) {
+                code += "  DIM " + var + ", SSHORT\n";
             }
 
             // Globals          
@@ -3823,7 +3682,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             }
             code += "\n";
 
-            // code += "GOTO MAIN\n";
             // Alle Element als noch nicht Compiliert markieren
             for (int i = 0; i < circuit.getElementCount(); i++) {
                 Element element = circuit.getElement(i);
@@ -3843,9 +3701,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 }
             }
 
-            //code += "// MAIN\n";
-            //code += "MAIN:\n";
-            //code += "CALL ELEMENT"+startProcID+"\n";
         }
 
         return code;
@@ -3853,10 +3708,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
     private boolean isElementMCUFlowChartElement(Element element) {
         String str = element.getInternName().substring(0, 13);
-        if (str.equalsIgnoreCase("#MCU-FLOWCHART")) {
-            return true;
-        }
-        return false;
+        return str.equalsIgnoreCase("#MCU-FLOWCHART");
     }
 
     public String generateMCUVMCode() {
@@ -3868,7 +3720,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         code += "// * This is a nano VM for MyOpenLab v." + Version.strApplicationVersion + " " + Version.strStatus + "\n";
         code += "// * Date : " + new java.util.Date() + " \n";
         code += "// *********************************************************\n\n\n";
-        //code+="GOTO MAIN  // JUMP To Main Routine\n\n";
         if (basis != null) {
             VMObject circuit = basis.getCircuitBasis();
             for (int i = 0; i < circuit.getElementCount(); i++) {
@@ -3879,7 +3730,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 }
             }
             code += "\n";
-            //code+=" // Register 0 is only for Operation Results (ADD, SUB, AND,...)\n";
             // Alles Element.Pins eine Variable zuweisen
             code += "  // Variables\n";
             for (int i = 0; i < circuit.getElementCount(); i++) {
@@ -3892,10 +3742,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                         if (element.getPin(j).dataType == ExternalIF.C_INTEGER) {
                             code += "  DIM ELEMENT" + element.getID() + "_PIN" + j + ",WORD\n";
                         }
-
-                        //code += "  DIM ELEMENT" + element.getID() + "_PIN" + j + "\n";
                     }
-
                 }
             }
             code += "\n";
@@ -3935,7 +3782,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 if (str != null && str.trim().length() > 0) {
                     code += "  //--INIT : ELEMENT_" + element.getID() + "-" + element.getCaption() + "\n";
                     code += substitude(str, element);
-                    //System.out.println("code="+code);
                 }
             }
             code += "MAIN_BEGIN:\n";
@@ -3960,12 +3806,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
             code += "  PROCESS_NEXTELEMENT\n";
             code += "  PROCESS_TIMERS\n";
-
-            /*code += "  MAIN_LOOP:\n";
-            code += "    POP NEXTELEMENT        // GET NEXTELEMENT\n";
-            code += "    CMP NEXTELEMENT,0      // if (NEXTELEMENT==0) Stack=0 -> Stack is Empty!\n";
-            code += "    JMP_IF_A=B MAIN_BEGIN  // then goto MAIN\n";
-            code += "    CALL NEXTELEMENT       // CALLS NEXTELEMENT procedure\n";*/
             code += "  GOTO MAIN_BEGIN\n";
             code += "MAIN_EXIT:\n";
         }
@@ -4018,26 +3858,13 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 String mappedFile = Tools.mapFile(elementPath + frm.group);
                 String grp = new File(mappedFile).getAbsolutePath();
 
-                //String circuitPath = new File(Tools.userElementPath + "/CircuitElements").getAbsolutePath();
                 String circuitPath = new File(Tools.userElementPath + File.separator+"CircuitElements").getAbsolutePath();
-                //String frontPath = new File(Tools.userElementPath + "/FrontElements").getAbsolutePath();
                 String frontPath = new File(Tools.userElementPath + File.separator+"FrontElements").getAbsolutePath();
 
-                /*if (grp.equalsIgnoreCase(circuitPath) || grp.equalsIgnoreCase(frontPath))
-                {
-                Tools.showMessage(this,java.util.ResourceBundle.getBundle("VisualLogic/Messages").getString("you can not put Element in Root Directory!"));
-                return;
-                }*/
-                //String basisDir = grp + "/" + frm.compName;
-                //String srcDir = grp + "/" + frm.compName + "/src";
-                //String binDir = grp + "/" + frm.compName + "/bin";
                 String basisDir = grp + File.separator + frm.compName;
-                //String srcDir = grp + File.separator + frm.compName + "/src";
                 String srcDir = grp + File.separator + frm.compName + File.separator+"src";
-                //String binDir = grp + File.separator + frm.compName + "/bin";
                 String binDir = grp + File.separator + frm.compName + File.separator+"bin";
 
-                //String str = grp + "/" + frm.compName;
                 String str = grp + File.separator + frm.compName;
                 new File(str).mkdir();
                 new File(srcDir).mkdir();
@@ -4048,15 +3875,14 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
                     copyFiles(elementPath + "/compTemplate/src/make.bat", str + "/src/make.bat", false);
 
-                    frm.generateSrcFiles(basisDir, srcDir, frm.type);
+                    frm.generateSrcFiles(basisDir, srcDir, DialogNewJavaComponentAssistent.type);
 
-                    if (frm.type == 0) {
+                    if (DialogNewJavaComponentAssistent.type == 0) {
                         jPanelElementPalette.removeAll();
                         jPanelElementPalette.add(elementPaletteCircuit, BorderLayout.CENTER);
                         elementPaletteFront.setVisible(false);
                         elementPaletteCircuit.setVisible(true);
 
-                        //elementPaletteCircuit.aktuellesVerzeichniss = "/CircuitElements/2user-defined/";
                         elementPaletteCircuit.aktuellesVerzeichniss = File.separator+"CircuitElements"+File.separator+"2user-defined"+File.separator;
                         elementPaletteCircuit.loadFolder(elementPaletteCircuit.aktuellesVerzeichniss);
 
@@ -4066,7 +3892,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                         elementPaletteFront.setVisible(true);
                         elementPaletteCircuit.setVisible(false);
 
-                        //elementPaletteFront.aktuellesVerzeichniss = "/FrontElements/2user-defined/";
                         elementPaletteFront.aktuellesVerzeichniss =File.separator +"FrontElements"+File.separator+"2user-defined"+File.separator;
                         elementPaletteFront.loadFolder(elementPaletteFront.aktuellesVerzeichniss);
 
@@ -4074,20 +3899,15 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
                     Tools.showMessage(this, java.util.ResourceBundle.getBundle("VisualLogic/Messages").getString("Don't forget to compile the new Element"));
 
-                    //frmCodeEditor frmCode = new frmCodeEditor(this);
                     String strGrp = "";
                     if (frm.type == 0) {
-                        //strGrp = "/CircuitElements/";
                         strGrp = File.separator+"CircuitElements"+File.separator;
                     } else {
-                        //strGrp = "/FrontElements/";
                         strGrp = File.separator+"FrontElements"+File.separator;
                     }
 
                     openEditor(Tools.userElementPath + strGrp + frm.compName);
 
-                    //frmCode.execute(elementPath, strGrp+frm.compName, frm.compName);
-                    //copyFiles(elementPath+"/compTemplate/src",srcDir,false);
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 }
@@ -4097,7 +3917,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
             }
             frm.dispose();
-            //frameCircuit.openJavaEditor(element);
 
         } else {
 
@@ -4210,7 +4029,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     }
 
     public ArrayList<LineInfo> selectAllDrahtsWhereIntersectWithRectaqngle(ArrayList<Element> elements, int x1, int y1, int x2, int y2, int align) {
-        ArrayList<LineInfo> result = new ArrayList<LineInfo>();
+        ArrayList<LineInfo> result = new ArrayList<>();
 
         Element element;
         JPin pin;
@@ -4237,51 +4056,45 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         // Sortieren! für LEFT Lines!
         // also nach Y sortieren
         if (align == 1 || align == 3) {
-            Collections.sort(result, new Comparator() {
-
-                public int compare(Object o1, Object o2) {
-                    LineInfo info1 = ((LineInfo) o1);
-                    LineInfo info2 = ((LineInfo) o2);
-
-                    Line line1 = info1.line;
-                    Line line2 = info1.line;
-                    if (line1.getStartPoint().y < line2.getStartPoint().y) {
-                        return -1;
-                    }
-                    if (line1.getStartPoint().y > line2.getStartPoint().y) {
-                        return 1;
-                    }
-                    if (line1.getStartPoint().y == line2.getStartPoint().y) {
-                        return 0;
-                    }
-
+            Collections.sort(result, (Object o1, Object o2) -> {
+                LineInfo info1 = ((LineInfo) o1);
+                LineInfo info2 = ((LineInfo) o2);
+                
+                Line line1 = info1.line;
+                Line line2 = info1.line;
+                if (line1.getStartPoint().y < line2.getStartPoint().y) {
+                    return -1;
+                }
+                if (line1.getStartPoint().y > line2.getStartPoint().y) {
+                    return 1;
+                }
+                if (line1.getStartPoint().y == line2.getStartPoint().y) {
                     return 0;
                 }
+                
+                return 0;
             });
         }
 
         if (align == 0 || align == 2) {
-            Collections.sort(result, new Comparator() {
-
-                public int compare(Object o1, Object o2) {
-                    LineInfo info1 = ((LineInfo) o1);
-                    LineInfo info2 = ((LineInfo) o2);
-
-                    Line line1 = info1.line;
-                    Line line2 = info1.line;
-
-                    if (line1.getStartPoint().x < line2.getStartPoint().x) {
-                        return -1;
-                    }
-                    if (line1.getStartPoint().x > line2.getStartPoint().x) {
-                        return 1;
-                    }
-                    if (line1.getStartPoint().x == line2.getStartPoint().x) {
-                        return 0;
-                    }
-
+            Collections.sort(result, (Object o1, Object o2) -> {
+                LineInfo info1 = ((LineInfo) o1);
+                LineInfo info2 = ((LineInfo) o2);
+                
+                Line line1 = info1.line;
+                Line line2 = info1.line;
+                
+                if (line1.getStartPoint().x < line2.getStartPoint().x) {
+                    return -1;
+                }
+                if (line1.getStartPoint().x > line2.getStartPoint().x) {
+                    return 1;
+                }
+                if (line1.getStartPoint().x == line2.getStartPoint().x) {
                     return 0;
                 }
+                
+                return 0;
             });
         }
 
@@ -4409,8 +4222,8 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             IPindex = 0;
             OPindex = 0;
 
-            backupDrahtsInputs = new ArrayList<BackupDrahtInput>();
-            backupDrahtsOutputs = new ArrayList<BackupDrahtOutut>();
+            backupDrahtsInputs = new ArrayList<>();
+            backupDrahtsOutputs = new ArrayList<>();
 
             for (i = 0; i < 4; i++) {
                 ArrayList<LineInfo> lineInfos = selectAllDrahtsWhereIntersectWithRectaqngle(elements, x1, y1, x2, y2, i);
@@ -4431,7 +4244,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 basis.save();
             } else {
                 String fileName = "";
-                //fileName = basis.projectPath + "/" + vmFilename + ".vlogic";
                 fileName = basis.projectPath + File.separator + vmFilename + ".vlogic";
                 basis.saveToFile(fileName, false);
                 basis.vmFilename = fileName;
@@ -4454,7 +4266,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
                 File f = new File(mainPath);
 
-                //String path=fconf.getPath();
                 String vmName = f.getName();
 
                 String[] args = new String[3];
@@ -4517,7 +4328,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                     draht = vm.addDrahtIntoCanvas(subVM.getID(), tmp2.pinIndex, tmp2.destElementID, tmp2.destPin);
 
                     Point p = dstElement.getPin(dstPin).getLocation();
-                    //Point px=subVM.getPin(tmp.pinIndex).getLocation();
 
                     int dx = (dstElement.getLocation().x + subVM.getLocation().x) / 2;
                     int dy = 300;// wird eh automatisch gesetzt von reorderWireFrames();
@@ -4554,8 +4364,8 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         frm.setVisible(true);
 
-        if (frm.result && frm.newName.length() > 0) {
-            String vmfilename = frm.newName;
+        if (DialogVMName.result && DialogVMName.newName.length() > 0) {
+            String vmfilename = DialogVMName.newName;
 
             createSubElementFromVM(vm, rect, vmfilename);
 
@@ -4594,20 +4404,16 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             dest.mkdirs();
             String list[] = src.list();
 
-            for (int i = 0; i < list.length; i++) {
+            for (String list1 : list) {
                 if (javaFilter) {
-                    if (list[i].endsWith("java") == false && list[i].endsWith("bat") == false) {
-                        String dest1 = dest.getAbsolutePath() + File.separator + list[i];
-                        //String dest1 = dest.getAbsolutePath() + "\\" + list[i];
-                        String src1 = src.getAbsolutePath() + File.separator + list[i];
-                        //String src1 = src.getAbsolutePath() + "\\" + list[i];
+                    if (list1.endsWith("java") == false && list1.endsWith("bat") == false) {
+                        String dest1 = dest.getAbsolutePath() + File.separator + list1;
+                        String src1 = src.getAbsolutePath() + File.separator + list1;
                         copyFiles(src1, dest1, javaFilter);
                     }
                 } else {
-                    String dest1 = dest.getAbsolutePath() + File.separator + list[i];
-                    //String dest1 = dest.getAbsolutePath() + "\\" + list[i];
-                    String src1 = src.getAbsolutePath() + File.separator + list[i];
-                    //String src1 = src.getAbsolutePath() + "\\" + list[i];
+                    String dest1 = dest.getAbsolutePath() + File.separator + list1;
+                    String src1 = src.getAbsolutePath() + File.separator + list1;
                     copyFiles(src1, dest1, javaFilter);
                 }
             }
@@ -4621,11 +4427,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         String p2 = new File(elementPath + "/FrontElements/Version_2_0/VMElement").getAbsolutePath();
         String p3 = new File(elementPath + "/FrontElements/Version_2_0/VMElementUniversal").getAbsolutePath();
 
-        if (p1.equalsIgnoreCase(p2) || p1.equalsIgnoreCase(p3)) {
-            return true;
-        }
-
-        return false;
+        return p1.equalsIgnoreCase(p2) || p1.equalsIgnoreCase(p3);
     }
 
     public void openEditor(String path) {
@@ -4676,13 +4478,11 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             String str = f2.substring(f1.length());
             openEditor(Tools.userElementPath + str);
         } else {
-            //addBasisToVMPanel(path + "/" + definition_def.vm, "", true);
             addBasisToVMPanel(path + File.separator + definition_def.vm, "", true);
         }
     }
 
     public void openJavaEditor(Element element) {
-        //openEditor(Tools.userElementPath, strGrp+frm.compName);
         String strX = elementPath + element.mainPath;
 
         String str = Tools.mapFile(strX);
@@ -4719,8 +4519,8 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
             DialogPassword frm = new DialogPassword(this, true);
             frm.setVisible(true);
-            if (frm.password.length() > 0) {
-                basis.setPassword(frm.password);
+            if (DialogPassword.password.length() > 0) {
+                basis.setPassword(DialogPassword.password);
                 basis.setChanged(true);
             }
         }
@@ -4806,12 +4606,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             }
         });
 
-        //chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-        //OnlyDirectoryFilter filter= new OnlyDirectoryFilter();
-        //chooser.setFileFilter(filter);
-        //FileView view = new JavaFileView();
-        //chooser.setFileView(view);
-        //chooser.setAccessory(new LabelAccessory(chooser));
         int value = chooser.showOpenDialog(this);
         if (value == JFileChooser.APPROVE_OPTION) {
             File file = chooser.getSelectedFile();
@@ -4893,28 +4687,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             return;
         }
         vmEditorPanelTabChanged(getVMObject());
-        /*Basis basis = getActualBasis();
-    if (basis==null) return;
-    if (vmobject==basis.getCircuitBasis())
-    {
-    if (elementPalette.vmObject==basis.getFrontBasis())
-    {
-    oldPanelDirectory=elementPalette.aktuellesVerzeichniss;
-    }
-    elementPalette.aktuellesVerzeichniss=oldCircuitDirectory;
-    elementPalette.vmObject=vmobject;
-    elementPalette.loadFolder(elementPalette.aktuellesVerzeichniss);
-    }
-    if (vmobject==basis.getFrontBasis() )
-    {
-    if (elementPalette.vmObject==basis.getCircuitBasis())
-    {
-    oldCircuitDirectory=elementPalette.aktuellesVerzeichniss;
-    }
-    elementPalette.aktuellesVerzeichniss=oldPanelDirectory;
-    elementPalette.vmObject=vmobject;
-    elementPalette.loadFolder(elementPalette.aktuellesVerzeichniss);
-    }*/
 
     }//GEN-LAST:event_jPaneVMPanelsStateChanged
 
@@ -4954,7 +4726,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         lan.execute(settings.getLanguage());
 
-        settings.setLanguage(lan.result);
+        settings.setLanguage(DialogLanguage.result);
     }
 
     private void jmniChooseLanguageActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jmniChooseLanguageActionPerformed
@@ -4983,7 +4755,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
     private void jSpinnerDebugDelayTimeStateChanged(javax.swing.event.ChangeEvent evt)//GEN-FIRST:event_jSpinnerDebugDelayTimeStateChanged
     {//GEN-HEADEREND:event_jSpinnerDebugDelayTimeStateChanged
-        int value = (((Integer) jSpinnerDebugDelayTime.getValue()).intValue());
+        int value = (((Integer) jSpinnerDebugDelayTime.getValue()));
 
         Basis basis = getActualBasis();
         if (basis != null) {
@@ -4993,8 +4765,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
     private void jmiCopyToClipActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jmiCopyToClipActionPerformed
     {//GEN-HEADEREND:event_jmiCopyToClipActionPerformed
-        // txtMessages.selectAll();
-        //  txtMessages.copy();
+
     }//GEN-LAST:event_jmiCopyToClipActionPerformed
 
     private void jmiVariableWatcherActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jmiVariableWatcherActionPerformed
@@ -5017,8 +4788,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             basis.paste();
 
             basis.getCircuitBasis().selectAny(false);
-            // basis.getCircuitBasis().updateUI();
-            //basis.getFrontBasis().updateUI();
             setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
         }
     }
@@ -5030,29 +4799,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         reloadBasis();
         timer.start();
         propertyEditor.locked = false;
-
-
-        /*SwingWorker worker = new SwingWorker<Object, Object>()
-    {
-    //DialogWait frm;
-    public Object doInBackground()
-    {
-    Tools.dialogWait=new DialogWait();
-    Tools.dialogWait.setVisible(true);
-     *Tools.dialogWait.setLocation(Tools.dialogWait.getLocation().x, Tools.dialogWait.getLocation().y-150);
-    timer.stop();
-    propertyEditor.locked=true;
-    reloadBasis();
-    return null;
-    }
-    protected void done()
-    {
-    timer.start();
-    propertyEditor.locked=false;
-    Tools.dialogWait.dispose();
-    }
-    };
-    worker.execute();*/
 
     }//GEN-LAST:event_jButtonRefreshVM_FActionPerformed
 
@@ -5090,22 +4836,22 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     }//GEN-LAST:event_jButtonVariables_HActionPerformed
 
     public ArrayList<String> listAllVMsFromProject(String projectPath) {
-        ArrayList<String> result = new ArrayList<String>();
+        ArrayList<String> result = new ArrayList<>();
 
         File f = new File(projectPath);
 
         String[] files = f.list();
 
-        for (int i = 0; i < files.length; i++) {
-            if (files[i].endsWith("vlogic")) {
-                result.add(files[i]);
+        for (String file : files) {
+            if (file.endsWith("vlogic")) {
+                result.add(file);
             }
         }
         return result;
     }
 
     public void generateExecutableVM(String projectPath, String destPath, String vmName) {
-        Basis basis = new Basis(this, this.elementPath);
+        Basis basis = new Basis(this, FrameMain.elementPath);
         basis.projectPath = projectPath;
 
         String filename = projectPath + File.separator + vmName;
@@ -5131,9 +4877,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
             Tools.copy(new File(elementPath + File.separator + ".." + File.separator + "DistributionStarter.jar"), new File(destDir + File.separator + "DistributionStarter.jar"));
 
-            //Tools.copy(new File(elementPath + File.separator + ".." + File.separator + "rxtxSerial.dll"), new File(destDir + File.separator + "rxtxSerial.dll"));
-            //Tools.copy(new File(elementPath + File.separator + ".." + File.separator + "rxtxParallel.dll"), new File(destDir + File.separator + "rxtxParallel.dll"));
-
             Tools.saveText(new File(destDir + File.separator + "start.bat"), "start javaw -jar DistributionStarter.jar .");
             Tools.saveText(new File(destDir + File.separator + "start_linux_distribution"), "#!/bin/sh \njava -jar DistributionStarter.jar .");
 
@@ -5152,7 +4895,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         }
 
         File execFile = new File(destDir.getPath() + File.separator+"myopenlab.executable");
-        //File execFile = new File(destDir.getPath() + "/myopenlab.executable");
         try {
             execFile.createNewFile();
         } catch (IOException ex) {
@@ -5189,7 +4931,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     private void jmiHomepageActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jmiHomepageActionPerformed
     {//GEN-HEADEREND:event_jmiHomepageActionPerformed
 
-        //Tools.openUrl(this, "http://myopenlab.de");
         Tools.openUrl(this, "http://myopenlab.org");
 
     }//GEN-LAST:event_jmiHomepageActionPerformed
@@ -5260,7 +5001,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         DialogOptions frm = new DialogOptions(settings, this, true);
 
         frm.execute(settings);
-        if (frm.result) {
+        if (DialogOptions.result) {
             refreshAllBasis();
         }
     }//GEN-LAST:event_jmniOptionsActionPerformed
@@ -5324,15 +5065,14 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
     private void formWindowStateChanged(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowStateChanged
 
-        if (getExtendedState() == this.MAXIMIZED_BOTH) {
+        if (getExtendedState() == FrameMain.MAXIMIZED_BOTH) {
             System.out.println("MAX");
         }
 
-        if (getExtendedState() == this.NORMAL) {
+        if (getExtendedState() == FrameMain.NORMAL) {
             System.out.println("NORMAL");
 
             java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
-            //setLocation((screenSize.width-getWidth())/2, (screenSize.height-getHeight())/2);
 
             Dimension size = getSize();
 
@@ -5343,11 +5083,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 setLocation(50, 50);
                 setSize(screenSize.width - 100, screenSize.height - 100);
             }
-        }
-        //if (getState()==MA)
-        {
-            //setSize(500,500);
-            //System.out.println("");
         }
     }//GEN-LAST:event_formWindowStateChanged
 
@@ -5364,8 +5099,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     }//GEN-LAST:event_jButtonWireLegends_IActionPerformed
 
     private void formComponentMoved(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentMoved
-        //  basis.circuitPanelLeft=getLocation().x;
-        //   basis.circuitPanelTop=getLocation().y;
+       
     }//GEN-LAST:event_formComponentMoved
 
     private void jButtonSave_CActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonSave_CActionPerformed
@@ -5434,7 +5168,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         if (timer != null) {
             timer.stop();
         }
-        //jSplitPane4.setDividerLocation(getWidth()-settings.rightSplitterPos);
         if (timer != null) {
             timer.start();
         }
@@ -5530,7 +5263,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             reloadElementPalettes();
         }
 
-        //elementPalette.loadFolder(elementPalette.aktuellesVerzeichniss);
     }//GEN-LAST:event_jmiSaveAsModulActionPerformed
 
     private void jmnuDateiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmnuDateiActionPerformed
@@ -5538,7 +5270,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     }//GEN-LAST:event_jmnuDateiActionPerformed
 
     private void jmiSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiSaveActionPerformed
-        // if (isEnabled)
         {
             Basis basis = getActualBasis();
             if (basis != null) {
@@ -5554,7 +5285,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     }//GEN-LAST:event_jmiInfoActionPerformed
 
     public void executeMainVM(String projectPath, String mainVM) {
-        //globalPath = projectPath + "/" + mainVM;
         globalPath = projectPath + File.separator + mainVM;
         globalProjectPath = projectPath;
         SwingWorker worker = new SwingWorker<Object, Object>() {
@@ -5564,13 +5294,10 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             public Object doInBackground() {
                 Tools.dialogWait = new DialogWait();
                 Tools.dialogWait.setVisible(true);
-                //Tools.dialogWait.setLocation(Tools.dialogWait.getLocation().x, Tools.dialogWait.getLocation().y - 150);
 
                 frontMode = true;
                 Basis basis = addBasisToVMPanel(globalPath, globalProjectPath, false);
 
-                //basis.startInFrontMode=true;
-                //basis.panelMode=true;
                 basis.getFrontBasis().sortSubPanels();
 
                 basis.getCircuitBasis().adjustAllElemnts();
@@ -5591,17 +5318,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         worker.execute();
 
-
-        /*Basis basis = new Basis(this, elementPath);
-    basis.panelMode=true;
-    addBasisToVMPanel(filename);
-    /*basis.loadFromFile(filename,false);
-    basis.vmFilename=filename;
-    basis.fileName=filename;
-    addBasisToVMPanel(basis);
-    basis.frameCircuit=this;*/
-        //basis.startInFrontMode=true;
-        //basis.loading=false;
     }
 
     public void openProject(File project) {
@@ -5635,7 +5351,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 projects.add(project.getPath());
                 reloadProjectPanel();
             } else {
-                //Tools.showMessage(this, java.util.ResourceBundle.getBundle("VisualLogic/Messages").getString("VM already in Project list :") + "\"" + project.getName() + "\"");
+                
             }
         } else {
             Tools.showMessage(this, "\"" + project.getName() + "\"" + java.util.ResourceBundle.getBundle("VisualLogic/Messages").getString("is not a project"));
@@ -5665,8 +5381,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                     } else {
                         setIcon(iconX);
                     }
-                    //else setText("Not a Project!");
-
                 }
             }
         }
@@ -5686,7 +5400,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
             chooser.setFileView(view);
 
-            //chooser.setAccessory(new LabelAccessory(chooser));
             int value = chooser.showOpenDialog(this);
             if (value == JFileChooser.APPROVE_OPTION) {
                 File file = chooser.getSelectedFile();
@@ -5694,11 +5407,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 openProject(file);
             }
 
-            /*  if (isEnabled)
-        {
-        basis.stop();
-        basis.getFrameMain().openFile();
-        }*/
         }//GEN-LAST:event_jmiOpenProjectActionPerformed
 
     private void createNewProject(String projectName, boolean createMainVM, String mainVMFilename, String projectType) {
@@ -5708,13 +5416,11 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
                 File project = new File(projectName);
                 project.mkdir();
-                //File projectFile = new File(project.getAbsolutePath() + "/project.myopenlab");
                 File projectFile = new File(project.getAbsolutePath() + File.separator+"project.myopenlab");
 
                 projectFile.createNewFile();
 
                 if (createMainVM) {
-                    //String filename = projectName + "/" + mainVMFilename + ".vlogic";
                     String filename = projectName + File.separator + mainVMFilename + ".vlogic";
                     Basis basis = new Basis(this, this.elementPath);
                     basis.saveToFile(filename, false);
@@ -5729,8 +5435,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
                 Tools.saveText(projectFile, str);
 
-                //Basis oBasis=addBasisToVMPanel(filename);
-            } catch (Exception ex) {
+            } catch (IOException ex) {
                 Tools.showMessage(java.util.ResourceBundle.getBundle("VisualLogic/Messages").getString("Could not create") + " " + projectName);
             }
 
@@ -5745,8 +5450,8 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         DialogNewProject frm = new DialogNewProject(this, true);
         frm.setVisible(true);
-        if (frm.result) {
-            String projectName = frm.projectName;
+        if (DialogNewProject.result) {
+            String projectName = DialogNewProject.projectName;
 
             File f = new File(projectName);
             if (!f.exists()) {
@@ -5754,7 +5459,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 projectName = projectName.replace("\\", File.separator);
                 projectName = projectName.replace("/", File.separator);
 
-                createNewProject(projectName, frm.createMainVM, frm.mainVMFilename, frm.projectType);
+                createNewProject(projectName, DialogNewProject.createMainVM, DialogNewProject.mainVMFilename, DialogNewProject.projectType);
                 projects.add(projectName);
                 reloadProjectPanel();
             } else {
@@ -5762,12 +5467,9 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             }
 
         }
-        //basis.stop();
-        //basis.getFrameMain().createNewVM();
     }//GEN-LAST:event_jmiNewProjectActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        //if (isEnabled)
         {
             closeApplication();
         }
@@ -5817,36 +5519,21 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
     // MyOpenLabIF
     public void ownerMessage(String message) {
-        //Tools.showMessage(this, message);
         System.out.println("Message=" + message);
     }
 
     private void runPLCSimulator(String code) {
-        /*URL url = null;
-        try
-        {
-            url = new URL("file:" + System.getProperty("user.home") + System.getProperty("file.separator") + "MyOpenLabMCU");
-            
-        } catch (MalformedURLException ex)
-        {
-            ex.printStackTrace();
-        }
-        if (url != null)*/
 
         {
-            //SimulatorSocket.Server server = new SimulatorSocket.Server(this);
-            //server.start();
 
             // ASM Datei ins MyOpenLab User Dir speichern
             String fileNameDest_ASM = getUserURL().getFile() + "\\mcu_code.asm";
             Tools.saveText(new File(fileNameDest_ASM), code);
 
-            //String fileName = elementPath+"..\simulator";
             String jarFileDir = elementPath + "\\..\\simulator";
 
             String jarFile = new File(jarFileDir + "\\Simulator.jar").getAbsolutePath();
 
-            //String jarFile="E:\\ASM_Simulation\\Simulator\\dist\\Simulator.jar";
             if (new File(jarFile).exists()) {
                 ProcessBuilder builder = new ProcessBuilder("cmd", "/c", "start", "javaw", "-jar", jarFile, fileNameDest_ASM);
 
@@ -5861,38 +5548,24 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 new FrameCode(this, code);
             }
         }
-        /*else
-        {
-            new FrameCode(this, code);
-        }*/
 
     }
 
     private void execSPSProject() {
-        /*if (unusedPinsExist())
-        {
-        Tools.showMessage(this, "There are unused Pins or Element!");
-        }
-        else*/
+
         {
 
-            //String code = generateMCUCode();
-            //String code = generateMCUFlowChartCode();
-            //String code = generateMCUVMCode();
             String code = generateMCUFlowChartCode();
-            //new FrameCode(this, code);  
 
             if (code.length() > 0) {
                 code = entferneReduntanteJMPs(code);
                 runPLCSimulator(code);
             }
 
-            //runPLCSimulator(code);
         }
     }
 
     private void jButtonStart_JActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonStart_JActionPerformed
-        //startBasis();
         Basis basis = getActualBasis();
         if (basis != null) {
 
@@ -5914,7 +5587,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     }//GEN-LAST:event_jButtonStart_JActionPerformed
 
     private void jmiMantisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiMantisActionPerformed
-        //Tools.openUrl(this, "http://mantis.myopenlab.de");
         Tools.openUrl(this, "http://myopenlab.org/soporte/");
 
     }//GEN-LAST:event_jmiMantisActionPerformed
@@ -5971,7 +5643,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         String distributiondir = tmp.substring(0, tmp.length() - "Elements".length());
 
-        //Tools.showMessage(this, distributiondir);
         de.myopenlab.update.frmUpdate.myopenlabpath = distributiondir;
 
         de.myopenlab.update.frmUpdate frm2 = new frmUpdate();
@@ -6016,7 +5687,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                             }
                             if (ch.trim().length() == 0) {
                                 // ende des Labe erkannt
-                                //String gg=code.substring(beginIndex, index);
                                 String gg = code.substring(start2, index - 2);
                                 if (gg.equalsIgnoreCase(label)) {
                                     String newCode = code.substring(0, beginIndex - 5);
@@ -6024,16 +5694,11 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                                     code = newCode;
                                 }
                                 return code;
-                                //System.out.println(""+gg);
                             }
                         }
-
                     }
-
                 }
-
             }
-
             index++;
         }
     }
@@ -6073,7 +5738,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
     private void loadDoc(Element element, String filename, JEditorPane pane) {
         URL url = null;
-        //String nope = element.elementPath + "/nope.html";
         String nope = element.elementPath + File.separator+"nope.html";
         if (!new File(filename).exists()) {
             filename = nope;
@@ -6224,14 +5888,8 @@ class TestTheme extends DefaultMetalTheme {
     private final ColorUIResource primary3 = new ColorUIResource(115,164,209); //Color Fondo Textos
    
     private final ColorUIResource SECONDARY1 = new ColorUIResource(115,164,209); // Resaltado al seleccionar
-    //private final ColorUIResource SECONDARY1 = new ColorUIResource(214,217,223); // Resaltado al seleccionar
     private final ColorUIResource SECONDARY2 = new ColorUIResource(164,171,184); // Bordes Sombra
     private final ColorUIResource SECONDARY3 = new ColorUIResource(214,217,223); // Color Fondo
-    private final ColorUIResource CONTROL_TEXT_COLOR = new ColorUIResource(242,242,189);
-    private final ColorUIResource INACTIVE_CONTROL_TEXT_COLOR = new ColorUIResource(242,242,189);
-    private final ColorUIResource MENU_DISABLED_FOREGROUND = new ColorUIResource(242,242,189);
-    private final ColorUIResource OCEAN_BLACK = new ColorUIResource(242,242,189);
-    private final ColorUIResource OCEAN_DROP = new ColorUIResource(242,242,189);
  
     protected ColorUIResource getPrimary1() { return primary1; }
     protected ColorUIResource getPrimary2() { return primary2; }

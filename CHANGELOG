@@ -2,6 +2,7 @@
 cleaned: code
 added: readme
 relocated: license file
+changed: java version to 11
 
 3.12.0 XW 26-07-2020
 +String Functions added
