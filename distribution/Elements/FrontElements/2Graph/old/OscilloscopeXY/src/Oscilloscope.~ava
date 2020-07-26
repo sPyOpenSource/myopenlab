@@ -1,0 +1,97 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+import tools.*;
+import VisualLogic.variables.*;
+
+
+public class Oscilloscope extends JVSMain
+{
+  private ExternalIF panelElement=null;
+  private Image image;
+
+  public VS1DDouble inX=null;
+  public VS1DDouble inY=null;
+
+  public void onDispose()
+  {
+   image.flush();
+   image=null;
+  }
+
+
+  public Oscilloscope()
+  {
+    super();
+  }
+  
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
+  public void init()
+  {
+    initPins(0,0,0,2);
+    setSize(40,40);
+    initPinVisibility(false,false,false,true);
+
+    setPin(0,ExternalIF.C_ARRAY1D_DOUBLE,element.PIN_INPUT);
+    setPin(1,ExternalIF.C_ARRAY1D_DOUBLE,element.PIN_INPUT);
+
+    element.jSetPinDescription(0,"1D-Array X");
+    element.jSetPinDescription(1,"1D-Array Y");
+    
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+    
+
+    element.jSetCaptionVisible(true);
+    element.jSetCaption("osc");
+
+    setName("Oscilloscope-X/Y_Version 1.0");
+  }
+
+
+  public void initInputPins()
+  {
+    inX=(VS1DDouble)element.getPinInputReference(0);
+    inY=(VS1DDouble)element.getPinInputReference(1);
+  }
+
+  public void initOutputPins()
+  {
+
+  }
+
+  public void process()
+  {
+    if (inX!=null && inY!=null && panelElement!=null)
+    {
+      panelElement.jProcessPanel(0,0,inX);
+      panelElement.jProcessPanel(0,0,inY);
+    }
+  }
+  
+  public void start()
+  {
+    panelElement=element.getPanelElement();
+    if (panelElement!=null) panelElement.jRepaint();
+  }
+
+
+    
+
+
+
+}

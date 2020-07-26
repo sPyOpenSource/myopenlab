@@ -1,0 +1,38 @@
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.Rectangle2D;
+
+import tools.*;
+
+public class NXOR extends Gatter
+{
+  public NXOR()
+  {
+   super(2,"NXOR");
+  }
+
+  public static boolean XNOR(boolean a, boolean b)
+  {
+     return ( (!a&&b) || (a&&!b) );
+  }
+
+  public void process()
+  {
+    if (inA instanceof VSBoolean && inB instanceof VSBoolean)
+    {
+      out.setChanged(false);
+      VSBoolean a = (VSBoolean)inA;
+      VSBoolean b = (VSBoolean)inB;
+      if (a.isChanged() || b.isChanged())
+      {
+        out.setValue(XNOR(inA.getValue(),inB.getValue()));
+        out.setChanged(true);
+      }
+    }
+  }
+
+}
+

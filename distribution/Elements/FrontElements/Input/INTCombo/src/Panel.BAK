@@ -1,0 +1,280 @@
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.text.*;
+import javax.swing.*;
+import java.util.*;
+import tools.*;
+import java.awt.geom.Rectangle2D;
+
+public class Panel extends JVSMain
+{
+  private int width=150, height=25;
+  private int index;
+  private VSInteger initValue=new VSInteger(0);
+  private VSPropertyDialog more= new VSPropertyDialog();
+
+  private Font fnt = new Font("Monospaced",0,12);
+  private ExternalIF circuitElement;
+  private VS1DString values = new VS1DString(0);
+
+
+   public void drawBorder(Graphics g,Rectangle bounds)
+   {
+     g.setColor(Color.WHITE);
+     g.fillRect(bounds.x,bounds.y,bounds.width,bounds.height);
+
+     g.setColor(Color.DARK_GRAY);
+     g.drawLine(bounds.x+1,bounds.y+1,bounds.width-1,bounds.y+1);
+     g.drawLine(bounds.x+1,bounds.y+1,bounds.x+1,bounds.height-1);
+
+     g.setColor(Color.LIGHT_GRAY);
+     g.drawLine(bounds.x+1,bounds.height-1,bounds.width-1,bounds.height-1);
+     g.drawLine(bounds.width-1,bounds.y+1,bounds.width-1,bounds.height-1);
+
+     g.setColor(Color.BLACK);
+     g.drawRect(bounds.x,bounds.y,bounds.width,bounds.height);
+   }
+   
+
+   public void drawNibble(Graphics g,int x, int y, int xx, int yy)
+   {
+     g.setColor(Color.LIGHT_GRAY);
+     g.fillRect(x,y,xx,yy);
+     
+     g.setColor(Color.DARK_GRAY);
+     g.drawRect(x,y,xx,yy);
+
+     int mitteX=(xx)/2;
+     
+     Polygon p = new Polygon();
+     p.addPoint(x+4,y+4);
+     p.addPoint(x+xx-4,y+4);
+     p.addPoint(x+mitteX,yy-4);
+     p.addPoint(x+4,y+4);
+     
+     g.setColor(Color.BLACK);
+     g.fillPolygon(p);
+   }
+
+   
+   public void paint(java.awt.Graphics g)
+   {
+    if (element!=null)
+    {
+       Rectangle bounds=element.jGetBounds();
+
+       g.setFont(fnt);
+       g.setColor(Color.black);
+
+       Graphics2D g2=(Graphics2D)g;
+       
+       String value="";
+       if (index>=0 && index<values.getLength())  value=values.getValue(index);
+
+       FontMetrics fm = g.getFontMetrics();
+       Rectangle2D   r = fm.getStringBounds(value,g2);
+
+       drawBorder(g,bounds);
+       drawNibble(g,bounds.x+bounds.width-26,bounds.y+1,25,bounds.height-2);
+       g.drawString(value,bounds.x+5,((bounds.height) /2)+5);
+    }
+   }
+   
+
+
+
+  public void init()
+  {
+    initPins(0,0,0,0);
+    setSize(width,height);
+    initPinVisibility(false,false,false,false);
+    element.jSetInnerBorderVisibility(false);
+    
+    
+    element.jSetResizable(true);
+    setName("Combo (INT)");
+    
+    values.resize(3);
+    values.setValue(0,"1");
+    values.setValue(1,"2");
+    values.setValue(2,"3");
+    
+    more.setText(getTextWithKomma());
+  }
+
+  public void setPropertyEditor()
+  {
+    element.jAddPEItem("Init-Value",initValue, 0,999999);
+    element.jAddPEItem("More",more, 0,0);
+  }
+  
+  private String getTextWithKomma()
+  {
+      String str="";
+
+      for (int i=0;i<values.getLength();i++)
+      {
+        str+=values.getValue(i)+",";
+      }
+      
+      return str;
+  }
+  
+  private String getTextWithN()
+  {
+      String str="";
+
+      for (int i=0;i<values.getLength();i++)
+      {
+        str+=values.getValue(i)+"\n";
+      }
+
+      return str;
+  }
+
+  
+  public void propertyChanged(Object o)
+  {
+    if (o.equals(more))
+    {
+      String str=getTextWithN();
+
+      Properties frm = new Properties(str);
+      frm.setSize(200,200);
+      frm.setModal(true);
+      frm.setVisible(true);
+      
+      if (frm.result==true)
+      {
+        String res=frm.strText;
+        
+        ArrayList liste=new ArrayList();
+        
+        int lastI=0;
+        // Generiere neues Array!
+        for (int i=0;i<res.length();i++)
+        {
+          char ch=res.charAt(i);
+
+          if (ch=='\n')
+          {
+           liste.add(res.substring(lastI,i));
+           lastI=i+1;
+          }
+        }
+        if (lastI>0)liste.add(res.substring(lastI));
+        
+        values.resize(liste.size());
+        
+        for (int i=0;i<liste.size();i++)
+        {
+          values.setValue(i,(String)liste.get(i));
+        }
+
+        more.setText(getTextWithKomma());
+      }
+      
+
+    }
+    element.jRepaint();
+  }
+
+
+  public void mouseMoved(MouseEvent e)
+  {
+    int x=e.getX();
+    int y=e.getY();
+    Rectangle bounds=element.jGetBounds();
+
+    if ( x>bounds.width-25 && y>0 && x<bounds.width && y<bounds.height)
+    {
+      element.setCursor(Cursor.HAND_CURSOR);
+    } else element.setCursor(Cursor.DEFAULT_CURSOR);
+
+
+  }
+  
+  public void mousePressed(MouseEvent e)
+  {
+  
+    int x=e.getX();
+    int y=e.getY();
+    Rectangle bounds=element.jGetBounds();
+    
+    
+    if ( x>bounds.width-25 && y>0 && x<bounds.width && y<bounds.height)
+    {
+      String[] Xvalues= new String[values.getLength()];
+      
+      for (int i=0;i<values.getLength();i++)
+      {
+        Xvalues[i]=values.getValue(i);
+      }
+
+      if (index>=0 && index<values.getLength())
+      {
+
+        String res=(String)JOptionPane.showInputDialog (null, "Auswahliste","ComboBox (INT)", JOptionPane.QUESTION_MESSAGE, null,Xvalues ,Xvalues[index]);
+
+        if (res!=null)
+        {
+
+          for (int i=0;i<values.getLength();i++)
+          {
+            if (values.getValue(i).equals(res))
+            {
+              index=i;
+              break;
+            }
+          }
+
+          element.jRepaint();
+
+          circuitElement=element.getCircuitElement();
+          circuitElement.Change(0,new VSInteger(index));
+        }
+
+      }
+    }
+  }
+
+
+  public void start()
+  {
+    index=initValue.getValue();
+
+    element.jRepaint();
+    
+    circuitElement=element.getCircuitElement();
+    circuitElement.Change(0,initValue);
+
+  }
+  
+  public void process()
+  {
+
+  }
+
+  public void loadFromStream(java.io.FileInputStream fis)
+  {
+      initValue.loadFromStream(fis);
+      values.loadFromStream(fis);
+      
+      index=initValue.getValue();
+      more.setText(getTextWithKomma());
+      element.jRepaint();
+  }
+
+  public void saveToStream(java.io.FileOutputStream fos)
+  {
+      initValue.saveToStream(fos);
+      values.saveToStream(fos);
+  }
+
+
+
+}
+

@@ -1,0 +1,90 @@
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.text.*;
+import javax.swing.*;
+import tools.*;
+import java.awt.geom.Rectangle2D;
+
+public class Panel extends JVSMain implements PanelIF
+{
+  private int width=150, height=25;
+  private String value="";
+  private double oldPin;
+  private Font fnt = new Font("Courier",0,12);
+  private ExternalIF circuitElement;
+
+
+
+  public void processPanel(int pinIndex, double value, Object obj)
+  {
+    if (obj instanceof VSString)
+    {
+      String str=((VSString)obj).getValue();
+      this.value=str;
+      element.jRepaint();
+    }
+  }
+  
+   public void drawBorder(Graphics g,Rectangle bounds)
+   {
+     g.setColor(new Color(180,180,180));
+     g.fillRect(bounds.x,bounds.y,bounds.width,bounds.height);
+
+     g.setColor(Color.DARK_GRAY);
+     g.drawLine(bounds.x+1,bounds.y+1,bounds.width-1,bounds.y+1);
+     g.drawLine(bounds.x+1,bounds.y+1,bounds.x+1,bounds.height-1);
+
+     g.setColor(Color.LIGHT_GRAY);
+     g.drawLine(bounds.x+1,bounds.height-1,bounds.width-1,bounds.height-1);
+     g.drawLine(bounds.width-1,bounds.y+1,bounds.width-1,bounds.height-1);
+
+     g.setColor(Color.BLACK);
+     g.drawRect(bounds.x,bounds.y,bounds.width,bounds.height);
+   }
+   
+   public void paint(java.awt.Graphics gx)
+   {
+    if (element!=null)
+    {
+       Graphics g = gx.create();
+       Rectangle bounds=element.jGetBounds();
+       
+       g.clipRect(bounds.x,bounds.y,bounds.width,bounds.height);
+       
+       g.setFont(fnt);
+       g.setColor(Color.black);
+
+       Graphics2D g2=(Graphics2D)g;
+
+       FontMetrics fm = g.getFontMetrics();
+       Rectangle2D   r = fm.getStringBounds(value,g2);
+
+       drawBorder(g,new Rectangle(0,0,bounds.width,bounds.height));
+       g.drawString(value,bounds.x+5,((bounds.height) /2)+5);
+
+       g.dispose();
+    }
+   }
+   
+
+
+
+  public void init()
+  {
+    initPins(0,0,0,0);
+    setSize(width,height);
+    element.jSetInnerBorderVisibility(false);
+    initPinVisibility(false,false,false,false);
+    
+    element.jSetResizable(true);
+
+    
+    setName("Ausgabe");
+  }
+
+
+}
+

@@ -1,0 +1,44 @@
+/*
+ * NewClass.java
+ *
+ * Created on 30. Maerz 2005, 21:18
+ */
+
+package VisualLogic;
+import java.io.File;
+import java.util.Hashtable;
+import java.util.Enumeration;
+import javax.swing.*;
+import javax.swing.filechooser.*;
+
+public class vlogicFilter extends FileFilter 
+{
+ static String fileExtension = "vlogic";
+ 
+  public boolean accept(File f) 
+  {
+    String s = f.getName();
+    int i = s.lastIndexOf('.');
+    
+    if (f.isDirectory()) return true;
+
+   if (i > 0) 
+   {
+     String extension = s.substring(i+1).toLowerCase();
+     if (fileExtension.indexOf(extension)>-1) 
+     {
+        return true;
+     } else 
+     {
+        return false;
+     }
+   }
+  return false;
+  }
+
+ 
+    public String getDescription() 
+    {
+        return "Visual Logic dateien (*.vlogic)";
+    }
+}

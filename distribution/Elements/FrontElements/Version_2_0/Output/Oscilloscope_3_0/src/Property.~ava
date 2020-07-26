@@ -1,0 +1,52 @@
+/*
+ * Properties.java
+ *
+ * Created on 19. November 2006, 08:03
+ *
+ * To change this template, choose Tools | Template Manager
+ * and open the template in the editor.
+ */
+ 
+ package tools;
+
+
+import java.util.ArrayList;
+import VisualLogic.*;
+import VisualLogic.variables.*;
+
+/**
+ *
+ * @author Carmelo
+ */
+public class Property
+{
+    public String name;
+    public double min;
+    public double max;
+    
+    public VSObject vsProperty;
+    
+    private ArrayList list = new ArrayList();
+    
+    public void addLocation(String language, String text)
+    {
+        list.add(new PropertyLanguage(language,text));
+    }
+    
+    public String getLocation(String language)
+    {
+        PropertyLanguage prop;
+        for (int i=0;i<list.size();i++)
+        {
+            prop=(PropertyLanguage)list.get(i);
+            if (prop.language.equalsIgnoreCase(language))
+            {
+                return prop.text;                
+            }
+        }
+
+        return "";
+    }
+    
+    
+}

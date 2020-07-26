@@ -1,0 +1,31 @@
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.Rectangle2D;
+
+import tools.*;
+
+public class XOR extends Gatter
+{
+  public XOR()
+  {
+   super(2,"XOR");
+  }
+  
+  public static boolean XOR(boolean a, boolean b)
+  {
+     return ( (!a&&b) || (a&&!b) );
+  }
+
+  public void process()
+  {
+    if (out!=null && inA!=null && inB!=null)
+    {
+      out.setValue(XOR(inA.getValue(),inB.getValue()));
+    }
+  }
+
+}
+

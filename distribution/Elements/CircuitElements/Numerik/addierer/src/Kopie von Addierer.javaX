@@ -1,0 +1,101 @@
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+
+
+public class Addierer extends JVSMain
+{
+  private Image image;
+  private VSObject inA;
+  private VSObject inB;
+  private VSObject out;
+
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
+  public void init()
+  {
+    initPins(0,1,0,2);
+    setSize(40,25);
+    element.jSetInnerBorderVisibility(false);
+    element.jSetTopPinsVisible(false);
+    element.jSetBottomPinsVisible(false);
+
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+    
+    element.jInitPins();
+    
+    setPin(0,ExternalIF.C_DOUBLE,element.PIN_OUTPUT);
+    setPin(1,ExternalIF.C_DOUBLE,element.PIN_INPUT);
+    setPin(2,ExternalIF.C_DOUBLE,element.PIN_INPUT);
+  }
+
+
+
+  public void initInputPins()
+  {
+    inA=(VSDouble)element.getPinInputReference(1);
+    inB=(VSDouble)element.getPinInputReference(2);
+  }
+
+  public void initOutputPins()
+  {
+    element.setPinOutputReference(0,out);
+  }
+
+
+
+  public int getArrLen(Array1DDBL array1,Array1DDBL array2)
+  {
+      int kleinstesArray=0;
+      if (array1.value.length>array2.value.length)
+      {
+        kleinstesArray=array2.value.length;
+      } else kleinstesArray=array1.value.length;
+
+      if (array1.value.length==array2.value.length)
+      {
+        kleinstesArray=array1.value.length;
+      }
+      return kleinstesArray;
+  }
+
+
+
+  public void process()
+  {
+
+    if (inA instanceof VS1DDouble && inB instanceof VS1DDouble)
+    {
+      VS1DDouble arrayX = (VS1DDouble)inA;
+      VS1DDouble arrayY = (VS1DDouble)inB;
+
+      VS1DDouble result = new VS1DDouble(arrayY.value.length);
+      int arrLen=getArrLen(array1,array2);
+
+      for (int i=0;i<arrLen;i++)
+      {
+        result.value[i]=array1.value[i]+array2.value[i];;
+      }
+      element.writePinObj(0,result);
+
+    } else
+    if (inA instanceof VSDouble && inB instanceof VSDouble)
+    {
+      VSDouble a = (VS1DDouble)inA;
+      VSDouble b = (VS1DDouble)inB;
+      out.value=a.value+b.value;
+    }
+
+  }
+
+
+}
+

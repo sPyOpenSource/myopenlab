@@ -1,0 +1,72 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//********************************
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+
+
+public class AnalogAnzeige extends JVSMain
+{
+  private ExternalIF panelElement;
+  private Image image;
+  private double oldValue;
+  private VSDouble in=null;
+
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+   
+  public void init()
+  {
+    initPins(0,0,0,1);
+    setSize(40,30);
+
+    initPinVisibility(false,false,false,true);
+
+      
+    setPin(0,ExternalIF.C_DOUBLE,element.PIN_INPUT);
+    element.jSetPinDescription(0,"In");
+
+    //panelElement=element.setPanelElement("AnalogAnzeigePanel");
+
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+    
+    setName("Analog Anzeige");
+  }
+
+  public void initInputPins()
+  {
+    in=(VSDouble)element.getPinInputReference(0);
+  }
+
+  public void initOutputPins()
+  {
+
+  }
+
+  public void process()
+  {
+
+    if (in!=null && in.getValue()!=oldValue)
+    {
+      panelElement=element.getPanelElement();
+      if (panelElement!=null)
+      {
+         panelElement.jProcessPanel(0,in.getValue(),(Object)this);
+         panelElement.jRepaint();
+      }
+      oldValue=in.getValue();
+    }
+
+  }
+
+}
+ 

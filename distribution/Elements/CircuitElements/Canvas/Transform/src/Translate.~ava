@@ -1,0 +1,111 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+import java.awt.MediaTracker;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.image.BufferedImage;
+import java.awt.image.MemoryImageSource;
+import java.awt.image.PixelGrabber;
+
+
+public class Translate extends JVSMain
+{
+  private Image image;
+  private VSDouble x;
+  private VSDouble y;
+  private VSCanvas in;
+  private VSCanvas out=new VSCanvas();
+
+  public void onDispose()
+  {
+    if (image!=null)
+    {
+      image.flush();
+      image=null;
+    }
+  }
+
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
+  public void init()
+  {
+    initPins(0,1,0,3);
+    setSize(32+22,20+4+10*3);
+    
+    initPinVisibility(false,true,false,true);
+
+    element.jSetInnerBorderVisibility(true);
+
+    setPin(0,ExternalIF.C_CANVAS,element.PIN_OUTPUT); // Image
+    setPin(1,ExternalIF.C_CANVAS,element.PIN_INPUT); // Image
+    setPin(2,ExternalIF.C_DOUBLE,element.PIN_INPUT); // X
+    setPin(3,ExternalIF.C_DOUBLE,element.PIN_INPUT); // Y
+
+    element.jSetPinDescription(0,"Out");
+    element.jSetPinDescription(1,"In");
+    element.jSetPinDescription(2,"X");
+    element.jSetPinDescription(3,"X");
+
+    String fileName=element.jGetSourcePath()+"icon.gif";
+    image=element.jLoadImage(fileName);
+
+    setName("Translate 1.0");
+  }
+
+
+
+  public void initInputPins()
+  {
+    in=(VSCanvas)element.getPinInputReference(1);
+    x=(VSDouble)element.getPinInputReference(2);
+    y=(VSDouble)element.getPinInputReference(3);
+    
+    if (x==null) x= new VSDouble(0.0);
+    if (y==null) y= new VSDouble(0.0);
+  }
+
+  public void initOutputPins()
+  {
+    element.setPinOutputReference(0,out);
+  }
+
+
+
+
+  public void process()
+  {
+    if (in!=null && out!=null)
+    {
+
+     out.image=in.image;
+     out.shape=in.shape;
+     out.strokeColor=in.strokeColor;
+     out.strokeColor=in.strokeColor;
+     out.fillColor=in.fillColor;
+     out.rotationAngle=in.rotationAngle;
+     out.antialising=in.antialising;
+
+     out.translationX=x.getValue();
+     out.translationY=y.getValue();
+     out.setChanged(true);
+     element.notifyPin(0);
+    }
+  }
+  
+  
+
+}
+
+

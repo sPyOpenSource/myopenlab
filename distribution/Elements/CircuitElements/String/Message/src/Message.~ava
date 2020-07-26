@@ -1,0 +1,98 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import java.util.*;
+
+
+public class Message extends JVSMain
+{
+  private Image image;
+  private VSString inMessage;
+  private String oldValue="";
+
+
+  public void xpaint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+  public void onDispose()
+  {
+    if (image!=null)
+    {
+      image.flush();
+      image=null;
+    }
+  }
+
+  public void init()
+  {
+    initPins(0,0,0,1);
+    setSize(35+3,25+3);
+    initPinVisibility(false,false,false,true);
+    element.jSetInnerBorderVisibility(false);
+
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.png");
+
+    setPin(0,ExternalIF.C_STRING,element.PIN_INPUT); // calc
+
+
+    String strLocale=Locale.getDefault().toString();
+
+    if (strLocale.equalsIgnoreCase("de_DE"))
+    {
+       element.jSetPinDescription(0,"Nachricht");
+    }
+    if (strLocale.equalsIgnoreCase("en_US"))
+    {
+       element.jSetPinDescription(0,"message");
+    }
+    if (strLocale.equalsIgnoreCase("es_ES"))
+    {
+      element.jSetPinDescription(0,"mensaje ES");
+    }
+
+
+    element.jSetCaptionVisible(true);
+    element.jSetCaption("Message");
+    setName("Message");
+  }
+
+  public void initInputPins()
+  {
+    inMessage=(VSString)element.getPinInputReference(0);
+
+    if (inMessage==null)
+    {
+      inMessage=new VSString("");
+    }
+
+  }
+
+  public void initOutputPins()
+  {
+  }
+
+  public void process()
+  {
+    if (inMessage instanceof VSString)
+    {
+      if (inMessage.getValue().length()>0 )
+      {
+        JOptionPane.showMessageDialog(null,inMessage.getValue(),"Message!",JOptionPane.PLAIN_MESSAGE);
+      }
+    }
+
+  }
+}
+

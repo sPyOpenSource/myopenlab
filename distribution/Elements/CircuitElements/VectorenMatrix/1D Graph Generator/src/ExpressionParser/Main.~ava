@@ -1,0 +1,24 @@
+
+package ExpressionParser;
+
+import java.text.DecimalFormat;
+
+
+public class Main 
+{
+   
+    public static void main(String[] args) 
+    {
+      Visual visual = new Visual();      
+      visual.setVisible(true);
+        
+      /*Parser parser = new Parser("cos(PI)");
+      parser.addVar("x",5);   
+      
+      DecimalFormat df =   new DecimalFormat  ( "#.########" );
+      String res=df.format(parser.parseString());
+      System.out.println(parser.getTokens()+"="+res);*/
+        
+    }
+    
+}

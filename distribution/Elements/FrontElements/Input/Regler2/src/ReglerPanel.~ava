@@ -1,0 +1,36 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 03.02.2006           *
+//********************************
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+import java.awt.*;
+
+
+public class ReglerPanel extends CustomAnalogComp
+{
+  public void init()
+  {
+    super.init();
+    knobSizeInProzent.setValue(36);
+    nibbleLenInProzent.setValue(36);
+    showBackground.setValue(false);
+    
+    setSize(80,80);
+  }
+
+  public void propertyChanged(Object o)
+  {
+    super.propertyChanged(o);
+  }
+  
+  public void setPropertyEditor()
+  {
+    super.setPropertyEditor();
+  }
+}
+
+

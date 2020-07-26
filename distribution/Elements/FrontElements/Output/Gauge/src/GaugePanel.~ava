@@ -1,0 +1,59 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 03.02.2006           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.*;
+import javax.swing.*;
+
+
+public class GaugePanel extends CustomAnalogComp implements PanelIF
+{
+
+  // aus PanelIF
+  public void processPanel(int pinIndex, double value, Object obj)
+  {
+    setValue(value);
+    System.out.println("value1 = "+value);
+  }
+  
+  public void init()
+  {
+    super.init();
+    backColor.setValue(Color.WHITE);
+    showBackground.setValue(true);
+    textInside.setValue(true);
+    element.jSetMinimumSize(50,50);
+    knobSizeInProzent.setValue(3);
+    nibbleLenInProzent.setValue(45);
+    nibbleColor.setValue(Color.RED);
+    buttonColor.setValue(Color.BLACK);
+  }
+
+
+  public void mousePressed(MouseEvent e)
+  {
+
+  }
+  public void mouseReleased(MouseEvent e)
+  {
+
+  }
+  public void mouseMoved(MouseEvent e)
+  {
+  }
+
+  public void mouseDragged(MouseEvent e)
+  {
+
+  }
+
+}
+

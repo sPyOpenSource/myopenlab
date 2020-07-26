@@ -1,0 +1,36 @@
+/*
+ * Properties.java
+ *
+ * Created on 19. November 2006, 08:11
+ *
+ * To change this template, choose Tools | Template Manager
+ * and open the template in the editor.
+ */
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author Carmelo
+ */
+public class Properties
+{
+    private ArrayList list = new ArrayList();
+
+    public Property get(int index)
+    {
+        return (Property)list.get(index);
+    }
+
+    public void add(Property property)
+    {
+        list.add(property);
+    }
+
+    public int size()
+    {
+        return list.size();
+    }
+
+
+}

@@ -1,0 +1,437 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+import java.io.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.text.*;
+import java.awt.geom.Rectangle2D;
+import javax.swing.*;
+
+public class VMElement extends JVSMain
+{
+  private Image image;
+  private VSObject[] in     = new VSObject[0];
+  private VSObject[] myOuts = new VSObject[0];
+  private VSObject[] inX    = new VSObject[0];
+  private VSObject[] outX   = new VSObject[0];
+  private boolean changed=false;
+  private VSBasisIF basis;
+  private ExternalIF[] inputs;
+  private ExternalIF[] outputs;
+  private VSString filename = new VSString("");
+  private String filenameX="";
+  private String elementNameX="";
+  private String elementIconX="";
+  private VSString elementName=new VSString("");
+  private VSString elementIcon=new VSString("");
+  private ExternalIF panelElement;
+  private VSString version= new VSString("");
+  
+
+  public void onDispose()
+  {
+   if (image!=null)
+   {
+     image.flush();
+     image=null;
+   }
+  }
+
+  public void paint(java.awt.Graphics g)
+  {
+    if (image!=null) drawImageCentred(g,image);
+  }
+
+  public void beforeInit(String[] args)
+  {
+    if (args!=null)
+    {
+       if (args.length>=1)
+       {
+         filenameX=args[0];
+       }
+
+       if (args.length>=2)
+       {
+         elementNameX=args[1];
+       }
+
+       if (args.length>=3)
+       {
+         elementIconX=args[2];
+       }
+    }
+  }
+  
+  public String getBinDir()
+  {
+    return new File(element.jGetElementPath()+filename.getValue()).getParentFile().getPath();
+  }
+  
+  
+  public void init()
+  {
+    initPins(0,50,0,50);
+    setSize(35,25);
+    
+    initPinVisibility(false,false,false,false);
+    image=element.jLoadImage(element.jGetSourcePath()+"VMElement.gif");
+
+
+    element.jSetCaptionVisible(true);
+
+    setName("VM-Element");
+
+  }
+  
+  
+  private String openFile()
+  {
+    JFileChooser chooser = new JFileChooser();
+    
+    chooser.setCurrentDirectory(new java.io.File("."));
+
+
+    chooser.setDialogTitle("Open VM");
+    //chooser.setDialogType (JFileChooser.SAVE_DIALOG);
+
+    vlogicFilter filter= new vlogicFilter();
+
+    chooser.setFileFilter(filter);
+
+    int value = chooser.showOpenDialog(null);
+
+    if (value == JFileChooser.APPROVE_OPTION)
+    {
+      File file = chooser.getSelectedFile();
+      String fileName=file.getPath();
+      
+      if (fileName.endsWith(".vlogic"))
+      {
+        return fileName;
+      } else return "";
+    }
+
+     return "";
+  }
+  
+    public static void showMessage(String message)
+    {
+       JOptionPane.showMessageDialog(null,message,"Attention!",JOptionPane.ERROR_MESSAGE);
+    }
+
+  
+  public void xOnInit()
+  {
+
+    basis=element.jCreateBasis();
+
+
+
+    
+    if (filenameX=="")
+    {
+      if (filename.getValue().trim()=="")
+      {
+        filename.setValue(openFile());
+      }
+    } else
+    {
+      filename.setValue(filenameX);
+    }
+
+    if (filename.getValue().trim()!="")
+    {
+      basis.vsLoadFromFile(element.jGetElementPath()+filename.getValue());
+    }
+    
+    if (elementNameX!="")
+    {
+      elementName.setValue(elementNameX);
+    }
+
+
+    if (elementIconX!="")
+    {
+      elementIcon.setValue(elementIconX);
+    }
+    
+    //showMessage( element.jGetElementPath()+filename.getValue());
+
+
+    
+
+    element.jSetProperties();
+    
+
+    panelElement=element.getPanelElement();
+
+    element.jSetCaption(elementName.getValue());
+    if (panelElement!=null) panelElement.jSetCaption(elementName.getValue());
+
+
+    //showMessage(elementName.getValue());
+    
+    String iconFilename=getIconFromDefinitionDef(new File(getBinDir()));
+
+
+   // showMessage(getBinDir()+"/"+iconFilename);
+    onDispose();
+    image=element.jLoadImage(getBinDir()+"/"+iconFilename);
+
+
+
+    inputs=element.getInputPinList(basis);
+    outputs=element.getOutputPinList(basis);
+
+    int leftC=inputs.length;
+    int rightC=outputs.length;
+    int max=leftC;
+    if (rightC>max) max=rightC;
+
+    initPins(0,rightC,0,leftC);
+
+    int width=40+20;
+    int height=0;
+
+    if (max*10<=40) height=40; else height=max*10;
+    setSize(width, height);
+
+    int dt=0;
+    for (int i=0;i<rightC;i++)
+    {
+      dt=outputs[i].jGetPinDataType(0); // Pin hat nur ein Pin!
+      element.jSetPinDescription(i,outputs[i].jGetCaption());
+      setPin(i,dt,element.PIN_OUTPUT);
+    }
+
+    for (int i=0;i<inputs.length;i++)
+    {
+      dt=inputs[i].jGetPinDataType(0); // Pin hat nur ein Pin!
+      element.jSetPinDescription(rightC+i,inputs[i].jGetCaption());
+      setPin(rightC+i,dt,element.PIN_INPUT);
+    }
+
+
+  }
+
+  public void initInputPins()
+  {
+    in= new VSObject[inputs.length];
+
+    for (int i=0;i<inputs.length;i++)
+    {
+      in[i]=(VSObject)element.getPinInputReference(outputs.length+i);
+    }
+  }
+  
+
+  public void initOutputPins()
+  {
+    outX=new VSObject[inputs.length];
+    
+    for (int i=0;i<inputs.length;i++)
+    {
+      outX[i]=element.jCreatePinDataType(outputs.length+i);
+      inputs[i].setPinOutputReference(0,outX[i]);
+    }
+
+    myOuts=new VSObject[outputs.length];
+
+    for (int i=0;i<outputs.length;i++)
+    {
+      myOuts[i]=element.jCreatePinDataType(i);
+      element.setPinOutputReference(i,myOuts[i]);
+    }
+
+  }
+
+  public void start()
+  {
+    if (basis!=null) basis.vsStart();
+  }
+
+  public void stop()
+  {
+    if (basis!=null) basis.vsStop();
+  }
+  
+  public void changePin(int pinIndex, Object value)
+  {
+      changed=true;
+  }
+
+
+  VSObject myInput;
+
+  public void process()
+  {
+      for (int i=0;i<inputs.length;i++)
+      {
+        if (outX[i]!=null && in[i]!=null)
+        {
+          outX[i].copyValueFrom(in[i]);
+          if (inputs[i]!=null)
+          {
+           inputs[i].notifyPin(0);
+          }
+
+        }
+      }
+      
+      for (int i=0;i<outputs.length;i++)
+      {
+        if (myOuts[i]!=null)
+        {
+          myInput=(VSObject)outputs[i].getPinInputReference(0);
+          if (myInput!=null)
+          {
+            myOuts[i].copyValueFrom(myInput);
+            element.notifyPin(i);
+          }
+        }
+      }
+  }
+  
+  
+  
+  
+  
+  public void loadFromStream(java.io.FileInputStream fis)
+  {
+    try
+    {
+      filename.loadFromStream(fis);
+      elementName.loadFromStream(fis);
+      elementIcon.loadFromStream(fis);
+      
+      //loadFromStreamAfterXOnInit(fis);
+    } catch(Exception ex)
+    {
+
+    }
+  }
+
+  public void saveToStream(java.io.FileOutputStream fos)
+  {
+    //showMessage("save "+filename.getValue());
+    filename.saveToStream(fos);
+    elementName.saveToStream(fos);
+    elementIcon.saveToStream(fos);
+    
+    //saveToStreamAfterXOnInit(fos);
+  }
+
+
+
+  public void saveToStreamAfterXOnInit(java.io.FileOutputStream fos)
+  {
+    String basisVersion=basis.getBasisElementVersion();
+    version.setValue(basisVersion);
+    //showMessage("Saving Circuit-Element :"+ element.jGetCaption() +" basisVersion  "+version.getValue());
+
+    version.saveToStream(fos);
+    
+    VSObject[] props=element.jGetProperties();
+
+    for (int i=0;i<props.length;i++)
+    {
+      props[i].saveToStream(fos);
+    }
+  }
+
+  public void loadFromStreamAfterXOnInit(java.io.FileInputStream fis)
+  {
+    String basisVersion=basis.getBasisElementVersion();
+    version.loadFromStream(fis);
+
+
+    //showMessage("Loading Circuit-Element :"+ element.jGetCaption() +" basisVersion  "+version.getValue());
+    //showMessage("Element , basisVersion  "+element.jGetCaption()+" , " +basisVersion);
+
+
+    if (version.getValue().equalsIgnoreCase(basisVersion))
+    {
+      try
+      {
+        VSObject[] props=element.jGetProperties();
+
+        for (int i=0;i<props.length;i++)
+        {
+          props[i].loadFromStream(fis);
+        }
+
+      } catch(Exception ex)
+      {
+
+      }
+     } else
+     {
+       showMessage("Version of Element "+ element.jGetCaption() +" is wrong, Element Properties not loaded!");
+       showMessage("Version/basisVersion : "+version.getValue()+"  ,  "+basisVersion);
+     }
+  }
+
+
+
+    private static String extractClassName(String line)
+  {
+      String ch;
+      // gehe bis zum "=" Zeichen
+      for (int i=0;i<line.length();i++)
+      {
+          ch=line.substring(i, i+1);
+
+          if (ch.equals("="))
+          {
+              return line.substring(0, i);
+          }
+      }
+      return "";
+  }
+
+    public String getIconFromDefinitionDef(File file)
+    {
+
+        String str;
+
+        try {
+            BufferedReader input = new BufferedReader(new FileReader(file.getAbsolutePath()+"/"+"definition.def"));
+            String inputString;
+            while ((inputString = input.readLine()) != null) {
+                String elementClass=extractClassName(inputString);
+                String elementName=inputString.substring(elementClass.length());
+
+                elementName=elementName.trim();
+                elementName=elementName.substring(1);
+                elementClass=elementClass.trim();
+                elementName=elementName.trim();
+
+                if (elementClass.equalsIgnoreCase("icon"))
+                {
+                    return elementName;
+                }
+
+            }
+
+
+            input.close();
+        }catch(Exception ex)
+        {
+            //Tools.showMessage(ex.toString());
+        }
+        return "";
+    }
+
+  
+}
+
+
+

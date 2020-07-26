@@ -1,0 +1,91 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+
+public class Concat extends JVSMain
+{
+  private Image image;
+  private VSString inA;
+  private VSString inB;
+  private VSString out=new VSString();
+  private String oldValue="";
+
+  public void onDispose()
+  {
+    if (image!=null)
+    {
+      image.flush();
+      image=null;
+    }
+  }
+  
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
+  public void init()
+  {
+    initPins(0,1,0,2);
+    setSize(45,30);
+
+    initPinVisibility(false,true,false,true);
+
+    element.jSetInnerBorderVisibility(true);
+    
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.png");
+
+
+    setPin(0,ExternalIF.C_STRING,element.PIN_OUTPUT);
+    setPin(1,ExternalIF.C_STRING,element.PIN_INPUT);
+    setPin(2,ExternalIF.C_STRING,element.PIN_INPUT);
+
+    element.jSetPinDescription(0,"=\"AB\"");
+    element.jSetPinDescription(1,"\"A\"");
+    element.jSetPinDescription(2,"\"B\"");
+
+    setName("Concat");
+
+  }
+
+
+
+  public void initInputPins()
+  {
+    inA=(VSString)element.getPinInputReference(1);
+    inB=(VSString)element.getPinInputReference(2);
+  }
+
+  public void initOutputPins()
+  {
+    element.setPinOutputReference(0,out);
+  }
+
+  public void process()
+  {
+    if (inA!=null && inB!=null)
+    {
+      String temp=inA.getValue()+inB.getValue();
+      //if (temp!=oldValue)
+      {
+        oldValue=temp;
+        out.setValue(temp);
+        out.setChanged(true);
+        element.notifyPin(0);
+      }
+    }
+  }
+
+}
+

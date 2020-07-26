@@ -1,0 +1,34 @@
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.Rectangle2D;
+
+import tools.*;
+
+public class NOT extends Gatter
+{
+  
+  public NOT()
+  {
+    super(1,"Not");
+  }
+  
+  public void process()
+  {
+  
+    if (inA instanceof VSBoolean && inB instanceof VSBoolean)
+    {
+      out.setChanged(false);
+      VSBoolean a = (VSBoolean)inA;
+      if (a.isChanged())
+      {
+        out.setValue(!inA.getValue());
+        out.setChanged(true);
+      }
+    } else out.setValue(true);
+  }
+
+}
+ 

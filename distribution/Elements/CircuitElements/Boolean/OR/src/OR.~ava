@@ -1,0 +1,43 @@
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.Rectangle2D;
+
+import tools.*;
+
+public class OR extends Gatter
+{
+
+  public OR()
+  {
+    super(2,"OR");
+  }
+
+  
+  boolean a,b;
+
+  public void process()
+  {
+    if (inA !=null)
+    {
+      a=inA.getValue();
+    } else a=false;
+    
+    if (inB  !=null)
+    {
+      b=inB.getValue();
+    } else b=false;
+    
+    out.setValue(a || b);
+    if (out.getValue()!=oldValue)
+    {
+      oldValue=out.getValue();
+      element.notifyPin(0);
+    }
+
+  }
+
+}
+ 

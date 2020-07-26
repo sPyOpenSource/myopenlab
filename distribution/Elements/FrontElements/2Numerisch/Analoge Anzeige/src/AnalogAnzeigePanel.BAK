@@ -1,0 +1,27 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 03.02.2006           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.*;
+import javax.swing.*;
+
+
+public class AnalogAnzeigePanel extends CustomAnalogComp implements PanelIF
+{
+
+  // aus PanelIF
+  public void processPanel(int pinIndex, double value, Object obj)
+  {
+    value0=value;
+  }
+
+}
+

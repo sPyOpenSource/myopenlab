@@ -1,0 +1,155 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 25.04.2007           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import java.util.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+
+public class HexToBytes extends JVSMain
+{
+  private Image image;
+
+  private VS1DString inString;
+
+  private VS1DByte outBytes = new VS1DByte(0);
+
+
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
+  public void onDispose()
+  {
+    if (image!=null)
+    {
+      image.flush();
+      image=null;
+    }
+  }
+
+  public void init()
+  {
+    initPins(0,1,0,1);
+    setSize(32+20,32+5);
+
+    initPinVisibility(false,true, false,true);
+
+    element.jSetInnerBorderVisibility(true);
+
+
+    setPin(0,ExternalIF.C_ARRAY1D_BYTE,element.PIN_OUTPUT);
+    setPin(1,ExternalIF.C_ARRAY1D_STRING,element.PIN_INPUT);
+
+    element.jSetPinDescription(0,"Bytes-Out");
+    element.jSetPinDescription(1,"HEX bytes");
+
+
+    String fileName=element.jGetSourcePath()+"icon.gif";
+    image=element.jLoadImage(fileName);
+
+    element.jSetCaptionVisible(false);
+    setName("HEXBytesToBytes");
+
+  }
+
+
+  public void initInputPins()
+  {
+    inString=(VS1DString)element.getPinInputReference(1);
+  }
+
+  public void initOutputPins()
+  {
+    element.setPinOutputReference(0,outBytes);
+  }
+
+
+  public void start()
+  {
+
+  }
+
+  public void stop()
+  {
+  }
+  /**
+   * Converts an unsigned short to a signed int.
+   * @param value an unsigned short value
+   * @return a signed int that represents the unsigned short's value.
+   */
+   public static int toSigned(final short value)
+   {
+     return (int)copyBits(value, (byte)16);
+   }
+
+
+   /**
+   * Returns a long that contains the same n bits as the given long,with cleared upper rest.
+   * @param value the value which lowest bits should be copied.
+   * @param bits the number of lowest bits that should be copied.
+   * @return a long value that shares the same low bits as the given value.
+   */
+   private static long copyBits(final long value, byte bits)
+   {
+     final boolean logging = false; //turn off logging here
+     long converted = 0;
+     long comp =1L << bits;
+     while (--bits != -1)
+     {
+       if(((comp >>= 1) & value) != 0)
+       {
+          converted |= comp;
+       }
+       if(logging){System.out.print((comp & value)!=0?"1":"0");}
+     }
+       if(logging){System.out.println();
+     }
+      return converted;
+  }
+  public static byte toUnsigned(final short value)
+  {
+      return (byte) (0xFF&value);
+  }
+
+  public void sendString(VS1DString values)
+  {
+     byte [] dest= new byte[values.getLength()];
+
+     for (int i=0;i<values.getLength();i++)
+     {
+         String strX=values.getValue(i);
+         dest[i]=toSigned( (short)Integer.parseInt (strX, 16) );
+         System.out.println("XXXXXXX="+dest[i]);
+     }
+
+    outBytes.setValues(dest);
+
+    element.notifyPin(0);
+  }
+
+
+  public void elementActionPerformed(ElementActionEvent evt)
+  {
+
+    int idx=evt.getSourcePinIndex();
+    switch (idx)
+    {
+      case 1: sendString(inString); break;
+    }
+
+  }
+
+
+}
+

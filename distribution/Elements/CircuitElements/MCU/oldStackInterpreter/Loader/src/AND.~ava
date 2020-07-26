@@ -1,0 +1,85 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+
+public class AND extends JVSMain
+{
+  private Image image;
+
+  public void paint(java.awt.Graphics g)
+  {
+    if (image!=null) drawImageCentred(g,image);
+  }
+  public void onDispose()
+  {
+    if (image!=null)
+    {
+      image.flush();
+      image=null;
+    }
+  }
+
+
+  public void init()
+  {
+    initPins(0,1,0,2);
+    setSize(40,35);
+
+    initPinVisibility(false,true,false,true);
+
+    image=element.jLoadImage(element.jGetSourcePath()+"and.gif");
+    element.jSetInnerBorderVisibility(false);
+
+    setPin(0,ExternalIF.C_BOOLEAN,element.PIN_OUTPUT);
+    setPin(1,ExternalIF.C_BOOLEAN,element.PIN_INPUT);
+    setPin(2,ExternalIF.C_BOOLEAN,element.PIN_INPUT);
+
+    //element.jSetPinDescription(0,"out");
+
+    setName("AVR-AND");
+
+    String code="";
+    code+="  AND\n";
+    element.jSetTag(2, code);
+
+  }
+  
+
+  public void initInputPins()
+  {
+  }
+  public void initOutputPins()
+  {
+  }
+  public void start()
+  {
+  }
+
+  public void process()
+  {
+  }
+  public void setPropertyEditor()
+  {
+  }
+  public void propertyChanged(Object o)
+  {
+  }
+
+
+
+}
+
+
+

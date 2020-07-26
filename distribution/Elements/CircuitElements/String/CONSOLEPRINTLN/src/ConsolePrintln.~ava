@@ -1,0 +1,84 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+
+public class ConsolePrintln extends JVSMain
+{
+  private Image image;
+  private VSString in;
+  private VSBoolean inPrint;
+  private VSInteger out= new VSInteger();
+
+  public void onDispose()
+  {
+    if (image!=null)
+    {
+      image.flush();
+      image=null;
+    }
+  }
+  
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
+  public void init()
+  {
+    initPins(0,0,0,2);
+    setSize(50,35);
+    element.jSetInnerBorderVisibility(false);
+    element.jSetTopPinsVisible(false);
+    element.jSetBottomPinsVisible(false);
+
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+    
+    setPin(0,ExternalIF.C_BOOLEAN,element.PIN_INPUT);
+    setPin(1,ExternalIF.C_STRING,element.PIN_INPUT);
+    
+    element.jSetPinDescription(0,"write");
+    element.jSetPinDescription(1,"in");
+
+    setName("ConsolePrintln");
+  }
+  
+
+  public void initInputPins()
+  {
+    inPrint=(VSBoolean)element.getPinInputReference(0);
+    in=(VSString)element.getPinInputReference(1);
+    
+    if (inPrint==null) inPrint = new VSBoolean(false);
+    if (in==null) in = new VSString("");
+  }
+
+  public void initOutputPins()
+  {
+
+  }
+
+
+
+  public void process()
+  {
+    if (inPrint.getValue())
+    {
+      element.jConsolePrintln(in.getValue());
+      inPrint.setValue(false);
+    }
+  }
+
+
+}
+

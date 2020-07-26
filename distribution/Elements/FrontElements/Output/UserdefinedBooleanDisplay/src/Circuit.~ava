@@ -1,0 +1,85 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import java.awt.*;
+import java.awt.event.*;
+import tools.*;
+
+
+public class Circuit extends JVSMain
+{
+  private Image image;
+  private boolean changed=false;
+  private VSBoolean in;
+  private boolean oldValue=false;
+  private ExternalIF panelElement;
+  
+  public void onDispose()
+  {
+   image.flush();
+   image=null;
+  }
+
+
+  public void paint(java.awt.Graphics g)
+  {
+    if (image!=null) drawImageCentred(g,image);
+  }
+
+  public void init()
+  {
+    initPins(0,0,0,1);
+    setSize(40,30);
+    initPinVisibility(false,false,false,true);
+
+    setPin(0,ExternalIF.C_BOOLEAN,element.PIN_INPUT);
+    
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.png");
+    setName("UserDefinedBooleanDisplay");
+  }
+  
+
+  public void initInputPins()
+  {
+    in=(VSBoolean)element.getPinInputReference(0);
+    if (in==null) in=new VSBoolean(false);
+  }
+
+  public void initOutputPins()
+  {
+  }
+
+  public void start()
+  {
+    panelElement=element.getPanelElement();
+    oldValue=!oldValue;
+  }
+
+  public void process()
+  {
+    if (in.getValue()!=oldValue)
+    {
+      oldValue=in.getValue();
+      
+      if (panelElement!=null)
+      {
+        if (in.getValue()==true)
+        {
+          panelElement.jProcessPanel(0,1.0,(Object)this);
+        } else
+        {
+          panelElement.jProcessPanel(0,0.0,(Object)this);
+        }
+
+      }
+    }
+  }
+
+
+}
+

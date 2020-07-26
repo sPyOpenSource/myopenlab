@@ -1,0 +1,6 @@
+ISDIRECTORY  = FALSE
+CAPTION      = Analoge Anzeige 2
+CAPTION_EN   = Analog Display 2
+CAPTION_ES   = Display Analógico 2
+CLASSFRONT   = Anzeige.vlogic
+Icon         = icon.gif

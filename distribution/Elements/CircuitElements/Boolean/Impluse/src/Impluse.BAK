@@ -1,0 +1,117 @@
+//**************************************
+//* Autor       : Carmelo Salafia      *
+//* eMail       : cswi@gmx.de          *
+//* geändert am : 19.01.2006           *
+//**************************************
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+
+public class Impluse extends JVSMain
+{
+  public VSBoolean in;
+  public VSBoolean out=new VSBoolean(false);
+  private Image image;
+  private boolean oki=false;
+
+
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
+
+ public void init()
+  {
+    initPins(0,1,0,1);
+    setSize(40,25);
+    initPinVisibility(false,true,false,true);
+
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+
+    setPin(0,ExternalIF.C_BOOLEAN,element.PIN_OUTPUT);
+    setPin(1,ExternalIF.C_BOOLEAN,element.PIN_INPUT);
+
+    element.jSetPinDescription(0,"Out");
+    element.jSetPinDescription(1,"In");
+
+    element.jSetCaptionVisible(true);
+    element.jSetCaption("Impluse");
+    setName("Impluse");
+  }
+  
+  
+
+  public void propertyChanged(Object o)
+  {
+  }
+
+  public void setPropertyEditor()
+  {
+  }
+
+
+  public void initInputPins()
+  {
+    in=(VSBoolean)element.getPinInputReference(1);
+    if (in==null)
+    {
+      in=new VSBoolean(false);
+    }
+  }
+
+  public void initOutputPins()
+  {
+    element.setPinOutputReference(0,out);
+  }
+
+  public void start()
+  {
+  }
+  
+  public void stop()
+  {
+  }
+
+  public void process()
+  {
+    if (in.isChanged() )
+    {
+      if (in.getValue()==true)
+      {
+        if (oki==false) out.setValue(true); else out.setValue(false);
+        oki=true;
+      } else
+      {
+        oki=false;
+        out.setValue(false);
+      }
+    } else out.setChanged(false);
+  }
+
+  public void onDispose()
+  {
+    if (image!=null)
+    {
+      image.flush();
+      image=null;
+    }
+  }
+
+
+  public void loadFromStream(java.io.FileInputStream fis)
+  {
+  }
+
+  public void saveToStream(java.io.FileOutputStream fos)
+  {
+  }
+
+
+
+}

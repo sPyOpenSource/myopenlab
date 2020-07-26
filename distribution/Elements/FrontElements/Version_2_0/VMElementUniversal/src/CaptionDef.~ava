@@ -1,0 +1,6 @@
+class CaptionDef
+{
+  public String captionDE="";
+  public String captionEN="";
+  public String captionES="";
+}

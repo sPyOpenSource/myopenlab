@@ -1,0 +1,37 @@
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.Rectangle2D;
+
+import tools.*;
+
+
+public class AND extends Gatter
+{
+
+  public AND()
+  {
+    super(2,"And");
+  }
+
+  public void process()
+  {
+
+    if (inA instanceof VSBoolean && inB instanceof VSBoolean)
+    {
+      out.setChanged(false);
+      VSBoolean a = (VSBoolean)inA;
+      VSBoolean b = (VSBoolean)inB;
+      if (a.isChanged() || b.isChanged())
+      {
+        out.setValue(inA.getValue() && inB.getValue());
+        out.setChanged(true);
+      }
+    }
+  }
+
+
+}
+ 

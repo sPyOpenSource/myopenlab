@@ -1,0 +1,74 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+
+public class XSin extends JVSMain
+{
+  private Image image;
+  private VSDouble in;
+  private VSDouble out= new VSDouble();
+
+  public void xpaint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
+  public void init()
+  {
+    initPins(0,1,0,1);
+    setSize(40,30);
+    initPinVisibility(false,true,false,true);
+    element.jSetInnerBorderVisibility(false);
+
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+
+    setPin(0,ExternalIF.C_DOUBLE,element.PIN_OUTPUT);
+    setPin(1,ExternalIF.C_DOUBLE,element.PIN_INPUT);
+
+    element.jSetPinDescription(0,"f(x)");
+    element.jSetPinDescription(1,"x");
+
+    element.jSetCaptionVisible(true);
+    element.jSetCaption("sin");
+
+    setName("sin");
+  }
+
+  public void initInputPins()
+  {
+    in=(VSDouble)element.getPinInputReference(1);
+  }
+
+  public void initOutputPins()
+  {
+    element.setPinOutputReference(0,out);
+  }
+
+  public void process()
+  {
+  
+   if (in instanceof VSDouble)
+    {
+      out.setChanged(false);
+      if (in.isChanged())
+      {
+        out.setValue(Math.sin(in.getValue()));
+        out.setChanged(true);
+      }
+    }
+
+
+  }
+}
+

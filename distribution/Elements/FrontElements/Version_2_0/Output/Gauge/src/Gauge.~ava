@@ -1,0 +1,78 @@
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.*;
+import javax.swing.*;
+import java.text.*;
+import java.awt.geom.Rectangle2D;
+
+import VisualLogic.variables.*;
+import tools.*;
+
+public class Gauge extends JVSMain
+{
+    private double value0;
+    private Image image;
+    ExternalIF panelElement;
+
+    private VSDouble in;
+
+  public void onDispose()
+  {
+   image.flush();
+   image=null;
+  }
+
+
+    public void paint(java.awt.Graphics g)
+    {
+     drawImageCentred(g,image);
+    }
+
+    public void init()
+    {
+        initPins(0,0,0,1);
+        setSize(40,25);
+
+        initPinVisibility(false,false,false,true);
+        image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+
+        setPin(0,ExternalIF.C_DOUBLE,element.PIN_INPUT);
+
+        setName("Gauge2");
+    }
+
+
+
+    public void initInputPins()
+    {
+      in=(VSDouble)element.getPinInputReference(0);
+    }
+
+    public void initOutputPins()
+    {
+    }
+  public void start()
+  {
+    value0=-1;
+  }
+
+  public void process()
+  {
+
+    if (in!=null && value0!=in.getValue())
+    {
+     value0=in.getValue();
+     panelElement=element.getPanelElement();
+     panelElement.jProcessPanel(0,value0,this);
+     panelElement.jRepaint();
+    }
+
+  }
+
+}
+ 

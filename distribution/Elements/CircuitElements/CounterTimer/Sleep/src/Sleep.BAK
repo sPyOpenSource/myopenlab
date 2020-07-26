@@ -1,0 +1,71 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.Timer;
+import javax.swing.*;
+
+public class Sleep extends JVSMain
+{
+  private VSInteger time=new VSInteger(); // in ms
+  private Image image;
+  
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+   
+  public void init()
+  {
+    initPins(0,0,0,0);
+    setSize(30,30);
+
+    initPinVisibility(false,false,false,false);
+
+    String fileName=element.jGetSourcePath()+"icon.gif";
+    image=element.jLoadImage(fileName);
+    
+    element.jSetCaptionVisible(true);
+    element.jSetCaption("Sleep");
+
+    setName("Sleep");
+    time.setValue(1);
+  }
+
+
+  public void process()
+  {
+    try
+    {
+      Thread.sleep(time.getValue());
+    } catch(Exception ex){}
+  }
+  
+  
+
+  public void setPropertyEditor()
+  {
+    element.jAddPEItem("sleep [ms]",time, 1,5000);
+  }
+
+
+  public void loadFromStream(java.io.FileInputStream fis)
+  {
+      time.loadFromStream(fis);
+  }
+
+  public void saveToStream(java.io.FileOutputStream fos)
+  {
+      time.saveToStream(fos);
+  }
+
+}

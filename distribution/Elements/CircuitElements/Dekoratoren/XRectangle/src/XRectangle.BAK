@@ -1,0 +1,82 @@
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.Timer;
+import javax.swing.*;
+
+
+
+public class XRectangle extends JVSMain
+{
+
+  private VSColor fillColor = new VSColor(Color.LIGHT_GRAY);
+  private VSColor strokeColor = new VSColor(Color.black);
+  private VSInteger strokeWidth = new VSInteger();
+
+  public void paint(java.awt.Graphics g)
+  {
+    if (element!=null)
+    {
+      Graphics2D g2 = (Graphics2D)g;
+
+       g2.setColor(Color.black);
+       g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,RenderingHints.VALUE_ANTIALIAS_ON);
+
+       Rectangle r=element.jGetBounds();
+
+       g2.setStroke(new BasicStroke(strokeWidth.getValue()));
+       g2.setColor(fillColor.getValue());
+       g2.fillRect(r.x,r.y,r.width-1,r.height-1);
+
+       g2.setColor(strokeColor.getValue());
+       int c=strokeWidth.getValue()/2;
+       g2.drawRect(r.x-1+c,r.y-1+c,r.width-c*2,r.height-c*2);
+    }
+  }
+   
+  public void init()
+  {
+    initPins(0,0,0,0);
+    setSize(60,60);
+    initPinVisibility(false,false,false,false);
+    element.jSetResizable(true);
+    element.jSetInnerBorderVisibility(false);
+
+    setName("Rectangle");
+
+    element.jSetResizable(true);
+    strokeWidth.setValue(1);
+  }
+
+
+  public void setPropertyEditor()
+  {
+    element.jAddPEItem("Fill-Color",fillColor, 0,0);
+    element.jAddPEItem("Stroke-Color",strokeColor, 0,0);
+    element.jAddPEItem("Stroke-Width",strokeWidth, 0,100);
+  }
+
+  public void propertyChanged(Object o)
+  {
+    element.jRepaint();
+  }
+
+  public void loadFromStream(java.io.FileInputStream fis)
+  {
+      fillColor.loadFromStream(fis);
+      strokeColor.loadFromStream(fis);
+      strokeWidth.loadFromStream(fis);
+  }
+
+  public void saveToStream(java.io.FileOutputStream fos)
+  {
+      fillColor.saveToStream(fos);
+      strokeColor.saveToStream(fos);
+      strokeWidth.saveToStream(fos);
+  }
+  
+
+}

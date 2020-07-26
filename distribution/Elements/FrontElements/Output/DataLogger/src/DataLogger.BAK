@@ -1,0 +1,104 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+import tools.*;
+import VisualLogic.variables.*;
+
+
+public class DataLogger extends JVSMain
+{
+  private ExternalIF panelElement=null;
+  private Image image;
+
+  public VSDouble in=null;
+  public VSBoolean reset=null;
+
+  public void onDispose()
+  {
+   image.flush();
+   image=null;
+  }
+
+
+  public DataLogger()
+  {
+    super();
+  }
+  
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
+  public void init()
+  {
+    initPins(0,0,0,2);
+    setSize(40,30);
+    initPinVisibility(false,false,false,true);
+
+
+    setPin(0,ExternalIF.C_DOUBLE,element.PIN_INPUT);
+    setPin(1,ExternalIF.C_BOOLEAN,element.PIN_INPUT);
+
+    element.jSetPinDescription(0,"In");
+    element.jSetPinDescription(1,"Reset");
+    
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+    
+
+    element.jSetCaptionVisible(true);
+    element.jSetCaption("Logger");
+
+    setName("DataLogger");
+  }
+
+
+  public void initInputPins()
+  {
+    in=(VSDouble)element.getPinInputReference(0);
+    reset=(VSBoolean)element.getPinInputReference(1);
+  }
+
+  public void initOutputPins()
+  {
+
+  }
+
+  public void process()
+  {
+    if (in!=null && panelElement!=null)
+    {
+      if (reset.getValue()==true)
+      {
+        panelElement.jProcessPanel(0,1,in);
+      } else
+      {
+        panelElement.jProcessPanel(0,0,in);
+      }
+
+    }
+  }
+  
+  public void start()
+  {
+    panelElement=element.getPanelElement();
+    if (panelElement!=null) panelElement.jRepaint();
+  }
+
+
+    
+
+
+
+}

@@ -1,0 +1,6 @@
+ISDIRECTORY  = FALSE
+CAPTION      = GetFile
+Jar          = bin/GetFile.jar
+ClassCircuit = GetFile
+Classfront   = ReglerPanel
+Icon         = bin/GetFile.gif

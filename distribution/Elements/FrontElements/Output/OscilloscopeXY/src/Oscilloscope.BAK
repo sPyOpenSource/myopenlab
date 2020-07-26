@@ -1,0 +1,86 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+import tools.*;
+import VisualLogic.variables.*;
+
+
+public class Oscilloscope extends JVSMain
+{
+  private ExternalIF panelElement=null;
+  private Image image;
+
+  public VSGroup in=null;
+
+
+  public Oscilloscope()
+  {
+    super();
+  }
+  
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
+  public void init()
+  {
+    initPins(0,0,0,1);
+    setSize(40,30);
+    initPinVisibility(false,false,false,true);
+
+    setPin(0,ExternalIF.C_GROUP,element.PIN_INPUT);
+
+    element.jSetPinDescription(0,"In");
+    
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+    
+
+    element.jSetCaptionVisible(true);
+    element.jSetCaption("osc");
+
+    setName("Oscilloscope");
+  }
+
+
+  public void initInputPins()
+  {
+    in=(VSGroup)element.getPinInputReference(0);
+  }
+
+  public void initOutputPins()
+  {
+
+  }
+
+  public void process()
+  {
+    if (in!=null && panelElement!=null)
+    {
+      panelElement.jProcessPanel(0,0,in);
+    }
+  }
+  
+  public void start()
+  {
+    panelElement=element.getPanelElement();
+    if (panelElement!=null) panelElement.jRepaint();
+  }
+
+
+    
+
+
+
+}

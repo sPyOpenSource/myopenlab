@@ -1,0 +1,225 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+import java.awt.MediaTracker;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.image.BufferedImage;
+import java.awt.image.MemoryImageSource;
+import java.awt.image.PixelGrabber;
+
+// Requires JMF!
+import javax.media.Buffer;
+import javax.media.CaptureDeviceInfo;
+import javax.media.CaptureDeviceManager;
+import javax.media.Manager;
+import javax.media.Player;
+import javax.media.control.FrameGrabbingControl;
+import javax.media.format.VideoFormat;
+import javax.media.util.BufferToImage;
+
+
+public class Cam extends JVSMain
+{
+  private Image image;
+  private Player player=null;
+  private VSBoolean open;
+  private VSImage24 out=new VSImage24(1,1);
+  private VSInteger delay=new VSInteger(2500);
+  private VSString captureDevice=new VSString("vfw:Microsoft WDM Image Capture (Win32):0");
+
+  public void onDispose()
+  {
+    if (image!=null)
+    {
+      image.flush();
+      image=null;
+    }
+  }
+
+
+  public void paint(java.awt.Graphics g)
+  {
+    if (image!=null) drawImageCentred(g,image);
+  }
+
+  public void init()
+  {
+    initPins(0,1,0,1);
+    setSize(32+24,32+4);
+
+    initPinVisibility(false,true,false,true);
+
+    element.jSetInnerBorderVisibility(true);
+
+    setPin(0,ExternalIF.C_IMAGE,element.PIN_OUTPUT); // Image
+    setPin(1,ExternalIF.C_BOOLEAN,element.PIN_INPUT); // open
+
+    element.jSetPinDescription(0,"Image");
+    element.jSetPinDescription(1,"Open");
+
+    String fileName=element.jGetSourcePath()+"icon.gif";
+    image=element.jLoadImage(fileName);
+
+    element.jSetCaptionVisible(true);
+    element.jSetCaption("Cam");
+    setName("Cam");
+  }
+
+
+
+  public void initInputPins()
+  {
+    open=(VSBoolean)element.getPinInputReference(1);
+    
+    if (open==null)
+    {
+      open = new VSBoolean(false);
+    }
+  }
+
+  public void initOutputPins()
+  {
+    element.setPinOutputReference(0,out);
+  }
+  
+  
+   public int[] image2Pixel(Image imgx,int w, int h)
+   {
+    int[] pixels = new int[w * h];
+    PixelGrabber pg = new PixelGrabber(imgx, 0, 0, w, h, pixels, 0, w);
+    try {
+        pg.grabPixels();
+    } catch (InterruptedException e)
+    {
+     element.jException("Fehler in Methode image2Pixel: "+ e.toString());
+    }
+
+    return pixels;
+  }
+  
+
+  public void stop()
+  {
+
+    if (player!=null)
+    {
+      player.stop();
+      player.close();
+      player.deallocate();
+      player=null;
+    }
+
+  }
+  
+  public void setPropertyEditor()
+  {
+    element.jAddPEItem("Capture Device",captureDevice, 0,0);
+    element.jAddPEItem("Start Delay",delay, 1,6000);
+  }
+
+  public void propertyChanged(Object o)
+  {
+   // element.jRepaint();
+  }
+
+  
+
+  public void loadFromStream(java.io.FileInputStream fis)
+  {
+    captureDevice.loadFromStream(fis);
+    delay.loadFromStream(fis);
+
+
+  }
+
+  public void saveToStream(java.io.FileOutputStream fos)
+  {
+    captureDevice.saveToStream(fos);
+    delay.saveToStream(fos);
+  }
+
+  
+  
+
+  public void process()
+  {
+    if (open!=null)
+    {
+      if (open.isChanged() )
+      {
+         if (open.getValue()==true)
+         {
+            // Create capture device
+
+            try
+            {
+              CaptureDeviceInfo deviceInfo = CaptureDeviceManager.getDevice(captureDevice.getValue());
+              player = Manager.createRealizedPlayer(deviceInfo.getLocator());
+              player.start();
+            }
+            catch (Exception ex)
+            {
+              element.jException("exception in Methode process() "+ex);
+              player=null;
+            }
+
+
+
+            try
+            {
+              // Wait a few seconds for camera to initialise (otherwise img==null)
+              Thread.sleep(delay.getValue());
+            } catch (Exception ex) { element.jException("Thread exception "+ex); }
+
+           out.setChanged(true);
+         }
+
+      } else
+      {
+        if (player!=null && open.getValue()==true)
+        {
+          try
+          {
+            // Grab a frame from the capture device
+            FrameGrabbingControl frameGrabber = (FrameGrabbingControl)player.getControl("javax.media.control.FrameGrabbingControl");
+            Buffer buf = frameGrabber.grabFrame();
+
+            // Convert frame to an buffered image so it can be processed and saved
+            Image img = (new BufferToImage((VideoFormat)buf.getFormat()).createImage(buf));
+            BufferedImage buffImg = new BufferedImage(img.getWidth(null), img.getHeight(null), BufferedImage.TYPE_INT_RGB);
+
+
+            try
+            {
+              Thread.sleep(10);
+            } catch (Exception ex) { element.jException("Thread exception "+ex); }
+
+            int[] pixels=image2Pixel(img,img.getWidth(null), img.getHeight(null));
+            out.setPixels(pixels,img.getWidth(null), img.getHeight(null));
+            out.setChanged(true);
+            img.flush();
+            img=null;
+
+           } catch (Exception ex) { element.jException("exception "+ex); }
+        } else
+        {
+          stop();
+          out.setChanged(false);
+        }
+
+
+      }
+    }
+  }
+
+}
+

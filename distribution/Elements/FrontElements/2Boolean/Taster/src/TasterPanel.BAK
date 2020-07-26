@@ -1,0 +1,94 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+import tools.*;
+
+import SVGViewer.*;
+
+public class TasterPanel extends JVSMain
+{
+  private SVGManager svgManager = new SVGManager();
+  private SVGObject svgOn;
+  private ExternalIF circuitElement;
+
+  private int sizeW=30;
+  private int sizeH=30;
+  private boolean down=false;
+
+
+
+   public void paint(java.awt.Graphics g)
+   {
+      if (element!=null)
+      {
+         Graphics2D g2=(Graphics2D)g;
+         Rectangle bounds=element.jGetBounds();
+
+         if (down)
+         {
+            if (svgOn!=null)  svgOn.setFillColor(Color.red);
+         } else
+         {
+            if (svgOn!=null)  svgOn.setFillColor(Color.black);
+         }
+
+         svgManager.paint((Graphics2D)g,(int)bounds.getWidth(),(int)bounds.getHeight());
+
+      }
+   }
+
+  public void init()
+  {
+    initPins(0,0,0,0);
+    setSize(sizeW,sizeH);
+    initPinVisibility(false,false,false,false);
+
+    element.jSetInnerBorderVisibility(false);
+    element.jSetResizable(true);
+    element.jSetResizeSynchron(true);
+    svgManager.loadFromFile(element.jGetSourcePath()+"taster.svg");
+    svgOn= svgManager.getSVGObject("on");
+    
+    setName("Taster");
+  }
+
+    private void setValue(boolean bol)
+    {
+       circuitElement=element.getCircuitElement();
+       if (circuitElement!=null) circuitElement.Change(0,new VSBoolean(bol));
+    }
+
+
+  public void start()
+  {
+      down=false;
+      setValue(down);
+      element.jRepaint();
+  }
+
+  public void mouseReleased(MouseEvent e)
+  {
+      down=false;
+      setValue(down);
+      element.jRepaint();
+
+  }
+
+  public void xonMousePressed(MouseEvent e)
+  {
+    down=true;
+    setValue(down);
+    element.jRepaint();
+  }
+
+}
+

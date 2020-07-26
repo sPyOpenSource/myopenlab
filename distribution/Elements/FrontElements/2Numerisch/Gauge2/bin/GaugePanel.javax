@@ -1,0 +1,191 @@
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.*;
+import javax.swing.*;
+import java.text.*;
+import java.awt.geom.Rectangle2D;
+
+public class GaugePanel extends JVSMain implements PanelIF
+{
+  private double value0;
+
+  private VSDouble min= new VSDouble(0);
+  private VSDouble max= new VSDouble(100);
+  private VSDouble step= new VSDouble(10);
+  
+
+  public void processPanel(int pinIndex, double value, Object obj)
+  {
+    value0=value;
+  }
+
+
+  public Point getPointFromAngle(double angle,double vectorLaenge)
+  {
+    Point p = new Point();
+    p.x=(int)( vectorLaenge*Math.cos(angle) );
+    p.y=(int)( vectorLaenge*Math.sin(angle) );
+    
+    return p;
+  }
+
+  public void drawAnzeige(java.awt.Graphics g,int x, int y, int w, int h)
+  {
+      int mitteX=x+(w/2);
+      int mitteY=y+(h/2);
+
+      java.awt.Font fnt = new java.awt.Font("Courier", 1, 9);
+      g.setFont(fnt);
+      FontMetrics fm = g.getFontMetrics();
+      Rectangle2D  r = fm.getStringBounds(""+(int)max.getValue(),g);
+      DecimalFormat df = new DecimalFormat("0" );
+      
+      int maxStringWidth=(int)(r.getBounds().width);
+      int distance=8;
+      
+
+      element.jClearSubElements();
+
+
+      // draw Background
+      g.setColor(Color.white);
+      g.fillOval(x,y,w,h);
+      g.setColor(Color.black);
+      g.drawOval(x,y,w,h);
+
+
+      double f;
+      double grad;
+      double angle;
+
+      double value;
+      
+      
+      // Draw Linien
+      int x1=h/2-1;
+      int y1=0;
+      double vectorLaenge=Math.sqrt((x1*x1)+(y1*y1));
+
+
+      double prozent10=((max.getValue()-min.getValue())*step.getValue())/100;
+      if (prozent10<1) prozent10=1;
+      for (value=0;value<=max.getValue()-min.getValue();value+=prozent10)
+      {
+        f=270/(max.getValue()-min.getValue());
+        grad = -45+value*f;
+        angle=Math.toRadians(grad);
+
+        Point p1=getPointFromAngle(angle,vectorLaenge);
+        Point p2=getPointFromAngle(angle,vectorLaenge-distance);
+
+        g.drawLine(mitteX+p1.x,mitteY-p1.y,mitteX+p2.x,mitteY-p2.y);
+
+
+        String strValue = df.format(min.getValue()+value);
+        try
+        {
+          value=Double.parseDouble(strValue);
+        } catch(Exception ex){}
+
+        Rectangle2D rx = fm.getStringBounds(strValue,g);
+
+        int strMitteX=(int)rx.getCenterX();
+        int strMitteY=(int)rx.getCenterY();
+
+        Point p3=getPointFromAngle(angle,vectorLaenge-maxStringWidth/2-distance);
+        g.drawString(strValue, mitteX-p3.x-strMitteX, mitteY-p3.y-strMitteY);
+
+
+      }
+
+
+      // Draw Spitze
+
+      value=value0-min.getValue();
+
+      f=270/(max.getValue()-min.getValue());
+      grad = -45+value*f;
+      angle=Math.toRadians(grad);
+
+      x1=h/2-15;
+      y1=0;
+      double c=Math.sqrt((x1*x1)+(y1*y1));
+      int x2=(int)( c*Math.cos(angle) );
+      int y2=(int)( c*Math.sin(angle) );
+
+
+      if (value0>=min.getValue() && value0<=max.getValue())
+      {
+        g.setColor(Color.red);
+        g.drawLine(mitteX-1,mitteY, mitteX-x2-1, mitteY-y2);
+      }
+
+      // draw Spitze Deckel
+      g.setColor(Color.black);
+      g.fillOval(mitteX-5,mitteY-5,10,10);
+  }
+
+
+   public void paint(java.awt.Graphics g)
+   {
+     if (element!=null)
+     {
+        Rectangle bounds=element.jGetBounds();
+        drawAnzeige(g,bounds.x+1,bounds.y+1,bounds.width-2,bounds.height-2);
+     }
+   }
+   
+  public void init()
+  {
+      initPins(0,0,0,0);
+      setSize(180,180);
+      initPinVisibility(false,false,false,false);
+
+      element.jSetResizeSynchron(true);
+      element.jSetResizable(true);
+      setName("Gauge");
+      
+      element.jSetInnerBorderVisibility(false);
+      element.jSetMinimumSize(80,80);
+  }
+
+
+
+  public void setPropertyEditor()
+  {
+    element.jAddPEItem("min",min, 0,999999.0);
+    element.jAddPEItem("max",max, 0,999999.0);
+    element.jAddPEItem("step",step, 0,100000);
+  }
+
+  public void propertyChanged(Object o)
+  {
+    element.jRepaint();
+  }
+
+  public void loadFromStream(java.io.FileInputStream fis)
+  {
+    min.loadFromStream(fis);
+    max.loadFromStream(fis);
+    step.loadFromStream(fis);
+  }
+
+  public void saveToStream(java.io.FileOutputStream fos)
+  {
+    min.saveToStream(fos);
+    max.saveToStream(fos);
+    step.saveToStream(fos);
+  }
+
+
+}
+ 
+ 
+ 
+
+

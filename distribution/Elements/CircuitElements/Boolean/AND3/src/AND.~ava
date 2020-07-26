@@ -1,0 +1,86 @@
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.Rectangle2D;
+
+import tools.*;
+
+
+public class AND extends Gatter3
+{
+
+  private boolean oldValue;
+
+  public AND()
+  {
+    super(2,"And");
+  }
+
+
+  public void start()
+  {
+    super.start();
+    oldValue=false;
+    out.setValue(false);
+    element.notifyPin(0);
+  }
+
+  
+  public void process()
+  {
+    boolean last=false;
+    int c=0;
+
+
+    
+    for (int i=0;i<in.length;i++)
+    {
+      last=in[i].getValue();
+      if (last==true)
+      {
+        c++;
+      }
+    }
+    
+    /*boolean value;
+    
+    if (c==in.length)
+    {
+      value=true;
+    } else
+    {
+      value=false;
+    }
+
+
+
+    if (value!=oldValue)
+    {
+
+      oldValue=value;
+      started=true;
+      time1 = System.nanoTime();
+    }  */
+
+
+  }
+
+  public void processClock()
+  {
+    if (started)
+    {
+      time2 = System.nanoTime();
+      long diff=time2-time1;
+      if (diff>=delay.getValue()*1000)
+      {
+        out.setValue(oldValue);
+        element.notifyPin(0);
+        started=false;
+      }
+    }
+  }
+
+}
+ 

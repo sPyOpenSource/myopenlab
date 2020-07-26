@@ -1,0 +1,349 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.*;
+import javax.swing.*;
+import java.text.*;
+import java.awt.geom.Rectangle2D;
+
+
+public class ReglerPanel extends JVSMain
+{
+  private VSDouble value0=new VSDouble();
+  private VSDouble initValue=new VSDouble();
+  
+  private double oldValue;
+  private VSDouble min=new VSDouble(0);
+  private VSDouble max=new VSDouble(100);
+  private VSDouble step=new VSDouble(10);
+  private VSBoolean showText = new VSBoolean();
+  private int labelC=0;
+  
+
+  private java.awt.Font fnt = new java.awt.Font("Courier", 1, 9);
+  
+  
+  private ExternalIF circuitElement;
+
+
+  public Point getPointFromAngle(double angle,double vectorLaenge)
+  {
+    Point p = new Point();
+    p.x=(int)( vectorLaenge*Math.cos(angle) );
+    p.y=(int)( vectorLaenge*Math.sin(angle) );
+
+    return p;
+  }
+  public void drawAnzeige(java.awt.Graphics g,int x, int y, int w, int h)
+  {
+      int mitteX=x+(w/2);
+      int mitteY=y+(h/2);
+      
+      
+      element.jClearSubElements();
+      labelC=0;
+
+      g.setFont(fnt);
+
+      FontMetrics fm = g.getFontMetrics();
+      Rectangle2D   r = fm.getStringBounds(""+(int)max.getValue(),g);
+      DecimalFormat df = new DecimalFormat("0");
+
+      int maxStringWidth=(int)(r.getBounds().width);
+      int distance=8;
+
+
+
+      double f;
+      double grad;
+      double angle;
+
+      g.setColor(Color.black);
+      distance=maxStringWidth+15;
+      if (showText.getValue())
+      {
+        g.drawArc(x+distance,y+distance,w-distance*2,h-distance*2,-45,270);
+      }
+
+      //g.drawOval(x+distance,y+distance,w-distance*2,h-distance*2);
+      
+      if (showText.getValue())
+      {
+        distance=maxStringWidth+25;
+      } else distance=2;
+
+
+      g.setColor(new Color(150,150,200));
+      g.fillOval(x+distance,y+distance,w-distance*2,h-distance*2);
+      g.setColor(Color.black);
+      g.drawOval(x+distance,y+distance,w-distance*2,h-distance*2);
+
+
+
+      // Draw Linien
+
+      double c;
+      int x2,y2;
+
+      double value;
+      
+      // Draw Linien
+      int x1=w/2;
+      int y1=0;
+      double vectorLaenge=Math.sqrt((x1*x1)+(y1*y1))-maxStringWidth-5;
+
+
+      if (showText.getValue())
+      {
+
+        double prozent10=((max.getValue()-min.getValue())*step.getValue())/100;
+
+        if (prozent10<1) prozent10=1;
+
+        for (value=0;value<=max.getValue()-min.getValue();value+=prozent10)
+        {
+          f=270/(max.getValue()-min.getValue());
+          grad = -45+value*f;
+          angle=Math.toRadians(grad);
+
+          Point p1=getPointFromAngle(angle,vectorLaenge);
+          Point p2=getPointFromAngle(angle,vectorLaenge-8);
+
+          g.drawLine(mitteX+p1.x,mitteY-p1.y,mitteX+p2.x,mitteY-p2.y);
+
+          String strValue = df.format(min.getValue()+value);
+          try
+          {
+            value=Double.parseDouble(strValue);
+          } catch(Exception ex){}
+
+          Rectangle2D rx = fm.getStringBounds(strValue,g);
+
+          int strMitteX=(int)rx.getCenterX();
+          int strMitteY=(int)rx.getCenterY();
+
+          Point p3=getPointFromAngle(angle,vectorLaenge+15);
+
+          g.setColor(Color.black);
+          g.drawString(strValue, mitteX-p3.x-strMitteX, mitteY-p3.y-strMitteY+10);
+        }
+      }
+      /*g.setColor(Color.white);
+      g.fillOval(x+11,y+11,w-22,h-22);*/
+
+      
+
+
+      g.setColor(Color.black);
+
+      // Draw Spitze
+
+
+      value=value0.getValue()-min.getValue();
+
+      f=270/(max.getValue()-min.getValue());
+      grad = -45+value*f;
+      angle=Math.toRadians(grad);
+
+
+      x1=h-90;
+      y1=0;
+      c=Math.sqrt((x1*x1)+(y1*y1));
+      x2=(int)( c*Math.cos(angle) );
+      y2=(int)( c*Math.sin(angle) );
+
+
+      if (value0.getValue()>=min.getValue() && value0.getValue()<=max.getValue())
+      {
+        g.setColor(Color.BLUE);
+        //g.drawLine(mitteX-1,mitteY, mitteX-x2-1, mitteY-y2);
+        int x_1=(mitteX+mitteX-x2)/2;
+        int y_1=(mitteY+mitteY-y2)/2;
+        g.fillOval(x_1-7,y_1-7,14,14);
+      }
+  }
+
+
+   public void xpaint(java.awt.Graphics g)
+   {
+     if (element!=null)
+     {
+        Rectangle bounds=element.jGetBounds();
+        drawAnzeige(g,1,1,bounds.width-2,bounds.height-2);
+     }
+   }
+   
+  public void init()
+  {
+    initPins(0,0,0,0);
+    setSize(150,150);
+    initPinVisibility(false,false,false,false);
+
+    element.jSetInnerBorderVisibility(false);
+
+    element.jSetResizeSynchron(true);
+    element.jSetResizable(true);
+    
+    setName("Multischalter");
+    showText.setValue(true);
+    element.jSetMinimumSize(10,10);
+  }
+
+    public void resetValues()
+    {
+
+    }
+
+   
+    public void start()
+    {
+      value0.setValue(initValue.getValue());
+      oldValue=value0.getValue()+1;
+      element.jRepaint();
+      circuitElement=element.getCircuitElement();
+      circuitElement.Change(0,(Object)value0);
+    }
+    
+    public void stop()
+    {
+      oldValue=value0.getValue()+1;
+    }
+
+
+  
+  public void mousePressed(MouseEvent e)
+  {
+    proc(e);
+  }
+  public void mouseReleased(MouseEvent e)
+  {
+    proc(e);
+  }
+  public void mouseMoved(MouseEvent e)
+  {
+
+  }
+  
+  public void mouseDragged(MouseEvent e)
+  {
+    proc(e);
+  }
+
+
+  private void proc(MouseEvent e)
+  {
+      Rectangle bounds=element.jGetBounds();
+
+      int mitteX=(bounds.width/2);
+      int mitteY=(bounds.height/2);
+
+      int x=e.getX()-mitteX;
+      int y=bounds.height-e.getY()-mitteY;
+
+      double grad = Math.abs(Math.atan((double)y/(double)x));
+      double alpha=Math.toDegrees(grad);
+
+      double angle=0;
+
+      double q=45;
+      if (x<0 && y<=0) angle=0+90-q-alpha;else
+      if (x<=0 && y>0) angle=90-q+alpha;else
+      if (x>0 && y>=0) angle=180-q+90-alpha;else
+      if (x>=0 && y<0) angle=270-q+alpha;
+
+      double f = 360.0/270.0;
+      value0.setValue(angle*f);
+
+      f=(max.getValue()-min.getValue())/360;
+      value0.setValue(min.getValue()+value0.getValue()*f);
+      
+      if (value0.getValue()<min.getValue()) value0.setValue(min.getValue());
+      if (value0.getValue()>max.getValue()) value0.setValue(max.getValue());
+
+      int val=(int)Math.round(value0.getValue());
+      if (value0.getValue()>(((double)val)-0.2) && value0.getValue()<((double)val)+0.2)
+      {
+
+         value0.setValue(val);
+
+       if (oldValue!=val)
+       {
+         circuitElement.Change(0,(Object)value0);
+         oldValue=val;
+         element.jRepaint();
+       }
+      }
+
+  }
+
+  public void propertyChanged(Object o)
+  {
+   /* if (showText.getValue()==true)
+    {
+      element.jSetMinimumSize(90,90);
+
+      if (element.jGetWidth()<90)
+      {
+        element.jSetSize(90,element.jGetHeight());
+      }
+      if (element.jGetHeight()<90)
+      {
+        element.jSetSize(element.jGetWidth(),90);
+      }
+
+    } else
+    {
+      element.jSetMinimumSize(10,10);
+    }*/
+    element.jRepaint();
+  }
+
+
+  public void setPropertyEditor()
+  {
+    element.jAddPEItem("Min",min, 0,1000000);
+    element.jAddPEItem("Max",max, 0,1000000);
+    element.jAddPEItem("Step",step, 0,1000);
+    element.jAddPEItem("Position",value0, 0,9999999);
+    element.jAddPEItem("Show Text",showText, 0,0);
+    element.jAddPEItem("Init-Value",initValue, 0,9999999);
+  }
+
+
+  public void loadFromStream(java.io.FileInputStream fis)
+  {
+      min.loadFromStream(fis);
+      max.loadFromStream(fis);
+      step.loadFromStream(fis);
+      initValue.loadFromStream(fis);
+      showText.loadFromStream(fis);
+
+      if (min.getValue()>=max.getValue()) min.setValue(max.getValue()-1);
+      oldValue=value0.getValue()+1;
+
+      
+      propertyChanged(null);
+  }
+
+  public void saveToStream(java.io.FileOutputStream fos)
+  {
+      min.saveToStream(fos);
+      max.saveToStream(fos);
+      step.saveToStream(fos);
+      initValue.saveToStream(fos);
+      showText.saveToStream(fos);
+  }
+
+}
+ 
+ 
+ 
+

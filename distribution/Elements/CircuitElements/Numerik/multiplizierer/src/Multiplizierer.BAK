@@ -1,0 +1,76 @@
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+
+
+public class Multiplizierer extends JVSMain
+{
+  private Image image;
+  private VSDouble inA;
+  private VSDouble inB;
+  private VSDouble out= new VSDouble();
+
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
+  public void init()
+  {
+    initPins(0,1,0,2);
+    setSize(40,25);
+    element.jSetInnerBorderVisibility(false);
+    element.jSetTopPinsVisible(false);
+    element.jSetBottomPinsVisible(false);
+
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+
+    element.jInitPins();
+
+    setPin(0,ExternalIF.C_DOUBLE,element.PIN_OUTPUT);
+    setPin(1,ExternalIF.C_DOUBLE,element.PIN_INPUT);
+    setPin(2,ExternalIF.C_DOUBLE,element.PIN_INPUT);
+
+    setName("Multiplizierer");
+  }
+
+
+
+  public void initInputPins()
+  {
+    inA=(VSDouble)element.getPinInputReference(1);
+    inB=(VSDouble)element.getPinInputReference(2);
+  }
+
+  public void initOutputPins()
+  {
+    element.setPinOutputReference(0,out);
+  }
+
+
+
+
+  public void process()
+  {
+     if (inA instanceof VSDouble && inB instanceof VSDouble)
+    {
+      out.setChanged(false);
+      VSDouble a = (VSDouble)inA;
+      VSDouble b = (VSDouble)inB;
+      if (a.isChanged() || b.isChanged())
+      {
+        out.setValue(a.getValue()*b.getValue());
+        out.setChanged(true);
+      }
+    }
+
+  }
+
+
+}
+

@@ -1,0 +1,113 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+
+public class DeGruppierer extends JVSMain
+{
+  private VSGroup in;
+  private VSObject out[] ;
+  private int anzPins=2;
+  private Image image;
+
+
+   public void xpaint(java.awt.Graphics g)
+   {
+     drawImageCentred(g,image);
+   }
+
+  public void init()
+  {
+    initPins(0,anzPins,0,1);
+    setSize(50,15+(anzPins*10));
+    initPinVisibility(false,true,false,true);
+
+    element.jSetInnerBorderVisibility(true);
+    
+    element.jSetResizable(false);
+
+    setName("#DE-GRUPPIERER#");
+
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+    element.jInitPins();
+    setPin(anzPins,ExternalIF.C_GROUP,element.PIN_INPUT);
+
+  }
+
+  public void initInputPins()
+  {
+    anzPins=element.jGetAnzahlPinsRight();
+    in=(VSGroup)element.getPinInputReference(anzPins);
+  }
+
+  public void initOutputPins()
+  {
+    anzPins=element.jGetAnzahlPinsRight();
+    
+    out = new VSObject[anzPins];
+    for (int i=0;i<anzPins;i++)
+    {
+      out[i]=element.jCreatePinDataType(i);
+      element.setPinOutputReference(i,out[i]);
+    }
+
+  }
+
+  public void process()
+  {
+    if (in!=null && out!=null)
+    {
+
+      for (int i=0;i<in.list.size();i++)
+      {
+        VSObject b=(VSObject)in.list.get(i);
+        if (b!=null)
+        {
+           out[i].copyValueFrom(b);
+        }
+        
+      }
+      
+    }
+
+  }
+
+  
+
+  public void start()
+  {
+  }
+
+  public void stop()
+  {
+  }
+
+
+  public void loadFromXML(org.w3c.dom.Element nodeElement)
+  {
+      anzPins=Integer.valueOf(nodeElement.getAttribute("AnzPins"));
+      init();
+      element.jRepaint();
+
+  }
+
+  public void saveToXML(org.w3c.dom.Element nodeElement)
+  {
+    anzPins=element.jGetAnzahlPinsRight();
+    nodeElement.setAttribute("AnzPins",""+anzPins );
+  }
+
+}
+
+
+
+

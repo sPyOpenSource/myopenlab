@@ -1,0 +1,6 @@
+javac -d ..\bin  *.java
+cd ..
+cd bin
+jar -cvf  Sqrt.jar *.class 
+del *.class
+cmd

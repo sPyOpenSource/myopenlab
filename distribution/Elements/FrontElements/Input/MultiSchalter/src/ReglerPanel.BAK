@@ -1,0 +1,68 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 03.02.2006           *
+//********************************
+
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.*;
+import javax.swing.*;
+
+
+public class ReglerPanel extends CustomAnalogComp
+{
+
+  private ExternalIF circuitElement;
+
+  // aus PanelIF
+  public void processPanel(int pinIndex, double value, Object obj)
+  {
+    setValue(value);
+  }
+
+  public void init()
+  {
+    super.init();
+
+    nibbleColor.setValue(Color.RED);
+    buttonColor.setValue(new Color(200,150,150));
+    max.setValue(10);
+
+    generateFromNumbersValues();
+    generateFromValuesSubElements();
+    captions.setText(getTextWithKomma());
+    knobSizeInProzent.setValue(36);
+    nibbleLenInProzent.setValue(30);
+    nibbleCircleSizeInProzent.setValue(7);
+
+    showNibbleAsCircle.setValue(true);
+    setSize(80,80);
+  }
+
+
+  public void start()
+  {
+    super.start();
+    circuitElement=element.getCircuitElement();
+  }
+
+
+
+  public void processProc()
+  {
+      int val=(int)Math.round(value0.getValue());
+      if (value0.getValue()>(((double)val)-0.2) && value0.getValue()<((double)val)+0.2)
+      {
+         value0.setValue(val);
+      } else value0.setValue(oldValue);
+
+  }
+
+
+}
+

@@ -1,0 +1,73 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 10.08.2005           *
+//********************************
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import tools.*;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.text.*;
+import java.awt.geom.Rectangle2D;
+
+public class FuellstandAnzeige extends JVSMain
+{
+  private double oldValue;
+  private ExternalIF panelElement;
+  private Image image;
+  private VSDouble in=null;
+  
+
+   public void paint(java.awt.Graphics g)
+   {
+      drawImageCentred(g,image);
+   }
+
+  public void init()
+  {
+    initPins(0,0,0,1);
+    setSize(35,25);
+    
+    element.jSetInnerBorderVisibility(false);
+    element.jSetTopPinsVisible(false);
+    element.jSetRightPinsVisible(false);
+    element.jSetBottomPinsVisible(false);
+    
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+    
+    setPin(0,ExternalIF.C_DOUBLE,element.PIN_INPUT);
+
+    element.jSetCaptionVisible(true);
+    element.jSetCaption("Fuellstandanzeige");
+
+    setName("Fuellstandanzeige");
+  }
+
+
+  public void initInputPins()
+  {
+    in=(VSDouble)element.getPinInputReference(0);
+  }
+
+  public void initOutputPins(){}
+
+  public void process()
+  {
+
+    if (in!=null && in.getValue()!=oldValue)
+    {
+     panelElement = element.getPanelElement();
+     if (panelElement!=null)
+     {
+       panelElement.jProcessPanel(0,in.getValue(),(Object)this);
+       panelElement.jRepaint();
+       oldValue=in.getValue();
+     }
+    }
+  }
+
+}
+

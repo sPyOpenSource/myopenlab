@@ -1,0 +1,46 @@
+
+import VisualLogic.*;
+import java.awt.*;
+import java.awt.event.*;
+import tools.*;
+
+
+public class XATan extends JVSMain
+{
+  private Image image;
+
+  public void xpaint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
+  public void xsetExternalIF(ExternalIF externalIF)
+  {
+    init(externalIF,40,30,0,1,0,1);
+    element.jSetInnerBorderVisibility(false);
+    element.jSetTopPinsVisible(false);
+    element.jSetBottomPinsVisible(false);
+
+
+    /*element.jSetPinDescription(0,"y");
+    element.jSetPinDescription(1,"x");*/
+
+    image=element.jLoadImage(element.jGetSourcePath()+"ATan.GIF");
+  }
+
+
+  public void xonProcess()
+  {
+    double pinX=element.readPin(1);
+
+    element.writePin(0,Math.atan(pinX));
+  }
+
+
+  public String xgetName()
+  {
+   return "ATAN";
+  }
+
+}
+

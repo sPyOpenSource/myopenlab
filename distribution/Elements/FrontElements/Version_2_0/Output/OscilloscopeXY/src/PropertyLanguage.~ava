@@ -1,0 +1,25 @@
+/*
+ * PropertyLanguage.java
+ *
+ * Created on 19. November 2006, 08:05
+ *
+ * To change this template, choose Tools | Template Manager
+ * and open the template in the editor.
+ */
+
+
+/**
+ *
+ * @author Carmelo
+ */
+public class PropertyLanguage
+{
+    public String language;
+    public String text;    
+    
+    public PropertyLanguage(String language, String text)
+    {
+        this.language=language;
+        this.text=text;
+    }
+}

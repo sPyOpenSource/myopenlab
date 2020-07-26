@@ -1,0 +1,93 @@
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import java.awt.*;
+import java.awt.event.*;
+import tools.*;
+
+public class Canvas extends JVSMain
+{
+  private ExternalIF panelElement;
+  private Image image;
+  private boolean oldValue;
+  private int pinsCount =1;
+  
+  private VSObject in[];
+  
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
+  public void onDispose()
+  {
+   if (image!=null)
+   {
+     image.flush();
+     image=null;
+   }
+  }
+
+  public void init()
+  {
+    element.jSetInnerBorderVisibility(true);
+    initPins(0,0,0,pinsCount);
+    setSize(40,20+pinsCount*10);
+    initPinVisibility(false,false,false,true);
+    
+    for (int i=0;i<pinsCount;i++)
+    {
+      setPin(i,ExternalIF.C_GROUP,element.PIN_INPUT);
+    }
+
+
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+    setName("Canvas Render Engine 1.0");
+    
+    element.jSetResizable(false);
+  }
+  
+  public void initInputPins()
+  {
+
+    in = new VSObject[pinsCount];
+    for (int i=0;i<pinsCount;i++)
+    {
+      in[i]=(VSObject)element.getPinInputReference(i);
+      if (in[i]==null)
+      {
+       in[i]= new VSCanvas();
+      }
+      
+    }
+  }
+
+  public void initOutputPins()
+  {
+
+  }
+
+  public void start()
+  {
+    panelElement=element.getPanelElement();
+  }
+  
+  public void process()
+  {
+    if (in[0] instanceof VSGroup)
+    {
+      if (in[0]!=null)
+      {
+        if (panelElement!=null)
+        {
+         panelElement.jProcessPanel(0,0.0,in[0]);
+         panelElement.jRepaint();
+         
+        }
+      }
+    }
+  }
+  
+
+}
+ 

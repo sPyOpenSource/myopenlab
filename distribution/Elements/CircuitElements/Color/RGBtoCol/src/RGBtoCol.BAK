@@ -1,0 +1,108 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 18.01.2006           *
+//********************************
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import java.awt.*;
+import java.awt.event.*;
+import tools.*;
+
+
+public class RGBtoCol extends JVSMain
+{
+  public VSColor out=new VSColor(java.awt.Color.BLACK);
+  public VSInteger inR;
+  public VSInteger inG;
+  public VSInteger inB;
+
+  private Image image;
+
+  private boolean changed=false;
+
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
+  
+ public void init()
+  {
+    initPins(0,1,0,3);
+    setSize(35+20,35);
+    initPinVisibility(false,true,false,true);
+    
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+    
+    setPin(0,ExternalIF.C_COLOR,element.PIN_OUTPUT);
+    setPin(1,ExternalIF.C_INTEGER,element.PIN_INPUT);
+    setPin(2,ExternalIF.C_INTEGER,element.PIN_INPUT);
+    setPin(3,ExternalIF.C_INTEGER,element.PIN_INPUT);
+    
+    element.jSetPinDescription(0,"Out Color");
+    element.jSetPinDescription(1,"In Red");
+    element.jSetPinDescription(2,"In Green");
+    element.jSetPinDescription(3,"In Blue");
+
+    element.jSetCaptionVisible(true);
+    element.jSetCaption("RGB2Col");
+    setName("RGB2Col");
+  }
+
+
+
+  public void setPropertyEditor(){}
+
+  public void propertyChanged(Object o){}
+
+  public void initInputPins()
+  {
+    inR=(VSInteger)element.getPinInputReference(1);
+    inG=(VSInteger)element.getPinInputReference(2);
+    inB=(VSInteger)element.getPinInputReference(3);
+    
+    if (inR==null)
+    {
+      inR=new VSInteger(0);
+    }
+    
+    if (inG==null)
+    {
+      inG=new VSInteger(0);
+    }
+
+    if (inB==null)
+    {
+      inB=new VSInteger(0);
+    }
+
+  }
+
+  public void initOutputPins()
+  {
+    element.setPinOutputReference(0,out);
+  }
+  
+  public void start()
+  {
+    changed=true;
+  }
+  
+  public void process()
+  {
+    if (changed || inR.isChanged() || inG.isChanged() || inB.isChanged())
+    {
+      changed=false;
+
+      out.setValue(new Color(inR.getValue(),inG.getValue(),inB.getValue()));
+      out.setChanged(true);
+    } else out.setChanged(false);
+  }
+  
+    
+
+
+}
+

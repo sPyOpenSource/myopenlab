@@ -1,0 +1,103 @@
+//********************************
+//* Autor : Carmelo Salafia      *
+//* eMail : cswi@gmx.de          *
+//* Datum : 18.01.2006           *
+//********************************
+
+import VisualLogic.*;
+import VisualLogic.variables.*;
+import java.awt.*;
+import java.awt.event.*;
+import tools.*;
+
+
+public class ColToRGB extends JVSMain
+{
+  public VSInteger outR=new VSInteger(0);
+  public VSInteger outG=new VSInteger(0);
+  public VSInteger outB=new VSInteger(0);
+  
+  public VSColor in;
+
+  private Image image;
+
+  private boolean changed=false;
+
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
+  
+ public void init()
+  {
+    initPins(0,3,0,1);
+    setSize(35+20,35);
+    initPinVisibility(false,true,false,true);
+    
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+    
+    setPin(0,ExternalIF.C_INTEGER,element.PIN_OUTPUT);
+    setPin(1,ExternalIF.C_INTEGER,element.PIN_OUTPUT);
+    setPin(2,ExternalIF.C_INTEGER,element.PIN_OUTPUT);
+    
+    setPin(3,ExternalIF.C_COLOR,element.PIN_INPUT);
+    
+    element.jSetPinDescription(0,"Red");
+    element.jSetPinDescription(1,"Green");
+    element.jSetPinDescription(2,"Blue");
+    element.jSetPinDescription(3,"Color");
+
+    element.jSetCaptionVisible(true);
+    element.jSetCaption("Col2RGB");
+    setName("Col2RGB");
+  }
+
+
+
+  public void setPropertyEditor(){}
+
+  public void propertyChanged(Object o){}
+
+  public void initInputPins()
+  {
+    in=(VSColor)element.getPinInputReference(3);
+
+    if (in==null)
+    {
+      in=new VSColor(new Color(0,0,0));
+    }
+  }
+
+  public void initOutputPins()
+  {
+    element.setPinOutputReference(0,outR);
+    element.setPinOutputReference(1,outG);
+    element.setPinOutputReference(2,outB);
+  }
+  
+  public void start()
+  {
+    changed=true;
+  }
+  
+  public void process()
+  {
+    if (changed || in.isChanged() )
+    {
+      changed=false;
+      outR.setValue(in.getValue().getRed());
+      outG.setValue(in.getValue().getGreen());
+      outB.setValue(in.getValue().getBlue());
+    } else
+    {
+     outR.setChanged(false);
+     outG.setChanged(false);
+     outB.setChanged(false);
+    }
+  }
+  
+    
+
+}
+
