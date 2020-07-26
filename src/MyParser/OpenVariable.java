@@ -25,9 +25,6 @@ import VisualLogic.variables.VS2DBoolean;
 import VisualLogic.variables.VS2DDouble;
 import VisualLogic.variables.VS2DInteger;
 import VisualLogic.variables.VS2DString;
-import VisualLogic.variables.VSBoolean;
-import VisualLogic.variables.VSDouble;
-import VisualLogic.variables.VSInteger;
 
 public class OpenVariable {
 

@@ -117,4 +117,3 @@ class RoundGradientContext implements PaintContext
         return raster;
     }
 }
-

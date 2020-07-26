@@ -987,7 +987,5 @@ public class Parser
           if (isIn(ch,ALPHA)==false) return false;
       }
       return true;
-    }  
-    
-    
+    } 
 }
