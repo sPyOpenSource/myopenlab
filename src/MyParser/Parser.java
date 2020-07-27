@@ -258,12 +258,12 @@ public class Parser
             if (isBoolean(str)) 
             {
                 boolean x=Boolean.valueOf(str);
-                token.setValue(new Boolean(x));
+                token.setValue(x);
             }else                       
             if (isNum(str)) 
             {
                 double x =Double.parseDouble(str);
-                token.setValue(new Double(x));
+                token.setValue(x);
             }else
             if (isOP(str)) token.setOp(str);else
             if (isFunc(str)) token.setFunc(str);else

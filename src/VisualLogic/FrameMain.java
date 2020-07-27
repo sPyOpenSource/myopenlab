@@ -45,7 +45,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -101,7 +100,7 @@ class MyButtonX extends JButton {
 public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, projectfolder.ProjectPaletteIF, ElementPaletteIF, VMEditorPanelIF, StatusGummiBandXBackIF {
 
     public PanelDokumentation panelDoc;
-    public static String elementPath = "./distribution/Elements";
+    public static String elementPath = "distribution/Elements";
     public String activeElement = ""; //NOI18N
     public static FrameMain frm;
     public javax.swing.Timer timer;
@@ -120,10 +119,10 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     public ArrayList<Basis> desktop = new ArrayList<>();
     public boolean modePanel = false;
     public Settings settings = new Settings();
-    private ElementPalette elementPaletteCircuit;
-    private ElementPalette elementPaletteFront;
-    private projectfolder.ProjectPalette projectPalette1;
-    private PropertyEditor propertyEditor;
+    private final ElementPalette elementPaletteCircuit;
+    private final ElementPalette elementPaletteFront;
+    private final projectfolder.ProjectPalette projectPalette1;
+    private final PropertyEditor propertyEditor;
 
     private void reLoadElementPaletteDipendentFromProjectType() {
         Basis basis = getActualBasis();
@@ -220,9 +219,9 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 frm.init(file.getName());
                 frm.setVisible(true);
 
-                if (frm.result && frm.newName.length() > 0) {
+                if (DialogRename.result && DialogRename.newName.length() > 0) {
                     //String std = file.getParent() + "/" + frm.newName;
-                    String std = file.getParent() + File.separator + frm.newName;
+                    String std = file.getParent() + File.separator + DialogRename.newName;
 
                     String newFilename = std;
 
@@ -321,7 +320,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                         try {
                             String extension = Tools.getExtension(new File(modePath));
                             String filename = Tools.getFileNameWithoutExtension(new File(modePath));
-                            //String destFileName = Tools.generateNewFileName(destFile.getAbsolutePath() + "/" + filename, extension);
                             String destFileName = Tools.generateNewFileName(destFile.getAbsolutePath() + File.separator + filename, extension);
                             
                             Tools.copy(new File(modePath), new File(destFileName));
@@ -523,10 +521,10 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         if (node != null) {
             DialogSubVMAssistent frm = new DialogSubVMAssistent(this, true);
             frm.setVisible(true);
-            if (frm.result && frm.vmName.length() > 0) {
+            if (DialogRename.result && DialogSubVMAssistent.vmName.length() > 0) {
 
                 // 1. Verzeichniss mit Value unter dem Project erzeugen
-                String dir = node.projectPath + "/" + frm.vmName;
+                String dir = node.projectPath + "/" + DialogSubVMAssistent.vmName;
                 if (!new File(dir).exists()) {
                     new File(dir).mkdir();
 
@@ -535,13 +533,13 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                         Tools.copy(new File(elementPath + File.separator+"nope.html"), new File(dir + File.separator+"doc_en.html"));
                         Tools.copy(new File(elementPath + File.separator+"nope.html"), new File(dir + File.separator+"doc_es.html"));
 
-                        Tools.copy(new File(elementPath + "/element.gif"), new File(dir + "/" + frm.vmName + ".gif"));
+                        Tools.copy(new File(elementPath + "/element.gif"), new File(dir + "/" + DialogSubVMAssistent.vmName + ".gif"));
                     } catch (IOException ex) {
                         Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
                     }
                     File file = new File(dir + "/"+"subvm.vlogic");
 
-                    generateSubVM(node.projectPath, frm.pinsLeft, frm.pinsRight, dir + "/" + frm.vmName + ".vlogic");
+                    generateSubVM(node.projectPath, DialogSubVMAssistent.pinsLeft, DialogSubVMAssistent.pinsRight, dir + "/" + DialogSubVMAssistent.vmName + ".vlogic");
 
                     reloadProjectPanel();
                 } else {
@@ -633,8 +631,8 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
             frm.setVisible(true);
 
-            if (frm.result && frm.newName.length() > 0) {
-                String std = file.getParent() + File.separator + frm.newName + "." + ext;
+            if (DialogRename.result && DialogRename.newName.length() > 0) {
+                String std = file.getParent() + File.separator + DialogRename.newName + "." + ext;
 
                 if (!new File(std).exists()) {
                     try {
@@ -831,17 +829,13 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         tab.setBorder(null);
         tabCloseButton.setBorder(null);
 
-        tabCloseButton.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (e.getSource() instanceof MyButtonX) {
-                    MyButtonX button = (MyButtonX) e.getSource();
-                    if(button.panel!=null){
+        tabCloseButton.addActionListener((ActionEvent e) -> {
+            if (e.getSource() instanceof MyButtonX) {
+                MyButtonX button = (MyButtonX) e.getSource();
+                if(button.panel!=null){
                     closeVM(button.panel);
-                    }else{
-                        System.out.println("Null Button - VisualLogic.FrameMain$2.actionPerformed(FrameMain.java:898)");    
-                    }
+                }else{
+                    System.out.println("Null Button - VisualLogic.FrameMain$2.actionPerformed(FrameMain.java:898)");
                 }
             }
         });
@@ -1117,17 +1111,16 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             new File(actualPath).mkdir();
         }
         if (files != null) {
-            for (int i = 0; i < files.length; i++) {
+            for (File file : files) {
                 // Always override old Elements!!!
                 // It doesn't matter if there exist or not!
-                if (files[i].isDirectory()) {
+                if (file.isDirectory()) {
                     try {
-                        String name = files[i].getName();
-                        Tools.copy(files[i], new File(actualPath + File.separator + name));
-                    } catch (IOException ex) {
+                        String name = file.getName();
+                        Tools.copy(file, new File(actualPath + File.separator + name));
+                    }catch (IOException ex) {
                         Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
                     }
-
                 }
             }
         }
@@ -1141,18 +1134,14 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             // the Elements from the Elements\\CircuitElements\\user-defined
 
             // Circuit Elements
-            //String elPath = elementPath + "\\CircuitElements\\user-defined";
             String elPath = elementPath + File.separator+"CircuitElements"+File.separator+"user-defined";
-            //String actualPath = Tools.userElementPath + "\\CircuitElements\\";
             String actualPath = Tools.userElementPath +File.separator+ "CircuitElements"+File.separator;
 
             copyUserdefElementsRecursive(elPath, actualPath);
 
             // FrontPanel Elements
             String elPathFront = elementPath + File.separator+"FrontElements"+File.separator+"user-defined";
-            //String elPathFront = elementPath + "\\FrontElements\\user-defined";
             String actualPathFront = Tools.userElementPath + File.separator+ "FrontElements"+File.separator;
-            //String actualPathFront = Tools.userElementPath + "\\FrontElements\\";
 
             copyUserdefElementsRecursive(elPathFront, actualPathFront);
         }
@@ -1203,9 +1192,8 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                     menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/16x16/book.png"))); // NOI18N
                     ArrayList<String> files2 = listDirectory(file.getAbsolutePath());
 
-                    for (String file2 : files2) {
+                    files2.forEach((file2) -> {
                         MyMenuItem item = new MyMenuItem();
-
                         if (file2.endsWith(".pdf")) {
                             item.setText(file2);
 
@@ -1215,25 +1203,19 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                             //item.path = file.getAbsolutePath() + "/" + file2;
                             item.path = file.getAbsolutePath() + File.separator + file2;
 
-                            item.addActionListener(new java.awt.event.ActionListener() {
-                                @Override
-                                public void actionPerformed(java.awt.event.ActionEvent evt) {
-
-                                    try {
-                                        if (java.awt.Desktop.isDesktopSupported()) {
-                                            MyMenuItem item = (MyMenuItem) evt.getSource();
-                                            File myFile = new File(item.path);
-                                            java.awt.Desktop.getDesktop().open(myFile);
-                                        }
-                                    } catch (IOException ex) {
-                                        // no application registered for PDFs
+                            item.addActionListener((java.awt.event.ActionEvent evt) -> {
+                                try {
+                                    if (java.awt.Desktop.isDesktopSupported()) {
+                                        MyMenuItem item1 = (MyMenuItem) evt.getSource();
+                                        File myFile = new File(item1.path);
+                                        java.awt.Desktop.getDesktop().open(myFile);
                                     }
-
+                                }catch (IOException ex) {
+                                    // no application registered for PDFs
                                 }
                             });
                         }
-
-                    }
+                    });
 
                 }
             }
@@ -1255,17 +1237,8 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             filename = "types_es.htm";
         }
 
-        /*try
-        {              
-            URL url = getClass().getResource("/legend/"+filename);
-            jTextPane1.setContentType("text/html");
-            jTextPane1.setPage(url);            
-        } catch (Exception ex) {System.out.println(ex.toString());}
-         */
-        java.awt.event.ActionListener actionListener = new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent actionEvent) {
-                dispose();
-            }
+        java.awt.event.ActionListener actionListener = (java.awt.event.ActionEvent actionEvent) -> {
+            dispose();
         };
 
         javax.swing.KeyStroke stroke = javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0);

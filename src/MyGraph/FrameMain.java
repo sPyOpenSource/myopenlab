@@ -30,7 +30,7 @@ public class FrameMain extends javax.swing.JFrame
 {
     
     public MyGraph graph;
-    public int AustoscaleInterval= new Integer(600);
+    public int AustoscaleInterval= 600;
     /**
      * Creates new form FrameMain
      */
@@ -89,12 +89,8 @@ public class FrameMain extends javax.swing.JFrame
      */
     public static void main(String args[])
     {
-        java.awt.EventQueue.invokeLater(new Runnable()
-        {
-            public void run()
-            {
-                new FrameMain().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new FrameMain().setVisible(true);
         });
     }
     

@@ -47,7 +47,6 @@ import javax.script.ScriptContext;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
-import javax.script.SimpleBindings;
 
 class VariableNotifyRecord {
 
@@ -171,27 +170,12 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
     @Override
     public void vsAddTestpointValue(ExternalIF element, VSObject in) {
-        //System.out.println("element="+element.jGetCaption()+"      "+in.toString());
-
         if (frameCircuit != null && isLoading() == false) {
 
             if (existierenDoppelteNodeTitles()) {
                 Tools.jException(this, "There are Testpoint Nodes with same name!");
             }
 
-            /*DataEntry entry;
-             
-            String name=element.jGetCaption();
-            if (dataHistory.entryExist(name))
-            {
-                entry= dataHistory.getEntry(name);
-            }else
-            {
-                entry=dataHistory.addEntry(name);
-            }
-             
-            entry.values.add(in);*/
-            //dataHistory.list.addLast(new DataEntry(element.jGetCaption(),in));
             if (dialogTestpoint != null) {
                 dialogTestpoint.addValue(element.jGetCaption(), in.toString());
 
@@ -206,7 +190,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                 }
             }
         }
-
     }
 
     @Override
@@ -266,16 +249,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         return false;
     }
 
-    /*private boolean isVariable(String val)
-    {
-      String ch;
-      for(int i=0;i<val.length();i++)
-      {
-         ch=val.substring(i,i+1);
-         if (isIn(ch,ALPHA)==false) return false;
-      }
-      return true;
-    } */
     private boolean isNum(String val) {
         try {
             double x = Double.parseDouble(val);
@@ -294,11 +267,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         if (ch.equalsIgnoreCase("\"")) {
             i = val.length() - 1;
             ch = val.substring(i, i + 1);
-            if (ch.equalsIgnoreCase("\"")) {
-                return true;
-            } else {
-                return false;
-            }
+            return ch.equalsIgnoreCase("\"");
         } else {
             return false;
         }
@@ -307,10 +276,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     public boolean isBoolean(String val) {
         val = val.trim();
 
-        if (val.equalsIgnoreCase("TRUE") || val.equalsIgnoreCase("FALSE")) {
-            return true;
-        }
-        return false;
+        return val.equalsIgnoreCase("TRUE") || val.equalsIgnoreCase("FALSE");
     }
 
     public String[] vsGetVariablesNames() {
@@ -489,33 +455,9 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     }
 
     public boolean vsCompareExpression(VSFlowInfo flowInfo, String expr) {
-        /*String[] str =mySplitt(expr.trim());
-        
-        //System.out.println("expr="+expr);
-        
-        if (str.length==3)
-        {
-            str[0]=str[0].trim();
-            str[1]=str[1].trim();
-            str[2]=str[2].trim();
-          
-            Object a=vsEvaluate(flowInfo,str[0]);
-            Object b=vsEvaluate(flowInfo,str[2]);
-            
-            if (a!=null && b!=null)
-            {
-                return vsCompareValues(a, b, str[1]);
-            }
-        }
-        
-        return false;*/
-
         try {
-            //System.out.println("compareExpression(" + expr + ");");
-
             bindVars();
-            
-            
+
             Object o1 = engine.eval(expr, bindings);
 
             return (boolean) o1;
@@ -641,7 +583,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     @Override
     public Stack getStack() {
         return stack;
-
     }
 
     @Override
@@ -782,62 +723,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     }
 
     public void showCircuitWindow(boolean panelMode) {
-        /*this.panelMode=panelMode;
-        if (frameCircuit==null)
-        {
-         
-            JFrame.setDefaultLookAndFeelDecorated(false);
-            frameCircuit=new FrameCircuit(frameMain);
-         
-         
-            frameCircuit.setTitle(Version.strApplicationTitle+" ["+new File(fileName).getName()+"]");
-            frameCircuit.setSize(circuitPanelWidth,circuitPanelHeight);
-         
-            circuitBasis.setSize(2000,2000);
-            circuitBasis.setPreferredSize(new Dimension(2000,2000));
-            circuitBasis.setBackground(Color.white);
-         
-            frontBasis.setPreferredSize(new Dimension(500,500));
-         
-            int pos;
-            pos=getFrameMain().settings.elementSplitterPosition;
-            frameCircuit.jSplitPane3.setDividerLocation(pos);
-         
-            pos=getFrameMain().settings.elementSplitterHozPosition;
-            frameCircuit.jSplitPane1.setDividerLocation(pos);
-         
-         
-            getCircuitBasis().setAlignToGrid(true);
-            getCircuitBasis().setRasterOn(false);
-            getCircuitBasis().setRaster(5,5);
-            //getCircuitBasis().setRaster
-         
-            getFrontBasis().setAlignToGrid(getFrameMain().settings.alignToGrid);
-            getFrontBasis().setRasterOn(getFrameMain().settings.rasterOn);
-            getFrontBasis().setRaster(getFrameMain().settings.rasterX,getFrameMain().settings.rasterY) ;
-         
-            frameCircuit.setLocation(getFrameMain().settings.circuitWindowLocation);
-            frameCircuit.setSize(getFrameMain().settings.circuitWindowDimension);
-            frameCircuit.setExtendedState(getFrameMain().settings.status);
-         
-            propertyEditor=frameCircuit.propertyEditor;
-         
-         
-         
-            getCircuitBasis().setOpaque(true);
-            getFrontBasis().setOpaque(true);
-         
-            if (getPanelMode()==false) getFrameCircuit().setVisible(true);
-            if (getPanelMode()==false) getFrameCircuit().toFront();
-         
-        }
-        else
-        {
-            if (panelMode==false) frameCircuit.setVisible(true);
-        }
-        //frameCircuit.jTabbedPane1.setSelectedIndex(0);
-        getFrontBasis().processPropertyEditor();
-        getCircuitBasis().processPropertyEditor();*/
+
     }
 
     public void propertyChanged(Object o) {
@@ -891,13 +777,10 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         initButtonGroups();
 
         Image img = new javax.swing.ImageIcon(getClass().getResource("/CustomColorPicker/Bild1.gif")).getImage();
-        //img=Transparency.makeColorTransparent(img, Color.white);
 
         selectionImage = new BufferedImage(img.getWidth(null), img.getHeight(null), BufferedImage.TYPE_INT_RGB);
         Graphics2D g2 = selectionImage.createGraphics();
         g2.drawImage(img, null, null);
-
-        //myPanel.image=bImage;
     }
 
     public void deleteAnythingSelected() {
@@ -912,7 +795,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         }
 
         console.addMessageToConsole(message);
-
     }
 
     public void cut() {
@@ -937,7 +819,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             getCircuitBasis().ProcessPinDataType();
             setChanged(true);
         }
-
     }
 
     public void verknuepfeElemente(boolean fromAblage) {
@@ -1064,69 +945,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     }
 
     public void closeCircuitWindow() {
-        /* if (onClose() && frameCircuit!=null)
-        {
-            frameCircuit.timer.stop();
-            int pos=0;
-        
-            if (modus==MODE_NORMAL)
-            {
-              this.clear();
-            }
-        
-            if (frameCircuit.dialogTestpoint!=null) frameCircuit.dialogTestpoint.dispose();
-            if (frameCircuit.frameBooleanGraph!=null) frameCircuit.frameBooleanGraph.dispose();
-            if (frameCircuit.frameDoubleGraph!=null) frameCircuit.frameDoubleGraph.dispose();
-        
-//          getFrameMain().settings.panelDirectory=frameCircuit.oldPanelDirectory;
-//          getFrameMain().settings.circuitDirectory=frameCircuit.oldCircuitDirectory;
-        
-        
-            if (frameCircuit.docFrame!=null )
-            {
-                frameCircuit.docFrame.setVisible(false);
-        
-                frameCircuit.timer.stop();
-        
-                Point loc=frameCircuit.docFrame.getLocation();
-                getFrameMain().settings.docLocation=loc;
-        
-                Dimension dim=frameCircuit.docFrame.getSize();
-                getFrameMain().settings.docDimension=dim;
-        
-                frameCircuit.docFrame.dispose();
-                getFrameMain().settings.isDocWindowsVisible=true;
-            }
-            else
-            {
-                getFrameMain().settings.isDocWindowsVisible=false;
-            }
-        
-            pos=frameCircuit.jSplitPane1.getDividerLocation();
-            getFrameMain().settings.elementSplitterHozPosition=pos;
-        
-            pos=frameCircuit.jSplitPane3.getDividerLocation();
-            getFrameMain().settings.elementSplitterPosition=pos;
-        
-        
-            getFrameMain().settings.status=frameCircuit.getExtendedState();
-            frameCircuit.setExtendedState(JFrame.NORMAL);
-            getFrameMain().settings.circuitWindowLocation=frameCircuit.getLocation();
-            getFrameMain().settings.circuitWindowDimension=frameCircuit.getSize();
-        
-            frameCircuit.dispose();
-            frameCircuit=null;
-            System.gc();
-        
-            deleteHistoryFiles();
-        
-            frameCircuit=null;
-        }
-        if (frameCircuit==null)
-        {
-          frameMain.desktop.remove(this);
-        }
-         */
+
     }
 
     public boolean onClose() {
@@ -1151,11 +970,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     }
 
     public boolean isRunning() {
-        if (circuitBasis.isRunning()) {
-            return true;
-        } else {
-            return false;
-        }
+        return circuitBasis.isRunning();
     }
 
     public void stop() {
@@ -1167,9 +982,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
         dataHistory.clearEntries();
 
-        //circuitBasis.initAllInputPins();
-        //frontBasis.initAllInputPins();
-        //xonInitInputPins();
         circuitBasis.stop();
         frontBasis.stop();
 
@@ -1178,42 +990,25 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         frontBasis.selectAny(false);
 
         if (ownerVMPanel != null) {
-            //frameCircuit.timer.start();
-            //JFrame.setDefaultLookAndFeelDecorated(false);
             if (oldPanelFront != null) {
-                //getFrontBasis()=oldPanelFront;
                 frontBasis.setRasterOn(oldRasterOn);
             }
 
-            //ownerVMPanel.panelFront.add(getFrontBasis());
-            //frameCircuit.jScrollPane2.setViewportView(oldPanelFront);
-            //frameCircuit.panelFront=frm.panelFront;
             if (frm != null) {
-                //frm.panelFront.removeAll();
                 frm.dispose();
             }
             ownerVMPanel.panelFront.add(getFrontBasis());
             ownerVMPanel.invalidate();
 
-            //ownerVMPanel.panelFront.add(oldPanelFront);
             if (startInFrontMode) {
                 System.exit(0);
             }
-
-            //String title=java.util.ResourceBundle.getBundle("VisualLogic/FrameCircuit").getString("Front_Panel") ;
-            /*if (ownerVMPanel.jTabbedPane1.isAncestorOf(ownerVMPanel.jScrollPane2)==false)
-            {
-              ownerVMPanel.jTabbedPane1.insertTab(title, null,ownerVMPanel.jScrollPane2,"",1); // NOI18N
-            }*/
         }
-
     }
         
     private void createRunningFrame(boolean unDecoratedIn, boolean AlwaysOnTopIn) {
-        //JFrame.setDefaultLookAndFeelDecorated(false);
         this.unDecorated=unDecoratedIn;
         this.AlwaysOnTop=AlwaysOnTopIn;
-        //this.WindowsPosition=WindowPositionIn;
         
         frm = new FrameRunning(this,unDecorated);
        
@@ -1230,41 +1025,29 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         }
 
         frm.setTitle(caption);
-        //frm.setSize(frontBasis.getWidth()+10,frontBasis.getHeight()+30+h);
         
         frm.pack();
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        
-        //VMObject.java Line 579
-        //vsWindowsPosition.addItem("CENTER");
-        //vsWindowsPosition.addItem("TOP_LEFT");
-        //vsWindowsPosition.addItem("TOP_RIGHT");
-        //vsWindowsPosition.addItem("BOTTOM_LEFT");
-        //vsWindowsPosition.addItem("BOTTOM_RIGHT");
+
         int XPosTemp=0;
         int YPosTemp=0;
         if(WindowsPosition.selectedIndex==0){// CENTER
-        //frm.setLocation(screenSize.width / 2 - frm.getWidth() / 2, screenSize.height / 2 - frm.getHeight() / 2);
         XPosTemp=screenSize.width / 2 - frm.getWidth() / 2;
         YPosTemp=screenSize.height / 2 - frm.getHeight() / 2;
         }
         if(WindowsPosition.selectedIndex==1){
-        //frm.setLocation(0,0);
         XPosTemp=0;
         YPosTemp=0;
         }
         if(WindowsPosition.selectedIndex==2){
-        //frm.setLocation(screenSize.width - frm.getWidth(),0);
         XPosTemp=screenSize.width - frm.getWidth();
         YPosTemp=0;
         }
         if(WindowsPosition.selectedIndex==3){
-        //frm.setLocation(0,screenSize.height - frm.getHeight());
         XPosTemp=0;
         YPosTemp=screenSize.height - frm.getHeight();
         }
         if(WindowsPosition.selectedIndex==4){
-        //frm.setLocation(screenSize.width - frm.getWidth(),screenSize.height - frm.getHeight());
         XPosTemp=screenSize.width - frm.getWidth();
         YPosTemp=screenSize.height - frm.getHeight();
         }
@@ -1278,15 +1061,12 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         }
         
         if(WindowsPosition.selectedIndex==6){// MAXIMIZED 
-        //frm.setLocation(XPosTemp,YPosTemp);
         frm.setSize(screenSize);
         Rectangle b=this.frontBasis.getBounds();
         try{
-        //Thread.currentThread().sleep(125);
         frm.getContentPane().getComponent(1).setBackground(this.frontBasis.getBackground());
         this.frontBasis.setLocation((screenSize.width/2)-(b.width/2),((screenSize.height/2)-(b.height/2)));
         }catch(Exception e){}
-        //frm.repaint();
         }else{
         frm.setLocation(CustomXwindowPos,CustomYwindowPos);    
         }
@@ -1349,7 +1129,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             node = (OpenVariable) variablenListe.get(i);
 
             bindings.put(node.name, node.value);
-
         }
 
         if (circuitBasis.errorExist()) {
@@ -1362,8 +1141,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             frontBasis.setDraehteInRunMode();
 
             started = true;
-            // circuitBasis.ProcessPinDataType();
-            // frontBasis.ProcessPinDataType();
 
             circuitBasis.initAllOutputPins();
             frontBasis.initAllOutputPins();
@@ -1375,10 +1152,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             frontBasis.setRasterOn(false);
 
             if (ownerVMPanel != null && frameCircuit != null && showFrontPanelWhenStart == true) {
-                if (debugmode == false) {
-                    //frameCircuit.timer.stop();
-                }
-                //oldPanelFront=getFrontBasis().panel;
                 ownerVMPanel.jTabbedPane1.setSelectedIndex(0);
 
                 oldPanelFront = getFrontBasis();
@@ -1386,20 +1159,15 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                 ownerVMPanel.panelFront.remove(oldPanelFront);
                 ownerVMPanel.updateUI();
 
-                //BasisPanel panelFront = new BasisPanel(basis.getFrontBasis());
-                //this.getContentPane().add(panelFront);
                 createRunningFrame(unDecorated,AlwaysOnTop);
             }
 
             circuitBasis.start();
             frontBasis.start();
 
-            SwingUtilities.invokeLater(new Runnable() {
-                @Override
-                public void run() {
-                    if (frm != null) {
-                        frm.toFront();
-                    }
+            SwingUtilities.invokeLater(() -> {
+                if (frm != null) {
+                    frm.toFront();
                 }
             });
 

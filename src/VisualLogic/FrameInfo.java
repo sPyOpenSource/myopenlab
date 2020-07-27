@@ -21,6 +21,7 @@ package VisualLogic;
 
 import java.awt.*;
 import java.io.File;
+import java.io.IOException;
 import java.net.*;
 import java.util.Enumeration;
 import java.util.Locale;
@@ -81,7 +82,6 @@ public class FrameInfo extends javax.swing.JDialog {
         while(items.hasMoreElements())
         {
             String key=items.nextElement().toString();
-            //System.out.println(key+" , "+System.getProperty(key));
             String[] item = new String[2];
             item[0]=key;
             item[1]=System.getProperty(key);
@@ -108,18 +108,9 @@ public class FrameInfo extends javax.swing.JDialog {
         
         java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
         setLocation((screenSize.width-getWidth())/2, (screenSize.height-getHeight())/2);       
-                
-        //jLabel4.setText(Version.strApplicationTitle);
-        
-        
-        
-        
-        java.awt.event.ActionListener actionListener = new java.awt.event.ActionListener() 
-        {
-          public void actionPerformed(java.awt.event.ActionEvent actionEvent) 
-          {                
-                dispose();            
-          }
+
+        java.awt.event.ActionListener actionListener = (java.awt.event.ActionEvent actionEvent) -> {
+            dispose();
         };
         
         javax.swing.KeyStroke stroke = javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0);
@@ -131,16 +122,7 @@ public class FrameInfo extends javax.swing.JDialog {
         
         fillTable();
         
-        
         listDrivers();
-        
-        /*jLabelVersion.setText(System.getProperty("java.version"));
-        
-        jLabelBetriebssystem.setText(System.getProperty("os.name")+" version "+System.getProperty("os.version")+ " running on "+System.getProperty("os.arch"));
-        jLabelVM.setText(System.getProperty("java.vm.name")+" version"+System.getProperty("java.vm.version"));
-        jLabelVendor.setText(System.getProperty("java.vm.vendor")); 
-        jLabelJavaHome.setText(System.getProperty("java.home")); 
-        jLabelUserHome.setText(System.getProperty("user.home")); */
             
         try
         {              
@@ -157,7 +139,7 @@ public class FrameInfo extends javax.swing.JDialog {
             }else
             if (strLocale.equalsIgnoreCase("en_US"))
             {
-                url = getClass().getResource("/VisualLogic/license.txt");
+                //url = getClass().getResource("LICENSE");
             }else
             if (strLocale.equalsIgnoreCase("es_ES"))
             {
@@ -165,10 +147,8 @@ public class FrameInfo extends javax.swing.JDialog {
             }
             
             jEditorPane1.setContentType("text/html");
-            jEditorPane1.setPage(url);
-            
-        } catch (Exception ex) 
-        {            
+            jEditorPane1.setPage("https://raw.githubusercontent.com/sPyOpenSource/myopenlab/master/LICENSE");
+        } catch (IOException ex) {            
             Tools.showMessage("Liesmich.html wurde nicht gefunden!");
         }
         
@@ -202,15 +182,13 @@ public class FrameInfo extends javax.swing.JDialog {
               } else try {
                        // Normaler Link
                        pane.setPage(e.getURL());
-                     } catch (Throwable t) {
+                     } catch (IOException t) {
                          t.printStackTrace();
                      }
             }
        }
       });
-
     }
-    
     
     public void listDrivers()
     {
@@ -230,9 +208,7 @@ public class FrameInfo extends javax.swing.JDialog {
         
         File[] files=new File(driverPath).listFiles();
         
-        for (int i=0;i<files.length;i++)
-        {
-            File f=files[i];
+        for (File f : files) {
             if (f.isDirectory())
             {
                 DriverInfo info=Tools.openDriverInfo(f);
@@ -250,8 +226,7 @@ public class FrameInfo extends javax.swing.JDialog {
                     model.addRow(item);                   
                 }
             }
-        }
-        // End Loading Drivers.
+        } // End Loading Drivers.
         
     }
  
@@ -295,7 +270,6 @@ public class FrameInfo extends javax.swing.JDialog {
         setPreferredSize(new java.awt.Dimension(664, 450));
         setResizable(false);
 
-        jButton1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jButton1.setText(bundle.getString("close")); // NOI18N
         jButton1.setName("jButton1"); // NOI18N
         jButton1.setPreferredSize(new java.awt.Dimension(90, 25));
@@ -314,7 +288,6 @@ public class FrameInfo extends javax.swing.JDialog {
 
         jEditorPane1.setEditable(false);
         jEditorPane1.setBorder(null);
-        jEditorPane1.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         jEditorPane1.setName("jEditorPane1"); // NOI18N
         jEditorPane1.setPreferredSize(new java.awt.Dimension(100, 100));
         jScrollPane1.setViewportView(jEditorPane1);
@@ -343,7 +316,6 @@ public class FrameInfo extends javax.swing.JDialog {
         jScrollPane2.setName("jScrollPane2"); // NOI18N
 
         jEditorPane2.setEditable(false);
-        jEditorPane2.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         jEditorPane2.setText(bundle.getString("FrameInfo.jEditorPane2.text")); // NOI18N
         jEditorPane2.setToolTipText(bundle.getString("FrameInfo.jEditorPane2.toolTipText")); // NOI18N
         jEditorPane2.setName("jEditorPane2"); // NOI18N
@@ -374,12 +346,10 @@ public class FrameInfo extends javax.swing.JDialog {
         jScrollPane4.setName("jScrollPane4"); // NOI18N
 
         jTextPaneContributors.setEditable(false);
-        jTextPaneContributors.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         jTextPaneContributors.setText(bundle.getString("FrameInfo.jTextPaneContributors.text")); // NOI18N
         jTextPaneContributors.setName("jTextPaneContributors"); // NOI18N
         jScrollPane4.setViewportView(jTextPaneContributors);
 
-        jLabel3.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel3.setText(bundle.getString("FrameInfo.jLabel3.text")); // NOI18N
         jLabel3.setName("jLabel3"); // NOI18N
 
@@ -503,7 +473,6 @@ public class FrameInfo extends javax.swing.JDialog {
         jPanel3.setName("jPanel3"); // NOI18N
         jPanel3.setPreferredSize(new java.awt.Dimension(481, 90));
 
-        jLabelVers.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabelVers.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabelVers.setText(bundle.getString("FrameInfo.jLabelVers.text")); // NOI18N
         jLabelVers.setName("jLabelVers"); // NOI18N
@@ -545,7 +514,7 @@ public class FrameInfo extends javax.swing.JDialog {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 644, Short.MAX_VALUE))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 656, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(

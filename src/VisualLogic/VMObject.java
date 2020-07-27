@@ -63,20 +63,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     private final int maxElements = 2000;
     public ArrayList propertyList = new ArrayList();
     public ArrayList clockList = new ArrayList();
-    /*public ArrayList subRoutineList = new ArrayList();
-    public SubRoutine searchSubRoutine(String name)
-    {
-    name=name.trim();
-    for (int i=0;i<subRoutineList.size();i++)
-    {
-    SubRoutine rtn=(SubRoutine)subRoutineList.get(i);
-    if (rtn.name.trim().equalsIgnoreCase(name))
-    {
-    return rtn;
-    }
-    }
-    return null;
-    }*/
+
     public DialogWait frmWait = null;
     private boolean isThreadFertig = true;
 
@@ -127,7 +114,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     }
     public ArrayList processList = new ArrayList();
 
-    //public ArrayList processList = new ArrayList();
     public ArrayList getElementList() {
         return elList;
     }
@@ -262,19 +248,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
         reorderWireFrames();
     }
-    /* public int getWidth() {return width;}
-    public int getHeight() {return height;}
-    public void setSize(int w, int h)
-    {
-    if (panel!=null)
-    {
-    width=w;
-    height=h;
-    panel.setSize(new Dimension(width,height));
-    panel.setPreferredSize(new Dimension(width,height));
-    panel.revalidate();
-    }
-    }*/
+
     private Thread thread = null;
     public String[] newElement = null;
     // zustaende
@@ -362,7 +336,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                 String str = elementx.getInternName();
                 if (str.equalsIgnoreCase(elementName)) {
                     liste.add(elementx);
-                    //System.out.println("element="+element.jGetTag(0));
                 }
             }
         }
@@ -502,11 +475,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
             owner.propertyEditor.addItem("Properties", vsProperties, 0, 0, true);
             boolean EditableTemp=false;
-            if(owner.WindowsPosition.selectedIndex==5){ // IF user select "CUSTOM" enable editable X and Y Loation
-            EditableTemp=true;    
-            }else{
-            EditableTemp=false;    
-            }
+            EditableTemp = owner.WindowsPosition.selectedIndex==5; // IF user select "CUSTOM" enable editable X and Y Loation
 
             if (this == owner.getFrontBasis()) {
                 owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("ShowToolbar"), vsShowToolbar, 0, 0, true);
@@ -527,14 +496,9 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
     public void ProcessDeGruppierer() {
 
-        /*setDraehteInRunMode();
-    initAllOutputPins();
-    initAllInputPins();*/
     }
 
     public void ProcessPinDataType() {
-        //if (owner.isLoading()) return;
-
         ProcessDeGruppierer();
 
         Element element = null;
@@ -545,7 +509,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                 element.classRef.checkPinDataType();
             }
         }
-
     }
 
     public void processElementChanged() {
@@ -601,7 +564,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
             // Die Maus betritt die Komponente mit
             // einem Objekt
             public void dragEnter(DropTargetDragEvent e) {
-                //System.out.println(""+e.getTransferable().toString());
                 e.acceptDrag(DnDConstants.ACTION_COPY);
             }
 
@@ -633,8 +595,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                     } else {
                         e.rejectDrop();
                     }
-                } catch (java.io.IOException e2) {
-                } catch (UnsupportedFlavorException e2) {
+                } catch (java.io.IOException | UnsupportedFlavorException e2) {
                 }
 
             }
@@ -670,9 +631,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
                 String arrg = p2.substring(p1.length(), p2.length());
 
-                // if (p1.equals(p2))
                 {
-                    //String path=f.getPath();
                     String vmName = f.getName();
 
                     String[] args = new String[3];
@@ -699,7 +658,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                     subVM.setLocation(p.x - (subVM.getWidth() / 2), p.y - subVM.getHeight() / 2);
 
                 }
-            } catch (Exception ex) {
+            } catch (HeadlessException ex) {
                 Tools.showMessage(this, "" + ex.toString());
             }
         }
@@ -731,14 +690,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     }
 
     protected void processFocusEvent(FocusEvent fe) {
-
-        /*switch(fe.getID())
-        {
-        case FocusEvent.FOCUS_GAINED:
-        break;
-        case FocusEvent.FOCUS_LOST:
-        break;Focus
-        }*/
         repaint();
 
         super.processFocusEvent(fe);
@@ -764,19 +715,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
         try {
             ImageIO.write(img, "jpeg", new File(sImgFilename));
-            /*FileOutputStream out = new FileOutputStream(new File(sImgFilename));
-            JPEGImageEncoder enc = JPEGCodec.createJPEGEncoder(out);
-            JPEGEncodeParam prm = enc.getDefaultJPEGEncodeParam(img);
-            prm.setQuality(0.9f, true);
-            enc.setJPEGEncodeParam(prm);
-            enc.encode(img);
-
-            out.flush();
-            out.close();
-            out = null;
-            enc = null;
-            prm = null;*/
-        } catch (Exception ex) {
+        } catch (IOException ex) {
             throw new Exception(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("\nError:_Image_storing_to_'") + sImgFilename + java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("'_failed:_") + ex.getMessage());
         }
         if (img != null) {
@@ -825,12 +764,13 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         return pause;
     }
 
+    @Override
     public void run() {
         isThreadFertig = false;
         while (!stop) {
             try {
                 Thread.sleep(owner.delay);
-            } catch (Exception exe) {
+            } catch (InterruptedException exe) {
             }
 
             processAllElements();
@@ -838,18 +778,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         isThreadFertig = true;
     }
 
-    /*public void setProgress()
-    {
-    //if (processCounter==10) labelProgress.setText("_");
-    //if (processCounter==20) labelProgress.setText("@");
-    //if (processCounter>100) processCounter=0;
-    //processCounter++;
-    }*/
- /*protected void paintComponent(Graphics g) {
-    super.paintComponent(g);
-    Graphics2D g2D = (Graphics2D)g;
-    g2D.scale(zoom,zoom);
-    }*/
     public boolean isGraphicLocked() {
         return graphikLocked;
     }
@@ -864,50 +792,22 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     }
 
     public boolean isRunning() {
-        if (status != null && status.equals(modusRun)) {
-            return true;
-        } else {
-            return false;
-        }
+        return status != null && status.equals(modusRun);
     }
 
     public void openVlogicFile(String fileName) {
-        //owner.getFrameMain().openVLogicFile(fileName);
     }
 
     public void setElementDocVisible(boolean value) {
-        //owner.getFrameMain().setElementDocVisible(value);
     }
 
-    /*public void drawTitel(Graphics2D g)
-    {
-    Element el = (Element)element;
-    Font fnt = new Font("Courier",0,10);
-    g.setFont(fnt);
-    FontMetrics fm = g.getFontMetrics();
-    if (basisTitel!=null)
-    {
-    Rectangle2D  r = fm.getStringBounds(basisTitel,g);
-    Rectangle rx = el.jGetBounds();
-    g.setColor(Color.black);
-    int w2=(int)(rx.x+(rx.width/2));
-    int s2=(int)(r.getWidth()/2);
-    g.drawString(basisTitel,w2-s2,10);
-    }
-    }*/
     public void setPropertyEditor() {
 
     }
 
     // Die Methode wird aufgerufen wenn das Objekt zu zeichnen ist
     public void xpaint(java.awt.Graphics g) {
-        /*Element el = (Element)element;
-    if (elementImage!=null)
-    {
-    g.drawImage(elementImage,10,10,el.getWidth()-20,el.getHeight()-20,this);
-    }*/
 
-        //drawTitel((Graphics2D)g);
     }
 
     // Die Methode wird aufgerufen wenn das Objekt neu erzeugt wird
@@ -915,49 +815,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     // mitdem man das interne Element ansteuern kann
     public void xsetExternalIF(ExternalIF externalIF) {
 
-        /*   this.element =externalIF;
-    Element exElement = (Element)element;
-    topPins.clear();
-    rightPins.clear();
-    bottomPins.clear();
-    leftPins.clear();
-    exElement.setCaptionVisible(true);
-    exElement.setCaption(owner.caption);
-    getPinsAllXBar(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("#PINOUTPUT_INTERNAL#"), rightPins);
-    sortPinsForY(rightPins);
-    getPinsAllXBar(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("#PININPUT_INTERNAL#"), leftPins);
-    sortPinsForY(leftPins);
-    externalIF.jSetTopPinsVisible(false);
-    externalIF.jSetBottomPinsVisible(false);
-    //if (leftPins.size()==0)   externalIF.jSetLeftPinsVisible(false);
-    //if (rightPins.size()==0)  externalIF.jSetRightPinsVisible(false);
-    element.jSetSize(owner.elementWidth, owner.elementHeight);
-    externalIF.jSetTopPins(topPins.size());
-    externalIF.jSetRightPins(rightPins.size());
-    externalIF.jSetBottomPins(bottomPins.size());
-    externalIF.jSetLeftPins(leftPins.size());
-    externalIF.jInitPins();
-    int pinCount=0;
-    //Outputs
-    for (int i=0;i<rightPins.size();i++)
-    {
-    Element elx = (Element)rightPins.get(i);
-    JPin pin=exElement.getPin(pinCount++);
-    if (elx.isCaptionVisible()) pin.setDescription(elx.getCaption());
-    int dt=elx.getPin(0).dataType;
-    pin.dataType=dt;
-    pin.pinIO=JPin.PIN_OUTPUT;
-    }
-    //Inputs
-    for (int i=0;i<leftPins.size();i++)
-    {
-    Element elx = (Element)leftPins.get(i);
-    JPin pin=exElement.getPin(pinCount++);
-    if (elx.isNameVisible()) pin.setDescription(elx.getCaption());
-    pin.dataType=elx.getPin(0).dataType;
-    pin.pinIO=JPin.PIN_INPUT;
-    }
-         */
     }
 
     public void jSetChanged(boolean value) {
@@ -1180,10 +1037,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         } else {
             return null;
         }
-
-        //StatusAddElement addElementModus=new StatusAddElement(this, pfad, klassenName);
-        //status=addElementModus;
-        //return addElementModus.getElement();
     }
 
     /*
@@ -1237,15 +1090,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     }
 
     public void wrappElement(Element element) {
-        //remove(element);
-        /*Wrapper wrapper=new Wrapper();
-    wrapper.setBackground(Color.RED);
-    wrapper.add(element);
-    element.wrapper=wrapper;
-    wrapper.setLocation(element.getLocation());
-    wrapper.setSize(element.getSize());
-    element.setLocation(0,0);
-    add(wrapper,0);*/
+
     }
 
     public Element addElementIntoCanvas(String mainPath, String binPath, String circuitClass, String[] args) {
@@ -1256,12 +1101,10 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
             int id = getObjectID();
             Element element = new Element(id, this, elementPath, mainPath, binPath, circuitClass, "", args);
             reserveObjectID(id, element);
-            //System.out.println("Element.id="+id);
             elList.add(element);
 
             add(element, 0);
-            //wrappElement(element);
-            //reorderWireFrames();
+
             unlockGraphics();
 
             element.setLocation(500, 500);
@@ -1305,10 +1148,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
             Element element = null;
 
-            /*          element=(Element)getObjectWithID(sourceElementID);
-            element.getPin(sourcePin).draht=dr;
-            element=(Element)getObjectWithID(destElementID);
-            element.getPin(destPin).draht=dr;*/
             drahtLst.add(dr);
         } catch (Exception ex) {
             owner.showErrorMessage(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("Draht_konnte_nicht_erfolgreich_erzeugt_werden_:") + ex.toString());
@@ -1545,30 +1384,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
         deleteElementDrahte(el);
 
-        /*if (el.getInternName().indexOf("#MCU-FLOWCHART") > -1)
-        {
-
-            // Sind die drähte oben und unten Belegt,
-            // dann Element löschen und ein Draht dazwischen legen.
-            if (ok == true)
-            {
-                Draht draht = addDrahtIntoCanvas(elPinTopID, elPinTopPin, elPinBottomID, elPinBottomPin);
-
-                Element el1 = getElementWithID(elPinTopID);
-                if (el1!=null)
-                {
-                    el1.getPin(elPinTopPin).draht = draht;
-                }
-
-                Element el2 = getElementWithID(elPinBottomID);
-                if (el2!=null)
-                {
-                    el2.getPin(elPinBottomPin).draht = draht;
-                }
-
-                //reorderWireFrames();
-            }
-        }*/
         el.removeReference();
     }
 
@@ -1664,7 +1479,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         //Alle Markierten Draehte loeschen
         int i = 0;
         do {
-            if (drahtLst.size() == 0) {
+            if (drahtLst.isEmpty()) {
                 break;
             }
             Draht draht = (Draht) drahtLst.get(i);
@@ -1682,7 +1497,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         // Alle Markierten PolyPoint loeschen
         i = 0;
         do {
-            if (drahtLst.size() == 0) {
+            if (drahtLst.isEmpty()) {
                 break;
             }
             Draht draht = (Draht) drahtLst.get(i);
@@ -1724,7 +1539,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     }
 
     public ArrayList<Element> getSelectedElements() {
-        ArrayList<Element> result = new ArrayList<Element>();
+        ArrayList<Element> result = new ArrayList<>();
 
         int c = 0;
         for (int i = 0; i < elList.size(); i++) {
@@ -1816,7 +1631,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
             thread.setPriority(Thread.NORM_PRIORITY);
             thread.start();
         }
-        //processAllElements();
     }
 
     public void pause() {
@@ -1828,7 +1642,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     }
 
     public void stop() {
-        //if (this.stop!=true)
         {
             this.stop = true;
             this.pause = true;
@@ -1850,8 +1663,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                 if (element.elementBasis != null) {
                     element.elementBasis.xonProcess();
                 }
-
-                // if (element.classRef!=null) element.classRef.xonProcess();
             }
         }
     }
@@ -1866,14 +1677,13 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
             try {
                 Thread.sleep(owner.getDebugDelay());
-            } catch (Exception ex) {
+            } catch (InterruptedException ex) {
             }
             ddd.setOff();
         }
     }
 
     public void processClock() {
-        //System.out.println("clockList.size()="+clockList.size());
         for (int i = 0; i < clockList.size(); i++) {
             Element element = (Element) clockList.get(i);
 
@@ -1963,19 +1773,17 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         } else {
             try {
                 Thread.sleep(1);
-            } catch (Exception ex) {
+            } catch (InterruptedException ex) {
             }
         }
     }
     int pauseC = 0;
 
     private void processMyAll() {
-        if (processList.size() == 0) {
+        if (processList.isEmpty()) {
             try {
                 Thread.sleep(1);
-                //System.out.println("PAUSE"+pauseC++);
-
-            } catch (Exception ex) {
+            } catch (InterruptedException ex) {
             }
             return;
         }
@@ -2010,7 +1818,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                 }
                 try {
                     Thread.sleep(owner.getDebugDelay());
-                } catch (Exception ex) {
+                } catch (InterruptedException ex) {
                 }
 
                 if (pin.object instanceof VSBoolean) {
@@ -2034,17 +1842,13 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
             if (elementDest != null && elementDest.classRef != null) {
                 try {
                     elementDest.classRef.xonProcess();
-                } catch (java.lang.AbstractMethodError ex) {
-                    Tools.jException(owner, "Error in xonProcess : " + ex + ", " + elementDest.getNameLocalized());
-                } catch (Exception ex) {
+                } catch (java.lang.AbstractMethodError | Exception ex) {
                     Tools.jException(owner, "Error in xonProcess : " + ex + ", " + elementDest.getNameLocalized());
                 }
 
                 try {
                     elementDest.classRef.elementActionPerformed(new ElementActionEvent(draht.destPin, element));
-                } catch (java.lang.AbstractMethodError ex) {
-                    System.out.println("elementActionPerformed : " + ex);
-                } catch (Exception ex) {
+                } catch (java.lang.AbstractMethodError | Exception ex) {
                     System.out.println("elementActionPerformed : " + ex);
                 }
 
@@ -2052,21 +1856,16 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                     int size = elementDest.notifyWhenDestCalledList.size();
                     if (size > 0) {
                         for (int i = 0; i < size; i++) {
-                            //Element dst = getElementWithID(draht.sourceElementID);
                             Element dst = (Element) elementDest.notifyWhenDestCalledList.get(i);
                             if (dst != null && dst.classRef != null) {
                                 dst.classRef.destElementCalled();
                             }
                         }
                     }
-                } catch (java.lang.AbstractMethodError ex) {
-                    System.out.println("destElementCalled : " + ex);
-                } catch (Exception ex) {
+                } catch (java.lang.AbstractMethodError | Exception ex) {
                     System.out.println("destElementCalled : " + ex);
                 }
-
             }
-
         }
 
         if (processList.size() > 0) {
@@ -2268,41 +2067,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
      * ignoriert werden.
      */
     public void recognizeResursiveWires(Element element) {
-        /*element.locked=true;
-    for (int i=0;i<element.getPinCount();i++)
-    {
-    JPin pin = element.getPin(i);
-    if (pin.draht!=null)
-    {
-    int sourceElementID;
-    int srcPinID;
-    if (pin.draht.getDestElementID()==element.getID())
-    {
-    sourceElementID=pin.draht.getSourceElementID();
-    srcPinID=pin.draht.getSourcePin();
-    }
-    else
-    {
-    sourceElementID=pin.draht.getDestElementID();
-    srcPinID=pin.draht.getDestPin();
-    }
-    Element srcEl = (Element)getObjectWithID(sourceElementID);
-    JPin srcPin=srcEl.getPin(srcPinID);
-    if (srcPin.pinIO==JPin.PIN_INPUT)
-    {
-    if (srcEl.locked==false)
-    {
-    recognizeResursiveWires(srcEl);
-    srcPin.draht.resursive=false;
-    }
-    else
-    {
-    srcPin.draht.resursive=true;
-    }
-    }
-    }
-    }
-    element.locked=false;*/
+
     }
     public boolean linksOK = false;
     public boolean rechtsOK = false;
@@ -2340,9 +2105,9 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         Element[] nodes = getAllTestpointElements();
         ArrayList liste = new ArrayList();
 
-        for (int i = 0; i < nodes.length; i++) {
-            if (nodes[i].getPin(0).dataType == ExternalIF.C_DOUBLE) {
-                liste.add(nodes[i]);
+        for (Element node : nodes) {
+            if (node.getPin(0).dataType == ExternalIF.C_DOUBLE) {
+                liste.add(node);
             }
         }
         Element[] result = new Element[liste.size()];
@@ -2357,9 +2122,9 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         Element[] nodes = getAllTestpointElements();
         ArrayList liste = new ArrayList();
 
-        for (int i = 0; i < nodes.length; i++) {
-            if (nodes[i].getPin(0).dataType == ExternalIF.C_BOOLEAN) {
-                liste.add(nodes[i]);
+        for (Element node : nodes) {
+            if (node.getPin(0).dataType == ExternalIF.C_BOOLEAN) {
+                liste.add(node);
             }
         }
         Element[] result = new Element[liste.size()];
@@ -2579,7 +2344,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                     if (pin != null && pin.draht != null && pin.draht.getPolySize() == 2) {
                         if (pin.getPinAlign() == 3 || pin.getPinAlign() == 1) {
                             Polygon poly = pin.draht.getPolygon();
-                            //if (poly.xpoints[0]<poly.xpoints[poly.npoints-1])
                             {
                                 if (pin.pinIO == JPin.PIN_INPUT) {
                                     srcElement = (Element) getObjectWithID(pin.draht.getSourceElementID());
@@ -2594,48 +2358,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                                 }
                             }
                         }
-
-
-                        /*if (pin.getPinAlign()==3 || pin.getPinAlign()==1)
-                    {
-                    Polygon poly =pin.draht.getPolygon();
-                    if (pin.pinIO==JPin.PIN_INPUT)
-                    {
-                    srcElement = (Element)getObjectWithID(pin.draht.getSourceElementID());
-                    scrPin= srcElement.getPin(pin.draht.getSourcePin());
-                    if (srcElement.getInternName().equalsIgnoreCase("###NODE###") && srcElement!=node && (scrPin.getPinAlign()==1 || scrPin.getPinAlign()==3))
-                    {
-                    srcElement.setLocation(srcElement.getLocation().x,node.getLocation().y);
-                    reorderNodes(srcElement);
-                    }
-                    }else
-                    if (pin.pinIO==JPin.PIN_OUTPUT)
-                    {
-                    srcElement = (Element)getObjectWithID(pin.draht.getDestElementID());
-                    scrPin= srcElement.getPin(pin.draht.getDestPin());
-                    if (srcElement.getInternName().equalsIgnoreCase("###NODE###") && srcElement!=node && (scrPin.getPinAlign()==1 || scrPin.getPinAlign()==3))
-                    {
-                    srcElement.setLocation(srcElement.getLocation().x,node.getLocation().y);
-                    //reorderNodes(srcElement);
-                    }
-                    }
-                    }*/
- /*if (pin.getPinAlign()==0 || pin.getPinAlign()==2)
-                    {
-                    Element srcElement=null;
-                    Polygon poly =pin.draht.getPolygon();
-                    if (pin.pinIO==JPin.PIN_INPUT)
-                    {
-                    srcElement = (Element)getObjectWithID(pin.draht.getSourceElementID());
-                    element.setLocation(poly.xpoints[0]-w2,element.getLocation().y);
-                    }else
-                    if (pin.pinIO==JPin.PIN_OUTPUT)
-                    {
-                    srcElement = (Element)getObjectWithID(pin.draht.getDestElementID());
-                    //element.setLocation(element.getLocation().x,poly.ypoints[poly.npoints-1]-15);
-                    element.setLocation(poly.xpoints[poly.npoints-1]-w2,element.getLocation().y);
-                    }
-                    }*/
                     }
                 }
             }
@@ -2676,7 +2398,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         for (int i = 0; i < vm.getElementCount(); i++) {
             Element elementX = vm.getElement(i);
 
-            if (elementX.getInternName().indexOf("#FLOWCHART") > -1 | elementX.getInternName().indexOf("#MCU-FLOWCHART") > -1) {
+            if (elementX.getInternName().contains("#FLOWCHART") | elementX.getInternName().contains("#MCU-FLOWCHART")) {
                 int pinBottomNr = elementX.getPinsTop() + elementX.getPinsRight() + elementX.getPinsBottom() - 1;
 
                 JPin pin = elementX.getPin(pinBottomNr);
@@ -2705,10 +2427,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                     }
                 }
             }
-            /*if (elementX.getInternName().indexOf("#FLOWCHART-START#") > -1)
-            {
-                FlowChartElementRekursivAbsteigenUndElementeInDerMitteAnordnen(elementX);
-            }*/
         }
 
         for (int i = 0; i < vm.getElementCount(); i++) {
@@ -2730,7 +2448,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         reorderFlowChartLines();
 
         if (elList.size() > 0) {
-            //for (int i=0;i<elList.size();i++)
             {
                 Element el = getElement(0);
                 recognizeResursiveWires(el);
@@ -2837,7 +2554,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                             ay = element.getY() + pin.getY() + pin.getHeight();
                             if (draht.getPolySize() > 2) {
                                 PolyPoint pp = draht.getLastPoint();
-                                ;
                                 pp.setLeft(ax);
                             }
 
@@ -2860,7 +2576,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
             draht.setPoint(draht.getPolySize() - 1, ax, ay);
         }
 
-        //reorderNodes(null);
         repaint();
     }
 
@@ -3214,7 +2929,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                 }
             }
             fsOut.postItem();
-        } catch (Exception ex) {
+        } catch (IOException ex) {
             owner.showErrorMessage("" + ex.toString());
         }
     }
@@ -3281,7 +2996,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
             saveElements(fsOut, onlySelected);
             saveDraehte(fsOut, onlySelected);
 
-        } catch (Exception ex) {
+        } catch (IOException ex) {
             owner.showErrorMessage("" + ex.toString());
         }
 
@@ -3386,12 +3101,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     public boolean pinExist(int destElementID, int destPin) {
         Element element = getElementWithID(destElementID);
 
-        if (destPin < element.getPinCount()) {
-            return true;
-        } else {
-            return false;
-
-        }
+        return destPin < element.getPinCount();
     }
 
     public void readDrahts(int size, FileSystemInput fsIn, boolean fromAblage, ArrayList ElemetTabelle) {
@@ -3427,25 +3137,20 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                         Integer oldElementID = (Integer) ElemetTabelle.get(k++);
                         Integer newElementID = (Integer) ElemetTabelle.get(k++);
 
-                        if (srcOK == false && sourceElementID == oldElementID.intValue()) {
-                            sourceElementID = newElementID.intValue();
+                        if (srcOK == false && sourceElementID == oldElementID) {
+                            sourceElementID = newElementID;
                             srcOK = true;
                         }
-                        if (dstOK == false && destElementID == oldElementID.intValue()) {
-                            destElementID = newElementID.intValue();
+                        if (dstOK == false && destElementID == oldElementID) {
+                            destElementID = newElementID;
                             dstOK = true;
                         }
                         if (srcOK && dstOK) {
                             break;
                         }
                     }
-                    //if (getElementWithID(sourceElementID)!=null)
                     {
                         Draht draht = addDraht(id, sourceElementID, sourcePin, destElementID, destPin);
-                        /*Element element=(Element)getObjectWithID(sourceElementID);
-                        element.getPin(sourcePin).draht=draht;
-                        element=(Element)getObjectWithID(destElementID);
-                        element.getPin(destPin).draht=draht;*/
 
                         reserveObjectID(id, draht);
                         draht.loadFromStream(stream);
@@ -3460,13 +3165,12 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                     draht.loadFromStream(stream);
                 }
             }
-        } catch (Exception ex) {
+        } catch (IOException ex) {
             beendeWaitDialog();
             owner.showErrorMessage("" + ex.toString());
         }
 
     }
-    //JProgressBar progress =null;
     JLabel label = null;
     JPanel statusPanel = null;
     private double fileVersion = 0;
@@ -3474,32 +3178,12 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     public double getFileVersion() {
         return fileVersion;
     }
-    /*public void createWaitWindow()
-    {
-    if (owner.frameCircuit!=null)
-    {
-    frmWait = new DialogWait();
-    frmWait.stop=false;
-    // frmWait.setLocation(frmWait.getX(),frmWait.getY()-100);
-    frmWait.setVisible(true);
-    String strText;
-    if (this==owner.getCircuitBasis())
-    {
-    strText=java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("loadingCircuitVM");
-    }
-    else
-    {
-    strText=java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("loadingPanelVM");
-    }
-    frmWait.label1.setText(strText);
-    }
-    }*/
+
     public JProgressBar progressBar;
     public int progress = 0;
 
     public void loadFromStream(FileSystemInput fsIn, boolean fromAblage, String ver) {
         if (owner.frameCircuit != null) {
-            //Tools.dialogWait= new DialogWait();
 
             owner.frameCircuit.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
             if (Tools.dialogWait != null) {
@@ -3513,7 +3197,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                 strText = java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("loadingPanelVM");
             }
             if (Tools.dialogWait != null) {
-                Tools.dialogWait.label1.setText(strText);
+                DialogWait.label1.setText(strText);
             }
 
             progress = 0;
@@ -3558,7 +3242,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
             readElements(elsize, fsIn, fromAblage, ElemetTabelle);
 
             readDrahts(drsize, fsIn, fromAblage, ElemetTabelle);
-        } catch (Exception ex) {
+        } catch (IOException | NumberFormatException ex) {
             beendeWaitDialog();
             owner.showErrorMessage(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("Fehler_in_Basis.loadFromStream()_:") + ex.toString());
         }
@@ -3568,7 +3252,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                 Integer elementOldid = (Integer) ElemetTabelle.get(k);
                 Integer elementId = (Integer) ElemetTabelle.get(k + 1);
 
-                SelectElement(elementId.intValue());
+                SelectElement(elementId);
                 k += 2;
             }
         }
@@ -3614,17 +3298,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     }
 
     public void mouseClicked(MouseEvent e) {
-        /*if (e.getClickCount() == 2)
-    {
-    Element el=getElementWhereInMouse(e);
-    if (el!=null)
-    {
-    el.mouseDblClick(e);
-    }
-    } else
-    {
-    if (status!=null) status.mouseClicked(e);
-    }*/
+
     }
 
     //When the mouse cursor enters the canvas make it the two
@@ -3648,32 +3322,9 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         if (status != null) {
             status.mouseReleased(e);
         }
-
-        /*if (aktuellesElement!=null)
-    {
-    e.setSource(aktuellesElement);
-    e.translatePoint(-aktuellesElement.getRealX(),-aktuellesElement.getRealY());
-    aktuellesElement.mouseReleased(e);
-    aktuellesElement=null;
-    }
-    else
-    {
-    Element el=getElementWhereInMouse(e);
-    if (el!=null) el.mouseReleased(e);
-    else
-    if (status!=null) status.mouseReleased(e);
-    }*/
     }
 
     public void mousePressed(MouseEvent e) {
-        /* Element el=getElementWhereInMouse(e);
-        if (el!=null)
-        {
-        aktuellesElement=el;
-        el.mousePressed(e);
-        aktuellIstBasis=false;
-        }
-        else*/
         {
             aktuellIstBasis = true;
             if (status != null) {
@@ -3683,13 +3334,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     }
 
     public void mouseDragged(MouseEvent e) {
-        /*if (aktuellesElement!=null)
-        {
-        e.setSource(aktuellesElement);
-        //e.translatePoint(-aktuellesElement.getRealX(),-aktuellesElement.getRealY());
-        aktuellesElement.mouseDragged(e);
-        }
-        else*/
         {
             if (!aktuellIstBasis) {
                 Element el = getElementWhereInMouse(e);
@@ -3700,7 +3344,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
             } else if (status != null) {
                 status.mouseDragged(e);
             }
-
         }
     }
 
@@ -3717,7 +3360,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     }
 
     public void mouseMoved(MouseEvent e) {
-
         if (status != null) {
             status.mouseMoved(e);
         }
@@ -3749,47 +3391,31 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     }
 
     public void vsLoadFromFile(String fileName) {
-        //loadFromXML(fileName,false);
     }
 
     public void vsMousePressed(MouseEvent e) {
-        //e.setSource(this);
         this.mousePressed(e);
     }
 
     public void vsMouseReleased(MouseEvent e) {
-        //e.setSource(this);
         this.mouseReleased(e);
     }
 
     public void vsMouseMoved(MouseEvent e) {
-        //MouseEvent newE = new MouseEvent(this.owner,e.getID(),e.getWhen(),e.getModifiers(),e.getX(),e.getY(),e.getClickCount(),false);
-        //e.setSource(this);
-        //this.mouseMoved(e);
+
     }
 
     public void vsMouseDragged(MouseEvent e) {
-        //MouseEvent newE = new MouseEvent(this.owner,e.getID(),e.getWhen(),e.getModifiers(),e.getX(),e.getY(),e.getClickCount(),false);
-        //e.setSource(this);
         this.mouseDragged(e);
     }
 
     public void vsloadFromXML(org.w3c.dom.Element nodeElement) {
-        //loadFromXML(nodeElements, false);
     }
 
     public void vssaveToXML(org.w3c.dom.Element nodeElement) {
 
     }
 
-    /*
-    public void repaint(Rectangle r)
-    {
-    repaint(r);
-    }*/
- /*public void paint(Graphics g)
-    {
-    }*/
     private void paintGrid(Graphics g) {
         int x, y;
 
@@ -3820,25 +3446,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         if (!graphikLocked && g != null) {
             Graphics2D g2 = (Graphics2D) g;
 
-
-            /*VMObject vm = this;
-            for (int i = 0; i < vm.getElementCount(); i++)
-            {
-                Element element = vm.getElement(i);
-
-                if (element.getInternName().indexOf("#MCU-FLOWCHART-START#") > -1)
-                {
-                    int mx = element.getWidth() / 2;
-
-                    Stroke standard = new BasicStroke(1);
-                    g2.setColor(Color.LIGHT_GRAY);
-                    g2.setStroke(standard);
-
-                    g2.drawLine(element.getX() + mx, element.getY() + element.getHeight(), element.getX() + mx, element.getY() + getHeight());
-                //g.drawLine(element.getX(), element.getY() + element.getHeight(), element.getX(), element.getY() + getHeight());
-                //g.drawLine(element.getX() + element.getWidth(), element.getY() + element.getHeight(), element.getX() + element.getWidth(), element.getY() + getHeight());
-                }
-            }*/
             if (rasterOn) {
                 paintGrid(g);
             }
@@ -3863,18 +3470,10 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                 g.setColor(new Color(180, 180, 180));
                 g.drawRect(getWidth() - 9, getHeight() - 9, 9, 9);
             }
-
-            /*for (int i=0;i<getElementCount();i++)
-        {
-        Element element = getElement(i);
-        element.refreshSubElement(g2);
-        } */
         }
-
     }
 
     public void properyItemFocusGained() {
-        //System.out.println("XXXXXXXXXX");
     }
 
     public void init(String[] args) {

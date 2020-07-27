@@ -47,11 +47,7 @@ public class Loader
         o=c.newInstance();
                 
     } 
-    catch (Exception ex)
-    {
-        System.out.println(""+ex);
-    }
-    catch (UnsupportedClassVersionError ex)
+    catch (Exception | UnsupportedClassVersionError ex)
     {
         System.out.println(""+ex);
     }
@@ -71,11 +67,7 @@ public class Loader
         o=c.newInstance();
                 
     } 
-    catch (Exception ex)
-    {
-        System.out.println(""+ex);        
-    }
-    catch (UnsupportedClassVersionError ex)
+    catch (Exception | UnsupportedClassVersionError ex)
     {
         System.out.println(""+ex);        
     }

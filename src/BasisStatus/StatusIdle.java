@@ -819,7 +819,6 @@ public class StatusIdle extends Object implements StatusBasisIF {
 
             vmObject.reorderWireFrames();
 
-            //basis.getCommandProcessor().submit(cmdWire);
             if (e.getModifiers() == InputEvent.CTRL_MASK + InputEvent.BUTTON1_MASK) {
                 // ermittle die zwei PolyPoints der Linie implements Draht
                 Point p1 = line.getStartPoint();
