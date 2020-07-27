@@ -1198,8 +1198,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     public void loadFile(String filename, boolean fromAblage) {
         loading = true;
         stop();
-        //circuitBasis.lockGraphics();
-        //frontBasis.lockGraphics();
         disableAllElements();
 
         this.XfileName = fileName;
@@ -1219,10 +1217,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             circuitBasis.unlockGraphics();
             frontBasis.unlockGraphics();
 
-            //System.out.println(fileName + java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("_ist_in_Ordnung."));
         } catch (Exception ex) {
-            //System.out.println(ex.toString());
-            //showErrorMessage(ex.toString());
         }
 
         circuitBasis.processPropertyEditor();
@@ -1288,7 +1283,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
         getCircuitBasis().ProcessPinDataType();
 
-        //getFrontBasis().setSize(getFrontBasis().getWidth(),getFrontBasis().getHeight());
     }
 
     private int undoPointer = 0;
@@ -1309,7 +1303,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                 }
             }
 
-            //String filename=getFrameMain().getUserURL().getFile()+"/Temp_Undo_"+id+"_"+undoHistory.size()+".tmp";
             try {
                 File tmp = File.createTempFile("Undo", ".vslogicTemp", null);
                 String filename = tmp.getAbsolutePath();
@@ -1383,10 +1376,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             Component comp = vm.getComponent(i);
             if (comp instanceof Element) {
                 element = (Element) comp;
-                try {
-                    //   if (element.loadedFromAblageFlag2) element.classRef.xOnInit();
-                } catch (Exception ex) {
-                }
             }
         }
     }
@@ -1400,10 +1389,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         Element element;
         for (int i = 0; i < vm.getElementCount(); i++) {
             element = vm.getElement(i);
-            // if (element.loadedFromAblageFlag2)
-            {
-                //     element.loadedFromAblageFlag2=false;
-            }
         }
     }
 
@@ -1490,7 +1475,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                         if (res.equals(res1)) {
                             vmProtected = false;
                         } else {
-                            //Tools.showMessage("Password incorrect!\nVM is now readonly.");
                             vmProtected = true;
                         }
                     } else {
@@ -1530,32 +1514,11 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                 
                     node.size1 = stream.readInt();
                     node.size2 = stream.readInt();
-                //}
 
                 variablenListe.add(node);
             }
         }
-        /*  dos.writeUTF(Version.strFileVersion); // Version
-            dos.writeUTF(vmPassword);               int modusx = 0;
-            dos.writeInt(modusx);                   dos.writeUTF(caption); 
-            vsIcon.saveToStream(fos);               dos.writeUTF(circuitPanelTitel);
-            dos.writeUTF(frontPanelTitel);          dos.writeInt(elementWidth);
-            dos.writeInt(elementHeight);            dos.writeUTF(elementName);
-            dos.writeBoolean(showToolBar);          dos.writeBoolean(unDecorated);
-            dos.writeUTF(basisTitel);               dos.writeUTF(basisVersion);
-            dos.writeUTF(autorName);                dos.writeUTF(autorMail);
-            dos.writeUTF(autorWWW);             
-        if (onlySelected == false) {
-                dos.writeInt(variablenListe.size());
-                OpenVariable node;
-                for (int i = 0; i < variablenListe.size(); i++) {
-                    node = (OpenVariable) variablenListe.get(i);
-                    dos.writeUTF(node.name);
-                    dos.writeInt(node.datatype);
-                    dos.writeInt(node.size1);
-                    dos.writeInt(node.size2);
-                }
-            }*/
+
         }else{
             if (Double.parseDouble(ver) < 1.981) {
                 showErrorMessage(java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("Ungueltige_Version_oder_Version_wird_nicht_unterstuetzt"));
@@ -1580,7 +1543,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                         if (res.equals(res1)) {
                             vmProtected = false;
                         } else {
-                            //Tools.showMessage("Password incorrect!\nVM is now readonly.");
                             vmProtected = true;
                         }
                     } else {
@@ -1677,56 +1639,16 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         }
     }
 
-    /*  public void ladeNunAlleBasisElementeOnlyFromAblage(VMObject vm,FileSystemInput fsIn)
-    {
-        Element element;
-   
-   
-        for (int i=0;i<vm.getElementCount();i++)
-        {
-            element=vm.getElement(i);
-   
-   
-            if (element.loadedFromAblageFlag2)
-            {
-                FileInputStream fis=fsIn.gotoItem(fileCount++);
-                DataInputStream stream= new DataInputStream(fis);
-   
-                try
-                {
-                    element.classRef.loadFromStreamAfterXOnInit(fis);
-                }
-                catch(Exception ex)
-                {
-                    System.out.println(ex.toString());
-                }
-                catch(java.lang.AbstractMethodError ee)
-                {
-                    System.out.println(ee.toString());
-                }
-   
-                if (element.elementBasis!=null)
-                {
-                    element.elementBasis.getCircuitBasis(). processpropertyChangedToAllElements(null);
-                    element.elementBasis.getFrontBasis(). processpropertyChangedToAllElements(null);
-                }
-   
-            }
-        }
-   
-    }*/
     public void ladeNunAlleBasisElemente(VMObject vm, FileSystemInput fsIn) {
         Element element;
 
         for (int i = 0; i < vm.getElementCount(); i++) {
             element = vm.getElement(i);
 
-            // System.out.println("Element ="+element.getCaption());
             FileInputStream fis = fsIn.gotoItem(fileCount++);
             DataInputStream stream = new DataInputStream(fis);
 
             try {
-                // if (!element.getCaption().equalsIgnoreCase("Analog Display 2"))
                 {
                     element.classRef.loadFromStreamAfterXOnInit(fis);
                 }
@@ -1752,7 +1674,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
       try {
             FileOutputStream fos = fsOut.addItem("Properties");
             DataOutputStream dos = new DataOutputStream(fos);
-            //dos.writeUTF(Version.strFileVersion); // Version
             dos.writeUTF(Version.strFileVersion); // Version
             System.out.println("SavetoStream_BasisVersion:"+Version.strFileVersion+"|");
             if (vmPassword.length() == 0) {
@@ -1793,9 +1714,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             fsOut.postItem();
             circuitBasis.saveToStream(fsOut, "CircuitPanel", onlySelected);
             frontBasis.saveToStream(fsOut, "FrontPanel", onlySelected);
-            //speichereNunAlleBasisElemente(circuitBasis,fsOut,onlySelected);
-            //speichereNunAlleBasisElemente(frontBasis,fsOut,onlySelected);
-        } catch (Exception ex) {
+        } catch (IOException ex) {
             showErrorMessage(java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("Fehler_in_Basis.saveToStream()_:") + ex.toString());
         }      
       }else{
@@ -1804,7 +1723,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             DataOutputStream dos = new DataOutputStream(fos);
 
             dos.writeUTF(Version.strFileVersion); // Version
-            //System.out.println("SavetoStream_BasisVersion:"+Version.strFileVersion+"|");
             if (vmPassword.length() == 0) {
                 vmPassword = "";
             }
@@ -1845,9 +1763,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             circuitBasis.saveToStream(fsOut, "CircuitPanel", onlySelected);
             frontBasis.saveToStream(fsOut, "FrontPanel", onlySelected);
 
-            //speichereNunAlleBasisElemente(circuitBasis,fsOut,onlySelected);
-            //speichereNunAlleBasisElemente(frontBasis,fsOut,onlySelected);
-        } catch (Exception ex) {
+        } catch (IOException ex) {
             showErrorMessage(java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("Fehler_in_Basis.saveToStream()_:") + ex.toString());
         }
       }
@@ -1877,7 +1793,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                 }
             } else {
                 saveX(element, fsOut);
-                //System.out.println("Element="+element.getCaption());
             }
 
         }
@@ -1920,25 +1835,12 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
     @Override
     public void xpaint(java.awt.Graphics g) {
-        //getCircuitBasis().panel=((Element)element).owner.owner.frameCircuit.panelCircuit;
-        //getCircuitBasis().paint(g);
+
     }
 
     @Override
     public void xsetExternalIF(ExternalIF externalIF) {
 
-        /*getCircuitBasis().xsetExternalIF(externalIF);
-        element=(Element)externalIF;
-         
-        this.element=externalIF;
-         
-        if (getFrontBasis().getElementCount()>0)
-        {
-            panelElement=externalIF.setPanelElement("Dummy");
-            Element element = (Element)panelElement;
-            element.classRef=new PanelClass(this);
-            element.classRef.xsetExternalIF(panelElement);
-        }*/
     }
 
     public void jSetChanged(boolean value) {
@@ -1981,9 +1883,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
     @Override
     public void xonInitInputPins() {
-        /* getCircuitBasis().initAllInputPins();
-        getFrontBasis().initAllInputPins();*/
-
         getCircuitBasis().xonInitInputPins();
         getFrontBasis().xonInitInputPins();
     }
@@ -2190,18 +2089,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     @Override
     public Object vsEvaluate(VSFlowInfo flowInfo, String expression) {
         try {
-
-           
-            //parser.flowInfo = flowInfo;
-            //parser.delErrorMessage();
-
-            /*Object o=parser.parseString(expression);
-            
-            String err=parser.getErrorMessage().trim();
-            if (err.length()>0)
-            {
-                Tools.jException(this,err);
-            }*/
             OpenVariable node;
             Object o1;
 
@@ -2212,8 +2099,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                 b = flowInfo.bindings;
                 vars= flowInfo.variablenListe;
             }
-            
-           
 
             o1 = engine.eval(expression, b);
 
@@ -2227,14 +2112,12 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                     node.value = ((Integer)b.get(node.name)).doubleValue();
                 }else {
                     node.value = b.get(node.name);
-                }
-                
+                }   
 
                 notifyAllElements(node.name);
             }
 
             return o1;
-            //return o;
         } catch (ScriptException ex) {
             Logger.getLogger(Basis.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2249,36 +2132,10 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         if (el != null && el.classRef != null) {
             el.classRef.returnFromMethod(flowInfo.returnValue);
         }
-
-        /*Object o;
-        for (int i=0;i<stack.size();i++)
-        {
-          ExternalIF sourceElement=(ExternalIF)stack.get(i);
-         
-          o=sourceElement.jGetTag(0);
-          if (o instanceof String)
-          {
-              String oo = ((String)o).trim();
-              if (oo.equalsIgnoreCase(name))
-              {
-         
-                  Element el = ((Element)sourceElement);
-         
-                  if (el!=null && el.classRef!=null)
-                  {
-                      el.classRef.resetValues();
-                      stack.remove(sourceElement);
-                      return;
-                  }
-              }
-          }
-        }*/
     }
 
     @Override
     public void vsShow() {
-        //System.out.println(""+fileName);
-
         if (ownerBasis != null) {
             if (ownerBasis.frameCircuit != null) {
                 if (ownerBasis.frameCircuit.isBasisInDesktop(fileName) == null) {
@@ -2300,8 +2157,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                     ownerBasis.frameCircuit.jPaneVMPanels.setSelectedComponent(this.ownerVMPanel);
                 }
             }
-
-            //showFrontPanelWhenStart=false;
         }
     }
 
@@ -2318,8 +2173,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     public void vsXLoadFromFile(String fileName) {
         fileName = Tools.mapFile(fileName);
 
-        //System.out.println(""+fileName);
-        //System.out.println(""+this);
         loadFromFile(fileName, false);
 
         circuitBasis.ProcessDeGruppierer();
@@ -2330,18 +2183,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
     @Override
     public void vsLoadFromFile(String fileName) {
-        /*File file = new File(fileName);
-         
-        if (!file.exists())
-        {
-            String result=frameCircuit.searchElement(file.getParentFile());
-            if (result.length()>0)
-            {
-         
-                fileName=result+"/"+file.getName();
-            }
-        }*/
-
         vsXLoadFromFile(fileName);
     }
 
@@ -2382,12 +2223,12 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
     @Override
     public void vsMouseMoved(MouseEvent e) {
-        //getFrontBasis().mouseMoved(e);
+
     }
 
     @Override
     public void vsMouseDragged(MouseEvent e) {
-        // getFrontBasis().mouseDragged(e);
+
     }
 
     @Override
@@ -2487,5 +2328,4 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     public ScriptEngine vsGetEngine() {
         return engine;
     }
-
 }
