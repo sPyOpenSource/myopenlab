@@ -39,11 +39,10 @@ public class FrameMain extends javax.swing.JFrame
         initComponents();
         
         
-        graph=new MyGraph();
+        graph = new MyGraph();
         
         
-        getContentPane().add(graph,BorderLayout.CENTER);
-
+        getContentPane().add(graph, BorderLayout.CENTER);
     }
     
     

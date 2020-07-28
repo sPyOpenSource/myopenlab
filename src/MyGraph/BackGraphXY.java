@@ -23,9 +23,7 @@ import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.Point;
-import java.awt.RenderingHints;
 import java.text.DecimalFormat;
 
 /**
@@ -43,11 +41,11 @@ public class BackGraphXY extends GraphBackground
     public boolean FirstTimeScaleX=true;
     public boolean autoScaleY=false;
     public double positionX=0.0;
-    private DecimalFormat format = new DecimalFormat("#0.0");
+    private final DecimalFormat format = new DecimalFormat("#0.0");
     public Color nullLineColor=new Color(0,0,254);
     public boolean nullLineVisible=true;
     
-    public Integer AustoscaleInterval= new Integer(600);
+    public Integer AustoscaleInterval= 600;
     
     
     public void setAutoScaleInterval(Integer Interval){
@@ -74,21 +72,6 @@ public class BackGraphXY extends GraphBackground
         setCursor(Cursor.getPredefinedCursor(Cursor.CROSSHAIR_CURSOR));
         
     }
-    
-    /*private double getYValue(double x)
-    {
-        double d=0;
-        double min=99999999999999999099999.9;
-    for (int i=0;i<xValues.length;i++)p
-        {
-            d=Math.abs(xValues[i]-x);
-            if (d<min) 
-            {
-                min=d;        
-            }
-        }
-        return min;
-    }*/
     
     public void formMouseMoved(java.awt.event.MouseEvent evt)
     {
@@ -121,10 +104,8 @@ public class BackGraphXY extends GraphBackground
         {
             double minX=99999999.0;
             double maxX=-9999999.0;            
-            for (int j=0;j<owner.graphRenderer.length;j++)
-            {
-                double[] xValues = owner.graphRenderer[j].xValues;                
-                
+            for (GraphRenderer graphRenderer : owner.graphRenderer) {
+                double[] xValues = graphRenderer.xValues;
                 if (xValues!=null)
                 {
                     double value=0;
@@ -145,9 +126,7 @@ public class BackGraphXY extends GraphBackground
             maxX=minX+this.AustoscaleInterval;
             this.maxX=maxX;
             this.minX=minX;
-            //this.maxX=minX+(Math.abs(maxY-minY);
-            
-            
+
             owner.xaxis.setMin(minX);
             owner.xaxis.setMax(maxX);            
         }

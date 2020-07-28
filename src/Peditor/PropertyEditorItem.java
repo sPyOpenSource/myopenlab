@@ -49,8 +49,8 @@ public class PropertyEditorItem
     public String strLabel;    
     public Object value;
     
-    private JPanel leftPanel;
-    private JPanel rightPanel;
+    private final JPanel leftPanel;
+    private final JPanel rightPanel;
     
     public JLabel label;
     public JComponent component;
@@ -181,23 +181,15 @@ public class PropertyEditorItem
         //        processChanged();
             }
         });
-        
-               
+
         component.setEnabled(editable);
-        
-        
-           
+
         EmptyBorder eBorder1 = new EmptyBorder(2, 5, 2, 5); // oben, rechts, unten, links 
         LineBorder lBorder1 = new LineBorder(new Color(180, 180, 180)); 
         component.setBorder(BorderFactory.createCompoundBorder(lBorder1, eBorder1)); 
-
-      
-        
         
         rightPanel.add(component);
         
     }
 
-
-     
 }

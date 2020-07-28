@@ -32,7 +32,7 @@ public class MyGraph extends javax.swing.JPanel
 {
     
     public MyGraphX graph = new MyGraphX();
-    public Turn90Label labelLeft =new Turn90Label( "Y-Axis" );
+    public Turn90Label labelLeft = new Turn90Label( "Y-Axis" );
     
     
     /**
@@ -43,7 +43,6 @@ public class MyGraph extends javax.swing.JPanel
         initComponents();        
         add( labelLeft ,BorderLayout.WEST);                
         add(graph,BorderLayout.CENTER);
-        
     }
    
     
@@ -89,27 +88,27 @@ public class MyGraph extends javax.swing.JPanel
     }// </editor-fold>//GEN-END:initComponents
 
     // ----------- SETTER ---------
-    public void setBackgroundTransparent(Boolean value)     { graph.back.setBackgroundTransparent(value.booleanValue());}
+    public void setBackgroundTransparent(Boolean value)     { graph.back.setBackgroundTransparent(value);}
     public void setGridBackgroundColor(Color color)         { graph.back.setBackground(color); }
     public void setGridLineColor(Color color)               { graph.back.colorGrid=color; }
     public void setGridSublineColor(Color color)            { graph.back.colorSubGrid=color;  }        
     public void setNullLineColor(Color color)               { graph.back.nullLineColor=color; }
-    public void setNullLineVisible(Boolean value)           { graph.back.nullLineVisible=value.booleanValue();}
+    public void setNullLineVisible(Boolean value)           { graph.back.nullLineVisible=value;}
     public void setXYAxisFont(Font font)                    { graph.xaxis.stdFont=font; graph.yaxis.stdFont=font;}
     public void setXYAxisFontColor(Color color)             { graph.xaxis.setFontColor(color); graph.yaxis.setFontColor(color);} 
-    public void setXYAxisVisible(Boolean value)             { graph.setXYAxisVisible(value.booleanValue());
-                                                              jLabel1.setVisible(value.booleanValue()); 
-                                                              labelLeft.setVisible(value.booleanValue()); }
-    public void setMinX(Double value)                       { graph.xaxis.setMin(value.doubleValue()); }    
-    public void setMaxX(Double value)                       { graph.xaxis.setMax(value.doubleValue()); }            
-    public void setAutoZoomX(Boolean value)                 { graph.setAutoZoomX(value.booleanValue()); }    
+    public void setXYAxisVisible(Boolean value)             { graph.setXYAxisVisible(value);
+                                                              jLabel1.setVisible(value); 
+                                                              labelLeft.setVisible(value); }
+    public void setMinX(Double value)                       { graph.xaxis.setMin(value); }    
+    public void setMaxX(Double value)                       { graph.xaxis.setMax(value); }            
+    public void setAutoZoomX(Boolean value)                 { graph.setAutoZoomX(value); }    
     public void setXAxisFormatString(String value)          { graph.xaxis.setFormatString(value); }    
     public void setXAxisText(String text)                   { jLabel1.setText(text); }
     public void setXAxisTextFont(Font font)                 { jLabel1.setFont(font);}
     public void setXAxisTextFontColor(Color color)          { jLabel1.setForeground(color); }        
-    public void setMinY(Double value)                       { graph.yaxis.setMin(value.doubleValue()); }    
-    public void setMaxY(Double value)                       { graph.yaxis.setMax(value.doubleValue()); }              
-    public void setAutoZoomY(Boolean value)                 { graph.setAutoZoomY(value.booleanValue()); }        
+    public void setMinY(Double value)                       { graph.yaxis.setMin(value); }    
+    public void setMaxY(Double value)                       { graph.yaxis.setMax(value); }              
+    public void setAutoZoomY(Boolean value)                 { graph.setAutoZoomY(value); }        
     public void setYAxisFormatString(String value)          { graph.yaxis.setFormatString(value); }
     public void setYAxisText(String text)                   { labelLeft.setText(text);}
     public void setYAxisTextFont(Font font)                 { labelLeft.setFont(font); }
@@ -162,22 +161,22 @@ public class MyGraph extends javax.swing.JPanel
     }
     public Color getLineColor( )                
     {
-        if (graph.graphRenderer.length>0) return graph.graphRenderer[0].getLineColor(); 
-        else 
-        //return Color.BLACK;}    
-        return new Color(255,153,0);}    
+        if (graph.graphRenderer.length>0) {
+            return graph.graphRenderer[0].getLineColor();
+        }  else {
+            return new Color(255,153,0);
+        }    
+    }
     
     
     private void formComponentResized(java.awt.event.ComponentEvent evt)//GEN-FIRST:event_formComponentResized
     {//GEN-HEADEREND:event_formComponentResized
-        jPanel2.setPreferredSize(new Dimension(labelLeft.getWidth()+graph.p1.x,jPanel2.getHeight()));
+        jPanel2.setPreferredSize(new Dimension(labelLeft.getWidth() + graph.p1.x, jPanel2.getHeight()));
     }//GEN-LAST:event_formComponentResized
-    
-    
+        
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     public javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
-    
 }

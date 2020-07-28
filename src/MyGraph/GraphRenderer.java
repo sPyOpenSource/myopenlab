@@ -61,7 +61,6 @@ public class GraphRenderer extends JPanel
     public int bufferLen= 600;
     public int pointType = P_LINE_VBIG; //Default PointType for X/Y Graphs
     
-    //private Color lineColor= Color.WHITE;
     private Color lineColor= new Color(255,153,0); //Default Line Color for X/Y Graphs
     private boolean FirstPoint=true;
     
@@ -125,16 +124,7 @@ public class GraphRenderer extends JPanel
     }
     public void init()
     {
-        
-        
-        //genTestValues();
-       
-        
-        //if (autoScaleX) scaleX();
-        //if (autoScaleY) scaleY();
-        
-        //stepXX=(getWidth()/Math.abs(maxX-minX));
-        //stepYY=getHeight()/(Math.abs(maxY-minY));
+
     }
     
     
@@ -334,21 +324,13 @@ public class GraphRenderer extends JPanel
                                                                         //HistHeigh=Math.abs(refy-cy);
                                                                         int HistHeighP=Math.abs(cy-1);
                                                                         int HistHeighN=Math.abs(refMinY-cy);
-                                                                        //if(HistHeighP==0)HistHeighP=2;
-                                                                        //if(HistHeighN==0)HistHeighN=2;
-                                                                        //if (oldCX!=cx || oldCY!=cy || FirstPoint)
-                                                                        //{ 
+
                                                                             if(cy<refy) g.fillRect((cx-(HistWidth/2)),1,HistWidth,HistHeighP);
                                                                             if(cy==refy)g.fillRect((cx-(HistWidth/2)),refy,HistWidth,2);
                                                                             if(cy>refy) g.fillRect((cx-(HistWidth/2)),cy,HistWidth,HistHeighN);
 
-                                                                            //System.out.println("Iteration"+i+"_Point"+pointType+"_Cx"+cx+"_OldCx="+oldCX+"refX"+refx+"_Cy"+cy+"_OldCy"+oldCY+"refy"+refy+"_AlturaP"+HistHeighP+"_AlturaN"+HistHeighN);
-
                                                                             oldCX=cx;
                                                                             oldCY=cy;
-
-                                                                   
-
 
                                                                 }
                                                             }

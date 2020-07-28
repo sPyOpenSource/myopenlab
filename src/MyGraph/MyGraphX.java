@@ -29,8 +29,8 @@ import java.awt.Point;
  */
 public class MyGraphX extends javax.swing.JPanel
 {    
-    public Image image=null;
-    public double alpha=0;
+    public Image image = null;
+    public double alpha = 0;
     public BackGraphXY back= new BackGraphXY(this);
     
     public boolean autoscroll=false;
@@ -103,28 +103,20 @@ public class MyGraphX extends javax.swing.JPanel
     {
         if (graphRenderer!=null)
         {
-          for (int i=0;i<graphRenderer.length;i++)
-          {
-              remove(graphRenderer[i]);
-          }
+            for (GraphRenderer graphRenderer1 : graphRenderer) {
+                remove(graphRenderer1);
+            }
         }
         
         graphRenderer = new GraphRenderer[size];
-        
-        //back.autoScaleX=true;
-        //back.autoScaleY=true;
-        
-        
+
         for (int i=0;i<size;i++)
         {
             graphRenderer[i]= new GraphRenderer(back);
-            
-            //graphRenderer[i].genTestValues();
-                               
+                                           
             this.add(graphRenderer[i],0);
         }
         init();
-        //back.autoScaleX=false;
     }
     
     public void init()
@@ -133,7 +125,6 @@ public class MyGraphX extends javax.swing.JPanel
         xaxis.init();
         yaxis.init();                        
                
-        //xyAxisVisible=false;
         if (xyAxisVisible)
         {
             p1.y=yaxis.getD1();
@@ -162,7 +153,6 @@ public class MyGraphX extends javax.swing.JPanel
         yaxis.init();
                         
         back.setLocation(p1.x,p1.y);
-        //back.setVisible(false);
         back.setSize(p2.x,p2.y-p1.y+1);
         back.setStepXInProzent(xaxis.getStepInProzent());
         back.setStepYInProzent(yaxis.getStepInProzent());
@@ -172,19 +162,15 @@ public class MyGraphX extends javax.swing.JPanel
         
         back.minY=yaxis.min;
         back.maxY=yaxis.max;
-        //back.pointType=back.P_LINE;
         back.init();
         
         if (graphRenderer!=null)
         {
-            for (int i=0;i<graphRenderer.length;i++)
-            {
-                if (graphRenderer[i]!=null)
-                {
-                  graphRenderer[i].setLocation(p1.x,p1.y);            
-                  graphRenderer[i].setSize(p2.x,p2.y-p1.y+1);
-
-                  graphRenderer[i].init();                
+            for (GraphRenderer graphRenderer1 : graphRenderer) {
+                if (graphRenderer1 != null) {
+                    graphRenderer1.setLocation(p1.x, p1.y);
+                    graphRenderer1.setSize(p2.x, p2.y-p1.y+1);
+                    graphRenderer1.init();                
                 }
             }
         }
@@ -202,10 +188,6 @@ public class MyGraphX extends javax.swing.JPanel
             if (xAxisVisible) xaxis.paint(g);
             if (yAxisVisible) yaxis.paint(g);
         }
-        
-        //g.setColor(Color.RED);
-        //g.drawRect(yaxis.getX()-yaxis.getD1(),yaxis.getY(),yaxis.getWidth()+yaxis.getD1()+yaxis.getD2(),yaxis.getHeight());
-        //g.drawRect(yaxis.getX()-yaxis.getWidth(),yaxis.getY()-yaxis.getD1(),yaxis.getWidth(),yaxis.getHeight()+yaxis.getD1()+yaxis.getD2());
     }
     
     /** Creates new form MyGraph */

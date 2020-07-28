@@ -39,7 +39,7 @@ package ParserCode;
     {
       Expression parser = new Expression();
       Scanner scanner = new Scanner(new java.io.StringReader("1+2"));
-      while (scanner.ttype != scanner.TT_EOF)
+      while (scanner.ttype != Scanner.TT_EOF)
       try
       {
         parser.yyparse(scanner, null);
@@ -50,7 +50,7 @@ package ParserCode;
         }
         break;
           
-      }catch (Exception ye)
+      }catch (yyException | IOException ye)
       {
         System.err.println(scanner+": "+ye);
       }
@@ -697,7 +697,7 @@ case 33:
               System.out.println("Error: Byte or Word excepted ");
 
              //return sval.indexOf(".") < 0 ? Int : Real;
-           } catch(Exception ex)
+           } catch(NumberFormatException ex)
            {
            }
            
