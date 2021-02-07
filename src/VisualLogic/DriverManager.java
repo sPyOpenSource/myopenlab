@@ -17,7 +17,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package VisualLogic;
 
-import VisualLogic.*;
 import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
@@ -45,7 +44,6 @@ class MyOpenLabDriver {
                 System.out.println("Driver loaded : " + driverName);
             } catch (Exception ex) {
                 ex.printStackTrace();
-                return;
             }
         }
     }
@@ -55,8 +53,8 @@ class MyOpenLabDriver {
 public class DriverManager {
 
     // Haelt alle Treiber in der Liste driver
-    private ArrayList<MyOpenLabDriver> drivers = new ArrayList<MyOpenLabDriver>();
-    private FrameMain frameCircuit;
+    private final ArrayList<MyOpenLabDriver> drivers = new ArrayList<>();
+    private final FrameMain frameCircuit;
 
     public DriverManager(FrameMain frameCircuit) {
         this.frameCircuit = frameCircuit;
@@ -81,17 +79,12 @@ public class DriverManager {
     public MyOpenLabDriverIF openDriver(Element element, String driverName, ArrayList args) {
         try {
             MyOpenLabDriver driver = findDriver(driverName);
-            //if (driver!=null && driver.owner==null)
             {
                 if (driver.owner != element) {
                     driver.owner = element;
                     driver.driver.driverStart(args);
                     return driver.driver;
                 }
-                /*else
-            {
-                return null;
-            }*/
             }
         } catch (Exception ex) {
             System.out.println("Errorin openDriver: " + ex);

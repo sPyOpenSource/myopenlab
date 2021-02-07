@@ -11,9 +11,7 @@
  * @author carmelo
  */
 public final class Constanten {
-    
-    
-    
+
     //public static static int digitalInputData;
     public static int[] analogInputData = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 

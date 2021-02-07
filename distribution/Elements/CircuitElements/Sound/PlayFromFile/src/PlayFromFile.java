@@ -25,7 +25,6 @@ import tools.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import tools.*;
 import java.util.*;
 import java.net.*;
 import java.applet.*;
@@ -152,6 +151,5 @@ public class PlayFromFile extends JVSMain
       }
       
   }
-
 
 }

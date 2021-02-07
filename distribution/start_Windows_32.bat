@@ -1,1 +1,0 @@
-start javaw -cp .;lib -Xms64M -Xmx512M -XX:MaxPermSize=512M  -XX:+UseConcMarkSweepGC -Djava.library.path=./lib -splash:images/splashJV.png -jar myopenlab.jar Elements

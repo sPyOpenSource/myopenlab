@@ -21,7 +21,6 @@ package SimulatorSocket;
 import java.io.*;
 import java.net.*;
 
-
 /**
  *
  * @author Carmelo
@@ -34,7 +33,7 @@ public class Server extends Thread
     private DataInputStream dis = null;
     private MyOpenLabOwnerIF owner;
     
-    private Client client=null;
+    private Client client = null;
 
     public void sendCmd(String cmd)
     {
@@ -43,7 +42,6 @@ public class Server extends Thread
           client.sendCmd(cmd);
         }
     }
-   
 
     public void close()
     {
@@ -54,13 +52,10 @@ public class Server extends Thread
         }               
     }
 
-
-
     public Server(MyOpenLabOwnerIF owner)
     {
         this.owner=owner;
     }
-    
     
     @Override
     public void run()
@@ -76,9 +71,6 @@ public class Server extends Thread
                 
                 owner.ownerMessage("Client accepted\n");
                 
-                //String str=dis.readUTF();
-                //System.out.println("String="+str);
-                
             }
         }
         catch (IOException ex)
@@ -86,8 +78,6 @@ public class Server extends Thread
            close();
         }
 
-        
     }
-        
 
 }

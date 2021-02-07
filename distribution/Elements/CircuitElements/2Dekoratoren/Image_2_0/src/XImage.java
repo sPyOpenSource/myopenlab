@@ -19,22 +19,9 @@
 //* Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110, USA                  *
 //*****************************************************************************
 
-import VisualLogic.*;
 import VisualLogic.variables.*;
 import tools.*;
 import java.awt.*;
-import java.awt.event.*;
-import javax.swing.Timer;
-import javax.swing.*;
-
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import javax.imageio.ImageIO;
-import java.io.*;
-import javax.swing.*;
-
-
-
 
 public class XImage extends JVSMain
 {

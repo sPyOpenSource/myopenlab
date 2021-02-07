@@ -5,7 +5,6 @@
  */
 package VisualLogic;
 
-import VisualLogic.PathPoint;
 import BasisStatus.StatusEditPath;
 import Peditor.BasisProperty;
 import Peditor.PropertyEditor;
@@ -151,7 +150,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         if (jIsPathEditing()) {
             Rectangle r2 = path.getBounds();
 
-            if (points.size() == 0) {
+            if (points.isEmpty()) {
                 zoomX = 1;
                 zoomY = 1;
             }
@@ -194,31 +193,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
     public void setSimplePaintModus(boolean value) {
         simplePaintModus = value;
-
-        /*if (value)
-         {
-         for (int i=0;i<subElemente.size();i++)
-         {
-         Object o = subElemente.get(i);
-         if ( o instanceof JPanel)
-         {
-         JPanel panel = (JPanel)o;
-         panel.setVisible(false);
-         }
-         }
-         }else
-         {
-         for (int i=0;i<subElemente.size();i++)
-         {
-         Object o = subElemente.get(i);
-         if ( o instanceof JPanel)
-         {
-         JPanel panel = (JPanel)o;
-         panel.setVisible(true);
-         }
-         }
-         }
-         owner.repaint();*/
     }
     public ArrayList notifyWhenDestCalledList = new ArrayList(); // List of ExternalIF!
     public ArrayList menuItems = new ArrayList();
@@ -266,14 +240,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public double fx = 0;
     public double fy = 0;
     public ArrayList propertyList = new ArrayList();
-    /*public int getOriginalWidth()
-     {
-     return originalWidth;
-     }
-     public int getOriginalHeight()
-     {
-     return originalHeight;
-     }*/
+
     public Basis elementBasis = null;
     public PropertyEditor propertyEditor = null;
 
@@ -417,8 +384,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
             if (classRef != null) {
                 try {
                     list.add(getInternName() + "&" + classRef.jGetVMFilename());
-                } catch (java.lang.AbstractMethodError e) {
-                } catch (Exception ex) {
+                } catch (java.lang.AbstractMethodError | Exception e) {
                 }
             }
 
@@ -432,8 +398,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public void jOpenVM(String filename) {
         if (owner != null && owner.owner != null && elementBasis != null) {
             owner.owner.vsShow();
-            //owner.owner.frameCircuit.addBasisToVMPanel(filename);
-            //owner.owner.frameCircuit.add .getFrameMain().openVLogicFileAsFrontPanel(filename);
         }
     }
 
@@ -442,19 +406,9 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         if (subDialog == null) {
             elementBasis.getFrontBasis().isBasisResizePinVisible = false;
 
-            /* elementBasis.getCircuitBasis().setDraehteInRunMode();
-             elementBasis.getFrontBasis().setDraehteInRunMode();
-             elementBasis.getCircuitBasis().initAllOutputPins();
-             elementBasis.getFrontBasis().initAllOutputPins();
-             elementBasis.getCircuitBasis().initAllInputPins();
-             elementBasis.getFrontBasis().initAllInputPins();
-             elementBasis.getCircuitBasis().start();
-             elementBasis.getFrontBasis().start();        */
             elementBasis.getCircuitBasis().setOpaque(true);
             elementBasis.getFrontBasis().setOpaque(true);
 
-            //elementBasis.getFrontBasis().setRasterOn(false);
-            //JDialog.setDefaultLookAndFeelDecorated(true);
             subDialog = new SubDialog(this, null, modal, elementBasis);
             subDialog.setTitle(elementBasis.caption);
 
@@ -511,7 +465,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     }
 
     public void notifyPin(int pinIndex) {
-        //System.out.println(""+jGetCaption());
         if (pinIndex < getPinCount()) {
             JPin pin = getPin(pinIndex);
             if (pin != null) {
@@ -605,7 +558,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     }
 
     public String replaceMe(String str) {
-        StringBuffer s = new StringBuffer(str);
+        StringBuilder s = new StringBuilder(str);
         for (int i = s.length() - 1; i >= 0; i--) {
             if (s.charAt(i) == '\\') {
                 s.deleteCharAt(i);
@@ -631,12 +584,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     private String getKorrectClassPaths(String elementPath, String mainPath, String classPath) {
         String result = "";
 
-        /*String[] paths=classPath.split(";");
-         for (int i=0;i<paths.length;i++)
-         {            
-         String str=paths[i];
-         result+="\""+elementPath+mainPath+"/"+str+"\";";
-         }*/
         result += elementPath + mainPath + "/" + classPath;
 
         return result;
@@ -661,8 +608,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         this.owner = owner;
         this.args = args;
 
-        // mainPath=replaceMe(mainPath);
-        // definitionPath=replaceMe(definitionPath);
         String pathX = elementPath + mainPath;
 
         pathX = korrigiereFileSeparator(pathX);
@@ -681,11 +626,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
             definitionPath = str;
         }
 
-        if (owner == owner.owner.getCircuitBasis()) {
-            borderVisibility = true;
-        } else {
-            borderVisibility = false;
-        }
+        borderVisibility = owner == owner.owner.getCircuitBasis();
 
         this.setLayout(null);
 
@@ -786,13 +727,12 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                     classRef.xsetExternalIF(this);
                 }
 
-            } catch (Exception ex) {
-                owner.owner.showErrorMessage("Error loading Element!" + this.className + " ex=" + ex.toString());
-                classRef = null; // also Dummy!
-            } catch (java.lang.AbstractMethodError ex) {
+            } catch (Exception | java.lang.AbstractMethodError ex) {
                 owner.owner.showErrorMessage("Error loading Element!" + this.className + " ex=" + ex.toString());
                 classRef = null; // also Dummy!
             }
+            // also Dummy!
+            
         }
 
         if (!alreadyInitialized) {
@@ -804,47 +744,18 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
 
         if (!docPathIsAlreadySet) {
-            //String s = elementPath + path;
             docPath = elementPath + path;
             if (definition_def.vm.length() > 0) {
                 docPath = elementPath + this.definitionPath + "/";
             }
         }
 
-        /*URL url = new File(s).toURL();
-         s = url.getFile();
-        
-         if (!docPathIsAlreadySet){
-
-         String strLocale = Locale.getDefault().toString();
-
-         docFileName = s.substring(0, s.lastIndexOf("/")) + "/doc.html";
-
-         if (strLocale.equalsIgnoreCase("de_DE"))
-         {
-         docFileName = s.substring(0, s.lastIndexOf("/")) + "/doc.html";
-         }
-         else if (strLocale.equalsIgnoreCase("en_US"))
-         {
-         docFileName = s.substring(0, s.lastIndexOf("/")) + "/doc_en.html";
-         }
-         else if (strLocale.equalsIgnoreCase("es_ES"))
-         {
-         docFileName = s.substring(0, s.lastIndexOf("/")) + "/doc_es.html";
-         }
-         }*/
-        //File fileX= new File(elementPath+mainPath);
-        //DFProperties definition_def =Tools.getProertiesFromDefinitionFile(fileX);
         setNameLocalized(definition_def.captionInternationalized);
 
         isLoading = true;
         loadProperties();
         isLoading = false;
 
-        /*enableEvents(AWTEvent.FOCUS_EVENT_MASK);        // catch Focus-Events
-         enableEvents(AWTEvent.KEY_EVENT_MASK);          // catch KeyEvents
-         enableEvents(AWTEvent.MOUSE_EVENT_MASK);        // catch MouseEvents
-         enableEvents(AWTEvent.COMPONENT_EVENT_MASK);    // catch ComponentEvents */
         this.addMouseListener(this);
         this.addMouseMotionListener(this);
 
@@ -855,11 +766,9 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     }
 
     public void jLoadProperties() {
-        //owner.owner.propertyEditor=null;
         isLoading = true;
         loadProperties();
         isLoading = false;
-        //   processPropertyEditor();
     }
 
     public void loadProperties() {
@@ -1018,7 +927,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
             vis = stream.readBoolean();
 
-            //setNameVisible(vis);
             int destDrahtID = stream.readInt();
             setVisible(stream.readBoolean());
 
@@ -1037,7 +945,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                     if (this.owner == owner.owner.getCircuitBasis()) {
                         if (panelElementID == -1 && circuitElementID != -1) {
                             classRef.xOnInit();
-                            //classRef.loadFromStreamAfterXOnInit(fis);
                         }
                     }
 
@@ -1068,7 +975,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                         }
                         classRef.loadFromStreamAfterXOnInit(fis);
 
-                        //owner.owner.verknuepfeElemente(fromAblage);
                         if (elementBasis != null) {
                             elementBasis.getCircuitBasis().processpropertyChangedToAllElements(null);
                             elementBasis.getFrontBasis().processpropertyChangedToAllElements(null);
@@ -1100,7 +1006,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                 }
             }
 
-        } catch (Exception ex) {
+        } catch (IOException ex) {
             owner.owner.showErrorMessage("Error in Element.loadFromStream() :" + ex.toString());
         }
     }
@@ -1167,7 +1073,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
             }
             fsOut.postItem();
 
-        } catch (Exception ex) {
+        } catch (IOException ex) {
             owner.owner.showErrorMessage("Error in Element.saveToStream() :" + ex.toString());
         }
 
@@ -1223,11 +1129,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         return ret;
     }
 
-    /*public void setExternalInputPin(int index, VSBasisIF basis, VSObject in)
-     {
-     ExternalIF[] inputs=geInputPinList(basis);
-     inputs[index].setPinOutputReference(0,in);
-     }*/
     public ExternalIF getElementByName(VSBasisIF basis, String elementName) {
 
         VMObject vm = ((Basis) basis).getCircuitBasis();
@@ -1429,15 +1330,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
     @Override
     public VSBasisIF jAssignBasis() {
-
-        /* Element el=(Element)getCircuitElement();
-         Basis b = el.elementBasis;
-         b.getCircuitBasis().panel=el;
-         b.getFrontBasis().panel=el;
-         b.getCircuitBasis().setLayout(null);
-         b.getFrontBasis().setLayout(null);
-         this.add(b.getFrontBasis());
-         return b;*/
         return null;
     }
 
@@ -1453,7 +1345,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         int xx = x + clip.width;
         int yy = y + clip.height;
 
-        //System.out.println(clip);
         boolean oki = false;
         for (int i = 0; i < subElemente.size(); i++) {
             Object o = subElemente.get(i);
@@ -1469,7 +1360,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
         if (oki) {
             repaint();
-            //owner.repaint(p.x,p.y, panel.getWidth(),panel.getHeight());
         }
 
     }
@@ -1588,20 +1478,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     }
 
     public void adjustSubElements() {
-        /*if (!( owner.getStatus() instanceof StatusRun))
-         {
-         JPanel panel;
-         for (int i=0; i<subElemente.size();i++)
-         {
-         panel=(JPanel)subElemente.get(i);
-         owner.remove(panel);
-         }
-         for (int i=0; i<subElemente.size();i++)
-         {
-         panel=(JPanel)subElemente.get(i);
-         owner.add(panel,0);
-         }
-         }*/
+
     }
 
     @Override
@@ -1654,17 +1531,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                         //System.out.println(""+prop.label+" XX");
                         jAddPEItem(prop.label, prop.referenz, prop.min, prop.max,prop.editable);
                     }
-
-                    /*for (int i=0;i<vm.propertyList.size();i++)
-                     {
-                     BasisProperty prop= (BasisProperty)vm.propertyList.get(i);
-                     Element theElement=vm.getElementWithID(prop.elementID);
-                     if (theElement!=null)
-                     {
-                     ElementProperty elProp=(ElementProperty)theElement.propertyList.get(prop.propertyIndex);
-                     jAddPEItem(elProp.label,elProp.referenz,elProp.min,elProp.max);
-                     }
-                     }*/
                 }
             } else {
                 for (int i = 0; i < propertyList.size(); i++) {
@@ -1721,16 +1587,12 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public void jSetPEItemLocale(int index, String language, String translation) {
 
         ElementProperty prop = (ElementProperty) propertyList.get(index - 6);
-        //Peditor.PropertyEditorItem item =owner.owner.propertyEditor.getItem(index);
 
         if (prop != null) {
             String strLocale = Locale.getDefault().toString();
 
             if (strLocale.equalsIgnoreCase(language)) {
-                //ElementProperty prop = (ElementProperty)propertyList.get(0);
                 prop.label = translation;
-                //System.out.println("label="+item.label.getText());
-                //item.label.setText(translation);
             }
         }
     }
@@ -1780,11 +1642,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
     @Override
     public ExternalIF setPanelElement(String classFilename) {
-        /*VMObject frontBasis = panelElementgetFrontBasis();
-         Element element = frontBasis.addElement(classPath,classFilename);
-         element.circuitElement=this;
-         this.panelElement=element;
-         return element;*/
         return null;
     }
 
@@ -1855,31 +1712,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public void jSetDocFilePath(String path) {
         this.docPath = path;
 
-        /*String strLocale = Locale.getDefault().toString();
-       
-        
-         if (strLocale.equalsIgnoreCase("de_DE"))
-         {
-         docFileName = path + "/doc.html";
-         }
-         else if (strLocale.equalsIgnoreCase("en_US"))
-         {
-         docFileName = path + "/doc_en.html";
-         if (!new File(docFileName).exists())
-         {
-         docFileName = path + "/doc.html";
-         }
-            
-         }
-         else if (strLocale.equalsIgnoreCase("es_ES"))
-         {
-         docFileName = path + "/doc_es.html";
-         if (!new File(docFileName).exists())
-         {
-         docFileName = path + "/doc.html";
-         }
-            
-         }*/
         docPathIsAlreadySet = true;
     }
 
@@ -2132,11 +1964,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         return owner.getElementPath();
     }
 
-    /*public String jGetSourcePath()
-     {
-     String str=new File(elementPath+classPath).getParentFile().getAbsolutePath();
-     return str+"/";
-     }*/
     @Override
     public String jGetSourcePath() {
         String cPath = classPath;

@@ -137,9 +137,6 @@ public class PlaySound extends JVSMain
 
       AudioInputStream stream = AudioSystem.getAudioInputStream(dis2);
 
-      // From URL
-      // stream = AudioSystem.getAudioInputStream(new URL("http://hostname/audiofile"));
-
       // At present, ALAW and ULAW encodings must be converted
       // to PCM_SIGNED before it can be played
       AudioFormat format = stream.getFormat();
@@ -158,9 +155,7 @@ public class PlaySound extends JVSMain
       DataLine.Info info = new DataLine.Info(Clip.class, stream.getFormat(), ((int)stream.getFrameLength()*format.getFrameSize()));
       clip = (Clip) AudioSystem.getLine(info);
       clip.open(stream);
-      //clip.start();
 
-      
       dis2.close();
       
     } catch (MalformedURLException e) {
@@ -224,13 +219,11 @@ public class PlaySound extends JVSMain
 
   public void start()
   {
-//    if (data.length>0)loadFromBytes();
   }
   
   public void stop()
   {
     if (clip!=null) clip.stop();
-    //clip=null;
   }
 
   public void process()
@@ -301,7 +294,5 @@ public class PlaySound extends JVSMain
     }
 
   }
-
-
 
 }

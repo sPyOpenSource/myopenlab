@@ -110,8 +110,6 @@ public class SocketClient extends JVSMain
     
     initPinVisibility(false,true,false,true);
     
-    //element.jProcessAutomatic(true);
-
     setPin(0,ExternalIF.C_VARIANT,element.PIN_OUTPUT);
     setPin(1,ExternalIF.C_VARIANT,element.PIN_OUTPUT);
     setPin(2,ExternalIF.C_VARIANT,element.PIN_OUTPUT);
@@ -323,16 +321,6 @@ public class SocketClient extends JVSMain
             System.out.println("OBJECT =NULL!!!!");
            }
            warteAufObject.resetObject();
-         } else
-         {
-            /*if (out0!=null) out0.setChanged(false);
-            if (out1!=null) out1.setChanged(false);
-            if (out2!=null) out2.setChanged(false);
-            if (out3!=null) out3.setChanged(false);
-            if (out4!=null) out4.setChanged(false);
-            if (out5!=null) out5.setChanged(false);
-            if (out6!=null) out6.setChanged(false);
-            if (out7!=null) out7.setChanged(false);*/
          }
 
       }catch(Exception ex)

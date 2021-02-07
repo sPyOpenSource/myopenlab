@@ -77,8 +77,8 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     public String vmPassword = "";
     private JPanel oldPanelFront = null;
     public VMEditorPanel ownerVMPanel = null;
-    private VMObject circuitBasis;
-    private VMObject frontBasis;
+    private final VMObject circuitBasis;
+    private final VMObject frontBasis;
     public FrameRunning frm;
     private String XfileName = "";
     public FrameMain frameCircuit;
@@ -88,8 +88,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     public boolean debugMode = false;
     public boolean unDecorated = false;
     public boolean showFrontPanelWhenStart = true;
-    //private Hashtable variablen = new Hashtable();
-    private ArrayList variableNotifyList = new ArrayList();
+    private final ArrayList variableNotifyList = new ArrayList();
     public ArrayList variablenListe = new ArrayList();
     public boolean showToolBar = false;
     public Parser parser = new Parser(this);
@@ -138,7 +137,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         // NOP
     }
 
-    private ArrayList liste = new ArrayList();
+    private final ArrayList liste = new ArrayList();
 
     private boolean istEintragsBereitsVorhanden(String eintrag) {
         for (int i = 0; i < liste.size(); i++) {
@@ -157,8 +156,8 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         Element[] tpNodes = getCircuitBasis().getAllTestpointElements();
 
         String strName = "";
-        for (int i = 0; i < tpNodes.length; i++) {
-            strName = tpNodes[i].jGetCaption();
+        for (Element tpNode : tpNodes) {
+            strName = tpNode.jGetCaption();
             if (!istEintragsBereitsVorhanden(strName)) {
                 liste.add(strName);
             } else {
@@ -214,6 +213,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         buttonGroups[group].add(button);
     }
 
+    @Override
     public ExternalIF[] vsGetListOfPanelElements() {
         int count = getFrontBasis().getElementCount();
         ExternalIF[] result = new ExternalIF[count];
@@ -226,6 +226,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
     }
 
+    @Override
     public int vsGetVariableDT(String varname) {
         OpenVariable o = getVariable(varname);
         if (o != null) {
@@ -253,7 +254,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         try {
             double x = Double.parseDouble(val);
             return true;
-        } catch (Exception ex) {
+        } catch (NumberFormatException ex) {
             return false;
         }
 
@@ -279,6 +280,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         return val.equalsIgnoreCase("TRUE") || val.equalsIgnoreCase("FALSE");
     }
 
+    @Override
     public String[] vsGetVariablesNames() {
         String[] result = new String[variablenListe.size()];
         OpenVariable node;
@@ -291,6 +293,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         return result;
     }
 
+    @Override
     public Object[] vsGetVariablesValues() {
         Object[] result = new Object[variablenListe.size()];
         OpenVariable node;
@@ -344,6 +347,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     // liefert True wenn alles ok
     // und False wenn die Typen nicht kompatibel
     // oder Variable nicht gefunden.
+    @Override
     public boolean vsCopyVariableToVSObject(String varname, Object vsobject) {
         OpenVariable node = getVariable(varname);
 
@@ -454,6 +458,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         return false;
     }
 
+    @Override
     public boolean vsCompareExpression(VSFlowInfo flowInfo, String expr) {
         try {
             bindVars();
@@ -726,6 +731,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
     }
 
+    @Override
     public void propertyChanged(Object o) {
 
     }
@@ -1472,11 +1478,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                         String res = bytesToHex(calcDigest(refPassword));
                         String res1 = tmpPassword;
 
-                        if (res.equals(res1)) {
-                            vmProtected = false;
-                        } else {
-                            vmProtected = true;
-                        }
+                        vmProtected = !res.equals(res1);
                     } else {
                         vmProtected = true;
                     }
@@ -1540,11 +1542,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                         String res = bytesToHex(calcDigest(refPassword));
                         String res1 = tmpPassword;
 
-                        if (res.equals(res1)) {
-                            vmProtected = false;
-                        } else {
-                            vmProtected = true;
-                        }
+                        vmProtected = !res.equals(res1);
                     } else {
                         vmProtected = true;
                     }

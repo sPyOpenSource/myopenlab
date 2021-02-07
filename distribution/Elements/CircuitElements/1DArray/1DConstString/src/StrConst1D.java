@@ -28,8 +28,6 @@ import VisualLogic.*;
 import VisualLogic.variables.*;
 import tools.*;
 import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
 
 public class StrConst1D extends JVSMain
 {

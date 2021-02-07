@@ -16,13 +16,12 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 package VisualLogic;
-//import com.sun.org.omg.CORBA.ExcDescriptionSeqHelper;
+
 import java.io.*;
 import java.net.*;
-import java.lang.reflect.*; 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-
-        
 public class Loader 
 {    
     URLClassLoader cl;
@@ -32,13 +31,11 @@ public class Loader
     URL url;
     Object o=null;
     
-    
     try
     {        
         url = new File(pfad).toURI().toURL(); 
         
         URL url2 = new File(elementPath).toURI().toURL(); 
-        //URL url3 = new File("Y:\\java\\carmelo's exp Lab 3\\Distribution\\Elements\\Drivers\\K8055\\bin\\TWUsb.jar").toURI().toURL();
 
         cl= new URLClassLoader( new URL[]{ url, url2},Thread.currentThread().getContextClassLoader());
                 
@@ -49,12 +46,11 @@ public class Loader
     } 
     catch (Exception | UnsupportedClassVersionError ex)
     {
-        System.out.println(""+ex);
+        Logger.getLogger(Loader.class.getName()).log(Level.SEVERE, null, ex);     
     }
     return o;
   }
-    
-  
+ 
   public Object ladeClasseDriver(URL[] urls, String klassename) throws Exception
   {    
     Object o=null;
@@ -69,15 +65,9 @@ public class Loader
     } 
     catch (Exception | UnsupportedClassVersionError ex)
     {
-        System.out.println(""+ex);        
+        Logger.getLogger(Loader.class.getName()).log(Level.SEVERE, null, ex);     
     }
     return o;
   }
-  
-    
- 
-    
- 
-    
-    
+
 }

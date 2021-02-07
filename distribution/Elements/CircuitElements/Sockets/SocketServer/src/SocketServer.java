@@ -157,9 +157,6 @@ class Server extends Thread
         {
          if (clientSocket.isClosed()==false) clientSocket.close();
         }
-
-        //serverOut=null;
-        //clientSocket=null;
       } catch(IOException ioe)
       {
         System.out.println(ioe.toString());
@@ -239,9 +236,7 @@ public class SocketServer extends JVSMain
     element.jSetSize(72,92);
     
     image=element.jLoadImage(element.jGetSourcePath()+"icon.png");
-    
-    //element.jProcessAutomatic(true);
-    
+        
     initPinVisibility(false,true,false,true);
 
     setPin(0,ExternalIF.C_VARIANT,element.PIN_OUTPUT);
@@ -435,24 +430,12 @@ public class SocketServer extends JVSMain
            }
 
 
-         } else
-         {
-            /*if (out0!=null) {out0.setChanged(false);element.addToProcesslist(out0);}
-            if (out1!=null) {out1.setChanged(false);element.addToProcesslist(out1);}
-            if (out2!=null) {out2.setChanged(false);element.addToProcesslist(out2);}
-            if (out3!=null) {out3.setChanged(false);element.addToProcesslist(out3);}
-            if (out4!=null) {out4.setChanged(false);element.addToProcesslist(out4);}
-            if (out5!=null) {out5.setChanged(false);element.addToProcesslist(out5);}
-            if (out6!=null) {out6.setChanged(false);element.addToProcesslist(out6);}
-            if (out7!=null) {out7.setChanged(false);element.addToProcesslist(out7);}*/
          }
 
-      }catch(Exception ex)
-      {
-         System.out.println("Fehler in Process : "+ex);
+      } catch(Exception ex) {
+         System.out.println("Fehler in Process : " + ex);
       }
-    } else
-    {
+    } else {
       if (out0!=null) out0.setChanged(false);
       if (out1!=null) out1.setChanged(false);
       if (out2!=null) out2.setChanged(false);

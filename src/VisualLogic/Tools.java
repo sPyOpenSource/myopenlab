@@ -128,11 +128,7 @@ public class Tools
         {
             return false;
         }
-        if (res == JOptionPane.CANCEL_OPTION)
-        {
-            return false;
-        }
-        return true;
+        return res != JOptionPane.CANCEL_OPTION;
     }
 
     public static String generateNewFileName(String filename)
@@ -181,7 +177,7 @@ public class Tools
             // getJavaFileObjects' param is a vararg
             Iterable fileObjects = sjfm.getJavaFileObjects(javaFile);
 
-            ArrayList<String> options = new ArrayList<String>();
+            ArrayList<String> options = new ArrayList<>();
             options.add("-d");
             options.add(destPath + "/bin");
             options.add("-cp");
@@ -255,10 +251,8 @@ public class Tools
     {
         if (children != null)
         {
-            for (int i = 0; i < children.length; i++)
-            {
-                if (children[i].equalsIgnoreCase("project.myopenlab"))
-                {
+            for (String children1 : children) {
+                if (children1.equalsIgnoreCase("project.myopenlab")) {
                     return true;
                 }
             }
@@ -270,10 +264,8 @@ public class Tools
     {
         if (children != null)
         {
-            for (int i = 0; i < children.length; i++)
-            {
-                if (children[i].equalsIgnoreCase("myopenlab.executable"))
-                {
+            for (String children1 : children) {
+                if (children1.equalsIgnoreCase("myopenlab.executable")) {
                     return true;
                 }
             }
@@ -283,7 +275,7 @@ public class Tools
 
     public static ArrayList<String> readListFromFile(String filename)
     {
-        ArrayList<String> result = new ArrayList<String>();
+        ArrayList<String> result = new ArrayList<>();
         BufferedReader br;
         try
         {

@@ -54,7 +54,6 @@ public class Node extends JVSMain
     {
        Rectangle bounds=element.jGetBounds();
        g.setColor(Color.BLACK);
-       //g.drawRect(bounds.x,bounds.y,bounds.width,bounds.height);
        int d=0;
        g.fillOval(bounds.x+d,bounds.y+d,bounds.width+1-d*2,bounds.height+1-d*2);
     }
@@ -122,13 +121,6 @@ public class Node extends JVSMain
     boolean pinB=element.hasPinWire(1);
     boolean pinC=element.hasPinWire(2);
     boolean pinD=element.hasPinWire(3);
-
-    //int dt=element.C_VARIANT;
-
-    /*if (pinA==false) element.jSetPinIO(0, element.PIN_INPUT_OUTPUT);
-    if (pinB==false) element.jSetPinIO(1, element.PIN_INPUT_OUTPUT);
-    if (pinC==false) element.jSetPinIO(2, element.PIN_INPUT_OUTPUT);
-    if (pinD==false) element.jSetPinIO(3, element.PIN_INPUT_OUTPUT);*/
 
     if (pinA==false) element.jSetPinVisible(0,false); else element.jSetPinVisible(0,true);
     if (pinB==false) element.jSetPinVisible(1,false); else element.jSetPinVisible(1,true);
@@ -207,9 +199,6 @@ public class Node extends JVSMain
       }
     }
 
-
-
-
   }
 
 
@@ -252,13 +241,6 @@ public class Node extends JVSMain
 
         initX();
         isLoading=false;
-        
-        /*for (int i=0;i<4;i++)
-        {
-          System.out.println("Read Pin["+i+"] dt="+element.jGetPinDataType(i));
-          System.out.println("Read Pin["+i+"] io="+element.jGetPinIO(i));
-        } */
-        
 
     } catch(Exception ex)
     {
@@ -283,14 +265,6 @@ public class Node extends JVSMain
 
         dos.writeInt(element.jGetPinDataType(3));
         dos.writeInt(element.jGetPinIO(3));
-        
-        
-        /*for (int i=0;i<4;i++)
-        {
-          System.out.println("Write Pin["+i+"] dt="+element.jGetPinDataType(i));
-          System.out.println("Write Pin["+i+"] io="+element.jGetPinIO(i));
-        } */
-
 
     } catch(Exception ex)
     {
@@ -299,6 +273,3 @@ public class Node extends JVSMain
   }
 
 }
-
-
-

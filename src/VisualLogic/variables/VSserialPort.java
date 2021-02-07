@@ -15,6 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package VisualLogic.variables;
+import java.io.IOException;
 import jssc.SerialPort;
 import jssc.SerialPortException;
 import jssc.SerialPortTimeoutException;
@@ -62,7 +63,7 @@ public class VSserialPort extends VSObject {
     if(serialPort.isOpened()){
         serialPort.setParams(9600, 8, 1, 0);
         if(ArduinoAutoReset){ 
-            ThreadIn.sleep(5000);
+            Thread.sleep(5000);
          } // Si el Arduino tiene AutoRest se debe esperar 5 Segundos mientras inicia.
     }    
    }
@@ -80,7 +81,7 @@ public class VSserialPort extends VSObject {
         if(serialPort.isOpened()){
         serialPort.setParams(BaudRateIn, dataBitsIn, stopBitsIn, ParityIn);
         if(ArduinoAutoRESET){
-        ThreadIn.sleep(AutoResetTimeIn);
+        Thread.sleep(AutoResetTimeIn);
         }
         }
     }
@@ -119,7 +120,6 @@ public class VSserialPort extends VSObject {
             InStr+="\n";
         }
         serialPort.writeString(InStr);
-        //System.out.println("BufferOut:"+InStr+"|");
       }
     }
     public String ReadStrBuffer(int ByteCount) throws SerialPortException, SerialPortTimeoutException{
@@ -129,14 +129,14 @@ public class VSserialPort extends VSObject {
     }
     public String ReadStrBuffer(Thread ThreadWait) throws SerialPortException, SerialPortTimeoutException, InterruptedException{
         String bufferTemp="";
-        ThreadWait.sleep(TimeBeforeRead);
+        Thread.sleep(TimeBeforeRead);
         bufferTemp=serialPort.readString(serialPort.getInputBufferBytesCount(),MessageTimeOut);
         return bufferTemp;
     }
     @Override
     public String toString()
     {
-        return "";//serialPort.getName();
+        return serialPort.getPortName();
     }
     
     
@@ -176,8 +176,7 @@ public class VSserialPort extends VSObject {
     public boolean equals(VSObject obj)
     {
         VSserialPort temp =(VSserialPort)obj;
-        if (temp.serialPort.getPortName().equalsIgnoreCase(serialPort.getPortName()))  return true;
-        else return false;
+        return temp.serialPort.getPortName().equalsIgnoreCase(serialPort.getPortName());
     }
     
     @Override
@@ -216,10 +215,10 @@ public class VSserialPort extends VSObject {
         try
         {
             java.io.DataOutputStream dos = new java.io.DataOutputStream(fos);
-            //dos.writeUTF(serialPort.getName());
+            dos.writeUTF(serialPort.getPortName());
             
         }
-        catch(Exception ex)
+        catch(IOException ex)
         {
            System.err.println("Fehler in VSDouble.saveToStream() : "+ex.toString());
         }
