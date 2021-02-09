@@ -1,28 +1,23 @@
 package create_new_group;
 
-import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
-import javax.swing.JComponent;
 import javax.swing.JPanel;
 
 class ImageComponent extends JPanel {
   
     private BufferedImage image;
-    private String filename="";
+    private String filename = "";
     
     public void setFilename(String filename){
         try{
-            this.filename=filename;
+            this.filename = filename;
             File image2 = new File(filename);
             image = ImageIO.read(image2);
-
-        }
-        catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -30,7 +25,6 @@ class ImageComponent extends JPanel {
     public String getFilename() {
         return filename;
     }
-    
     
     public ImageComponent(){
         super();        

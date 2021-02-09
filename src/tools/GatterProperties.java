@@ -54,20 +54,16 @@ public class GatterProperties extends javax.swing.JDialog {
 
         jcmdOK.setMnemonic('O');
         jcmdOK.setText("OK");
-        jcmdOK.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jcmdOKActionPerformed(evt);
-            }
+        jcmdOK.addActionListener((java.awt.event.ActionEvent evt) -> {
+            jcmdOKActionPerformed(evt);
         });
 
         jPanel1.add(jcmdOK);
 
         jcmdCancel.setMnemonic('b');
         jcmdCancel.setText("Abbrechen");
-        jcmdCancel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jcmdCancelActionPerformed(evt);
-            }
+        jcmdCancel.addActionListener((java.awt.event.ActionEvent evt) -> {
+            jcmdCancelActionPerformed(evt);
         });
 
         jPanel1.add(jcmdCancel);
@@ -84,28 +80,24 @@ public class GatterProperties extends javax.swing.JDialog {
         jLabel1.setBounds(20, 50, 100, 14);
 
         jSpinner1.setModel(new SpinnerNumberModel(2.0,2.0,10.0,1.0));
-        jSpinner1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                jSpinner1PropertyChange(evt);
-            }
+        jSpinner1.addPropertyChangeListener((java.beans.PropertyChangeEvent evt) -> {
+            jSpinner1PropertyChange(evt);
         });
-        jSpinner1.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                jSpinner1StateChanged(evt);
-            }
+        jSpinner1.addChangeListener((javax.swing.event.ChangeEvent evt) -> {
+            jSpinner1StateChanged(evt);
         });
         jSpinner1.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jSpinner1MouseClicked(evt);
             }
+            @Override
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jSpinner1MousePressed(evt);
             }
         });
-        jSpinner1.addVetoableChangeListener(new java.beans.VetoableChangeListener() {
-            public void vetoableChange(java.beans.PropertyChangeEvent evt)throws java.beans.PropertyVetoException {
-                jSpinner1VetoableChange(evt);
-            }
+        jSpinner1.addVetoableChangeListener((java.beans.PropertyChangeEvent evt) -> {
+            jSpinner1VetoableChange(evt);
         });
 
         jPanel3.add(jSpinner1);

@@ -21,7 +21,7 @@ import VisualLogic.Tools;
 import java.awt.Component;
 import java.io.File;
 import java.util.Arrays;
-import java.util.Comparator;
+
 import javax.swing.ImageIcon;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeCellRenderer;
@@ -41,6 +41,7 @@ class MyRenderer extends DefaultTreeCellRenderer {
         return ext;
     }
 
+    @Override
     public Component getTreeCellRendererComponent(JTree tree, Object value, boolean sel, boolean expanded, boolean leaf, int row, boolean hasFocus) {
         super.getTreeCellRendererComponent(tree, value, sel, expanded, leaf, row, hasFocus);
         MyNode node = (MyNode) value;
@@ -78,16 +79,6 @@ class MyRenderer extends DefaultTreeCellRenderer {
             setText(new File(node.projectPath + node.relativePath).getName());
         }
 
-        /*Object o=node.getUserObject();
-        if (o instanceof File)
-        {
-            File f=(File)o;
-            
-            //String extension = getExtension(f);
-            //String fn=f.getName().substring(0,f.getName().length()-extension.length()-1);
-            
-            setText(f.getName());
-        }*/
         return this;
     }
 }
@@ -99,7 +90,7 @@ class MyRenderer extends DefaultTreeCellRenderer {
 public class ProjectPalette extends javax.swing.JPanel {
 
     private MyNode projects = new MyNode(java.util.ResourceBundle.getBundle("projectfolder/ProjectPalette").getString("Projects"));
-    private ProjectPaletteIF owner;
+    private final ProjectPaletteIF owner;
     private final ImageIcon iconVM = new javax.swing.ImageIcon(getClass().getResource("/projectfolder/text-x-script.png"));
 
     private final ImageIcon iconDirCollapsed = new javax.swing.ImageIcon(getClass().getResource("/projectfolder/folder.png"));
@@ -151,11 +142,7 @@ public class ProjectPalette extends javax.swing.JPanel {
             root.isProject = true;
             root.projectPath = file.getPath();
 
-            if (file.isDirectory()) {
-                root.isFolder = true;
-            } else {
-                root.isFolder = false;
-            }
+            root.isFolder = file.isDirectory();
 
             root.iconExpanded = iconProjectExpanded;
             root.iconCollapsed = iconProjectCollapsed;
@@ -204,18 +191,15 @@ public class ProjectPalette extends javax.swing.JPanel {
             return;
         }
 
-        Arrays.sort(files, new Comparator() {
-            @Override
-            public int compare(final Object o1, final Object o2) {
-                final File f1 = (File) o1;
-                final File f2 = (File) o2;
-                if (f1.isDirectory() == f2.isDirectory()) {
-                    return f1.compareTo(f2);
-                } else if (f1.isDirectory()) {
-                    return -1;
-                } else {
-                    return 1;
-                }
+        Arrays.sort(files, (final Object o1, final Object o2) -> {
+            final File f1 = (File) o1;
+            final File f2 = (File) o2;
+            if (f1.isDirectory() == f2.isDirectory()) {
+                return f1.compareTo(f2);
+            } else if (f1.isDirectory()) {
+                return -1;
+            } else {
+                return 1;
             }
         });
 
@@ -240,7 +224,7 @@ public class ProjectPalette extends javax.swing.JPanel {
                     node.projectPath = projectPath;
                     node.relativePath = path + "/" + f.getName();
 
-                    if (extension != null && extension.equalsIgnoreCase("vlogic")) {
+                    if (extension != null && (extension.equalsIgnoreCase("vlogic") || extension.equalsIgnoreCase("v"))) {
                         node.iconCollapsed = iconVM;
                         node.iconExpanded = iconVM;
                     } else if (extension != null && (extension.equalsIgnoreCase("jpg") || extension.equalsIgnoreCase("gif") || extension.equalsIgnoreCase("png"))) {
@@ -282,14 +266,8 @@ public class ProjectPalette extends javax.swing.JPanel {
         this.owner = owner;
 
         MyRenderer renderer = new MyRenderer();
-        /*renderer.setOpenIcon(null);
-        renderer.setClosedIcon(null);
-        renderer.setLeafIcon(null);*/
-        jTree1.setCellRenderer(renderer);
 
-        //listAllFiles("C:/Dokumente und Einstellungen/Carmelo/Desktop/test");
-        //listAllFiles("C:/Dokumente und Einstellungen/Carmelo/Desktop/Carmelo");
-        //jTree1.expandRow(0);
+        jTree1.setCellRenderer(renderer);
     }
 
     /**

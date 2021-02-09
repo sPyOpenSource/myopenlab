@@ -22,6 +22,7 @@ import VisualLogic.DialogFontChooser;
 import VisualLogic.Element;
 import VisualLogic.ExtensionFileFilter;
 import VisualLogic.VMObject;
+
 import VisualLogic.variables.VSBoolean;
 import VisualLogic.variables.VSByte;
 import VisualLogic.variables.VSColor;
@@ -36,10 +37,11 @@ import VisualLogic.variables.VSObject;
 import VisualLogic.variables.VSProperties;
 import VisualLogic.variables.VSPropertyDialog;
 import VisualLogic.variables.VSString;
+
 import java.util.ArrayList;
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import javax.swing.*;
 
 interface PEIF {
 
@@ -170,9 +172,6 @@ class AdvancedColorEditor extends JPanel implements PEIF {
         return referenz;
     }
 
-    ;
-    
-    
     public void setValue(int modus, Point p1, Point p2, Color color1, Color color2, int color1Transparency, int color2Transparency, boolean wiederholung) {
         referenz.setValue(modus, p1, p2, color1, color2, color1Transparency, color2Transparency, wiederholung);
         item.processChanged();
@@ -198,7 +197,6 @@ class AdvancedColorEditor extends JPanel implements PEIF {
         this.frame = frame;
 
         button.setPreferredSize(new Dimension(20, 10));
-        //button.setBackground(referenz.getValue());
         this.setLayout(new BorderLayout());
         this.add(button, BorderLayout.CENTER);
         button.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -219,9 +217,6 @@ class AdvancedColorEditor extends JPanel implements PEIF {
                 if (frm.result) {
                     setValue(frm.modus, frm.p1, frm.p2, frm.color1, frm.color2, frm.color1Transparency, frm.color2Transparency, frm.wiederholung);
                 }
-                //Color bgColor = JColorChooser.showDialog(getFrame(),java.util.ResourceBundle.getBundle("Peditor/PropertyEditor").getString("Choose Background Color"),getColor());
-                //if (bgColor != null)  setColor(bgColor);
-                //jChanged();
             }
         });
 
@@ -245,9 +240,6 @@ class ColorEditor extends JPanel implements PEIF {
     public Object getReference() {
         return referenz;
     }
-
-    ;
-    
     
     private void setColor(Color color) {
         referenz.setValue(color);
@@ -398,13 +390,13 @@ class OpenPropertyDialogEditor extends JPanel implements PEIF {
 
 class FileEditor extends JPanel implements PEIF {
 
-    private VSFile referenz;
+    private final VSFile referenz;
     private static String letztesVerzeichniss = ".";
-    private PropertyEditorItem item;
+    private final PropertyEditorItem item;
     private String path = "";
-    private JFrame frame;
-    private JLabel label = new JLabel("   ");
-    private JButton button = new JButton("...");
+    private final JFrame frame;
+    private final JLabel label = new JLabel("   ");
+    private final JButton button = new JButton("...");
 
     @Override
     public Object getReference() {
@@ -437,14 +429,6 @@ class FileEditor extends JPanel implements PEIF {
         }
     }
 
-    private String myGetFile() {
-        if (referenz != null) {
-            return referenz.getValue();
-        } else {
-            return "";
-        }
-    }
-
     public FileEditor(PropertyEditorItem item, JFrame frame, VSFile referenz) {
         super();
         this.referenz = referenz;
@@ -458,37 +442,34 @@ class FileEditor extends JPanel implements PEIF {
         add(label, java.awt.BorderLayout.CENTER);
         add(button, java.awt.BorderLayout.EAST);
 
-        button.addActionListener(new java.awt.event.ActionListener() {
-            @Override
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JFileChooser chooser = new JFileChooser();
-
-                Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-                int mitteX = (int) screenSize.getWidth() / 2;
-                int mitteY = (int) screenSize.getHeight() / 2;
-
-                chooser.setLocation(mitteX - getWidth() / 2 - 200, mitteY - getHeight() / 2 - 200);
-
-                chooser.setCurrentDirectory(new java.io.File(letztesVerzeichniss));
-
-                ExtensionFileFilter filter = new ExtensionFileFilter();
-
-                VSFile ref = ((VSFile) getReference());
-                for (int i = 0; i < ref.getExtensionsCount(); i++) {
-                    filter.addExtension(ref.getExtension(i));
-                }
-
-                filter.setDescription(ref.getDescription());
-
-                chooser.addChoosableFileFilter(filter);
-
-                int returnVal = chooser.showOpenDialog(null);
-
-                if (returnVal == JFileChooser.APPROVE_OPTION) {
-                    letztesVerzeichniss = chooser.getCurrentDirectory().getPath();
-                    mySetFile(chooser.getSelectedFile().getAbsolutePath());
-                    jChanged();
-                }
+        button.addActionListener((java.awt.event.ActionEvent evt) -> {
+            JFileChooser chooser = new JFileChooser();
+            
+            Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+            int mitteX = (int) screenSize.getWidth() / 2;
+            int mitteY = (int) screenSize.getHeight() / 2;
+            
+            chooser.setLocation(mitteX - getWidth() / 2 - 200, mitteY - getHeight() / 2 - 200);
+            
+            chooser.setCurrentDirectory(new java.io.File(letztesVerzeichniss));
+            
+            ExtensionFileFilter filter = new ExtensionFileFilter();
+            
+            VSFile ref = ((VSFile) getReference());
+            for (int i = 0; i < ref.getExtensionsCount(); i++) {
+                filter.addExtension(ref.getExtension(i));
+            }
+            
+            filter.setDescription(ref.getDescription());
+            
+            chooser.addChoosableFileFilter(filter);
+            
+            int returnVal = chooser.showOpenDialog(null);
+            
+            if (returnVal == JFileChooser.APPROVE_OPTION) {
+                letztesVerzeichniss = chooser.getCurrentDirectory().getPath();
+                mySetFile(chooser.getSelectedFile().getAbsolutePath());
+                jChanged();
             }
         });
 
@@ -504,10 +485,10 @@ class FileEditor extends JPanel implements PEIF {
 class FontEditor extends JPanel implements PEIF {
 
     public VSFont referenz;
-    private PropertyEditorItem item;
-    private JLabel label = new JLabel("");
+    private final PropertyEditorItem item;
+    private final JLabel label = new JLabel("");
     private JFrame frame = null;
-    private JButton button = new JButton("...");
+    private final JButton button = new JButton("...");
 
     @Override
     public Object getReference() {
@@ -518,7 +499,6 @@ class FontEditor extends JPanel implements PEIF {
     
     private void mySetFont(Font font) {
         referenz.setValue(font);
-        //setFont(font);
         label.setText(font.getName());
         if (item.element != null) {
             item.element.classRef.propertyChanged(referenz);
@@ -555,23 +535,20 @@ class FontEditor extends JPanel implements PEIF {
 
         label.setText(referenz.getValue().getName());
 
-        button.addActionListener(new java.awt.event.ActionListener() {
-            @Override
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DialogFontChooser chooser = new DialogFontChooser(getFrame(), true);
-
-                Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-                int mitteX = (int) screenSize.getWidth() / 2;
-                int mitteY = (int) screenSize.getHeight() / 2;
-
-                chooser.setFont(myGetFont());
-                chooser.setLocation(mitteX - getWidth() / 2 - 200, mitteY - getHeight() / 2 - 200);
-
-                chooser.setVisible(true);
-                if (DialogFontChooser.result) {
-                    mySetFont(chooser.getNewFont());
-                    jChanged();
-                }
+        button.addActionListener((java.awt.event.ActionEvent evt) -> {
+            DialogFontChooser chooser = new DialogFontChooser(getFrame(), true);
+            
+            Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+            int mitteX = (int) screenSize.getWidth() / 2;
+            int mitteY = (int) screenSize.getHeight() / 2;
+            
+            chooser.setFont(myGetFont());
+            chooser.setLocation(mitteX - getWidth() / 2 - 200, mitteY - getHeight() / 2 - 200);
+            
+            chooser.setVisible(true);
+            if (DialogFontChooser.result) {
+                mySetFont(chooser.getNewFont());
+                jChanged();
             }
         });
 
@@ -586,10 +563,10 @@ class FontEditor extends JPanel implements PEIF {
 
 class DoubleEditor extends JTextField implements PEIF {
 
-    private VSDouble referenz;
-    private double min;
-    private double max;
-    private PropertyEditorItem item;
+    private final VSDouble referenz;
+    private final double min;
+    private final double max;
+    private final PropertyEditorItem item;
 
     @Override
     public Object getReference() {
@@ -806,35 +783,32 @@ class ImageEditor extends JPanel implements PEIF {
         add(label, java.awt.BorderLayout.CENTER);
         add(button, java.awt.BorderLayout.EAST);
 
-        button.addActionListener(new java.awt.event.ActionListener() {
-            @Override
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JFileChooser chooser = new JFileChooser();
-
-                Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-                int mitteX = (int) screenSize.getWidth() / 2;
-                int mitteY = (int) screenSize.getHeight() / 2;
-
-                chooser.setLocation(mitteX - getWidth() / 2 - 200, mitteY - getHeight() / 2 - 200);
-
-                chooser.setCurrentDirectory(new java.io.File(letztesVerzeichniss));
-
-                ExtensionFileFilter filter = new ExtensionFileFilter();
-
-                filter.addExtension("gif");
-                filter.addExtension("png");
-                filter.addExtension("jpg");
-                //filter.setDescription(ref.getDescription());
-
-                chooser.addChoosableFileFilter(filter);
-
-                int returnVal = chooser.showOpenDialog(null);
-
-                if (returnVal == JFileChooser.APPROVE_OPTION) {
-                    letztesVerzeichniss = chooser.getCurrentDirectory().getPath();
-                    mySetFile(chooser.getSelectedFile().getAbsolutePath());
-                    jChanged();
-                }
+        button.addActionListener((java.awt.event.ActionEvent evt) -> {
+            JFileChooser chooser = new JFileChooser();
+            
+            Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+            int mitteX = (int) screenSize.getWidth() / 2;
+            int mitteY = (int) screenSize.getHeight() / 2;
+            
+            chooser.setLocation(mitteX - getWidth() / 2 - 200, mitteY - getHeight() / 2 - 200);
+            
+            chooser.setCurrentDirectory(new java.io.File(letztesVerzeichniss));
+            
+            ExtensionFileFilter filter = new ExtensionFileFilter();
+            
+            filter.addExtension("gif");
+            filter.addExtension("png");
+            filter.addExtension("jpg");
+            //filter.setDescription(ref.getDescription());
+            
+            chooser.addChoosableFileFilter(filter);
+            
+            int returnVal = chooser.showOpenDialog(null);
+            
+            if (returnVal == JFileChooser.APPROVE_OPTION) {
+                letztesVerzeichniss = chooser.getCurrentDirectory().getPath();
+                mySetFile(chooser.getSelectedFile().getAbsolutePath());
+                jChanged();
             }
         });
 

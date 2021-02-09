@@ -51,7 +51,6 @@ public class Length extends JVSMain
     setName("Length");
   }
   
-
   public void initInputPins()
   {
     in=(VSString)element.getPinInputReference(1);
@@ -61,8 +60,6 @@ public class Length extends JVSMain
   {
     element.setPinOutputReference(0,out);
   }
-
-
 
   public void process()
   {
@@ -75,7 +72,4 @@ public class Length extends JVSMain
       } else out.setChanged(false);
     }
   }
-
-
 }
-

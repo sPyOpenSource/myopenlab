@@ -16,19 +16,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-
 package VisualLogic;
 
-
-import VisualLogic.*;
-import VisualLogic.variables.VSDouble;
-import VisualLogic.variables.VSObject;
+import MyGraph.MyGraph;
 import java.awt.Color;
-import java.util.LinkedList;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingUtilities;
-
 
 class TheGraphBoolean
 {
@@ -44,16 +38,15 @@ class TheGraphBoolean
     }
 }
 
-
 /**
  *
  * @author  Carmelo
  */
 public class FrameBooleanGraph extends javax.swing.JFrame
 {
-    private Basis basis;
-    private int faktor=20;
-    private int distance=5;
+    private final Basis basis;
+    private final int faktor=20;
+    private final int distance=5;
     private TheGraphBoolean[] graphs;
     public double[] xValues;
     public int abtastFreq=10;
@@ -103,7 +96,6 @@ public class FrameBooleanGraph extends javax.swing.JFrame
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        myGraph1 = new MyGraph.MyGraph();
         jPanel1 = new javax.swing.JPanel();
         jSpinner1 = new javax.swing.JSpinner();
         jSpinner2 = new javax.swing.JSpinner();
@@ -118,16 +110,6 @@ public class FrameBooleanGraph extends javax.swing.JFrame
         setTitle(bundle.getString("Digital_Graph_Window")); // NOI18N
         setAlwaysOnTop(true);
         setLocationByPlatform(true);
-
-        myGraph1.setXAxisText("");
-        myGraph1.setYAxisText("");
-        myGraph1.setAutoScroll(java.lang.Boolean.TRUE);
-        myGraph1.setCoordinatesVisible(java.lang.Boolean.FALSE);
-        myGraph1.setMaxX(new java.lang.Double(500.0));
-        myGraph1.setMaxY(new java.lang.Double(100.0));
-        myGraph1.setMinX(new java.lang.Double(-10.0));
-        myGraph1.setMinY(new java.lang.Double(-10.0));
-        myGraph1.setNullLineVisible(java.lang.Boolean.FALSE);
 
         jSpinner1.setPreferredSize(new java.awt.Dimension(25, 20));
         jSpinner1.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -208,14 +190,12 @@ public class FrameBooleanGraph extends javax.swing.JFrame
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(jPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .add(myGraph1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 541, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
                 .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(myGraph1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE))
+                .addContainerGap(270, Short.MAX_VALUE))
         );
 
         pack();
@@ -225,7 +205,7 @@ public class FrameBooleanGraph extends javax.swing.JFrame
     private void jSpinner3StateChanged(javax.swing.event.ChangeEvent evt)//GEN-FIRST:event_jSpinner3StateChanged
     {//GEN-HEADEREND:event_jSpinner3StateChanged
         
-        newbufflen=((Integer)jSpinner3.getValue()).intValue();        
+        newbufflen=((Integer)jSpinner3.getValue());        
     }//GEN-LAST:event_jSpinner3StateChanged
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
@@ -235,12 +215,12 @@ public class FrameBooleanGraph extends javax.swing.JFrame
     
     private void jSpinner2StateChanged(javax.swing.event.ChangeEvent evt)//GEN-FIRST:event_jSpinner2StateChanged
     {//GEN-HEADEREND:event_jSpinner2StateChanged
-        refreshFreq=((Integer)jSpinner2.getValue()).intValue();
+        refreshFreq=((Integer)jSpinner2.getValue());
     }//GEN-LAST:event_jSpinner2StateChanged
     
     private void jSpinner1StateChanged(javax.swing.event.ChangeEvent evt)//GEN-FIRST:event_jSpinner1StateChanged
     {//GEN-HEADEREND:event_jSpinner1StateChanged
-        abtastFreq=((Integer)jSpinner1.getValue()).intValue();
+        abtastFreq=((Integer)jSpinner1.getValue());
     }//GEN-LAST:event_jSpinner1StateChanged
     
     // Returns the Columns Index
@@ -258,6 +238,7 @@ public class FrameBooleanGraph extends javax.swing.JFrame
     }
     
     private Element[] tpNodes =null;
+    private final MyGraph myGraph1 = new MyGraph();
     
     public void init()
     {
@@ -273,7 +254,6 @@ public class FrameBooleanGraph extends javax.swing.JFrame
         {
             myGraph1.graph.graphRenderer[i].pointType=1;
             myGraph1.graph.graphRenderer[i].pointType=1;
-            
             
             graphs[i]=new TheGraphBoolean(bufflen);
             
@@ -296,13 +276,9 @@ public class FrameBooleanGraph extends javax.swing.JFrame
         myGraph1.setMaxX((double)bufflen);
         myGraph1.setMaxY((double)c);
         
-        SwingUtilities.invokeLater(new Runnable()
-        {
-            public void run()
-            {
-                myGraph1.graph.init();
-                myGraph1.updateUI();
-            }
+        SwingUtilities.invokeLater(() -> {
+            myGraph1.graph.init();
+            myGraph1.updateUI();
         });
         
         internalC=0;
@@ -345,10 +321,8 @@ public class FrameBooleanGraph extends javax.swing.JFrame
             next();
         }            
 
-        //graphs[column].value=val;
         internalC++;
 
-        
         if (refreshC>=refreshFreq)
         {
             refreshC=0;
@@ -357,36 +331,14 @@ public class FrameBooleanGraph extends javax.swing.JFrame
                if (counter>bufflen) init();
             }            
             
-            SwingUtilities.invokeLater(new Runnable()
-            {
-                public void run()
-                {
-                    myGraph1.graph.init();
-                    myGraph1.updateUI();
-                }
+            SwingUtilities.invokeLater(() -> {
+                myGraph1.graph.init();
+                myGraph1.updateUI();
             });
             
         }
         refreshC++;        
     }
-    
-    
-    private void sdfsd()
-    {   
-        /*basis.dataHistory.getEntry()
-        LinkedList<DataEntry> list=basis.dataHistory.list;
-        
-        DataEntry obj;
-        for (int i=0;i<list.size();i++)
-        {
-            obj=list.get(i);
-            if (obj.value instanceof VSDouble)
-            {
-             //   System.out.println(""+obj.value.toString());
-            }
-        }*/
-    }
-
     
     public void next()
     {
@@ -403,9 +355,7 @@ public class FrameBooleanGraph extends javax.swing.JFrame
                     myGraph1.graph.graphRenderer[i].xValues=xValues;
                     myGraph1.graph.graphRenderer[i].yValues=graphs[i].yValues;
                 }
-            }
-            else
-            {
+            } else {
                scrollBuffer(xValues, counter,counter);
                 for (int i=0;i<graphs.length;i++)
                 {
@@ -417,7 +367,6 @@ public class FrameBooleanGraph extends javax.swing.JFrame
             }
         }
     
-        
         counter++;                
         dontRefresh=false;
         
@@ -434,15 +383,11 @@ public class FrameBooleanGraph extends javax.swing.JFrame
         for (int i=counter;i<bufflen;i++)  values[i]=value;
     }
     
-    
-    
     public void scrollBuffer(double[] values, int counter, double value)
     {
         System.arraycopy(values, 1, values, 0, bufflen-1 );
         values[bufflen-1]=value;
     }
-    
-    
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -454,7 +399,6 @@ public class FrameBooleanGraph extends javax.swing.JFrame
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JSpinner jSpinner2;
     private javax.swing.JSpinner jSpinner3;
-    private MyGraph.MyGraph myGraph1;
     // End of variables declaration//GEN-END:variables
     
 }

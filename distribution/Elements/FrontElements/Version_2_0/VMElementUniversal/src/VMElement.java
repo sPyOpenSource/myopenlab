@@ -24,9 +24,6 @@ import VisualLogic.variables.*;
 import tools.*;
 import java.io.*;
 import java.awt.*;
-import java.awt.event.*;
-import java.text.*;
-import java.awt.geom.Rectangle2D;
 import javax.swing.*;
 import java.util.*;
 
@@ -35,23 +32,22 @@ public class VMElement extends JVSMain
   private Image image;
   private VSObject[] in     = new VSObject[0];
   private VSObject[] myOuts = new VSObject[0];
-  private VSObject[] inX    = new VSObject[0];
+  private final VSObject[] inX    = new VSObject[0];
   private VSObject[] outX   = new VSObject[0];
   private boolean changed=false;
   private VSBasisIF basis;
   private ExternalIF[] inputs;
   private ExternalIF[] outputs;
-  private VSString filename = new VSString("");
+  private final VSString filename = new VSString("");
   private String projectPath="";
   private String filenameX="";
   private String elementNameX="";
   private String elementIconX="";
-  private VSString elementName=new VSString("");
-  private VSString elementIcon=new VSString("");
+  private final VSString elementName=new VSString("");
+  private final VSString elementIcon=new VSString("");
   private ExternalIF panelElement;
-  private VSString version= new VSString("");
+  private final VSString version= new VSString("");
   
-
   public void onDispose()
   {
    if (image!=null)
@@ -98,9 +94,6 @@ public class VMElement extends JVSMain
    return filename.getValue();
   }
 
-  
-
-  
   public void init()
   {
     initPins(0,50,0,50);
@@ -113,9 +106,7 @@ public class VMElement extends JVSMain
     element.jSetCaptionVisible(true);
 
     setName("VM-Element");
-
   }
-  
   
   private String openFile()
   {
@@ -123,9 +114,7 @@ public class VMElement extends JVSMain
     
     chooser.setCurrentDirectory(new java.io.File("."));
 
-
     chooser.setDialogTitle("Open VM");
-    //chooser.setDialogType (JFileChooser.SAVE_DIALOG);
 
     vlogicFilter filter= new vlogicFilter();
 
@@ -152,7 +141,6 @@ public class VMElement extends JVSMain
        JOptionPane.showMessageDialog(null,message,"Attention!",JOptionPane.ERROR_MESSAGE);
     }
 
-
    public static String getFileNameWithoutExtension(File file)
     {
         String nm=file.getName();
@@ -174,7 +162,6 @@ public class VMElement extends JVSMain
         return ext;
     }
 
-  
   public void xOnInit()
   {
   
@@ -184,13 +171,11 @@ public class VMElement extends JVSMain
     if (strLocale.equalsIgnoreCase("de_DE"))
     {
       strDisplayVM="zeige VM";
-    }
-    else
+    } else
     if (strLocale.equalsIgnoreCase("en_US"))
     {
        strDisplayVM="show VM";
-    }
-    else
+    } else
     if (strLocale.equalsIgnoreCase("es_ES"))
     {
       strDisplayVM="show VM";
@@ -200,11 +185,8 @@ public class VMElement extends JVSMain
     JMenuItem item1=new JMenuItem(strDisplayVM);
     element.jAddMenuItem(item1);
 
-    item1.addActionListener(new java.awt.event.ActionListener() {
-        public void actionPerformed(java.awt.event.ActionEvent evt) {
-
-            if (basis!=null) basis.vsShow();
-        }
+    item1.addActionListener((java.awt.event.ActionEvent evt) -> {
+        if (basis!=null) basis.vsShow();
     });
 
 
@@ -214,9 +196,9 @@ public class VMElement extends JVSMain
     projectPath=element.jGetProjectPathFromProject();
     
     
-    if (filenameX=="")
+    if ("".equals(filenameX))
     {
-      if (filename.getValue().trim()=="")
+      if ("".equals(filename.getValue().trim()))
       {
         filename.setValue(openFile());
       }
@@ -225,7 +207,7 @@ public class VMElement extends JVSMain
       filename.setValue(filenameX);
     }
 
-    if (filename.getValue().trim()!="")
+    if (!"".equals(filename.getValue().trim()))
     {
       try
       {
@@ -234,20 +216,19 @@ public class VMElement extends JVSMain
         basis.vsLoadFromFile(str);
         
         
-      } catch (Exception ex)
-      {
+      } catch (Exception ex) {
         showMessage("Error loading VMElement:"+filename.getValue());
       }
 
     }
     
-    if (elementNameX!="")
+    if (!"".equals(elementNameX))
     {
       elementName.setValue(elementNameX);
     }
 
 
-    if (elementIconX!="")
+    if (!"".equals(elementIconX))
     {
       elementIcon.setValue(elementIconX);
     }
@@ -266,9 +247,7 @@ public class VMElement extends JVSMain
     String iconFilename=getFileNameWithoutExtension(new File(filename.getValue()));
 
      boolean iconFound=false;
-    //String str=projectPath+"/"+filename.getValue();
     String str=projectPath+File.separator+filename.getValue();
-    //String iconFile=new File(str).getParent()+"\\"+iconFilename;
     String iconFile=new File(str).getParent()+File.separator+iconFilename;
     
     if (new File(iconFile+".jpg").exists())
@@ -289,10 +268,6 @@ public class VMElement extends JVSMain
     
     onDispose();
     
-    
-
-    
-    //image=element.jLoadImage(new File(str).getParent()+"\\"+iconFilename);
     if(iconFound){
     System.out.println("icon="+iconFilename);   
     image=element.jLoadImage(new File(str).getParent()+File.separator+iconFilename);    
@@ -304,7 +279,6 @@ public class VMElement extends JVSMain
     
     CaptionDef def=getIconFromDefinitionDef();
     
-
     inputs=element.getInputPinList(basis);
     outputs=element.getOutputPinList(basis);
 
@@ -326,14 +300,14 @@ public class VMElement extends JVSMain
     {
       dt=outputs[i].jGetPinDataType(0); // Pin hat nur ein Pin!
       element.jSetPinDescription(i,outputs[i].jGetCaption());
-      setPin(i,dt,element.PIN_OUTPUT);
+      setPin(i,dt,ExternalIF.PIN_OUTPUT);
     }
 
     for (int i=0;i<inputs.length;i++)
     {
       dt=inputs[i].jGetPinDataType(0); // Pin hat nur ein Pin!
       element.jSetPinDescription(rightC+i,inputs[i].jGetCaption());
-      setPin(rightC+i,dt,element.PIN_INPUT);
+      setPin(rightC+i,dt,ExternalIF.PIN_INPUT);
     }
 
 
@@ -354,7 +328,6 @@ public class VMElement extends JVSMain
       in[i]=(VSObject)element.getPinInputReference(outputs.length+i);
     }
   }
-  
 
   public void initOutputPins()
   {
@@ -375,7 +348,7 @@ public class VMElement extends JVSMain
 
       ArrayList list = new ArrayList();
       list.add(myOuts[i]);
-      list.add(new Integer(i));
+      list.add(i);
       list.add(element);
       outputs[i].jSetTag(list);
     }
@@ -396,7 +369,6 @@ public class VMElement extends JVSMain
   {
       changed=true;
   }
-
 
   VSObject myInput;
 
@@ -422,9 +394,6 @@ public class VMElement extends JVSMain
   {
 
   }
-
-  
-  
   
   public void loadFromStream(java.io.FileInputStream fis)
   {
@@ -436,10 +405,7 @@ public class VMElement extends JVSMain
       }
       elementName.loadFromStream(fis);
       elementIcon.loadFromStream(fis);
-      
-      //loadFromStreamAfterXOnInit(fis);
-    } catch(Exception ex)
-    {
+    } catch(Exception ex) {
 
     }
   }
@@ -453,10 +419,7 @@ public class VMElement extends JVSMain
     filename.saveToStream(fos);
     elementName.saveToStream(fos);
     elementIcon.saveToStream(fos);
-    
-    //saveToStreamAfterXOnInit(fos);
   }
-
 
   public void propertyChanged(Object o)
   {
@@ -486,9 +449,6 @@ public class VMElement extends JVSMain
     element.jSetPEItemLocale(d+0,language,"VM Name");
   }
 
-
-
-
   public void saveToStreamAfterXOnInit(java.io.FileOutputStream fos)
   {
     String basisVersion=basis.getBasisElementVersion();
@@ -510,10 +470,8 @@ public class VMElement extends JVSMain
     String basisVersion=basis.getBasisElementVersion();
     version.loadFromStream(fis);
 
-
     //showMessage("Loading Circuit-Element :"+ element.jGetCaption() +" basisVersion  "+version.getValue());
     //showMessage("Element , basisVersion  "+element.jGetCaption()+" , " +basisVersion);
-
 
     if (version.getValue().equalsIgnoreCase(basisVersion))
     {
@@ -526,19 +484,14 @@ public class VMElement extends JVSMain
           props[i].loadFromStream(fis);
         }
 
-      } catch(Exception ex)
-      {
+      } catch(Exception ex) {
 
       }
-     } else
-     {
+     } else {
        showMessage("Version of Element "+ element.jGetCaption() +" is wrong, Element Properties not loaded!");
        showMessage("Version/basisVersion : "+version.getValue()+"  ,  "+basisVersion);
      }
   }
-
-
-
 
   private static String extractClassName(String line)
   {
@@ -562,7 +515,6 @@ public class VMElement extends JVSMain
         String str;
         
         CaptionDef def = new CaptionDef();
-
 
         str=projectPath+"/"+filename.getValue();
         String filename=new File(str).getParent()+"\\config.txt";
@@ -595,16 +547,10 @@ public class VMElement extends JVSMain
                 }
             }
             input.close();
-        }catch(Exception ex)
-        {
+        } catch(IOException ex) {
             //Tools.showMessage(ex.toString());
         }
         return def;
     }
 
-  
 }
-
-
-
-

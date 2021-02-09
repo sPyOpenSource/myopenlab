@@ -17,19 +17,8 @@ package VisualLogic;
 import BasisStatus.StatusEditPath;
 import BasisStatus.StatusNOP;
 import BasisStatus.StatusNone;
-import SimpleFileSystem.FileSystemInput;
-import SimpleFileSystem.FileSystemOutput;
 import BasisStatus.StatusAddElement;
-import javax.swing.*;
-import java.util.*;
-import java.awt.event.*;
-import java.awt.*;
-import java.io.*;
-import java.awt.image.*;
-//import com.sun.image.codec.jpeg.*;
 
-import VisualLogic.variables.*;
-import VisualLogic.variables.VSString;
 import BasisStatus.StatusMoveElements;
 import BasisStatus.StatusAddWire;
 import BasisStatus.StatusIdle;
@@ -38,7 +27,12 @@ import BasisStatus.StatusGummiBand;
 import BasisStatus.StatusBasisIF;
 import BasisStatus.StatusResizeElement;
 import BasisStatus.StatusResizeBasis;
-import Peditor.BasisProperty;
+
+import java.util.*;
+import java.io.*;
+import java.awt.event.*;
+import java.awt.*;
+import java.awt.image.*;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
 import java.awt.datatransfer.UnsupportedFlavorException;
@@ -51,56 +45,60 @@ import java.awt.dnd.DropTargetListener;
 import java.awt.print.PageFormat;
 import java.awt.print.Printable;
 import java.awt.print.PrinterException;
+
 import javax.imageio.ImageIO;
+import javax.swing.*;
+import Peditor.BasisProperty;
+import VisualLogic.variables.*;
+import VisualLogic.variables.VSString;
+import SimpleFileSystem.FileSystemInput;
+import SimpleFileSystem.FileSystemOutput;
 
 /**
  *
  * @author Homer
  */
 public class VMObject extends JPanel implements MouseListener, MouseMotionListener, VMObjectIF, ElementIF, Runnable, Printable {
-
-    private ExternalIF element;
-    private final int maxElements = 2000;
+    
     public ArrayList propertyList = new ArrayList();
     public ArrayList clockList = new ArrayList();
-
     public DialogWait frmWait = null;
+    
+    private ExternalIF element;
+    private final int maxElements = 2000;
     private boolean isThreadFertig = true;
-
-    private boolean getIsThreadFertig() {
-        return isThreadFertig;
-    }
-    private Object elementReferences[] = new Object[maxElements];
+    private final Object elementReferences[] = new Object[maxElements];
+    
     // fuer Basis als Element!
-    private Image elementImage = null;
-    private Element elTopBar = null;
-    private Element elLeftBar = null;
-    private Element elRightBar = null;
-    private Element elBottomBar = null;
-    private VSInteger vsWidth = new VSInteger(500);
-    private VSInteger vsHeight = new VSInteger(500);
-    private VSProperties vsProperties = new VSProperties();
-    private VSColor vsColor = new VSColor(Color.LIGHT_GRAY);
-    private VSString vsCaption = new VSString("");
-    private VSBoolean vsShowToolbar = new VSBoolean(false);
-    private VSBoolean vsUnDecorate = new VSBoolean(false);
-    private VSBoolean vsAlwaysOnTop = new VSBoolean(false);
+    private final Image elementImage = null;
+    private final Element elTopBar = null;
+    private final Element elLeftBar = null;
+    private final Element elRightBar = null;
+    private final Element elBottomBar = null;
+    private final VSInteger vsWidth = new VSInteger(500);
+    private final VSInteger vsHeight = new VSInteger(500);
+    private final VSProperties vsProperties = new VSProperties();
+    private final VSColor vsColor = new VSColor(Color.LIGHT_GRAY);
+    private final VSString vsCaption = new VSString("");
+    private final VSBoolean vsShowToolbar = new VSBoolean(false);
+    private final VSBoolean vsUnDecorate = new VSBoolean(false);
+    private final VSBoolean vsAlwaysOnTop = new VSBoolean(false);
     private VSComboBox vsWindowsPosition = new VSComboBox();
     
-    private VSInteger vsCustomXwindowPos = new VSInteger(0);
-    private VSInteger vsCustomYwindowPos = new VSInteger(0);
-    
+    private final VSInteger vsCustomXwindowPos = new VSInteger(0);
+    private final VSInteger vsCustomYwindowPos = new VSInteger(0);
     private int elementsCount = 0;
-    private ArrayList elList;
+    private final ArrayList elList;
     private boolean borderVisible = true;
-    public ArrayList drahtLst;
-    private String elementPath;
-    private ArrayList elementListe;    
+    
+    private final String elementPath;
+    private final ArrayList elementListe;    
     private boolean aktuellIstBasis = false;
     private boolean graphikLocked = false;    
-    private int width = 500;  // Default Value!
-    private int height = 500; // Default Value!
+    private final int width = 500;  // Default Value!
+    private final int height = 500; // Default Value!
     
+    public ArrayList drahtLst;
     public Element aktuellesElement = null;
     public Point subLocation = new Point(0, 0);
     public boolean isBasisResizePinVisible = true;
@@ -249,10 +247,12 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         reorderWireFrames();
     }
 
-    private Thread thread = null;
+    public boolean stop = true;
     public String[] newElement = null;
+    public StatusBasisIF status;
     // zustaende
     public StatusIdle leerLauf; // leerLauf faengt die Ereignisse implements Leerlauf
+    
     private StatusAddWire addWireFrame;
     private StatusGummiBand gummiBand;
     private StatusResizeBasis resizeBasis;
@@ -260,26 +260,26 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     private StatusMoveElements moveElements;
     private StatusEditPath splineEdit;
     private StatusResizeElement resizeElement;
-    public StatusBasisIF status;
+    private Thread thread = null;
     private StatusRun modusRun;
-    public boolean stop = true;
     private boolean pause = false;
 
     public void setModusNop() {
         status = new StatusNOP();
     }
-    private int processCounter = 0; // fuer den JProgrammBar um zu Visualisieren das was am laufen ist!
+    private final int processCounter = 0; // fuer den JProgrammBar um zu Visualisieren das was am laufen ist!
     // werden nur genutzt, wenn die Basis als Element benutzt wird!
-    private Font stdFont = new Font("Courier", 0, 8);
-    public String settingsTitel = "";
-    private ArrayList topPins = new ArrayList();
-    private ArrayList rightPins = new ArrayList();
-    private ArrayList bottomPins = new ArrayList();
-    private ArrayList leftPins = new ArrayList();
+    private final Font stdFont = new Font("Courier", 0, 8);
+    private final ArrayList topPins = new ArrayList();
+    private final ArrayList rightPins = new ArrayList();
+    private final ArrayList bottomPins = new ArrayList();
+    private final ArrayList leftPins = new ArrayList();
     private static long time1;
     private static long time2;
-    private static int counter = 0;
+    private static final int counter = 0;
     private boolean alignToGrid = false;
+    
+    public String settingsTitel = "";
 
     public boolean isAlignToGrid() {
         return alignToGrid;
@@ -297,6 +297,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     public void setRasterOn(boolean value) {
         rasterOn = value;
     }
+    
     private int rasterX = 10;
     private int rasterY = 10;
 
@@ -402,6 +403,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
             el.addPublishingFiles(list);
         }
     }
+    
     private Color backgroundColor = Color.GRAY;
 
     public Color getBackground() {
@@ -469,13 +471,11 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
             vsCustomXwindowPos.setValue(owner.CustomXwindowPos);
             vsCustomYwindowPos.setValue(owner.CustomYwindowPos);
 
-         
             owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("Width"), vsWidth, 20, 5000, true);
             owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("Height"), vsHeight, 20, 5000, true);
 
             owner.propertyEditor.addItem("Properties", vsProperties, 0, 0, true);
-            boolean EditableTemp=false;
-            EditableTemp = owner.WindowsPosition.selectedIndex==5; // IF user select "CUSTOM" enable editable X and Y Loation
+            boolean EditableTemp = owner.WindowsPosition.selectedIndex == 5; // IF user select "CUSTOM" enable editable X and Y Loation
 
             if (this == owner.getFrontBasis()) {
                 owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("ShowToolbar"), vsShowToolbar, 0, 0, true);
@@ -602,6 +602,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
             // Jemand hat die Art des Drops (Move, Copy, Link)
             // geändert
+            @Override
             public void dropActionChanged(DropTargetDragEvent e) {
             }
         };
@@ -770,7 +771,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         while (!stop) {
             try {
                 Thread.sleep(owner.delay);
-            } catch (InterruptedException exe) {
+            } catch (InterruptedException ex) {
             }
 
             processAllElements();
@@ -1488,7 +1489,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                 deleteDraht(draht);
 
                 drahtLst.remove(draht);
-                draht = null;
+                //draht = null;
                 i = -1;
             }
             i++;
@@ -2069,6 +2070,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     public void recognizeResursiveWires(Element element) {
 
     }
+    
     public boolean linksOK = false;
     public boolean rechtsOK = false;
     public boolean topOK = false;
@@ -2082,7 +2084,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                 return;
             }
 
-            Polygon poly = pin.draht.getPolygon();
+            //Polygon poly = pin.draht.getPolygon();
             if (pin.draht.getDestElementID() == node.getID()) {
                 if (pin.draht.getPolySize() > 2) {
                     linksOK = true;
@@ -3126,8 +3128,8 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                 destPin = stream.readInt();
                 oldid = stream.readInt();
 
-                int oki = 0;
-                int id = -1;
+                //int oki = 0;
+                int id;// = -1;
 
                 if (fromAblage) {
                     id = getObjectID();
@@ -3249,7 +3251,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
         if (fromAblage) {
             for (int k = 0; k < ElemetTabelle.size();) {
-                Integer elementOldid = (Integer) ElemetTabelle.get(k);
+                //Integer elementOldid = (Integer) ElemetTabelle.get(k);
                 Integer elementId = (Integer) ElemetTabelle.get(k + 1);
 
                 SelectElement(elementId);
@@ -3258,7 +3260,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         }
 
         ElemetTabelle.clear();
-        ElemetTabelle = null;
+        //ElemetTabelle = null;
 
         beendeWaitDialog();
     }
@@ -3291,7 +3293,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                     if (draht.getDestPin() > destElement.getPinCount() - 1) {
                         deleteDraht(draht);
                     }
-
                 }
             }
         }
@@ -3513,7 +3514,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         Element element;
 
         int dx, dy;
-        int vectorDistance = 0;
+        int vectorDistance;// = 0;
         int minDitance = 99999999;
 
         JPin minPin = null;
@@ -3530,8 +3531,8 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                     dy = Math.abs(y - mp.y);
 
                     vectorDistance = (int) Math.sqrt((dx * dx) + (dy * dy));
-                    double w2 = element.getWidth() / 2;
-                    int radius = (int) Math.sqrt(w2 * w2 + w2 * w2);
+                    //double w2 = element.getWidth() / 2;
+                    int radius;// = (int) Math.sqrt(w2 * w2 + w2 * w2);
                     radius = 0;
 
                     if (vectorDistance < (d + radius) && vectorDistance < minDitance) {
@@ -3630,6 +3631,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         return new Point(mx, my);
     }
 
+    @Override
     public int print(Graphics graphics, PageFormat pageFormat, int pageIndex) throws PrinterException {
 
         if (pageIndex > 0) {
@@ -3639,7 +3641,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
             Graphics2D g2 = (Graphics2D) graphics;
             int x = (int) pageFormat.getImageableX();
-            int y = (int) pageFormat.getImageableY();
+            int y;// = (int) pageFormat.getImageableY();
             int w = (int) pageFormat.getImageableWidth();
             int h = (int) pageFormat.getImageableHeight();
 
@@ -3656,7 +3658,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
             y = h2 - ih2;
             g2.drawImage(scaledImage, x, y, w, h, this);
 
-            //g2d.translate(pageFormat.getImageableX(), pageFormat.getImageableY());
             // Turn off double buffering
             //componentToBePrinted.paint(g2d);
             // Turn double buffering back on*/

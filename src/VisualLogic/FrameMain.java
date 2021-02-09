@@ -379,7 +379,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             Tools.openFileImage(this, new File(path));
         } else if (extension != null && (extension.equalsIgnoreCase("txt") || extension.equalsIgnoreCase("html") || extension.equalsIgnoreCase("htm"))) {
             Tools.editFile(this, new File(path));
-        } else if (extension != null && extension.equalsIgnoreCase("vlogic")) {
+        } else if (extension != null && (extension.equalsIgnoreCase("vlogic") || extension.equalsIgnoreCase("v"))) {
             globalProjectPath = node.projectPath;
             globalPath = path;
 
@@ -415,7 +415,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         if (command.equalsIgnoreCase("OPENFILE")) {
             String str = node.projectPath + node.relativePath;
 
-            if (str.endsWith("vlogic")) {
+            if (str.endsWith("vlogic") || str.endsWith("v")) {
                 projectPaletteItemSelected(node);
                 return;
             }
@@ -426,7 +426,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                     File myFile = new File(str);
                     java.awt.Desktop.getDesktop().open(myFile);
                 }
-
             } catch (IOException ex) {
             }
 
@@ -2047,6 +2046,7 @@ Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
         globalProjectPath = projectPath;
         SwingWorker<Object, Object> worker = new SwingWorker<Object, Object>() {
 
+            @Override
             public Object doInBackground() {
                 Tools.dialogWait = new DialogWait();
                 Tools.dialogWait.setVisible(true);
@@ -3638,11 +3638,6 @@ Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
         return code;
     }
 
-    private boolean isElementMCUFlowChartElement(Element element) {
-        String str = element.getInternName().substring(0, 13);
-        return str.equalsIgnoreCase("#MCU-FLOWCHART");
-    }
-
     public String generateMCUVMCode() {
         Basis basis = getActualBasis();
         String code = "";
@@ -4479,14 +4474,11 @@ Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
     public Basis createNewVM() {
         Basis basis = new Basis(this, elementPath);
 
-        //basis.fileName="Untilted";
         String path = getUserURL().getFile() + System.getProperty("file.separator");
         basis.fileName = generateUntiledFileName(path);
         if (basis.fileName != null) {
-
             basis.saveToFile(basis.fileName, false);
 
-            //desktop.add(basis);
             basis.loading = true;
 
             basis.isFileLoaded = false;
@@ -4494,13 +4486,6 @@ Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
             return basis;
         } else {
             return null;
-        }
-    }
-
-    private void saveAs() {
-        Basis basis = getActualBasis();
-        if (basis != null) {
-            basis.saveAs();
         }
     }
 
@@ -4526,6 +4511,7 @@ Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
 
         chooser.addChoosableFileFilter(new javax.swing.filechooser.FileFilter() {
 
+            @Override
             public boolean accept(File f) {
                 if (f.isDirectory()) {
                     return true;
@@ -4533,6 +4519,7 @@ Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
                 return f.getName().toLowerCase().endsWith(".vlogic");
             }
 
+            @Override
             public String getDescription() {
                 return "vlogic Dateien (vlogic)";
             }
@@ -4549,6 +4536,7 @@ Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
 
                 DialogWait frm;
 
+                @Override
                 public Object doInBackground() {
                     Tools.dialogWait = new DialogWait();
                     Tools.dialogWait.setVisible(true);
@@ -4557,6 +4545,7 @@ Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
                     return null;
                 }
 
+                @Override
                 protected void done() {
                     Tools.dialogWait.dispose();
                 }
@@ -4754,7 +4743,6 @@ Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
 
     private void jButtonVariables_HActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonVariables_HActionPerformed
     {//GEN-HEADEREND:event_jButtonVariables_HActionPerformed
-
         Basis basis = getActualBasis();
         if (basis != null) {
             if (basis.vmProtected) {
@@ -5039,7 +5027,6 @@ Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
     }//GEN-LAST:event_jButtonSave_CActionPerformed
 
     private void jButtonOpenProject_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOpenProject_BActionPerformed
-
         jmiOpenProjectActionPerformed(evt);
     }//GEN-LAST:event_jButtonOpenProject_BActionPerformed
 

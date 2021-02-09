@@ -1,3 +1,7 @@
+3.12.5 XW 09-02-2021
+added: MicroPython submodule
+added: VerilogParser
+
 3.12.4 XW 07-02-2021
 removed: some components
 

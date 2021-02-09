@@ -6,11 +6,7 @@
 
   package tools;
 
-  import java.io.InputStreamReader;
   import java.io.IOException;
-  import java.io.Reader;
-  import java.io.ObjectOutputStream;
-  import java.io.StreamTokenizer;
   import java.util.ArrayList;
 
   public class Expression

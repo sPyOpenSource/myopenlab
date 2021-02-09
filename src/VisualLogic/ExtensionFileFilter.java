@@ -21,7 +21,6 @@ package VisualLogic;
 import java.io.File;
 import java.util.Hashtable;
 import java.util.Enumeration;
-import javax.swing.*;
 import javax.swing.filechooser.FileFilter;
 
 public class ExtensionFileFilter extends FileFilter {
@@ -55,13 +54,9 @@ public class ExtensionFileFilter extends FileFilter {
       if(description!=null) setDescription(description);
     }
 
-
-
     public ExtensionFileFilter(String[] filters) {
      this(filters, null);
     }
-
-
 
     public ExtensionFileFilter(String[] filters, String description) {
      this();
@@ -86,8 +81,6 @@ public class ExtensionFileFilter extends FileFilter {
      return false;
     }
 
-
-
     public String getExtension(File f) {
         if(f != null) {
            String filename = f.getName();
@@ -99,8 +92,6 @@ public class ExtensionFileFilter extends FileFilter {
        return null;
     }
 
-
- 
     public void addExtension(String extension) {
        if(filters == null) {
            filters = new Hashtable(5);
@@ -108,7 +99,6 @@ public class ExtensionFileFilter extends FileFilter {
        filters.put(extension.toLowerCase(), this);
        fullDescription = null;
     }
-
 
     public String getDescription() {
        if(fullDescription == null) {
@@ -130,12 +120,10 @@ public class ExtensionFileFilter extends FileFilter {
        return fullDescription;
     }
 
-
     public void setDescription(String description) {
        this.description = description;
        fullDescription = null;
     }
-
 
     public void setExtensionListInDescription(boolean b) {
        useExtensionsInDescription = b;
@@ -145,6 +133,5 @@ public class ExtensionFileFilter extends FileFilter {
     public boolean isExtensionListInDescription() {
        return useExtensionsInDescription;
     }
-
 
 }

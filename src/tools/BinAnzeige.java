@@ -20,9 +20,7 @@
 //*****************************************************************************
 package tools;
 
-import VisualLogic.*;
 import java.awt.*;
-import java.awt.event.*;
 
 public class BinAnzeige extends JVSMain
 {
@@ -30,8 +28,8 @@ public class BinAnzeige extends JVSMain
   private Image image=null;
   private Image imageON=null;
   private Image imageOFF=null;
-  private String fileNameImageON;
-  private String fileNameImageOFF;
+  private final String fileNameImageON;
+  private final String fileNameImageOFF;
   private int sizeW=30;
   private int sizeH=30;
 
@@ -91,6 +89,7 @@ public class BinAnzeige extends JVSMain
     }
   }
 
+  @Override
   public void process()
   {
     double pin1 = element.readPin(0);
@@ -104,4 +103,3 @@ public class BinAnzeige extends JVSMain
   }
 
 }
- 

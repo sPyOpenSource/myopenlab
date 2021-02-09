@@ -153,24 +153,6 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
       <SubComponents>
-        <Component class="MyGraph.MyGraph" name="myGraph1">
-          <Properties>
-            <Property name="XAxisFormatString" type="java.lang.String" value="###000"/>
-            <Property name="XAxisText" type="java.lang.String" value=""/>
-            <Property name="YAxisText" type="java.lang.String" value=""/>
-            <Property name="autoScroll" type="java.lang.Boolean" value="true"/>
-            <Property name="autoZoomY" type="java.lang.Boolean" value="true"/>
-            <Property name="coordinatesVisible" type="java.lang.Boolean" value="false"/>
-            <Property name="maxX" type="java.lang.Double" value="500.0"/>
-            <Property name="minX" type="java.lang.Double" value="0.0"/>
-            <Property name="nullLineVisible" type="java.lang.Boolean" value="false"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
-              <JSplitPaneConstraints position="right"/>
-            </Constraint>
-          </Constraints>
-        </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>

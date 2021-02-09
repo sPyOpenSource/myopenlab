@@ -24,9 +24,6 @@ package tools;
 import VisualLogic.*;
 import VisualLogic.variables.*;
 import java.awt.*;
-import java.awt.event.*;
-import java.awt.geom.Rectangle2D;
-import tools.*;
 
 public class Gatter extends JVSMain
 {
@@ -73,11 +70,11 @@ public class Gatter extends JVSMain
 
     element.jSetInnerBorderVisibility(false);
 
-    setPin(0,ExternalIF.C_BOOLEAN,element.PIN_OUTPUT);
+    setPin(0,ExternalIF.C_BOOLEAN,ExternalIF.PIN_OUTPUT);
 
     for (int i=1;i<=anzPins;i++)
     {
-      setPin(i,ExternalIF.C_BOOLEAN,element.PIN_INPUT);
+      setPin(i,ExternalIF.C_BOOLEAN,ExternalIF.PIN_INPUT);
     }
 
     setName(name);
@@ -93,7 +90,6 @@ public class Gatter extends JVSMain
   {
     element.setPinOutputReference(0,out);
   }
-
 
 }
  

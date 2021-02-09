@@ -25,11 +25,11 @@ import java.awt.*;
 
 public class Properties extends JDialog
 {
-  private JScrollPane scroll = new JScrollPane();
+  private final JScrollPane scroll = new JScrollPane();
   private JTextArea text=new JTextArea();
-  private JButton cmdOK= new JButton("OK");
-  private JButton cmdCancel= new JButton("Abbrechen");
-  private JPanel panel = new JPanel();
+  private final JButton cmdOK= new JButton("OK");
+  private final JButton cmdCancel= new JButton("Abbrechen");
+  private final JPanel panel = new JPanel();
   public static boolean result=false;
   public static String strText="";
   
@@ -52,23 +52,15 @@ public class Properties extends JDialog
     text.setText(input);
     this.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-    cmdOK.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
-         result=true;
-         strText=text.getText();
-         dispose();
-      }
+    cmdOK.addActionListener((java.awt.event.ActionEvent evt) -> {
+        result=true;
+        strText=text.getText();
+        dispose();
     });
 
-    cmdCancel.addActionListener(new java.awt.event.ActionListener()
-    {
-      public void actionPerformed(java.awt.event.ActionEvent evt)
-      {
-         result=false;
-         dispose();
-      }
+    cmdCancel.addActionListener((java.awt.event.ActionEvent evt) -> {
+        result=false;
+        dispose();
     });
     
     Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -76,8 +68,6 @@ public class Properties extends JDialog
     int mitteY=(int)screenSize.getHeight() / 2;
 
     setLocation(mitteX-getWidth()/2-200,mitteY-getHeight()/2-200);
-
-    
     
   }
   

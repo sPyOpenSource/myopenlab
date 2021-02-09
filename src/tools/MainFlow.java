@@ -21,13 +21,10 @@
 
 package tools;
 
-import VisualLogic.*;
 import VisualLogic.variables.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.text.*;
 import javax.swing.*;
-import java.util.*;
 import java.awt.geom.Rectangle2D;
 
 public class MainFlow extends JVSMain
@@ -101,36 +98,6 @@ public class MainFlow extends JVSMain
 
   }
 
-
-   /*public void resizeWidth()
-   {
-     if (g2!=null)
-     {
-       g2.setFont(font);
-       String caption=variable.getValue();
-
-       FontMetrics fm = g2.getFontMetrics();
-       Rectangle2D   r = fm.getStringBounds(caption,g2);
-       Rectangle2D   r2 = fm.getStringBounds(toInclude,g2);
-
-       int newWidth=(int)(r.getWidth()+r2.getWidth());
-       if (newWidth>standardWidth)
-       {
-         int diff=(width-newWidth)/2;
-         element.jSetSize(newWidth,height);
-         element.jSetLeft(element.jGetLeft()+diff);
-         width=newWidth;
-       } else
-       {
-         int diff=(width-standardWidth)/2;
-         width=standardWidth;
-         element.jSetSize(width,height);
-         element.jSetLeft(element.jGetLeft()+diff);
-       }
-     }
-
-   }*/
-
   public void mousePressedOnIdle(MouseEvent e)
   {
 
@@ -174,8 +141,6 @@ public class MainFlow extends JVSMain
     text.setText(variable.getValue());
 
     text.setVisible(false);
-    //element.setAlwaysOnTop(true);
-
 
     text.addKeyListener(new java.awt.event.KeyAdapter() {
         public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -194,33 +159,25 @@ public class MainFlow extends JVSMain
 
   public void jTextKeyPressed(java.awt.event.KeyEvent evt)
   {
-    if (evt.getKeyCode()==evt.VK_ESCAPE)
+    if (evt.getKeyCode()==KeyEvent.VK_ESCAPE)
     {
-        SwingUtilities.invokeLater(new Runnable()
-        {
-            public void run()
-            {
-              text.setVisible(false);
-              element.jRepaint();
-            }
+        SwingUtilities.invokeLater(() -> {
+            text.setVisible(false);
+            element.jRepaint();
         });
     }
     
-    if (evt.getKeyCode()==evt.VK_ENTER)
+    if (evt.getKeyCode()==KeyEvent.VK_ENTER)
     {
-        SwingUtilities.invokeLater(new Runnable()
-        {
-            public void run()
-            {
-              variable.setValue(text.getText());
-              text.setVisible(false);
-              //panel.remove(text);
-              element.jRepaint();
-              resizeWidth();
-              element.jRepaint();
-              element.jRefreshVM();
-              checkPinDataType();
-            }
+        SwingUtilities.invokeLater(() -> {
+            variable.setValue(text.getText());
+            text.setVisible(false);
+            //panel.remove(text);
+            element.jRepaint();
+            resizeWidth();
+            element.jRepaint();
+            element.jRefreshVM();
+            checkPinDataType();
         });
 
     }
@@ -230,22 +187,21 @@ public class MainFlow extends JVSMain
   {
       System.out.println("jTextFocusLost");
       text.setVisible(false);
-      //panel.remove(text);
       element.jRepaint();
-
   }
 
 
+  @Override
   public void loadFromStream(java.io.FileInputStream fis)
   {
      variable.loadFromStream(fis);
   }
 
 
+  @Override
   public void saveToStream(java.io.FileOutputStream fos)
   {
     variable.saveToStream(fos);
   }
 
 }
-

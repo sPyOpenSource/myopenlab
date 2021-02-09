@@ -43,9 +43,6 @@ public class JVSMain extends Object implements ElementIF
 
   }
   
-  
-  
-  
   public void destElementCalled()
   {
 

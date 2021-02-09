@@ -35,6 +35,4 @@ public interface ProjectPaletteIF
     public void projectPaletteNewSubVM(MyNode node);  
     
     public void projectPaletteAction(String command, MyNode node);
-    
-     
 }

@@ -20,18 +20,17 @@
 //*****************************************************************************
 package tools;
 
-import VisualLogic.*;
 import java.awt.*;
 import java.awt.event.*;
 
 public class BinSchalter extends JVSMain
 {
-  private boolean value=false;
+  private final boolean value=false;
   private Image image=null;
   private Image imageON=null;
   private Image imageOFF=null;
-  private String fileNameImageON;
-  private String fileNameImageOFF;
+  private final String fileNameImageON;
+  private final String fileNameImageOFF;
   private int sizeW=30;
   private int sizeH=30;
   private boolean down=false;

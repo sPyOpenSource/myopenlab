@@ -1,0 +1,9 @@
+[submodule "ArduinoIO"]
+	path = distribution/Elements/CircuitElements/Interface/Arduino_IO_RPI_JV
+	url = https://github.com/sPyOpenSource/ArduinoIO.git
+[submodule "MicroPython"]
+	path = distribution/Elements/CircuitElements/Interface/MicroPython
+	url = https://github.com/sPyOpenSource/MicroPython.git
+[submodule "RaspberryGPIO"]
+	path = distribution/Elements/CircuitElements/Interface/Raspberry_GPIO
+	url = https://github.com/sPyOpenSource/RaspberryGPIO.git

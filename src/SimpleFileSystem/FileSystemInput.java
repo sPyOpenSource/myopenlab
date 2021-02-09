@@ -19,10 +19,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 package SimpleFileSystem;
 
+import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -34,16 +40,24 @@ import java.util.ArrayList;
 public class FileSystemInput {
     
     private ArrayList liste = new ArrayList();
-    private FileInputStream fis=null;    
+    private FileInputStream fis = null;    
+    private BufferedReader br;
     
+    public String readline(){
+        try {
+            return br.readLine();
+        } catch (IOException ex) {
+            Logger.getLogger(FileSystemInput.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
+    }
     
     /** Liest aus der Datei die IndexListe
      *  in der alle DatensatzBeschreibungen stehen
      */
     public FileSystemInput(String filename)
     {
-        try
-        {
+        try {
          //System.out.println("FileInput-Received: "+filename);   
          //filename = filename.replace("\\", File.separator);
          //filename = filename.replace("/", File.separator);
@@ -51,34 +65,33 @@ public class FileSystemInput {
          //filename = filename.replace("//", File.separator);
          //System.out.println("Modified: "+filename);
          
-         fis=new FileInputStream(new File(filename));
+         fis = new FileInputStream(new File(filename));
+         br = new BufferedReader(new InputStreamReader(fis, StandardCharsets.UTF_8));
          DataInputStream dis = new DataInputStream(fis);
          
-         long indexPos=dis.readLong();
+         long indexPos = dis.readLong();
          fis.getChannel().position(indexPos);
          
-         long indexSize=dis.readLong();
+         long indexSize = dis.readLong();
          
-         for (int i=0;i<indexSize;i++)
+         for (int i = 0; i < indexSize; i++)
          {
            SFileDescriptor dt= new SFileDescriptor();
            
-           byte strLen=dis.readByte();
-           dt.filename="";
-           for (int j=0;j<strLen;j++)
+           byte strLen = dis.readByte();
+           dt.filename = "";
+           for (int j = 0; j < strLen; j++)
            {
-             dt.filename+=dis.readChar();
+             dt.filename += dis.readChar();
            }          
            
-           dt.position=dis.readLong();
-           dt.size=dis.readLong();
+           dt.position = dis.readLong();
+           dt.size = dis.readLong();
          
            liste.add(dt);
          }
           
-          
-        } catch(Exception ex)
-        {
+        } catch(IOException ex) {
             System.out.println("Error in Methode loadIndexList()"+ex);
         }        
     }
@@ -93,20 +106,19 @@ public class FileSystemInput {
     public SFileDescriptor[] getAllBeginsWith(String str)
     {
         ArrayList lst = new ArrayList();
-        for (int i=0;i<liste.size();i++)
+        for (int i = 0; i < liste.size(); i++)
         {
             SFileDescriptor dt=getFileDescriptor(i);
-            if (dt.filename.indexOf(str)!=-1)
-            {
+            if (dt.filename.contains(str)) {
               lst.add(dt);  
             }            
         }
         
         SFileDescriptor[] descriptoren= new SFileDescriptor[lst.size()];
         
-        for (int i=0;i<lst.size();i++)
+        for (int i = 0; i < lst.size(); i++)
         {
-            descriptoren[i]=(SFileDescriptor)lst.get(i);
+            descriptoren[i] = (SFileDescriptor)lst.get(i);
         }
         
         return descriptoren;
@@ -118,12 +130,10 @@ public class FileSystemInput {
      */
     public FileInputStream gotoItem(int index)
     {
-        SFileDescriptor dt= getFileDescriptor(index);
-        try
-        {
+        SFileDescriptor dt = getFileDescriptor(index);
+        try {
           fis.getChannel().position(dt.position);
-        }catch(Exception ex)
-        {
+        } catch(IOException ex) {
             
         }
         return fis;
@@ -142,14 +152,11 @@ public class FileSystemInput {
      */
     public void close()
     {
-        try
-        {
+        try {
           fis.close();          
-        }catch(Exception ex)
-        {
+        } catch(IOException ex) {
             System.out.println("Error in Methode close()"+ex.toString());
         }
     }
-        
-    
+ 
 }

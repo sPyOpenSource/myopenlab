@@ -5,13 +5,14 @@
 //* licence : non commercial use.
 //********************************
 
-import VisualLogic.*;
-import java.awt.*;
-import java.awt.event.*;
 import tools.*;
 import VisualLogic.variables.*;
-import java.io.*;
+import VisualLogic.*;
 
+import java.awt.*;
+import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class cmdWrite_JV extends JVSMain
 {
@@ -47,14 +48,13 @@ public class cmdWrite_JV extends JVSMain
 
   public void setPropertyEditor()
   {
-  
     localize();
   }
 
   private void localize()
   {
     String language;
-    int d=6;
+    int d = 6;
     language="en_US";
     
     language="es_ES";
@@ -86,8 +86,6 @@ public class cmdWrite_JV extends JVSMain
     element.jSetPinDescription(2, "Enable_Element");
     element.jSetPinDescription(3, "Command_Input");
     element.jSetPinDescription(4, "Enable_Debug_Window");
-    
-    
  
     element.jSetResizable(false);
     element.jSetResizeSynchron(false);
@@ -96,13 +94,12 @@ public class cmdWrite_JV extends JVSMain
 
   public void initInputPins()
   {
-    enable= (VSBoolean)element.getPinInputReference(2);
-    CommandIn= (VSString)element.getPinInputReference(3);
-    Debug_En= (VSBoolean)element.getPinInputReference(4);
-    if(Debug_En==null){
-       Debug_En=new VSBoolean(false);
+    enable = (VSBoolean)element.getPinInputReference(2);
+    CommandIn = (VSString)element.getPinInputReference(3);
+    Debug_En = (VSBoolean)element.getPinInputReference(4);
+    if(Debug_En == null){
+       Debug_En = new VSBoolean(false);
     }
-    
   }
 
   public void initOutputPins()
@@ -129,12 +126,7 @@ public class cmdWrite_JV extends JVSMain
     { 
       
       try {
-          //element.jConsolePrintln("Comando ingresado: " +in.getValue());
-          //element.jConsolePrintln();
-                    //String cmd = "manual.bat"; //Comando 
-                    //Runtime.getRuntime().exec("msg * \"El comano es: \"" +in.getValue());
-                    
-                    if(CommandIn.getValue().length()<=0){
+                    if(CommandIn.getValue().length() <= 0){
                        CommandIn.setValue("java -version");
                     }
                     Process p = Runtime.getRuntime().exec(CommandIn.getValue()); 
@@ -182,14 +174,14 @@ public class cmdWrite_JV extends JVSMain
                     sysOut_Err=" ";
                     sysOut_N_Err=" ";
                     
-            } catch (IOException ioe) {
-                    System.out.println (ioe);
+            } catch (IOException ex) {
+                    Logger.getLogger(cmdWrite_JV.class.getName()).log(Level.SEVERE, null, ex);
                     if (Debug_En.getValue()) {
                         element.jConsolePrintln("Error ejecutando comando "+CommandIn.getValue());
                     }
                     Error_out.setValue(true);
                     Response_Out.setValue("Command Error!!");
-            }  
+            }
        
        element.notifyPin(0);
        element.notifyPin(1);

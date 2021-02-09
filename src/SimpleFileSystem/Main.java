@@ -21,6 +21,7 @@ package SimpleFileSystem;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 
 /**
  * 
@@ -49,8 +50,7 @@ public class Main
          fos.write(216);
          fos.write(2);
          fos.write(31);
-       } catch(Exception ex)
-       {
+       } catch(IOException ex) {
            System.out.println(ex);
        }
        fso.postItem();
@@ -60,8 +60,7 @@ public class Main
        {
          fos.write(21);
          fos.write(239);
-       } catch(Exception ex)
-       {
+       } catch(IOException ex) {
            System.out.println(ex);
        }
        fso.postItem();
@@ -80,16 +79,14 @@ public class Main
          System.out.println("Size   ="+dt.size);
        }
        
-       FileInputStream fis= fsIn.gotoItem(0);
+       FileInputStream fis = fsIn.gotoItem(0);
        
-
-       fis= fsIn.gotoItem(1);
+       fis = fsIn.gotoItem(1);
        
-       try
-       {
+       try {
          System.out.println("Value1="+fis.read());
          System.out.println("Value2="+fis.read());
-       } catch(Exception ex)
+       } catch(IOException ex)
        {
            
        }

@@ -18,16 +18,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 package VisualLogic;
+
 import java.io.File;
-import java.util.Hashtable;
-import java.util.Enumeration;
-import javax.swing.*;
 import javax.swing.filechooser.*;
 
 public class vlogicFilter extends FileFilter 
 {
  static String fileExtension = "vlogic";
  
+ @Override
   public boolean accept(File f) 
   {
     String s = f.getName();
@@ -38,18 +37,12 @@ public class vlogicFilter extends FileFilter
    if (i > 0) 
    {
      String extension = s.substring(i+1).toLowerCase();
-     if (fileExtension.indexOf(extension)>-1) 
-     {
-        return true;
-     } else 
-     {
-        return false;
-     }
+        return fileExtension.contains(extension);
    }
   return false;
   }
 
- 
+ @Override
     public String getDescription() 
     {
         return "Visual Logic dateien (*.vlogic)";

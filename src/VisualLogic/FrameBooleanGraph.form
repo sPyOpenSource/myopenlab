@@ -27,33 +27,18 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
-          <Component id="myGraph1" alignment="0" pref="541" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="myGraph1" pref="264" max="32767" attributes="0"/>
+              <EmptySpace pref="270" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="MyGraph.MyGraph" name="myGraph1">
-      <Properties>
-        <Property name="XAxisText" type="java.lang.String" value=""/>
-        <Property name="YAxisText" type="java.lang.String" value=""/>
-        <Property name="autoScroll" type="java.lang.Boolean" value="true"/>
-        <Property name="coordinatesVisible" type="java.lang.Boolean" value="false"/>
-        <Property name="maxX" type="java.lang.Double" value="500.0"/>
-        <Property name="maxY" type="java.lang.Double" value="100.0"/>
-        <Property name="minX" type="java.lang.Double" value="-10.0"/>
-        <Property name="minY" type="java.lang.Double" value="-10.0"/>
-        <Property name="nullLineVisible" type="java.lang.Boolean" value="false"/>
-      </Properties>
-    </Component>
     <Container class="javax.swing.JPanel" name="jPanel1">
 
       <Layout>

@@ -16,20 +16,14 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-
 package VisualLogic;
 
-
-import VisualLogic.*;
-import VisualLogic.variables.VSDouble;
-import VisualLogic.variables.VSObject;
+import MyGraph.MyGraph;
 import java.awt.Color;
-import java.util.ArrayList;
 import javax.swing.DefaultListModel;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingUtilities;
-
 
 class TheGraphDouble
 {
@@ -49,8 +43,8 @@ class TheGraphDouble
  */
 public class FrameDoubleGraph extends javax.swing.JFrame
 {
-    private Basis basis;
-    private int distance=20;
+    private final Basis basis;
+    private final int distance=20;
     private TheGraphDouble[] graphs;
     public double[] xValues;
     public double[] nullValue=new double[1];
@@ -60,7 +54,7 @@ public class FrameDoubleGraph extends javax.swing.JFrame
     private int internalC=0;
     private int refreshC=0;
     private boolean dontRefresh=false;
-    private DefaultListModel model = new DefaultListModel();
+    private final DefaultListModel model = new DefaultListModel();
     
     private int bufflen=100;
     private int newbufflen=bufflen;
@@ -113,7 +107,6 @@ public class FrameDoubleGraph extends javax.swing.JFrame
         jSpinner3 = new javax.swing.JSpinner();
         jCheckBox1 = new javax.swing.JCheckBox();
         jSplitPane1 = new javax.swing.JSplitPane();
-        myGraph1 = new MyGraph.MyGraph();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList();
 
@@ -195,17 +188,6 @@ public class FrameDoubleGraph extends javax.swing.JFrame
 
         jSplitPane1.setDividerLocation(130);
 
-        myGraph1.setXAxisFormatString("###000");
-        myGraph1.setXAxisText("");
-        myGraph1.setYAxisText("");
-        myGraph1.setAutoScroll(java.lang.Boolean.TRUE);
-        myGraph1.setAutoZoomY(java.lang.Boolean.TRUE);
-        myGraph1.setCoordinatesVisible(java.lang.Boolean.FALSE);
-        myGraph1.setMaxX(new java.lang.Double(500.0));
-        myGraph1.setMinX(new java.lang.Double(0.0));
-        myGraph1.setNullLineVisible(java.lang.Boolean.FALSE);
-        jSplitPane1.setRightComponent(myGraph1);
-
         jList1.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -236,8 +218,7 @@ public class FrameDoubleGraph extends javax.swing.JFrame
 
     private void jSpinner3StateChanged(javax.swing.event.ChangeEvent evt)//GEN-FIRST:event_jSpinner3StateChanged
     {//GEN-HEADEREND:event_jSpinner3StateChanged
-        newbufflen=((Integer)jSpinner3.getValue()).intValue();
-        
+        newbufflen=((Integer)jSpinner3.getValue());
     }//GEN-LAST:event_jSpinner3StateChanged
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
@@ -247,12 +228,12 @@ public class FrameDoubleGraph extends javax.swing.JFrame
     
     private void jSpinner2StateChanged(javax.swing.event.ChangeEvent evt)//GEN-FIRST:event_jSpinner2StateChanged
     {//GEN-HEADEREND:event_jSpinner2StateChanged
-        refreshFreq=((Integer)jSpinner2.getValue()).intValue();
+        refreshFreq=((Integer)jSpinner2.getValue());
     }//GEN-LAST:event_jSpinner2StateChanged
     
     private void jSpinner1StateChanged(javax.swing.event.ChangeEvent evt)//GEN-FIRST:event_jSpinner1StateChanged
     {//GEN-HEADEREND:event_jSpinner1StateChanged
-        abtastFreq=((Integer)jSpinner1.getValue()).intValue();
+        abtastFreq=((Integer)jSpinner1.getValue());
     }//GEN-LAST:event_jSpinner1StateChanged
     
     // Returns the Columns Index
@@ -269,9 +250,7 @@ public class FrameDoubleGraph extends javax.swing.JFrame
         return -1;
     }
     
-    
-    private Color[] colors=new Color[9];
-    
+    private final Color[] colors=new Color[9];
     
     private void generateColors()
     {
@@ -286,7 +265,8 @@ public class FrameDoubleGraph extends javax.swing.JFrame
         colors[8]=Color.WHITE;
     }
     
-    private Element[] tpNodes=null;
+    private Element[] tpNodes = null;
+    private final MyGraph myGraph1 = new MyGraph();
     
     public void init()
     {
@@ -300,7 +280,6 @@ public class FrameDoubleGraph extends javax.swing.JFrame
         myGraph1.setAutoScroll(true);
         generateColors();
         tpNodes = basis.getCircuitBasis().getAllTestpointElementsDouble();
-        //listAllDoubleTestpointNodes(tpNodes);
         myGraph1.graph.generateGraphs(tpNodes.length);
         counter=0;
         xValues= new double[bufflen];
@@ -328,9 +307,7 @@ public class FrameDoubleGraph extends javax.swing.JFrame
                 myGraph1.graph.graphRenderer[i].captionColor=colors[i];
                 
                 model.addElement(new ColoredListCell(tpNodes[i].jGetCaption(),colors[i]));
-            }
-            else
-            {
+            } else {
                 int rr=(int)(Math.random()*255);
                 int gg=(int)(Math.random()*255);
                 int bb=(int)(Math.random()*255);
@@ -343,27 +320,18 @@ public class FrameDoubleGraph extends javax.swing.JFrame
             
             myGraph1.graph.graphRenderer[i].caption="";
             
-            
-            c+=distance;
+            c += distance;
         }
         myGraph1.graph.back.positionX=0;
-        //myGraph1.setMaxX(500.0);
         myGraph1.setMaxY((double)c);
         
         jList1.setSelectedIndex(0);
         
-        
-        SwingUtilities.invokeLater(new Runnable()
-        {
-            public void run()
-            {
-                myGraph1.graph.init();
-                myGraph1.updateUI();
-            }
+        SwingUtilities.invokeLater(() -> {
+            myGraph1.graph.init();
+            myGraph1.updateUI();
         });
-        
-        
-        
+
         internalC=0;
         refreshC=0;
     }
@@ -373,7 +341,7 @@ public class FrameDoubleGraph extends javax.swing.JFrame
         
     }
     
-    private int counter=0;
+    private int counter = 0;
     
     public void addValue(String colTitle, double value)
     {
@@ -393,65 +361,6 @@ public class FrameDoubleGraph extends javax.swing.JFrame
         }
     }
     
-   /* private void verarbeiteListe(ArrayList<VSObject> list)
-    {
-        double[] xValues;
-        double[] yValues;        
-        VSDouble val;
-        int idx=0;        
-        DataEntry entry;
-        VSObject obj;        
-        
-        
-        int len=list.size();
-        
-        xValues=new double[len];
-        yValues=new double[len];
-        
-        for (int i=0;i<xValues.length;i++)
-        {
-            xValues[i]=i;                
-            yValues[i]=i;                
-        }
-
-        VSObject o;
-        VSDouble n;
-        for (int i=0;i<yValues.length;i++)
-        {
-            o=list.get(i);
-            n=(VSDouble)o;
-            yValues[i]=n.getValue();            
-        }
-        
-        
-        for (int i=0;i<graphs.length;i++)
-        {
-            myGraph1.graph.graphRenderer[i].xValues=xValues;
-            myGraph1.graph.graphRenderer[i].yValues=yValues;
-        }       
-                        
-    }
-    
-    private void sdfsd()
-    {                 
-        DataEntry entry;
-        VSObject obj;
-        
-        for (int i=0;i<basis.dataHistory.size();i++)
-        {
-            entry = basis.dataHistory.getEntry(i);
-            
-            if (entry.values.size()>0)
-            {
-                obj=entry.values.get(0);
-                if (obj instanceof VSDouble)
-                {
-                   verarbeiteListe(entry.values); 
-                }
-            }
-        } 
-    }*/
-    
     public void process()
     {
                 
@@ -468,13 +377,9 @@ public class FrameDoubleGraph extends javax.swing.JFrame
                  if (counter>bufflen) init();
               }
 
-            SwingUtilities.invokeLater(new Runnable()
-            {
-                public void run()
-                {
-                    myGraph1.graph.init();
-                    myGraph1.updateUI();
-                }
+            SwingUtilities.invokeLater(() -> {
+                myGraph1.graph.init();
+                myGraph1.updateUI();
             });
         
         }
@@ -490,17 +395,15 @@ public class FrameDoubleGraph extends javax.swing.JFrame
             if (counter<bufflen)
             {
                 fillBuffer(xValues, counter,counter);
-                for (int i=0;i<graphs.length;i++)
-                {
-                    fillBuffer(graphs[i].yValues, counter,graphs[i].value);
+                for (TheGraphDouble graph : graphs) {
+                    fillBuffer(graph.yValues, counter, graph.value);
                 }
             }
             else
             {
                 scrollBuffer(xValues, counter,counter);
-                for (int i=0;i<graphs.length;i++)
-                {
-                    scrollBuffer(graphs[i].yValues, counter,graphs[i].value);
+                for (TheGraphDouble graph : graphs) {
+                    scrollBuffer(graph.yValues, counter, graph.value);
                 }
             }
             
@@ -512,18 +415,14 @@ public class FrameDoubleGraph extends javax.swing.JFrame
                     myGraph1.graph.graphRenderer[i].xValues=xValues;
                     myGraph1.graph.graphRenderer[i].yValues=graphs[i].yValues;
                 }
-            }
-            else
-            {
+            } else {
                 for (int i=0;i<graphs.length;i++)
                 {
                     if (i==index-1)
                     {
                         myGraph1.graph.graphRenderer[i].xValues=xValues;
                         myGraph1.graph.graphRenderer[i].yValues=graphs[i].yValues;
-                    }
-                    else
-                    {
+                    } else {
                         myGraph1.graph.graphRenderer[i].xValues=nullValue;
                         myGraph1.graph.graphRenderer[i].yValues=nullValue;
                     }
@@ -543,22 +442,16 @@ public class FrameDoubleGraph extends javax.swing.JFrame
         
     }
     
-    
-    
     public void fillBuffer(double[] values, int counter, double value)
     {
         for (int i=counter;i<bufflen;i++)  values[i]=value;
     }
-    
-    
-    
+
     public void scrollBuffer(double[] values, int counter, double value)
     {
         System.arraycopy(values, 1, values, 0, bufflen-1 );
         values[bufflen-1]=value;
     }
-    
-    
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -573,7 +466,6 @@ public class FrameDoubleGraph extends javax.swing.JFrame
     private javax.swing.JSpinner jSpinner2;
     private javax.swing.JSpinner jSpinner3;
     private javax.swing.JSplitPane jSplitPane1;
-    private MyGraph.MyGraph myGraph1;
     // End of variables declaration//GEN-END:variables
     
 }

@@ -1,15 +1,10 @@
 
 package tools;
-import VisualLogic.*;
-import VisualLogic.variables.*;
 
-import java.io.InputStreamReader;
+import VisualLogic.*;
 import java.io.IOException;
 import java.io.Reader;
-import java.io.ObjectOutputStream;
 import java.io.StreamTokenizer;
-import java.util.ArrayList;
-  
   
  public class Scanner extends StreamTokenizer implements Expression.yyInput
   {
@@ -76,6 +71,7 @@ import java.util.ArrayList;
     /** determines current input, sets value to String for Int and Real.
         @return Int, Real or token's character value.
       */
+    @Override
     public int token ()
     {
       switch (ttype) {
@@ -86,46 +82,12 @@ import java.util.ArrayList;
            value = sval;
 
            //System.out.println("VALUE="+sval);
-
-           /*try
-           {
-             int c=Integer.valueOf(sval);
-
-             //if (c>=0 && c<=255) return BYTE; else
-             //if (c>255 && c<=65535) return WORD; else
-
-             if (c>=-32768 && c<=32767) return Expression.WORD; else
-              System.out.println("Error: Integer excepted ");
-
-             //return sval.indexOf(".") < 0 ? Int : Real;
-           } catch(Exception ex)
-           {
-           }*/
            
            if (isConst(sval)) return Expression.WORD;
            if (isVariable(sval)) return Expression.Variable;else
            {
              element.jShowMessage("not a valid expresssion!");
            }
-
-           /*if (sval.equalsIgnoreCase("LCDPRINTNUM")) return LCD_PRINT_NUM;
-
-           if (sval.equalsIgnoreCase("DIM")) return DIM;
-           if (sval.equalsIgnoreCase("BYTE")) return RBYTE;
-           if (sval.equalsIgnoreCase("WORD")) return RWORD;
-
-           if (sval.equalsIgnoreCase("IF")) return IF;
-           if (sval.equalsIgnoreCase("THEN")) return THEN;
-
-
-           if (sval.equalsIgnoreCase("SIN")) return SIN;
-           if (sval.equalsIgnoreCase("COS")) return COS;
-           if (sval.equalsIgnoreCase("TAN")) return TAN;
-
-           if (sval.equalsIgnoreCase("ASIN")) return ASIN;
-           if (sval.equalsIgnoreCase("ACOS")) return ACOS;
-           if (sval.equalsIgnoreCase("ATAN")) return ATAN;*/
-
 
            return Expression.Variable;
 
@@ -140,9 +102,9 @@ import java.util.ArrayList;
     /** produces value associated with current input.
         @return value.
       */
+    @Override
     public Object value ()
     {
       return value;
     }
   }
-

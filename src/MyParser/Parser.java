@@ -16,6 +16,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 package MyParser;
+
 import VisualLogic.Basis;
 import VisualLogic.variables.VSFlowInfo;
 import java.util.ArrayList;
@@ -24,17 +25,17 @@ import java.util.StringTokenizer;
 
 class Token
 {
-    public boolean isNum=false;
-    public boolean isOp=false;
-    public boolean isFunc=false;
-    public boolean isKlammer=false;
-    public boolean isBoolean=false;
-    public boolean isVar=false;
-    public boolean isString=false;
+    public boolean isNum = false;
+    public boolean isOp = false;
+    public boolean isFunc = false;
+    public boolean isKlammer = false;
+    public boolean isBoolean = false;
+    public boolean isVar = false;
+    public boolean isString = false;
         
     public Object value;
     public String func;
-    public String op="";    
+    public String op = "";    
     public String klammer;    
     public String varName;
     
@@ -64,25 +65,25 @@ class Token
 
 public class Parser 
 {
-    private static final String ALPHA="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    private static final String OPERATOREN="<>+-*/^%=&|!";    
-    private static final String KLAMMER="()";
+    private static final String ALPHA = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private static final String OPERATOREN = "<>+-*/^%=&|!";    
+    private static final String KLAMMER = "()";
     private StringTokenizer tokenizer;
     private final ArrayList mainVector = new ArrayList();
     private ArrayList optVector;
-    private int pointer=0;
+    private int pointer = 0;
     private ArrayList varsGlobal = new ArrayList();
     private ArrayList varsLocal = new ArrayList();
-    private String errorMessage="";
-    public String resultVariable="";
+    private String errorMessage = "";
+    private Basis basis = null;
+    
     private static final int C_DOUBLE = 1;
     private static final int C_BOOLEAN = 2;
     private static final int C_STRING = 3;
     private final int modus = C_DOUBLE;
-    public boolean gleichheitsZeichenGefunden=false;
     
-       
-    private Basis basis=null;
+    public boolean gleichheitsZeichenGefunden = false;
+    public String resultVariable = "";
     public VSFlowInfo flowInfo ;
     
     private boolean isIn(String ch, String set)
@@ -102,15 +103,12 @@ public class Parser
     
     private boolean isNum(String val)
     {
-        try
-        {
+        try {
             double x=Double.parseDouble(val);
             return true;
-        }catch(NumberFormatException ex)
-        {            
+        } catch(NumberFormatException ex) {            
             return false;
         }
-        
     }
     
     public boolean isMyString(String val)
@@ -164,7 +162,7 @@ public class Parser
           if (inString==false &&  ch.equalsIgnoreCase("\"")) 
           {
               inString=true;
-          }else
+          } else
           if (inString==true &&  ch.equalsIgnoreCase("\"")) 
           {
               inString=false;
@@ -173,7 +171,7 @@ public class Parser
           if (inString)
           {
               result+=ch;
-          }else
+          } else
           if (!ch.equalsIgnoreCase(" ") )
           {
               result+=ch;
@@ -207,15 +205,14 @@ public class Parser
     
     public Parser(Basis basis)
     {
-        this.basis=basis;
+        this.basis = basis;
     }
     
     private static double fakultaet (double a)
     {
       double i,r;
       r=1.0;
-      for(i=2 ; i <= a ; i++)
-      {
+      for(i=2 ; i <= a ; i++) {
         r *= i;
       }
       return r;
@@ -329,9 +326,7 @@ public class Parser
         
         return value;
     }
-            
-            
-            
+
     private boolean calcBoolean(ArrayList vector)
     {
         boolean value=false;
@@ -393,8 +388,6 @@ public class Parser
         return value;
     }
     
-    
-    
     private double calcDouble(ArrayList vector)
     {
         double num=0.0;
@@ -429,13 +422,10 @@ public class Parser
                             if (v.global==false)
                             {
                                 flowInfo.setVariable(lastVar,calcDouble(vector));
-                            }else
-                            {
+                            } else {
                                 basis.vsSetVar(lastVar,calcDouble(vector));
-                            }
-                            
-                        } else
-                        {
+                            }          
+                        } else {
                             setErrorMessage("Variable "+lastVar+" not exist!");
                         }   break;
                     case "%":
@@ -454,33 +444,33 @@ public class Parser
                         break;
                 }
                 
-            }else
+            } else
             if (token.isFunc)
             {
-                if (token.func.equalsIgnoreCase("sin")) return Math.sin(calcDouble(vector));else
-                if (token.func.equalsIgnoreCase("cos")) return Math.cos(calcDouble(vector));else
-                if (token.func.equalsIgnoreCase("tan")) return Math.tan(calcDouble(vector));else
+                if (token.func.equalsIgnoreCase("sin")) return Math.sin(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("cos")) return Math.cos(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("tan")) return Math.tan(calcDouble(vector)); else
                     
-                if (token.func.equalsIgnoreCase("asin")) return Math.asin(calcDouble(vector));else
-                if (token.func.equalsIgnoreCase("acos")) return Math.acos(calcDouble(vector));else
+                if (token.func.equalsIgnoreCase("asin")) return Math.asin(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("acos")) return Math.acos(calcDouble(vector)); else
                 if (token.func.equalsIgnoreCase("atan")) return Math.atan(calcDouble(vector));
 
-                if (token.func.equalsIgnoreCase("sinh")) return Math.sinh(calcDouble(vector));else
-                if (token.func.equalsIgnoreCase("cosh")) return Math.cosh(calcDouble(vector));else
-                if (token.func.equalsIgnoreCase("tanh")) return Math.tanh(calcDouble(vector));else
+                if (token.func.equalsIgnoreCase("sinh")) return Math.sinh(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("cosh")) return Math.cosh(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("tanh")) return Math.tanh(calcDouble(vector)); else
                     
-                if (token.func.equalsIgnoreCase("abs")) return Math.abs(calcDouble(vector));else
-                if (token.func.equalsIgnoreCase("log")) return Math.log10(calcDouble(vector));else
-                if (token.func.equalsIgnoreCase("ln")) return Math.log(calcDouble(vector));else
-                if (token.func.equalsIgnoreCase("exp")) return Math.exp(calcDouble(vector));else
+                if (token.func.equalsIgnoreCase("abs")) return Math.abs(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("log")) return Math.log10(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("ln")) return Math.log(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("exp")) return Math.exp(calcDouble(vector)); else
                 
-                if (token.func.equalsIgnoreCase("sqrt")) return Math.sqrt(calcDouble(vector));else
-                if (token.func.equalsIgnoreCase("round")) return Math.round(calcDouble(vector));else
-                if (token.func.equalsIgnoreCase("fak")) return fakultaet(calcDouble(vector));else
-                if (token.func.equalsIgnoreCase("toDeg")) return Math.toDegrees(calcDouble(vector));else
+                if (token.func.equalsIgnoreCase("sqrt")) return Math.sqrt(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("round")) return Math.round(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("fak")) return fakultaet(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("toDeg")) return Math.toDegrees(calcDouble(vector)); else
                 if (token.func.equalsIgnoreCase("toRad")) return Math.toRadians(calcDouble(vector)); else
                 {
-                    setErrorMessage("Function "+token.varName+" not found!");
+                    setErrorMessage("Function " + token.varName + " not found!");
                 }
             }
         }
@@ -488,9 +478,6 @@ public class Parser
         return num;
     }
     
-    
-    
-                
     private int sucheRechtsNachKlammer(ArrayList tokenListe, int pos)
     {
         int c=0;
@@ -547,7 +534,6 @@ public class Parser
         }
         return c;
     }
-        
     
     // bei -5+1     -> 0-5+1
     // bei -5+(-1)  -> 0-5+(0-1)
@@ -578,8 +564,7 @@ public class Parser
            i++;
         }
     }
-                
-    
+
     public void print()
     {
         int i=0;
@@ -654,9 +639,7 @@ public class Parser
             i++;
         }
         
-        
     }
-    
     
     private void setVariablen(ArrayList tokenListe)
     {
@@ -686,8 +669,8 @@ public class Parser
       }
     }
     
-    int counter=0;
-    boolean eof=false;
+    int counter = 0;
+    boolean eof = false;
     String expr;
 
     public boolean hasMoreTokens()
@@ -708,7 +691,7 @@ public class Parser
           {
               inString=true;
               start=counter;
-          }else
+          } else
           if (inString==true && ch.equalsIgnoreCase("\""))
           {
               inString=false;
@@ -724,8 +707,7 @@ public class Parser
                   {
                       counter++;
                       return expr.substring(start,counter);
-                  } else
-                  {
+                  } else {
                     return expr.substring(start,counter);
                   }                  
               }
@@ -735,14 +717,12 @@ public class Parser
         }
         
         if (inString) setErrorMessage("\"(\" not closed!");
-        eof=false;
-        return expr.substring(start,counter);
+        eof = false;
+        return expr.substring(start, counter);
     }
 
-    
     private void tokensToVector(String expression, ArrayList vector)
     {
- 
         counter=0;
         expr=expression;
         eof=true;
@@ -764,7 +744,6 @@ public class Parser
     {
         this.varsLocal=variablen;
     }
-    
     
     public void clearVars()
     {
@@ -818,7 +797,6 @@ public class Parser
         } else return null;
     }
 
-
     public boolean varExistGlobal(String name)
     {
         for (int i=0;i<varsGlobal.size();i++)
@@ -844,8 +822,6 @@ public class Parser
         }
         return false;
     }
-    
-    
     
     // liefert 0 für Double
     // liefert 1 für Boolean
@@ -896,14 +872,11 @@ public class Parser
                 case 1 : return calcBoolean(vector);
                 case 2 : return calcString(vector);
             }
-            
-        }else
-        {
+        } else {
             setErrorMessage("you cannot mix Double, Boolean and String");
         }
         
         return null;
-        
     }
     
     public boolean parseBoolean()
@@ -913,8 +886,6 @@ public class Parser
         pointer=0;
         return calcBoolean(vector);        
     }
-    
-    
     
     public String getTokens()
     {
@@ -962,11 +933,11 @@ public class Parser
     
     private boolean isString(String val)
     {
-      String ch="";
-      for(int i=0;i<val.length();i++)
+      String ch = "";
+      for(int i = 0; i < val.length(); i++)
       {
-          ch=val.substring(i,i+1);
-          if (isIn(ch,ALPHA)==false) return false;
+          ch = val.substring(i, i + 1);
+          if (isIn(ch, ALPHA) == false) return false;
       }
       return true;
     } 

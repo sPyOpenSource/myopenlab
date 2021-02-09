@@ -40,19 +40,17 @@ package ParserCode;
       Expression parser = new Expression();
       Scanner scanner = new Scanner(new java.io.StringReader("1+2"));
       while (scanner.ttype != Scanner.TT_EOF)
-      try
-      {
+      try {
         parser.yyparse(scanner, null);
 
-        for (int i=0;i<liste.size();i++)
+        for (int i = 0; i < liste.size(); i++)
         {
-          System.err.println(""+liste.get(i));
+          System.err.println("" + liste.get(i));
         }
         break;
           
-      }catch (yyException | IOException ye)
-      {
-        System.err.println(scanner+": "+ye);
+      } catch (yyException | IOException ye) {
+        System.err.println(scanner + ": " + ye);
       }
     }
 					// line 42 "-"

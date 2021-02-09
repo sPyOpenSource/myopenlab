@@ -25,10 +25,9 @@ import VisualLogic.*;
 import VisualLogic.variables.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.text.*;
 import javax.swing.*;
-import java.util.*;
 import java.awt.geom.Rectangle2D;
+import java.io.IOException;
 
 public class MCUMainFlow extends JVSMain
 {
@@ -58,20 +57,20 @@ public class MCUMainFlow extends JVSMain
     String result="";
 
     Expression parser = new Expression();
-    parser.code.clear();
+    Expression.code.clear();
     Scanner scanner = new Scanner(element, new java.io.StringReader(param));
-    while (scanner.ttype != scanner.TT_EOF)
+    while (scanner.ttype != Scanner.TT_EOF)
     try
     {
       parser.yyparse(scanner, null);
 
-      for (int i=0;i<parser.code.size();i++)
+      for (int i=0;i<Expression.code.size();i++)
       {
-        result+=parser.code.get(i)+"\n";
+        result+=Expression.code.get(i)+"\n";
       }
       break;
 
-    }catch (Exception ye)
+    }catch (IOException | Expression.yyException ye)
     {
       System.err.println("Error in Element_"+element.jGetID()+"\""+element.jGetCaption()+"\" "+scanner+": "+ye);
     }
@@ -110,9 +109,6 @@ public class MCUMainFlow extends JVSMain
     g.setColor(Color.BLACK);
     g.drawString(caption,mitteX-(int)(r.getWidth()/2),(int)(mitteY+fm.getHeight()/2)-3);
     
-
-
-
     resizeWidth(g,leftRightDistance);
   }
 
@@ -134,8 +130,6 @@ public class MCUMainFlow extends JVSMain
         }
     }
   }
-
-
 
   public String checkProperty(String name, String value, int type)
   {
@@ -181,7 +175,7 @@ public class MCUMainFlow extends JVSMain
       {
         return true;
       }
-    } catch(Exception ex) {}
+    } catch(NumberFormatException ex) {}
     return false;
   }
 
@@ -213,7 +207,6 @@ public class MCUMainFlow extends JVSMain
 
        FontMetrics fm = g2.getFontMetrics();
        Rectangle2D   r = fm.getStringBounds(caption,g2);
-       //Rectangle2D   r2 = fm.getStringBounds(toInclude,g2);
 
        int newWidth=(int)(r.getWidth()+20+leftRightDistance);
        if (newWidth==standardWidth) return;
@@ -284,10 +277,7 @@ public class MCUMainFlow extends JVSMain
     text.setFont(font);
     text.setText(variable.getValue());
 
-    text.setVisible(false);
-    //element.setAlwaysOnTop(true);
-    
-
+    text.setVisible(false);    
 
     text.addKeyListener(new java.awt.event.KeyAdapter() {
         public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -303,36 +293,27 @@ public class MCUMainFlow extends JVSMain
 
   }
   
-
   public void jTextKeyPressed(java.awt.event.KeyEvent evt)
   {
-    if (evt.getKeyCode()==evt.VK_ESCAPE)
+    if (evt.getKeyCode()==KeyEvent.VK_ESCAPE)
     {
-        SwingUtilities.invokeLater(new Runnable()
-        {
-            public void run()
-            {
-              text.setVisible(false);
-              element.jRepaint();
-            }
+        SwingUtilities.invokeLater(() -> {
+            text.setVisible(false);
+            element.jRepaint();
         });
     }
     
-    if (evt.getKeyCode()==evt.VK_ENTER)
+    if (evt.getKeyCode()==KeyEvent.VK_ENTER)
     {
-        SwingUtilities.invokeLater(new Runnable()
-        {
-            public void run()
-            {
-              variable.setValue(text.getText());
-              text.setVisible(false);
-              //panel.remove(text);
-              element.jRepaint();
-              //resizeWidth();
-              element.jRepaint();
-              element.jRefreshVM();
-              checkPinDataType();
-            }
+        SwingUtilities.invokeLater(() -> {
+            variable.setValue(text.getText());
+            text.setVisible(false);
+            //panel.remove(text);
+            element.jRepaint();
+            //resizeWidth();
+            element.jRepaint();
+            element.jRefreshVM();
+            checkPinDataType();
         });
 
     }
@@ -342,11 +323,8 @@ public class MCUMainFlow extends JVSMain
   {
       System.out.println("jTextFocusLost");
       text.setVisible(false);
-      //panel.remove(text);
       element.jRepaint();
-
   }
-
 
   public void loadFromStream(java.io.FileInputStream fis)
   {
@@ -359,8 +337,4 @@ public class MCUMainFlow extends JVSMain
     variable.saveToStream(fos);
   }
 
-
-
-
 }
-

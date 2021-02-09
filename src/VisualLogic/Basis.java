@@ -22,6 +22,7 @@ import MyParser.Parser;
 import Peditor.PropertyEditor;
 import SimpleFileSystem.FileSystemInput;
 import SimpleFileSystem.FileSystemOutput;
+
 import VisualLogic.variables.VS1DDouble;
 import VisualLogic.variables.VSBoolean;
 import VisualLogic.variables.VSColor;
@@ -32,8 +33,8 @@ import VisualLogic.variables.VSImage;
 import VisualLogic.variables.VSInteger;
 import VisualLogic.variables.VSObject;
 import VisualLogic.variables.VSString;
+
 import java.security.NoSuchAlgorithmException;
-import javax.swing.*;
 import java.util.*;
 import java.awt.event.*;
 import java.awt.*;
@@ -42,11 +43,13 @@ import java.io.*;
 import java.security.MessageDigest;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.script.Bindings;
 import javax.script.ScriptContext;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
+import javax.swing.*;
 
 class VariableNotifyRecord {
 
@@ -75,12 +78,9 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     public FrameDoubleGraph frameDoubleGraph;
     public FrameConsoleOutput console;
     public String vmPassword = "";
-    private JPanel oldPanelFront = null;
+    
     public VMEditorPanel ownerVMPanel = null;
-    private final VMObject circuitBasis;
-    private final VMObject frontBasis;
     public FrameRunning frm;
-    private String XfileName = "";
     public FrameMain frameCircuit;
     public String projectPath = "";
     public boolean startInFrontMode = false;
@@ -88,21 +88,26 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     public boolean debugMode = false;
     public boolean unDecorated = false;
     public boolean showFrontPanelWhenStart = true;
-    private final ArrayList variableNotifyList = new ArrayList();
+    
     public ArrayList variablenListe = new ArrayList();
     public boolean showToolBar = false;
     public Parser parser = new Parser(this);
     public BufferedImage selectionImage = null;
     public boolean vmProtected = false;
     public JLabel panelLabel = null;
-    private int dedugDelay = 10; // Speed from 0 to 100 : 0 = fast ; 100 =slow
-    public int delay = 0; // Speed from 0 to 100 : 0 = fast ; 100 =slow
     
+    private int dedugDelay = 10; // Speed from 0 to 100 : 0 = fast ; 100 =slow
+    private JPanel oldPanelFront = null;
+    private final VMObject circuitBasis;
+    private final VMObject frontBasis;
+    private final ArrayList variableNotifyList = new ArrayList();
+    private String XfileName = "";
+    
+    public int delay = 0; // Speed from 0 to 100 : 0 = fast ; 100 =slow
     public boolean AlwaysOnTop=false;
     public VSComboBox WindowsPosition=new VSComboBox();
     public int CustomXwindowPos=0;
     public int CustomYwindowPos=0;
-    
     public Stack stack = new Stack();
 
     ScriptEngineManager engineManager;
@@ -234,20 +239,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         } else {
             return -1;
         }
-    }
-
-    private static final String ALPHA = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-    private boolean isIn(String ch, String set) {
-        String cha;
-        for (int i = 0; i < set.length(); i++) {
-            cha = set.substring(i, i + 1);
-
-            if (cha.equals(ch)) {
-                return true;
-            }
-        }
-        return false;
     }
 
     private boolean isNum(String val) {
@@ -649,18 +640,16 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     public String frontPanelTitel = "";
     public int frontPanelWidth = 300;
     public int frontPanelHeight = 200;
+    
     private boolean changed = false;
     private boolean oldRasterOn;
+    
     // Die basisVersion ändert sich nur bei Änderung der Basis Properties!
     public String basisVersion = "0";
-
     public ExternalIF ownerElement;
     public Basis ownerBasis = null;
-
     public String vmFilename = "";
-
     public boolean canSaveForUndo = true;
-
     public boolean loading = false;
 
     public boolean isLoading() {
@@ -756,7 +745,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         circuitBasis.setBackground(Color.white);
 
         frontBasis = new VMObject(this, elementPath);
-        //frontBasis.setRasterOn(true);
         undoPointer = 0;
 
         frontBasis.setPreferredSize(new Dimension(500, 500));
@@ -1059,11 +1047,11 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         }
         
         if(WindowsPosition.selectedIndex==5){ // If Customized Position
-        XPosTemp=CustomXwindowPos;
-        YPosTemp=CustomYwindowPos;
-        }else{
-        CustomXwindowPos=XPosTemp;
-        CustomYwindowPos=YPosTemp;    
+        //XPosTemp = CustomXwindowPos;
+        //YPosTemp = CustomYwindowPos;
+        } else {
+        CustomXwindowPos = XPosTemp;
+        CustomYwindowPos = YPosTemp;    
         }
         
         if(WindowsPosition.selectedIndex==6){// MAXIMIZED 
@@ -1078,8 +1066,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         }
         frm.setVisible(true);
         
-        
-
         if (debugMode || AlwaysOnTop) {
             frm.setAlwaysOnTop(true);
         }
@@ -1202,6 +1188,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     }
 
     public void loadFile(String filename, boolean fromAblage) {
+        System.out.println(filename);
         loading = true;
         stop();
         disableAllElements();
@@ -1209,10 +1196,27 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         this.XfileName = fileName;
 
         try {
-            FileSystemInput fsi = new FileSystemInput(filename);
 
+            FileSystemInput fsi = new FileSystemInput(filename);
+            if(!filename.endsWith("v")){
             loadFromStream(fsi, fromAblage);
+                        } else {
+                String line;
+                do {
+                    line = fsi.readline();
+                System.out.println(line); 
+                }
+                while(line!= null);
+                //circuitBasis.loadFromStream(fsIn, fromAblage, ver);
+            //frontBasis.loadFromStream(fsIn, fromAblage, ver);
+
+            circuitBasis.verknuepfeDraehte();
+            frontBasis.verknuepfeDraehte();
+            circuitBasis.reorderWireFrames();
+            frontBasis.reorderWireFrames();
+            }
             fsi.close();
+
 
             circuitBasis.korrigiereFehler();
             frontBasis.korrigiereFehler();
@@ -1222,8 +1226,8 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
             circuitBasis.unlockGraphics();
             frontBasis.unlockGraphics();
-
         } catch (Exception ex) {
+            Logger.getLogger(Basis.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         circuitBasis.processPropertyEditor();
@@ -1231,7 +1235,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
         loading = false;
         getCircuitBasis().ProcessPinDataType();
-
     }
 
     public void scrambleElementAndWires() {
@@ -1362,40 +1365,9 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
     }
 
-    private void rufeXOnInit(VMObject vm) {
-        Element element;
-        for (int i = 0; i < vm.getComponentCount(); i++) {
-            Component comp = vm.getComponent(i);
-            if (comp instanceof Element) {
-                element = (Element) comp;
-                try {
-                    element.classRef.xOnInit();
-                } catch (Exception ex) {
-                }
-            }
-        }
-    }
-
-    private void rufeXOnInitOnlyFromAblage(VMObject vm) {
-        Element element;
-        for (int i = 0; i < vm.getComponentCount(); i++) {
-            Component comp = vm.getComponent(i);
-            if (comp instanceof Element) {
-                element = (Element) comp;
-            }
-        }
-    }
-
     public void addPublishingFiles(ArrayList list) {
         getCircuitBasis().addPublishingFiles(list);
         getFrontBasis().addPublishingFiles(list);
-    }
-
-    private void resetFromAblage2Flag(VMObject vm) {
-        Element element;
-        for (int i = 0; i < vm.getElementCount(); i++) {
-            element = vm.getElement(i);
-        }
     }
 
     /**
@@ -1432,23 +1404,11 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         return null;
     }
 
-    private boolean compareDigest(byte[] a, byte[] b) {
-        if (a.length == b.length) {
-            for (int i = 0; i < a.length; i++) {
-                if (a[i] != b[i]) {
-                    return false;
-                }
-            }
-            return true;
-        }
-        return false;
-    }
-
     public void loadFromStream(FileSystemInput fsIn, boolean fromAblage) {
     try {
         fileCount = 0;
         String tmpPassword;
-        int modusx=0;
+        int modusx = 0;
         String strCaption;
         String strCircuitPanelTitel;
         String strFrontPanelTitel;
@@ -1521,14 +1481,13 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             }
         }
 
-        }else{
+        } else {
             if (Double.parseDouble(ver) < 1.981) {
                 showErrorMessage(java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("Ungueltige_Version_oder_Version_wird_nicht_unterstuetzt"));
                 return;
             }
 
             if (Double.parseDouble(ver) >= 3.12) {
-
                 tmpPassword = stream.readUTF(); // Password einlesen
 
                 if (tmpPassword.length() > 0) {
@@ -1549,7 +1508,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                 }
             }
 
-            
             if (Double.parseDouble(ver) >= 3.04) {
                 modusx = stream.readInt();
             }
@@ -1626,7 +1584,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
         } catch (IOException | NumberFormatException ex) {
             showErrorMessage(java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("Fehler_in_Basis.loadFromStream()_:") + ex.toString());
-            showErrorMessage("error loading File : " + XfileName + "\n"+ex.getMessage());
+            showErrorMessage("error loading File : " + XfileName + "\n" + ex.getMessage());
         }
         
     }
@@ -1715,7 +1673,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         } catch (IOException ex) {
             showErrorMessage(java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("Fehler_in_Basis.saveToStream()_:") + ex.toString());
         }      
-      }else{
+      } else {
         try {
             FileOutputStream fos = fsOut.addItem("Properties");
             DataOutputStream dos = new DataOutputStream(fos);
@@ -1754,13 +1712,11 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                     dos.writeInt(node.size2);
                 }
             }
-            
 
             fsOut.postItem();
 
             circuitBasis.saveToStream(fsOut, "CircuitPanel", onlySelected);
             frontBasis.saveToStream(fsOut, "FrontPanel", onlySelected);
-
         } catch (IOException ex) {
             showErrorMessage(java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("Fehler_in_Basis.saveToStream()_:") + ex.toString());
         }
@@ -1801,7 +1757,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             FileSystemOutput fsOut = new FileSystemOutput(fileName);
             saveToStream(fsOut, onlySelected);
             fsOut.close();
-            fsOut = null;
         } catch (Exception ex) {
             showErrorMessage(ex.toString());
         }
@@ -1922,7 +1877,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
     @Override
     public void onDispose() {
-        
         try {// Added on v3.12.0
             this.finalize();
         } catch (Throwable ex) {
