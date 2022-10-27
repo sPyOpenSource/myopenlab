@@ -7,6 +7,7 @@
 [submodule "MicroPython"]
 	path = distribution/Elements/CircuitElements/Interface/MicroPython
 	url = https://github.com/sPyOpenSource/armOS.git
+	branch = micropython
 [submodule "Compiler"]
 	path = distribution/Elements/CircuitElements/Interface/Compiler
 	url = https://github.com/sPyOpenSource/Compiler.git
@@ -16,6 +17,7 @@
 [submodule "Simulator"]
 	path = distribution/Elements/CircuitElements/Interface/Simulator
 	url = https:/github.com/sPyOpenSource/Application.git
+	branch = simulator
 [submodule "OpenPnP"]
 	path = distribution/Elements/CircuitElements/Interface/OpenPnP
 	url = https://gl.tetra.nl/xuyi/openpnp.git
