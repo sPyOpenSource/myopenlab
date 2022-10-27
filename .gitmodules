@@ -6,4 +6,11 @@
 	url = https://github.com/sPyOpenSource/RaspberryGPIO.git
 [submodule "MicroPython"]
 	path = distribution/Elements/CircuitElements/Interface/MicroPython
-	url = https://github.com/sPyOpenSource/MicroPython.git
+	url = https://github.com/sPyOpenSource/armOS.git
+[submodule "Compiler"]
+	path = distribution/Elements/CircuitElements/Interface/Compiler
+	url = https://github.com/sPyOpenSource/Compiler.git
+[submodule "Slicer"]
+	path = distribution/Elements/CircuitElements/Interface/Slicer
+	url = https://github.com/sPyOpenSource/slicer.git
+	
