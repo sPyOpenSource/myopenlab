@@ -16,7 +16,7 @@
 	url = https://github.com/sPyOpenSource/slicer.git
 [submodule "Simulator"]
 	path = distribution/Elements/CircuitElements/Interface/Simulator
-	url = https:/github.com/sPyOpenSource/Application.git
+	url = https:/github.com/sPyOpenSource/applications.git
 	branch = simulator
 [submodule "OpenPnP"]
 	path = distribution/Elements/CircuitElements/Interface/OpenPnP
