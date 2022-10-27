@@ -13,4 +13,6 @@
 [submodule "Slicer"]
 	path = distribution/Elements/CircuitElements/Interface/Slicer
 	url = https://github.com/sPyOpenSource/slicer.git
-	
+[submodule "Simulator"]
+	path = distribution/Elements/CircuitElements/Interface/Simulator
+	url = https:/github.com/sPyOpenSource/Simulator.git
