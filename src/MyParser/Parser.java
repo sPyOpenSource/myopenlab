@@ -194,7 +194,7 @@ public class Parser
 
         if (count>0)
         {
-          setErrorMessage("Fehler in String : zuviel geöffnete klammern!");
+          setErrorMessage("Fehler in String : zuviel geffnete klammern!");
         }
 
         if (count<0)
@@ -517,9 +517,9 @@ public class Parser
     
     
     /* liefert die anzahl der zuviele oder zu wenige Klammern
-     * zb: wenn eine Klammer nicht geschlossen oder nicht geöffnet
+     * zb: wenn eine Klammer nicht geschlossen oder nicht geï¿½ffnet
      * worden ist
-     * Liefert bei zu viel geöffneten Klammern > 0
+     * Liefert bei zu viel geï¿½ffneten Klammern > 0
      * Liefert bei zu viel geschlossenen Klammern < 0
      */
     private int getKlammerPlus(ArrayList tokenListe)
@@ -823,10 +823,10 @@ public class Parser
         return false;
     }
     
-    // liefert 0 für Double
-    // liefert 1 für Boolean
-    // liefert 2 für String
-    // liefert -1 für unbekannt oder gemixt!
+    // liefert 0 fï¿½r Double
+    // liefert 1 fï¿½r Boolean
+    // liefert 2 fï¿½r String
+    // liefert -1 fï¿½r unbekannt oder gemixt!
     private int getToParseType(ArrayList vector)
     {
         int result=-1;

@@ -25,9 +25,9 @@ import javax.script.Bindings;
 
 public class VSFlowInfo extends VSObject
 {
-    public ArrayList parameterDefinitions = new ArrayList(); // enthält OpenVariable
-    public ArrayList variablenListe = new ArrayList();       // enthält OpenVariable
-    public Hashtable tags = new Hashtable();       // Für irgendwelche Parameter die durch die ganze Linie laufen
+    public ArrayList parameterDefinitions = new ArrayList(); // enthlt OpenVariable
+    public ArrayList variablenListe = new ArrayList();       // enthlt OpenVariable
+    public Hashtable tags = new Hashtable();       // Fr irgendwelche Parameter die durch die ganze Linie laufen
     public Object returnValue=null;
     public ExternalIF source=null;
     

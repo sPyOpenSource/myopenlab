@@ -24,20 +24,21 @@ import java.io.OutputStream;
 
 class TextAreaStream extends OutputStream
 {
-    private FrameErrorWarnings frm;
-    private StringBuffer buffer = new StringBuffer(1024);
+    private final FrameErrorWarnings frm;
+    private final StringBuffer buffer = new StringBuffer(1024);
     
     public TextAreaStream(FrameErrorWarnings frm)
     {
-        this.frm=frm;
+        this.frm = frm;
     }
     
+    @Override
     public void write(int b) throws IOException
     {
         if (!frm.isVisible()) frm.setVisible(true);
         
         buffer.append((char)b);
-        if (b=='\n')
+        if (b == '\n')
         {
             frm.jTextArea1.append(buffer.toString());
             buffer.setLength(0);
@@ -56,12 +57,10 @@ public class FrameErrorWarnings extends javax.swing.JFrame
     public FrameErrorWarnings()
     {
         initComponents();
-        javax.swing.ImageIcon icon =new javax.swing.ImageIcon("/Bilder/16x16/process-stop.png");
+        javax.swing.ImageIcon icon = new javax.swing.ImageIcon("/Bilder/16x16/process-stop.png");
         setIconImage(icon.getImage());
-        
     }
      
-    
     
     /** This method is called from within the constructor to
      * initialize the form.
@@ -125,13 +124,11 @@ public class FrameErrorWarnings extends javax.swing.JFrame
     public void clearMessages()
     {
         jTextArea1.setText(""); //NOI18N
-        
     }
     public String getMessages()
     {
         return jTextArea1.getText();
     }
-    
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables

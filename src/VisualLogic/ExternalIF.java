@@ -338,7 +338,7 @@ public interface ExternalIF
      * Diese Methode wird nicht mehr verwendet!
      * @param index Pin Index
      * @return Nothing
-     * @deprecated
+     * @Deprecated
      */
     public abstract double readPin(int index);
     /**

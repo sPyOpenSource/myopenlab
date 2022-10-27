@@ -39,16 +39,12 @@ public class DialogAddEditvariable extends javax.swing.JDialog {
         jTextField3.setVisible(false);
         jLabel4.setVisible(false);
 
-        java.awt.event.ActionListener actionListener = new java.awt.event.ActionListener() {
-            @Override
-            public void actionPerformed(java.awt.event.ActionEvent actionEvent) {
-                dispose();
-            }
+        java.awt.event.ActionListener actionListener = (java.awt.event.ActionEvent actionEvent) -> {
+            dispose();
         };
 
         javax.swing.KeyStroke stroke = javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0);
         rootPane.registerKeyboardAction(actionListener, stroke, javax.swing.JComponent.WHEN_IN_FOCUSED_WINDOW);
-
     }
 
     /**
@@ -114,53 +110,53 @@ public class DialogAddEditvariable extends javax.swing.JDialog {
 
         jLabel4.setText("Size2");
 
-        org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                        .add(jLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(jLabel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .add(jLabel3)
-                    .add(jLabel4))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jTextField2)
-                    .add(jTextField1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
-                    .add(jComboBox1, 0, 160, Short.MAX_VALUE)
-                    .add(jTextField3))
-                .add(40, 40, 40)
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jButton1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
-                    .add(jButton2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 105, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField2)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
+                    .addComponent(jComboBox1, 0, 160, Short.MAX_VALUE)
+                    .addComponent(jTextField3))
+                .addGap(40, 40, 40)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel2)
-                    .add(jButton1)
-                    .add(jTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                        .add(jComboBox1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(jLabel1))
-                    .add(jButton2))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(jLabel3))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(jLabel4))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jButton1)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel1))
+                    .addComponent(jButton2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -180,11 +176,11 @@ public class DialogAddEditvariable extends javax.swing.JDialog {
 
         String item = (String) jComboBox1.getSelectedItem();
 
-        if (item.indexOf("1D_") > -1) {
+        if (item.contains("1D_")) {
             arr_size1 = Integer.parseInt(jTextField2.getText());
         }
 
-        if (item.indexOf("2D_") > -1) {
+        if (item.contains("2D_")) {
             arr_size1 = Integer.parseInt(jTextField2.getText());
             arr_size2 = Integer.parseInt(jTextField3.getText());
         }
@@ -210,12 +206,12 @@ public class DialogAddEditvariable extends javax.swing.JDialog {
         String size1 = jTextField2.getText();
         String size2 = jTextField3.getText();
 
-        if (item.indexOf("1D_") > -1 && !isNumeric(size1)) {
+        if (item.contains("1D_") && !isNumeric(size1)) {
             Tools.showMessage("Please Fill Size 1");
             return;
         }
 
-        if (item.indexOf("2D_") > -1 && (!isNumeric(size1) || !isNumeric(size2))) {
+        if (item.contains("2D_") && (!isNumeric(size1) || !isNumeric(size2))) {
             Tools.showMessage("Please Fill Size 1 and Size 2");
             return;
         }
@@ -239,12 +235,12 @@ public class DialogAddEditvariable extends javax.swing.JDialog {
         jTextField3.setVisible(false);
         jLabel4.setVisible(false);
 
-        if (item.indexOf("1D_") > -1) {
+        if (item.contains("1D_")) {
             jTextField2.setVisible(true);
             jLabel3.setVisible(true);
         }
 
-        if (item.indexOf("2D_") > -1) {
+        if (item.contains("2D_")) {
             jTextField2.setVisible(true);
             jLabel3.setVisible(true);
 
@@ -263,7 +259,6 @@ public class DialogAddEditvariable extends javax.swing.JDialog {
         frm.setTitle(java.util.ResourceBundle.getBundle("VisualLogic/DialogAddEditvariable").getString("ADD VARIABLE"));
         frm.jTextField1.setEnabled(true);
         frm.setVisible(true);
-
     }
 
     public static void executeEdit(java.awt.Frame parent, OpenVariable node) {
@@ -275,7 +270,6 @@ public class DialogAddEditvariable extends javax.swing.JDialog {
         frm.jTextField2.setText("" + node.size1);
         frm.jTextField3.setText("" + node.size2);
         frm.setVisible(true);
-
     }
 
     public static boolean result = false;

@@ -21,12 +21,13 @@ import java.awt.Color;
 import java.awt.Desktop;
 import java.awt.Image;
 import java.awt.event.KeyEvent;
+
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+
 import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -39,11 +40,11 @@ import javax.swing.JFileChooser;
  */
 public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPaletteIF {
 
-    private ElementPalette elementPalette;
-    private MyImage image = new MyImage();
+    private final ElementPalette elementPalette;
+    private final MyImage image = new MyImage();
     private String letztesVerzeichniss = ".";
     private boolean editing = false;
-    private FrameMain frameCircuit;
+    private final FrameMain frameCircuit;
     private boolean isCircuitElement = true;
     private boolean modeEdit = false;
     private String editBaseDir = "";
@@ -65,11 +66,9 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
         jPanel2.add(image, java.awt.BorderLayout.CENTER);
         image.setBackground(Color.WHITE);
 
-        java.awt.event.ActionListener actionListener = new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent actionEvent) {
-                result = false;
-                dispose();
-            }
+        java.awt.event.ActionListener actionListener = (java.awt.event.ActionEvent actionEvent) -> {
+            result = false;
+            dispose();
         };
 
         javax.swing.KeyStroke stroke = javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0);
@@ -77,7 +76,6 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
 
         java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
         setLocation((screenSize.width - getWidth()) / 2, (screenSize.height - getHeight()) / 2);
-
     }
 
     public void savedocFile(JEditorPane pane, String filename) {
@@ -87,21 +85,18 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
             pane.write(out);
             out.flush();
             out.close();
-
         } catch (IOException ioe) {
             VisualLogic.Tools.showMessage(ioe.toString());
         }
-
     }
 
     public void loadFile(JEditorPane pane, String filename) {
-
         try {
             pane.setPage(new URL("file:" + filename));
             pane.setContentType("text/html");
             pane.setCaretPosition(0);
 
-        } catch (Exception e) {
+        } catch (IOException e) {
             //VisualLogic.Tools.showMessage(e.toString());
         }
     }
@@ -160,7 +155,6 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
             doc_de.mkdirs();
 
             try (PrintWriter out = new PrintWriter(baseDir + "/doc_de/index.html")) {
-
                 String html_de = html;
                 html_de = html_de.replaceAll("#title#", "Hier den Titel");
                 html_de = html_de.replaceAll("#body#", "Hier den Text");
@@ -185,8 +179,8 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
             doc_es.mkdirs();
             try (PrintWriter out = new PrintWriter(baseDir + "/doc_es/index.html")) {
                 String html_es = html;
-                html_es = html_es.replaceAll("#title#", "Aquí su Título");
-                html_es = html_es.replaceAll("#body#", "Aquí el texto");
+                html_es = html_es.replaceAll("#title#", "Aqu su Ttulo");
+                html_es = html_es.replaceAll("#body#", "Aqu el texto");
                 out.println(html_es);
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(DialogSaveAsModul.class.getName()).log(Level.SEVERE, null, ex);
@@ -195,9 +189,7 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
 
         File description_de = new File(baseDir + "/description_de.html");
         if (!description_de.exists()) {
-
             try (PrintWriter out = new PrintWriter(baseDir + "/description_de.html")) {
-
                 out.println("Text here!");
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(DialogSaveAsModul.class.getName()).log(Level.SEVERE, null, ex);
@@ -206,9 +198,7 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
         
         File description_en = new File(baseDir + "/description_en.html");
         if (!description_en.exists()) {
-
             try (PrintWriter out = new PrintWriter(baseDir + "/description_en.html")) {
-
                 out.println("Text here!");
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(DialogSaveAsModul.class.getName()).log(Level.SEVERE, null, ex);
@@ -217,9 +207,7 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
         
         File description_es = new File(baseDir + "/description_es.html");
         if (!description_es.exists()) {
-
             try (PrintWriter out = new PrintWriter(baseDir + "/description_es.html")) {
-
                 out.println("Text here!");
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(DialogSaveAsModul.class.getName()).log(Level.SEVERE, null, ex);
@@ -230,7 +218,6 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
     
 
     public void executeEdit(String baseDir) {
-
         createDocDirsIfNotExist(baseDir);
 
         editBaseDir = baseDir;
@@ -290,19 +277,16 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
             //  savedocFile(editorES, baseDir + "/doc_es.html");
 
             try (PrintWriter out = new PrintWriter(baseDir + "/description_de.html")) {
-
                 out.println(txtDescriptionDE.getText());
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(DialogSaveAsModul.class.getName()).log(Level.SEVERE, null, ex);
             }
             try (PrintWriter out = new PrintWriter(baseDir + "/description_en.html")) {
-
                 out.println(txtDescriptionEN.getText());
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(DialogSaveAsModul.class.getName()).log(Level.SEVERE, null, ex);
             }
             try (PrintWriter out = new PrintWriter(baseDir + "/description_es.html")) {
-
                 out.println(txtDescriptionES.getText());
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(DialogSaveAsModul.class.getName()).log(Level.SEVERE, null, ex);
@@ -320,7 +304,7 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
 
                 try {
                     Tools.copyFile(new File(xicon), new File(baseDir + "/icon." + ext));
-                } catch (Exception ex) {
+                } catch (IOException ex) {
                     Tools.showMessage(java.util.ResourceBundle.getBundle("VisualLogic/DialogSaveAsModul").getString("ERROR: COPYING ICON FILE!"));
                 }
             }
@@ -355,7 +339,7 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
         execute();
         setVisible(true);
         if (result) {
-            // 1. Verzeichniss für das Element generieren (unter group!)
+            // 1. Verzeichniss fï¿½r das Element generieren (unter group!)
             // 2. Icon von der Quelle zum verzeichniss kopieren
             // 3. definition.def in das Verzeichniss generieren
 
@@ -385,7 +369,7 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
 
             try {
                 Tools.copyFile(new File(xicon), new File(baseDir + "/icon." + ext));
-            } catch (Exception ex) {
+            } catch (IOException ex) {
                 Tools.showMessage("Error: copying icon file!");
             }
 
@@ -431,7 +415,6 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
         jCheckBox1.setSelected(resizeProportional);
 
         openImage(txtIcon.getText());
-
     }
 
     /**
@@ -564,178 +547,178 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
 
         jScrollPane6.setViewportView(txtDescriptionEN);
 
-        org.jdesktop.layout.GroupLayout jPanel4Layout = new org.jdesktop.layout.GroupLayout(jPanel4);
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel4Layout.createSequentialGroup()
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jScrollPane4)
-                    .add(jPanel4Layout.createSequentialGroup()
-                        .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(jLabel5)
-                            .add(jLabel2)
-                            .add(jLabel1)
-                            .add(jLabel3)
-                            .add(jLabel4))
-                        .add(22, 22, 22)
-                        .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(jCheckBox1)
-                            .add(jPanel4Layout.createSequentialGroup()
-                                .add(jPanel2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 50, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                .add(18, 18, 18)
-                                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                    .add(jPanel4Layout.createSequentialGroup()
-                                        .add(jButton4)
-                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                                        .add(jButton5)
-                                        .add(0, 281, Short.MAX_VALUE))
-                                    .add(jPanel4Layout.createSequentialGroup()
-                                        .add(txtIcon)
-                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                        .add(jButton3))))
-                            .add(txtName)
-                            .add(txtDE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .add(txtEN)
-                            .add(txtES)))
-                    .add(jPanel4Layout.createSequentialGroup()
-                        .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(jLabel6)
-                            .add(jLabel7)
-                            .add(jLabel9))
-                        .add(0, 0, Short.MAX_VALUE))
-                    .add(jScrollPane5)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jScrollPane6))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane4)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4))
+                        .addGap(22, 22, 22)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jCheckBox1)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(jButton4)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jButton5)
+                                        .addGap(0, 281, Short.MAX_VALUE))
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(txtIcon)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton3))))
+                            .addComponent(txtName)
+                            .addComponent(txtDE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtEN)
+                            .addComponent(txtES)))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel9))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jScrollPane5)
+                    .addComponent(jScrollPane6, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel4Layout.createSequentialGroup()
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel5)
-                    .add(txtName, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                    .add(jLabel2)
-                    .add(jPanel4Layout.createSequentialGroup()
-                        .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(txtIcon, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jButton3))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(jButton4)
-                            .add(jButton5)))
-                    .add(jPanel2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 52, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel1)
-                    .add(txtDE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel3)
-                    .add(txtEN, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanel4Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel4)
-                    .add(txtES, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                .add(jCheckBox1)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                .add(jLabel6)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jScrollPane5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 74, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(13, 13, 13)
-                .add(jLabel7)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jScrollPane6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 74, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jLabel9)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jScrollPane4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 74, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel2)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtIcon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton3))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton4)
+                            .addComponent(jButton5)))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(txtDE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtEN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(txtES, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jCheckBox1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(13, 13, 13)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab(bundle1.getString("Settings"), jPanel4); // NOI18N
 
-        jButton6.setText(bundle1.getString("Öffne das Deutsch Dokumentations-Verzeichnis")); // NOI18N
+        jButton6.setText(bundle1.getString("Ã–ffne das Deutsch Dokumentations-Verzeichnis")); // NOI18N
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
 
-        jButton7.setText(bundle1.getString("Öffne das Englische Dokumentations-Verzeichnis")); // NOI18N
+        jButton7.setText(bundle1.getString("Ã–ffne das Englische Dokumentations-Verzeichnis")); // NOI18N
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
 
-        jButton8.setText(bundle1.getString("Öffne das Spanische Dokumentations-Verzeichnis")); // NOI18N
+        jButton8.setText(bundle1.getString("Ã–ffne das Spanische Dokumentations-Verzeichnis")); // NOI18N
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
 
-        jLabel8.setText("Öffne das Dokumentations-Verzeichnis um mit Deinen HTML Editor die index.html zu bearbeiten");
+        jLabel8.setText("Ã–ffne das Dokumentations-Verzeichnis um mit Deinen HTML Editor die index.html zu bearbeiten");
 
-        org.jdesktop.layout.GroupLayout jPanel9Layout = new org.jdesktop.layout.GroupLayout(jPanel9);
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel9Layout.createSequentialGroup()
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jPanel9Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jLabel8)
-                    .add(jPanel9Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                        .add(org.jdesktop.layout.GroupLayout.LEADING, jButton8, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(org.jdesktop.layout.GroupLayout.LEADING, jButton6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(org.jdesktop.layout.GroupLayout.LEADING, jButton7, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jButton8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(140, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel9Layout.createSequentialGroup()
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jLabel8)
-                .add(13, 13, 13)
-                .add(jButton6)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jButton7)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jButton8)
+                .addComponent(jLabel8)
+                .addGap(13, 13, 13)
+                .addComponent(jButton6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton8)
                 .addContainerGap(402, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab(bundle1.getString("Dokumentation"), jPanel9); // NOI18N
 
-        org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(jTabbedPane1)
-                    .add(layout.createSequentialGroup()
-                        .add(0, 0, Short.MAX_VALUE)
-                        .add(jButton2)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jButton1)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jTabbedPane1)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton1)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jTabbedPane1)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jButton1)
-                    .add(jButton2))
+                .addComponent(jTabbedPane1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
                 .addContainerGap())
         );
 
@@ -758,7 +741,6 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
         String param = new File(txtIcon.getText()).getPath();
 
         Tools.openPaint(new File(param));
-
 
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -892,14 +874,13 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
             dirToOpen = new File(editBaseDir + "/doc_" + lang);
             
             desktop.open(dirToOpen);
-        } catch (Exception ex) {
+        } catch (IOException ex) {
             Tools.showMessage(this, ex.toString());
         }
     }
 
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-
         openDocDir("de");
     }//GEN-LAST:event_jButton6ActionPerformed
 
@@ -911,6 +892,7 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
         openDocDir("es");
     }//GEN-LAST:event_jButton8ActionPerformed
 
+    @Override
     public void onButtonClicken(String[] params) {
     }
 

@@ -23,7 +23,7 @@
     <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
     <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
-    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
@@ -41,9 +41,6 @@
           <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
             <BevelBorder/>
           </Border>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="33" red="33" type="rgb"/>
         </Property>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[400, 100]"/>

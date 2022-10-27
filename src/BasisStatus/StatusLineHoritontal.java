@@ -371,7 +371,7 @@ public class StatusLineHoritontal extends Object implements StatusBasisIF
     }
     
     
-    // Result = -1 wenn keine Vertikale Linie in der Nähe
+    // Result = -1 wenn keine Vertikale Linie in der Nhe
     private int getDistanceToNearstVerticalLine(Point p)
     {
         int minX=999999;

@@ -23,7 +23,7 @@ public class DFProperties
 {
     public boolean isDirectory=false;    
     public String redirect="";
-    public String loader=""; // um den Loader für die MCU Libary von immer den gleichen Verzeichniss zu laden!
+    public String loader=""; // um den Loader fr die MCU Libary von immer den gleichen Verzeichniss zu laden!
     public String vm="";
     public String vm_dir_editable="false";
     public String classcircuit="";

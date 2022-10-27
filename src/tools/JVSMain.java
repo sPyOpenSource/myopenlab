@@ -38,30 +38,37 @@ public class JVSMain extends Object implements ElementIF
   }
   public String getName(){ return name; }
   
+  @Override
   public void xOnInit()
   {
 
   }
   
+  @Override
   public void destElementCalled()
   {
 
   }
   
+  @Override
   public String jGetVMFilename()
   {
    return "";
   }
    
+  @Override
    public String getBinDir(){
     return "";
    }
    
-  private boolean firstTime=true;
+  private boolean firstTime = true;
+  
+  @Override
   public void beforeInit(String[] args)
   {
 
   }
+  
   public void init()  { }
   public void start()  { }
   public void stop()  { }
@@ -85,6 +92,7 @@ public class JVSMain extends Object implements ElementIF
   public void paint(java.awt.Graphics g){}
   public void setSize(int width,int height) { element.jSetSize(width,height);}
 
+  @Override
   public void changePin(int pinIndex, Object value)
   {
 

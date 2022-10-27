@@ -644,7 +644,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     private boolean changed = false;
     private boolean oldRasterOn;
     
-    // Die basisVersion ändert sich nur bei Änderung der Basis Properties!
+    // Die basisVersion ndert sich nur bei nderung der Basis Properties!
     public String basisVersion = "0";
     public ExternalIF ownerElement;
     public Basis ownerBasis = null;

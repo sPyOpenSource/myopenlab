@@ -10,25 +10,44 @@
 ** -------------------------------------------------------------------------*/
 package MyParser;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class VerilogParser{
     int TOKENSIZE = 999;	/* Maximum length of a token.*/
     int LINESIZE = 9999;    /* Maximum length of each input line read.*/
     int BUFSIZE = 99999;	/* Maximum length of a buffer.*/
     int SIZE = 9999;
     int INPUT = 0;
-    int AND	 = 1;
+    int AND = 1;
     int NAND = 2;
-    int OR	= 3;
-    int NOR	 = 4;
-    int XOR	 = 5;
+    int OR = 3;
+    int NOR = 4;
+    int XOR = 5;
     int XNOR = 6;
-    int BUF	 = 7;
-    int NOT	= 8;
-    int INV	= 8;
-    int I	= 9;
-    int RESERVEDNUM =107;
+    int BUF = 7;
+    int NOT = 8;
+    int INV = 8;
+    int I = 9;
+    int RESERVEDNUM = 107;
     int NO_OUT = 0;
 
+    public static void main(String args[]){
+        System.out.println("parser");
+        File file = new File("/home/spy/Source/Verilog/HelloWorld/hello.v");
+        try (FileReader in = new FileReader(file);
+            BufferedReader reader = new BufferedReader(new BufferedReader(in))) {
+            String line = null;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            System.err.println(e);
+        }
+    }
+    
     private int strcasecmp(String gate, String input) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
@@ -222,19 +241,19 @@ public class VerilogParser{
         System.out.print("\n\nNumber of gates: %d\n");//, c.gatecount);
 
         System.out.print("\n\n");
-        i=0;
+        i = 0;
 
-        while (i<c.wirecount && c.wires[i] != null) {
+        while (i < c.wirecount && c.wires[i] != null) {
             System.out.print ("c->wire[%d]->type: %s, ");//,i, c.wires[i].type);
             System.out.print ("ID: %d,  ");//, c.wires[i].id);
             System.out.print ("name: %s, ");//, c.wires[i].name);
 
             System.out.print ("\nInputs (%d): ");//, c.wires[i].inputcount);/*Wire inputs*/
-            for(j=0; j<c.wires[i].inputcount; j++)
+            for(j = 0; j < c.wires[i].inputcount; j++)
                 System.out.print ("%d ");//,c.wires[i].inputs[j]);
 
             System.out.print ("\nOutputs (%d): ");//, c.wires[i].outputcount);/*Wire outputs*/
-            for(j=0; j<c.wires[i].outputcount; j++)
+            for(j = 0; j < c.wires[i].outputcount; j++)
                 System.out.print ("%d ");//,c.wires[i].outputs[j]);
 
             i++;
@@ -251,8 +270,8 @@ public class VerilogParser{
     int getID (String name, circuit c)
     {
         int i;
-        for(i=0; i<c.size; i++) {
-            if (strcmp(name, c.nodes[i].name)==0) { // If node is found in the circuit, get its index
+        for(i = 0; i < c.size; i++) {
+            if (strcmp(name, c.nodes[i].name) == 0) { // If node is found in the circuit, get its index
                 return c.nodes[i].id;
             }
         }
@@ -265,8 +284,8 @@ public class VerilogParser{
      */
     wire getWire (int id, circuit c)
     {
-        int i=0;
-        while (i<c.wirecount && c.wires[i] != null) {
+        int i = 0;
+        while (i < c.wirecount && c.wires[i] != null) {
             if (c.wires[i].id == id) // If node is found in the circuit
                 return c.wires[i];
             i++;
@@ -280,7 +299,7 @@ public class VerilogParser{
      */
     wire getWireByName (String name, circuit c)
     {
-        int i=0;
+        int i = 0;
         while (c.wires[i] != null) {
             if (strcmp(name, c.wires[i].name)==0) // If node is found in the circuit
                 return c.wires[i];
@@ -293,10 +312,10 @@ public class VerilogParser{
      * Set values of a node
      * @param the node object, the type of node, the name of the node, the node id
      */
-    void setNode ( node n, String type, String name, int id)
+    void setNode (node n, String type, String name, int id)
     {
-        n.type=type;
-        n.name=name;
+        n.type = type;
+        n.name = name;
         n.id = id;			/*Store node id*/
     }
 
@@ -331,7 +350,7 @@ public class VerilogParser{
     {
         int i = 0;
         while (c.wires[i] != null) {
-            if (strcmp(c.wires[i].name, name)==0)
+            if (strcmp(c.wires[i].name, name) == 0)
                 return true;
             i++;
         }

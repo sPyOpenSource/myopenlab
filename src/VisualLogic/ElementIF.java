@@ -83,7 +83,7 @@ public interface ElementIF
     public abstract void xonProcess();  
     public abstract void processMethod(VSFlowInfo flowInfo);  
     public abstract void returnFromMethod(Object result);
-    public abstract void xonClock(); // wird regelm‰ﬂig aufgerufen!
+    public abstract void xonClock(); // wird regelmig aufgerufen!
     public abstract void destElementCalled();
     public abstract void elementActionPerformed(ElementActionEvent evt);
     

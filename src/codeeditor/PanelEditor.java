@@ -249,7 +249,7 @@ public class PanelEditor extends javax.swing.JPanel implements CommandIF {
     private void initComponents() {
         jScrollPane1 = new javax.swing.JScrollPane();
 
-        org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(this);
+        /*org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -264,7 +264,7 @@ public class PanelEditor extends javax.swing.JPanel implements CommandIF {
                 .addContainerGap()
                 .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 366, Short.MAX_VALUE)
                 .addContainerGap())
-        );
+        );*/
     }// </editor-fold>//GEN-END:initComponents
     
     

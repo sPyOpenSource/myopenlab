@@ -46,9 +46,6 @@ public class StatusGummiBand extends Object implements StatusBasisIF {
 
     }
 
-    public void finalize() {
-    }
-
     public void elementPinMousePressed(MouseEvent e, int elementID, int pin) {
     }
 

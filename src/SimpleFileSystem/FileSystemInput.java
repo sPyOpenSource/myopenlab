@@ -33,7 +33,7 @@ import java.util.logging.Logger;
 /**
  *
  * @author Carmelo Salafia
- * FileSystemInput ist für das einlesen der Datensaetze und
+ * FileSystemInput ist fr das einlesen der Datensaetze und
  * ihrer IndexListe verantwortlich
  * liest aus dem kuenstliches Dateisystem!
  */
@@ -148,7 +148,7 @@ public class FileSystemInput {
     }
            
     
-    /* sorgt dafür das die Streams geschlossen werden
+    /* sorgt dafr das die Streams geschlossen werden
      */
     public void close()
     {

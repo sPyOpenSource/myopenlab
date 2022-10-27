@@ -11,6 +11,7 @@ import VisualLogic.FrameMain;
 import VisualLogic.Tools;
 import static VisualLogic.Tools.settings;
 import create_new_group.Dialog_create_new_group;
+
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.io.BufferedReader;
@@ -26,10 +27,8 @@ import java.net.Authenticator;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.PasswordAuthentication;
-import java.net.URI;
 import java.net.URL;
 import java.net.URLConnection;
-import java.net.URLEncoder;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +36,7 @@ import java.util.Locale;
 import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
@@ -52,6 +52,7 @@ import javax.swing.table.TableColumn;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.w3c.dom.Document;
@@ -220,15 +221,13 @@ public class frmUpdate extends javax.swing.JFrame {
             // Set System L&F
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
             SwingUtilities.updateComponentTreeUI(this);
-        } catch (UnsupportedLookAndFeelException e) {
-            // handle exception
-        } catch (ClassNotFoundException e) {
-            // handle exception
-        } catch (InstantiationException e) {
-            // handle exception
-        } catch (IllegalAccessException e) {
+        } catch (UnsupportedLookAndFeelException | ClassNotFoundException | InstantiationException | IllegalAccessException e) {
             // handle exception
         }
+        // handle exception
+        // handle exception
+        // handle exception
+        
     }
 
     private ArrayList<String> FillModelWithData2(String type) {
@@ -239,7 +238,6 @@ public class frmUpdate extends javax.swing.JFrame {
         File[] fList = directory.listFiles();
         if (fList != null) {
             for (File file : fList) {
-
                 if (file.isDirectory()) {
                     File f = new File(file.getAbsoluteFile() + "/definition.def");
                     if (f.exists()) {
@@ -325,7 +323,7 @@ public class frmUpdate extends javax.swing.JFrame {
                 break;
             }
             case "es": {
-                String[] HEADER = {"Instalar", "", "Nombre del paquete", "Subtítulo", "Categoría", "Fecha", "Autor", "Tipo"};
+                String[] HEADER = {"Instalar", "", "Nombre del paquete", "Subttulo", "Categora", "Fecha", "Autor", "Tipo"};
                 model1.HEADER = HEADER;
                 break;
             }
@@ -434,7 +432,7 @@ public class frmUpdate extends javax.swing.JFrame {
 
                             }
 
-                            // Zuerst das Icon aus dem Cache löschen!
+                            // Zuerst das Icon aus dem Cache lschen!
                             ImageIcon icon = new ImageIcon(file.getAbsolutePath() + "/" + definition_def.iconFilename);
                             icon.getImage().flush();
 
@@ -553,7 +551,7 @@ public class frmUpdate extends javax.swing.JFrame {
 
                             }
 
-                            // Zuerst das Icon aus dem Cache löschen!
+                            // Zuerst das Icon aus dem Cache lï¿½schen!
                             ImageIcon icon = new ImageIcon(file.getAbsolutePath() + "/" + definition_def.iconFilename);
                             icon.getImage().flush();
 
@@ -597,7 +595,7 @@ public class frmUpdate extends javax.swing.JFrame {
                 break;
             }
             case "es": {
-                String[] HEADER = {"", "", "Nombre del paquete", "Subtítulo", "Categoría", "Fecha", "Autor", "Tipo"};
+                String[] HEADER = {"", "", "Nombre del paquete", "Subttulo", "Categora", "Fecha", "Autor", "Tipo"};
                 model2.HEADER = HEADER;
                 break;
             }

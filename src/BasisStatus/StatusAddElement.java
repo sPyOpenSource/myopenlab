@@ -66,9 +66,9 @@ public class StatusAddElement extends Object implements StatusBasisIF {
 
             if (element.getPin(pinBottomNr).draht != null)
             {
-                // Element dazwischen einfügen
+                // Element dazwischen einfgen
                 
-                // Alte Drähte löschen                
+                // Alte Drhte lschen                
                 Draht altDraht = element.getPin(pinBottomNr).draht;
                 
                 Element elementUnten=vmobject.getElementWithID(altDraht.getDestElementID());               

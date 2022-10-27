@@ -1,54 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.4" maxVersion="1.5" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.4" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
-    <Container class="javax.swing.JPopupMenu" name="jPopupMenu1">
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-        <Property name="useNullLayout" type="boolean" value="true"/>
-      </Layout>
-      <SubComponents>
-        <MenuItem class="javax.swing.JMenuItem" name="jmiClearWindow">
-          <Properties>
-            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-              <ResourceString bundle="VisualLogic/FrameCircuit.properties" key="Fenster_bereinigen" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
-            </Property>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmiClearWindowActionPerformed"/>
-          </Events>
-        </MenuItem>
-        <MenuItem class="javax.swing.JMenuItem" name="jmiCopyToClip">
-          <Properties>
-            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
-              <ResourceString bundle="VisualLogic/FrameCircuit.properties" key="Kopieren" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
-            </Property>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmiCopyToClipActionPerformed"/>
-          </Events>
-        </MenuItem>
-      </SubComponents>
-    </Container>
-    <Container class="javax.swing.JPopupMenu" name="jPopupMenu2">
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-        <Property name="useNullLayout" type="boolean" value="true"/>
-      </Layout>
-      <SubComponents>
-        <MenuItem class="javax.swing.JMenuItem" name="jmniCloseAllVMs">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="null"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmniCloseAllVMsActionPerformed"/>
-          </Events>
-        </MenuItem>
-      </SubComponents>
-    </Container>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar_MainMenuBar">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -74,6 +27,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jmiNewProject">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+A"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Bilder/16x16/document-new.png"/>
                 </Property>
@@ -87,6 +43,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jmiOpenProject">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+B"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Bilder/open24Project.gif"/>
                 </Property>
@@ -219,7 +178,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jmiRedo">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Ctrl+Y"/>
+                  <KeyStroke key="Alt+E"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Bilder/16x16/edit-redo.png"/>
@@ -309,6 +268,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jmiStart">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+J"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Bilder/play16.gif"/>
                 </Property>
@@ -322,6 +284,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jmiStop">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+L"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Bilder/stop16.gif"/>
                 </Property>
@@ -335,6 +300,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jmiPause">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+M"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Bilder/pause16.gif"/>
                 </Property>
@@ -348,6 +316,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jmiResume">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+N"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Bilder/Resume16.GIF"/>
                 </Property>
@@ -385,6 +356,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jmniDefineVariables">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+H"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Bilder/variables16.png"/>
                 </Property>
@@ -436,6 +410,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jmniOptions">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+G"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Bilder/16x16/preferences-desktop.png"/>
                 </Property>
@@ -485,6 +462,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jmniUpdater">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+T"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Bilder/16x16/storage.png"/>
                 </Property>
@@ -507,6 +487,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jmiLegend">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+I"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Bilder/16x16/legenge16.png"/>
                 </Property>
@@ -533,6 +516,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jmiShowAnalogWindow">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+P"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Bilder/graphDouble16x16.gif"/>
                 </Property>
@@ -546,6 +532,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jmiShowDigitalWindow">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+Q"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Bilder/graphBoolean16x16.gif"/>
                 </Property>
@@ -559,6 +548,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jmiShowTestpointWindow">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+R"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Bilder/testpoint.PNG"/>
                 </Property>
@@ -679,6 +671,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jmiInfo">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+U"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Bilder/Information16.gif"/>
                 </Property>
@@ -722,7 +717,7 @@
     <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
     <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="true"/>
-    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>

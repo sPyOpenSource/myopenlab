@@ -21,7 +21,7 @@ package codeeditor;
 
 import java.io.File;
 
-import sun.tools.jar.*;
+//import sun.tools.jar.*;
 import VisualLogic.*;
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -52,7 +52,7 @@ public class frmCodeEditor extends javax.swing.JFrame
         this.initComponents();
         try
         {
-            setIconImage(parent.iconImage);
+            setIconImage(FrameMain.iconImage);
         }
         catch(Exception ex)
         { }
@@ -347,11 +347,13 @@ public class frmCodeEditor extends javax.swing.JFrame
         
         chooser.addChoosableFileFilter(new javax.swing.filechooser.FileFilter()
         {
+            @Override
             public boolean accept(File f)
             {
                 if (f.isDirectory()) return true;
                 return f.getName().toLowerCase().endsWith(".java");
             }
+            @Override
             public String getDescription()
             { return "Java Files"; }
         });
@@ -492,16 +494,12 @@ public class frmCodeEditor extends javax.swing.JFrame
         tab.setBorder(null);
         tabCloseButton.setBorder(null);
         
-        tabCloseButton.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent e)
+        tabCloseButton.addActionListener((ActionEvent e) -> {
+            if (e.getSource() instanceof JButtonX)
             {
-                if (e.getSource() instanceof JButtonX)
-                {                    
-                    JButtonX btn = (JButtonX)e.getSource();
-                    
-                    btn.panel.close();                                                
-                }
+                JButtonX btn = (JButtonX)e.getSource();
+                
+                btn.panel.close();
             }
         });
         

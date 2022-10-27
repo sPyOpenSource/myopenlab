@@ -51,7 +51,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public ArrayList<PathPoint> points = new ArrayList<>();
     public int pointSize = 10;
     public int elementRefreshDifferenz = 0;
-    // bis zu 10 Tags können hier von FrontElement zu CircuitElement als sog. Parameter
+    // bis zu 10 Tags kï¿½nnen hier von FrontElement zu CircuitElement als sog. Parameter
     // ausgetauscht werden
     public Object[] tags = new Object[10];
 
@@ -2431,7 +2431,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         return pin.object;
     }
 
-    // Sorgt dafï¿½r das die Werte ins Ziel-Element eingetragen werden
+    // Sorgt dafr das die Werte ins Ziel-Element eingetragen werden
     public void writeInformationToDest(int pin, double value) {
         JPin p = getPin(pin);
         //p.value=value;
@@ -3020,7 +3020,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         int maxYBottom = getMaxLengthPinDescriptionVertikalBottom(gdummy);
         maxHeight += maxYTop;
         maxHeight += maxYBottom;
-        maxHeight += 15; // Für die Überschrift!
+        maxHeight += 15; // Fr die berschrift!
 
         int mitteX = maxWidth / 2;
         int mitteY = maxHeight / 2;

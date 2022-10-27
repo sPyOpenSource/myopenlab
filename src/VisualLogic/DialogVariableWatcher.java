@@ -40,7 +40,6 @@ public class DialogVariableWatcher extends javax.swing.JDialog
         
         jList1.setModel(model);
         model.clear();
-        
     }
     
     
@@ -49,11 +48,11 @@ public class DialogVariableWatcher extends javax.swing.JDialog
         OpenVariable node;
     
         model.clear();
-        for (int i=0;i<variablenListe.size();i++)
+        for (int i = 0; i < variablenListe.size(); i++)
         {
-            node= (OpenVariable)variablenListe.get(i);
+            node = (OpenVariable)variablenListe.get(i);
             
-            model.addElement(node.name+"="+node.value);
+            model.addElement(node.name + "=" + node.value);
         }
     }
     
@@ -84,25 +83,25 @@ public class DialogVariableWatcher extends javax.swing.JDialog
         });
         jScrollPane1.setViewportView(jList1);
 
-        org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 270, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 274, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((screenSize.width-298)/2, (screenSize.height-216)/2, 298, 216);
+        setSize(new java.awt.Dimension(298, 216));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     
 

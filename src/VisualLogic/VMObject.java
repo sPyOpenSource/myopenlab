@@ -571,7 +571,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
             public void dragExit(DropTargetEvent e) {
             }
 
-            // Die Maus bewegt sich über die Komponente
+            // Die Maus bewegt sich ber die Komponente
             public void dragOver(DropTargetDragEvent e) {
 
                 e.acceptDrag(DnDConstants.ACTION_COPY);
@@ -601,7 +601,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
             }
 
             // Jemand hat die Art des Drops (Move, Copy, Link)
-            // geändert
+            // geï¿½ndert
             @Override
             public void dropActionChanged(DropTargetDragEvent e) {
             }
@@ -687,7 +687,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         if (getStatus() != null) {
             getStatus().processKeyEvent(ke);
         }
-        super.processKeyEvent(ke); // diese Zeile nicht mehr hinzufügen!!!
+        super.processKeyEvent(ke); // diese Zeile nicht mehr hinzufï¿½gen!!!
     }
 
     protected void processFocusEvent(FocusEvent fe) {

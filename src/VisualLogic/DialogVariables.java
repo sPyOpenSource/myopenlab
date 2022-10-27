@@ -28,26 +28,21 @@ import javax.swing.DefaultListModel;
  */
 public class DialogVariables extends javax.swing.JDialog
 {
-    private DefaultListModel model = new DefaultListModel();
-    private Basis basis;
-    private ArrayList liste;
+    private final DefaultListModel model = new DefaultListModel();
+    private final Basis basis;
+    private final ArrayList liste;
     
     /** Creates new form DialogVariables */
     public DialogVariables(java.awt.Frame parent, boolean modal, Basis basis)
     {
         super(parent, modal);
-        this.basis=basis;
+        this.basis = basis;
         initComponents();
         
-        liste=basis.variablenListe;
+        liste = basis.variablenListe;
         
-        
-        java.awt.event.ActionListener actionListener = new java.awt.event.ActionListener() 
-        {
-          public void actionPerformed(java.awt.event.ActionEvent actionEvent) 
-          {                
-                dispose();            
-          }
+        java.awt.event.ActionListener actionListener = (java.awt.event.ActionEvent actionEvent) -> {
+            dispose();
         };
         
         javax.swing.KeyStroke stroke = javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0);
@@ -62,9 +57,9 @@ public class DialogVariables extends javax.swing.JDialog
         model.clear();
         
         OpenVariable node;
-        for ( int i=0;i<liste.size();i++)
+        for ( int i = 0; i < liste.size(); i++ )
         {
-            node=(OpenVariable)liste.get(i);
+            node = (OpenVariable)liste.get(i);
             model.addElement(node);
         }
     }
@@ -117,19 +112,19 @@ public class DialogVariables extends javax.swing.JDialog
         });
         jScrollPane1.setViewportView(jList1);
 
-        org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel1Layout.createSequentialGroup()
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel1Layout.createSequentialGroup()
-                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE)
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -147,39 +142,39 @@ public class DialogVariables extends javax.swing.JDialog
             }
         });
 
-        org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(layout.createSequentialGroup()
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jButton3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .add(layout.createSequentialGroup()
-                        .add(8, 8, 8)
-                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, jButton4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, jButton1, 0, 0, Short.MAX_VALUE)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, jButton2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, 0, 0, Short.MAX_VALUE)
+                            .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(layout.createSequentialGroup()
-                        .add(jButton1)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jButton2)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jButton4)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 148, Short.MAX_VALUE)
-                        .add(jButton3)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton3)))
                 .addContainerGap())
         );
 
@@ -195,34 +190,30 @@ public class DialogVariables extends javax.swing.JDialog
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton4ActionPerformed
     {//GEN-HEADEREND:event_jButton4ActionPerformed
-        if (jList1.getSelectedValue()!=null)
+        if (jList1.getSelectedValue() != null)
         {            
-            OpenVariable node=(OpenVariable)jList1.getSelectedValue();
+            OpenVariable node = (OpenVariable)jList1.getSelectedValue();
             
             liste.remove(node);
             listAll();
-            
-                     
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
     {//GEN-HEADEREND:event_jButton2ActionPerformed
-        if (jList1.getSelectedValue()!=null)
+        if (jList1.getSelectedValue() != null)
         {            
-            OpenVariable node=(OpenVariable)jList1.getSelectedValue();
+            OpenVariable node = (OpenVariable)jList1.getSelectedValue();
             
             DialogAddEditvariable.executeEdit(basis.getFrameMain(), node);
             if (DialogAddEditvariable.result)
             {
-                node.name=DialogAddEditvariable.varName;
-                node.datatype=DialogAddEditvariable.datatype;
-                node.size1=DialogAddEditvariable.arr_size1;
-                node.size2=DialogAddEditvariable.arr_size2;
+                node.name = DialogAddEditvariable.varName;
+                node.datatype = DialogAddEditvariable.datatype;
+                node.size1 = DialogAddEditvariable.arr_size1;
+                node.size2 = DialogAddEditvariable.arr_size2;
                 listAll();
-               
             }
-            
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -232,13 +223,13 @@ public class DialogVariables extends javax.swing.JDialog
         
         if (DialogAddEditvariable.result)
         {   
-            if (basis.varNameExist(DialogAddEditvariable.varName)==false)
+            if (basis.varNameExist(DialogAddEditvariable.varName) == false)
             {
-                OpenVariable newNode=new OpenVariable();
-                newNode.name=DialogAddEditvariable.varName;
-                newNode.datatype=DialogAddEditvariable.datatype;  
-                newNode.size1=DialogAddEditvariable.arr_size1;
-                newNode.size2=DialogAddEditvariable.arr_size2;
+                OpenVariable newNode = new OpenVariable();
+                newNode.name = DialogAddEditvariable.varName;
+                newNode.datatype = DialogAddEditvariable.datatype;  
+                newNode.size1 = DialogAddEditvariable.arr_size1;
+                newNode.size2 = DialogAddEditvariable.arr_size2;
                 liste.add(newNode);
                 listAll();                
             }
@@ -251,7 +242,6 @@ public class DialogVariables extends javax.swing.JDialog
     }//GEN-LAST:event_jButton3ActionPerformed
     
 
-    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

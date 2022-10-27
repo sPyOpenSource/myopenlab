@@ -171,7 +171,7 @@ public class Line  implements Serializable {
     }
     
     
-    // Liefert >0 wenn eine vertikale Linie in der Nähe ist
+    // Liefert >0 wenn eine vertikale Linie in der Nhe ist
     // Liefert -1 wenn nicht!    
     public int isVertikalLineNearPoint(Point p, int distance)
     {

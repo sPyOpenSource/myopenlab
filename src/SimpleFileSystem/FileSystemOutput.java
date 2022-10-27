@@ -29,7 +29,7 @@ import java.util.ArrayList;
 /**
  *
  * @author Carmelo Salafia
- * FileSystemOutput ist für das schreiben der Datensaetze und
+ * FileSystemOutput ist fï¿½r das schreiben der Datensaetze und
  * ihrer IndexListe verantwortlich.
  * erzeugt ein kuenstliches Dateisystem!
  */
@@ -54,7 +54,7 @@ public class FileSystemOutput
           DataOutputStream dos=new DataOutputStream(fos);
           
           
-          dos.writeLong(123479);  // platzhalter für die Position der IndexListe!
+          dos.writeLong(123479);  // platzhalter fr die Position der IndexListe!
           
         } catch(Exception ex)
         {
@@ -63,7 +63,7 @@ public class FileSystemOutput
     }
     
     /* Fuegt einen Stream Datensatz hinzu 
-     * und liefert den dazugehörigen Stream
+     * und liefert den dazugehï¿½rigen Stream
      */
     public FileOutputStream addItem(String filename)
     {                
@@ -85,7 +85,7 @@ public class FileSystemOutput
         return fos;
     }
     
-    /* postItem sorgt dafür das der datensatz richtig abgeschlossen wird
+    /* postItem sorgt dafï¿½r das der datensatz richtig abgeschlossen wird
      * und muss nach jedem neuen Datensatz aufgerufen werden!
      */
     public void postItem()
@@ -104,7 +104,7 @@ public class FileSystemOutput
       }            
     }
     
-    /* --- nur für interne Zwecke ---
+    /* --- nur fï¿½r interne Zwecke ---
      * schreibt die Liste der FileDiscriptoren am ende der datei!
      */
     public void addIndexList()
@@ -137,8 +137,8 @@ public class FileSystemOutput
       
     }
     
-    /* sorgt dafür das die datei erfolgreich abgeschlossen wird!
-     * und muss nachdem alle Datensätze geschrieben worden sind
+    /* sorgt dafï¿½r das die datei erfolgreich abgeschlossen wird!
+     * und muss nachdem alle Datensï¿½tze geschrieben worden sind
      * aufgerufen werden!
      */
     public void close()

@@ -605,7 +605,7 @@ public class Dialog_create_new_group extends javax.swing.JDialog {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
-        // Auf Plausi prüfen!      
+        // Auf Plausi prfen!      
         String titleDE = txtTitlteDE.getText();
         String titleEN = txtTitlteEN.getText();
         String titleES = txtTitlteES.getText();

@@ -23,7 +23,7 @@ import java.io.Serializable;
 public class VSObject extends Object implements Serializable
 {
     private boolean changed=false;
-    private int pinIndex=0;// nur für SocketServer und SocketClient Elemente!
+    private int pinIndex=0;// nur fr SocketServer und SocketClient Elemente!
     private int pin=-1;
     
     public void setPin(int index)
