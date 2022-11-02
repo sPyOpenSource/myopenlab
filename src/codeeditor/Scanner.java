@@ -19,10 +19,6 @@ package codeeditor;
 import java.util.*;
 
 
-import java.awt.*;
-import java.awt.event.*;
-import java.applet.*;
-import javax.swing.*;
 import javax.swing.text.*;
 
 
@@ -403,6 +399,5 @@ public class Scanner
       }
     }
   }
-
 
 }

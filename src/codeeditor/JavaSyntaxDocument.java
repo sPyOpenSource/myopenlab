@@ -23,15 +23,13 @@ import java.util.*;
 import javax.swing.text.*;
 
 class JavaSyntaxDocument extends DefaultStyledDocument{
-    private DefaultStyledDocument doc;
-    private Element rootElement;
+    private final DefaultStyledDocument doc;
+    private final Element rootElement;
     private boolean multiLineComment;
-    private MutableAttributeSet normal;
-    private MutableAttributeSet keyword;
-    private MutableAttributeSet comment;
-    private MutableAttributeSet quote;
-    private Hashtable keywords;
-    private PanelEditor panel;
+    private final MutableAttributeSet normal;
+    private final MutableAttributeSet keyword, comment, quote;
+    private final Hashtable keywords;
+    private final PanelEditor panel;
     
     public JavaSyntaxDocument(PanelEditor panel)
     {
@@ -402,4 +400,3 @@ class JavaSyntaxDocument extends DefaultStyledDocument{
         return "{\n" + whiteSpace.toString() + whiteSpace.toString()+"\n" + whiteSpace.toString() + "}";
     }
 }
-

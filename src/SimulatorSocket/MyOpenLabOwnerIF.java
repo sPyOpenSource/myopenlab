@@ -26,4 +26,5 @@ package SimulatorSocket;
 public interface MyOpenLabOwnerIF {
 
     public void ownerMessage(String message);
+    
 }

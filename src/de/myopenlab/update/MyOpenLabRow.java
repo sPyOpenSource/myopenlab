@@ -187,5 +187,4 @@ public class MyOpenLabRow {
         this.date = date;
     }
     
-    
 }

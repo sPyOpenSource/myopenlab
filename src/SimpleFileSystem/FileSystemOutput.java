@@ -26,7 +26,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 
-
 /**
  *
  * @author Carmelo Salafia
@@ -56,7 +55,6 @@ public class FileSystemOutput
           
           
           dos.writeLong(123479);  // platzhalter fr die Position der IndexListe!
-          
         } catch(Exception ex)
         {
             System.out.println("Error in Methode createFile()"+ex.toString());

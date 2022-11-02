@@ -23,7 +23,7 @@ package projectfolder;
  * @author Carmelo
  */
 public interface ProjectPaletteIF
-{        
+{
     public void projectPaletteDeleteProject(MyNode node);
     public void projectPaletteDeleteVM(MyNode node);
     public void projectPaletteRenameVM(MyNode node);

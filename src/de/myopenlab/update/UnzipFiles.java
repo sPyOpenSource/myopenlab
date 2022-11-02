@@ -14,8 +14,6 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
  
 public class UnzipFiles {
- 
-  
     
      /**
      * Size of the buffer to read/write data
@@ -57,6 +55,7 @@ public class UnzipFiles {
         }
         zipIn.close();
     }
+    
     /**
      * Extracts a zip entry (file entry)
      * @param zipIn
@@ -64,9 +63,6 @@ public class UnzipFiles {
      * @throws IOException
      */
     private void extractFile(ZipInputStream zipIn, String filePath) throws IOException {
-        
-        
-        
         BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(filePath));
         byte[] bytesIn = new byte[BUFFER_SIZE];
         int read = 0;

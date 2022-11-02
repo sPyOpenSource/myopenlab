@@ -16,7 +16,6 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-
 package SimulatorSocket;
 
 import java.io.*;
@@ -49,7 +48,6 @@ public class Client extends Thread
             close();
         }
 
-        
     }
 
   public void sendCmd(String cmd)

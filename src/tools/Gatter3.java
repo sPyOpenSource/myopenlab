@@ -19,14 +19,11 @@
 //* Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110, USA                  *
 //*****************************************************************************
 
-
 package tools;
 
 import VisualLogic.*;
 import VisualLogic.variables.*;
 import java.awt.*;
-import java.awt.event.*;
-import java.awt.geom.Rectangle2D;
 import tools.*;
 
 public class Gatter3 extends JVSMain
@@ -52,8 +49,6 @@ public class Gatter3 extends JVSMain
       image=null;
     }
   }
-
-
 
   public Gatter3(int anzPins, String name)
   {
@@ -84,8 +79,6 @@ public class Gatter3 extends JVSMain
 
   public void init()
   {
-
-
     element.jSetInnerBorderVisibility(true);
     
     //initPins(0,1,0,anzPins);
@@ -108,16 +101,11 @@ public class Gatter3 extends JVSMain
     }
   }
 
-
-
   public void start()
   {
     started=false;
     element.jNotifyMeForClock();
   }
-
-
-
 
   public void setPropertyEditor()
   {
@@ -173,7 +161,6 @@ public class Gatter3 extends JVSMain
     anzPins.saveToStream(fos);
     delay.saveToStream(fos);
   }
-
 
 }
  

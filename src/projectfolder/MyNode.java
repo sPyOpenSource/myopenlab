@@ -31,7 +31,7 @@ public class MyNode extends DefaultMutableTreeNode {
     public boolean isFolder = false;
     public boolean isFile = false;
 
-    public String projectPath = "";
+    public String projectPath  = "";
     public String relativePath = "";
 
     public MyNode(Object userObject) {

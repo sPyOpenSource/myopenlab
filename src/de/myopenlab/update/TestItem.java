@@ -19,6 +19,5 @@ public class TestItem {
         this.caption_de=caption_de;
         this.caption_en=caption_en;
         this.caption_es=caption_es;
-    
     }
 }

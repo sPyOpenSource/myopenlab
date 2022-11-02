@@ -24,10 +24,11 @@ package tools;
 
 import VisualLogic.*;
 import VisualLogic.variables.*;
+import javax.swing.*;
+
 import java.awt.*;
 import java.util.*;
 import java.awt.event.*;
-import javax.swing.*;
 import java.text.*;
 import java.awt.geom.Rectangle2D;
 
@@ -908,5 +909,3 @@ class Beschriftung extends JPanel
       }
     }
 }
-
-

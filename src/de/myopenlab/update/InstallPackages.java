@@ -6,7 +6,6 @@ import java.nio.file.Path;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import VisualLogic.Tools;
 import static VisualLogic.Tools.settings;
 
 public class InstallPackages implements Runnable {

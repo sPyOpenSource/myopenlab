@@ -35,6 +35,7 @@ import VisualLogic.variables.VSObject;
 import VisualLogic.variables.VSProperties;
 import VisualLogic.variables.VSPropertyDialog;
 import VisualLogic.variables.VSString;
+
 import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;

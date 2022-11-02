@@ -41,12 +41,12 @@ public class GraphBackground extends javax.swing.JPanel
     
     
     public void setAutoScaleInterval(Integer Interval){
-     this.bufferLen=Interval;
+        this.bufferLen=Interval;
     }
+    
     public Integer getAutosCaleInterval(){
-      return this.bufferLen;  
+        return this.bufferLen;  
     }
-
     
     public boolean getBackgroundTransparent()
     {
@@ -164,7 +164,5 @@ public class GraphBackground extends javax.swing.JPanel
             
         }
     }
-    
 
-    
 }

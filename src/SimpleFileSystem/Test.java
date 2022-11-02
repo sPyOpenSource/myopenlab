@@ -27,13 +27,8 @@ import java.io.IOException;
  * 
  * @author Carmelo Salafia
  */
-public class Main 
+public class Test 
 {
-    
-    /** Creates a new instance of Main */
-    public Main() 
-    {
-    }
     
     /**
      * @param args the command line arguments

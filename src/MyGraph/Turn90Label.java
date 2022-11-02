@@ -70,4 +70,3 @@ public class Turn90Label extends JPanel
            g2d.drawString(text, 0, 0);           
         }
 } 
-
