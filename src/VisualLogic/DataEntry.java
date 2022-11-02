@@ -29,7 +29,7 @@ import java.util.ArrayList;
 public class DataEntry
 {
     public String name;
-    public ArrayList<VSObject> values=new ArrayList<VSObject>();
+    public ArrayList<VSObject> values=new ArrayList<>();
     
     /** Creates a new instance of DataPacket */
     public DataEntry(String name)

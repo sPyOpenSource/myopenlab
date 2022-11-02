@@ -9,9 +9,9 @@ import BasisStatus.StatusEditPath;
 import Peditor.BasisProperty;
 import Peditor.PropertyEditor;
 import SimpleFileSystem.FileSystemOutput;
+
 import java.awt.*;
 import java.awt.event.*;
-import javax.swing.JFrame;
 import java.util.*;
 import java.awt.geom.*;
 import java.awt.image.*;
@@ -22,6 +22,7 @@ import VisualLogic.variables.*;
 import javax.swing.AbstractButton;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+import javax.swing.JFrame;
 
 /**
  *

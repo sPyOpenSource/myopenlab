@@ -28,7 +28,6 @@ import java.io.File;
 import javax.swing.JPanel;
 
 
-
 public class MyImage extends JPanel
 {
     private Image image=null;

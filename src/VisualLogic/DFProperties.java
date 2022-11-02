@@ -21,6 +21,7 @@ package VisualLogic;
 
 public class DFProperties 
 {
+    
     public boolean isDirectory=false;    
     public String redirect="";
     public String loader=""; // um den Loader fr die MCU Libary von immer den gleichen Verzeichniss zu laden!

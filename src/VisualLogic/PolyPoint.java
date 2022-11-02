@@ -18,7 +18,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 package VisualLogic;
 
-import SimpleFileSystem.FileSystemOutput;
 import java.awt.*;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -122,7 +121,5 @@ public class PolyPoint extends VisualObject
             //g.fillRect(x-pw2,y-pw2, w,h);
         }
     }
-
-    
     
 }

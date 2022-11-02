@@ -17,7 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 package VisualLogic;
-import Peditor.PropertyEditor;
+
 import VisualLogic.variables.*;
 
 import java.awt.*;
@@ -329,8 +329,6 @@ public interface ExternalIF
    /* setzt eine Referenz im jeweiligen Pin
     */
     public abstract void setPinOutputReference(int pinIndex, Object referenz);
-    
-    
     
     
     /**

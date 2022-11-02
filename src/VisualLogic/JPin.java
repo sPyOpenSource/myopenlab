@@ -17,11 +17,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 package VisualLogic;
+
 import java.awt.event.*;
 import java.awt.*;
-import javax.swing.*;
-import java.util.*;
-import java.awt.geom.*;
+
 /**
  *
  * @author Homer

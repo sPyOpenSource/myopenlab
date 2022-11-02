@@ -20,7 +20,7 @@ import java.util.logging.Logger;
  */
 public class SearchElement {
 
-    private ArrayList<SearchFoundItem> items = new ArrayList<>();
+    private final ArrayList<SearchFoundItem> items = new ArrayList<>();
 
     public Hashtable<String, String> load_definition_def(String filename) throws Exception {
         FileInputStream fstream = null;

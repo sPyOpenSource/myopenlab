@@ -26,7 +26,7 @@ import java.util.ArrayList;
  */
 public class DataHistory
 {    
-    private ArrayList<DataEntry> list = new ArrayList<DataEntry>();
+    private ArrayList<DataEntry> list = new ArrayList<>();
             
     /** Creates a new instance of DataHistory */
     public DataHistory()

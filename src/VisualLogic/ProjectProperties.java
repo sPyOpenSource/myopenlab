@@ -24,6 +24,7 @@ package VisualLogic;
  */
 public class ProjectProperties
 {
+    
     public String mainVM="";
     public String projectType="";
     

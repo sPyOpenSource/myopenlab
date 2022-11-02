@@ -22,23 +22,23 @@ relocated: license file
 changed: java version to 11
 
 3.12.0 XW 26-07-2020
-+String Functions added
-+String Constants Added
-+Element Properties could be enabled/disabled in the next new elements.
-+New option "Maximized" in "Windows Position" item of VM Properties.
-+All Numeric Palette Elements Updated and added Front Temperature Element
-+Decoration Palette Updated and New Elements Added.
-+New "Industrial Buttons JV" Palette in Automation Front Elements
-+New "Tanks JV" Palette in Automation Front Elements
-+New "Pipeline JV" Palette  Automation Front Elements
-+New "Valves JV"  Palette Automation Front Elements
-+New "Steel Gauges JV" Palette in Numeric Palette.
+added: String Functions
+added: String Constants
+added: Element Properties could be enabled/disabled in the next new elements.
+added: New option "Maximized" in "Windows Position" item of VM Properties.
+added: All Numeric Palette Elements Updated and added Front Temperature Element
+added: Decoration Palette Updated and New Elements.
+added: New "Industrial Buttons JV" Palette in Automation Front Elements
+added: New "Tanks JV" Palette in Automation Front Elements
+added: New "Pipeline JV" Palette  Automation Front Elements
+added: New "Valves JV"  Palette Automation Front Elements
+added: New "Steel Gauges JV" Palette in Numeric Palette.
 
-+Custom Color Picker shows coordiates for Advanced Linear and radial colors
-+RXTXComm Driver replaced with JSSC driver that works on MAC, Linux, Windows and Linux ARM.
-+Firmata Element Updated to include "INPUT_PULLUP" option.
-+"Elements/UserElementsTemplateCircuitElements/definition.def" Not Found Error Raspberry PI fixed
-+Fixed some "definition.def" that includes "Redirect" field with bad file separator and causes xpaint errors on Linux and Mac
+added: Custom Color Picker shows coordiates for Advanced Linear and radial colors
+added: RXTXComm Driver replaced with JSSC driver that works on MAC, Linux, Windows and Linux ARM.
+added: Firmata Element Updated to include "INPUT_PULLUP" option.
+fixed: "Elements/UserElementsTemplateCircuitElements/definition.def" Not Found Error Raspberry PI
+fixed: some "definition.def" that includes "Redirect" field with bad file separator and causes xpaint errors on Linux and Mac
 
-+Definition.def files updated to unify Gif File format extension from .GIF to .gif and avoid the xpaint error on Linux.
-+Front Panel PreferredSise 800 x 460 px
+added: Definition.def files updated to unify Gif File format extension from .GIF to .gif and avoid the xpaint error on Linux.
+added: Front Panel PreferredSise 800 x 460 px

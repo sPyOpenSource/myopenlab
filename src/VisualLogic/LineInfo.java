@@ -24,6 +24,7 @@ package VisualLogic;
  */
 public class LineInfo
 {
+    
     public Line line;
     public JPin pin;
     

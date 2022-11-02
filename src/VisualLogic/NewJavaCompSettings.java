@@ -19,7 +19,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 package VisualLogic;
 
 
-import VisualLogic.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -68,5 +67,5 @@ class PinsSettings implements Serializable
     public boolean pinsVisible=true;
     public int pinsCount=0;
     
-    ArrayList<PinsSettingsItem> items = new ArrayList<PinsSettingsItem>();
+    ArrayList<PinsSettingsItem> items = new ArrayList<>();
 }

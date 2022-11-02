@@ -32,6 +32,7 @@ public class ColoredListCell
     /** Creates a new instance of ColoredListCell */
     public ColoredListCell(String text, Color color)
     {
+        
         this.text=text;
         this.color=color;
         

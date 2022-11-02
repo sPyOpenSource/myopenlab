@@ -50,5 +50,3 @@ class SimpleFilter  extends javax.swing.filechooser.FileFilter
      return f.getName().toLowerCase().endsWith(m_extension); 
    } 
  } 
-
-

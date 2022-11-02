@@ -22,12 +22,11 @@ import java.awt.*;
 import java.util.*;
 import java.awt.geom.*;
 import javax.swing.JLabel;
+
 /**
  *
  * @author Homer
  */
-
-
 
 public class Shape extends VisualObject
 {        

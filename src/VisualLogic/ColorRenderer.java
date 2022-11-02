@@ -24,8 +24,6 @@ import java.awt.Color;
 import javax.swing.JList;
 import java.awt.Component;
 
-
-
 public class ColorRenderer extends DefaultListCellRenderer
 {
     
@@ -56,6 +54,5 @@ public class ColorRenderer extends DefaultListCellRenderer
         
         return this;
     }
-    
     
 }

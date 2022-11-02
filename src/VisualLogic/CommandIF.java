@@ -24,6 +24,7 @@ package VisualLogic;
  */
 public interface CommandIF 
 {
+    
     public abstract void sendCommand(String commando, Object value);
     
 }
