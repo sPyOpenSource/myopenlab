@@ -16,9 +16,9 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class VerilogParser{
-    int TOKENSIZE = 999;	/* Maximum length of a token.*/
+    int TOKENSIZE = 999;    /* Maximum length of a token.*/
     int LINESIZE = 9999;    /* Maximum length of each input line read.*/
-    int BUFSIZE = 99999;	/* Maximum length of a buffer.*/
+    int BUFSIZE = 99999;    /* Maximum length of a buffer.*/
     int SIZE = 9999;
     int INPUT = 0;
     int AND = 1;
@@ -85,8 +85,8 @@ public class VerilogParser{
         wire[] wires;					/*Array of all wires */
         node[] nodes;					/*Array of nodes*/
         String name;					/*Name of the circuit. */
-        int inputcount, outputcount;	   	/*Count of primary inputs and primary outputs. */
-        int gatecount, wirecount, nodecount;				/*Number of wires, (gates)*/
+        int inputcount, outputcount;                    /*Count of primary inputs and primary outputs. */
+        int gatecount, wirecount, nodecount;		/*Number of wires, (gates)*/
         String inputs[] = new String[LINESIZE];
         String outputs[] = new String[LINESIZE];	/*List of inputs and outputs in the netlist*/
         int size, id;		        		/*Circuit size and identifier*/

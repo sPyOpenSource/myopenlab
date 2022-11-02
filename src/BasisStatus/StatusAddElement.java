@@ -20,16 +20,16 @@ import java.awt.*;
 
 public class StatusAddElement extends Object implements StatusBasisIF {
 
-    private VMObject vmobject;
-    private String mainPath;
-    private String binPath;
-    private String circuitClass;
-    private String panelClass;
-    private Element element = null;
+    private final VMObject vmobject;
+    private final String mainPath;
+    private final String binPath;
+    private final String circuitClass;
+    private final String panelClass;
+    private final Element element = null;
     private boolean first = true;
     private int startX,  startY;
-    private int dummyWidth;
-    private int dummyHeight;
+    private final int dummyWidth;
+    private final int dummyHeight;
     private Element dummyElement = null;
 
     public StatusAddElement(VMObject vmobject, String mainPath, String circuitClass, String panelClass, String[] args)

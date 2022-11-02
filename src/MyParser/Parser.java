@@ -853,7 +853,6 @@ public class Parser
         
         return result;
     }
-    
 
     public Object parseString(String expr)
     {        
@@ -919,7 +918,6 @@ public class Parser
                 val.equalsIgnoreCase("toDeg")||
                 val.equalsIgnoreCase("toRad");
     }
-    
 
     private boolean isOP(String val)
     {
@@ -933,7 +931,7 @@ public class Parser
     
     private boolean isString(String val)
     {
-      String ch = "";
+      String ch;
       for(int i = 0; i < val.length(); i++)
       {
           ch = val.substring(i, i + 1);

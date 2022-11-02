@@ -57,7 +57,7 @@ public class FrameErrorWarnings extends javax.swing.JFrame
     public FrameErrorWarnings()
     {
         initComponents();
-        javax.swing.ImageIcon icon = new javax.swing.ImageIcon("/Bilder/16x16/process-stop.png");
+        javax.swing.ImageIcon icon = new javax.swing.ImageIcon("/Assets/Bilder/16x16/process-stop.png");
         setIconImage(icon.getImage());
     }
      
@@ -77,7 +77,7 @@ public class FrameErrorWarnings extends javax.swing.JFrame
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
 
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/FrameErrorWarnings"); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/FrameErrorWarnings"); // NOI18N
         jmniClear.setText(bundle.getString("CLEAR")); // NOI18N
         jmniClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

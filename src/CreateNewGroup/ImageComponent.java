@@ -1,4 +1,4 @@
-package create_new_group;
+package CreateNewGroup;
 
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;

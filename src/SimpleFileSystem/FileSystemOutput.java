@@ -22,6 +22,7 @@ package SimpleFileSystem;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 
 
@@ -78,7 +79,7 @@ public class FileSystemOutput
         
         oldItem=dt;
 
-      } catch(Exception ex)
+      } catch(IOException ex)
       {
           System.out.println("Error in Methode addItem()"+ex.toString());
       }        
@@ -96,7 +97,7 @@ public class FileSystemOutput
           {
             long position=fos.getChannel().position();
             oldItem.size=position-oldItem.position;
-          } catch(Exception ex)
+          } catch(IOException ex)
           {
               
           }
@@ -131,7 +132,7 @@ public class FileSystemOutput
         dos.writeLong(pos);
         
         
-      } catch(Exception ex) {
+      } catch(IOException ex) {
           System.out.println("Error in Methode addIndexList()"+ex.toString());
       }
       
@@ -148,12 +149,10 @@ public class FileSystemOutput
         {
           fos.flush();
           fos.close();     
-        }catch(Exception ex)
+        }catch(IOException ex)
         {
             System.out.println("Error in Methode close()"+ex.toString());
         }
     }
-    
-    
     
 }

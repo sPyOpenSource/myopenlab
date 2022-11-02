@@ -39,7 +39,7 @@
         <Component class="javax.swing.JButton" name="jButtonDE">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Bilder/de.png"/>
+              <Image iconType="3" name="/Assets/Bilder/de.png"/>
             </Property>
             <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
               <Insets value="[3, 4, 3, 4]"/>
@@ -53,7 +53,7 @@
         <Component class="javax.swing.JButton" name="jButtonEN">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Bilder/us.png"/>
+              <Image iconType="3" name="/Assets/Bilder/us.png"/>
             </Property>
             <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
               <Insets value="[3, 4, 3, 4]"/>
@@ -67,7 +67,7 @@
         <Component class="javax.swing.JButton" name="jButtonES">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Bilder/es.png"/>
+              <Image iconType="3" name="/Assets/Bilder/es.png"/>
             </Property>
             <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
               <Insets value="[3, 4, 3, 4]"/>

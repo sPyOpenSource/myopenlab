@@ -43,11 +43,11 @@ public class YAxis
     private int heights[] = null;
     private FontMetrics fm=null;
     public Font stdFont = new Font("Arial Bold",Font.BOLD,11);
-    private int yDistance=5;
+    private final int yDistance=5;
     public double min=0;
     public double max=10000;
     private String formatString="#";
-    private JPanel owner;
+    private final JPanel owner;
     
     public final int LEFT=1;
     public final int RIGHT=0;    
@@ -158,12 +158,10 @@ public class YAxis
         // Return Max Width
         fm = owner.getFontMetrics(stdFont);
         int max=0;
-        int w=0;
-        for (int i=0;i<points.length;i++)
-        {            
-            if (points[i]!=null)
-            {
-                w=fm.stringWidth(points[i])+yDistance;
+        int w;
+        for (String point : points) {
+            if (point != null) {
+                w = fm.stringWidth(point) + yDistance;
                 if (w>max)
                 {
                     max=w;
@@ -281,12 +279,9 @@ public class YAxis
         }
     }
     
-
-   
     public void paint(Graphics g)
     {
         step=((double)height*stepInProzent)/100.0;
-        
         
         g.setFont(stdFont);
         fm = g.getFontMetrics();
@@ -301,12 +296,10 @@ public class YAxis
         int d1= (int) ((step*0)+getWidth(points[0])/2);
         int d2= (int) ((step*l)-getWidth(points[l])/2);
         
-        
         drawString(g, 0);
         drawString(g, points.length-1);
         
         rekursion(g,0,points.length-1);
-        
     }
     
 }

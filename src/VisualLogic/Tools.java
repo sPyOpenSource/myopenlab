@@ -123,7 +123,7 @@ public class Tools
 
     public static boolean setQuestionDialog(JFrame parent, String s)
     {
-        int res = JOptionPane.showOptionDialog(parent, s, java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("attention"), JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null);
+        int res = JOptionPane.showOptionDialog(parent, s, java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/Basic").getString("attention"), JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null);
         if (res == JOptionPane.NO_OPTION)
         {
             return false;
@@ -327,17 +327,17 @@ public class Tools
 
     public static void showMessage(String message)
     {
-        JOptionPane.showMessageDialog(null, message, java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("attention"), JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(null, message, java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/Basic").getString("attention"), JOptionPane.ERROR_MESSAGE);
     }
 
     public static void showMessage(Component parent, String message)
     {
-        JOptionPane.showMessageDialog(parent, message, java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("attention"), JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(parent, message, java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/Basic").getString("attention"), JOptionPane.ERROR_MESSAGE);
     }
 
     public static void showMessage(Component parent, String message, int messageType)
     {
-        JOptionPane.showMessageDialog(parent, message, java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("attention"), messageType);
+        JOptionPane.showMessageDialog(parent, message, java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/Basic").getString("attention"), messageType);
     }
 
     public static void jException(Basis basis, String text)

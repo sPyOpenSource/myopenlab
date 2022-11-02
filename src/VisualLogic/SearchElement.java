@@ -20,7 +20,7 @@ import java.util.logging.Logger;
  */
 public class SearchElement {
 
-    private ArrayList<Search_found_item> items = new ArrayList<>();
+    private ArrayList<SearchFoundItem> items = new ArrayList<>();
 
     public Hashtable<String, String> load_definition_def(String filename) throws Exception {
         FileInputStream fstream = null;
@@ -43,7 +43,7 @@ public class SearchElement {
         return res;
     }
 
-    public ArrayList<Search_found_item> search(String path, String suchwort, String language) {
+    public ArrayList<SearchFoundItem> search(String path, String suchwort, String language) {
         items.clear();
         walk(path, suchwort, language);
         return items;
@@ -97,7 +97,7 @@ public class SearchElement {
 
                             if (gefunden.trim().length() > 0) {
 
-                                Search_found_item item = new Search_found_item();
+                                SearchFoundItem item = new SearchFoundItem();
                                 item.found_word = gefunden;
                                 item.found_in_element_dir = f.getAbsolutePath();
                                 items.add(item);

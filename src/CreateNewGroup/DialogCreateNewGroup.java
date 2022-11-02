@@ -1,9 +1,10 @@
-package create_new_group;
+package CreateNewGroup;
 
 import VisualLogic.DFProperties;
 import VisualLogic.DialogSaveAsModul;
 import VisualLogic.FrameMain;
 import VisualLogic.Tools;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -12,7 +13,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
-import java.net.URL;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -21,6 +21,7 @@ import java.util.Locale;
 import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
@@ -35,7 +36,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-public class Dialog_create_new_group extends javax.swing.JDialog {
+public class DialogCreateNewGroup extends javax.swing.JDialog {
 
     private ImageComponent image32 = null;
     public String path = "";
@@ -46,7 +47,7 @@ public class Dialog_create_new_group extends javax.swing.JDialog {
     /**
      * Creates new form NewJDialog
      */
-    public Dialog_create_new_group(java.awt.Frame parent, boolean modal, String mode, String path) {
+    public DialogCreateNewGroup(java.awt.Frame parent, boolean modal, String mode, String path) {
 
         super(parent, modal);
 
@@ -198,7 +199,7 @@ public class Dialog_create_new_group extends javax.swing.JDialog {
                     }
                 }
             } catch (SAXException | IOException | ParserConfigurationException ex) {
-                Logger.getLogger(Dialog_create_new_group.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(DialogCreateNewGroup.class.getName()).log(Level.SEVERE, null, ex);
             }
 
         }
@@ -647,7 +648,7 @@ public class Dialog_create_new_group extends javax.swing.JDialog {
             date = df.format(datex);
 
         } catch (ParseException ex) {
-            Logger.getLogger(Dialog_create_new_group.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DialogCreateNewGroup.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         String type = getElementType();
@@ -743,7 +744,7 @@ public class Dialog_create_new_group extends javax.swing.JDialog {
                     try {
                         Tools.copyFileUsingStream(new File(image32.getFilename()), new File(icon_filename));
                     } catch (IOException ex) {
-                        Logger.getLogger(Dialog_create_new_group.class.getName()).log(Level.SEVERE, null, ex);
+                        Logger.getLogger(DialogCreateNewGroup.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 } else if (new File(image32.getFilename()).equals(new File(icon_filename))) {
 
@@ -751,12 +752,12 @@ public class Dialog_create_new_group extends javax.swing.JDialog {
                     try {
                         Tools.copyFileUsingStream(new File(image32.getFilename()), new File(icon_filename));
                     } catch (IOException ex) {
-                        Logger.getLogger(Dialog_create_new_group.class.getName()).log(Level.SEVERE, null, ex);
+                        Logger.getLogger(DialogCreateNewGroup.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
 
             } catch (FileNotFoundException | UnsupportedEncodingException ex) {
-                Logger.getLogger(Dialog_create_new_group.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(DialogCreateNewGroup.class.getName()).log(Level.SEVERE, null, ex);
             } finally {
                 writer.close();
             }

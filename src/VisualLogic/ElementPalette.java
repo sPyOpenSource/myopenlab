@@ -17,7 +17,7 @@
  */
 package VisualLogic;
 
-import create_new_group.Dialog_create_new_group;
+import CreateNewGroup.DialogCreateNewGroup;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.awt.*;
@@ -178,7 +178,7 @@ public class ElementPalette extends javax.swing.JPanel {
     private MyButton createBackButton() {
         MyButton btn = new MyButton();
         btn.setPreferredSize(new Dimension(38, 38));
-        btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/back16.gif")));
+        btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/back16.gif")));
 
         btn.setEnabled(true);
         if (aktuellesVerzeichniss.equalsIgnoreCase(rootPath)) {
@@ -550,7 +550,7 @@ public class ElementPalette extends javax.swing.JPanel {
         jToggleButton1 = new javax.swing.JToggleButton();
         jButton1 = new javax.swing.JButton();
 
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/ElementPalette"); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/ElementPalette"); // NOI18N
         jmiEditVMDefinition.setText(bundle.getString("Menu_Edit")); // NOI18N
         jmiEditVMDefinition.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -709,7 +709,7 @@ public class ElementPalette extends javax.swing.JPanel {
 
         jScrollPane1.setViewportView(jPanelButtons);
 
-        jToggleButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/16x16/Text.png"))); // NOI18N
+        jToggleButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/Text.png"))); // NOI18N
         jToggleButton1.setToolTipText(bundle.getString("Show_Item_Names")); // NOI18N
         jToggleButton1.setContentAreaFilled(false);
         jToggleButton1.setPreferredSize(new java.awt.Dimension(25, 23));
@@ -724,7 +724,7 @@ public class ElementPalette extends javax.swing.JPanel {
             }
         });
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/view-refresh.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/view-refresh.png"))); // NOI18N
         jButton1.setToolTipText("Reload");
         jButton1.setContentAreaFilled(false);
         jButton1.setPreferredSize(new java.awt.Dimension(25, 23));
@@ -795,10 +795,10 @@ public class ElementPalette extends javax.swing.JPanel {
 
             loadFolder(aktuellesVerzeichniss);
         } else {
-            String msg = java.util.ResourceBundle.getBundle("VisualLogic/ElementPalette").getString("This Group is not editable");
+            String msg = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/ElementPalette").getString("This Group is not editable");
             Tools.showMessage(msg);
         }*/
-        Dialog_create_new_group frm2 = new Dialog_create_new_group(this.owner, true, "edit", aktiveButton.filePath);
+        DialogCreateNewGroup frm2 = new DialogCreateNewGroup(this.owner, true, "edit", aktiveButton.filePath);
         frm2.setVisible(true);
 
         /*DialogSaveAsModul frmSave = new DialogSaveAsModul(frameCircuit, frameCircuit, true);
@@ -894,7 +894,7 @@ public class ElementPalette extends javax.swing.JPanel {
 
     private void jmiDeleteDirActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jmiDeleteDirActionPerformed
     {//GEN-HEADEREND:event_jmiDeleteDirActionPerformed
-        int result = JOptionPane.showConfirmDialog((Component) null, java.util.ResourceBundle.getBundle("VisualLogic/ElementPalette").getString("really_delete") + " : " + aktiveButton.caption, java.util.ResourceBundle.getBundle("VisualLogic/ElementPalette").getString("Attention"), JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+        int result = JOptionPane.showConfirmDialog((Component) null, java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/ElementPalette").getString("really_delete") + " : " + aktiveButton.caption, java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/ElementPalette").getString("Attention"), JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
 
         if (result == JOptionPane.YES_OPTION) {
             String path = aktiveButton.filePath;
@@ -929,7 +929,7 @@ public class ElementPalette extends javax.swing.JPanel {
 
     private void jmiDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiDeleteActionPerformed
 
-        int result = JOptionPane.showConfirmDialog((Component) null, java.util.ResourceBundle.getBundle("VisualLogic/ElementPalette").getString("really_delete") + " : " + aktiveButton.caption, java.util.ResourceBundle.getBundle("VisualLogic/ElementPalette").getString("Attention"), JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+        int result = JOptionPane.showConfirmDialog((Component) null, java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/ElementPalette").getString("really_delete") + " : " + aktiveButton.caption, java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/ElementPalette").getString("Attention"), JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
 
         if (result == JOptionPane.YES_OPTION) {
             String path = aktiveButton.filePath;
@@ -953,7 +953,7 @@ public class ElementPalette extends javax.swing.JPanel {
                     Tools.showMessage(ex.toString());
                 }
             } else {
-                Tools.showMessage(java.util.ResourceBundle.getBundle("VisualLogic/ElementPalette").getString("Element ist bereits vorhanden"));
+                Tools.showMessage(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/ElementPalette").getString("Element ist bereits vorhanden"));
             }
 
             if (modusCut) {
@@ -1018,7 +1018,7 @@ public class ElementPalette extends javax.swing.JPanel {
                 try {
                     copyFileUsingStream(new File(elementPath + "/element.png"), new File(icon_filename));
                 } catch (IOException ex) {
-                    Logger.getLogger(Dialog_create_new_group.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(DialogCreateNewGroup.class.getName()).log(Level.SEVERE, null, ex);
                 }
 
                 Basis basis = new Basis(owner, FrameMain.elementPath);
@@ -1050,7 +1050,7 @@ public class ElementPalette extends javax.swing.JPanel {
                 frmx.executeEdit(elementPath + aktuellesVerzeichniss + "/" + name);
 
             } else {
-                Tools.showMessage(this, java.util.ResourceBundle.getBundle("VisualLogic/Messages").getString("VM already exist") + " : " + new File(filename).getName());
+                Tools.showMessage(this, java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/Messages").getString("VM already exist") + " : " + new File(filename).getName());
             }
 
             loadFolder(aktuellesVerzeichniss);

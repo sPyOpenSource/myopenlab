@@ -10,7 +10,7 @@ import VisualLogic.DialogSaveAsModul;
 import VisualLogic.FrameMain;
 import VisualLogic.Tools;
 import static VisualLogic.Tools.settings;
-import create_new_group.Dialog_create_new_group;
+import CreateNewGroup.DialogCreateNewGroup;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -1137,7 +1137,7 @@ public class frmUpdate extends javax.swing.JFrame {
 
         String path = FrameMain.elementPath + "/" + type;
 
-        Dialog_create_new_group frm = new Dialog_create_new_group(this, true, "edit", path + "/" + entry_name);
+        DialogCreateNewGroup frm = new DialogCreateNewGroup(this, true, "edit", path + "/" + entry_name);
 
         frm.setVisible(true);
 
@@ -1360,13 +1360,13 @@ public class frmUpdate extends javax.swing.JFrame {
         try {
             Tools.copyFileUsingStream(new File(icon32), new File(tmp + "/icon32.png"));
         } catch (IOException ex) {
-            Logger.getLogger(Dialog_create_new_group.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DialogCreateNewGroup.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         String xml = createEmptyInfoXML(tmp.getName());
         Tools.saveText(new File(tmp.getAbsolutePath() + "/info.xml"), xml);
 
-        Dialog_create_new_group frm = new Dialog_create_new_group(this, true, "edit", tmp.getAbsolutePath());
+        DialogCreateNewGroup frm = new DialogCreateNewGroup(this, true, "edit", tmp.getAbsolutePath());
         frm.load(tmp.getAbsolutePath());
         frm.setVisible(true);
 
@@ -1390,14 +1390,14 @@ public class frmUpdate extends javax.swing.JFrame {
         try {
             Tools.copyFileUsingStream(new File(icon32), new File(tmp + "/icon32.png"));
         } catch (IOException ex) {
-            Logger.getLogger(Dialog_create_new_group.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DialogCreateNewGroup.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         String xml = createEmptyInfoXML(tmp.getName());
 
         Tools.saveText(new File(tmp.getAbsolutePath() + "/info.xml"), xml);
 
-        Dialog_create_new_group frm = new Dialog_create_new_group(this, true, "edit", tmp.getAbsolutePath());
+        DialogCreateNewGroup frm = new DialogCreateNewGroup(this, true, "edit", tmp.getAbsolutePath());
         frm.load(tmp.getAbsolutePath());
         frm.setVisible(true);
 
@@ -1435,7 +1435,7 @@ public class frmUpdate extends javax.swing.JFrame {
                 try {
                     Tools.copyFileUsingStream(new File(icon32), new File(tmp + "/icon32.png"));
                 } catch (IOException ex) {
-                    Logger.getLogger(Dialog_create_new_group.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(DialogCreateNewGroup.class.getName()).log(Level.SEVERE, null, ex);
                 }
 
                 String xml = createEmptyInfoXML(tmp.getName());
@@ -1446,7 +1446,7 @@ public class frmUpdate extends javax.swing.JFrame {
 
                 Tools.copy(new File(FrameMain.elementPath + "/empty.vlogic"), new File(tmp.getAbsolutePath() + "/main.vlogic"));
 
-                Dialog_create_new_group frm = new Dialog_create_new_group(this, true, "edit", tmp.getAbsolutePath());
+                DialogCreateNewGroup frm = new DialogCreateNewGroup(this, true, "edit", tmp.getAbsolutePath());
                 frm.load(tmp.getAbsolutePath());
                 frm.setVisible(true);
 
@@ -1500,7 +1500,7 @@ public class frmUpdate extends javax.swing.JFrame {
                 // Tools.showMessage(tmp + "/icon32.png");
                 Tools.copyFileUsingStream(new File(icon32), new File(tmp + "/icon32.png"));
             } catch (IOException ex) {
-                Logger.getLogger(Dialog_create_new_group.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(DialogCreateNewGroup.class.getName()).log(Level.SEVERE, null, ex);
             }
 
             String xml = createEmptyInfoXML(tmp.getName());
@@ -1510,7 +1510,7 @@ public class frmUpdate extends javax.swing.JFrame {
             Tools.saveText(new File(tmp.getAbsolutePath() + "/project.myopenlab"), "");
 
             //Tools.copy(new File(FrameMain.elementPath + "/empty.vlogic"), new File(tmp.getAbsolutePath() + "/main.vlogic"));
-            Dialog_create_new_group frm = new Dialog_create_new_group(this, true, "edit", tmp.getAbsolutePath());
+            DialogCreateNewGroup frm = new DialogCreateNewGroup(this, true, "edit", tmp.getAbsolutePath());
             frm.load(tmp.getAbsolutePath());
             frm.setVisible(true);
 

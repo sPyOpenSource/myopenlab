@@ -68,7 +68,7 @@ public class DialogAddEditvariable extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/DialogAddEditvariable"); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/DialogAddEditvariable"); // NOI18N
         jLabel2.setText(bundle.getString("VARIABLENAME")); // NOI18N
 
         jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {

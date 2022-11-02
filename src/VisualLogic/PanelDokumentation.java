@@ -127,7 +127,7 @@ public class PanelDokumentation extends javax.swing.JPanel {
         jToolBar1.setFloatable(false);
         jToolBar1.setOpaque(false);
 
-        jButtonDE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/de.png"))); // NOI18N
+        jButtonDE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/de.png"))); // NOI18N
         jButtonDE.setMargin(new java.awt.Insets(3, 4, 3, 4));
         jButtonDE.setOpaque(false);
         jButtonDE.addActionListener(new java.awt.event.ActionListener() {
@@ -137,7 +137,7 @@ public class PanelDokumentation extends javax.swing.JPanel {
         });
         jToolBar1.add(jButtonDE);
 
-        jButtonEN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/us.png"))); // NOI18N
+        jButtonEN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/us.png"))); // NOI18N
         jButtonEN.setMargin(new java.awt.Insets(3, 4, 3, 4));
         jButtonEN.setOpaque(false);
         jButtonEN.addActionListener(new java.awt.event.ActionListener() {
@@ -147,7 +147,7 @@ public class PanelDokumentation extends javax.swing.JPanel {
         });
         jToolBar1.add(jButtonEN);
 
-        jButtonES.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/es.png"))); // NOI18N
+        jButtonES.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/es.png"))); // NOI18N
         jButtonES.setMargin(new java.awt.Insets(3, 4, 3, 4));
         jButtonES.setOpaque(false);
         jButtonES.addActionListener(new java.awt.event.ActionListener() {

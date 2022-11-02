@@ -45,8 +45,8 @@ public class OpenVariable {
     public static final int C_STRING_1D = 5;
     public static final int C_BOOLEAN_1D = 6;
     public static final int C_INTEGER_1D = 7;
-    public static final int C_DOUBLE_2D = 8;
-    public static final int C_STRING_2D = 9;
+    public static final int C_DOUBLE_2D  = 8;
+    public static final int C_STRING_2D  = 9;
     public static final int C_BOOLEAN_2D = 10;
     public static final int C_INTEGER_2D = 11;
 
