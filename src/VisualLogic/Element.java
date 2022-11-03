@@ -11,6 +11,7 @@ import Peditor.PropertyEditor;
 import SimpleFileSystem.FileSystemOutput;
 import VisualLogic.gui.SelectionPane;
 import VisualLogic.gui.SubDialog;
+import VisualLogic.variables.*;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -20,7 +21,6 @@ import java.awt.image.*;
 import java.io.*;
 import java.net.*;
 
-import VisualLogic.variables.*;
 import javax.swing.AbstractButton;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;

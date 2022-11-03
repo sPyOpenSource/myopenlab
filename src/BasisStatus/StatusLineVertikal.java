@@ -288,7 +288,7 @@ public class StatusLineVertikal extends Object implements StatusBasisIF
     public Element addNode()
     {
         Element element;
-        element=vmobject.AddDualElement("/CircuitElements/Node","bin", "Node", "", null);
+        element = vmobject.AddDualElement("/CircuitElements/Node","bin", "Node", "", null);
         
         return element;
     }

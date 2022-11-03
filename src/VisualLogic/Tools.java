@@ -22,9 +22,9 @@ import VisualLogic.gui.DialogSaveAsModul;
 import VisualLogic.gui.DialogWait;
 import VisualLogic.gui.FrameImageViewer;
 import de.myopenlab.update.frmUpdate;
+
 import java.awt.*;
 import java.util.Locale;
-import javax.swing.*;
 import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -33,12 +33,15 @@ import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.tools.JavaCompiler;
 import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.swing.*;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -358,11 +361,7 @@ public class Tools
         {
             Desktop.getDesktop().browse(new URI(strURL));
         }
-        catch (URISyntaxException ex)
-        {
-            showMessage(parent, ex.toString());
-        }
-        catch (IOException ex)
+        catch (URISyntaxException | IOException ex)
         {
             showMessage(parent, ex.toString());
         }
@@ -494,7 +493,7 @@ public class Tools
 
             input.close();
         }
-        catch (Exception ex)
+        catch (IOException ex)
         {
             Tools.showMessage(ex.toString());
         }
@@ -514,7 +513,7 @@ public class Tools
 
             out.close();
         }
-        catch (Exception ex)
+        catch (IOException ex)
         {
             Tools.showMessage(ex.toString());
         }
@@ -576,7 +575,7 @@ public class Tools
 
             input.close();
         }
-        catch (Exception ex)
+        catch (IOException ex)
         {
             Tools.showMessage(ex.toString());
         }
@@ -589,8 +588,8 @@ public class Tools
         {
             BufferedWriter out = new BufferedWriter(new FileWriter(file.getAbsolutePath() + File.separator + "definition.def"));
 
-            String value = "";
-            String full = "";
+            String value;
+            String full;
 
             if (definition_def.isDirectory)
             {
@@ -650,7 +649,7 @@ public class Tools
             out.write("SHOWINNERBORDER = " + value);
             out.close();
         }
-        catch (Exception ex)
+        catch (IOException ex)
         {
             Tools.showMessage(ex.toString());
         }
@@ -686,36 +685,15 @@ public class Tools
                     }
                     else if (elementClass.equalsIgnoreCase("RESIZESYNCHRON"))
                     {
-                        if (elementName.equalsIgnoreCase("true"))
-                        {
-                            tmp.resizeSynchron = true;
-                        }
-                        else
-                        {
-                            tmp.resizeSynchron = false;
-                        }
+                        tmp.resizeSynchron = elementName.equalsIgnoreCase("true");
                     }
                     else if (elementClass.equalsIgnoreCase("SHOWINNERBORDER"))
                     {
-                        if (elementName.equalsIgnoreCase("true"))
-                        {
-                            tmp.showInnerborder = true;
-                        }
-                        else
-                        {
-                            tmp.showInnerborder = false;
-                        }
+                        tmp.showInnerborder = elementName.equalsIgnoreCase("true");
                     }
                     else if (elementClass.equalsIgnoreCase("isdirectory"))
                     {
-                        if (elementName.equalsIgnoreCase("true"))
-                        {
-                            tmp.isDirectory = true;
-                        }
-                        else
-                        {
-                            tmp.isDirectory = false;
-                        }
+                        tmp.isDirectory = elementName.equalsIgnoreCase("true");
                     }
                     else if (elementClass.equalsIgnoreCase("vm"))
                     {
@@ -786,7 +764,7 @@ public class Tools
 
             input.close();
         }
-        catch (Exception ex)
+        catch (IOException ex)
         {
         //Tools.showMessage(ex.toString());
         }
@@ -835,25 +813,11 @@ public class Tools
                     }
                     else if (elementClass.equalsIgnoreCase("SHOWINNERBORDER"))
                     {
-                        if (elementName.equalsIgnoreCase("true"))
-                        {
-                            tmp.showInnerborder = true;
-                        }
-                        else
-                        {
-                            tmp.showInnerborder = false;
-                        }
+                        tmp.showInnerborder = elementName.equalsIgnoreCase("true");
                     }
                     else if (elementClass.equalsIgnoreCase("isdirectory"))
                     {
-                        if (elementName.equalsIgnoreCase("true"))
-                        {
-                            tmp.isDirectory = true;
-                        }
-                        else
-                        {
-                            tmp.isDirectory = false;
-                        }
+                        tmp.isDirectory = elementName.equalsIgnoreCase("true");
                     }
                     else if (elementClass.equalsIgnoreCase("vm"))
                     {
@@ -921,7 +885,6 @@ public class Tools
                 tmp.captionInternationalized = tmp.captionES;
             }
 
-            
         }
         catch (Exception ex)
         {
@@ -930,7 +893,6 @@ public class Tools
         return tmp;
     }
     
-
     // Liefert eine zahl > -1 wenn erfolgreich fuer den PolyLine Index
     public static int isPointInDrahtPoint(Draht draht, int x, int y)
     {
@@ -968,15 +930,11 @@ public class Tools
         if (path.exists())
         {
             File[] files = path.listFiles();
-            for (int i = 0; i < files.length; i++)
-            {
-                if (files[i].isDirectory())
-                {
-                    deleteDirectory(files[i]);
-                }
-                else
-                {
-                    files[i].delete();
+            for (File file : files) {
+                if (file.isDirectory()) {
+                    deleteDirectory(file);
+                } else {
+                    file.delete();
                 }
             }
         }
@@ -1102,7 +1060,7 @@ public class Tools
                     }
                     catch (IOException e)
                     {
-                        ;
+                        
                     }
                 }
                 if (destination != null)
@@ -1113,7 +1071,7 @@ public class Tools
                     }
                     catch (IOException e)
                     {
-                        ;
+                        
                     }
                 }
             }
@@ -1123,13 +1081,10 @@ public class Tools
             String targetfile, target, targetdest;
             String[] files = src.list();
 
-            for (int i = 0; i < files.length; i++)
-            {
-                targetfile = files[i];
+            for (String file : files) {
+                targetfile = file;
                 target = src + File.separator + targetfile;
                 targetdest = dest + File.separator + targetfile;
-
-
                 if ((new File(target)).isDirectory())
                 {
                     copy(new File(target), new File(targetdest));
@@ -1163,7 +1118,7 @@ public class Tools
                             }
                             catch (IOException e)
                             {
-                                ;
+                                
                             }
                         }
                         if (destination != null)
@@ -1174,7 +1129,7 @@ public class Tools
                             }
                             catch (IOException e)
                             {
-                                ;
+                                
                             }
                         }
                     }
@@ -1419,7 +1374,7 @@ public class Tools
             node.getPin(3).dataType = pinSrc.dataType;
 
 
-            copyPoints(leftPoly, leftDraht);
+            copyPoints(leftPoly,  leftDraht);
             copyPoints(rightPoly, rightDraht);
 
             vmobject.owner.loading = false;
@@ -1552,7 +1507,7 @@ public class Tools
 
             out.close();
         }
-        catch (Exception ex)
+        catch (IOException ex)
         {
             Tools.showMessage(ex.toString());
         }
@@ -1576,7 +1531,7 @@ public class Tools
                 }
                 input.close();
             }
-            catch (Exception ex)
+            catch (IOException ex)
             {
                 Tools.showMessage(ex.toString());
             }
@@ -1603,10 +1558,9 @@ public class Tools
                 }
             }
 
-
             out.close();
         }
-        catch (Exception ex)
+        catch (IOException ex)
         {
             Tools.showMessage(ex.toString());
         }
@@ -1615,7 +1569,7 @@ public class Tools
 
     public static ArrayList<String> loadProjectsFile(File file)
     {
-        ArrayList<String> liste = new ArrayList<String>();
+        ArrayList<String> liste = new ArrayList<>();
 
         String str;
 
@@ -1629,7 +1583,7 @@ public class Tools
             }
             input.close();
         }
-        catch (Exception ex)
+        catch (IOException ex)
         {
             Tools.showMessage(ex.toString());
         }
@@ -1689,19 +1643,13 @@ public class Tools
                 }
 
                 return caption;
-            } catch (ParserConfigurationException ex) {
-                Logger.getLogger(frmUpdate.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (SAXException ex) {
-                Logger.getLogger(frmUpdate.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (IOException ex) {
+            } catch (ParserConfigurationException | SAXException | IOException ex) {
                 Logger.getLogger(frmUpdate.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
 
         return "";
     }
-    
-    
     
     public static void copyFileUsingStream(File source, File dest) throws IOException {
         InputStream is = null;
