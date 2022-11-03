@@ -17,9 +17,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 package BasisStatus;
+
 import java.awt.event.*;
 import java.awt.*;
 import VisualLogic.*;
+import VisualLogic.gui.SelectionPane;
 
 public class StatusMoveElements extends Object implements StatusBasisIF
 {

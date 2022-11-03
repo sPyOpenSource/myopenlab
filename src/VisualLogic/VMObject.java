@@ -49,6 +49,7 @@ import java.awt.print.PrinterException;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import Peditor.BasisProperty;
+import VisualLogic.gui.DialogWait;
 import VisualLogic.variables.*;
 import VisualLogic.variables.VSString;
 import SimpleFileSystem.FileSystemInput;

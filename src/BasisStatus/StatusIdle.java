@@ -18,11 +18,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 package BasisStatus;
 
 import VisualLogic.*;
-import VisualLogic.Element;
+import VisualLogic.gui.*;
 import java.awt.event.*;
 import java.awt.*;
-import javax.swing.*;
 import java.io.*;
+
+import javax.swing.*;
 import javax.swing.event.PopupMenuEvent;
 import javax.swing.event.PopupMenuListener;
 

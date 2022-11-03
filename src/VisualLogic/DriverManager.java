@@ -20,6 +20,7 @@ package VisualLogic;
 import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
+import VisualLogic.gui.FrameMain;
 
 class MyOpenLabDriver {
 

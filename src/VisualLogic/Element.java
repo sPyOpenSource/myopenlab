@@ -9,6 +9,8 @@ import BasisStatus.StatusEditPath;
 import Peditor.BasisProperty;
 import Peditor.PropertyEditor;
 import SimpleFileSystem.FileSystemOutput;
+import VisualLogic.gui.SelectionPane;
+import VisualLogic.gui.SubDialog;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -3337,7 +3339,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     }
 
     // with that Method you can handle your Keys
-    protected void processKeyEvent(KeyEvent ke) {
+    public void processKeyEvent(KeyEvent ke) {
         owner.processKeyEvent(ke);
         //super.processKeyEvent(ke);
     }

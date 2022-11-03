@@ -20,11 +20,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 package VisualLogic;
 
 import java.io.*;
+
 /**
  *
  * @author Homer
  */
-class SimpleFilter  extends javax.swing.filechooser.FileFilter 
+public class SimpleFilter extends javax.swing.filechooser.FileFilter 
  { 
    private String m_description = null; 
    private String m_extension = null; 

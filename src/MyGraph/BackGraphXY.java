@@ -46,14 +46,13 @@ public class BackGraphXY extends GraphBackground
     
     public Integer AustoscaleInterval= 600;
     
-    
     public void setAutoScaleInterval(Integer Interval){
      this.AustoscaleInterval=Interval;
     }
+    
     public Integer getAutosCaleInterval(){
       return this.AustoscaleInterval;  
     }
-    
     
     public BackGraphXY(MyGraphX owner)
     {
@@ -69,7 +68,6 @@ public class BackGraphXY extends GraphBackground
         });
         
         setCursor(Cursor.getPredefinedCursor(Cursor.CROSSHAIR_CURSOR));
-        
     }
     
     public void formMouseMoved(java.awt.event.MouseEvent evt)
@@ -85,7 +83,6 @@ public class BackGraphXY extends GraphBackground
        int cc=fm.stringWidth(jLabel1.getText());
        jLabel1.setSize (cc ,fm.getHeight());                 
     }
-    
     
     public void init()
     {
@@ -132,7 +129,6 @@ public class BackGraphXY extends GraphBackground
         
     }
     
-    
     private void scaleY()
     {
         
@@ -172,7 +168,6 @@ public class BackGraphXY extends GraphBackground
         result.y=(int)(((getHeight()/stepYY)-y+minY)*(stepYY));
     }    
     
-
     protected void paintComponent(Graphics g)
     {
         super.paintComponent(g);  

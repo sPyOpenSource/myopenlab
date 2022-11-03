@@ -21,9 +21,6 @@ import VisualLogic.*;
 import java.awt.event.*;
 import java.awt.*;
 
-
-
-
 public class StatusEditPath extends Object implements StatusBasisIF
 {
    
@@ -34,14 +31,13 @@ public class StatusEditPath extends Object implements StatusBasisIF
     {
         this.element=element;
         
-        if (element.points.size()==0) 
+        if (element.points.isEmpty()) 
         {
             status=new StatusEditPathAddMode(vmobject,element);            
         }else
         {
             status=new StatusEditPathEditMode(vmobject,element);
         }
-
     }
     
     public void elementPinMouseMoved(MouseEvent e, int elementID,int pin)
@@ -58,8 +54,6 @@ public class StatusEditPath extends Object implements StatusBasisIF
         if (status!=null) status.mouseMoved(e);
     }
     
-    
-    
     public void mousePressed(MouseEvent e)
     {
         if (status!=null) status.mousePressed(e);
@@ -70,13 +64,10 @@ public class StatusEditPath extends Object implements StatusBasisIF
      if (status!=null) status.mouseReleased(e);
     }
     
-    
-    
     public void draw(Graphics g)
     {
         if (status!=null) status.draw(g);
     }
-    
     
     public void elementPinMouseReleased(MouseEvent e, int elementID,int pin)
     {}
@@ -95,7 +86,6 @@ public class StatusEditPath extends Object implements StatusBasisIF
     public void mouseExited(MouseEvent e)
     {}
     
-    
     public void elementMouseEntered(MouseEvent e)
     {
         
@@ -106,6 +96,4 @@ public class StatusEditPath extends Object implements StatusBasisIF
         
     }
     
-    
 }
-

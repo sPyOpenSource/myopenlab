@@ -1,8 +1,8 @@
 package CreateNewGroup;
 
 import VisualLogic.DFProperties;
-import VisualLogic.DialogSaveAsModul;
-import VisualLogic.FrameMain;
+import VisualLogic.gui.DialogSaveAsModul;
+import VisualLogic.gui.FrameMain;
 import VisualLogic.Tools;
 
 import java.awt.BorderLayout;

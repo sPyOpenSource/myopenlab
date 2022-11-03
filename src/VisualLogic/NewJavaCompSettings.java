@@ -18,12 +18,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 package VisualLogic;
 
-
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public  class NewJavaCompSettings implements Serializable
+public class NewJavaCompSettings implements Serializable
 {
+    
     public String circuitPanelName;
     public String frontPanelName;
     
@@ -43,29 +43,5 @@ public  class NewJavaCompSettings implements Serializable
     public ArrayList<PinsSettings> pins= new ArrayList<PinsSettings>();
     
     public ArrayList<ElementPropertyX> properties= new ArrayList<ElementPropertyX>();
-    
-}
-class PinsSettingsItem implements Serializable
-{
-    public String name;
-    public String dt; // zb: C_INTEGER
-    public int intDT; // zb: 0,1,2,3 aldi DT!
-    public String io="";
-}
 
-class ElementPropertyX implements Serializable
-{
-    public String name;
-    public String dt; // zb: C_INTEGER
-    public int intDT; // zb: 0,1,2,3 aldi DT!
-    public int min;
-    public int max;    
-}
-
-class PinsSettings implements Serializable
-{
-    public boolean pinsVisible=true;
-    public int pinsCount=0;
-    
-    ArrayList<PinsSettingsItem> items = new ArrayList<>();
 }

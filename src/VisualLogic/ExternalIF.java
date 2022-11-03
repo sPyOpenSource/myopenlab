@@ -19,14 +19,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 package VisualLogic;
 
 import VisualLogic.variables.*;
-
 import java.awt.*;
 import java.awt.geom.GeneralPath;
 import java.util.ArrayList;
+
 import javax.swing.AbstractButton;
 import javax.swing.JFrame;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+
 /**
  *
  * @author Carmelo Salafia cswi@gmx.de

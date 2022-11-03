@@ -19,6 +19,7 @@ package BasisStatus;
 
 import VisualLogic.*;
 import VisualLogic.Element;
+import VisualLogic.gui.SelectionPane;
 import java.awt.event.*;
 import java.awt.*;
 

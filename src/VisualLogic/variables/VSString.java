@@ -74,26 +74,22 @@ public class VSString extends VSObject
     public boolean equals(VSObject obj)
     {
         VSString temp =(VSString)obj;
-        if (temp.value.equals(value))  return true;
-        else return false;
+        return temp.value.equals(value);
     }
     
     @Override
     public boolean isBigger(VSObject obj)
     {
         VSString temp =(VSString)obj;
-        if (value.length()>temp.value.length())  return true;
-        else return false;
+        return value.length() > temp.value.length();
     }
     
     @Override
     public boolean isSmaller(VSObject obj)
     {
         VSString temp =(VSString)obj;
-        if (value.length()<temp.value.length())  return true;
-        else return false;
+        return value.length() < temp.value.length();
     }
-    
     
     @Override
     public void loadFromStream(java.io.FileInputStream fis)
@@ -104,7 +100,7 @@ public class VSString extends VSObject
             
             value=dis.readUTF();
         }
-        catch(Exception ex)
+        catch(IOException ex)
         {
             
         }

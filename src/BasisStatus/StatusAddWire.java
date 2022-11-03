@@ -15,6 +15,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+
 package BasisStatus;
 
 import VisualLogic.*;
@@ -68,19 +69,13 @@ public class StatusAddWire extends Object implements StatusBasisIF
         }
     }
     
-
-    
-    
     public void elementPinMouseMoved(MouseEvent e, int elementID,int pin)
     {
         Element element= (Element)vmobject.getObjectWithID(elementID); 
         //e.translatePoint(e.getX()+element.getX(),e.getY()+element.getY());
         if (status!=null) status.mouseMoved(e); 
     }
-    
-
-    
-        
+      
     public void mouseMoved(MouseEvent e)
     {    
        if (vmobject==null)  return;
@@ -96,8 +91,7 @@ public class StatusAddWire extends Object implements StatusBasisIF
        int y = p.y;
        Element element=vmobject.getNearstElementInMouse(x,y,20);
        if (element instanceof Element && vmobject==vmobject.owner.getCircuitBasis())
-       {           
-                  
+       {       
          element.inDenVordergrund();
          lastOverElement=element;
        } 
@@ -112,14 +106,11 @@ public class StatusAddWire extends Object implements StatusBasisIF
     
     public void mouseReleased(MouseEvent e) { }
     
-
-    
     public void draw(Graphics g)
     {                
         if (status!=null) status.draw(g);
     }
     
-
     public void elementPinMouseReleased(MouseEvent e, int elementID,int pin){}
     public void elementPinMousePressed(MouseEvent e, int elementID,int pin) 
     {
@@ -143,7 +134,5 @@ public class StatusAddWire extends Object implements StatusBasisIF
     {
 
     }
-    
 
 }
- 

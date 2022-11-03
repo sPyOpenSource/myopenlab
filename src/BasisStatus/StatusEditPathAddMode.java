@@ -46,7 +46,6 @@ public class StatusEditPathAddMode implements StatusBasisIF
     public boolean addPoint=false;
     private int posX,posY;
 
-        
     public int aktuellerPunkt=-1;
     
     public int selectedParam=-1; // 0 == Punkt, 1=P1, 2=P2;
@@ -110,10 +109,7 @@ public class StatusEditPathAddMode implements StatusBasisIF
         popupmenu.add(jmiOpenClosePath);
 
     }
-    
 
-    
-    
     public void elementPinMouseMoved(MouseEvent e, int elementID,int pin)
     {        
     }
@@ -172,10 +168,6 @@ public class StatusEditPathAddMode implements StatusBasisIF
             return;
         }
     }
-    
-    
-
-    
     
     private int getPoint(int x, int y)
     {
@@ -242,8 +234,6 @@ public class StatusEditPathAddMode implements StatusBasisIF
         }
         int x=e.getX();
         int y=e.getY();
-
-        
 
         if (e.getButton()==e.BUTTON3)
         {
@@ -313,8 +303,6 @@ public class StatusEditPathAddMode implements StatusBasisIF
        
     }
     
-    
-    
     public void draw(Graphics g)
     {
         if (status!=null) 
@@ -323,7 +311,6 @@ public class StatusEditPathAddMode implements StatusBasisIF
             return;
         }
     }
-    
     
     public void elementPinMouseReleased(MouseEvent e, int elementID,int pin)
     {}
@@ -357,6 +344,4 @@ public class StatusEditPathAddMode implements StatusBasisIF
         
     }
     
-    
 }
-

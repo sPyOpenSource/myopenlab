@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 package VisualLogic;
+
 import java.beans.XMLEncoder;
 import java.beans.XMLDecoder;
 import java.io.*;
-
-
 
 public class XMLSerializer {
     public static void write(Object f, String filename) throws Exception{

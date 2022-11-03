@@ -31,6 +31,7 @@ import java.awt.geom.Rectangle2D;
 import java.awt.image.ColorModel;
 import java.awt.image.Raster;
 import java.awt.image.WritableRaster;
+
 public class RoundGradientPaint implements Paint
 {
     protected Point2D point;

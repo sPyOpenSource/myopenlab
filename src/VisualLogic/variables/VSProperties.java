@@ -18,9 +18,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 package VisualLogic.variables;
 
-import java.io.IOException;
-
-
 public class VSProperties extends VSObject
 {
         

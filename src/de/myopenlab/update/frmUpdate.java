@@ -6,8 +6,8 @@
 package de.myopenlab.update;
 
 import VisualLogic.DFProperties;
-import VisualLogic.DialogSaveAsModul;
-import VisualLogic.FrameMain;
+import VisualLogic.gui.DialogSaveAsModul;
+import VisualLogic.gui.FrameMain;
 import VisualLogic.Tools;
 import static VisualLogic.Tools.settings;
 import CreateNewGroup.DialogCreateNewGroup;
@@ -60,7 +60,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 import projectfolder.MyNode;
-import ziputils.ZipFiles;
+import tools.ZipFiles;
 
 /**
  *
@@ -68,7 +68,7 @@ import ziputils.ZipFiles;
  */
 public class frmUpdate extends javax.swing.JFrame {
 
-    public VisualLogic.FrameMain owner;
+    public VisualLogic.gui.FrameMain owner;
     public static String myopenlabpath = "";
     private static String proxyHost = "";
     private static String proxyPort = "";

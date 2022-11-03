@@ -339,9 +339,6 @@ public class JPin extends VisualObject implements MouseListener, MouseMotionList
                }
            }
           
-
     }
 
-
 }
-

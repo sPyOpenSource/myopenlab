@@ -18,6 +18,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 package VisualLogic;
 
+import VisualLogic.gui.DialogSaveAsModul;
+import VisualLogic.gui.DialogWait;
+import VisualLogic.gui.FrameImageViewer;
 import de.myopenlab.update.frmUpdate;
 import java.awt.*;
 import java.util.Locale;

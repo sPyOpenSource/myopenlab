@@ -15,10 +15,11 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+
 package BasisStatus;
+
 import java.awt.event.*;
 import java.awt.*;
-import VisualLogic.*;
 
 public interface StatusBasisIF 
 {    
@@ -37,7 +38,6 @@ public interface StatusBasisIF
     public abstract void elementPinMouseReleased(MouseEvent e, int elementID,int pin);
     public abstract void elementPinMousePressed(MouseEvent e, int elementID,int pin);
     public abstract void elementPinMouseMoved(MouseEvent e, int elementID,int pin);
-    
     
     public abstract void draw(Graphics g);
 }

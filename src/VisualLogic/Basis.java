@@ -34,6 +34,7 @@ import VisualLogic.variables.VSImage;
 import VisualLogic.variables.VSInteger;
 import VisualLogic.variables.VSObject;
 import VisualLogic.variables.VSString;
+import VisualLogic.gui.*;
 
 import java.security.NoSuchAlgorithmException;
 import java.util.*;
@@ -881,7 +882,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         chooser.setDialogTitle(java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("Speichern_als..."));
         chooser.setDialogType(JFileChooser.SAVE_DIALOG);
 
-        vlogicFilter filter = new vlogicFilter();
+        VlogicFilter filter = new VlogicFilter();
 
         chooser.setFileFilter(filter);
 

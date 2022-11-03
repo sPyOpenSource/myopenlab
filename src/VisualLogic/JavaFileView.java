@@ -23,8 +23,6 @@ import javax.swing.Icon;
 import javax.swing.filechooser.FileSystemView;
 import javax.swing.filechooser.FileView;
 
-
-
 public class JavaFileView extends FileView
 {
     

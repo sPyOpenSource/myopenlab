@@ -18,7 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 package Peditor;
 
 import CustomColorPicker.CustomColorPicker;
-import VisualLogic.DialogFontChooser;
+import VisualLogic.gui.DialogFontChooser;
 import VisualLogic.Element;
 import VisualLogic.ExtensionFileFilter;
 import VisualLogic.VMObject;

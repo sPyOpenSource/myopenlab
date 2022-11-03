@@ -8,6 +8,7 @@
 **
 ** Author: David Kebo Houngninou
 ** -------------------------------------------------------------------------*/
+
 package MyParser;
 
 import java.io.BufferedReader;
@@ -39,7 +40,7 @@ public class VerilogParser{
         File file = new File("/home/spy/Source/Verilog/HelloWorld/hello.v");
         try (FileReader in = new FileReader(file);
             BufferedReader reader = new BufferedReader(new BufferedReader(in))) {
-            String line = null;
+            String line;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
             }
@@ -64,7 +65,7 @@ public class VerilogParser{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    class wire   {
+    class Wire   {
         int id;		/*Wire ID number*/
         String name;	/*Name of this wire*/
         String type; 	/*Type of gate driving this wire*/
@@ -75,15 +76,15 @@ public class VerilogParser{
         boolean primary;		/*Primary input flag*/
     };
 
-    class node {
+    class Node {
         String type;	/*input, output, wire, regs*/
         String name;	/*node name*/
         int id;	/*node number*/
     };
 
-    class circuit  {
-        wire[] wires;					/*Array of all wires */
-        node[] nodes;					/*Array of nodes*/
+    class Circuit  {
+        Wire[] wires;					/*Array of all wires */
+        Node[] nodes;					/*Array of nodes*/
         String name;					/*Name of the circuit. */
         int inputcount, outputcount;                    /*Count of primary inputs and primary outputs. */
         int gatecount, wirecount, nodecount;		/*Number of wires, (gates)*/
@@ -92,7 +93,7 @@ public class VerilogParser{
         int size, id;		        		/*Circuit size and identifier*/
     };
 
-    class module  {
+    class Module  {
         String name;					/*Name of the module*/
         int inputcount, outputcount;	   		/*Count of primary inputs and primary outputs. */
         int wirecount, regcount, gatecount;	        /*Count of wires ,regs, gates*/
@@ -113,7 +114,7 @@ public class VerilogParser{
     {
         int i;
         for (i = 0; i < RESERVEDNUM; i++)
-            if (strcmp(word, keywords.reserved_word[i])==0 || strstr(word, "endmodule")!= null)
+            if (strcmp(word, Keywords.reserved_word[i])==0 || strstr(word, "endmodule")!= null)
                 return true;
         return false;
     }
@@ -126,8 +127,8 @@ public class VerilogParser{
     boolean gate (String word)
     {
         int i;
-        for (i = 0; i < keywords.gate_name.length; i++)
-            if (strcmp(word, keywords.gate_name[i])==0)
+        for (i = 0; i < Keywords.gate_name.length; i++)
+            if (strcmp(word, Keywords.gate_name[i])==0)
                 return true;
         return false;
     }
@@ -137,7 +138,7 @@ public class VerilogParser{
      * @param the string to check
      * @return whether the string is a an ouput or not
      */
-    boolean isFinalOutput (wire w, circuit c)
+    boolean isFinalOutput (Wire w, Circuit c)
     {
         int i;
         for(i = 0; i < c.outputcount; i++)
@@ -195,7 +196,7 @@ public class VerilogParser{
      * Prints the summary of a module - Statistical information
      * @param the module object
      */
-    void print_module_summary (module m)
+    void print_module_summary (Module m)
     {
         int i;
         System.out.print("\n************** Module %s statistical results *************\n");//, m.name);
@@ -225,7 +226,7 @@ public class VerilogParser{
      * Prints the summary of a circuit - Statistical information
      * @param the circuit object
      */
-    void print_circuit_summary (circuit c)
+    void print_circuit_summary (Circuit c)
     {
         int i,j,row,col;
         System.out.print("\n************** Circuit %s statistical results *************\n");//, c.name);
@@ -267,7 +268,7 @@ public class VerilogParser{
      * @param the signal name, the circuit's name
      * The id of the wire
      */
-    int getID (String name, circuit c)
+    int getID (String name, Circuit c)
     {
         int i;
         for(i = 0; i < c.size; i++) {
@@ -282,7 +283,7 @@ public class VerilogParser{
      * Get a wire by id
      * @param the signal name, the circuit's name
      */
-    wire getWire (int id, circuit c)
+    Wire getWire (int id, Circuit c)
     {
         int i = 0;
         while (i < c.wirecount && c.wires[i] != null) {
@@ -297,7 +298,7 @@ public class VerilogParser{
      * Get a wire by name
      * @param the signal name, the circuit's name
      */
-    wire getWireByName (String name, circuit c)
+    Wire getWireByName (String name, Circuit c)
     {
         int i = 0;
         while (c.wires[i] != null) {
@@ -312,7 +313,7 @@ public class VerilogParser{
      * Set values of a node
      * @param the node object, the type of node, the name of the node, the node id
      */
-    void setNode (node n, String type, String name, int id)
+    void setNode (Node n, String type, String name, int id)
     {
         n.type = type;
         n.name = name;
@@ -323,7 +324,7 @@ public class VerilogParser{
      * Create a wire
      * @param the circuit object, the wire object, the wire type, the wire name
      */
-    void build_wire (circuit c, wire w, String type, String name)
+    void build_wire (Circuit c, Wire w, String type, String name)
     {
         int i;
         w.id = getID (name, c);   /*Wire ID*/
@@ -346,7 +347,7 @@ public class VerilogParser{
      * @param the circuit object, the wire name
      * @return whether the wire is already created or not
      */
-    boolean defined (circuit c, String name)
+    boolean defined (Circuit c, String name)
     {
         int i = 0;
         while (c.wires[i] != null) {

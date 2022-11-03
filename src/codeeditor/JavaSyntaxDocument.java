@@ -15,8 +15,8 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-package codeeditor;
 
+package codeeditor;
 
 import java.awt.*;
 import java.util.*;
@@ -387,7 +387,7 @@ class JavaSyntaxDocument extends DefaultStyledDocument{
  *
  */
     protected String addMatchingBrace(int offset) throws BadLocationException{
-        StringBuffer whiteSpace = new StringBuffer();
+        StringBuilder whiteSpace = new StringBuilder();
         int line = rootElement.getElementIndex( offset );
         int i = rootElement.getElement(line).getStartOffset();
         while (true){

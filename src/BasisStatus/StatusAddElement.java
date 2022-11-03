@@ -12,10 +12,12 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 package BasisStatus;
 
 import java.awt.event.*;
 import VisualLogic.*;
+import VisualLogic.gui.*;
 import java.awt.*;
 
 public class StatusAddElement extends Object implements StatusBasisIF {
@@ -113,8 +115,6 @@ public class StatusAddElement extends Object implements StatusBasisIF {
                 draht1.addPoint(0, 0);
             }
         }
-
-
 
     /*leftDraht = vmobject.addDrahtIntoCanvas(draht.getSourceElementID(), draht.getSourcePin(), node.getID(), 1);
     rightDraht = vmobject.addDrahtIntoCanvas(node.getID(), 3, draht.getDestElementID(), draht.getDestPin());
@@ -247,7 +247,6 @@ public class StatusAddElement extends Object implements StatusBasisIF {
         return null;
     }    
     
-    
     public void mouseMoved(MouseEvent e)
     {
         try
@@ -301,7 +300,6 @@ public class StatusAddElement extends Object implements StatusBasisIF {
             vmobject.owner.showErrorMessage(ex.toString());
             vmobject.setModusIdle();
         }
-
 
     }
 

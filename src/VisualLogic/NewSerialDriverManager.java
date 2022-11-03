@@ -17,6 +17,8 @@
 package VisualLogic;
 
 import VisualLogic.variables.VSserialPort;
+import VisualLogic.gui.FrameMain;
+
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
