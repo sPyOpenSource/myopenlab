@@ -18,7 +18,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 package VisualLogic;
 
-import VisualLogic.gui.DialogSaveAsModul;
 import VisualLogic.gui.DialogWait;
 import VisualLogic.gui.FrameImageViewer;
 import de.myopenlab.update.frmUpdate;
@@ -53,7 +52,6 @@ import org.xml.sax.SAXException;
  */
 public class Tools
 {
-
     public static int appResult = 0;
     public static DriverManager driverManager;
     public static DialogWait dialogWait;
@@ -66,9 +64,7 @@ public class Tools
     }
 
     public static String bereinigeDateiname(String name) {
-        
         return name.replaceAll("[^A-Za-z0-9+-]", "_");
-        
     }
     
     public static String readFile(String filename) {
@@ -82,13 +78,13 @@ public class Tools
             content = new String(chars);
             reader.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            Logger.getLogger(Tools.class.getName()).log(Level.SEVERE, null, e);
         } finally {
             if (reader != null) {
                 try {
                     reader.close();
                 } catch (IOException ex) {
-                    Logger.getLogger(DialogSaveAsModul.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Tools.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
         }
@@ -210,7 +206,7 @@ public class Tools
         }
         catch (IOException ex)
         {
-            ex.printStackTrace();
+            Logger.getLogger(Tools.class.getName()).log(Level.SEVERE, null, ex);
         }
         return false;
 
@@ -257,8 +253,8 @@ public class Tools
     {
         if (children != null)
         {
-            for (String children1 : children) {
-                if (children1.equalsIgnoreCase("project.myopenlab")) {
+            for (String child : children) {
+                if (child.equalsIgnoreCase("project.myopenlab")) {
                     return true;
                 }
             }
@@ -298,13 +294,13 @@ public class Tools
             }
             catch (IOException ex)
             {
-                ex.printStackTrace();
+                Logger.getLogger(Tools.class.getName()).log(Level.SEVERE, null, ex);
             }
 
         }
         catch (FileNotFoundException ex)
         {
-            ex.printStackTrace();
+            Logger.getLogger(Tools.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         return result;
@@ -389,7 +385,6 @@ public class Tools
         FrameImageViewer frm = new FrameImageViewer(file);
         frm.setIconImage(parent.getIconImage());
         frm.setVisible(true);
-
     }
 
     /* public static void openFile(JFrame parent,File file) {
@@ -802,14 +797,7 @@ public class Tools
                     }
                     else if (elementClass.equalsIgnoreCase("RESIZESYNCHRON"))
                     {
-                        if (elementName.equalsIgnoreCase("true"))
-                        {
-                            tmp.resizeSynchron = true;
-                        }
-                        else
-                        {
-                            tmp.resizeSynchron = false;
-                        }
+                        tmp.resizeSynchron = elementName.equalsIgnoreCase("true");
                     }
                     else if (elementClass.equalsIgnoreCase("SHOWINNERBORDER"))
                     {
@@ -1459,8 +1447,6 @@ public class Tools
         vmobject.owner.loading = false;
 
         vmobject.owner.saveForUndoRedo();
-
-
     }
 
     public static Polygon copyPolygon(Polygon source, Point startPoint, Point endPoint)

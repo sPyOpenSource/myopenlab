@@ -3,6 +3,7 @@
  *
  * Created on 7. Maerz 2005, 15:39
  */
+
 package VisualLogic;
 
 import BasisStatus.StatusEditPath;
@@ -144,6 +145,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
         return path;
     }
+    
     public double zoomX = 1.0;
     public double zoomY = 1.0;
 
