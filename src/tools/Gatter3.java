@@ -24,7 +24,6 @@ package tools;
 import VisualLogic.*;
 import VisualLogic.variables.*;
 import java.awt.*;
-import tools.*;
 
 public class Gatter3 extends JVSMain
 {

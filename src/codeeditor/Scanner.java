@@ -51,7 +51,7 @@ public class Scanner
      */
     public boolean isMultiline()
     {
-      return id==TOKEN_COMMENT_ML || id==TOKEN_STRING || id==TOKEN_QUOTED_ID;
+      return id == TOKEN_COMMENT_ML || id == TOKEN_STRING || id == TOKEN_QUOTED_ID;
     }
   }
 
@@ -100,7 +100,7 @@ public class Scanner
    */
   private boolean isStateActive(int state)
   {
-    return state>=0 && state<=5;
+    return state >= 0 && state <= 5;
   }
 
   /**
@@ -110,8 +110,9 @@ public class Scanner
   public void setKeywords(String[] keywords)
   {
     keywordHashtable = new Hashtable(keywords.length);
-    for (int i=0;i<keywords.length;i++)
-      keywordHashtable.put(keywords[i],True);
+      for (String keyword : keywords) {
+          keywordHashtable.put(keyword, True);
+      }
   }
 
   
@@ -128,7 +129,7 @@ public class Scanner
    */
   public boolean eot()
   {
-    return this.pos==this.textLength;
+    return this.pos == this.textLength;
   }
 
   /**
@@ -136,13 +137,13 @@ public class Scanner
    */
   public boolean eoln()
   {
-    return str.charAt(pos)=='\n';
+    return str.charAt(pos) == '\n';
   }
 
   /**
    * Sets the interval to be scanned (from <code>start</code> to <code>end</code> including).
    */
-  public void setInterval(int start,int end)
+  public void setInterval(int start, int end)
   {
     this.pos = start;
     this.endPos = end;
@@ -168,7 +169,7 @@ public class Scanner
    * @param tokenId     The token currently being scanned.
    * @param tokenStart  Offset of the first char of that token.
    */
-  public void setState(int tokenId,int tokenStart)
+  public void setState(int tokenId, int tokenStart)
   {
     this.state = tokenId;
     this.token.id = isStateActive(tokenId) ? tokenId:TOKEN_NONE;
@@ -214,7 +215,6 @@ public class Scanner
 
   // the list of built-in functions:
   
-
   // current token being scanned:
   private Token token = new Token();
 
@@ -231,7 +231,7 @@ public class Scanner
   private void next()
   {
     pos++;
-    lookahead = (pos==textLength) ? '\0':str.charAt(pos);
+    lookahead = (pos == textLength) ? '\0' : str.charAt(pos);
   }
 
   /**
@@ -243,11 +243,11 @@ public class Scanner
    */
   public boolean nextToken()
   {
-    if (pos>=textLength) return false;
+    if (pos >= textLength) return false;
 
     lookahead = str.charAt(pos);
 
-    if (pos>=endPos && (lookahead=='\r' || lookahead=='\n')) return false;
+    if (pos >= endPos && (lookahead == '\r' || lookahead == '\n')) return false;
 
     if (!initState)
     {
@@ -258,9 +258,9 @@ public class Scanner
     } else
       this.initState = false;
 
-    for(;;)
+    while(true)
     {
-      if (pos==endPos && !token.isMultiline()) lookahead = '\0';
+      if (pos == endPos && !token.isMultiline()) lookahead = '\0';
 
       switch (state)
       {
@@ -278,8 +278,7 @@ public class Scanner
                 state = STATE_WORD;
                 token.start = pos;
                 token.id = TOKEN_WORD;
-              } else
-              {
+              } else {
                 token.start = pos;
                 token.id = TOKEN_WHITESPACE;
                 state = STATE_WHITESPACE;

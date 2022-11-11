@@ -37,7 +37,7 @@ public class VerilogParser{
 
     public static void main(String args[]){
         System.out.println("parser");
-        File file = new File("/home/spy/Source/Verilog/HelloWorld/hello.v");
+        File file = new File("/run/media/spy/home/ArchARM/home/spy/Source/FPGA/Verilog/HelloWorld/hello.v");
         try (FileReader in = new FileReader(file);
             BufferedReader reader = new BufferedReader(new BufferedReader(in))) {
             String line;
@@ -47,22 +47,6 @@ public class VerilogParser{
         } catch (IOException e) {
             System.err.println(e);
         }
-    }
-    
-    private int strcasecmp(String gate, String input) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private int strlen(String source) {
-        return source.length();
-    }
-
-    private int strcmp(String word, String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private Object strstr(String word, String endmodule) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     class Wire   {
@@ -110,11 +94,10 @@ public class VerilogParser{
      * @param the string to compare
      * @return whether the string is reserved or not
      */
-    boolean reserved (String word)
+    boolean isReserved (String word)
     {
-        int i;
-        for (i = 0; i < RESERVEDNUM; i++)
-            if (strcmp(word, Keywords.reserved_word[i])==0 || strstr(word, "endmodule")!= null)
+        for (int i = 0; i < RESERVEDNUM; i++)
+            if (word==Keywords.reserved_word[i] || word=="endmodule")
                 return true;
         return false;
     }
@@ -124,11 +107,11 @@ public class VerilogParser{
      * @param the string to check
      * @return whether the string is a gate or not
      */
-    boolean gate (String word)
+    boolean isGate (String word)
     {
         int i;
         for (i = 0; i < Keywords.gate_name.length; i++)
-            if (strcmp(word, Keywords.gate_name[i])==0)
+            if (word==Keywords.gate_name[i])
                 return true;
         return false;
     }
@@ -140,9 +123,8 @@ public class VerilogParser{
      */
     boolean isFinalOutput (Wire w, Circuit c)
     {
-        int i;
-        for(i = 0; i < c.outputcount; i++)
-            if (strcmp(w.name, c.outputs[i])==0)
+        for(int i = 0; i < c.outputcount; i++)
+            if (w.name==c.outputs[i])
                 return true;
         return false;
     }
@@ -152,10 +134,9 @@ public class VerilogParser{
      * @param the string to check
      * @return whether the string is a vector of signals or not
      */
-    boolean signal_vector (String word)
+    boolean isSignalVector (String word)
     {
-        int i;
-        for (i = 0; i < strlen(word); i++)
+        for (int i = 0; i < word.length(); i++)
             if (word.charAt(i) == ':')
                 return true;
         return false;
@@ -166,27 +147,27 @@ public class VerilogParser{
      * @param the string gate name
      * @return the gate integer value
      */
-    int convert (String gate)
+    int Convert (String gate)
     {
-        if (strcasecmp(gate, "INPUT")==0)
+        if (gate=="INPUT")
             return 0;
-        else if (strcasecmp(gate, "AND")==0)
+        else if (gate=="AND")
             return 1;
-        else if (strcasecmp(gate, "NAND")==0)
+        else if (gate=="NAND")
             return 2;
-        else if (strcasecmp(gate, "OR")==0)
+        else if (gate=="OR")
             return 3;
-        else if (strcasecmp(gate, "NOR")==0)
+        else if (gate=="NOR")
             return 4;
-        else if (strcasecmp(gate, "XOR")==0)
+        else if (gate=="XOR")
             return 5;
-        else if (strcasecmp(gate, "XNOR")==0)
+        else if (gate=="XNOR")
             return 6;
-        else if (strcasecmp(gate, "BUF")==0)
+        else if (gate=="BUF")
             return 7;
-        else if (strcasecmp(gate, "NOT")==0 || strcasecmp(gate, "INV")==0)
+        else if (gate=="NOT" || gate=="INV")
             return 8;
-        else if (strcasecmp(gate, "I")==0)
+        else if (gate=="I")
             return 9;
         else
             return 10;
@@ -272,7 +253,7 @@ public class VerilogParser{
     {
         int i;
         for(i = 0; i < c.size; i++) {
-            if (strcmp(name, c.nodes[i].name) == 0) { // If node is found in the circuit, get its index
+            if (name==c.nodes[i].name) { // If node is found in the circuit, get its index
                 return c.nodes[i].id;
             }
         }
@@ -302,7 +283,7 @@ public class VerilogParser{
     {
         int i = 0;
         while (c.wires[i] != null) {
-            if (strcmp(name, c.wires[i].name)==0) // If node is found in the circuit
+            if (name==c.wires[i].name) // If node is found in the circuit
                 return c.wires[i];
             i++;
         }
@@ -324,7 +305,7 @@ public class VerilogParser{
      * Create a wire
      * @param the circuit object, the wire object, the wire type, the wire name
      */
-    void build_wire (Circuit c, Wire w, String type, String name)
+    void buildWire (Circuit c, Wire w, String type, String name)
     {
         int i;
         w.id = getID (name, c);   /*Wire ID*/
@@ -334,7 +315,7 @@ public class VerilogParser{
         w.outputcount = 0;			/*Initial number of outputs*/
 
         for(i = 0; i < c.inputcount; i++) { /*Circuit primary inputs*/
-            if (strcmp(w.name, c.inputs[i])==0) {
+            if (w.name==c.inputs[i]) {
                 w.primary = true;
             }
         }
@@ -347,11 +328,11 @@ public class VerilogParser{
      * @param the circuit object, the wire name
      * @return whether the wire is already created or not
      */
-    boolean defined (Circuit c, String name)
+    boolean isDefined (Circuit c, String name)
     {
         int i = 0;
         while (c.wires[i] != null) {
-            if (strcmp(c.wires[i].name, name) == 0)
+            if (c.wires[i].name==name)
                 return true;
             i++;
         }

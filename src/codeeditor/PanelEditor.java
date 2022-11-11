@@ -26,6 +26,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
 
 import javax.swing.AbstractAction;
 import javax.swing.JFrame;
@@ -106,13 +107,13 @@ public class PanelEditor extends javax.swing.JPanel implements CommandIF {
     public void paneKeyPressed(java.awt.event.KeyEvent evt) {
         changed=true;
         
-        if (evt.getKeyCode()==evt.VK_F3) {
-            if (oldSearch=="") {
+        if (evt.getKeyCode() == KeyEvent.VK_F3) {
+            if ("".equals(oldSearch)) {
                 openSearchDialog();
             } else searchText(oldSearch);
         }
         
-        if (evt.isControlDown() && evt.getKeyCode()==evt.VK_F) {
+        if (evt.isControlDown() && evt.getKeyCode() == KeyEvent.VK_F) {
             openSearchDialog();
         }
     }
@@ -203,7 +204,7 @@ public class PanelEditor extends javax.swing.JPanel implements CommandIF {
             changed=false;
             pane.setCaretPosition(0);
             
-        } catch(Exception e) {
+        } catch(IOException e) {
             VisualLogic.Tools.showMessage(e.toString());
         }
         
@@ -267,9 +268,7 @@ public class PanelEditor extends javax.swing.JPanel implements CommandIF {
     }// </editor-fold>//GEN-END:initComponents
     
     
-    
     public boolean onClose() {
-        
         if (isChanged()) {
             
             int result = JOptionPane.showConfirmDialog(frame, java.util.ResourceBundle.getBundle("codeeditor/PanelEditor").getString("Data_Changed_save"), "",JOptionPane.YES_NO_CANCEL_OPTION);

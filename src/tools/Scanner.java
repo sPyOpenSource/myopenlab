@@ -13,7 +13,7 @@ import java.io.StreamTokenizer;
     public Scanner (ExternalIF element, Reader r)
     {
       super(r);
-      this.element=element;
+      this.element = element;
       
       resetSyntax();
       commentChar('#');            // comments from # to end-of-line
@@ -29,7 +29,8 @@ import java.io.StreamTokenizer;
         Consumes end of line and pretends (once) that it is end of file.
         @return false at end of file and once at each end of line.
       */
-    public boolean advance () throws IOException
+    @Override
+    public boolean advance() throws IOException
     {
       if (ttype != TT_EOF) nextToken();
       return ttype != TT_EOF && ttype != TT_EOL;
@@ -96,9 +97,11 @@ import java.io.StreamTokenizer;
                         return ttype;
       }
     }
+    
     /** value associated with current input.
       */
     protected Object value;
+    
     /** produces value associated with current input.
         @return value.
       */

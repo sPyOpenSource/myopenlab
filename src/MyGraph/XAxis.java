@@ -27,7 +27,6 @@ import java.awt.geom.Rectangle2D;
 import java.text.DecimalFormat;
 import javax.swing.JPanel;
 
-
 /**
  *
  * @author Carmelo

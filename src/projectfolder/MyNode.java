@@ -42,5 +42,6 @@ public class MyNode extends DefaultMutableTreeNode {
     public String toString() {
         
         return projectPath + relativePath;
+        
     }
 }

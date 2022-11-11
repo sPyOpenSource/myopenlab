@@ -22,9 +22,10 @@
 package tools;
 
 import VisualLogic.*;
+import VisualLogic.variables.*;
+
 import java.awt.*;
 import java.awt.event.*;
-import VisualLogic.variables.*;
 
 public class JVSMain extends Object implements ElementIF
 {
@@ -74,9 +75,12 @@ public class JVSMain extends Object implements ElementIF
   public void stop()  { }
   public void pause()  { }
   public void process(){}
+  @Override
   public void returnFromMethod(Object result){}
+  @Override
   public void processMethod(VSFlowInfo flowInfo){}
   public void processClock(){}
+  @Override
   public void elementActionPerformed(ElementActionEvent evt){}
   
   public void mouseDragged(MouseEvent e){}
@@ -98,15 +102,19 @@ public class JVSMain extends Object implements ElementIF
 
   }
 
+  @Override
   public void checkPinDataType()
   {
 
   }
+  
+  @Override
   public void resetValues()
   {
 
   }
 
+  @Override
   public void setPropertyEditor()
   {
   }
@@ -126,22 +134,20 @@ public class JVSMain extends Object implements ElementIF
     element.jSetBottomPinsVisible(bottom);
     element.jSetLeftPinsVisible(left);
   }
-  
 
-  
-  public void drawImageCentred(Graphics g,Image image)
+  public void drawImageCentred(Graphics g, Image image)
   {
-    if (element!=null)
+    if (element != null)
     {
        Graphics2D g2 = (Graphics2D)g;
-       Rectangle r=element.jGetBounds();
+       Rectangle r = element.jGetBounds();
 
-       int mitteX =r.width/2;
-       int mitteY =r.height/2;
-       int imageMitteX = image.getWidth(null)/2;
-       int imageMitteY = image.getHeight(null)/2;
+       int mitteX = r.width / 2;
+       int mitteY = r.height / 2;
+       int imageMitteX = image.getWidth(null) / 2;
+       int imageMitteY = image.getHeight(null) / 2;
 
-       g2.drawImage(image,r.x+mitteX-imageMitteX,r.y+mitteY-imageMitteY,null);
+       g2.drawImage(image, r.x + mitteX - imageMitteX, r.y + mitteY - imageMitteY, null);
     }
    }
 
@@ -150,10 +156,10 @@ public class JVSMain extends Object implements ElementIF
      if (firstTime)
      {
        element.jInitPins();
-       firstTime=false;
+       firstTime = false;
      }
-    element.jSetPinDataType(pinIndex,dataType);
-    element.jSetPinIO(pinIndex,io);
+    element.jSetPinDataType(pinIndex, dataType);
+    element.jSetPinIO(pinIndex, io);
    }
    
   public void initInputPins()
@@ -166,17 +172,20 @@ public class JVSMain extends Object implements ElementIF
 
   }
 
-
   public void onChangeElement()
   {
   }
 
+  @Override
   public void onDispose(){}
 
+  @Override
   public void propertyChanged(Object o)
   {
   }
+  @Override
   public void saveToStreamAfterXOnInit(java.io.FileOutputStream fos){}
+  @Override
   public void loadFromStreamAfterXOnInit(java.io.FileInputStream fis){}
 
 

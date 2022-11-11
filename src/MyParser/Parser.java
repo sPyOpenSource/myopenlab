@@ -15,13 +15,13 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+
 package MyParser;
 
 import VisualLogic.Basis;
 import VisualLogic.variables.VSFlowInfo;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
-
 
 class Token
 {
@@ -41,24 +41,24 @@ class Token
     
     public void setValue(Object value)
     {
-        this.value=value;
-        isNum=true;
+        this.value = value;
+        isNum = true;
     }        
     public void setOp(String op)
     {
-        this.op=op;
-        isOp=true;
+        this.op = op;
+        isOp = true;
     }        
     
     public void setKlammer(String klammer)
     {
-        this.klammer=klammer;
-        isKlammer=true;
+        this.klammer = klammer;
+        isKlammer = true;
     }
     public void setFunc(String func)
     {
-        this.func=func;
-        isFunc=true;
+        this.func = func;
+        isFunc = true;
     }
     
 }
@@ -89,9 +89,9 @@ public class Parser
     private boolean isIn(String ch, String set)
     {
        String cha;
-       for (int i=0;i<set.length();i++)
+       for (int i = 0; i < set.length(); i++)
        {
-         cha=set.substring(i,i+1);
+         cha = set.substring(i, i + 1);
          
          if (cha.equals(ch))
          {
@@ -104,7 +104,7 @@ public class Parser
     private boolean isNum(String val)
     {
         try {
-            double x=Double.parseDouble(val);
+            double x = Double.parseDouble(val);
             return true;
         } catch(NumberFormatException ex) {            
             return false;
@@ -113,55 +113,55 @@ public class Parser
     
     public boolean isMyString(String val)
     {
-        val=val.trim();
+        val = val.trim();
 
-        int i=0;
-        String ch=val.substring(i,i+1);
+        int i = 0;
+        String ch = val.substring(i, i + 1);
         if (ch.equalsIgnoreCase("\""))
         {   
-            i=val.length()-1;
-            ch=val.substring(i,i+1);
+            i = val.length() - 1;
+            ch = val.substring(i, i + 1);
             return ch.equalsIgnoreCase("\"");            
-        }else{
+        } else {
             return false;
         }
     } 
     
     public boolean isBoolean(String val)
     {
-        val=val.trim();
+        val = val.trim();
         
         return val.equalsIgnoreCase("TRUE") || val.equalsIgnoreCase("FALSE");
     }
-    
-    
+   
     public String getErrorMessage()
     {
       return errorMessage;
     }
+    
     public void setErrorMessage(String message)
     {
-      errorMessage+=message+"\n";
+      errorMessage += message + "\n";
     }
     
     public void delErrorMessage()
     {
-      errorMessage="";
+      errorMessage = "";
     }
     
     private String entfernealleleerzeichen(String str)
     {
-        String ch="";
-        String result="";
-        boolean inString=false;
+        String ch = "";
+        String result = "";
+        boolean inString = false;
         
-        for (int i=0;i<str.length();i++)
+        for (int i = 0; i < str.length(); i++)
         {  
-          ch=str.substring(i,i+1);
+          ch = str.substring(i, i + 1);
           
-          if (inString==false &&  ch.equalsIgnoreCase("\"")) 
+          if (inString == false &&  ch.equalsIgnoreCase("\"")) 
           {
-              inString=true;
+              inString = true;
           } else
           if (inString==true &&  ch.equalsIgnoreCase("\"")) 
           {
@@ -170,11 +170,11 @@ public class Parser
                   
           if (inString)
           {
-              result+=ch;
+              result += ch;
           } else
           if (!ch.equalsIgnoreCase(" ") )
           {
-              result+=ch;
+              result += ch;
           }
         }
         
@@ -700,7 +700,7 @@ public class Parser
           }
           
           if (inString==false)
-          {              
+          {
               if (isOP(ch) || isKLAMMER(ch))
               {   
                   if (counter-start==0)
@@ -812,9 +812,9 @@ public class Parser
 
     public boolean varExistLocal(String name)
     {
-        for (int i=0;i<varsLocal.size();i++)
+        for (int i = 0; i < varsLocal.size(); i++)
         {
-            OpenVariable var=getLocalVar(i);
+            OpenVariable var = getLocalVar(i);
             if (var.name.equalsIgnoreCase(name))
             {
                 return true;
@@ -829,24 +829,24 @@ public class Parser
     // liefert -1 f�r unbekannt oder gemixt!
     private int getToParseType(ArrayList vector)
     {
-        int result=-1;
-        for (int i=0;i<vector.size();i++)
+        int result = -1;
+        for (int i = 0; i < vector.size(); i++)
         {
             Token token= (Token)vector.get(i);
         
             if (token.value instanceof Double)
             {
-                if (result==0 || result==-1) result=0;
+                if (result == 0 || result == -1) result = 0;
                 else return -1;
-            }else
+            } else
             if (token.value instanceof Boolean)
             {
-                if (result==1 || result==-1) result=1;
+                if (result == 1 || result == -1) result = 1;
                 else return -1;
-            }else
+            } else
             if (token.value instanceof String)
             {
-                if (result==2 || result==-1) result=2;
+                if (result == 2 || result == -1) result = 2;
                 else return -1;
             }
         }
@@ -857,13 +857,13 @@ public class Parser
     public Object parseString(String expr)
     {        
         setExpression(expr);
-        lastVar="";
+        lastVar = "";
         ArrayList vector = new ArrayList(optVector);
         setVariablen(vector);
-        pointer=0;
+        pointer = 0;
         
         int type=getToParseType(vector);
-        if (type>-1)
+        if (type > -1)
         {
             switch (type)
             {
@@ -882,17 +882,17 @@ public class Parser
     {        
         ArrayList vector = new ArrayList(optVector);
         setVariablen(vector);
-        pointer=0;
+        pointer = 0;
         return calcBoolean(vector);        
     }
     
     public String getTokens()
     {
-        String res="";
-        for (int i=0;i<mainVector.size();i++)
+        String res = "";
+        for (int i = 0; i < mainVector.size(); i++)
         {
-            String str=(String)mainVector.get(i);
-            res+=str;
+            String str = (String)mainVector.get(i);
+            res += str;
         }
         return res;        
     }
@@ -921,12 +921,12 @@ public class Parser
 
     private boolean isOP(String val)
     {
-      return isIn(val,OPERATOREN);
+      return isIn(val, OPERATOREN);
     }
     
     private boolean isKLAMMER(String val)
     {
-      return isIn(val,KLAMMER);
+      return isIn(val, KLAMMER);
     }    
     
     private boolean isString(String val)

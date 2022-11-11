@@ -23,6 +23,7 @@ import javax.swing.JEditorPane;
 import javax.swing.plaf.ComponentUI;
 
 public class MyEditorPane extends JEditorPane {
+    @Override
     public boolean getScrollableTracksViewportWidth() {
         Component parent = getParent();
         ComponentUI ui = getUI();

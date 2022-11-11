@@ -23,38 +23,38 @@ package tools;
 
 import VisualLogic.*;
 import VisualLogic.variables.*;
+import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.*;
-import javax.swing.*;
 import java.awt.geom.Rectangle2D;
 import java.io.IOException;
 
 public class MCUMainFlow extends JVSMain
 {
   public VSString variable = new VSString("i");
-  public Font font = new Font("Courier",0,12);
+  public Font font = new Font("Courier", 0, 12);
   public JTextField text = new JTextField();
-  public JPanel panel =null;
+  public JPanel panel = null;
   public Graphics2D g2;
-  public int standardWidth=130;
-  public int width=130;
-  public int height=53;
-  public String toInclude="";
+  public int standardWidth = 130;
+  public int width = 130;
+  public int height = 53;
+  public String toInclude = "";
 
 
-  public static int ONLY_VAR=1;
-  public static int SIMPLE=2;
-  public static int VAR_OR_CONST=3;
+  public static int ONLY_VAR     = 1;
+  public static int SIMPLE       = 2;
+  public static int VAR_OR_CONST = 3;
 
   public MCUMainFlow()
   {
 
   }
   
-
   public String generateMCUCodeFromExpression(String param)
   {
-    String result="";
+    String result = "";
 
     Expression parser = new Expression();
     Expression.code.clear();
@@ -70,8 +70,7 @@ public class MCUMainFlow extends JVSMain
       }
       break;
 
-    }catch (IOException | Expression.yyException ye)
-    {
+    } catch (IOException | Expression.yyException ye) {
       System.err.println("Error in Element_"+element.jGetID()+"\""+element.jGetCaption()+"\" "+scanner+": "+ye);
     }
 
@@ -80,9 +79,9 @@ public class MCUMainFlow extends JVSMain
   
   class MCUMainFlow_Property
   {
-    String name="";
+    String name = "";
     VSString obj;
-    int type=0;
+    int type = 0;
   }
   
   public void drawImageLeftAlign(java.awt.Graphics g, Image image, int left)
@@ -112,6 +111,7 @@ public class MCUMainFlow extends JVSMain
     resizeWidth(g,leftRightDistance);
   }
 
+  @Override
   public void paint(java.awt.Graphics g)
   {
     if (element!=null)
@@ -195,8 +195,6 @@ public class MCUMainFlow extends JVSMain
     // oder auch nicht!
     return false;
   }
-
-
 
    public void resizeWidth(Graphics g2, int leftRightDistance)
    {
@@ -330,7 +328,6 @@ public class MCUMainFlow extends JVSMain
   {
      variable.loadFromStream(fis);
   }
-
 
   public void saveToStream(java.io.FileOutputStream fos)
   {

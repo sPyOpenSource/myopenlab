@@ -32,14 +32,14 @@ import javax.swing.JPanel;
 public class Turn90Label extends JPanel
 {
  
-    public String text="";
-    private Font stdFont = new Font("Arial",0,12);
+    public String text = "";
+    private Font stdFont = new Font("Arial", 0, 12);
     
     @Override
     public void setFont(Font font)
     {
-        stdFont=font;
-        setPreferredSize(new Dimension(getFontMetrics(stdFont).getHeight(),10));
+        stdFont = font;
+        setPreferredSize(new Dimension(getFontMetrics(stdFont).getHeight(), 10));
     }
     public String getText()
     {
@@ -47,16 +47,15 @@ public class Turn90Label extends JPanel
     }
     public void setText(String text)
     {
-        this.text=text;
-        setPreferredSize(new Dimension(getFontMetrics(stdFont).getHeight(),10));
+        this.text = text;
+        setPreferredSize(new Dimension(getFontMetrics(stdFont).getHeight(), 10));
     }
-    
     
         public Turn90Label( String s ) 
         {
-           super( );
-           text=s;
-           setPreferredSize(new Dimension(getFontMetrics(stdFont).getHeight(),10));
+           super();
+           text = s;
+           setPreferredSize(new Dimension(getFontMetrics(stdFont).getHeight(), 10));
         }
 
         
@@ -65,7 +64,7 @@ public class Turn90Label extends JPanel
 
            g.setColor(getForeground());
            g.setFont(stdFont);           
-           g2d.translate(getFontMetrics(g.getFont()).getAscent(), (getHeight()/2)+(getFontMetrics(g.getFont()).stringWidth(text)/2 ));
+           g2d.translate(getFontMetrics(g.getFont()).getAscent(), (getHeight() / 2) + (getFontMetrics(g.getFont()).stringWidth(text) / 2 ));
            g2d.rotate( Math.toRadians(-90) );
            g2d.drawString(text, 0, 0);           
         }

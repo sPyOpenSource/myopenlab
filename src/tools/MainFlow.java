@@ -22,43 +22,45 @@
 package tools;
 
 import VisualLogic.variables.*;
+import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.*;
-import javax.swing.*;
 import java.awt.geom.Rectangle2D;
 
 public class MainFlow extends JVSMain
 {
   public VSString variable = new VSString("i");
-  public Font font = new Font("Courier",0,12);
+  public Font font = new Font("Courier", 0, 12);
   public JTextField text = new JTextField();
-  public JPanel panel =null;
+  public JPanel panel = null;
   public Graphics2D g2;
-  public int standardWidth=130;
-  public int width=130;
-  public int height=53;
-  public String toInclude="";
+  public int standardWidth = 130;
+  public int width = 130;
+  public int height = 53;
+  public String toInclude = "";
 
   public MainFlow()
   {
 
   }
 
+  @Override
   public void paint(java.awt.Graphics g)
   {
-    if (element!=null)
+    if (element != null)
     {
-       g2=(Graphics2D)g;
-       Rectangle bounds=element.jGetBounds();
+       g2 = (Graphics2D)g;
+       Rectangle bounds = element.jGetBounds();
 
-        if (text!=null)
+        if (text != null)
         {
-          int mitteX=bounds.x+(bounds.width)/2;
-          int mitteY=bounds.y+(bounds.height)/2;
+          int mitteX = bounds.x + bounds.width / 2;
+          int mitteY = bounds.y + bounds.height / 2;
 
-          int distanceY=12;
-          text.setLocation(bounds.x+5, mitteY-distanceY);
-          text.setSize(bounds.width-10,2*distanceY);
+          int distanceY = 12;
+          text.setLocation(bounds.x + 5, mitteY - distanceY);
+          text.setSize(bounds.width - 10, 2 * distanceY);
         }
 
     }
@@ -80,7 +82,6 @@ public class MainFlow extends JVSMain
 
        if (element!=null)
        {
-
          int mx=(element.jGetWidth()/2)+element.jGetLeft();
 
          int newX=mx-(newWidth/2);

@@ -140,11 +140,11 @@ public class DialogSearch extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton1ActionPerformed
     
     public void init(CommandIF owner, String text) {
-        this.owner=owner;
+        this.owner = owner;
         jTextField1.setText(text);
     }
     
-    public static String result="";
+    public static String result = "";
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
