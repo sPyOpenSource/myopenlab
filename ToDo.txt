@@ -1,19 +1,19 @@
-Fix Setter y Getter for Array Type
-Poner en la Ayuda la ubicación del componente dentro de la paleta de elementos
-Nodo splitter notifica en proccess error
-Blink Automático? booleans
+1. Fix Setter y Getter for Array Type
+Poner en la Ayuda la ubicaciï¿½n del componente dentro de la paleta de elementos
+2. Nodo splitter notifica en proccess error
+Blink Automï¿½tico? booleans
 Bombas de Agua
-Display Analogico media aguja
+3. Display Analogico media aguja
 Teclado 
-Display 7S
+4. Display 7S
 Clima
 Resistencia y quemadores
-Cilindro Neumático
+Cilindro Neumï¿½tico
 Banda Transportadora
 Arreglar ejemplos VectorAndMatrix AppendToFile
-y Server TCP
-Servomotor
-Ventilador
+5. y Server TCP
+6. Servomotor
+7. Ventilador
 Fotocelda 
 Relevos 
 
@@ -25,20 +25,21 @@ long map(long x, long in_min, long in_max, long out_min, long out_max)
 }
 mi()
 max()
+
 I2C
 SPI
 MATRIX
 ARCHIVOS
 PERSISTENCIA
 
-Indicador Láser e Infrarrojo
+Indicador Lï¿½ser e Infrarrojo
 Ultrasonido - Parlante - Buzzer
 Grafica Polar
-Gráfica digital
+Grï¿½fica digital
 
 Antena Dipolo o satelital
-Anemometro - Turbina eólica
-Panel solar - sol - iluminación
+Anemometro - Turbina eï¿½lica
+Panel solar - sol - iluminaciï¿½n
 Cama caliente de impresora
 Start Proccess
 Campo Magnetico

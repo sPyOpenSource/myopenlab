@@ -19,19 +19,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 package codeeditor;
 
-import java.io.File;
-
-//import sun.tools.jar.*;
 import VisualLogic.*;
 import VisualLogic.gui.FrameMain;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
+import java.io.File;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
@@ -48,7 +47,7 @@ public class frmCodeEditor extends javax.swing.JFrame
     
     
     /** Creates new form frmCodeEditor */
-    public frmCodeEditor(FrameMain parent)
+    public frmCodeEditor(JFrame parent)
     {
         this.initComponents();
         try
@@ -57,7 +56,6 @@ public class frmCodeEditor extends javax.swing.JFrame
         }
         catch(Exception ex)
         { }
-        
     }
     
     /** This method is called from within the constructor to
@@ -99,7 +97,7 @@ public class frmCodeEditor extends javax.swing.JFrame
 
         jToolBar1.setFloatable(false);
         jToolBar1.setRollover(true);
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/open16.gif")));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/open16.gif")));
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("codeeditor/frmCodeEditor"); // NOI18N
         jButton4.setText(bundle.getString("Load_File")); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -110,7 +108,7 @@ public class frmCodeEditor extends javax.swing.JFrame
 
         jToolBar1.add(jButton4);
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/save16.gif")));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/save16.gif")));
         jButton3.setText(bundle.getString("save_Project")); // NOI18N
         jButton3.setToolTipText("Save");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -121,7 +119,7 @@ public class frmCodeEditor extends javax.swing.JFrame
 
         jToolBar1.add(jButton3);
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/compile16.gif")));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/compile16.gif")));
         jButton2.setText(bundle.getString("Compile")); // NOI18N
         jButton2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButton2.setPreferredSize(new java.awt.Dimension(120, 25));
@@ -146,15 +144,15 @@ public class frmCodeEditor extends javax.swing.JFrame
             }
         });
 
-        jmniLoad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/open16.gif")));
+        jmniLoad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/open16.gif")));
         jmniLoad.setText(bundle.getString("Load_File")); // NOI18N
         jmnuFile.add(jmniLoad);
 
-        jmniSaveProject.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/save16.gif")));
+        jmniSaveProject.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/save16.gif")));
         jmniSaveProject.setText(bundle.getString("save_Project")); // NOI18N
         jmnuFile.add(jmniSaveProject);
 
-        jmniClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/16x16/system-log-out.png")));
+        jmniClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/system-log-out.png")));
         jmniClose.setText(bundle.getString("Close")); // NOI18N
         jmniClose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -168,7 +166,7 @@ public class frmCodeEditor extends javax.swing.JFrame
 
         jmnuEdit.setText(bundle.getString("Edit")); // NOI18N
         jmniUndo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Z, java.awt.event.InputEvent.CTRL_MASK));
-        jmniUndo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/16x16/edit-undo.png")));
+        jmniUndo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/edit-undo.png")));
         jmniUndo.setText(bundle.getString("Undo")); // NOI18N
         jmniUndo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -179,7 +177,7 @@ public class frmCodeEditor extends javax.swing.JFrame
         jmnuEdit.add(jmniUndo);
 
         jmnuRedo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Y, java.awt.event.InputEvent.CTRL_MASK));
-        jmnuRedo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/16x16/edit-redo.png")));
+        jmnuRedo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/edit-redo.png")));
         jmnuRedo.setText(bundle.getString("Redo")); // NOI18N
         jmnuRedo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -192,7 +190,7 @@ public class frmCodeEditor extends javax.swing.JFrame
         jmnuEdit.add(jSeparator1);
 
         jmniCut.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_MASK));
-        jmniCut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/16x16/edit-cut.png")));
+        jmniCut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/edit-cut.png")));
         jmniCut.setText(bundle.getString("Cut")); // NOI18N
         jmniCut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -203,7 +201,7 @@ public class frmCodeEditor extends javax.swing.JFrame
         jmnuEdit.add(jmniCut);
 
         jmniCopy.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
-        jmniCopy.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/16x16/edit-copy.png")));
+        jmniCopy.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/edit-copy.png")));
         jmniCopy.setText(bundle.getString("Copy")); // NOI18N
         jmniCopy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -214,7 +212,7 @@ public class frmCodeEditor extends javax.swing.JFrame
         jmnuEdit.add(jmniCopy);
 
         jmniPaste.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_MASK));
-        jmniPaste.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/16x16/edit-paste.png")));
+        jmniPaste.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/edit-paste.png")));
         jmniPaste.setText(bundle.getString("Paste")); // NOI18N
         jmniPaste.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -227,7 +225,7 @@ public class frmCodeEditor extends javax.swing.JFrame
         jmnuEdit.add(jSeparator2);
 
         jmniSearch.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_MASK));
-        jmniSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/16x16/system-search.png")));
+        jmniSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/system-search.png")));
         jmniSearch.setText(bundle.getString("Search")); // NOI18N
         jmniSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -251,7 +249,7 @@ public class frmCodeEditor extends javax.swing.JFrame
 
     private void jmniPasteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmniPasteActionPerformed
         PanelEditor panel = getAktuellerEditor();
-        if (panel!=null)
+        if (panel != null)
         {
             panel.paste();
         }
@@ -260,7 +258,7 @@ public class frmCodeEditor extends javax.swing.JFrame
 
     private void jmniCopyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmniCopyActionPerformed
         PanelEditor panel = getAktuellerEditor();
-        if (panel!=null)
+        if (panel != null)
         {
             panel.copy();
         }
@@ -343,7 +341,7 @@ public class frmCodeEditor extends javax.swing.JFrame
     public boolean openFile()
     {
         JFileChooser chooser  = new JFileChooser();
-        String make=elementPath+"/src";
+        String make = elementPath + "/src";
         chooser.setCurrentDirectory(new java.io.File(make));
         
         chooser.addChoosableFileFilter(new javax.swing.filechooser.FileFilter()
@@ -376,7 +374,7 @@ public class frmCodeEditor extends javax.swing.JFrame
     
     private void saveProject()
     {
-        for (int i=0;i<jTabbedPane1.getTabCount();i++)
+        for (int i = 0; i < jTabbedPane1.getTabCount(); i++)
         {
             Component comp = jTabbedPane1.getComponentAt(i);
             if (comp instanceof PanelEditor)
@@ -399,17 +397,17 @@ public class frmCodeEditor extends javax.swing.JFrame
                         
         saveProject();
         
-        for (int i=0;i<jTabbedPane1.getTabCount();i++)
+        for (int i = 0; i < jTabbedPane1.getTabCount(); i++)
         {
             Component comp = jTabbedPane1.getComponentAt(i);
             if (comp instanceof PanelEditor)
             {
                 PanelEditor editor = (PanelEditor)comp;
                 
-                String srcFile=editor.filename;
+                String srcFile = editor.filename;
 
-                File file= new File(elementLocation);
-                DFProperties definition_def =Tools.getProertiesFromDefinitionFile(file);
+                File file = new File(elementLocation);
+                DFProperties definition_def = Tools.getProertiesFromDefinitionFile(file);
                                 
                 Tools.compileFile(elementPath, srcFile,elementLocation, definition_def.classPath);
             }
@@ -465,7 +463,7 @@ public class frmCodeEditor extends javax.swing.JFrame
         
         //jTabbedPane1.setSelectedComponent(pnl);
         
-        String caption=new File(filename).getName();
+        String caption = new File(filename).getName();
         jTabbedPane1.add(pnl);
                         
         final JPanel content = new JPanel();
@@ -476,20 +474,20 @@ public class frmCodeEditor extends javax.swing.JFrame
         
         JLabel tabLabel = new JLabel();
         
-        tabLabel.setText(caption+"  ");
+        tabLabel.setText(caption + "  ");
                 
-        javax.swing.ImageIcon closeXIcon=new javax.swing.ImageIcon(getClass().getResource("/Bilder/Cross9x9.png"));
+        javax.swing.ImageIcon closeXIcon = new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/Cross9x9.png"));
         Dimension closeButtonSize;
         
-        closeButtonSize = new Dimension(closeXIcon.getIconWidth()+3,closeXIcon.getIconHeight()+3);
+        closeButtonSize = new Dimension(closeXIcon.getIconWidth() + 3, closeXIcon.getIconHeight() + 3);
         
         JButtonX tabCloseButton = new JButtonX(closeXIcon);
         tabCloseButton.setBorderPainted(false);
-        tabCloseButton.panel=pnl;
+        tabCloseButton.panel = pnl;
         
         tabCloseButton.setPreferredSize(closeButtonSize);
                 
-        ImageIcon icon = new ImageIcon(getClass().getResource("/Bilder/16x16/page_java.gif"));
+        ImageIcon icon = new ImageIcon(getClass().getResource("/Assets/Bilder/16x16/page_java.gif"));
         tabLabel.setIcon(icon);
         tabLabel.setBorder(null);
         tab.setBorder(null);
@@ -509,11 +507,19 @@ public class frmCodeEditor extends javax.swing.JFrame
         tab.add(tabLabel, BorderLayout.WEST);
         tab.add(tabCloseButton, BorderLayout.EAST);
         
-        jTabbedPane1.setTabComponentAt(jTabbedPane1.getTabCount()-1, tab);
+        jTabbedPane1.setTabComponentAt(jTabbedPane1.getTabCount() - 1, tab);
         
     }
     
-    
+    public static void main(String[] args){
+        java.awt.EventQueue.invokeLater(() -> {
+            JFrame f = new JFrame();
+            f.setSize(450, 350);
+            //f.setVisible(true);
+            frmCodeEditor editor = new frmCodeEditor(f);
+            editor.setVisible(true);
+        });
+    }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton2;

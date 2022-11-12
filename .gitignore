@@ -2,4 +2,3 @@ build/
 nbproject/private/
 dist/
 *.~ava
-*.class
