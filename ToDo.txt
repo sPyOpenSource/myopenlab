@@ -17,6 +17,7 @@ Arreglar ejemplos VectorAndMatrix AppendToFile
 Fotocelda 
 Relevos 
 
+Functions:
 constrain(x, a, b)
 map()
 long map(long x, long in_min, long in_max, long out_min, long out_max)
@@ -26,6 +27,7 @@ long map(long x, long in_min, long in_max, long out_min, long out_max)
 mi()
 max()
 
+Interfaces:
 I2C
 SPI
 MATRIX
