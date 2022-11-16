@@ -35,7 +35,7 @@ import javax.swing.JPanel;
  */
 public interface ExternalIF
 {
-    public static final int C_VARIANT         = 0;     // kann an alle anderen Pins gestoepselt werden!
+    public static final int C_VARIANT         = 0; // kann an alle anderen Pins gestoepselt werden!
     public static final int C_GROUP           = 1;
     public static final int C_BOOLEAN         = 2;
     public static final int C_INTEGER         = 3;
@@ -66,9 +66,9 @@ public interface ExternalIF
     public static final int C_SHAPE_STRING      = 4;
     public static final int C_SHAPE_IMAGE       = 5;
     
-    public static final byte PIN_INPUT=1;
-    public static final byte PIN_OUTPUT=2;
-    public static final byte PIN_INPUT_OUTPUT=3;
+    public static final byte PIN_INPUT  = 1;
+    public static final byte PIN_OUTPUT = 2;
+    public static final byte PIN_INPUT_OUTPUT = 3;
     
     public abstract GeneralPath jParsePath();
     
@@ -85,7 +85,7 @@ public interface ExternalIF
     public abstract MyOpenLabDriverIF jOpenDriver(String driverName, ArrayList args);
     public abstract void jCloseDriver(String driverName);
     
-    public abstract void jSetTag(int index, Object tag)    ;
+    public abstract void jSetTag(int index, Object tag);
     public abstract Object jGetTag(int index);
     
     public abstract ArrayList<PathPoint> jGetPointList();
@@ -137,6 +137,7 @@ public interface ExternalIF
     public abstract void jProcess();
     
     public abstract JPanel getFrontPanel();
+    
   /* Setzt den Pin implements Eingabe/Ausgabe-Modus
    **/
     public abstract void jSetPinIO(int pinIndex, byte io);
@@ -331,7 +332,6 @@ public interface ExternalIF
     */
     public abstract void setPinOutputReference(int pinIndex, Object referenz);
     
-    
     /**
      * liest den double-Wert eines Pins
      * Diese Methode wird nicht mehr verwendet!
@@ -340,6 +340,7 @@ public interface ExternalIF
      * @Deprecated
      */
     public abstract double readPin(int index);
+    
     /**
      *
      * @param index

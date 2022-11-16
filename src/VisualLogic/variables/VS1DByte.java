@@ -22,8 +22,6 @@ package VisualLogic.variables;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 
-
-
 public class VS1DByte extends VSObject
 {
     private byte value[]=null;

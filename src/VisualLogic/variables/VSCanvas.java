@@ -30,7 +30,7 @@ import java.util.ArrayList;
  *
  * @author Homer
  */
-public class VSCanvas  extends VSObject
+public class VSCanvas extends VSObject
 {    
     
     public Image image;
@@ -40,36 +40,35 @@ public class VSCanvas  extends VSObject
     public int x2;
     public int y2;
     
-    public String caption="";
-    public Font font=null;
+    public String caption = "";
+    public Font font = null;
             
     public ArrayList points = new ArrayList(); // Reserved for Future!
         
-    public double translationX=0;
-    public double translationY=0;
+    public double translationX = 0;
+    public double translationY = 0;
     
-    public double rotationX=0.0;
-    public double rotationY=0.0;
-    public double rotationAngle=0.0;
+    public double rotationX = 0.0;
+    public double rotationY = 0.0;
+    public double rotationAngle = 0.0;
     
-    public double scaleX=1.0;
-    public double scaleY=1.0;
+    public double scaleX = 1.0;
+    public double scaleY = 1.0;
 
-    public double shearX=0.0;
-    public double shearY=0.0;
+    public double shearX = 0.0;
+    public double shearY = 0.0;
     
     //public AffineTransform transform;
     
     //public int stroke;
     public Color strokeColor;
-    public int strokeWidth=0;
+    public int strokeWidth = 0;
     public Color fillColor;
     public boolean antialising = true;
     
         
     public VSCanvas() 
     {        
-        
         
     }
     

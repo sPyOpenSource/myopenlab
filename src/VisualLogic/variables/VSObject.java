@@ -22,13 +22,14 @@ import java.io.Serializable;
 
 public class VSObject extends Object implements Serializable
 {
-    private boolean changed=false;
-    private int pinIndex=0;// nur fr SocketServer und SocketClient Elemente!
-    private int pin=-1;
+    
+    private boolean changed = false;
+    private int pinIndex = 0;// nur fr SocketServer und SocketClient Elemente!
+    private int pin = -1;
     
     public void setPin(int index)
     {
-        pin=index;
+        pin = index;
     }
     public int getPin()
     {
@@ -43,8 +44,6 @@ public class VSObject extends Object implements Serializable
     {
         return element;
     }*/
-    
-    
     
     public void setPinIndex(int val)
     {
@@ -70,7 +69,6 @@ public class VSObject extends Object implements Serializable
         
     }
     
-    
     public void copyReferenceFrom(Object in)
     {
          
@@ -80,7 +78,6 @@ public class VSObject extends Object implements Serializable
     {
         
     }
-    
     
     public boolean equals(VSObject obj)
     {

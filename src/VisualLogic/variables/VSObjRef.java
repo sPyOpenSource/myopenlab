@@ -14,7 +14,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 package VisualLogic.variables;
+
+import java.io.IOException;
 
 /** 
  *
@@ -49,8 +52,6 @@ private Object Obj;
         this.Obj=new Object();
     }
     
-
-    
     @Override
     public void copyValueFrom(Object in)
     {
@@ -67,7 +68,6 @@ private Object Obj;
       copyValueFrom(in);
     }    
         
-    
     @Override
     public boolean equals(VSObject objIn)
     {
@@ -113,7 +113,7 @@ private Object Obj;
             dos.writeUTF(this.Obj.toString());
             
         }
-        catch(Exception ex)
+        catch(IOException ex)
         {
            System.err.println("Fehler in VSDouble.saveToStream() : "+ex.toString());
         }
@@ -127,6 +127,5 @@ private Object Obj;
     {
         nodeElement.setAttribute("VSString"+name, this.Obj.toString());
     }
-    
     
 }

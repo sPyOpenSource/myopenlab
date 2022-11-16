@@ -16,12 +16,9 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-
 package VisualLogic.variables;
 
-
 import java.io.IOException;
-
 
 public class VSByte extends VSObject
 {
@@ -32,19 +29,20 @@ public class VSByte extends VSObject
     
     public VSByte(byte value)
     {
-        this.value=value;
+        this.value = value;
     }
     
+    @Override
     public String toString()
     {
-        return ""+value;
+        return "" + value;
     }
     
     public void setValue(byte value)
     {
         //if (this.value!=value)
         {
-            this.value=value;
+            this.value = value;
             setChanged(true);
         }
     }
@@ -99,13 +97,13 @@ public class VSByte extends VSObject
     
     public void copyValueFrom(Object in)
     {
-        if (in!=null)
+        if (in != null)
         {
-            VSByte temp =(VSByte)in;
-            value=temp.value;
+            VSByte temp = (VSByte)in;
+            value = temp.value;
             setChanged(temp.isChanged());
         }
-        else value=0;
+        else value = 0;
     }
     
     public void copyReferenceFrom(Object in)
@@ -115,23 +113,21 @@ public class VSByte extends VSObject
     
     public boolean equals(VSObject obj)
     {
-        VSByte temp =(VSByte)obj;
-        if (temp.value==value)  return true;
-        else return false;
+        VSByte temp = (VSByte)obj;
+        return temp.value == value;
     }
     
     public boolean isBigger(VSObject obj)
     {
-        VSByte temp =(VSByte)obj;
-        if (value>temp.value)  return true;
-        else return false;
+        VSByte temp = (VSByte)obj;
+        return value > temp.value;
     }
     
+    @Override
     public boolean isSmaller(VSObject obj)
     {
-        VSByte temp =(VSByte)obj;
-        if (value<temp.value)  return true;
-        else return false;
+        VSByte temp = (VSByte)obj;
+        return value < temp.value;
     }
     
     
@@ -141,15 +137,16 @@ public class VSByte extends VSObject
         {
             java.io.DataInputStream dis = new java.io.DataInputStream(fis);
             
-            value=dis.readByte();
+            value = dis.readByte();
         }
-        catch(Exception ex)
+        catch(IOException ex)
         {
             
         }
         
     }
     
+    @Override
     public void saveToStream(java.io.FileOutputStream fos)
     {
         try
@@ -158,9 +155,9 @@ public class VSByte extends VSObject
             dos.writeByte(value);
             
         }
-        catch(Exception ex)
+        catch(IOException ex)
         {
-            VisualLogic.Tools.showMessage("Fehler in VSByte.saveToStream() : "+ex.toString());
+            VisualLogic.Tools.showMessage("Fehler in VSByte.saveToStream() : " + ex.toString());
         }
     }
     public void loadFromXML(String name,org.w3c.dom.Element nodeElement)
@@ -169,7 +166,7 @@ public class VSByte extends VSObject
         {
             value=Byte.parseByte(nodeElement.getAttribute("VSByte"+name));
         }
-        catch(Exception ex)
+        catch(NumberFormatException ex)
         {
             
         }
@@ -177,6 +174,6 @@ public class VSByte extends VSObject
     
     public void saveToXML(String name, org.w3c.dom.Element nodeElement)
     {
-        nodeElement.setAttribute("VSByte"+name, ""+value);
+        nodeElement.setAttribute("VSByte" + name, "" + value);
     }
 }
