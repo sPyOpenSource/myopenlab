@@ -15,6 +15,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+
 package VisualLogic;
 
 import java.io.*;
@@ -29,7 +30,7 @@ public class Loader
   public Object ladeClasse(String elementPath, String pfad, String klassename ) throws Exception
   {
     URL url;
-    Object o=null;
+    Object o = null;
     
     try
     {        

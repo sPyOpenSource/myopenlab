@@ -232,7 +232,7 @@ public class StatusIdle extends Object implements StatusBasisIF {
                     for (int i = 0; i < getBasis().getElementCount(); i++) {
                         Element element = getBasis().getElement(i);
                         if (element.isSelected()) {
-                            codeeditor.frmDefinitonDefEditor frm = new codeeditor.frmDefinitonDefEditor(getBasis().owner.frameCircuit, true);
+                            CodeEditor.frmDefinitonDefEditor frm = new CodeEditor.frmDefinitonDefEditor(getBasis().owner.frameCircuit, true);
                             frm.execute(element.elementPath + element.mainPath);
                             break;
                         }

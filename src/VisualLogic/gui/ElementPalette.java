@@ -916,7 +916,7 @@ public class ElementPalette extends javax.swing.JPanel {
                 loadFolder(aktuellesVerzeichniss);
             }
         } else {
-            codeeditor.frmDefinitonDefEditor frm2 = new codeeditor.frmDefinitonDefEditor(frameCircuit, true);
+            CodeEditor.frmDefinitonDefEditor frm2 = new CodeEditor.frmDefinitonDefEditor(frameCircuit, true);
             frm2.execute(aktiveButton.filePath);
             loadFolder(aktuellesVerzeichniss);
         }

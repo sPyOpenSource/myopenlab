@@ -4348,7 +4348,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             DFProperties definition_def = Tools.getProertiesFromDefinitionFile(file);
 
             if (javaeditor == null || javaeditor.equalsIgnoreCase("") || new File(javaeditor).exists() == false) {
-                codeeditor.frmCodeEditor codeForm = new codeeditor.frmCodeEditor(this);
+                CodeEditor.frmCodeEditor codeForm = new CodeEditor.frmCodeEditor(this);
                 codeForm.execute(elementPath, path, definition_def.captionInternationalized);
             } else {
                 String srcPath = elementPath + path + File.separator + "src" + File.separator;

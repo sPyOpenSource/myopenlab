@@ -180,7 +180,7 @@
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-            <TitledBorder title="Beschriftung">
+            <TitledBorder title="&lt;CAPTION&gt;">
               <ResourceString PropertyName="titleX" bundle="codeeditor/frmDefinitonDefEditor.properties" key="CAPTION" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
             </TitledBorder>
           </Border>
@@ -266,7 +266,7 @@
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-            <TitledBorder title="Class">
+            <TitledBorder title="&lt;CLASS&gt;">
               <ResourceString PropertyName="titleX" bundle="codeeditor/frmDefinitonDefEditor.properties" key="CLASS" replaceFormat="java.util.ResourceBundle.getBundle(&quot;{bundleNameSlashes}&quot;).getString(&quot;{key}&quot;)"/>
             </TitledBorder>
           </Border>

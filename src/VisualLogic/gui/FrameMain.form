@@ -1212,11 +1212,7 @@
     </Container>
     <Container class="javax.swing.JSplitPane" name="jSplitPane3">
       <Properties>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="null"/>
-        </Property>
         <Property name="dividerLocation" type="int" value="150"/>
-        <Property name="continuousLayout" type="boolean" value="true"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[200, 66]"/>
         </Property>
@@ -1257,12 +1253,8 @@
           <SubComponents>
             <Container class="javax.swing.JSplitPane" name="jSplitPane1">
               <Properties>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="null"/>
-                </Property>
                 <Property name="dividerLocation" type="int" value="100"/>
                 <Property name="orientation" type="int" value="0"/>
-                <Property name="continuousLayout" type="boolean" value="true"/>
                 <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[160, 12]"/>
                 </Property>

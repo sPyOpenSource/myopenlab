@@ -16,7 +16,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-package codeeditor;
+package CodeEditor;
 
 import VisualLogic.CommandIF;
 import java.awt.Color;
@@ -46,7 +46,7 @@ import javax.swing.undo.UndoManager;
  */
 public class PanelEditor extends javax.swing.JPanel implements CommandIF {
     public String filename="";
-    private MyEditorPane pane ;
+    private MyEditorPane pane;
     private EditorKit editorKit;
     private boolean changed=false;
     private JFrame frame=null;
