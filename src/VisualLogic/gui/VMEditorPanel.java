@@ -254,7 +254,7 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
             //setIconImage(basis.getFrameMain().iconImage);
             //iconImage= Toolkit.getDefaultToolkit().getImage();
             //setIconImage(iconImage);
-            basis.vsIcon.loadImage(getClass().getResource("/Bilder/icon_16.png"));
+            basis.vsIcon.loadImage(getClass().getResource("/Assets/Bilder/icon_16.png"));
         }
         catch(Exception ex)
         {

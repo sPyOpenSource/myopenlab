@@ -48,17 +48,17 @@ class TheGraphBoolean
 public class FrameBooleanGraph extends javax.swing.JFrame
 {
     private final Basis basis;
-    private final int faktor=20;
-    private final int distance=5;
+    private final int faktor = 20;
+    private final int distance = 5;
     private TheGraphBoolean[] graphs;
     public double[] xValues;
-    public int abtastFreq=10;
-    public int refreshFreq=250;
-    private int internalC=0;
-    private int refreshC=0;
-    private boolean dontRefresh=false;
-    private int bufflen=500;
-    private int newbufflen=bufflen;
+    public int abtastFreq = 10;
+    public int refreshFreq = 250;
+    private int internalC = 0;
+    private int refreshC = 0;
+    private boolean dontRefresh = false;
+    private int bufflen = 500;
+    private int newbufflen = bufflen;
     
     /** Creates new form FrameBooleanGraph */
     public FrameBooleanGraph(Basis basis)
@@ -86,9 +86,8 @@ public class FrameBooleanGraph extends javax.swing.JFrame
         jSpinner3.setEditor(editor3);
         
         //setIconImage(basis.getFrameMain().iconImage);
-        javax.swing.ImageIcon icon =new javax.swing.ImageIcon(getClass().getResource("/Bilder/graphBoolean16x16.gif"));
+        javax.swing.ImageIcon icon = new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/graphBoolean16x16.gif"));
         setIconImage(icon.getImage());
-        
     }
     
     /** This method is called from within the constructor to
@@ -109,7 +108,7 @@ public class FrameBooleanGraph extends javax.swing.JFrame
         jLabel3 = new javax.swing.JLabel();
         jCheckBox1 = new javax.swing.JCheckBox();
 
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/FrameBooleanGraph"); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/FrameBooleanGraph"); // NOI18N
         setTitle(bundle.getString("Digital_Graph_Window")); // NOI18N
         setAlwaysOnTop(true);
         setLocationByPlatform(true);

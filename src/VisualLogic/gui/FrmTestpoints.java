@@ -46,7 +46,7 @@ public class FrmTestpoints extends javax.swing.JFrame
         
         //setIconImage(basis.getFrameMain().iconImage);
         
-        javax.swing.ImageIcon icon =new javax.swing.ImageIcon(getClass().getResource("/Bilder/testPointWhite.png"));
+        javax.swing.ImageIcon icon = new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/testPointWhite.png"));
         setIconImage(icon.getImage());
         
         
@@ -199,7 +199,7 @@ public class FrmTestpoints extends javax.swing.JFrame
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/FrmTestpoints"); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/FrmTestpoints"); // NOI18N
         setTitle(bundle.getString("Testpoint_Window")); // NOI18N
         setAlwaysOnTop(true);
         setLocationByPlatform(true);

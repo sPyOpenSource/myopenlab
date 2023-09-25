@@ -70,7 +70,7 @@ public class DialogNewProject extends javax.swing.JDialog
         jCheckSPSProjekt = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/DialogNewProject"); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/DialogNewProject"); // NOI18N
         setTitle(bundle.getString("New_Project")); // NOI18N
 
         cancelBtn.setText(bundle.getString("Cancel")); // NOI18N

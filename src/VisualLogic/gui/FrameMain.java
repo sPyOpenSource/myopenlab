@@ -185,7 +185,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
             new File(projectName + File.separator + value).mkdir(); //NOI18N
             reloadProjectPanel();
-
         }
     }
 
@@ -209,7 +208,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     }
 
     public void dirRename(MyNode node) {
-        
         if (node != null) {
             File file = new File(node.projectPath + node.relativePath);
             
@@ -411,7 +409,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
     @Override
     public void projectPaletteAction(String command, MyNode node) {
-
         if (command.equalsIgnoreCase("OPENFILE")) {
             String str = node.projectPath + node.relativePath;
 
@@ -660,11 +657,9 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                                 basis.panelLabel.setText(new File(std).getName());
                             }
                         }
-
                     }
 
                     reloadProjectPanel();
-
                 } else {
                     Tools.showMessage(java.util.ResourceBundle.getBundle("VisualLogic/Messages").getString("File already exist."));
                 }
@@ -1285,7 +1280,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         // myopenlab.path speichert immer das verzeichniss wo
         // sich MyOpenLab befindet!
-        fileName = getUserURL().getFile() + File.separator+"myopenlab.path";
+        fileName = getUserURL().getFile() + File.separator + "myopenlab.path";
 
         if (!new File(fileName).exists()) {
             try {

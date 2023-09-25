@@ -36,7 +36,7 @@ public class FrameConsoleOutput extends javax.swing.JFrame
         
         
         
-        javax.swing.ImageIcon icon =new javax.swing.ImageIcon(getClass().getResource("/Bilder/16x16/utilities-terminal.png"));
+        javax.swing.ImageIcon icon =new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/utilities-terminal.png"));
         setIconImage(icon.getImage());        
     }
     
@@ -60,7 +60,7 @@ public class FrameConsoleOutput extends javax.swing.JFrame
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
 
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/FrameConsoleOutput"); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/FrameConsoleOutput"); // NOI18N
         jmniClear.setText(bundle.getString("Clear")); // NOI18N
         jmniClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

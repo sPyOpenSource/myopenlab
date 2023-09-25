@@ -149,6 +149,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public double zoomX = 1.0;
     public double zoomY = 1.0;
 
+    @Override
     public GeneralPath jParsePath() {
         GeneralPath path = parsepath(1.0, 1.0);
 
@@ -170,18 +171,22 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
     }
 
+    @Override
     public void jSetRepaintDifference(int diff) {
         elementRefreshDifferenz = diff;
     }
 
+    @Override
     public MyOpenLabDriverIF jOpenDriver(String driverName, ArrayList args) {
         return Tools.driverManager.openDriver(this, driverName, args);
     }
 
+    @Override
     public void jCloseDriver(String driverName) {
         Tools.driverManager.closeDriver(this, driverName);
     }
 
+    @Override
     public Object jGetTag(int index) {
         if (index >= 0 && index < 10) {
             return tags[index];
@@ -211,6 +216,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
     }
 
+    @Override
     public void setVisible(boolean value) {
         if (value) {
             setCaptionVisible(isCaptionVisible());
@@ -232,6 +238,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         return xname;
     }
 
+    @Override
     public void jNotifyMeForClock() {
         owner.clockList.add(this);
     }
@@ -407,7 +414,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     }
 
     public void jShowFrontPanel(boolean modal) {
-
         if (subDialog == null) {
             elementBasis.getFrontBasis().isBasisResizePinVisible = false;
 

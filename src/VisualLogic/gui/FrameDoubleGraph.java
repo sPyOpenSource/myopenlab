@@ -45,20 +45,20 @@ class TheGraphDouble
 public class FrameDoubleGraph extends javax.swing.JFrame
 {
     private final Basis basis;
-    private final int distance=20;
+    private final int distance = 20;
     private TheGraphDouble[] graphs;
     public double[] xValues;
-    public double[] nullValue=new double[1];
+    public double[] nullValue = new double[1];
     
-    public int abtastFreq=10;
-    public int refreshFreq=250;
-    private int internalC=0;
-    private int refreshC=0;
-    private boolean dontRefresh=false;
+    public int abtastFreq = 10;
+    public int refreshFreq = 250;
+    private int internalC = 0;
+    private int refreshC = 0;
+    private boolean dontRefresh = false;
     private final DefaultListModel model = new DefaultListModel();
     
-    private int bufflen=100;
-    private int newbufflen=bufflen;
+    private int bufflen = 100;
+    private int newbufflen = bufflen;
     
     /** Creates new form FrameBooleanGraph */
     public FrameDoubleGraph(Basis basis)
@@ -85,7 +85,7 @@ public class FrameDoubleGraph extends javax.swing.JFrame
         JSpinner.NumberEditor editor3 = new JSpinner.NumberEditor(jSpinner3);
         jSpinner3.setEditor(editor3);        
         //setIconImage(basis.getFrameMain().iconImage);
-        javax.swing.ImageIcon icon =new javax.swing.ImageIcon(getClass().getResource("/Bilder/graphDouble16x16.gif"));
+        javax.swing.ImageIcon icon =new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/graphDouble16x16.gif"));
         setIconImage(icon.getImage());
         jList1.setModel(model);
     }
@@ -111,7 +111,7 @@ public class FrameDoubleGraph extends javax.swing.JFrame
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList();
 
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/FrameDoubleGraph"); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/FrameDoubleGraph"); // NOI18N
         setTitle(bundle.getString("AnalogGraphWindow")); // NOI18N
         setAlwaysOnTop(true);
 

@@ -97,4 +97,5 @@ public interface ElementIF
     public abstract void loadFromStreamAfterXOnInit(FileInputStream fis);
     
     public abstract String xgetName();
+    
 }

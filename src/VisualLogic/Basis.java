@@ -162,7 +162,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
         Element[] tpNodes = getCircuitBasis().getAllTestpointElements();
 
-        String strName = "";
+        String strName;
         for (Element tpNode : tpNodes) {
             strName = tpNode.jGetCaption();
             if (!istEintragsBereitsVorhanden(strName)) {
@@ -230,7 +230,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         }
 
         return result;
-
     }
 
     @Override
@@ -1842,6 +1841,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         getFrontBasis().xonInitInputPins();
     }
 
+    @Override
     public void xonInitOutputPins() {
         getCircuitBasis().initAllOutputPins();
         getFrontBasis().initAllOutputPins();

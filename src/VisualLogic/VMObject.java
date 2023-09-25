@@ -472,22 +472,22 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
             vsCustomXwindowPos.setValue(owner.CustomXwindowPos);
             vsCustomYwindowPos.setValue(owner.CustomYwindowPos);
 
-            owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("Width"), vsWidth, 20, 5000, true);
-            owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("Height"), vsHeight, 20, 5000, true);
+            owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/VMObject").getString("Width"), vsWidth, 20, 5000, true);
+            owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/VMObject").getString("Height"), vsHeight, 20, 5000, true);
 
             owner.propertyEditor.addItem("Properties", vsProperties, 0, 0, true);
             boolean EditableTemp = owner.WindowsPosition.selectedIndex == 5; // IF user select "CUSTOM" enable editable X and Y Loation
 
             if (this == owner.getFrontBasis()) {
-                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("ShowToolbar"), vsShowToolbar, 0, 0, true);
-                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("unDecorateFrame"), vsUnDecorate, 0, 0, true);
-                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("AlwaysOnTop"), vsAlwaysOnTop, 0, 0, true);
-                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("WindowPosition"), vsWindowsPosition, 0, 100, true);
-                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("XcustomPos"), vsCustomXwindowPos, Integer.MIN_VALUE, Integer.MAX_VALUE, EditableTemp);
-                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("YcustomPos"), vsCustomYwindowPos, Integer.MIN_VALUE, Integer.MAX_VALUE, EditableTemp);
-                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("Color"), vsColor, 20, 5000, true);
-                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("Title"), vsCaption, 20, 5000, true);
-                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("Icon"), owner.vsIcon, 0, 0, true);
+                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/VMObject").getString("ShowToolbar"), vsShowToolbar, 0, 0, true);
+                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/VMObject").getString("unDecorateFrame"), vsUnDecorate, 0, 0, true);
+                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/VMObject").getString("AlwaysOnTop"), vsAlwaysOnTop, 0, 0, true);
+                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/VMObject").getString("WindowPosition"), vsWindowsPosition, 0, 100, true);
+                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/VMObject").getString("XcustomPos"), vsCustomXwindowPos, Integer.MIN_VALUE, Integer.MAX_VALUE, EditableTemp);
+                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/VMObject").getString("YcustomPos"), vsCustomYwindowPos, Integer.MIN_VALUE, Integer.MAX_VALUE, EditableTemp);
+                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/VMObject").getString("Color"), vsColor, 20, 5000, true);
+                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/VMObject").getString("Title"), vsCaption, 20, 5000, true);
+                owner.propertyEditor.addItem(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/VMObject").getString("Icon"), owner.vsIcon, 0, 0, true);
             }
 
             owner.propertyEditor.reorderItems();
@@ -3195,9 +3195,9 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
             String strText;
             if (this == owner.getCircuitBasis()) {
-                strText = java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("loadingCircuitVM");
+                strText = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/Basic").getString("loadingCircuitVM");
             } else {
-                strText = java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("loadingPanelVM");
+                strText = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/Basic").getString("loadingPanelVM");
             }
             if (Tools.dialogWait != null) {
                 DialogWait.label1.setText(strText);
