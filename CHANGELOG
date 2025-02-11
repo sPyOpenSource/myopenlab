@@ -21,7 +21,7 @@ added: readme
 relocated: license file
 changed: java version to 11
 
-3.12.0 XW 26-07-2020
+3.12.0 initial version 26-07-2020
 added: String Functions
 added: String Constants
 added: Element Properties could be enabled/disabled in the next new elements.
