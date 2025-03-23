@@ -784,6 +784,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         owner.add(lblName);
     }
 
+    @Override
     public void jLoadProperties() {
         isLoading = true;
         loadProperties();
@@ -800,6 +801,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
     }
 
+    @Override
     public void resetValuesPanelElement() {
         Element el = (Element) getPanelElement();
 
@@ -808,6 +810,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
     }
 
+    @Override
     public void processPanelElement() {
         Element el = (Element) getPanelElement();
 
@@ -816,6 +819,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
     }
 
+    @Override
     public void jProcessPanel(int pinIndex, double value, Object obj) {
         try {
             ((PanelIF) classRef).processPanel(pinIndex, value, obj);
@@ -854,9 +858,8 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     }
 
     public int getIndexOfComponent(VMObject vm, Component comp) {
-        Component c = null;
         for (int i = 0; i < vm.getComponentCount(); i++) {
-            c = vm.getComponent(i);
+            Component c = vm.getComponent(i);
 
             if (c.equals(comp)) {
                 return i;
@@ -1521,6 +1524,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         return null;
     }
 
+    @Override
     public void processPropertyEditor() {
         jClearPE();
         
@@ -1536,7 +1540,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
             if (elementBasis != null) {
 
-                VMObject vm = null;
+                VMObject vm;
                 if (this.owner == this.owner.owner.getCircuitBasis()) {
                     vm = elementBasis.getCircuitBasis();
                 } else {

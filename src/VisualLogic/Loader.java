@@ -38,7 +38,7 @@ public class Loader
         
         URL url2 = new File(elementPath).toURI().toURL(); 
 
-        cl = new URLClassLoader( new URL[]{ url, url2},Thread.currentThread().getContextClassLoader());
+        cl = new URLClassLoader( new URL[]{url, url2},Thread.currentThread().getContextClassLoader());
                 
         Class<?> c = cl.loadClass(klassename );
         

@@ -529,9 +529,9 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                     new File(dir).mkdir();
 
                     try {
-                        Tools.copy(new File(elementPath + File.separator+"nope.html"), new File(dir + File.separator + "doc.html"));
-                        Tools.copy(new File(elementPath + File.separator+"nope.html"), new File(dir + File.separator + "doc_en.html"));
-                        Tools.copy(new File(elementPath + File.separator+"nope.html"), new File(dir + File.separator + "doc_es.html"));
+                        Tools.copy(new File(elementPath + File.separator + "nope.html"), new File(dir + File.separator + "doc.html"));
+                        Tools.copy(new File(elementPath + File.separator + "nope.html"), new File(dir + File.separator + "doc_en.html"));
+                        Tools.copy(new File(elementPath + File.separator + "nope.html"), new File(dir + File.separator + "doc_es.html"));
 
                         Tools.copy(new File(elementPath + "/element.gif"), new File(dir + "/" + DialogSubVMAssistent.vmName + ".gif"));
                     } catch (IOException ex) {
