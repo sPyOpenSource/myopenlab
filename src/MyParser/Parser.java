@@ -182,22 +182,22 @@ public class Parser
     }
     public void setExpression(String expression)
     {                  
-        expression=entfernealleleerzeichen(expression);
-        pointer=0;
+        expression = entfernealleleerzeichen(expression);
+        pointer = 0;
         mainVector.clear();
         tokensToVector(expression, mainVector);
         handleMinusOperator(mainVector);
-        klammere(mainVector,0); // klammere zuerst die Punkte
-        klammere(mainVector,1); // klammere zuerst die Punkte
-        optVector=optimize(mainVector);
-        int count=getKlammerPlus(mainVector);
+        klammere(mainVector, 0); // klammere zuerst die Punkte
+        klammere(mainVector, 1); // klammere zuerst die Punkte
+        optVector = optimize(mainVector);
+        int count = getKlammerPlus(mainVector);
 
-        if (count>0)
+        if (count > 0)
         {
           setErrorMessage("Fehler in String : zuviel geffnete klammern!");
         }
 
-        if (count<0)
+        if (count < 0)
         {
           setErrorMessage("Fehler in String : zuviel geschlossene klammern!");
         }
@@ -211,8 +211,8 @@ public class Parser
     private static double fakultaet (double a)
     {
       double i,r;
-      r=1.0;
-      for(i=2 ; i <= a ; i++) {
+      r = 1.0;
+      for(i = 2 ; i <= a ; i++) {
         r *= i;
       }
       return r;
@@ -235,7 +235,7 @@ public class Parser
             }else
             if (isBoolean(str)) 
             {
-                boolean x=Boolean.valueOf(str);
+                boolean x = Boolean.parseBoolean(str);
                 token.setValue(x);
             }else                       
             if (isNum(str)) 
@@ -269,7 +269,7 @@ public class Parser
         return result;
       }
     
-    String lastVar="";
+    String lastVar = "";
     
     
     private String calcString(ArrayList vector)

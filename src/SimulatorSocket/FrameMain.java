@@ -116,6 +116,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF
         });
     }
     
+    @Override
     public void ownerMessage(String message)
     {
         jTextArea1.append(message);

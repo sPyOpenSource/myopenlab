@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Inc
+comment1.params=g
+comment1.target=void\ paint(java.awt.Graphics)
+comment10.params=fos
+comment10.target=void\ saveToStream(java.io.FileOutputStream)
+comment2.params=
+comment2.target=void\ generateCode()
+comment3.params=
+comment3.target=void\ init()
+comment4.params=
+comment4.target=void\ xOnInit()
+comment5.params=
+comment5.target=void\ initInputPins()
+comment6.params=
+comment6.target=void\ initOutputPins()
+comment7.params=o
+comment7.target=void\ propertyChanged(java.lang.Object)
+comment8.params=
+comment8.target=void\ process()
+comment9.params=fis
+comment9.target=void\ loadFromStream(java.io.FileInputStream)
+numComments=11

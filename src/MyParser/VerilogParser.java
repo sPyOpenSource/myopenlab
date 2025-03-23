@@ -49,7 +49,7 @@ public class VerilogParser{
         }
     }
 
-    class Wire   {
+    class Wire {
         int id;		/*Wire ID number*/
         String name;	/*Name of this wire*/
         String type; 	/*Type of gate driving this wire*/
@@ -66,7 +66,7 @@ public class VerilogParser{
         int id;	/*node number*/
     };
 
-    class Circuit  {
+    class Circuit {
         Wire[] wires;					/*Array of all wires */
         Node[] nodes;					/*Array of nodes*/
         String name;					/*Name of the circuit. */
@@ -77,7 +77,7 @@ public class VerilogParser{
         int size, id;		        		/*Circuit size and identifier*/
     };
 
-    class Module  {
+    class Module {
         String name;					/*Name of the module*/
         int inputcount, outputcount;	   		/*Count of primary inputs and primary outputs. */
         int wirecount, regcount, gatecount;	        /*Count of wires ,regs, gates*/
@@ -97,7 +97,7 @@ public class VerilogParser{
     boolean isReserved (String word)
     {
         for (int i = 0; i < RESERVEDNUM; i++)
-            if (word==Keywords.reserved_word[i] || word=="endmodule")
+            if (word.equals(Keywords.reserved_word[i]) || "endmodule".equals(word))
                 return true;
         return false;
     }
@@ -111,7 +111,7 @@ public class VerilogParser{
     {
         int i;
         for (i = 0; i < Keywords.gate_name.length; i++)
-            if (word==Keywords.gate_name[i])
+            if (word.equals(Keywords.gate_name[i]))
                 return true;
         return false;
     }
@@ -124,7 +124,7 @@ public class VerilogParser{
     boolean isFinalOutput (Wire w, Circuit c)
     {
         for(int i = 0; i < c.outputcount; i++)
-            if (w.name==c.outputs[i])
+            if (w.name.equals(c.outputs[i]))
                 return true;
         return false;
     }
@@ -149,25 +149,25 @@ public class VerilogParser{
      */
     int Convert (String gate)
     {
-        if (gate=="INPUT")
+        if ("INPUT".equals(gate))
             return 0;
-        else if (gate=="AND")
+        else if ("AND".equals(gate))
             return 1;
-        else if (gate=="NAND")
+        else if ("NAND".equals(gate))
             return 2;
-        else if (gate=="OR")
+        else if ("OR".equals(gate))
             return 3;
-        else if (gate=="NOR")
+        else if ("NOR".equals(gate))
             return 4;
-        else if (gate=="XOR")
+        else if ("XOR".equals(gate))
             return 5;
-        else if (gate=="XNOR")
+        else if ("XNOR".equals(gate))
             return 6;
-        else if (gate=="BUF")
+        else if ("BUF".equals(gate))
             return 7;
-        else if (gate=="NOT" || gate=="INV")
+        else if ("NOT".equals(gate) || "INV".equals(gate))
             return 8;
-        else if (gate=="I")
+        else if ("I".equals(gate))
             return 9;
         else
             return 10;
@@ -253,7 +253,7 @@ public class VerilogParser{
     {
         int i;
         for(i = 0; i < c.size; i++) {
-            if (name==c.nodes[i].name) { // If node is found in the circuit, get its index
+            if (name.equals(c.nodes[i].name)) { // If node is found in the circuit, get its index
                 return c.nodes[i].id;
             }
         }
@@ -283,7 +283,7 @@ public class VerilogParser{
     {
         int i = 0;
         while (c.wires[i] != null) {
-            if (name==c.wires[i].name) // If node is found in the circuit
+            if (name.equals(c.wires[i].name)) // If node is found in the circuit
                 return c.wires[i];
             i++;
         }
@@ -315,7 +315,7 @@ public class VerilogParser{
         w.outputcount = 0;			/*Initial number of outputs*/
 
         for(i = 0; i < c.inputcount; i++) { /*Circuit primary inputs*/
-            if (w.name==c.inputs[i]) {
+            if (w.name.equals(c.inputs[i])) {
                 w.primary = true;
             }
         }
@@ -332,7 +332,7 @@ public class VerilogParser{
     {
         int i = 0;
         while (c.wires[i] != null) {
-            if (c.wires[i].name==name)
+            if (c.wires[i].name.equals(name))
                 return true;
             i++;
         }

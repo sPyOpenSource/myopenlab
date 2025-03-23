@@ -72,9 +72,7 @@ public class Server extends Thread
                 owner.ownerMessage("Client accepted\n");
                 
             }
-        }
-        catch (IOException ex)
-        {
+        } catch (IOException ex) {
            close();
         }
 

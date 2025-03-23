@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=STOP
+comment1.params=g
+comment1.target=void\ paint(java.awt.Graphics)
+comment2.params=
+comment2.target=void\ init()
+comment3.params=
+comment3.target=void\ initInputPins()
+comment4.params=
+comment4.target=void\ destElementCalled()
+comment5.params=
+comment5.target=void\ process()
+numComments=6

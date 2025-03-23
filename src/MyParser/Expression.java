@@ -21,15 +21,15 @@ package MyParser;
 // created by jay 1.1.0 (c) 2002-2006 ats@cs.rit.edu
 // skeleton Java 1.1.0 (c) 2002-2006 ats@cs.rit.edu
 
-					// line 2 "Expression.jay"
+// line 2 "Expression.jay"
 
   import java.io.IOException;
   import java.io.Reader;
   import java.io.StreamTokenizer;
   import java.util.ArrayList;
 
-  /** recognizes, stores, and evaluates arithmetic expressions
-      using a parser generated with jay.
+   /** recognizes, stores, and evaluates arithmetic expressions
+    * using a parser generated with jay.
     */
   public class Expression
   {
@@ -80,8 +80,8 @@ package MyParser;
     */
   protected static final int yyFinal = 15;
 
-  /** parser tables.
-      Order is mandated by <i>jay</i>.
+   /** parser tables.
+    * Order is mandated by <i>jay</i>.
     */
   protected static final short[] yyLhs = {
 //yyLhs 34

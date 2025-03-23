@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=StaticImage
+comment1.params=g
+comment1.target=void\ paint(java.awt.Graphics)
+comment10.params=fis
+comment10.target=void\ loadFromStream(java.io.FileInputStream)
+comment11.params=
+comment11.target=void\ onDispose()
+comment12.params=fos
+comment12.target=void\ saveToStream(java.io.FileOutputStream)
+comment2.params=
+comment2.target=void\ init()
+comment3.params=
+comment3.target=void\ openPropertyDialog()
+comment4.params=
+comment4.target=void\ initOutputPins()
+comment5.params=o
+comment5.target=void\ propertyChanged(java.lang.Object)
+comment6.params=imgx\ w\ h
+comment6.target=int[]\ image2Pixel(java.awt.Image,\ int,\ int)
+comment7.params=
+comment7.target=void\ start()
+comment8.params=
+comment8.target=void\ setPropertyEditor()
+comment9.params=
+comment9.target=void\ localize()
+numComments=13

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=NAND
+comment1.params=
+comment1.target=NAND()
+comment2.params=
+comment2.target=void\ start()
+comment3.params=
+comment3.target=void\ init()
+comment4.params=g
+comment4.target=void\ paint(java.awt.Graphics)
+comment5.params=
+comment5.target=void\ process()
+comment6.params=
+comment6.target=void\ processClock()
+numComments=7

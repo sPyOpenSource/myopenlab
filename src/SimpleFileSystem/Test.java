@@ -35,9 +35,9 @@ public class Test
      */
     public static void main(String[] args) 
     {
-       FileSystemOutput fso= new FileSystemOutput("c:/test.dat");
+       FileSystemOutput fso = new FileSystemOutput("c:/test.dat");
               
-       FileOutputStream fos=fso.addItem("Homer");
+       FileOutputStream fos = fso.addItem("Homer");
              
        try
        {
@@ -50,7 +50,7 @@ public class Test
        }
        fso.postItem();
 
-       fos=fso.addItem("Simpson");
+       fos = fso.addItem("Simpson");
        try
        {
          fos.write(21);

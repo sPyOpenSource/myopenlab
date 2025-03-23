@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Properties
+comment1.params=frame\ input
+comment1.target=Properties(javax.swing.JFrame,\ java.lang.String)
+comment2.params=evt
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=evt
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=4

@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=FileConfigParser
+comment0.text=\n\n\ @author\ Carmelo\n
+comment1.params=
+comment1.target=java.lang.String\ getBlock()
+comment2.params=num
+comment2.target=int\ getInteger(java.lang.String)
+comment3.params=message
+comment3.target=void\ showMessage(java.lang.String)
+comment4.params=tokens
+comment4.target=java.lang.String[]\ reduceTokens(java.lang.String[])
+comment5.params=
+comment5.target=void\ interp()
+comment6.params=text
+comment6.target=java.util.ArrayList\ convertStringToArray(java.lang.String)
+comment6.text=public\ void\ loadTextFile(File\ file)\n\ \ \ \ {\n\ \ \ \ \ \ \ \ if\ (file.exists())\n\ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ try\n\ \ \ \ \ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BufferedReader\ input\ \=\ new\ BufferedReader(new\ FileReader(file));\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ String\ inputString;\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ while\ ((inputString\ \=\ input.readLine())\ \!\=\ null)\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if\ (inputString\ \=\=\ null)\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ break;\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ inputString\ \=\ inputString.trim();\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ liste.add(inputString);\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ input.close();\n\ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ \ \ catch\ (Exception\ ex)\n\ \ \ \ \ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ showMessage(ex.toString());\n\ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ }\n}
+comment7.params=config
+comment7.target=FileConfigParser(java.lang.String)
+numComments=8

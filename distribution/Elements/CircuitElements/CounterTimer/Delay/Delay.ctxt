@@ -1,0 +1,34 @@
+#BlueJ class context
+comment0.target=Delay
+comment1.params=
+comment1.target=Delay()
+comment10.params=
+comment10.target=void\ localize()
+comment11.params=
+comment11.target=void\ initInputPins()
+comment12.params=
+comment12.target=void\ initOutputPins()
+comment13.params=
+comment13.target=void\ checkPinDataType()
+comment14.params=fis
+comment14.target=void\ loadFromStream(java.io.FileInputStream)
+comment15.params=fos
+comment15.target=void\ saveToStream(java.io.FileOutputStream)
+comment2.params=
+comment2.target=void\ onDispose()
+comment3.params=g
+comment3.target=void\ paint(java.awt.Graphics)
+comment4.params=
+comment4.target=void\ init()
+comment5.params=
+comment5.target=void\ start()
+comment6.params=
+comment6.target=void\ stop()
+comment7.params=
+comment7.target=void\ process()
+comment8.params=
+comment8.target=void\ processClock()
+comment9.params=
+comment9.target=void\ setPropertyEditor()
+comment9.text=public\ void\ processX()\n\ \ {\n\ \ \ \ if\ (started)\n\ \ \ \ {\n\ \ \ \ \ \ if\ (in\ instanceof\ VSObject)\n\ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ out.setChanged(true);\n\ \ \ \ \ \ \ \ \ \ element.notifyPin(0);\n\ \ \ \ \ \ \ \ \ \ started\=false;\n\ \ \ \ \ \ }\n\ \ \ \ }\n}
+numComments=16

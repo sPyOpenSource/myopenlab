@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Input
+comment0.text=\n\n\ Beschreibung\n\n\ @version\ 1.0\ vom\ 30.11.2006\n\ @author\n
+comment1.params=parent\ modal
+comment1.target=Input(java.awt.Frame,\ boolean)
+comment2.params=evt
+comment2.target=void\ windowClosing(java.awt.event.WindowEvent)
+comment3.params=evt
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment4.params=evt
+comment4.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment5.params=evt
+comment5.target=void\ button1ActionPerformed(java.awt.event.ActionEvent)
+comment6.params=evt
+comment6.target=void\ button2ActionPerformed(java.awt.event.ActionEvent)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

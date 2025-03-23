@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=ColorConst
+comment1.params=g
+comment1.target=void\ paint(java.awt.Graphics)
+comment10.params=fis
+comment10.target=void\ loadFromStream(java.io.FileInputStream)
+comment11.params=fos
+comment11.target=void\ saveToStream(java.io.FileOutputStream)
+comment2.params=
+comment2.target=void\ init()
+comment3.params=
+comment3.target=void\ setPropertyEditor()
+comment4.params=
+comment4.target=void\ localize()
+comment5.params=o
+comment5.target=void\ propertyChanged(java.lang.Object)
+comment6.params=
+comment6.target=void\ initInputPins()
+comment7.params=
+comment7.target=void\ initOutputPins()
+comment8.params=
+comment8.target=void\ start()
+comment9.params=
+comment9.target=void\ process()
+numComments=12

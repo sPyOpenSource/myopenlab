@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=XOR
+comment1.params=
+comment1.target=XOR()
+comment2.params=a\ b
+comment2.target=boolean\ XOR(boolean,\ boolean)
+comment3.params=
+comment3.target=void\ process()
+numComments=4

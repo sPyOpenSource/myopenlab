@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Node
+comment1.params=g
+comment1.target=void\ paint(java.awt.Graphics)
+comment10.params=fis
+comment10.target=void\ loadFromStream(java.io.FileInputStream)
+comment11.params=fos
+comment11.target=void\ saveToStream(java.io.FileOutputStream)
+comment2.params=
+comment2.target=void\ init()
+comment3.params=
+comment3.target=void\ xOnInit()
+comment4.params=
+comment4.target=void\ initInputPins()
+comment5.params=
+comment5.target=void\ initOutputPins()
+comment6.params=
+comment6.target=void\ checkPinDataType()
+comment7.params=
+comment7.target=boolean\ isOnePinTrue()
+comment8.params=evt
+comment8.target=void\ elementActionPerformed(VisualLogic.ElementActionEvent)
+comment9.params=
+comment9.target=void\ initX()
+numComments=12

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=vlogicFilter
+comment1.params=f
+comment1.target=boolean\ accept(java.io.File)
+comment2.params=
+comment2.target=java.lang.String\ getDescription()
+numComments=3

@@ -36,15 +36,13 @@ public class Client extends Thread
     
     public Client(Socket client, MyOpenLabOwnerIF owner)
     {
-        this.owner=owner;
+        this.owner = owner;
         try
         {
             this.client = client;
             dis = new DataInputStream(client.getInputStream());
             dos = new DataOutputStream(client.getOutputStream());
-        }
-        catch (IOException ex)
-        {
+        } catch (IOException ex) {
             close();
         }
 
