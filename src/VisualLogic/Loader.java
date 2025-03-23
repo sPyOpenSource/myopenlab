@@ -61,8 +61,7 @@ public class Loader
         Class<?> c = cl.loadClass( klassename );
         
         o = c.newInstance();    
-    } 
-    catch (Exception | UnsupportedClassVersionError ex)
+    } catch (Exception | UnsupportedClassVersionError ex)
     {
         Logger.getLogger(Loader.class.getName()).log(Level.SEVERE, null, ex);     
     }

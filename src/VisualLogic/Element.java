@@ -689,7 +689,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                 if (args.length == 6 && args[5].equalsIgnoreCase("LOADER")) {
                     String f = new File(args[4]).getPath();
                     this.definitionPath = f;
-
                 } else {
                     String f = new File(args[0]).getParent();
                     this.definitionPath = f;
@@ -706,7 +705,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         File fileX = new File(korrigiereFileSeparator(elementPath + this.definitionPath));
         definition_def = Tools.getProertiesFromDefinitionFile(fileX);
 
-        String myClassPath = "";
+        String myClassPath;
 
         if (definition_def.redirect.length() > 0) {
             myClassPath = "/" + definition_def.redirect;
@@ -715,9 +714,8 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
             myClassPath = mainPath;
         }
 
-        myClassPath=korrigiereFileSeparator(myClassPath);
+        myClassPath = korrigiereFileSeparator(myClassPath);
         
-
         if (className.equalsIgnoreCase("DUMMY")) {
             classRef = null; // also Dummy!
         } else {
@@ -729,14 +727,12 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                     String classPaths = getKorrectClassPaths(elementPath, mainPath, definition_def.classPath);
                     URL url3 = new File(classPaths).toURI().toURL();
 
-                    URL url4 = null;
-
                     if (definition_def.classPath2.trim().length() > 0) {
                         classPaths = getKorrectClassPaths(elementPath, mainPath, definition_def.classPath2);
-                        url4 = new File(classPaths).toURI().toURL();
-                    }
-if(url4 == null) classRef = (ElementIF) loader.ladeClasseDriver(new URL[]{url1, url2, url3}, this.className);
-else             classRef = (ElementIF) loader.ladeClasseDriver(new URL[]{url1, url2, url3, url4}, this.className);
+                        URL url4 = new File(classPaths).toURI().toURL();
+                        classRef = (ElementIF) loader.ladeClasseDriver(new URL[]{url1, url2, url3, url4}, this.className);
+                    } else
+                        classRef = (ElementIF) loader.ladeClasseDriver(new URL[]{url1, url2, url3}, this.className);
                 } else {
                     String pfad = Tools.mapFile(elementPath + myClassPath + "/bin");
                     //File file = new File(pfad);

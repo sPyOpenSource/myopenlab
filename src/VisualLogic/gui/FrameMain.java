@@ -1308,15 +1308,14 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         try{
             String OS_arch = System.getProperty("os.arch"); // arm Raspberry PI
             String OS_name = System.getProperty("os.name"); // Linux Raspberry PI
-            System.out.println("OS_Name="+OS_name+"_OS_Arch="+OS_arch);
+            System.out.println("OS_Name=" + OS_name + "_OS_Arch=" + OS_arch);
 
             if(OS_arch.equalsIgnoreCase("arm")   || OS_name.contains("Linux") 
                     || OS_name.contains("linux") || OS_name.contains("LINUX")
                     || OS_name.contains("mac")   || OS_name.contains("MAC")
                     || OS_name.contains("Mac")){
 
-            }    
-            
+            }
         } catch(Exception e) {
                 System.out.println(e);   
         }
@@ -3415,9 +3414,8 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         int i = 0;
         int old = 0;
-        String ch = "";
         while (i < str.length()) {
-            ch = str.substring(i, i + 1);
+            String ch = str.substring(i, i + 1);
             if (ch.equalsIgnoreCase("\n")) {
                 String aa = str.substring(old, i).trim() + "\n";
                 result += "  " + aa;
@@ -4162,7 +4160,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
                 String frontClass = "VMPanel";
 
-                if (basis.getFrontBasis().getSelectedElements().size() > 0) {
+                if (!basis.getFrontBasis().getSelectedElements().isEmpty()) {
                     frontClass = "VMPanel";
                 } else {
                     frontClass = "";
@@ -4698,14 +4696,14 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     private void jmiForumActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jmiForumActionPerformed
     {//GEN-HEADEREND:event_jmiForumActionPerformed
 
-        Tools.openUrl(this, "http://myopenlab.org/comunidad/");
+        Tools.openUrl(this, "https://myopenlab.org/comunidad/");
 
     }//GEN-LAST:event_jmiForumActionPerformed
 
     private void jmiTutorialsActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jmiTutorialsActionPerformed
     {//GEN-HEADEREND:event_jmiTutorialsActionPerformed
 
-        Tools.openUrl(this, "http://myopenlab.org/videos/");
+        Tools.openUrl(this, "https://myopenlab.org/videos/");
 
     }//GEN-LAST:event_jmiTutorialsActionPerformed
 
@@ -4823,7 +4821,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     private void jmiHomepageActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jmiHomepageActionPerformed
     {//GEN-HEADEREND:event_jmiHomepageActionPerformed
 
-        Tools.openUrl(this, "http://myopenlab.org");
+        Tools.openUrl(this, "https://myopenlab.org");
 
     }//GEN-LAST:event_jmiHomepageActionPerformed
 
@@ -5173,6 +5171,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
             DialogWait frm;
 
+            @Override
             public Object doInBackground() {
                 Tools.dialogWait = new DialogWait();
                 Tools.dialogWait.setVisible(true);
@@ -5193,6 +5192,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 return null;
             }
 
+            @Override
             protected void done() {
                 Tools.dialogWait.dispose();
             }
@@ -5216,7 +5216,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 executeMainVM(project.getPath(), props.mainVM);
             }
         } else if (children != null && Tools.isProject(children)) {
-
             String tmp = project.getPath();
 
             boolean ok = false;
@@ -5240,7 +5239,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     }
 
     class LabelAccessory extends JLabel implements PropertyChangeListener {
-
         private final ImageIcon iconOK = new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/isProject.png"));
         private final ImageIcon iconX = new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/notAProject.png"));
 
@@ -5251,6 +5249,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         }
 
+        @Override
         public void propertyChange(PropertyChangeEvent changeEvent) {
             String changeName = changeEvent.getPropertyName();
             if (changeName.equals(JFileChooser.SELECTED_FILE_CHANGED_PROPERTY)) {
