@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=CElement
+comment1.params=g
+comment1.target=void\ paint(java.awt.Graphics)
+comment10.params=fis
+comment10.target=void\ loadFromStream(java.io.FileInputStream)
+comment11.params=fos
+comment11.target=void\ saveToStream(java.io.FileOutputStream)
+comment2.params=args
+comment2.target=void\ beforeInit(java.lang.String[])
+comment3.params=
+comment3.target=void\ init()
+comment4.params=
+comment4.target=void\ setPropertyEditor()
+comment5.params=pinIndex\ dtPin
+comment5.target=void\ setPinDT2(int,\ VisualLogic.variables.VSComboBox)
+comment6.params=pinIndex\ o\ dtPin
+comment6.target=void\ setPinDT(int,\ java.lang.Object,\ VisualLogic.variables.VSComboBox)
+comment7.params=o
+comment7.target=void\ propertyChanged(java.lang.Object)
+comment8.params=
+comment8.target=void\ initInputPins()
+comment9.params=
+comment9.target=void\ process()
+numComments=12

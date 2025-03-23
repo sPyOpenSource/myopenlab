@@ -1,3 +1,5 @@
+package Automation.FuzzyControl.src;
+
 //*****************************************************************************
 //* Element of MyOpenLab Library                                              *
 //*                                                                           *

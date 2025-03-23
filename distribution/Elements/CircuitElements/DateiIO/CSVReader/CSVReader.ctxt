@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=CSVReader
+comment1.params=
+comment1.target=void\ onDispose()
+comment10.params=filename
+comment10.target=void\ loadFile(java.lang.String)
+comment11.params=
+comment11.target=void\ process()
+comment2.params=g
+comment2.target=void\ paint(java.awt.Graphics)
+comment3.params=
+comment3.target=void\ init()
+comment4.params=
+comment4.target=void\ initInputPins()
+comment5.params=
+comment5.target=void\ setPropertyEditor()
+comment6.params=o
+comment6.target=void\ propertyChanged(java.lang.Object)
+comment7.params=
+comment7.target=void\ initOutputPins()
+comment8.params=
+comment8.target=void\ start()
+comment9.params=line
+comment9.target=java.lang.String\ extractX(java.lang.String)
+numComments=12

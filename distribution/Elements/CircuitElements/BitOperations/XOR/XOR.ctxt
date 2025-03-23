@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=XOR
+comment1.params=g
+comment1.target=void\ paint(java.awt.Graphics)
+comment10.params=value\ bits
+comment10.target=long\ copyBits(long,\ byte)
+comment10.text=\n\ Returns\ a\ long\ that\ contains\ the\ same\ n\ bits\ as\ the\ given\ long,with\ cleared\ upper\ rest.\n\ @param\ value\ the\ value\ which\ lowest\ bits\ should\ be\ copied.\n\ @param\ bits\ the\ number\ of\ lowest\ bits\ that\ should\ be\ copied.\n\ @return\ a\ long\ value\ that\ shares\ the\ same\ low\ bits\ as\ the\ given\ value.\n
+comment2.params=
+comment2.target=void\ onDispose()
+comment3.params=
+comment3.target=void\ init()
+comment4.params=
+comment4.target=void\ initInputPins()
+comment5.params=
+comment5.target=void\ initOutputPins()
+comment6.params=
+comment6.target=void\ checkPinDataType()
+comment7.params=
+comment7.target=void\ process()
+comment8.params=value
+comment8.target=byte\ toUnsigned(short)
+comment9.params=value
+comment9.target=short\ toSigned(byte)
+comment9.text=\n\ Converts\ an\ unsigned\ byte\ to\ a\ signed\ short.\n\ @param\ value\ an\ unsigned\ byte\ value\n\ @return\ a\ signed\ short\ that\ represents\ the\ unsigned\ byte's\ value.\n
+numComments=11

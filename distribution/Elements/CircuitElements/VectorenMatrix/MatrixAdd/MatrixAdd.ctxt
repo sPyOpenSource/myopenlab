@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=MatrixAdd
+comment1.params=g
+comment1.target=void\ paint(java.awt.Graphics)
+comment2.params=
+comment2.target=void\ onDispose()
+comment3.params=
+comment3.target=void\ init()
+comment4.params=
+comment4.target=void\ initInputPins()
+comment5.params=
+comment5.target=void\ initOutputPins()
+comment6.params=
+comment6.target=void\ start()
+comment7.params=a\ b
+comment7.target=VisualLogic.variables.VS2DDouble\ add(VisualLogic.variables.VS2DDouble,\ VisualLogic.variables.VS2DDouble)
+comment7.text=\n\ Addieren\ einer\ Matrix\ b\n
+comment8.params=
+comment8.target=void\ process()
+numComments=9

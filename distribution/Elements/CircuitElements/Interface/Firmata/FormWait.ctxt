@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=FormWait
+comment0.text=\n\n\ @author\ carmelo\n
+comment1.params=
+comment1.target=FormWait()
+comment1.text=\n\ Creates\ new\ form\ wait\n
+comment2.params=
+comment2.target=void\ initComponents()
+comment2.text=\n\ This\ method\ is\ called\ from\ within\ the\ constructor\ to\ initialize\ the\ form.\n\ WARNING\:\ Do\ NOT\ modify\ this\ code.\ The\ content\ of\ this\ method\ is\ always\n\ regenerated\ by\ the\ Form\ Editor.\n
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment3.text=\n\ @param\ args\ the\ command\ line\ arguments\n
+comment4.params=
+comment4.target=void\ run()
+numComments=5
