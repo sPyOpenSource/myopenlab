@@ -2907,7 +2907,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
     public void saveDraehte(FileSystemOutput fsOut, boolean onlySelected) {
         try {
-            FileOutputStream fos = fsOut.addItem(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("Element"));
+            FileOutputStream fos = fsOut.addItem(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/VMObject").getString("Element"));
             DataOutputStream dos = new DataOutputStream(fos);
 
             for (int i = 0; i < drahtLst.size(); i++) {

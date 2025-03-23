@@ -43,7 +43,7 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
     public DialogLupe lupe ;
     
     public Peditor.PropertyEditor propertyEditor;
-    private Element oldElement=null;
+    private Element oldElement = null;
     //private FrameElementDoc dialog;
     
     public JPanel panelCircuit=null;
@@ -52,7 +52,7 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
     
     
     public javax.swing.Timer timer;
-    private String elementPath="";
+    private String elementPath = "";
     private VMEditorPanelIF owner;
     
     public int oldElementCount=0;
@@ -63,7 +63,7 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
     
     public void enabled(boolean value)
     {
-        isEnabled=value;
+        isEnabled = value;
     }
     
     public Basis getBasis()
@@ -71,8 +71,8 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
         return basis;
     }
     
-    public boolean panelMode=false;
-    private boolean comboIsEditing=false;
+    public boolean panelMode = false;
+    private boolean comboIsEditing = false;
     
     
     public void setVMObject(VMObject obj)
@@ -176,10 +176,6 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
         }
     }
     
-    
-    
-      
-    
     /*public void processModus()
     {
         if (basis.modus==basis.PROCESSFIRST)
@@ -194,11 +190,11 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
     
     
     /** Creates new form FrameCircuitX */
-    public VMEditorPanel(VMEditorPanelIF owner, Basis basis,String elementPath, boolean panelMode)
+    public VMEditorPanel(VMEditorPanelIF owner, Basis basis, String elementPath, boolean panelMode)
     {
         initComponents();
         
-        this.owner=owner;
+        this.owner = owner;
         
         //lupe=new DialogLupe(this,basis,false);
         //lupe.setVisible(true);
@@ -210,7 +206,7 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
         //cmbProcessing.addItem(java.util.ResourceBundle.getBundle("VisualLogic/FrameCircuit").getString("topFirst"));
         //cmbProcessing.addItem(java.util.ResourceBundle.getBundle("VisualLogic/FrameCircuit").getString("bottomFirst"));
         
-        this.panelMode=panelMode;
+        this.panelMode = panelMode;
         
         //MeinPrintStream ausgabe=new MeinPrintStream(txtMessages);
         //System.setErr(ausgabe);
@@ -812,7 +808,7 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
 
         jScrollPaneCircuitPanel.setViewportView(jPanel1);
 
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/FrameCircuit"); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/FrameCircuit"); // NOI18N
         jTabbedPane1.addTab(bundle.getString("Circuit"), jScrollPaneCircuitPanel); // NOI18N
         jTabbedPane1.addTab(bundle.getString("Frontpanel"), jScrollPaneFrontPanel); // NOI18N
 

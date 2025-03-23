@@ -1200,12 +1200,12 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
             FileSystemInput fsi = new FileSystemInput(filename);
             if(!filename.endsWith("v")){
-            loadFromStream(fsi, fromAblage);
-                        } else {
+                loadFromStream(fsi, fromAblage);
+            } else {
                 String line;
                 do {
                     line = fsi.readline();
-                System.out.println(line); 
+                    System.out.println(line); 
                 }
                 while(line!= null);
                 //circuitBasis.loadFromStream(fsIn, fromAblage, ver);
@@ -1426,7 +1426,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         DataInputStream stream = new DataInputStream(fis);
         String ver = stream.readUTF(); // Version
         if (Double.parseDouble(ver) == 3.13){
-        System.out.println("LoadFomStream_BasisVersion:"+ver+"|");
+        System.out.println("LoadFomStream_BasisVersion:" + ver + "|");
         tmpPassword = stream.readUTF(); // Password einlesen
                 if (tmpPassword.length() > 0) {
                     if (frameCircuit != null && frameCircuit.frontMode == false) {
@@ -1472,7 +1472,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                 node.name = stream.readUTF();
                 node.datatype = stream.readInt();
                 if (Double.parseDouble(ver) >= 3.84) {
-                    System.out.println("Basis.java 1745 Double.parseDouble (ver)" + Double.parseDouble(ver));
+                    System.out.println("Basis.java 1745 Double.parseDouble (ver)" + Double.valueOf(ver));
                 }
                 
                     node.size1 = stream.readInt();
