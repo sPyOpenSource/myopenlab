@@ -151,21 +151,20 @@ public class Parser
     
     private String entfernealleleerzeichen(String str)
     {
-        String ch = "";
         String result = "";
         boolean inString = false;
         
         for (int i = 0; i < str.length(); i++)
         {  
-          ch = str.substring(i, i + 1);
+          String ch = str.substring(i, i + 1);
           
           if (inString == false &&  ch.equalsIgnoreCase("\"")) 
           {
               inString = true;
           } else
-          if (inString==true &&  ch.equalsIgnoreCase("\"")) 
+          if (inString == true &&  ch.equalsIgnoreCase("\"")) 
           {
-              inString=false;
+              inString = false;
           }
                   
           if (inString)
@@ -480,15 +479,15 @@ public class Parser
     
     private int sucheRechtsNachKlammer(ArrayList tokenListe, int pos)
     {
-        int c=0;
-        for (int i=pos;i<tokenListe.size();i++)
+        int c = 0;
+        for (int i = pos; i < tokenListe.size(); i++)
         {
-           String str=(String)tokenListe.get(i); 
+           String str = (String)tokenListe.get(i); 
            
            if (str.equals("(")) c++;
            if (str.equals(")")) c--;
            
-           if (c==0)
+           if (c == 0)
            {
              return i;   
            }

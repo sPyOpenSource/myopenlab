@@ -108,7 +108,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
         GeneralPath path = new GeneralPath();
 
-        if (points.size() > 0) {
+        if (!points.isEmpty()) {
             p = points.get(0);
 
             if (!p.commando.equalsIgnoreCase("MOVETO")) {
@@ -365,21 +365,25 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         return aspect;
     }
 
+    @Override
     public String jGetProjectPath() {
         String fn = owner.owner.fileName;
         return fn;
     }
 
+    @Override
     public String jGetProjectPathFromProject() {
         String fn = owner.owner.projectPath;
         return fn;
     }
 
+    @Override
     public JPanel getFrontPanel() {
         return this;
     }
     public SubDialog subDialog = null;
 
+    @Override
     public void jCloseFrontPanel() {
         if (subDialog != null) {
             subDialog.dispose();
@@ -407,12 +411,14 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
     }
 
+    @Override
     public void jOpenVM(String filename) {
         if (owner != null && owner.owner != null && elementBasis != null) {
             owner.owner.vsShow();
         }
     }
 
+    @Override
     public void jShowFrontPanel(boolean modal) {
         if (subDialog == null) {
             elementBasis.getFrontBasis().isBasisResizePinVisible = false;
@@ -438,6 +444,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
     }
 
+    @Override
     public void jNotifyWhenDestCalled(int pinIndex, ExternalIF element) {
         if (pinIndex < getPinCount()) {
             JPin pin = getPin(pinIndex);
@@ -456,6 +463,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
     }
 
+    @Override
     public void notifyPinAfter(int pinIndex) {
         if (pinIndex < getPinCount()) {
             JPin pin = getPin(pinIndex);
@@ -475,6 +483,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
     }
 
+    @Override
     public void notifyPin(int pinIndex) {
         if (pinIndex < getPinCount()) {
             JPin pin = getPin(pinIndex);
@@ -494,10 +503,12 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
     }
 
+    @Override
     public void addToProcesslist(VSObject out) {
         notifyPin(out.getPin());
     }
 
+    @Override
     public JFrame jGetFrame() {
         return owner.owner.frm;
     }
@@ -536,6 +547,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     }
     public boolean oldBorderVisibility = true;
 
+    @Override
     public void jSetBorderVisibility(boolean visible) {
         setBorderVisibility(visible);
     }
@@ -723,8 +735,8 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                         classPaths = getKorrectClassPaths(elementPath, mainPath, definition_def.classPath2);
                         url4 = new File(classPaths).toURI().toURL();
                     }
-
-                    classRef = (ElementIF) loader.ladeClasseDriver(new URL[]{url1, url2, url3, url4}, this.className);
+if(url4 == null) classRef = (ElementIF) loader.ladeClasseDriver(new URL[]{url1, url2, url3}, this.className);
+else             classRef = (ElementIF) loader.ladeClasseDriver(new URL[]{url1, url2, url3, url4}, this.className);
                 } else {
                     String pfad = Tools.mapFile(elementPath + myClassPath + "/bin");
                     //File file = new File(pfad);

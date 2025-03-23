@@ -5451,7 +5451,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     }//GEN-LAST:event_jButtonStart_JActionPerformed
 
     private void jmiMantisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiMantisActionPerformed
-        Tools.openUrl(this, "http://myopenlab.org/soporte/");
+        Tools.openUrl(this, "https://myopenlab.org/soporte/");
     }//GEN-LAST:event_jmiMantisActionPerformed
 
     public void reinitPackage() {
@@ -5514,9 +5514,8 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     int index = 0;
 
     private String removeJMPs(String code) {
-        String ch = "";
         while (true) {
-            ch = code.substring(index, index + 1);
+            String ch = code.substring(index, index + 1);
             if (index >= code.length()) {
                 return code;
             }
@@ -5605,7 +5604,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         try {
             url = new URL("file:" + filename);
         } catch (MalformedURLException ex) {
-
+            Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         try {
@@ -5730,7 +5729,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
  * 1.9 07/26/04
  */
 
-
 class TestTheme extends DefaultMetalTheme {
  
     @Override
@@ -5745,11 +5743,17 @@ class TestTheme extends DefaultMetalTheme {
     private final ColorUIResource SECONDARY2 = new ColorUIResource(164, 171, 184); // Bordes Sombra
     private final ColorUIResource SECONDARY3 = new ColorUIResource(214, 217, 223); // Color Fondo
  
+    @Override
     protected ColorUIResource getPrimary1() { return primary1; }
+    @Override
     protected ColorUIResource getPrimary2() { return primary2; }
+    @Override
     protected ColorUIResource getPrimary3() { return primary3; }
+    @Override
     protected ColorUIResource getSecondary1() { return SECONDARY1; }
+    @Override
     protected ColorUIResource getSecondary2() { return SECONDARY2; }
+    @Override
     protected ColorUIResource getSecondary3() { return SECONDARY3; }
     protected String getDefaultFontName() { return "Dialog"; }
     protected int getDefaultFontSize() { return 13; }

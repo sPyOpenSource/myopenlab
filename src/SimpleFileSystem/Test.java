@@ -69,9 +69,9 @@ public class Test
        {
          SFileDescriptor dt=fsIn.getFileDescriptor(i);
          
-         System.out.println("FName ="+dt.filename);
-         System.out.println("Pos   ="+dt.position);
-         System.out.println("Size   ="+dt.size);
+         System.out.println("FName =" + dt.filename);
+         System.out.println("Pos   =" + dt.position);
+         System.out.println("Size   =" + dt.size);
        }
        
        FileInputStream fis = fsIn.gotoItem(0);
@@ -79,8 +79,8 @@ public class Test
        fis = fsIn.gotoItem(1);
        
        try {
-         System.out.println("Value1="+fis.read());
-         System.out.println("Value2="+fis.read());
+         System.out.println("Value1=" + fis.read());
+         System.out.println("Value2=" + fis.read());
        } catch(IOException ex)
        {
            

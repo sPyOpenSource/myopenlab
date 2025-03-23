@@ -24,14 +24,14 @@ public class VerilogParser{
     int INPUT = 0;
     int AND = 1;
     int NAND = 2;
-    int OR = 3;
+    int OR  = 3;
     int NOR = 4;
     int XOR = 5;
     int XNOR = 6;
     int BUF = 7;
     int NOT = 8;
     int INV = 8;
-    int I = 9;
+    int I   = 9;
     int RESERVEDNUM = 107;
     int NO_OUT = 0;
 

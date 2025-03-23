@@ -229,8 +229,8 @@ package MyParser;
     -1,    -1,    60,    -1,    62,    -1,    64,
     };
 
-  /** maps symbol value to printable name.
-      @see #yyExpecting
+   /** maps symbol value to printable name.
+    * @see #yyExpecting
     */
   protected static final String[] yyNames = {
     "end-of-file",null,null,null,null,null,null,null,null,null,null,null,
@@ -668,6 +668,7 @@ case 33:
         Consumes end of line and pretends (once) that it is end of file.
         @return false at end of file and once at each end of line.
       */
+    @Override
     public boolean advance () throws IOException
     {
       if (ttype != TT_EOF) nextToken();
@@ -676,6 +677,7 @@ case 33:
     /** determines current input, sets value to String for Int and Real.
         @return Int, Real or token's character value.
       */
+    @Override
     public int token ()
     {
       switch (ttype) {
@@ -689,10 +691,10 @@ case 33:
            
            try
            {
-             int c=Integer.valueOf(sval);
+             int c = Integer.parseInt(sval);
 
-             if (c>=0 && c<=255) return BYTE; else
-             if (c>255 && c<=65535) return WORD; else
+             if (c >= 0 && c <= 255) return BYTE; else
+             if (c > 255 && c <= 65535) return WORD; else
               System.out.println("Error: Byte or Word excepted ");
 
              //return sval.indexOf(".") < 0 ? Int : Real;
@@ -732,6 +734,7 @@ case 33:
     /** produces value associated with current input.
         @return value.
       */
+    @Override
     public Object value ()
     {
       return value;

@@ -55,7 +55,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF
             }
         });
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Send");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -63,6 +63,11 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF
         });
 
         jTextField1.setText("jTextField1");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -104,6 +109,10 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF
     private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
         if (server!=null) server.close();
     }//GEN-LAST:event_formWindowClosed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
     
     /**
      * @param args the command line arguments
