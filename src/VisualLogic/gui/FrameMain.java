@@ -1114,7 +1114,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     }
 
     public void copyUserdefElements() {
-        int result = JOptionPane.showConfirmDialog(this, java.util.ResourceBundle.getBundle("VisualLogic/Messages").getString("CopyElements"), java.util.ResourceBundle.getBundle("VisualLogic/Messages").getString("Important"), JOptionPane.YES_NO_OPTION);
+        int result = JOptionPane.showConfirmDialog(this, java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/Messages").getString("CopyElements"), java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/Messages").getString("Important"), JOptionPane.YES_NO_OPTION);
 
         if (result == JOptionPane.OK_OPTION) {
             // Check if there are in the actual Userdef-Element-Path

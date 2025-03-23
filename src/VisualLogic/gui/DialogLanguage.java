@@ -68,7 +68,7 @@ public class DialogLanguage extends javax.swing.JDialog {
 
         jLabel1.setText("Language");
 
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/DialogLanguage"); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/DialogLanguage"); // NOI18N
         jButton2.setText(bundle.getString("cancel")); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
