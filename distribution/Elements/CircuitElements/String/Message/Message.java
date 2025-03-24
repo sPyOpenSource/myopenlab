@@ -31,13 +31,11 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
 
-
 public class Message extends JVSMain
 {
   private Image image;
   private VSString inMessage;
   private String oldValue="";
-
 
   public void xpaint(java.awt.Graphics g)
   {
@@ -79,7 +77,6 @@ public class Message extends JVSMain
       element.jSetPinDescription(0,"mensaje ES");
     }
 
-
     element.jSetCaptionVisible(true);
     element.jSetCaption("Message");
     setName("Message");
@@ -93,7 +90,6 @@ public class Message extends JVSMain
     {
       inMessage=new VSString("");
     }
-
   }
 
   public void initOutputPins()
@@ -112,4 +108,3 @@ public class Message extends JVSMain
 
   }
 }
-

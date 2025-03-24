@@ -28,7 +28,6 @@ import java.awt.event.*;
 import tools.*;
 import java.util.*;
 
-
 public class ColorConst extends JVSMain
 {
   public VSColor out=new VSColor(java.awt.Color.BLACK);
@@ -44,7 +43,6 @@ public class ColorConst extends JVSMain
 
   }
 
-  
  public void init()
   {
     initPins(0,1,0,0);
@@ -60,8 +58,6 @@ public class ColorConst extends JVSMain
     element.jSetCaption("ColorConst");
     setName("ColorConst");
   }
-
-
 
   public void setPropertyEditor()
   {
@@ -108,7 +104,6 @@ public class ColorConst extends JVSMain
   {
   }
   
-    
   public void loadFromStream(java.io.FileInputStream fis)
   {
       aColor.loadFromStream(fis);
@@ -119,6 +114,4 @@ public class ColorConst extends JVSMain
       aColor.saveToStream(fos);
   }
 
-
 }
-
