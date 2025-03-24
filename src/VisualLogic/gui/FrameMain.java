@@ -169,7 +169,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 Tools.showMessage(this, java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/Messages").getString("VM already exist") + " : " + new File(filename).getName());
             }
         }
-
     }
 
     public void dirAdd(MyNode node) {
@@ -234,11 +233,9 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                             String newFilename = new File(std).getAbsolutePath();
                             projects.add(newFilename);
                         }
-
                     }
 
                     reloadProjectPanel();
-                    
                 }
             }
         }
@@ -835,7 +832,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 MyButtonX button = (MyButtonX) e.getSource();
                 if(button.panel != null){
                     closeVM(button.panel);
-                }else{
+                } else {
                     System.out.println("Null Button - VisualLogic.FrameMain$2.actionPerformed(FrameMain.java:898)");
                 }
             }
@@ -1189,7 +1186,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                                         File myFile = new File(item1.path);
                                         java.awt.Desktop.getDesktop().open(myFile);
                                     }
-                                }catch (IOException ex) {
+                                } catch (IOException ex) {
                                     // no application registered for PDFs
                                 }
                             });
@@ -1222,7 +1219,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         javax.swing.KeyStroke stroke = javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0);
         rootPane.registerKeyboardAction(actionListener, stroke, javax.swing.JComponent.WHEN_IN_FOCUSED_WINDOW);
-
     }
 
     public FrameMain(String args[]) {
@@ -1452,8 +1448,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
             lbl.updateUI();
         } catch(HeadlessException ex) {
-            System.out.println("FrameMain Line 1624 Error"); 
-            //This error is caused on MAC OS Jdescription does not work
             Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
