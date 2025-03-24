@@ -3035,11 +3035,9 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                 }
 
                 String mainPath = stream.readUTF();
-                String binPath = stream.readUTF();
+                String binPath  = stream.readUTF();
 
                 int nameID = stream.readInt();
-
-                VisualLogic.Element element = null;
 
                 Integer oldElementID = -1;
                 Integer newElementID = -1;
@@ -3057,7 +3055,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                 }
 
                 String[] args = null;
-                element = new Element(id, this, elementPath, mainPath, binPath, className, definitionPath, args);
+                VisualLogic.Element element = new Element(id, this, elementPath, mainPath, binPath, className, definitionPath, args);
                 reserveObjectID(id, element);
 
                 int idnum = nameID;
@@ -3181,6 +3179,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         }
 
     }
+    
     JLabel label = null;
     JPanel statusPanel = null;
     private double fileVersion = 0;
@@ -3306,12 +3305,14 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         }
     }
 
+    @Override
     public void mouseClicked(MouseEvent e) {
 
     }
 
     //When the mouse cursor enters the canvas make it the two
     //straigth lines type
+    @Override
     public void mouseEntered(MouseEvent e) {
         if (status != null) {
             status.mouseEntered(e);
@@ -3319,6 +3320,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     }
 
     //When mouse exits canvas set to default type
+    @Override
     public void mouseExited(MouseEvent e) {
         if (status != null) {
             status.mouseExited(e);
@@ -3326,6 +3328,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
     }
 
     //mouse listener for when the mouse button is released
+    @Override
     public void mouseReleased(MouseEvent e) {
         aktuellIstBasis = false;
         if (status != null) {
@@ -3333,6 +3336,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         }
     }
 
+    @Override
     public void mousePressed(MouseEvent e) {
         {
             aktuellIstBasis = true;
@@ -3342,6 +3346,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         }
     }
 
+    @Override
     public void mouseDragged(MouseEvent e) {
         {
             if (!aktuellIstBasis) {
@@ -3368,6 +3373,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         return null;
     }
 
+    @Override
     public void mouseMoved(MouseEvent e) {
         if (status != null) {
             status.mouseMoved(e);
@@ -3443,6 +3449,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         }
     }
 
+    @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
