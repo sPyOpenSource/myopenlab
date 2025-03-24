@@ -57,7 +57,7 @@ public class FrameInfo extends javax.swing.JDialog {
             if (ch!='.')  
             {
                 result+=ch+"."; 
-            }else 
+            } else 
             {
                 //result+=ch;
             }
@@ -65,11 +65,9 @@ public class FrameInfo extends javax.swing.JDialog {
         return result;                
     }
     
-    
     private void fillTable()
     {
         
-
     DefaultTableModel model = new DefaultTableModel()
     { 
         public boolean isCellEditable(int row, int column) 
@@ -94,7 +92,6 @@ public class FrameInfo extends javax.swing.JDialog {
         }
 
         jTable1.setModel(model);
-        
         
     }
     
@@ -268,7 +265,7 @@ public class FrameInfo extends javax.swing.JDialog {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/FrameInfo"); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/FrameInfo"); // NOI18N
         setTitle(bundle.getString("Titel")); // NOI18N
         setBackground(java.awt.SystemColor.control);
         setName("Form"); // NOI18N
@@ -359,7 +356,7 @@ public class FrameInfo extends javax.swing.JDialog {
         jLabel3.setName("jLabel3"); // NOI18N
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/logoUcatolica.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/logoUcatolica.png"))); // NOI18N
         jLabel1.setText(bundle.getString("FrameInfo.jLabel1.text")); // NOI18N
         jLabel1.setName("jLabel1"); // NOI18N
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -483,7 +480,7 @@ public class FrameInfo extends javax.swing.JDialog {
         jLabelVers.setName("jLabelVers"); // NOI18N
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/myopenlab_logo_Oficial.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/myopenlab_logo_Oficial.png"))); // NOI18N
         jLabel2.setText(bundle.getString("FrameInfo.jLabel2.text")); // NOI18N
         jLabel2.setName("jLabel2"); // NOI18N
 
@@ -505,7 +502,7 @@ public class FrameInfo extends javax.swing.JDialog {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel2)
                     .addComponent(jLabelVers))
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addContainerGap(65, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -519,7 +516,7 @@ public class FrameInfo extends javax.swing.JDialog {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 656, Short.MAX_VALUE))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 668, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(

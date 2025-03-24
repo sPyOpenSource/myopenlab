@@ -3648,7 +3648,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
     @Override
     public int print(Graphics graphics, PageFormat pageFormat, int pageIndex) throws PrinterException {
-
         if (pageIndex > 0) {
             return (NO_SUCH_PAGE);
         } else {
@@ -3678,7 +3677,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
             // Turn double buffering back on*/
             return (PAGE_EXISTS);
         }
-
     }
 
     public void setProperexterntyEditor() {

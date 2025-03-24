@@ -45,7 +45,7 @@
                       <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jTabbedPane1" alignment="0" max="32767" attributes="1"/>
-                  <Component id="jPanel3" alignment="0" pref="656" max="32767" attributes="0"/>
+                  <Component id="jPanel3" alignment="0" pref="668" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -470,7 +470,7 @@
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabelVers" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="58" max="32767" attributes="0"/>
+                  <EmptySpace pref="65" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

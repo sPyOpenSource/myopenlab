@@ -203,6 +203,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public void setSimplePaintModus(boolean value) {
         simplePaintModus = value;
     }
+    
     public ArrayList notifyWhenDestCalledList = new ArrayList(); // List of ExternalIF!
     public ArrayList menuItems = new ArrayList();
     public int elementIndex = 0;
@@ -226,6 +227,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
         super.setVisible(value);
     }
+    
     private String nameLocalized;
     private String xname = "";
 
