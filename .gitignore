@@ -2,3 +2,4 @@ build/
 nbproject/private/
 dist/
 *.~ava
+/distribution/Elements/Drivers/MyOpenLab.RS232/nbproject/private/

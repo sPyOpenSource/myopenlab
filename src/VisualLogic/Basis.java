@@ -1423,62 +1423,61 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         DataInputStream stream = new DataInputStream(fis);
         String ver = stream.readUTF(); // Version
         if (Double.parseDouble(ver) == 3.13){
-        System.out.println("LoadFomStream_BasisVersion: " + ver);
-        tmpPassword = stream.readUTF(); // Password einlesen
-                if (tmpPassword.length() > 0) {
-                    if (frameCircuit != null && frameCircuit.frontMode == false) {
-                        DialogPassword dialog = new DialogPassword(null, true);
+            System.out.println("LoadFomStream_BasisVersion: " + ver);
+            tmpPassword = stream.readUTF(); // Password einlesen
+            if (tmpPassword.length() > 0) {
+                if (frameCircuit != null && frameCircuit.frontMode == false) {
+                    DialogPassword dialog = new DialogPassword(null, true);
 
-                        dialog.setVisible(true);
-                        String refPassword = DialogPassword.password;
-                        vmPassword = tmpPassword;
+                    dialog.setVisible(true);
+                    String refPassword = DialogPassword.password;
+                    vmPassword = tmpPassword;
 
-                        String res = bytesToHex(calcDigest(refPassword));
-                        String res1 = tmpPassword;
+                    String res = bytesToHex(calcDigest(refPassword));
+                    String res1 = tmpPassword;
 
-                        vmProtected = !res.equals(res1);
-                    } else {
-                        vmProtected = true;
-                    }
+                    vmProtected = !res.equals(res1);
+                } else {
+                    vmProtected = true;
                 }
-                
-        modusx = stream.readInt();
-        strCaption = stream.readUTF();
-        vsIcon.loadFromStream(fis);
-        strCircuitPanelTitel = stream.readUTF();
-        strFrontPanelTitel = stream.readUTF();
-        intElementWidth = stream.readInt();
-        intElementHeight = stream.readInt();
-        strElementName = stream.readUTF();
-        showToolBar = stream.readBoolean();
-        unDecorated = stream.readBoolean();
-        AlwaysOnTop = stream.readBoolean();
-        WindowsPosition.loadFromStream(fis);
-        CustomXwindowPos=stream.readInt();
-        CustomYwindowPos=stream.readInt();
-        strBasisTitel = stream.readUTF();
-        strBasisVersion = stream.readUTF();
-        strAutorName = stream.readUTF();
-        strAutorMail = stream.readUTF();
-        strAutorWWW = stream.readUTF();
-        if (fromAblage == false) {
-            variablenListe.clear();
-            int count = stream.readInt();
-            for (int i = 0; i < count; i++) {
-                OpenVariable node = new OpenVariable();
-                node.name = stream.readUTF();
-                node.datatype = stream.readInt();
-                if (Double.parseDouble(ver) >= 3.84) {
-                    System.out.println("Basis.java 1745 Double.parseDouble (ver)" + Double.valueOf(ver));
-                }
-                
-                    node.size1 = stream.readInt();
-                    node.size2 = stream.readInt();
-
-                variablenListe.add(node);
             }
-        }
 
+            modusx = stream.readInt();
+            strCaption = stream.readUTF();
+            vsIcon.loadFromStream(fis);
+            strCircuitPanelTitel = stream.readUTF();
+            strFrontPanelTitel = stream.readUTF();
+            intElementWidth = stream.readInt();
+            intElementHeight = stream.readInt();
+            strElementName = stream.readUTF();
+            showToolBar = stream.readBoolean();
+            unDecorated = stream.readBoolean();
+            AlwaysOnTop = stream.readBoolean();
+            WindowsPosition.loadFromStream(fis);
+            CustomXwindowPos=stream.readInt();
+            CustomYwindowPos=stream.readInt();
+            strBasisTitel = stream.readUTF();
+            strBasisVersion = stream.readUTF();
+            strAutorName = stream.readUTF();
+            strAutorMail = stream.readUTF();
+            strAutorWWW = stream.readUTF();
+            if (fromAblage == false) {
+                variablenListe.clear();
+                int count = stream.readInt();
+                for (int i = 0; i < count; i++) {
+                    OpenVariable node = new OpenVariable();
+                    node.name = stream.readUTF();
+                    node.datatype = stream.readInt();
+                    if (Double.parseDouble(ver) >= 3.84) {
+                        System.out.println("Basis.java 1745 Double.parseDouble (ver)" + Double.valueOf(ver));
+                    }
+
+                        node.size1 = stream.readInt();
+                        node.size2 = stream.readInt();
+
+                    variablenListe.add(node);
+                }
+            }
         } else {
             if (Double.parseDouble(ver) < 1.981) {
                 showErrorMessage(java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("Ungueltige_Version_oder_Version_wird_nicht_unterstuetzt"));
@@ -1550,10 +1549,9 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                     }
                 }
             }
-            
         }
         
-         if (fromAblage == false) {
+            if (fromAblage == false) {
                 caption = strCaption;
                 circuitPanelTitel = strCircuitPanelTitel;
                 frontPanelTitel = strFrontPanelTitel;
@@ -1579,12 +1577,10 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             circuitBasis.reorderWireFrames();
             frontBasis.reorderWireFrames();
             setChanged(false);
-
         } catch (IOException | NumberFormatException ex) {
             showErrorMessage(java.util.ResourceBundle.getBundle("VisualLogic/Basic").getString("Fehler_in_Basis.loadFromStream()_:") + ex.toString());
             showErrorMessage("error loading File : " + XfileName + "\n" + ex.getMessage());
         }
-        
     }
 
     public void showErrorMessage(String message) {
@@ -1603,9 +1599,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             DataInputStream stream = new DataInputStream(fis);
 
             try {
-                {
-                    element.classRef.loadFromStreamAfterXOnInit(fis);
-                }
+                element.classRef.loadFromStreamAfterXOnInit(fis);
             } catch (Exception | java.lang.AbstractMethodError ex) {
                 System.out.println(ex.toString());
             }
@@ -1734,7 +1728,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     }
 
     public void speichereNunAlleBasisElemente(VMObject vm, FileSystemOutput fsOut, boolean onlySelected) {
-
         Element element;
         for (int i = 0; i < vm.getElementCount(); i++) {
             element = vm.getElement(i);
@@ -1945,7 +1938,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             }
         }
         return c;
-
     }
 
     @Override
@@ -2012,7 +2004,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                         return;
                     }
 
-                    if (elementX != null && elementX.classRef != null) {
+                    if (elementX.classRef != null) {
                         flowInfo.source = sourceElement;
                         try {
                             elementX.classRef.processMethod(flowInfo);
@@ -2058,10 +2050,10 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                 
                 if (b.get(node.name) instanceof Double && node.value instanceof Integer){
                     node.value = ((Double)b.get(node.name)).intValue();
-                }else
+                } else
                 if (b.get(node.name) instanceof Integer && node.value instanceof Double){
                     node.value = ((Integer)b.get(node.name)).doubleValue();
-                }else {
+                } else {
                     node.value = b.get(node.name);
                 }   
 

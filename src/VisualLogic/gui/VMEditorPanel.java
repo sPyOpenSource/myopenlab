@@ -49,8 +49,6 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
     public JPanel panelCircuit=null;
     public JPanel panelFront=null;
     
-    
-    
     public javax.swing.Timer timer;
     private String elementPath = "";
     private VMEditorPanelIF owner;
@@ -74,7 +72,6 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
     public boolean panelMode = false;
     private boolean comboIsEditing = false;
     
-    
     public void setVMObject(VMObject obj)
     {
         if (getVMObject()!=null)
@@ -84,7 +81,6 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
         vmObject=obj;
         
         owner.vmEditorPanelTabChanged(vmObject);
-        
     }
     
     public VMObject getVMObject()
@@ -92,6 +88,8 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
         return vmObject;
         
     }
+    
+    @Override
     public void onButtonClicken(String [] params)
     {
         getVMObject().newElement=params;
@@ -99,9 +97,7 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
     
     //public VMObject getVMObject(){return basis.getCircuitBasis();}
     
-    
     JPanel docPanel = new JPanel();
-    
     
     private void loadDoc(String filename, JEditorPane pane)
     {
@@ -109,8 +105,7 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
         try
         {
             url = new URL("file://"+filename);
-        }
-        catch(Exception ex)
+        } catch(Exception ex)
         {
             
         }
@@ -119,22 +114,18 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
             try
             {
                 pane.setPage(url);
-            }
-            catch (Exception e)
+            } catch (Exception e)
             {
                 basis.showErrorMessage(e.toString());
             }
-        }
-        else
+        } else
         {
             /*URL urlx = new File(elementPath).toURL();
             String s=urlx.getFile();
             s = s.substring(0,s.lastIndexOf("/"));
             pane.setText(java.util.ResourceBundle.getBundle("VisualLogic/FrameCircuit").getString("Keine Beschreibung gefunden"));*/
         }
-        
     }
-    
     
     public void openElementDocFile(FrameMain owner, Element element)
     {
@@ -143,12 +134,11 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
         try
         {
             panel.openElementDocFile(owner, element);
-        }
-        catch(Exception ex)
+        } catch(Exception ex)
         {
             
         }
-        jTabbedPane1.addTab("Doc - "+element.getNameLocalized(),panel);
+        jTabbedPane1.addTab("Doc - " + element.getNameLocalized(), panel);
         jTabbedPane1.setSelectedComponent(panel);
     }
     
@@ -162,13 +152,14 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
     
     class MeinOutputStream extends OutputStream
     {
-        private JEditorPane anzeigeText;
+        private final JEditorPane anzeigeText;
         
         public MeinOutputStream(JEditorPane anzeige)
         {
             this.anzeigeText=anzeige;
         }
         
+        @Override
         public void write(int b)
         {
             char c=(char)b;
@@ -214,10 +205,10 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
         
         //activate_DocFrame(null);
         
-        this.basis=basis;
+        this.basis = basis;
         
-        basis.ownerVMPanel=this;
-        this.elementPath=elementPath;
+        basis.ownerVMPanel = this;
+        this.elementPath = elementPath;
         
         //jSplitPane2.setDividerLocation(0);
         
@@ -251,8 +242,7 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
             //iconImage= Toolkit.getDefaultToolkit().getImage();
             //setIconImage(iconImage);
             basis.vsIcon.loadImage(getClass().getResource("/Assets/Bilder/icon_16.png"));
-        }
-        catch(Exception ex)
+        } catch(Exception ex)
         {
         }
         
@@ -394,9 +384,7 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
         timer.start();*/
         
         //listeAllElements();
-        
     }
-    
     
     public static void copyFiles(String strPath, String dstPath, boolean javaFilter) throws IOException
     {
@@ -408,40 +396,31 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
             dest.mkdirs();
             String list[] = src.list();
             
-            for (int i = 0; i < list.length; i++)
-            {
-                if (javaFilter)
-                {
-                    if (list[i].endsWith(".java")==false && list[i].endsWith(".bat")==false)
-                    {
+            for (String list1 : list) {
+                if (javaFilter) {
+                    if (list1.endsWith(".java") == false && list1.endsWith(".bat") == false) {
                         //String dest1 = dest.getAbsolutePath() + "\\" + list[i];
-                        String dest1 = dest.getAbsolutePath() + File.separator + list[i];
+                        String dest1 = dest.getAbsolutePath() + File.separator + list1;
                         //String src1 = src.getAbsolutePath() + "\\" + list[i];
-                        String src1 = src.getAbsolutePath() + File.separator + list[i];
+                        String src1 = src.getAbsolutePath() + File.separator + list1;
                         copyFiles(src1 , dest1,javaFilter);
                     }
-                }
-                else
-                {
-                    String dest1 = dest.getAbsolutePath() + "\\" + list[i];
-                    String src1 = src.getAbsolutePath() + "\\" + list[i];
+                } else {
+                    String dest1 = dest.getAbsolutePath() + "\\" + list1;
+                    String src1 = src.getAbsolutePath() + "\\" + list1;
                     copyFiles(src1 , dest1,javaFilter);
                 }
             }
-        }
-        else
+        } else
         {
             Tools.copyHighSpeed(src, dest);
         }
     }
     
-    
     public static void copyFile(String src, String dst) throws IOException
     {
         Tools.copyHighSpeed(new File(src), new File(dst));
     }
-    
-    
     
     public void copyAllFiles(String sourceDir, String destDir)
     {
@@ -449,9 +428,8 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
         File[] files=f.listFiles();
         if (files!=null)
         {
-            for (int i=0;i<files.length;i++)
-            {
-                String str=files[i].getPath();
+            for (File file : files) {
+                String str = file.getPath();
                 try
                 {
                     new File(destDir).mkdirs();
@@ -459,15 +437,13 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
                     if (srcFile.isDirectory()==false)
                     {
                         Tools.copyFile(srcFile, new File(destDir+"/"+srcFile.getName()));
-                    }
-                    else
+                    } else
                     {
                         String sss=destDir+"/"+srcFile.getPath();
                         copyAllFiles(sss,destDir);
                         //new File(destDir+"/"+srcFile.getPath()).mkdirs();
                     }
-                }
-                catch (IOException ex)
+                } catch (IOException ex)
                 {
                     ex.printStackTrace();
                 }
@@ -483,8 +459,7 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
             
             out.write("javaw -splash:splash.png -jar c-exp-lab.jar Elements \"./"+mainVM+"\"");
             out.close();
-        }
-        catch(Exception ex)
+        } catch(Exception ex)
         {
             Tools.showMessage(ex.toString());
         }
@@ -493,20 +468,20 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
     
     public void createDistribution(String destPath)
     {
-        Basis basis=getBasis();
+        Basis basis = getBasis();
         ArrayList list = new ArrayList();
         basis.addPublishingFiles(list);
         
-        String elementPath=basis.getElementPath();
+        String elementPath = basis.getElementPath();
         //String destPath="C:/Dokumente und Einstellungen/Salafia/Desktop/test1";
         new File(destPath).mkdir();
-        String destElementPath=destPath+"/Elements";
+        String destElementPath = destPath + "/Elements";
         new File(destElementPath).mkdir();
         try
         {
-            copyFile(elementPath+"/../splash.png",destElementPath+"/../splash.png");
-            copyFile(elementPath+"/../license.txt",destElementPath+"/../license.txt");
-            copyFile(elementPath+"/../lgpl.txt",destElementPath+"/../lgpl.txt");
+            copyFile(elementPath+"/../splash.png", destElementPath + "/../splash.png");
+            copyFile(elementPath+"/../license.txt", destElementPath + "/../license.txt");
+            copyFile(elementPath+"/../lgpl.txt", destElementPath + "/../lgpl.txt");
             
             copyFiles(elementPath+"/CircuitElements/Extras/SubVM",destElementPath+"/CircuitElements/Extras/SubVM", true);
             copyFiles(elementPath+"/CircuitElements/SubVM",destElementPath+"/CircuitElements/SubVM", true);
@@ -520,26 +495,24 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
             copyFiles(elementPath+"/../lib",destElementPath+"/../lib", true);
             String mainVM=new File(getBasis().fileName).getName();
             createBatchFile(destElementPath+"/../start.bat", mainVM);
-        }
-        catch (IOException ex)
+        } catch (IOException ex)
         {
             ex.printStackTrace();
         }
         
         // Kopiere aktuelle VM!
-        String str="";
+        String str;
         
         try
         {
             str=getBasis().fileName;
             Tools.copyFile(new File(str),new File(destElementPath+"/../"+new File(str).getName()));
-        }
-        catch (IOException ex)
+        } catch (IOException ex)
         {
             ex.printStackTrace();
         }
         
-        String strName="";
+        String strName;
         for (int i=0;i<list.size();i++)
         {
             str=(String)list.get(i);
@@ -568,13 +541,11 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
                             try
                             {
                                 copyFiles(fn1,fn2,false);
-                            }
-                            catch (IOException ex)
+                            } catch (IOException ex)
                             {
                                 ex.printStackTrace();
                             }
-                        }
-                        else
+                        } else
                         {
                             try
                             {
@@ -582,23 +553,19 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
                                 {
                                     copyFiles(elementPath+str+"/bin",destElementPath+str+"/bin",false);
                                 }
-                            }
-                            catch (IOException ex)
+                            } catch (IOException ex)
                             {
                                 ex.printStackTrace();
                             }
                         }
-                        
-                    }
-                    else
+                    } else
                     {
                         if (str.endsWith(".vlogic"))
                         {
                             try
                             {
                                 Tools.copyFile(new File(str),new File(destElementPath+"/../"+new File(str).getName()));
-                            }
-                            catch (IOException ex)
+                            } catch (IOException ex)
                             {
                                 ex.printStackTrace();
                             }
@@ -606,7 +573,6 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
                         else
                         {
                             String strX=str;
-                            
                             
                             DFProperties defFile=Tools.getProertiesFromDefinitionFile(new File(elementPath+str));
                             if (!defFile.redirect.equalsIgnoreCase(""))
@@ -642,10 +608,9 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
                     System.out.println(""+i+": Name,Path = "+strName+"   |   "+str);
                 }
             }
-            
-        }
-        
+        } 
     }
+    
     public void saveJpg()
     {
         if (basis.vmProtected) return;
@@ -678,8 +643,7 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
             
             try
             {
-                getVMObject().saveAsJPEG(fileName);
-                                
+                getVMObject().saveAsJPEG(fileName);                
             }
             catch (Exception ex)
             {
@@ -758,7 +722,6 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
         }
     }
     
-    
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -832,8 +795,7 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
             {
                 setVMObject(basis.getCircuitBasis()) ;
                 //listeAllElements();
-            }
-            else
+            } else
                 if (jTabbedPane1.getSelectedIndex()==1)
                 {
                 setVMObject(basis.getFrontBasis());
@@ -859,5 +821,4 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
     public javax.swing.JScrollPane jScrollPaneFrontPanel;
     public javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
-    
 }

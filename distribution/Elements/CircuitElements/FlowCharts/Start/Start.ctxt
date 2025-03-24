@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Start
+comment1.params=g
+comment1.target=void\ paint(java.awt.Graphics)
+comment10.params=flowInfo
+comment10.target=void\ processMethod(VisualLogic.variables.VSFlowInfo)
+comment11.params=fis
+comment11.target=void\ loadFromStream(java.io.FileInputStream)
+comment12.params=fos
+comment12.target=void\ saveToStream(java.io.FileOutputStream)
+comment2.params=expression
+comment2.target=void\ evalMethodExpression(java.lang.String)
+comment3.params=
+comment3.target=void\ init()
+comment4.params=
+comment4.target=void\ xOnInit()
+comment5.params=
+comment5.target=void\ checkPinDataType()
+comment6.params=
+comment6.target=void\ start()
+comment7.params=
+comment7.target=void\ initInputPins()
+comment8.params=
+comment8.target=void\ initOutputPins()
+comment9.params=
+comment9.target=void\ process()
+numComments=13

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Ellipse
+comment1.params=g
+comment1.target=void\ paint(java.awt.Graphics)
+comment2.params=
+comment2.target=void\ init()
+comment3.params=o
+comment3.target=void\ propertyChanged(java.lang.Object)
+comment4.params=
+comment4.target=void\ setPropertyEditor()
+comment5.params=
+comment5.target=void\ localize()
+comment6.params=fis
+comment6.target=void\ loadFromStream(java.io.FileInputStream)
+comment7.params=fos
+comment7.target=void\ saveToStream(java.io.FileOutputStream)
+numComments=8

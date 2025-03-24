@@ -32,7 +32,6 @@ import javax.swing.JFrame;
  * @author Carmelo Salafia
  */
 public class Element extends Shape implements MouseListener, MouseMotionListener, ExternalIF, PinIF, Comparable {
-
     // Sichtbarkeit der Pins
     public boolean highlighted = false;
     private boolean leftPinsVisible = true;
@@ -1034,7 +1033,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     }
 
     public void saveToStream(FileSystemOutput fsOut) {
-
         try {
             FileOutputStream fos = fsOut.addItem("Element");
             DataOutputStream dos = new DataOutputStream(fos);
@@ -1094,11 +1092,9 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                 }
             }
             fsOut.postItem();
-
         } catch (IOException ex) {
             owner.owner.showErrorMessage("Error in Element.saveToStream() :" + ex.toString());
         }
-
     }
 
     public void amRasterAusrichten() {
@@ -1144,7 +1140,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                     c++;
                 }
             }
-
         } catch (Exception e) {
             ret = null;
         }
@@ -1152,7 +1147,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     }
 
     public ExternalIF getElementByName(VSBasisIF basis, String elementName) {
-
         VMObject vm = ((Basis) basis).getCircuitBasis();
         int c = 0;
         for (int i = 0; i < vm.getComponentCount(); i++) {
@@ -1297,7 +1291,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
 
         return b;
-
     }
 
     @Override
@@ -1321,7 +1314,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     @Override
     public void jSetProperties() {
         if (elementBasis != null) {
-            VMObject vm = null;
+            VMObject vm;
             if (this.owner == this.owner.owner.getCircuitBasis()) {
                 vm = elementBasis.getCircuitBasis();
             } else {
@@ -1388,7 +1381,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
     @Override
     public void repaint() {
-
         if (lblName != null && owner != null) {
             Point p = lblName.getLocation();
             owner.repaint(p.x, p.y + 10, lblName.getWidth(), lblName.getHeight());
@@ -1413,7 +1405,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         } else {
             super.repaint();
         }
-
     }
 
     @Override
@@ -1440,7 +1431,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
     @Override
     public void jClearSubElements() {
-
         for (int i = 0; i < subElemente.size(); i++) {
             Object o = subElemente.get(i);
             if (o instanceof JPanel) {
@@ -1483,7 +1473,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
     public void jAddComponent(Component component) {
         this.add(component);
-
     }
 
     @Override
@@ -1561,12 +1550,12 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
                     jAddPEItem(prop.label, prop.referenz, prop.min, prop.max,prop.editable);
                 }
-
             }
             owner.owner.propertyEditor.reorderItems();
         }
     }
 
+    @Override
     public void setCursor(int cursor) {
         owner.setCursor(Cursor.getPredefinedCursor(cursor));
     }
@@ -1574,6 +1563,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public PropertyEditor getPE(){
         return owner.owner.propertyEditor;
     }
+    @Override
     public void jClearPE() {
         //propertyList.clear();
         if (owner.owner.propertyEditor != null) {
@@ -1581,6 +1571,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
     }
 
+    @Override
     public VSObject[] jGetProperties() {
         VSObject[] result = new VSObject[propertyList.size()];
 
@@ -1592,6 +1583,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         return result;
     }
 
+    @Override
     public void jAddPEItem(String label, Object referenz, double min, double max) {
         if (isLoading == true) {
             propertyList.add(new ElementProperty(label, referenz, min, max));
@@ -1599,6 +1591,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
             owner.owner.propertyEditor.addItem(label, referenz, min, max, true);
         }
     }
+    @Override
     public void jAddPEItem(String label, Object referenz, double min, double max, boolean editable) {
         if (isLoading == true) {
             propertyList.add(new ElementProperty(label, referenz, min, max, editable));
@@ -1607,8 +1600,8 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
     }
 
+    @Override
     public void jSetPEItemLocale(int index, String language, String translation) {
-
         ElementProperty prop = (ElementProperty) propertyList.get(index - 6);
 
         if (prop != null) {
@@ -1620,10 +1613,12 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
     }
 
+    @Override
     public void setAlwaysOnTop(boolean value) {
         layeredPane.setAlwaysOnTop(value);
     }
 
+    @Override
     public void setSelected(boolean value) {
         if (selected != value) {
             selected = value;
@@ -1650,7 +1645,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
 
         repaint();
-
     }
 
     @Override
@@ -1706,7 +1700,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         if (owner.owner.frameCircuit != null) {
             owner.owner.frameCircuit.addMessageToConsoleErrorWarnings("Exception : \"" + text + "\" in Element : \"" + getInternName() + "\" Name :\"" + getNameLocalized() + "\" Application abborded!");
         }
-
     }
 
     /*
@@ -1767,7 +1760,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     @Override
     public void jSetAspectRatio(double value) {
         aspect = value;
-
     }
 
     @Override
@@ -1793,6 +1785,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
     }
 
+    @Override
     public void jSetSubElementPosition(int index, int x, int y) {
         SubElement el = (SubElement) subElemente.get(index);
         if (el != null) {
@@ -1801,6 +1794,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
     }
 
+    @Override
     public void jSetSubElementSize(int index, int width, int height) {
         SubElement el = (SubElement) subElemente.get(index);
         if (el != null) {
@@ -1815,7 +1809,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         int count = 0;
         for (int i = 0; i < getPinCount(); i++) {
             JPin pin = getPin(i);
-            if (pin.pinIO == pin.PIN_OUTPUT) {
+            if (pin.pinIO == JPin.PIN_OUTPUT) {
                 count++;
             }
         }
@@ -1828,15 +1822,15 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         int count = 0;
         for (int i = 0; i < getPinCount(); i++) {
             JPin pin = getPin(i);
-            if (pin.pinIO == pin.PIN_INPUT) {
+            if (pin.pinIO == JPin.PIN_INPUT) {
                 count++;
             }
         }
         return count;
     }
 
-    /* Generiert f�r alle Output-Pins den jeweiligen Datentyp
-     * und liefert die Liste aller Objekte zur�ck
+    /* Generiert fr alle Output-Pins den jeweiligen Datentyp
+     * und liefert die Liste aller Objekte zurck
      */
     public Object[] jInitAllOutputs() {
         Object[] temp = new Object[countOutputPins()];
@@ -1859,7 +1853,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         for (int i = 0; i < getPinCount(); i++) {
             JPin pin = getPin(i);
 
-            if (pin.pinIO == pin.PIN_INPUT) {
+            if (pin.pinIO == JPin.PIN_INPUT) {
                 temp[count++] = getPinInputReference(i);
             }
         }
@@ -1939,6 +1933,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         return VSDataType.getDataTypeList();
     }
 
+    @Override
     public int jGetDataType(String value) {
         String[] list = jGetDataTypeList();
         for (int i = 0; i < list.length; i++) {
@@ -1990,7 +1985,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     @Override
     public String jGetSourcePath() {
         String cPath = classPath;
-        // l�sche alles bin zum ersten "/" von Rechts!
+        // lsche alles bin zum ersten "/" von Rechts!
 
         for (int i = classPath.length() - 1; i > 1; i--) {
             String ch = classPath.substring(i, i + 1);
@@ -2003,6 +1998,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         return elementPath + "/" + cPath;
     }
 
+    @Override
     public Image jLoadImage(String fileName) {
         Image image = null;
         if (getVMObject().owner.getFrameMain() != null && (new File(fileName).exists())) {
@@ -2021,22 +2017,26 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     }
     public boolean processAutomatic = false;
 
+    @Override
     public void jProcessAutomatic(boolean value) {
         processAutomatic = value;
     }
 
+    @Override
     public void jSetLeftPinsVisible(boolean bVal) {
         if (leftPinsVisible != bVal) {
             leftPinsVisible = bVal;
         }
     }
 
+    @Override
     public void jSetTopPinsVisible(boolean bVal) {
         if (topPinsVisible != bVal) {
             topPinsVisible = bVal;
         }
     }
 
+    @Override
     public void jSetRightPinsVisible(boolean bVal) {
         if (rightPinsVisible != bVal) {
             rightPinsVisible = bVal;

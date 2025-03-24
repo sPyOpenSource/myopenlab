@@ -35,7 +35,6 @@ import java.nio.*;
 import javax.swing.*;
 import java.util.*;
 
-
 public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
 {
   private Image image;
@@ -53,8 +52,7 @@ public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
   private VSInteger bits = new VSInteger(8);
   private VSInteger stopBits = new VSInteger(2);
 
-  private VSComboBox parity=new VSComboBox();
-
+  private VSComboBox parity = new VSComboBox();
 
   public void paint(java.awt.Graphics g)
   {
@@ -69,8 +67,6 @@ public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
       image=null;
     }
   }
-
-
 
   public  void copyFile(File source, File dest) throws IOException
   {
@@ -92,30 +88,25 @@ public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
           if (out != null) out.close();
       }
   }
+  
     @Override
     public void getSingleByte(int val) {
       
     }
 
-
   public void setPropertyEditor()
   {
-
-    element.jAddPEItem("COM-Port",port, 1,20);
-    element.jAddPEItem("Baud",baud, 1,999999);
-    element.jAddPEItem("DataBits",bits, 5,8);
-    element.jAddPEItem("Partity",parity, 1,20);
-    element.jAddPEItem("stopBits",stopBits, 1,2);
-
-    
+    element.jAddPEItem("COM-Port", port, 1, 20);
+    element.jAddPEItem("Baud", baud, 1, 999999);
+    element.jAddPEItem("DataBits", bits, 5, 8);
+    element.jAddPEItem("Partity", parity, 1, 20);
+    element.jAddPEItem("stopBits", stopBits, 1, 2);
   }
-
 
   public void propertyChanged(Object o)
   {
 
   }
-
 
   public void init()
   {
@@ -126,7 +117,6 @@ public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
 
     element.jSetInnerBorderVisibility(true);
 
-    
     setPin(0,ExternalIF.C_ARRAY1D_BYTE,element.PIN_OUTPUT);
     setPin(1,ExternalIF.C_BOOLEAN,element.PIN_OUTPUT);
     
@@ -139,14 +129,12 @@ public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
     element.jSetPinDescription(2,"Bytes-In");
     element.jSetPinDescription(3,"Send Data");
 
-
     String fileName=element.jGetSourcePath()+"icon.gif";
     image=element.jLoadImage(fileName);
 
     element.jSetCaptionVisible(true);
     element.jSetCaption("RS232");
     setName("RS232");
-
 
     parity.addItem("PARITY_NONE");
     parity.addItem("PARITY_EVEN");
@@ -155,7 +143,6 @@ public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
     parity.addItem("PARITY_SPACE");
 
     parity.selectedIndex=1;
-    
   }
 
   public void initInputPins()
@@ -177,7 +164,6 @@ public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
 
   public void start()
   {    
-
     started=true;
     ArrayList args = new ArrayList();
     
@@ -212,7 +198,6 @@ public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
 
   public void elementActionPerformed(ElementActionEvent evt)
   {
-
     int idx=evt.getSourcePinIndex();
     switch (idx)
     {
@@ -224,9 +209,7 @@ public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
         }
       }break;
     }
-
   }
-  
   
   boolean changed=false;
   
@@ -266,7 +249,6 @@ public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
       }
 
     }
-
   }
 
   public void loadFromStream(java.io.FileInputStream fis)
@@ -285,9 +267,5 @@ public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
       bits.saveToStream(fos);
       stopBits.saveToStream(fos);
       parity.saveToStream(fos);
-
   }
-  
 }
-
-

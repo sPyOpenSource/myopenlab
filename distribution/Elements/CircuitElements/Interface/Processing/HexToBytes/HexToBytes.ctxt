@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=HexToBytes
+comment1.params=g
+comment1.target=void\ paint(java.awt.Graphics)
+comment10.params=evt
+comment10.target=void\ elementActionPerformed(VisualLogic.ElementActionEvent)
+comment2.params=
+comment2.target=void\ onDispose()
+comment3.params=
+comment3.target=void\ init()
+comment4.params=
+comment4.target=void\ initInputPins()
+comment5.params=
+comment5.target=void\ initOutputPins()
+comment6.params=
+comment6.target=void\ start()
+comment7.params=
+comment7.target=void\ stop()
+comment8.params=value
+comment8.target=byte\ toUnsigned(short)
+comment9.params=str
+comment9.target=void\ sendString(java.lang.String)
+numComments=11

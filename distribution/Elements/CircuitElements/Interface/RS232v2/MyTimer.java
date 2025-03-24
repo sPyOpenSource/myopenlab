@@ -1,6 +1,5 @@
 package Interface.RS232v2;
 
-
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -26,7 +25,6 @@ import java.util.logging.Logger;
 //*****************************************************************************
 
 class MyTimer extends Thread {
-    
     public boolean stop = false;
     public long sendenEnde;
     public RS232v2 owner;
@@ -44,7 +42,6 @@ class MyTimer extends Thread {
         //long millisA = System.currentTimeMillis();
         long millis = 0;
         while (!stop) {
-            
             try {
                 
                 millis = System.currentTimeMillis();
@@ -59,7 +56,6 @@ class MyTimer extends Thread {
             } catch (InterruptedException ex) {
                 Logger.getLogger(MyTimer.class.getName()).log(Level.SEVERE, null, ex);
             }
-            
         }
         System.out.println("Timer end");
     }

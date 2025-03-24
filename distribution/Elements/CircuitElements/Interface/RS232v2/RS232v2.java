@@ -33,7 +33,6 @@ import java.nio.*;
 import javax.swing.*;
 
 public class RS232v2 extends JVSMain implements MyOpenLabDriverOwnerIF {
-
     private Image image;
 
     private MyOpenLabDriverIF driver;
@@ -59,7 +58,6 @@ public class RS232v2 extends JVSMain implements MyOpenLabDriverOwnerIF {
     private ArrayList<Byte> array = new ArrayList<>();
 
     public RS232v2() {
-
         message_timeout.setValue(100);
         
         baud.addItem("300");
@@ -129,7 +127,6 @@ public class RS232v2 extends JVSMain implements MyOpenLabDriverOwnerIF {
 
     @Override
     public void setPropertyEditor() {
-
         element.jAddPEItem("COM Port", comport, 0, 0);
         element.jAddPEItem("Baud", baud, 1, 999999);
         element.jAddPEItem("DataBits", bits, 5, 8);
@@ -137,8 +134,7 @@ public class RS232v2 extends JVSMain implements MyOpenLabDriverOwnerIF {
         element.jAddPEItem("stopBits", stopBits, 1, 2);
         element.jAddPEItem("TimeOut[ms]", timeOut, 1, 5000);
         
-        element.jAddPEItem("Message Timeout[ms]", message_timeout, 1, 50000);        
-        
+        element.jAddPEItem("Message Timeout[ms]", message_timeout, 1, 50000);
     }
 
     @Override
@@ -165,7 +161,6 @@ public class RS232v2 extends JVSMain implements MyOpenLabDriverOwnerIF {
         comport.addItem("");
 
         if (driver != null) {
-
             ArrayList<String> ports = new ArrayList();
             driver.sendCommand("NULL;GETPORTS", ports);
 
@@ -211,7 +206,6 @@ public class RS232v2 extends JVSMain implements MyOpenLabDriverOwnerIF {
         parity.addItem("PARITY_ODD");
         parity.addItem("PARITY_SPACE");*/
         parity.selectedIndex = 1;
-
     }
 
     @Override
@@ -237,7 +231,6 @@ public class RS232v2 extends JVSMain implements MyOpenLabDriverOwnerIF {
 
     @Override
     public void start() {
-
         started = true;
 
         ArrayList<Object> args = new ArrayList<>();
@@ -284,7 +277,6 @@ public class RS232v2 extends JVSMain implements MyOpenLabDriverOwnerIF {
 
     @Override
     public void elementActionPerformed(ElementActionEvent evt) {
-
         int idx = evt.getSourcePinIndex();
         switch (idx) {
             case 3: {
@@ -337,12 +329,10 @@ public class RS232v2 extends JVSMain implements MyOpenLabDriverOwnerIF {
             timer.gesendet = false;
             timer.sendenEnde = System.currentTimeMillis();
         }
-
     }
 
     @Override
     public void getCommand(String commando, Object value) {
-
         /*System.out.println("getCommand(" + commando + ", " + value + ")");
 
         if (value instanceof VS1DByte) {
@@ -390,5 +380,4 @@ public class RS232v2 extends JVSMain implements MyOpenLabDriverOwnerIF {
         
         message_timeout.saveToStream(fos);
     }
-
 }

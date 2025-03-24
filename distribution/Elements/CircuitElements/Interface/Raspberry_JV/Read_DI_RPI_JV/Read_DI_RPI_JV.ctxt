@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Read_DI_RPI_JV
+comment1.params=
+comment1.target=void\ onDispose()
+comment10.params=
+comment10.target=void\ process()
+comment2.params=g
+comment2.target=void\ paint(java.awt.Graphics)
+comment3.params=
+comment3.target=void\ setPropertyEditor()
+comment4.params=
+comment4.target=void\ localize()
+comment5.params=
+comment5.target=void\ init()
+comment6.params=
+comment6.target=void\ initInputPins()
+comment7.params=
+comment7.target=void\ initOutputPins()
+comment8.params=
+comment8.target=void\ start()
+comment9.params=
+comment9.target=void\ stop()
+numComments=11

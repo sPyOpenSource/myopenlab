@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=SerialServer
+comment0.text=\n\n\ @author\ velas\n
+comment1.params=TimeBeforeRead
+comment1.target=void\ setTimeBeforeRead(int)
+comment2.params=
+comment2.target=SerialServer()
+comment3.params=DebugMsjEn
+comment3.target=void\ setDebudMessagesEnable(java.lang.Boolean)
+comment4.params=EnCRin
+comment4.target=void\ setEnableCR(java.lang.Boolean)
+comment5.params=EnLFin
+comment5.target=void\ setEnableLF(java.lang.Boolean)
+comment6.params=timeout
+comment6.target=void\ SetTimeout(int)
+comment7.params=JSSCIn
+comment7.target=void\ SetJSSC(VisualLogic.variables.VSserialPort)
+comment8.params=
+comment8.target=java.lang.Boolean\ GetErrorStatus()
+comment9.params=
+comment9.target=void\ run()
+numComments=10

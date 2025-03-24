@@ -26,9 +26,8 @@ import javax.swing.*;
 import gnu.io.*;
 
 public class RS232 implements MyOpenLabDriverIF {
-
     private VS1DByte outBytes = new VS1DByte(0);
-    private ArrayList<Driver> liste = new ArrayList<Driver>();
+    private final ArrayList<Driver> liste = new ArrayList<>();
 
     private MyOpenLabDriverOwnerIF owner;
 
@@ -47,8 +46,8 @@ public class RS232 implements MyOpenLabDriverIF {
         return null;
     }
 
+    @Override
     public void sendCommand(String commando, Object value) {
-
         String[] strings = commando.split(";");
 
         //System.out.println("COMMAND : "+commando);
@@ -61,22 +60,16 @@ public class RS232 implements MyOpenLabDriverIF {
         }
 
         if (commando.equals("GETPORTS")) {
-            
             Driver driver = getDriver(strPort);
             
             System.out.println("--------> GETPORTS");
             String[] list = driver.listSerialPorts();
             
             //ArrayList<String>
-            for (int i = 0; i < list.length; i++) {                
-                ((ArrayList<String>)value).add(list[i]);
-            }
-                        
+            ((ArrayList<String>)value).addAll(Arrays.asList(list));          
         }
         if (commando.equals("TIMEOUT")) {
-            if (value instanceof VSInteger) {
-                VSInteger tmp = (VSInteger) value;
-
+            if (value instanceof VSInteger tmp) {
                 Driver driver = getDriver(strPort);
                 System.out.println("TimeOut = " + tmp.getValue());
 
@@ -94,9 +87,7 @@ public class RS232 implements MyOpenLabDriverIF {
             }
         }
 
-        if (value instanceof VS1DByte) {
-            VS1DByte values = (VS1DByte) value;
-
+        if (value instanceof VS1DByte values) {
             int len = values.getLength();
 
             byte[] dest = values.getValues();
@@ -132,34 +123,29 @@ public class RS232 implements MyOpenLabDriverIF {
 
             try {
                 Thread.sleep(20);
-            } catch (Exception ex) {
+            } catch (InterruptedException ex) {
             }
-
         }
     }
 
     public String lastPort = "";
 
+    @Override
     public void registerOwner(MyOpenLabDriverOwnerIF owner) {
         Driver driver = getDriver(lastPort);
         driver.owner = owner;
         //this.owner=owner;
-
     }
 
+    @Override
     public void driverStart(ArrayList args) {
-        
-
         if (args instanceof ArrayList && args.size() >= 5) {
-
             String strCOM = (String) args.get(0);
             int intBaud = (Integer) args.get(1);
             int bits = (Integer) args.get(2);
             int stopBits = (Integer) args.get(3);
             int parity = (Integer) args.get(4);
             
-            
-
             boolean useOwnInHandler = false;
             if (args.size() == 6) {
                 useOwnInHandler = (Boolean) args.get(5);
@@ -218,15 +204,14 @@ public class RS232 implements MyOpenLabDriverIF {
             } else {
                 showMessage("Port is already busy! : " + strCOM);
             }
-
         }
-
     }
 
     /*  private void sendBytes(Driver driver, byte[] bytes)
      {
 
      }*/
+    @Override
     public void driverStop() {
 
     }
@@ -234,5 +219,4 @@ public class RS232 implements MyOpenLabDriverIF {
     public static void showMessage(String message) {
         JOptionPane.showMessageDialog(null, message, "Attention!", JOptionPane.ERROR_MESSAGE);
     }
-
 }

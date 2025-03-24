@@ -26,7 +26,6 @@ import java.io.*;
 import gnu.io.*;
 
 public class Driver {
-
     public static gnu.io.CommPortIdentifier portID;
     public InputStream ins;
     public OutputStream out;
@@ -46,12 +45,10 @@ public class Driver {
     public String port;
 
     public String[] listSerialPorts() {
-
         Enumeration ports = CommPortIdentifier.getPortIdentifiers();
         ArrayList portList = new ArrayList();
         String portArray[] = null;
         try {
-
             while (ports.hasMoreElements()) {
                 CommPortIdentifier port = (CommPortIdentifier) ports.nextElement();
                 if (port.getPortType() == CommPortIdentifier.PORT_SERIAL) {
@@ -59,7 +56,6 @@ public class Driver {
                 }
             }
             portArray = (String[]) portList.toArray(new String[0]);
-
         } catch (Exception ex) {
             System.out.println("RS232 Driver listSerialPorts error:" + ex);
         }
@@ -67,7 +63,6 @@ public class Driver {
     }
 
     public Driver(String port, int baud, int bits, int stopBits, int parity) {
-
         this.port = port;
 
         error = true;
@@ -75,9 +70,7 @@ public class Driver {
         System.out.println("DRIVER INIT");
 
         if (port.trim().equalsIgnoreCase("NULL")) {
-
             System.out.println("NULL OK");
-
         } else {
             try {
                 System.out.println("PORT :" + port);
@@ -89,13 +82,12 @@ public class Driver {
                 dos = new DataOutputStream(serss.getOutputStream());
 
                 error = false;
-            } catch (Exception ex) {
+            } catch (NoSuchPortException | PortInUseException | UnsupportedCommOperationException | IOException ex) {
                 System.out.println("Fehler in RS232 Driver : " + ex);
             }
         }
 
         System.out.println("DRIVER INIT END");
-
     }
 
     public void start() {
@@ -113,11 +105,9 @@ public class Driver {
                 serss.addEventListener(new commListener());
                 serss.notifyOnDataAvailable(true);
             }
-
-        } catch (Exception e) {
+        } catch (IOException | TooManyListenersException e) {
             System.out.println("Fehler: " + e);
         }
-
     }
 
     public void setTimeOut(int millis) {
@@ -125,7 +115,6 @@ public class Driver {
     }
 
     public void close() {
-
         if (serialThread != null) {
             serialThread.stop = true;
             System.out.println("Closing Driver");
@@ -146,16 +135,12 @@ public class Driver {
         if (serss != null) {
             serss.close();
         }
-
     }
 
     public void sendCommand(String commando, Object value) {
-
         System.out.println("RS232 COMMAND : " + commando);
 
-        if (value instanceof VS1DByte) {
-            VS1DByte values = (VS1DByte) value;
-
+        if (value instanceof VS1DByte values) {
             //int len = values.getLength();
             byte[] dest = values.getValues();
 
@@ -166,7 +151,6 @@ public class Driver {
             if (commando.equals("SENDBYTES")) {
                 sendBytes(dest);
             }
-
         }
     }
 
@@ -189,8 +173,7 @@ public class Driver {
                 dos.write(bytes);
                 dos.flush();
             }
-
-        } catch (Exception ex) {
+        } catch (IOException ex) {
             //element.jShowMessage("Error sending Bytes  : "+ex.toString());
         }
     }
@@ -232,7 +215,7 @@ public class Driver {
     }
 
     class MyThread extends Thread {
-
+        @Override
         public void run() {
             System.out.println("RXTX: STARTT");
             while (true) {
@@ -246,16 +229,16 @@ public class Driver {
                 }
                 try {
                     Thread.sleep(2);
-                } catch (Exception ex) {
+                } catch (InterruptedException ex) {
                 }
             }
             thread = null;
 
             byte buff[] = new byte[strBuffer.size()];
             for (int i = 0; i < strBuffer.size(); i++) {
-                buff[i] = strBuffer.get(i).byteValue();
+                buff[i] = strBuffer.get(i);
             }
-            System.out.println("RXTX:" + new String(strBuffer.toString()));
+            System.out.println("RXTX:" + strBuffer.toString());
 
             strBuffer.clear();
 
@@ -278,7 +261,6 @@ public class Driver {
     ArrayList<Byte> strBuffer = new ArrayList<>();
 
     public class SerialReader extends Thread {
-
         private InputStream in;
         public boolean stop = false;
 
@@ -287,7 +269,6 @@ public class Driver {
             stop = false;
             try {
                 while (true) {
-
                     if (stop) {
                         return;
                     }
@@ -307,7 +288,6 @@ public class Driver {
     }
 
     class commListener implements SerialPortEventListener {
-
         int dato = 0;
 
         @Override
@@ -317,25 +297,19 @@ public class Driver {
             }
 
             if (event.getEventType() == SerialPortEvent.DATA_AVAILABLE) {
-
                 try {
-
                     byte[] buffer = new byte[ins.available()];
                     ins.read(buffer);
 
                     for (int i = 0; i < buffer.length; i++) {
-                        strBuffer.add(new Byte(buffer[i]));
+                        strBuffer.add(buffer[i]);
                     }
 
                     make();
-
                 } catch (IOException e) {
                     System.out.println("Fehler: " + e);
                 }
-
             }
         }
-
     }
-
 }

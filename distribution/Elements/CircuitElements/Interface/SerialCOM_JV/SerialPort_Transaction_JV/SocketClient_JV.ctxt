@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=SocketClient_JV
+comment0.text=\n\n\ @author\ velasquez\ Javier\n
+comment1.params=DebugEnIn
+comment1.target=void\ setDebugMsgEnable(java.lang.Boolean)
+comment2.params=
+comment2.target=SocketClient_JV()
+comment3.params=HostIn
+comment3.target=void\ setHost(java.lang.String)
+comment4.params=PortIn
+comment4.target=void\ setPort(int)
+comment5.params=TimeIn
+comment5.target=void\ setTimeout(int)
+comment6.params=
+comment6.target=void\ openSocket()
+comment7.params=BufferOut
+comment7.target=java.lang.String\ runOnce(java.lang.String)
+comment8.params=
+comment8.target=void\ closeSocket()
+numComments=9

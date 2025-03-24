@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=XRectangle
+comment1.params=g
+comment1.target=void\ paint(java.awt.Graphics)
+comment2.params=
+comment2.target=void\ init()
+comment3.params=
+comment3.target=void\ setPropertyEditor()
+comment4.params=
+comment4.target=void\ localize()
+comment5.params=o
+comment5.target=void\ propertyChanged(java.lang.Object)
+comment6.params=fis
+comment6.target=void\ loadFromStream(java.io.FileInputStream)
+comment7.params=fos
+comment7.target=void\ saveToStream(java.io.FileOutputStream)
+numComments=8

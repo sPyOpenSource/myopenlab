@@ -1129,7 +1129,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
     // ************************* End Element handling ***************************
     public Draht addDrahtIntoCanvas(int sourceElementID, int sourcePin, int destElementID, int destPin) {
-
         Draht dr = null;
         int id = getObjectID();
         try {
@@ -1140,7 +1139,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         }
         reserveObjectID(id, dr);
         return dr;
-
     }
 
     public Draht addDraht(int id, int sourceElementID, int sourcePin, int destElementID, int destPin) {
@@ -1221,7 +1219,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
         Element destElement = (Element) getObjectWithID(destElementID);
         destElement.getPin(destPin).draht = newDraht;
-
     }
 
     public void deleteDraht(Draht draht) {
@@ -2450,11 +2447,9 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
         reorderFlowChartLines();
 
-        if (elList.size() > 0) {
-            {
-                Element el = getElement(0);
-                recognizeResursiveWires(el);
-            }
+        if (!elList.isEmpty()) {
+            Element el = getElement(0);
+            recognizeResursiveWires(el);
         }
 
         for (int i = 0; i < drahtLst.size(); i++) {
@@ -2718,34 +2713,41 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
     // ***************** Begin BasisIF ********************
     // Diese Events kommen aus Element und Element bekommt diese aus jedem Pin
+    @Override
     public void elementPinMousePressed(MouseEvent e, int elementID, int pin) {
         if (status != null) {
             status.elementPinMousePressed(e, elementID, pin);
         }
     }
 
+    @Override
     public void elementPinMouseReleased(MouseEvent e, int elementID, int pin) {
         if (status != null) {
             status.elementPinMouseReleased(e, elementID, pin);
         }
     }
 
+    @Override
     public void elementPinMouseClicked(MouseEvent e, int elementID, int pin) {
 
     }
 
+    @Override
     public void elementPinMouseEntered(MouseEvent e, int elementID, int pin) {
 
     }
 
+    @Override
     public void elementPinMouseExited(MouseEvent e, int elementID, int pin) {
 
     }
 
+    @Override
     public void elementPinMouseDragged(MouseEvent e, int elementID, int pin) {
 
     }
 
+    @Override
     public void elementPinMouseMoved(MouseEvent e, int elementID, int pin) {
         if (status != null) {
             status.elementPinMouseMoved(e, elementID, pin);
@@ -2754,54 +2756,63 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
     // ***************** Ende BasisIF ********************
     // ****************Begin Events auf den Element ******************
+    @Override
     public void elementProcessKeyEvent(KeyEvent ke) {
         if (status != null) {
             status.processKeyEvent(ke);
         }
     }
 
+    @Override
     public void elementMouseDblClick(MouseEvent e) {
         if (status != null) {
             status.mouseDblClick(e);
         }
     }
 
+    @Override
     public void elementMouseClicked(MouseEvent e) {
         if (status != null) {
             status.mouseClicked(e);
         }
     }
 
+    @Override
     public void elementMouseEntered(MouseEvent e) {
         if (status != null) {
             status.mouseEntered(e);
         }
     }
 
+    @Override
     public void elementMouseExited(MouseEvent e) {
         if (status != null) {
             status.mouseExited(e);
         }
     }
 
+    @Override
     public void elementMouseReleased(MouseEvent e) {
         if (status != null) {
             status.mouseReleased(e);
         }
     }
 
+    @Override
     public void elementMousePressed(MouseEvent e) {
         if (status != null) {
             status.mousePressed(e);
         }
     }
 
+    @Override
     public void elementMouseDragged(MouseEvent e) {
         if (status != null) {
             status.mouseDragged(e);
         }
     }
 
+    @Override
     public void elementMouseMoved(MouseEvent e) {
         if (status != null) {
             status.mouseMoved(e);
@@ -3009,7 +3020,6 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
         int id = -1;
 
         for (int i = 0; i < size; i++) {
-
             try {
                 FileInputStream fis = fsIn.gotoItem(owner.fileCount++);
                 DataInputStream stream = new DataInputStream(fis);
@@ -3079,14 +3089,11 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
                     elementsCount++;
                     progressBar.setValue(progress++);
                 }
-
             } catch (Exception ex) {
                 beendeWaitDialog();
                 owner.showErrorMessage(java.util.ResourceBundle.getBundle("VisualLogic/VMObject").getString("Element_konnte_nicht_erfolgreich_erzeugt_werden_:") + ex.toString());
             }
-
         }
-
     }
 
     public void verknuepfeDraehte() {

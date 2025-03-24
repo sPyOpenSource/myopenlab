@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Trigger
+comment1.params=
+comment1.target=void\ onDispose()
+comment2.params=g
+comment2.target=void\ paint(java.awt.Graphics)
+comment3.params=schwelle
+comment3.target=void\ trigger(int)
+comment4.params=
+comment4.target=void\ init()
+comment5.params=
+comment5.target=void\ initInputPins()
+comment6.params=
+comment6.target=void\ initOutputPins()
+comment7.params=
+comment7.target=void\ process()
+numComments=8
