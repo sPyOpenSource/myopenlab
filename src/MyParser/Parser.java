@@ -60,7 +60,6 @@ class Token
         this.func = func;
         isFunc = true;
     }
-    
 }
 
 public class Parser 
@@ -88,10 +87,9 @@ public class Parser
     
     private boolean isIn(String ch, String set)
     {
-       String cha;
        for (int i = 0; i < set.length(); i++)
        {
-         cha = set.substring(i, i + 1);
+         String cha = set.substring(i, i + 1);
          
          if (cha.equals(ch))
          {
@@ -217,7 +215,6 @@ public class Parser
       return r;
     }
 
-    
     private ArrayList optimize(ArrayList vector)
     {    
         ArrayList result = new ArrayList();
@@ -239,9 +236,9 @@ public class Parser
             }else                       
             if (isNum(str)) 
             {
-                double x =Double.parseDouble(str);
+                double x = Double.parseDouble(str);
                 token.setValue(x);
-            }else
+            } else
             if (isOP(str)) token.setOp(str);else
             if (isFunc(str)) token.setFunc(str);else
             if (isString(str)) 
@@ -252,14 +249,14 @@ public class Parser
                     token.setValue(o);
                     token.isVar=true;
                     token.varName=str;
-                }else
+                } else
                 {
                     setErrorMessage("Variable "+str+" is unknown!");
                 }
                 //token.setVar(str);
-            }else
-            if (isKLAMMER(str)) token.setKlammer(str);else            
-            {
+            } else
+            if (isKLAMMER(str)) token.setKlammer(str);
+            else {
                setErrorMessage("There is an unknown datatype : "+str);
             }
             
@@ -269,7 +266,6 @@ public class Parser
       }
     
     String lastVar = "";
-    
     
     private String calcString(ArrayList vector)
     {
@@ -286,12 +282,12 @@ public class Parser
                 {
                     lastVar=token.varName;
                 }
-            }else
+            } else
             if (token.isKlammer)
             {
                 if (token.klammer.equals("(")) value=calcString(vector);else
                 if (token.klammer.equals(")")) return value;
-            }else
+            } else
             if (token.isOp)
             {
                 switch (token.op) {
@@ -317,7 +313,7 @@ public class Parser
                         setErrorMessage("Operator "+token.op+" not found!");
                         break;
                 }
-            }else
+            } else
             {
                 setErrorMessage(token.varName+" not found!");
             }            
@@ -341,12 +337,12 @@ public class Parser
                 {
                     lastVar=token.varName;
                 }
-            }else
+            } else
             if (token.isKlammer)
             {
                 if (token.klammer.equals("(")) value=calcBoolean(vector);else
                 if (token.klammer.equals(")")) return value;
-            }else
+            } else
             if (token.isOp)
             {
                 if (token.op.equals("=")) 
@@ -358,27 +354,27 @@ public class Parser
                         if (v.global==false)
                         {
                           flowInfo.setVariable(lastVar,calcBoolean(vector)); 
-                        }else
+                        } else
                         {
                           basis.vsSetVar(lastVar,calcBoolean(vector));    
                         }
-                    }else
+                    } else
                     {
                         setErrorMessage("Variable "+lastVar+" not exist!");                        
                     }
              
-                }else
+                } else
                 if (token.op.equals("&")) return value && calcBoolean(vector);else
                 if (token.op.equals("=")) 
                 {                    
                     return (value==calcBoolean(vector));
-                }else                    
+                } else                    
                 if (token.op.equals("|")) return value || calcBoolean(vector);else
                 if (token.op.equals("!")) return !calcBoolean(vector); else
                 {
                     setErrorMessage("Operator "+token.varName+" not found!");
                 }
-            }else
+            } else
             {
                 setErrorMessage(token.varName+" not found!");
             }            
@@ -405,12 +401,12 @@ public class Parser
                         lastVar=token.varName;
                     }                    
                 }                
-            }else
+            } else
             if (token.isKlammer)
             {
                 if (token.klammer.equals("(")) num=calcDouble(vector);else
                 if (token.klammer.equals(")")) return num;
-            }else
+            } else
             if (token.isOp)
             {
                 switch (token.op) {
@@ -602,7 +598,7 @@ public class Parser
                         i++;
                       }
 
-                }else
+                } else
                 {
                     boolean oki=false;                
                     if (ops==0 && ( str.equals("*") || str.equals("/") || str.equals("^") || str.equals("%") ) )  oki=true; 
@@ -663,7 +659,6 @@ public class Parser
               v.global=true;
 
             } else setErrorMessage("Variable "+token.varName+" not found!");
-                
           }
       }
     }
@@ -822,10 +817,10 @@ public class Parser
         return false;
     }
     
-    // liefert 0 f�r Double
-    // liefert 1 f�r Boolean
-    // liefert 2 f�r String
-    // liefert -1 f�r unbekannt oder gemixt!
+    // liefert 0 fr Double
+    // liefert 1 fr Boolean
+    // liefert 2 fr String
+    // liefert -1 fr unbekannt oder gemixt!
     private int getToParseType(ArrayList vector)
     {
         int result = -1;
