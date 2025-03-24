@@ -21,9 +21,11 @@
 import VisualLogic.*;
 import VisualLogic.variables.*;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.*;
-
-import gnu.io.*;
+import jssc.SerialPort;
+import jssc.SerialPortException;
 
 public class RS232 implements MyOpenLabDriverIF {
     private VS1DByte outBytes = new VS1DByte(0);
@@ -106,19 +108,35 @@ public class RS232 implements MyOpenLabDriverIF {
 
             if (commando.equals("RTSON")) {
                 Driver driver = getDriver(strPort);
-                driver.setRTS(true);
+                try {
+                    driver.setRTS(true);
+                } catch (SerialPortException ex) {
+                    Logger.getLogger(RS232.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
             if (commando.equals("RTSOFF")) {
                 Driver driver = getDriver(strPort);
-                driver.setRTS(false);
+                try {
+                    driver.setRTS(false);
+                } catch (SerialPortException ex) {
+                    Logger.getLogger(RS232.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
             if (commando.equals("DTRON")) {
                 Driver driver = getDriver(strPort);
-                driver.setDTR(false);
+                try {
+                    driver.setDTR(false);
+                } catch (SerialPortException ex) {
+                    Logger.getLogger(RS232.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
             if (commando.equals("DTROFF")) {
                 Driver driver = getDriver(strPort);
-                driver.setDTR(false);
+                try {
+                    driver.setDTR(false);
+                } catch (SerialPortException ex) {
+                    Logger.getLogger(RS232.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
 
             try {
@@ -198,7 +216,11 @@ public class RS232 implements MyOpenLabDriverIF {
             if (getDriver(strCOM) == null) {
                 Driver driver = new Driver(strCOM, intBaud, intBits, intStopBits, intParity);
                 driver.useOwnInHandler = useOwnInHandler;
-                driver.start();
+                try {
+                    driver.start();
+                } catch (SerialPortException ex) {
+                    Logger.getLogger(RS232.class.getName()).log(Level.SEVERE, null, ex);
+                }
 
                 liste.add(driver);
             } else {

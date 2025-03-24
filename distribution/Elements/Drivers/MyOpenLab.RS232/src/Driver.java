@@ -23,12 +23,16 @@ import VisualLogic.*;
 import VisualLogic.variables.*;
 import java.util.*;
 import java.io.*;
-import gnu.io.*;
+import jssc.SerialPort;
+import jssc.SerialPortEvent;
+import jssc.SerialPortEventListener;
+import jssc.SerialPortException;
+import jssc.SerialPortList;
 
 public class Driver {
-    public static gnu.io.CommPortIdentifier portID;
-    public InputStream ins;
-    public OutputStream out;
+    //public static SerialPortList portID;
+    //public InputStream ins;
+    //public OutputStream out;
     public static SerialPort serss;
     public DataOutputStream dos;
     public int timeOut = 50;
@@ -45,20 +49,20 @@ public class Driver {
     public String port;
 
     public String[] listSerialPorts() {
-        Enumeration ports = CommPortIdentifier.getPortIdentifiers();
-        ArrayList portList = new ArrayList();
-        String portArray[] = null;
-        try {
-            while (ports.hasMoreElements()) {
-                CommPortIdentifier port = (CommPortIdentifier) ports.nextElement();
-                if (port.getPortType() == CommPortIdentifier.PORT_SERIAL) {
-                    portList.add(port.getName());
-                }
-            }
-            portArray = (String[]) portList.toArray(new String[0]);
-        } catch (Exception ex) {
-            System.out.println("RS232 Driver listSerialPorts error:" + ex);
-        }
+        String[] portArray = SerialPortList.getPortNames();
+        //ArrayList<String> portList = new ArrayList();
+        //String portArray[] = null;
+        //try {
+            //for (String name:ports) {
+                //CommPortIdentifier port = ports.nextElement();
+                //if (port.getPortType() == CommPortIdentifier.PORT_SERIAL) {
+              //      portList.add(port.getName());
+                //}
+            //}
+            //portArray = portList.toArray(new String[0]);
+        //} catch (Exception ex) {
+          //  System.out.println("RS232 Driver listSerialPorts error:" + ex);
+        //}
         return portArray;
     }
 
@@ -75,14 +79,14 @@ public class Driver {
             try {
                 System.out.println("PORT :" + port);
 
-                portID = CommPortIdentifier.getPortIdentifier(port);
-                serss = (SerialPort) portID.open("MYOPENLAB", 2000);
+               // portID = CommPortIdentifier.getPortIdentifier(port);
+                serss = new SerialPort(port);// portID.open("MYOPENLAB", 2000);
 
-                serss.setSerialPortParams(baud, bits, stopBits, parity);
-                dos = new DataOutputStream(serss.getOutputStream());
+                serss.setParams(baud, bits, stopBits, parity);
+                //dos = new DataOutputStream(serss.getOutputStream());
 
                 error = false;
-            } catch (NoSuchPortException | PortInUseException | UnsupportedCommOperationException | IOException ex) {
+            } catch (Exception ex) {
                 System.out.println("Fehler in RS232 Driver : " + ex);
             }
         }
@@ -90,22 +94,22 @@ public class Driver {
         System.out.println("DRIVER INIT END");
     }
 
-    public void start() {
+    public void start() throws SerialPortException {
         try {
-            ins = serss.getInputStream();
-            out = serss.getOutputStream();
+            //ins = serss.getInputStream();
+            //out = serss.getOutputStream();
 
             if (useOwnInHandler) {
                 System.out.println("useOwnInHandler");
                 serialThread = new SerialReader();
-                serialThread.in = ins;
+                //serialThread.in = ins;
                 serialThread.start();
             } else {
                 System.out.println("not useOwnInHandler");
                 serss.addEventListener(new commListener());
-                serss.notifyOnDataAvailable(true);
+                //serss.notifyOnDataAvailable(true);
             }
-        } catch (IOException | TooManyListenersException e) {
+        } catch (Exception e) {
             System.out.println("Fehler: " + e);
         }
     }
@@ -126,14 +130,14 @@ public class Driver {
             } catch (IOException ex) {
             }
         }
-        if (ins != null) {
+        /*if (ins != null) {
             try {
                 ins.close();
             } catch (IOException ex) {
             }
-        }
+        }*/
         if (serss != null) {
-            serss.close();
+            //serss.close();
         }
     }
 
@@ -159,11 +163,11 @@ public class Driver {
         //firstTime=true;
     }
 
-    public void setRTS(boolean value) {
+    public void setRTS(boolean value) throws SerialPortException {
         serss.setRTS(value);
     }
 
-    public void setDTR(boolean value) {
+    public void setDTR(boolean value) throws SerialPortException {
         serss.setDTR(value);
     }
 
@@ -292,21 +296,20 @@ public class Driver {
 
         @Override
         public void serialEvent(SerialPortEvent event) {
-            if (event.getEventType() == SerialPortEvent.OUTPUT_BUFFER_EMPTY) {
+            if (event.getEventType() == SerialPortEvent.TXEMPTY) {
                 System.out.println("Ignored event");
             }
 
-            if (event.getEventType() == SerialPortEvent.DATA_AVAILABLE) {
+            if (event.getEventType() == SerialPortEvent.RXCHAR) {
                 try {
-                    byte[] buffer = new byte[ins.available()];
-                    ins.read(buffer);
+                    byte[] buffer = serss.readBytes();
 
                     for (int i = 0; i < buffer.length; i++) {
                         strBuffer.add(buffer[i]);
                     }
 
                     make();
-                } catch (IOException e) {
+                } catch (Exception e) {
                     System.out.println("Fehler: " + e);
                 }
             }
