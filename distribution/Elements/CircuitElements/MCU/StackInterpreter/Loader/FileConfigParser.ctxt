@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=FileConfigParser
+comment1.params=
+comment1.target=java.lang.String\ getBlock()
+comment2.params=num
+comment2.target=int\ getInteger(java.lang.String)
+comment3.params=message
+comment3.target=void\ showMessage(java.lang.String)
+comment4.params=tokens
+comment4.target=java.lang.String[]\ reduceTokens(java.lang.String[])
+comment5.params=value
+comment5.target=int\ getNumber(java.lang.String)
+comment6.params=
+comment6.target=void\ interp()
+comment7.params=file
+comment7.target=void\ loadTextFile(java.io.File)
+comment8.params=filename
+comment8.target=FileConfigParser(java.lang.String)
+numComments=9

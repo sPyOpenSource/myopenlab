@@ -189,7 +189,6 @@ public class frmUpdate extends javax.swing.JFrame {
                     }
 
                     if (content.get("item") instanceof JSONObject) {
-
                         JSONObject item = content.getJSONObject("item");
 
                         String name = item.getJSONObject("@attributes").getString("name");
@@ -204,12 +203,9 @@ public class frmUpdate extends javax.swing.JFrame {
                         TestItem tItem = new TestItem(name, type, caption_de2, caption_en2, caption_es2);
 
                         rowData.items.add(tItem);
-
                     }
-
                 }
             }
-
         }
 
         return data;

@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=ExtensionFileFilter
+comment1.params=
+comment1.target=ExtensionFileFilter()
+comment10.params=description
+comment10.target=void\ setDescription(java.lang.String)
+comment11.params=b
+comment11.target=void\ setExtensionListInDescription(boolean)
+comment12.params=
+comment12.target=boolean\ isExtensionListInDescription()
+comment2.params=extension
+comment2.target=ExtensionFileFilter(java.lang.String)
+comment3.params=extension\ description
+comment3.target=ExtensionFileFilter(java.lang.String,\ java.lang.String)
+comment4.params=filters
+comment4.target=ExtensionFileFilter(java.lang.String[])
+comment5.params=filters\ description
+comment5.target=ExtensionFileFilter(java.lang.String[],\ java.lang.String)
+comment6.params=f
+comment6.target=boolean\ accept(java.io.File)
+comment7.params=f
+comment7.target=java.lang.String\ getExtension(java.io.File)
+comment8.params=extension
+comment8.target=void\ addExtension(java.lang.String)
+comment9.params=
+comment9.target=java.lang.String\ getDescription()
+numComments=13

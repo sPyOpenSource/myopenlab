@@ -54,7 +54,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public ArrayList<PathPoint> points = new ArrayList<>();
     public int pointSize = 10;
     public int elementRefreshDifferenz = 0;
-    // bis zu 10 Tags k�nnen hier von FrontElement zu CircuitElement als sog. Parameter
+    // bis zu 10 Tags knnen hier von FrontElement zu CircuitElement als sog. Parameter
     // ausgetauscht werden
     public Object[] tags = new Object[10];
 
@@ -245,6 +245,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public String getNameLocalized() {
         return nameLocalized;
     }
+    
     public boolean isLoading = false;
     public double fx1 = 0;
     public double fy1 = 0;
@@ -258,6 +259,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public Basis getElementBasis() {
         return elementBasis;
     }
+    
     private Object tag = "";
 
     @Override
@@ -320,6 +322,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public void setNameLocalized(String nameLocalized) {
         this.nameLocalized = nameLocalized;
     }
+    
     public String infoProgrammer;
     public String infoCopyrights;
     public String infoOther;
@@ -355,6 +358,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public boolean isResizeSynchron() {
         return resizeSynchron;
     }
+    
     public static final int MODE_NORMAL = 0;
     public static final int MODE_XOR = 1;
     private int mode = MODE_NORMAL;
@@ -450,16 +454,13 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
             if (pin != null) {
                 Draht draht = pin.draht;
                 if (draht != null) {
-
                     Element destElement = (Element) owner.getObjectWithID(draht.destElementID);
                     if (destElement != null) {
                         destElement.notifyWhenDestCalledList.add(element);
                     }
-
                 }
             }
         }
-
     }
 
     @Override
@@ -479,7 +480,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                 }
             }
         }
-
     }
 
     @Override
@@ -496,7 +496,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                     } else {
                         owner.processList.add(draht);
                     }
-
                 }
             }
         }
@@ -525,6 +524,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public int getMode() {
         return mode;
     }
+    
     public String docFileName = "";
     public int destDrahtID = -1;
     public String mainPath;
@@ -544,6 +544,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
             innerBorderVisibility = value;
         }
     }
+    
     public boolean oldBorderVisibility = true;
 
     @Override
@@ -557,9 +558,12 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
             repaint();
         }
     }
+    
+    @Override
     public VMObject getElementOwner(){
         return this.owner;
     }
+    
     private String[] args;
     public VMObject owner;
     public String definitionPath = "";
@@ -575,6 +579,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     }
     private int yDescriptionDistance = 0;
 
+    @Override
     public ArrayList<PathPoint> jGetPointList() {
         return points;
     }
@@ -588,10 +593,10 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
             }
         }
 
-        return "" + s.toString();
-
+        return s.toString();
     }
 
+    @Override
     public String jIfPathNotFoundThenSearch(String path) {
         String pfadX = Tools.mapFile(path);
         File fileA = new File(pfadX);
@@ -634,7 +639,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
         pathX = korrigiereFileSeparator(pathX);
         
-
         String result = jIfPathNotFoundThenSearch(pathX);
         if (result.length() > 0) {
             String f1 = new File(elementPath).getAbsolutePath();
@@ -744,13 +748,11 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                 if (classRef != null) {
                     classRef.xsetExternalIF(this);
                 }
-
             } catch (Exception | java.lang.AbstractMethodError ex) {
                 owner.owner.showErrorMessage("Error loading Element!" + this.className + " ex=" + ex.toString());
                 classRef = null; // also Dummy!
             }
             // also Dummy!
-            
         }
 
         if (!alreadyInitialized) {
@@ -836,14 +838,14 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     }
 
     public void inDenVordergrund() {
-       try{
+       try {
         getVMObject().remove(this);
         getVMObject().add(this, 0);
         owner.sortSubPanels();
         repaint();
-       }catch (IllegalArgumentException e){
+       } catch (IllegalArgumentException e) {
            System.out.println("Error VisualLogic.Element.inDenVordergrund(Element.java:906) "+e.getMessage());   
-       }catch (Exception e){
+       } catch (Exception e) {
            System.out.println("Error VisualLogic.Element.inDenVordergrund "+e.getMessage());
        }
     }
@@ -1000,9 +1002,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                             elementBasis.getCircuitBasis().processpropertyChangedToAllElements(null);
                             elementBasis.getFrontBasis().processpropertyChangedToAllElements(null);
                         }
-
                     }
-
                 } catch (Exception ex) {
                     owner.owner.showErrorMessage("Error loading Component <" + strName + "> :" + ex);
                 }
