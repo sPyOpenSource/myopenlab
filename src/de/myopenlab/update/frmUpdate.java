@@ -76,8 +76,8 @@ public class frmUpdate extends javax.swing.JFrame {
 
     public VisualLogic.gui.FrameMain owner;
     public static String myopenlabpath = "";
-    private static String proxyHost = "";
-    private static String proxyPort = "";
+    private static final String proxyHost = "";
+    private static final String proxyPort = "";
     private ArrayList<MyOpenLabRow> data = null;
 
     public List<MyTableRow> list1 = new ArrayList<>();
@@ -651,14 +651,17 @@ public class frmUpdate extends javax.swing.JFrame {
         // Create a new trust manager that trust all certificates
         TrustManager[] trustAllCerts = new TrustManager[]{
             new X509TrustManager() {
+                @Override
                 public java.security.cert.X509Certificate[] getAcceptedIssuers() {
                     return null;
                 }
 
+                @Override
                 public void checkClientTrusted(
                         java.security.cert.X509Certificate[] certs, String authType) {
                 }
 
+                @Override
                 public void checkServerTrusted(
                         java.security.cert.X509Certificate[] certs, String authType) {
                 }
@@ -1087,7 +1090,7 @@ public class frmUpdate extends javax.swing.JFrame {
 
         MyOpenLabRow rowX = null;
         for (MyOpenLabRow row : data) {
-            if (row.getEntry_name() == entry_name && row.getType() == type) {
+            if (row.getEntry_name().equals(entry_name) && row.getType().equals(type)) {
                 rowX = row;
                 break;
             }

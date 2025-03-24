@@ -18,7 +18,7 @@ static const char* const functions_H_Id =
 
 
 #define TOKENSIZE 999	/* Maximum length of a token.*/
-#define LINESIZE 9999    /* Maximum length of each input line read.*/
+#define LINESIZE 9999   /* Maximum length of each input line read.*/
 #define BUFSIZE 99999	/* Maximum length of a buffer.*/
 #define SIZE 9999
 #define INPUT	0
@@ -81,4 +81,3 @@ typedef struct module_ *module;
 
 
 #endif
-
