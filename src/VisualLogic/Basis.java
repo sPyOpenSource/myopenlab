@@ -1074,10 +1074,8 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     }
 
     public void baseprintln(String value) {
-
         console.setVisible(true);
         console.addMessageToConsole(value + "\n");
-
     }
 
     public void start(boolean debugmode) {
@@ -1197,7 +1195,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         this.XfileName = fileName;
 
         try {
-
             FileSystemInput fsi = new FileSystemInput(filename);
             if(!filename.endsWith("v")){
                 loadFromStream(fsi, fromAblage);
@@ -1426,7 +1423,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         DataInputStream stream = new DataInputStream(fis);
         String ver = stream.readUTF(); // Version
         if (Double.parseDouble(ver) == 3.13){
-        System.out.println("LoadFomStream_BasisVersion:" + ver + "|");
+        System.out.println("LoadFomStream_BasisVersion: " + ver);
         tmpPassword = stream.readUTF(); // Password einlesen
                 if (tmpPassword.length() > 0) {
                     if (frameCircuit != null && frameCircuit.frontMode == false) {
@@ -1627,12 +1624,12 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     }
 
     public void saveToStream(FileSystemOutput fsOut, boolean onlySelected) {
-      if(Double.parseDouble(Version.strFileVersion)>=3.12){
+      if(Double.parseDouble(Version.strFileVersion) >= 3.12){
       try {
             FileOutputStream fos = fsOut.addItem("Properties");
             DataOutputStream dos = new DataOutputStream(fos);
             dos.writeUTF(Version.strFileVersion); // Version
-            System.out.println("SavetoStream_BasisVersion:"+Version.strFileVersion+"|");
+            System.out.println("SavetoStream_BasisVersion: " + Version.strFileVersion);
             if (vmPassword.length() == 0) {
                 vmPassword = "";
             }
