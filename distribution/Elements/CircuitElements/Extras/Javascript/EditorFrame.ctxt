@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=EditorFrame
+comment0.text=\n\n\ @author\ salafica\n
+comment1.params=
+comment1.target=EditorFrame()
+comment1.text=\n\ Creates\ new\ form\ EditorFrame\n
+comment2.params=
+comment2.target=void\ initComponents()
+comment2.text=\n\ This\ method\ is\ called\ from\ within\ the\ constructor\ to\ initialize\ the\ form.\n\ WARNING\:\ Do\ NOT\ modify\ this\ code.\ The\ content\ of\ this\ method\ is\ always\n\ regenerated\ by\ the\ Form\ Editor.\n
+comment3.params=evt
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment4.params=evt
+comment4.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment5.params=evt
+comment5.target=void\ jButton2ActionPerformed(java.awt.event.ActionEvent)
+comment6.params=evt
+comment6.target=void\ jButton1ActionPerformed(java.awt.event.ActionEvent)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+comment7.text=\n\ @param\ args\ the\ command\ line\ arguments\n
+comment8.params=
+comment8.target=void\ run()
+numComments=9

@@ -236,8 +236,7 @@ public class Tools
 
     public static void openPaint(File file)
     {
-        String cmd = "";
-        cmd = "cmd /c start " + Tools.settings.getGraphicEditor() + " \"" + file.getAbsolutePath() + "\"";
+        String cmd = "cmd /c start " + Tools.settings.getGraphicEditor() + " \"" + file.getAbsolutePath() + "\"";
 
         try
         {
@@ -283,7 +282,7 @@ public class Tools
         {
             br = new BufferedReader(new FileReader(filename));
 
-            String line = null;
+            String line;
             try
             {
                 while ((line = br.readLine()) != null)
@@ -518,8 +517,6 @@ public class Tools
     public static DriverInfo openDriverInfo(File file)
     {
         DriverInfo tmp = new DriverInfo();
-
-        String str;
 
         try
         {

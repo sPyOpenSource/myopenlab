@@ -46,7 +46,6 @@ public class Datalogger extends JVSMain
   private VSBoolean inReset;
   private boolean bufferFull=false;
 
-
   private int counter=0;
 
   public Datalogger()

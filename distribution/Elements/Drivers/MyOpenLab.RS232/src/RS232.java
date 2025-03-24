@@ -67,7 +67,6 @@ public class RS232 implements MyOpenLabDriverIF {
             System.out.println("--------> GETPORTS");
             String[] list = driver.listSerialPorts();
             
-            //ArrayList<String>
             ((ArrayList<String>)value).addAll(Arrays.asList(list));          
         }
         if (commando.equals("TIMEOUT")) {
@@ -229,10 +228,6 @@ public class RS232 implements MyOpenLabDriverIF {
         }
     }
 
-    /*  private void sendBytes(Driver driver, byte[] bytes)
-     {
-
-     }*/
     @Override
     public void driverStop() {
 

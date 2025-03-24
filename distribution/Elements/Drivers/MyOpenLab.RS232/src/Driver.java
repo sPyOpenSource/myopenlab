@@ -23,6 +23,7 @@ import VisualLogic.*;
 import VisualLogic.variables.*;
 import java.util.*;
 import java.io.*;
+
 import jssc.SerialPort;
 import jssc.SerialPortEvent;
 import jssc.SerialPortEventListener;
@@ -30,11 +31,7 @@ import jssc.SerialPortException;
 import jssc.SerialPortList;
 
 public class Driver {
-    //public static SerialPortList portID;
-    //public InputStream ins;
-    //public OutputStream out;
     public static SerialPort serss;
-    public DataOutputStream dos;
     public int timeOut = 50;
     public boolean error;
 
@@ -49,21 +46,7 @@ public class Driver {
     public String port;
 
     public String[] listSerialPorts() {
-        String[] portArray = SerialPortList.getPortNames();
-        //ArrayList<String> portList = new ArrayList();
-        //String portArray[] = null;
-        //try {
-            //for (String name:ports) {
-                //CommPortIdentifier port = ports.nextElement();
-                //if (port.getPortType() == CommPortIdentifier.PORT_SERIAL) {
-              //      portList.add(port.getName());
-                //}
-            //}
-            //portArray = portList.toArray(new String[0]);
-        //} catch (Exception ex) {
-          //  System.out.println("RS232 Driver listSerialPorts error:" + ex);
-        //}
-        return portArray;
+        return SerialPortList.getPortNames();
     }
 
     public Driver(String port, int baud, int bits, int stopBits, int parity) {
@@ -79,11 +62,9 @@ public class Driver {
             try {
                 System.out.println("PORT :" + port);
 
-               // portID = CommPortIdentifier.getPortIdentifier(port);
                 serss = new SerialPort(port);// portID.open("MYOPENLAB", 2000);
 
                 serss.setParams(baud, bits, stopBits, parity);
-                //dos = new DataOutputStream(serss.getOutputStream());
 
                 error = false;
             } catch (Exception ex) {
@@ -96,13 +77,9 @@ public class Driver {
 
     public void start() throws SerialPortException {
         try {
-            //ins = serss.getInputStream();
-            //out = serss.getOutputStream();
-
             if (useOwnInHandler) {
                 System.out.println("useOwnInHandler");
                 serialThread = new SerialReader();
-                //serialThread.in = ins;
                 serialThread.start();
             } else {
                 System.out.println("not useOwnInHandler");
@@ -123,19 +100,6 @@ public class Driver {
             serialThread.stop = true;
             System.out.println("Closing Driver");
         }
-
-        if (dos != null) {
-            try {
-                dos.close();
-            } catch (IOException ex) {
-            }
-        }
-        /*if (ins != null) {
-            try {
-                ins.close();
-            } catch (IOException ex) {
-            }
-        }*/
         if (serss != null) {
             //serss.close();
         }
@@ -173,11 +137,11 @@ public class Driver {
 
     public void sendBytes(byte[] bytes) {
         try {
-            if (dos != null) {
-                dos.write(bytes);
-                dos.flush();
+            if (serss != null) {
+                serss.writeBytes(bytes);
+                //serss.flush();
             }
-        } catch (IOException ex) {
+        } catch (Exception ex) {
             //element.jShowMessage("Error sending Bytes  : "+ex.toString());
         }
     }

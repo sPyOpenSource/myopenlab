@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=VMPanel
+comment1.params=
+comment1.target=void\ init()
+comment2.params=
+comment2.target=void\ xOnInit()
+comment3.params=
+comment3.target=java.lang.String\ getBinDir()
+comment4.params=fos
+comment4.target=void\ saveToStreamAfterXOnInit(java.io.FileOutputStream)
+comment5.params=message
+comment5.target=void\ showMessage(java.lang.String)
+comment6.params=fis
+comment6.target=void\ loadFromStreamAfterXOnInit(java.io.FileInputStream)
+numComments=7
