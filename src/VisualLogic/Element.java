@@ -3008,7 +3008,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
             mc.addImage(result, 0);
             try {
                 mc.waitForID(0);
-            } catch (Exception exe) {
+            } catch (Exception ex) {
 
             }
             return result;

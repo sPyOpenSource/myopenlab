@@ -419,6 +419,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                     java.awt.Desktop.getDesktop().open(myFile);
                 }
             } catch (IOException ex) {
+                Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
             }
 
         } else if (command.equalsIgnoreCase("EDITFILE")) {
@@ -441,6 +442,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                         Runtime.getRuntime().exec(settings.getHTMLEditor() + " \"" + str + "\"");
                         return;
                     } catch (IOException ex) {
+                        Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
             }
@@ -450,6 +452,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                     try {
                         Runtime.getRuntime().exec(settings.getGraphicEditor() + " \"" + str + "\"");
                     } catch (IOException ex) {
+                        Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
             }
@@ -492,7 +495,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 if (mainVM.length() > 0 && destPath.length() > 0) {
                     createDistribution(projectPath, destPath, mainVM);
                 }
-
             }
         }
     }

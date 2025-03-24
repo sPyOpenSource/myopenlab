@@ -22,11 +22,8 @@
 import VisualLogic.*;
 import VisualLogic.variables.*;
 import tools.*;
-import java.awt.MediaTracker;
 
 import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.BufferedImage;
 import java.awt.image.MemoryImageSource;
 import java.awt.image.PixelGrabber;
 import java.awt.Graphics2D;
@@ -194,5 +191,3 @@ public class Element extends JVSMain
   }
   
 }
-
-
