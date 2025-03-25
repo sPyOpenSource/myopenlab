@@ -16,7 +16,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import org.json.JSONArray;
-import org.json.JSONObject;
 
 public class VerilogParser{
     int TOKENSIZE = 999;    /* Maximum length of a token.*/
@@ -38,29 +37,59 @@ public class VerilogParser{
     int NO_OUT = 0;
 
     public static void main(String args[]){
-        String code = "module mux (out, select, in0, in1, in2, in3);\noutput out;\ninput [1:0] select;\ninput in0, in1, in2, in3;\nendmodule";
-        System.out.println(code);
-        code = code.replace("endmodule", "]");
-        code = code.replace("module", "[{module:");
-        code = code.replace("output", "{type:output, names:'");
-        code = code.replace("input", "{type:input, names:'");
-        code = code.replace(";", "'},");
-        code = code.replace("(", ", arguments: [");
-        code = code.replace(")", "]");
-        code = code.replace("]'", "]");
-        System.out.println(code);
-        JSONArray object = new JSONArray(code);
-        System.out.println(object.toString(4));
-        /*File file = new File("/run/media/spy/home/ArchARM/home/spy/Source/FPGA/Verilog/HelloWorld/hello.v");
+        //String code = "module mux (out, select, in0, in1, in2, in3);\noutput out;\ninput [1:0] select;\ninput in0, in1, in2, in3;\nendmodule";
+        String code = "";
+        File file = new File("counter.v");
         try (FileReader in = new FileReader(file);
             BufferedReader reader = new BufferedReader(new BufferedReader(in))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                System.out.println(line);
+                String[] parts = line.split("//");
+                if(parts.length > 1)
+                    line = parts[0];
+                code += "{type:\"" + line + "\"},";
             }
+            System.out.println(code);
+            code = code.replace("       ", " ");
+            code = code.replace("    ", " ");
+            code = code.replace("   ", " ");
+            code = code.replace("  ", " ");
+            code = code.replace("\n", "");
+            code = code.replace("endmodule", "]");
+            code = code.replace("{type:\"module ", "[{module:\"");
+            code = code.replace("type:\"always @", "always:\"");
+            code = code.replace("\"output ", "output, names:\"");
+            code = code.replace("\"input ", "input, names:\"");
+            code = code.replace("\"parameter", "parameter, code:\"");
+            code = code.replace("\"assign", "assign, code:\"");
+            code = code.replace("\"reg ", "reg, names:\"");
+            code = code.replace("\"wire", "wire, names:\"");
+            code = code.replace("begin", "[");
+            code = code.replace("end", "]");
+            code = code.replace("type:\" if", "if:\"");
+            code = code.replace(";", "\"},");
+            //code = code.replace("(", ", arguments: [");
+            //code = code.replace(")", "]");
+            code = code.replace("]\"", "]");
+            code = code.replace("\"},\"}", "\"}");
+            code = code.replace("\"},\"}", "\"}");
+            code = code.replace("}, \"}", "}");
+            code = code.replace("}, \"}", "}");
+            code = code.replace("}, \"}", "}");
+            code = code.replace("},\"}", "}");
+            code = code.replace("[\"},", "[");
+            code = code.replace("{type:\"\"},", "");
+            code = code.replace("{type:\" \"},", "");
+            code = code.replace("{\" [", "{block:[");
+            code = code.replace(",{type:\" ]", "]");
+            code = code.replace(",{type:\"]},", "]");
+            code = code.replace("\" [", "[");
+            System.out.println(code);
+            JSONArray object = new JSONArray(code);
+            System.out.println(object.toString(4));
         } catch (IOException e) {
             System.err.println(e);
-        }*/
+        }
     }
 
     class Wire {
