@@ -47,5 +47,5 @@ target4.name=VMPanel
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=120
-target4.x=10
-target4.y=210
+target4.x=140
+target4.y=270

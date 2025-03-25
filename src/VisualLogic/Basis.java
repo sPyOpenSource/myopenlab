@@ -1995,10 +1995,8 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                                 var.value=obj;
                                 
                                 flowInfo.bindings.put(var.name, var.value);
-                                
                             }
                         }
-
                     } else {
                         elementX.jException("parameter count have to be equal!");
                         return;
@@ -2013,7 +2011,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
                         }
                     }
                 }
-
             }
         }
     }

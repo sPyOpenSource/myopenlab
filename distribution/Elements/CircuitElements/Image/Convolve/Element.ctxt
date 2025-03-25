@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Element
+comment1.params=
+comment1.target=void\ onDispose()
+comment2.params=g
+comment2.target=void\ paint(java.awt.Graphics)
+comment3.params=
+comment3.target=void\ init()
+comment4.params=
+comment4.target=void\ initInputPins()
+comment5.params=
+comment5.target=void\ initOutputPins()
+comment6.params=matrix\ w\ h
+comment6.target=float[]\ convert2DTo1D(VisualLogic.variables.VS2DDouble,\ int,\ int)
+comment7.params=
+comment7.target=void\ ConvolveIt()
+comment8.params=imgx\ w\ h
+comment8.target=int[]\ image2Pixel(java.awt.Image,\ int,\ int)
+comment9.params=
+comment9.target=void\ process()
+numComments=10

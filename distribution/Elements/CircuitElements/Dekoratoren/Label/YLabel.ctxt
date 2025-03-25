@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=YLabel
+comment1.params=
+comment1.target=YLabel()
+comment10.params=fos
+comment10.target=void\ saveToStream(java.io.FileOutputStream)
+comment2.params=
+comment2.target=void\ myInit()
+comment3.params=g
+comment3.target=void\ paint(java.awt.Graphics)
+comment4.params=
+comment4.target=void\ init()
+comment5.params=
+comment5.target=void\ xOnInit()
+comment6.params=
+comment6.target=void\ setPropertyEditor()
+comment7.params=
+comment7.target=void\ localize()
+comment8.params=o
+comment8.target=void\ propertyChanged(java.lang.Object)
+comment9.params=fis
+comment9.target=void\ loadFromStream(java.io.FileInputStream)
+numComments=11
