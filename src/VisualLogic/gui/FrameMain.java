@@ -5497,13 +5497,11 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     }
 
     public Image createImageOfElement(Element element) {
-
         File file = new File(element.elementPath + element.mainPath);
         DFProperties definition_def = Tools.getProertiesFromDefinitionFile(file);
 
         ImageIcon icon = new ImageIcon(element.elementPath + element.mainPath + File.separator + definition_def.iconFilename);
         return icon.getImage();
-
     }
 
     private void loadDoc(Element element, String filename, JEditorPane pane) {
@@ -5528,13 +5526,11 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     }
 
     public void activate_DocFrame(Element element) {
-
         try {
             panelDoc.openElementDocFile(this, element);
         } catch (Exception ex) {
             Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
