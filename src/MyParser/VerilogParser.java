@@ -15,6 +15,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 public class VerilogParser{
     int TOKENSIZE = 999;    /* Maximum length of a token.*/
@@ -36,8 +38,20 @@ public class VerilogParser{
     int NO_OUT = 0;
 
     public static void main(String args[]){
-        System.out.println("parser");
-        File file = new File("/run/media/spy/home/ArchARM/home/spy/Source/FPGA/Verilog/HelloWorld/hello.v");
+        String code = "module mux (out, select, in0, in1, in2, in3);\noutput out;\ninput [1:0] select;\ninput in0, in1, in2, in3;\nendmodule";
+        System.out.println(code);
+        code = code.replace("endmodule", "]");
+        code = code.replace("module", "[{module:");
+        code = code.replace("output", "{type:output, names:'");
+        code = code.replace("input", "{type:input, names:'");
+        code = code.replace(";", "'},");
+        code = code.replace("(", ", arguments: [");
+        code = code.replace(")", "]");
+        code = code.replace("]'", "]");
+        System.out.println(code);
+        JSONArray object = new JSONArray(code);
+        System.out.println(object.toString(4));
+        /*File file = new File("/run/media/spy/home/ArchARM/home/spy/Source/FPGA/Verilog/HelloWorld/hello.v");
         try (FileReader in = new FileReader(file);
             BufferedReader reader = new BufferedReader(new BufferedReader(in))) {
             String line;
@@ -46,7 +60,7 @@ public class VerilogParser{
             }
         } catch (IOException e) {
             System.err.println(e);
-        }
+        }*/
     }
 
     class Wire {

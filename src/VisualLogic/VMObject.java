@@ -2436,6 +2436,7 @@ public class VMObject extends JPanel implements MouseListener, MouseMotionListen
 
     }
 
+    @Override
     public void reorderWireFrames() {
         Draht draht;
         Element element;

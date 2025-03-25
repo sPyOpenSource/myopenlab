@@ -2276,6 +2276,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         initPins(true);
     }
 
+    @Override
     public void jSetTopPins(int value) {
 
         if (value < pinsTop) {
@@ -2303,6 +2304,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         //  owner.reorderWireFrames();
     }
 
+    @Override
     public void jSetBottomPins(int value) {
         if (value < pinsBottom) {
             while (pinsLstBottom.size() > value) {
