@@ -631,6 +631,15 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
     /**
      * Creates a new instance of Element
+     * @param id
+     * @param owner
+     * @param elementPath
+     * @param mainPath
+     * @param binPath
+     * @param className
+     * @param definitionPath
+     * @param args
+     * @throws java.lang.Exception
      */
     public Element(int id, VMObject owner, String elementPath, String mainPath, String binPath, String className, String definitionPath, String[] args) throws Exception {
         super(id, owner);

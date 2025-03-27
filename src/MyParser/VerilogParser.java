@@ -36,10 +36,10 @@ public class VerilogParser{
     int RESERVEDNUM = 107;
     int NO_OUT = 0;
 
-    public static void main(String args[]){
+    public static void Parser(String path){
         //String code = "module mux (out, select, in0, in1, in2, in3);\noutput out;\ninput [1:0] select;\ninput in0, in1, in2, in3;\nendmodule";
         String code = "";
-        File file = new File("counter.v");
+        File file = new File(path);
         try (FileReader in = new FileReader(file);
             BufferedReader reader = new BufferedReader(new BufferedReader(in))) {
             String line;

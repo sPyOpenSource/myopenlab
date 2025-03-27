@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=MatrixMul
+comment1.params=g
+comment1.target=void\ paint(java.awt.Graphics)
+comment2.params=
+comment2.target=void\ onDispose()
+comment3.params=
+comment3.target=void\ init()
+comment4.params=
+comment4.target=void\ initInputPins()
+comment5.params=
+comment5.target=void\ initOutputPins()
+comment6.params=
+comment6.target=void\ start()
+comment7.params=a\ b
+comment7.target=VisualLogic.variables.VS2DDouble\ multipliziereMit(VisualLogic.variables.VS2DDouble,\ VisualLogic.variables.VS2DDouble)
+comment7.text=\n\ Multiplizieren\ der\ Matrix\ (m\ x\ n)\ mit\ einer\n\ zweiten\ Matrix\ b\ (n\ x\ l).\ R\uFFFDckgabewert\ ist\n\ das\ Ergebnis\ der\ Multiplikation\n\ (eine\ (m\ x\ l)\ -\ Matrix)\ oder\ null,\ wenn\ die\n\ Anzahl\ der\ Spalten\ dieser\ Matrix\ nicht\ mit\n\ der\ Anzahl\ der\ Zeilen\ in\ b\ \uFFFDbereinstimmt\n\ und\ daher\ eine\ Multiplikation\ nicht\ m\uFFFDglich\n\ ist\n
+comment8.params=
+comment8.target=void\ process()
+numComments=9
