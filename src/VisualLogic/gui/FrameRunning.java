@@ -100,8 +100,8 @@ public class FrameRunning extends javax.swing.JFrame
         jToolBar1.setRollover(true);
         jToolBar1.setPreferredSize(new java.awt.Dimension(100, 33));
 
-        jButton_PauseVM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/pause24.gif"))); // NOI18N
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/FrameCircuit"); // NOI18N
+        jButton_PauseVM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/pause24.gif"))); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/FrameCircuit"); // NOI18N
         jButton_PauseVM.setToolTipText(bundle.getString("Pause_VM")); // NOI18N
         jButton_PauseVM.setPreferredSize(new java.awt.Dimension(25, 25));
         jButton_PauseVM.addActionListener(new java.awt.event.ActionListener() {
@@ -111,7 +111,7 @@ public class FrameRunning extends javax.swing.JFrame
         });
         jToolBar1.add(jButton_PauseVM);
 
-        jButtonStopVM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/stop24.gif"))); // NOI18N
+        jButtonStopVM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/stop24.gif"))); // NOI18N
         jButtonStopVM.setToolTipText(bundle.getString("Stop_VM")); // NOI18N
         jButtonStopVM.setPreferredSize(new java.awt.Dimension(25, 25));
         jButtonStopVM.addActionListener(new java.awt.event.ActionListener() {
@@ -121,7 +121,7 @@ public class FrameRunning extends javax.swing.JFrame
         });
         jToolBar1.add(jButtonStopVM);
 
-        jButtonStepVM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/Resume.GIF"))); // NOI18N
+        jButtonStepVM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/Resume.GIF"))); // NOI18N
         jButtonStepVM.setToolTipText(bundle.getString("Weiter_VM")); // NOI18N
         jButtonStepVM.setPreferredSize(new java.awt.Dimension(25, 25));
         jButtonStepVM.addActionListener(new java.awt.event.ActionListener() {
@@ -131,7 +131,7 @@ public class FrameRunning extends javax.swing.JFrame
         });
         jToolBar1.add(jButtonStepVM);
 
-        jButtonAnalogWindow.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/graphDouble.gif"))); // NOI18N
+        jButtonAnalogWindow.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/graphDouble.gif"))); // NOI18N
         jButtonAnalogWindow.setToolTipText(bundle.getString("NumerikGraphWindow")); // NOI18N
         jButtonAnalogWindow.setPreferredSize(new java.awt.Dimension(25, 25));
         jButtonAnalogWindow.addActionListener(new java.awt.event.ActionListener() {
@@ -141,7 +141,7 @@ public class FrameRunning extends javax.swing.JFrame
         });
         jToolBar1.add(jButtonAnalogWindow);
 
-        jButtonDigitalWindow.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/graphBoolean.gif"))); // NOI18N
+        jButtonDigitalWindow.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/graphBoolean.gif"))); // NOI18N
         jButtonDigitalWindow.setToolTipText(bundle.getString("DigitalGraphWindow")); // NOI18N
         jButtonDigitalWindow.setPreferredSize(new java.awt.Dimension(25, 25));
         jButtonDigitalWindow.addActionListener(new java.awt.event.ActionListener() {
@@ -151,7 +151,7 @@ public class FrameRunning extends javax.swing.JFrame
         });
         jToolBar1.add(jButtonDigitalWindow);
 
-        jButtonTestPoint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/testpoint.PNG"))); // NOI18N
+        jButtonTestPoint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/testpoint.PNG"))); // NOI18N
         jButtonTestPoint.setToolTipText(bundle.getString("TestpointWindow")); // NOI18N
         jButtonTestPoint.setPreferredSize(new java.awt.Dimension(25, 25));
         jButtonTestPoint.addActionListener(new java.awt.event.ActionListener() {
@@ -161,7 +161,7 @@ public class FrameRunning extends javax.swing.JFrame
         });
         jToolBar1.add(jButtonTestPoint);
 
-        jButtonDebugConsole.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Bilder/utilities-terminal.png"))); // NOI18N
+        jButtonDebugConsole.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/utilities-terminal.png"))); // NOI18N
         jButtonDebugConsole.setToolTipText("Console");
         jButtonDebugConsole.setPreferredSize(new java.awt.Dimension(25, 25));
         jButtonDebugConsole.addActionListener(new java.awt.event.ActionListener() {

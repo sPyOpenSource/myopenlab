@@ -26,7 +26,7 @@ import java.io.Serializable;
  *
  * @author Homer
  */
-public class Line  implements Serializable {
+public class Line implements Serializable {
     public Point myStart;
     public Point myEnd;
     private Rectangle myBoundingBox = new Rectangle();
@@ -35,8 +35,8 @@ public class Line  implements Serializable {
     public PolyPoint p1;
     public PolyPoint p2;
     
-    public static final int HORIZONTAL=0;
-    public static final int VERTIKAL=1;
+    public static final int HORIZONTAL = 0;
+    public static final int VERTIKAL = 1;
     
     public int index;
     
@@ -47,7 +47,7 @@ public class Line  implements Serializable {
      **/
     public Line(Point start, Point end, Draht draht, int index) {
         this.index = index;
-        this.draht=draht;
+        this.draht = draht;
         myStart = start;
         myEnd = end;
         updateBoundingBox();
@@ -56,6 +56,7 @@ public class Line  implements Serializable {
     public Point getStartPoint() {
         return myStart;
     }
+    
     public Point getEndPoint() {
         return myEnd;
     }
@@ -64,18 +65,12 @@ public class Line  implements Serializable {
         return draht;
     }
     
-    
-    
-    
-    
     private void updateBoundingBox() {
         myBoundingBox.setBounds(Math.min(myStart.x, myEnd.x),
                 Math.min(myStart.y, myEnd.y),
                 Math.abs(myEnd.x - myStart.x),
                 Math.abs(myEnd.y - myStart.y));
     }
-    
-    
     
     public void draw(Graphics2D g) {
         int x,y,xx,yy;
@@ -169,7 +164,6 @@ public class Line  implements Serializable {
         }
         return false;
     }
-    
     
     // Liefert >0 wenn eine vertikale Linie in der Nhe ist
     // Liefert -1 wenn nicht!    

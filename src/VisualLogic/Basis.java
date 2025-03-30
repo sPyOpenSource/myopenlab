@@ -1110,10 +1110,10 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         engineManager = new ScriptEngineManager();
         engine = engineManager.getEngineByName("javascript");
 
-        bindings = engine.getBindings(ScriptContext.ENGINE_SCOPE);
+        //bindings = engine.getBindings(ScriptContext.ENGINE_SCOPE);
 
-        bindings.put("basis", this);
-        engine.setBindings(bindings, ScriptContext.ENGINE_SCOPE);
+        //bindings.put("basis", this);
+        //engine.setBindings(bindings, ScriptContext.ENGINE_SCOPE);
 
         OpenVariable node;
         for (int i = 0; i < variablenListe.size(); i++) {

@@ -137,7 +137,7 @@ public class VerilogParser{
      * @param the string to compare
      * @return whether the string is reserved or not
      */
-    boolean isReserved (String word)
+    boolean isReserved(String word)
     {
         for (int i = 0; i < RESERVEDNUM; i++)
             if (word.equals(Keywords.reserved_word[i]) || "endmodule".equals(word))
@@ -150,7 +150,7 @@ public class VerilogParser{
      * @param the string to check
      * @return whether the string is a gate or not
      */
-    boolean isGate (String word)
+    boolean isGate(String word)
     {
         int i;
         for (i = 0; i < Keywords.gate_name.length; i++)
@@ -164,7 +164,7 @@ public class VerilogParser{
      * @param the string to check
      * @return whether the string is a an ouput or not
      */
-    boolean isFinalOutput (Wire w, Circuit c)
+    boolean isFinalOutput(Wire w, Circuit c)
     {
         for(int i = 0; i < c.outputcount; i++)
             if (w.name.equals(c.outputs[i]))
@@ -177,7 +177,7 @@ public class VerilogParser{
      * @param the string to check
      * @return whether the string is a vector of signals or not
      */
-    boolean isSignalVector (String word)
+    boolean isSignalVector(String word)
     {
         for (int i = 0; i < word.length(); i++)
             if (word.charAt(i) == ':')
@@ -190,7 +190,7 @@ public class VerilogParser{
      * @param the string gate name
      * @return the gate integer value
      */
-    int Convert (String gate)
+    int Convert(String gate)
     {
         if ("INPUT".equals(gate))
             return 0;
@@ -220,7 +220,7 @@ public class VerilogParser{
      * Prints the summary of a module - Statistical information
      * @param the module object
      */
-    void print_module_summary (Module m)
+    void print_module_summary(Module m)
     {
         int i;
         System.out.print("\n************** Module %s statistical results *************\n");//, m.name);
@@ -250,7 +250,7 @@ public class VerilogParser{
      * Prints the summary of a circuit - Statistical information
      * @param the circuit object
      */
-    void print_circuit_summary (Circuit c)
+    void print_circuit_summary(Circuit c)
     {
         int i,j,row,col;
         System.out.print("\n************** Circuit %s statistical results *************\n");//, c.name);
@@ -292,7 +292,7 @@ public class VerilogParser{
      * @param the signal name, the circuit's name
      * The id of the wire
      */
-    int getID (String name, Circuit c)
+    int getID(String name, Circuit c)
     {
         int i;
         for(i = 0; i < c.size; i++) {
@@ -307,7 +307,7 @@ public class VerilogParser{
      * Get a wire by id
      * @param the signal name, the circuit's name
      */
-    Wire getWire (int id, Circuit c)
+    Wire getWire(int id, Circuit c)
     {
         int i = 0;
         while (i < c.wirecount && c.wires[i] != null) {
@@ -322,7 +322,7 @@ public class VerilogParser{
      * Get a wire by name
      * @param the signal name, the circuit's name
      */
-    Wire getWireByName (String name, Circuit c)
+    Wire getWireByName(String name, Circuit c)
     {
         int i = 0;
         while (c.wires[i] != null) {
@@ -337,7 +337,7 @@ public class VerilogParser{
      * Set values of a node
      * @param the node object, the type of node, the name of the node, the node id
      */
-    void setNode (Node n, String type, String name, int id)
+    void setNode(Node n, String type, String name, int id)
     {
         n.type = type;
         n.name = name;
@@ -348,7 +348,7 @@ public class VerilogParser{
      * Create a wire
      * @param the circuit object, the wire object, the wire type, the wire name
      */
-    void buildWire (Circuit c, Wire w, String type, String name)
+    void buildWire(Circuit c, Wire w, String type, String name)
     {
         int i;
         w.id = getID (name, c);   /*Wire ID*/
@@ -371,7 +371,7 @@ public class VerilogParser{
      * @param the circuit object, the wire name
      * @return whether the wire is already created or not
      */
-    boolean isDefined (Circuit c, String name)
+    boolean isDefined(Circuit c, String name)
     {
         int i = 0;
         while (c.wires[i] != null) {
