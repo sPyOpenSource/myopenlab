@@ -3,7 +3,6 @@
 
 					// line 2 "Expression.jay"
 
-
   package tools;
 
   import java.io.IOException;
@@ -57,12 +56,12 @@
   public static final int condition = 274;
   public static final int yyErrorCode = 256;
 
-  /** number of final state.
+   /** number of final state.
     */
   protected static final int yyFinal = 9;
 
-  /** parser tables.
-      Order is mandated by <i>jay</i>.
+   /** parser tables.
+    * Order is mandated by <i>jay</i>.
     */
   protected static final short[] yyLhs = {
 //yyLhs 29
@@ -162,8 +161,8 @@
    260,
     };
 
-  /** maps symbol value to printable name.
-      @see #yyExpecting
+   /** maps symbol value to printable name.
+    * @see #yyExpecting
     */
   protected static final String[] yyNames = {
     "end-of-file",null,null,null,null,null,null,null,null,null,null,null,
@@ -354,10 +353,11 @@
   }
 
   /** the generated parser.
-      Maintains a dynamic state and value stack.
-      @param yyLex scanner.
-      @return result of the last reduction, if any.
-      @throws yyException on irrecoverable parse error.
+    * Maintains a dynamic state and value stack.
+    * @param yyLex scanner.
+    * @return result of the last reduction, if any.
+    * @throws java.io.IOException
+    * @throws yyException on irrecoverable parse error.
     */
   public Object yyparse (yyInput yyLex) throws java.io.IOException, yyException {
     if (yyMax <= 0) yyMax = 256;			// initial size

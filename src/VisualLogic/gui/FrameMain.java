@@ -178,7 +178,8 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 this,
                 java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/FrameCircuit").getString("NEW_FOLDER"),
                 java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/FrameCircuit").getString("FOLDER_NAME"),
-                JOptionPane.QUESTION_MESSAGE);
+                JOptionPane.QUESTION_MESSAGE
+        );
 
         if (value != null && value.length() > 0) {
             File file = new File(node.projectPath + node.relativePath);
@@ -934,7 +935,6 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             timer.start();
             return Obasis;
         }
-
     }
 
     public void addBasisToVMPanel(Basis basis) {

@@ -100,12 +100,10 @@ public class ZipFiles {
             zos.close();
             fis.close();
             fos.close();
-            System.out.println(file.getCanonicalPath()+" is zipped to "+zipFileName);
-             
+            System.out.println(file.getCanonicalPath() + " is zipped to " + zipFileName);   
         } catch (IOException e) {
             e.printStackTrace();
         }
- 
     }
  
 }
