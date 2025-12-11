@@ -29,26 +29,27 @@ import VisualLogic.VMObject;
  */
 public class BasisProperty {
     
-    public int elementID=-1;
-    public int propertyIndex=-1;
-    public VMObject vmobject=null;
+    public int elementID = -1;
+    public int propertyIndex = -1;
+    public VMObject vmobject = null;
     
     /** Creates a new instance of BasisProperty */
     public BasisProperty(VMObject vmobject, int elementID, int propertyIndex) 
     {
-        this.vmobject=vmobject;
-        this.elementID=elementID;
-        this.propertyIndex=propertyIndex;
+        this.vmobject = vmobject;
+        this.elementID = elementID;
+        this.propertyIndex = propertyIndex;
     }
 
+    @Override
     public String toString()
     {
         Element element = vmobject.getElementWithID(elementID);
                 
-        ElementProperty elProp=(ElementProperty)element.propertyList.get(propertyIndex);
+        ElementProperty elProp = (ElementProperty)element.propertyList.get(propertyIndex);
                     
         //jAddPEItem(elProp.label,elProp.referenz,elProp.min,elProp.max);
                 
-        return "elementID="+element.toString()+ ", property="+elProp.label;
+        return "elementID=" + element.toString() + ", property=" + elProp.label;
     }
 }

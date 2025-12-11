@@ -313,8 +313,7 @@ public class Parser
                         setErrorMessage("Operator "+token.op+" not found!");
                         break;
                 }
-            } else
-            {
+            } else {
                 setErrorMessage(token.varName+" not found!");
             }            
         }

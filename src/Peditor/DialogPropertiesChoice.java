@@ -48,18 +48,17 @@ class ElementItem
         return element.toString();
     }
 }
-        
-        
+          
 public class DialogPropertiesChoice extends javax.swing.JDialog  implements ListSelectionListener
 {
     private PropertyEditor propertyEditor;
     private VMObject vmobject;  
     private boolean loading=false;
-    public static ArrayList props = new ArrayList();    
     private DefaultListModel model = new DefaultListModel();
     
     public static boolean result=false;
-    
+    public static ArrayList props = new ArrayList();    
+
     /** Creates new form DialogPropertiesChoice */
     public DialogPropertiesChoice(java.awt.Frame parent, boolean modal, VMObject vmobject)
     {
@@ -257,7 +256,6 @@ public class DialogPropertiesChoice extends javax.swing.JDialog  implements List
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
 
-       
         int index=jTable1.getSelectedRow();
         if (index>=0)
         {
@@ -268,7 +266,6 @@ public class DialogPropertiesChoice extends javax.swing.JDialog  implements List
               listProps();              
             }            
         }
-
         
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -378,8 +375,6 @@ public class DialogPropertiesChoice extends javax.swing.JDialog  implements List
     {
         
     }
-    
-
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

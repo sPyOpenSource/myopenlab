@@ -40,9 +40,6 @@
       <SubComponents>
         <Container class="javax.swing.JSplitPane" name="jSplitPane1">
           <Properties>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="96" green="fa" red="fa" type="rgb"/>
             </Property>
