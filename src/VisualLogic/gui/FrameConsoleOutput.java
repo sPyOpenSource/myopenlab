@@ -19,6 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 package VisualLogic.gui;
 
 import VisualLogic.Basis;
+import assets.Assets;
 
 /**
  *
@@ -27,16 +28,15 @@ import VisualLogic.Basis;
 public class FrameConsoleOutput extends javax.swing.JFrame
 {
     private Basis basis;
+    private Assets assets = new Assets();
     
     /** Creates new form FrameConsoleOutput */
     public FrameConsoleOutput(Basis basis)
     {
         initComponents();
-        this.basis=basis;
+        this.basis = basis;
         
-        
-        
-        javax.swing.ImageIcon icon =new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/utilities-terminal.png"));
+        javax.swing.ImageIcon icon = new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/16x16/utilities-terminal.png"));
         setIconImage(icon.getImage());        
     }
     
@@ -105,8 +105,6 @@ public class FrameConsoleOutput extends javax.swing.JFrame
     {//GEN-HEADEREND:event_jmniClearActionPerformed
         jTextArea1.setText("");
     }//GEN-LAST:event_jmniClearActionPerformed
-    
-  
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPopupMenu jPopupMenu1;

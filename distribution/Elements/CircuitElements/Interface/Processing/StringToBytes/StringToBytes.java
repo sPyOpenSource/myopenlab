@@ -31,16 +31,11 @@ import java.util.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-
-
 public class StringToBytes extends JVSMain
 {
   private Image image;
-  
   private VSString inString;
-
   private VS1DByte outBytes = new VS1DByte(0);
-
 
   public void paint(java.awt.Graphics g)
   {
@@ -92,7 +87,6 @@ public class StringToBytes extends JVSMain
     element.setPinOutputReference(0,outBytes);
   }
 
-
   public void start()
   {
 
@@ -104,8 +98,7 @@ public class StringToBytes extends JVSMain
   
   public void sendString(String str)
   {
-
-    byte[] bytes=str.getBytes();
+    byte[] bytes = str.getBytes();
 
     outBytes.setValues(bytes);
 
@@ -116,7 +109,7 @@ public class StringToBytes extends JVSMain
   public void elementActionPerformed(ElementActionEvent evt)
   {
 
-    int idx=evt.getSourcePinIndex();
+    int idx = evt.getSourcePinIndex();
     switch (idx)
     {
       case 1: sendString(inString.getValue()); break;
@@ -124,6 +117,4 @@ public class StringToBytes extends JVSMain
 
   }
 
-
 }
-

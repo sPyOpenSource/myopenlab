@@ -152,7 +152,4 @@ public class Int4XDec extends JVSMain
       
     }
   }
-
-
 }
-

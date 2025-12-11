@@ -21,6 +21,8 @@ package VisualLogic.gui;
 import MyGraph.MyGraph;
 import VisualLogic.*;
 import java.awt.Color;
+import assets.Assets;
+
 import javax.swing.DefaultListModel;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
@@ -29,12 +31,12 @@ import javax.swing.SwingUtilities;
 class TheGraphDouble
 {
     public double[] yValues;
-    public String name="";
-    public double value=0;
+    public String name = "";
+    public double value = 0;
     
     public TheGraphDouble(int bufflen)
     {
-        yValues= new double[bufflen];
+        yValues = new double[bufflen];
     }
 }
 
@@ -47,11 +49,13 @@ public class FrameDoubleGraph extends javax.swing.JFrame
     private final Basis basis;
     private final int distance = 20;
     private TheGraphDouble[] graphs;
+    
     public double[] xValues;
     public double[] nullValue = new double[1];
     
     public int abtastFreq = 10;
     public int refreshFreq = 250;
+    
     private int internalC = 0;
     private int refreshC = 0;
     private boolean dontRefresh = false;
@@ -59,6 +63,7 @@ public class FrameDoubleGraph extends javax.swing.JFrame
     
     private int bufflen = 100;
     private int newbufflen = bufflen;
+    private Assets assets = new Assets();
     
     /** Creates new form FrameBooleanGraph */
     public FrameDoubleGraph(Basis basis)
@@ -85,7 +90,7 @@ public class FrameDoubleGraph extends javax.swing.JFrame
         JSpinner.NumberEditor editor3 = new JSpinner.NumberEditor(jSpinner3);
         jSpinner3.setEditor(editor3);        
         //setIconImage(basis.getFrameMain().iconImage);
-        javax.swing.ImageIcon icon =new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/graphDouble16x16.gif"));
+        javax.swing.ImageIcon icon = new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/graphDouble16x16.gif"));
         setIconImage(icon.getImage());
         jList1.setModel(model);
     }

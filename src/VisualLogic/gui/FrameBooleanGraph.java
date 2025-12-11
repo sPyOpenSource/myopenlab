@@ -21,6 +21,7 @@ package VisualLogic.gui;
 import MyGraph.MyGraph;
 import VisualLogic.Basis;
 import VisualLogic.Element;
+import assets.Assets;
 
 import java.awt.Color;
 import javax.swing.JSpinner;
@@ -51,9 +52,12 @@ public class FrameBooleanGraph extends javax.swing.JFrame
     private final int faktor = 20;
     private final int distance = 5;
     private TheGraphBoolean[] graphs;
+    private Assets assets = new Assets();
+    
     public double[] xValues;
     public int abtastFreq = 10;
     public int refreshFreq = 250;
+    
     private int internalC = 0;
     private int refreshC = 0;
     private boolean dontRefresh = false;
@@ -86,7 +90,7 @@ public class FrameBooleanGraph extends javax.swing.JFrame
         jSpinner3.setEditor(editor3);
         
         //setIconImage(basis.getFrameMain().iconImage);
-        javax.swing.ImageIcon icon = new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/graphBoolean16x16.gif"));
+        javax.swing.ImageIcon icon = new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/graphBoolean16x16.gif"));
         setIconImage(icon.getImage());
     }
     

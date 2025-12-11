@@ -91,7 +91,6 @@ public class Tools
         return content;
     }
     
-    
     public static String mapFile(String fileName)
     {
         fileName = new File(fileName).getAbsolutePath();
@@ -99,7 +98,6 @@ public class Tools
         int index1 = fileName.indexOf("CircuitElements\\2user-defined");
         if (index1 > 0)
         {
-
             String f1 = new File(elementPath + "\\CircuitElements\\2user-defined").getAbsolutePath();
             String f2 = new File(fileName).getAbsolutePath();
 
@@ -119,7 +117,6 @@ public class Tools
         }
 
         return fileName;
-
     }
     
     public static Settings settings;
@@ -159,8 +156,8 @@ public class Tools
     public static boolean compileFile(String elementPath, String srcFile, String destPath, String classpath)
     {
 
-        JavaCompiler jc = null;
-        StandardJavaFileManager sjfm = null;
+        JavaCompiler jc;
+        StandardJavaFileManager sjfm;
         try
         {
 
@@ -361,7 +358,6 @@ public class Tools
         {
             showMessage(parent, ex.toString());
         }
-
     }
 
     public static boolean editFile(JFrame parent, File file)
@@ -419,7 +415,6 @@ public class Tools
 
     public static void runApplication(String app, String param) throws IOException
     {
-
         String cmd = "cmd /c start " + app + " " + param;
 
         Runtime.getRuntime().exec(cmd);
@@ -497,22 +492,16 @@ public class Tools
 
     public static void saveProjectFile(File file, ProjectProperties props)
     {
-        try
-        {
-            BufferedWriter out = new BufferedWriter(new FileWriter(file.getAbsolutePath() + File.separator + "project.myopenlab"));
-
+        try (BufferedWriter out = new BufferedWriter(new FileWriter(file.getAbsolutePath() + File.separator + "project.myopenlab"))) {
             out.write("MAINVM          = " + props.mainVM);
             out.newLine();
             out.write("PROJECTTYPE     = " + props.projectType);
             out.newLine();
-
-            out.close();
         }
         catch (IOException ex)
         {
             Tools.showMessage(ex.toString());
         }
-
     }
 
     public static DriverInfo openDriverInfo(File file)
@@ -652,8 +641,6 @@ public class Tools
     public static DFProperties getProertiesFromDefinitionFile(File file)
     {
         DFProperties tmp = new DFProperties();
-
-        String str;
 
         try
         {
@@ -1471,7 +1458,6 @@ public class Tools
             {
                 return result;
             }
-
         }
 
         return result;
@@ -1479,17 +1465,12 @@ public class Tools
 
     public static void saveProjectsFile(File file, ArrayList<String> liste)
     {
-        try
-        {
-            BufferedWriter out = new BufferedWriter(new FileWriter(file));
-
+        try (BufferedWriter out = new BufferedWriter(new FileWriter(file))) {
             for (int i = 0; i < liste.size(); i++)
             {
                 out.write(liste.get(i));
                 out.newLine();
             }
-
-            out.close();
         }
         catch (IOException ex)
         {
@@ -1504,16 +1485,13 @@ public class Tools
 
         if (file.exists())
         {
-            try
-            {
-                BufferedReader input = new BufferedReader(new FileReader(file));
+            try (BufferedReader input = new BufferedReader(new FileReader(file))) {
                 String inputString;
                 while ((inputString = input.readLine()) != null)
                 {
                     result = inputString;
                     break;
                 }
-                input.close();
             }
             catch (IOException ex)
             {
@@ -1525,10 +1503,7 @@ public class Tools
 
     public static void saveText(File file, String text)
     {
-        try
-        {
-            BufferedWriter out = new BufferedWriter(new FileWriter(file));
-
+        try (BufferedWriter out = new BufferedWriter(new FileWriter(file))) {
             for (int i = 0; i < text.length(); i++)
             {
                 String ch = text.substring(i, i + 1);
@@ -1541,8 +1516,6 @@ public class Tools
                     out.write(ch);
                 }
             }
-
-            out.close();
         }
         catch (IOException ex)
         {
@@ -1555,17 +1528,12 @@ public class Tools
     {
         ArrayList<String> liste = new ArrayList<>();
 
-        String str;
-
-        try
-        {
-            BufferedReader input = new BufferedReader(new FileReader(file));
+        try (BufferedReader input = new BufferedReader(new FileReader(file))) {
             String inputString;
             while ((inputString = input.readLine()) != null)
             {
                 liste.add(inputString);
             }
-            input.close();
         }
         catch (IOException ex)
         {
@@ -1573,7 +1541,6 @@ public class Tools
         }
         return liste;
     }
-
 
     public static String getInfoXMLCaption(File file) {
         File f = new File(file.getAbsoluteFile() + "/info.xml");

@@ -1,3 +1,5 @@
+package VectorenMatrix.VectorInteger;
+
 //*****************************************************************************
 //* Element of MyOpenLab Library                                              *
 //*                                                                           *
@@ -19,74 +21,116 @@
 //* Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110, USA                  *
 //*****************************************************************************
 
-
-
 import VisualLogic.*;
 import VisualLogic.variables.*;
 import tools.*;
 import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 
-public class StrConst1D extends JVSMain
+
+public class Vector extends JVSMain
 {
+  private VSPropertyDialog more = new VSPropertyDialog();
   private Image image;
+  private VS1DInteger vector= new VS1DInteger(0);
 
-  private VS1DString out= new VS1DString(0);
-
-
-  public void xpaint(java.awt.Graphics g)
-  {
-    if (image!=null) drawImageCentred(g,image);
-  }
-  
   public void onDispose()
   {
-    if (image!=null)
-    {
-      image.flush();
-      image=null;
-    }
+   if (image!=null)
+   {
+     image.flush();
+     image=null;
+   }
   }
+
+
+
+  public void paint(java.awt.Graphics g)
+  {
+    drawImageCentred(g,image);
+  }
+
 
   public void init()
   {
+    setSize(34+10,36);
     initPins(0,1,0,0);
-    setSize(32+3,32+3);
-    initPinVisibility(false,true,false,false);
+
     element.jSetInnerBorderVisibility(false);
 
-    image=element.jLoadImage(element.jGetSourcePath()+"StrConst1D.gif");
+    setPin(0,ExternalIF.C_ARRAY1D_INTEGER,element.PIN_OUTPUT);
+
+    image=element.jLoadImage(element.jGetSourcePath()+"icon.png");
     
-    setPin(0,ExternalIF.C_ARRAY1D_STRING,element.PIN_OUTPUT);   // Out
+    setName("VectorInteger");
     
-    setName("StrConst1D");
+    element.jSetResizable(false);
+    
   }
+  
+  public void xOnInit()
+  {
+  }
+
 
   public void initInputPins()
   {
+
   }
-  
+
   public void initOutputPins()
   {
-    element.setPinOutputReference(0,out);
+    VS1DInteger ref= new VS1DInteger(0);
+    ref.copyValueFrom(vector);
+    element.setPinOutputReference(0,ref);
+    // Sp�ter nur noch mit Referenzen Arbeiten!
   }
-  
+
   public void setPropertyEditor()
   {
-    
+    element.jAddPEItem("Werte..",more, 0,0);
+    localize();
   }
+
+  private void localize()
+  {
+    int d=6;
+    String language;
+
+    language="en_US";
+    element.jSetPEItemLocale(d,language,"Values...");
+
+
+    language="es_ES";
+    element.jSetPEItemLocale(d,language,"Values...");
+  }
+
+
 
   public void propertyChanged(Object o)
   {
+    if (o.equals(more))
+    {
+      MyTableEditor frm = new MyTableEditor(null,true);
+
+      frm.setInputs(vector.getValues());
+      frm.setVisible(true);
+
+
+      if (frm.result)
+      {
+        int[] data=frm.getInputs();
+        vector.setValues(data);
+      }
+
+    }
   }
+  
 
   public void start()
   {
-    out.resize(10);
-    for (int i=0;i<10;i++)
-    {
-     out.setValue(i,""+i);
-    }
-    out.setChanged(true);
+  
     element.notifyPin(0);
   }
 
@@ -94,12 +138,15 @@ public class StrConst1D extends JVSMain
   {
 
   }
-  
+
   public void loadFromStream(java.io.FileInputStream fis)
   {
+    vector.loadFromStream(fis);
   }
 
   public void saveToStream(java.io.FileOutputStream fos)
   {
+    vector.saveToStream(fos);
   }
+
 }

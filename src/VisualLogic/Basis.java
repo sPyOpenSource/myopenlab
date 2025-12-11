@@ -114,7 +114,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
     ScriptEngineManager engineManager;
     ScriptEngine engine;
-
     Bindings bindings;
 
     public int getDebugDelay() {
@@ -612,6 +611,7 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
     public FrameMain getFrameCircuit() {
         return frameCircuit;
     }
+    
     public String caption = "";
     public VSImage vsIcon = new VSImage();
     public int fileCount = 0;
@@ -1051,8 +1051,8 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
         //XPosTemp = CustomXwindowPos;
         //YPosTemp = CustomYwindowPos;
         } else {
-        CustomXwindowPos = XPosTemp;
-        CustomYwindowPos = YPosTemp;    
+            CustomXwindowPos = XPosTemp;
+            CustomYwindowPos = YPosTemp;    
         }
         
         if(WindowsPosition.selectedIndex==6){// MAXIMIZED 

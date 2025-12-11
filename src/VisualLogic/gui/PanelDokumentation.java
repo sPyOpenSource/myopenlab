@@ -19,6 +19,7 @@ package VisualLogic.gui;
 
 import VisualLogic.Element;
 import VisualLogic.MyImage;
+import assets.Assets;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -57,7 +58,8 @@ public class PanelDokumentation extends javax.swing.JPanel {
     public String selectedLanguage = "de";
     private FrameMain owner;
     private Element element = null;
-
+    private Assets assets = new Assets();
+    
     /**
      * Creates new form PanelDokumentation
      */
@@ -130,7 +132,7 @@ public class PanelDokumentation extends javax.swing.JPanel {
         jToolBar1.setFloatable(false);
         jToolBar1.setOpaque(false);
 
-        jButtonDE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/de.png"))); // NOI18N
+        jButtonDE.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/de.png"))); // NOI18N
         jButtonDE.setMargin(new java.awt.Insets(3, 4, 3, 4));
         jButtonDE.setOpaque(false);
         jButtonDE.addActionListener(new java.awt.event.ActionListener() {
@@ -140,7 +142,7 @@ public class PanelDokumentation extends javax.swing.JPanel {
         });
         jToolBar1.add(jButtonDE);
 
-        jButtonEN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/us.png"))); // NOI18N
+        jButtonEN.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/us.png"))); // NOI18N
         jButtonEN.setMargin(new java.awt.Insets(3, 4, 3, 4));
         jButtonEN.setOpaque(false);
         jButtonEN.addActionListener(new java.awt.event.ActionListener() {
@@ -150,7 +152,7 @@ public class PanelDokumentation extends javax.swing.JPanel {
         });
         jToolBar1.add(jButtonEN);
 
-        jButtonES.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/es.png"))); // NOI18N
+        jButtonES.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/es.png"))); // NOI18N
         jButtonES.setMargin(new java.awt.Insets(3, 4, 3, 4));
         jButtonES.setOpaque(false);
         jButtonES.addActionListener(new java.awt.event.ActionListener() {

@@ -108,7 +108,6 @@ public class Starter extends JVSMain
   {
   }
 
-
     public static void showMessage(String message)
     {
         JOptionPane.showMessageDialog(null,message,"Error",JOptionPane.ERROR_MESSAGE);
@@ -132,7 +131,6 @@ public class Starter extends JVSMain
                Runtime.getRuntime().exec(app);
              }
 
-
            } catch(Exception ex)
            {
               showMessage(ex.toString());
@@ -141,6 +139,3 @@ public class Starter extends JVSMain
       }
   }
 }
-
-
-

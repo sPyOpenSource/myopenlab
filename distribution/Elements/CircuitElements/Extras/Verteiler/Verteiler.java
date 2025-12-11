@@ -52,7 +52,6 @@ public class Verteiler extends JVSMain
         anzPins.setValue(element.jGetAnzahlPinsRight());
         Rectangle bounds=element.jGetBounds();
 
-        
         int outCount=element.jGetAnzahlPinsRight();
         boolean pinIn=element.hasPinWire(outCount);
         if (pinIn==true)

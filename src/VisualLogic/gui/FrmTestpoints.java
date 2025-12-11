@@ -22,6 +22,7 @@ import VisualLogic.Basis;
 import VisualLogic.Element;
 import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableModel;
+import assets.Assets;
 
 /**
  *
@@ -30,9 +31,11 @@ import javax.swing.table.DefaultTableModel;
 public class FrmTestpoints extends javax.swing.JFrame
 {
     private DefaultTableModel model = new DefaultTableModel();
-    private int[] colCount=new int[100];
+    private int[] colCount = new int[100];
     private Basis basis;
-    private boolean gesperrt=false;
+    private boolean gesperrt = false;
+    private Assets assets = new Assets();
+    
     /** Creates new form frmTestpoints */
     public FrmTestpoints(Basis basis)
     {
@@ -41,15 +44,12 @@ public class FrmTestpoints extends javax.swing.JFrame
         
         setVisible(false);
         
-        this.basis=basis;
-        
+        this.basis = basis;
         
         //setIconImage(basis.getFrameMain().iconImage);
         
-        javax.swing.ImageIcon icon = new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/testPointWhite.png"));
+        javax.swing.ImageIcon icon = new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/testPointWhite.png"));
         setIconImage(icon.getImage());
-        
-        
     }
     
     // Returns the Columns Index
@@ -108,8 +108,8 @@ public class FrmTestpoints extends javax.swing.JFrame
         
     }
     
-    private int internalC=0;
-    private int refreshC=0;
+    private int internalC = 0;
+    private int refreshC = 0;
     
     public void process()
     {

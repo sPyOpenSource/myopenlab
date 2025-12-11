@@ -21,7 +21,6 @@ package Canvas.DrawString;
 //* Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110, USA                  *
 //*****************************************************************************
 
-
 import VisualLogic.*;
 import VisualLogic.variables.*;
 import tools.*;
@@ -29,7 +28,6 @@ import tools.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.geom.*;
-
 
 public class DrawString extends JVSMain
 {
@@ -40,7 +38,6 @@ public class DrawString extends JVSMain
   private VSBoolean antialising;
   private VSColor  fontColor;
   private VSFont font;
-
 
   private VSCanvas out=new VSCanvas();
 
@@ -193,8 +190,4 @@ public class DrawString extends JVSMain
     }
   }  */
 
-
-
 }
-
-

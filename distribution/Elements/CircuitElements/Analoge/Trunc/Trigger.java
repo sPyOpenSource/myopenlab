@@ -22,15 +22,11 @@ package Analoge.Trunc;
 //*****************************************************************************
 
 
-
 import VisualLogic.*;
 import VisualLogic.variables.*;
 import tools.*;
 import java.awt.*;
-import java.awt.event.*;
 import tools.*;
-import javax.swing.*;
-
 
 public class Trigger extends JVSMain
 {
@@ -42,8 +38,6 @@ public class Trigger extends JVSMain
   private VS1DDouble arrayY=new VS1DDouble(0);
   private VS1DDouble arrX = new VS1DDouble(0);
   private VS1DDouble arrY = new VS1DDouble(0);
-
-
 
   public void onDispose()
   {
@@ -58,7 +52,6 @@ public class Trigger extends JVSMain
   {
     drawImageCentred(g,image);
   }
-
 
 public void trigger(int schwelle)
   {
@@ -96,7 +89,6 @@ public void trigger(int schwelle)
     }
   }
 
-
   public void init()
   {
     initPins(0,1,0,1);
@@ -125,8 +117,6 @@ public void trigger(int schwelle)
     element.setPinOutputReference(0,out);
    }
 
-
-
   public void initInputPins()
   {
     in=(VSGroup)element.getPinInputReference(1);
@@ -136,7 +126,6 @@ public void trigger(int schwelle)
   {
     element.setPinOutputReference(0,out);
   }
-
 
   public void process()
   {
@@ -171,6 +160,4 @@ public void trigger(int schwelle)
 
   }
 
-
 }
-

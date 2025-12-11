@@ -21,6 +21,7 @@ package VisualLogic.gui;
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.Toolkit;
+import assets.Assets;
 
 /**
  *
@@ -29,7 +30,7 @@ import java.awt.Toolkit;
 public class DialogWait extends javax.swing.JFrame 
 {
     private final Image image = null;
-    
+    private final Assets assets = new Assets();
     private final int counter = 0;
     private final int maximum = 100;
     public static boolean stop = true;
@@ -42,7 +43,7 @@ public class DialogWait extends javax.swing.JFrame
         this.setAlwaysOnTop(true); // To avoid Myopenlab Freezes if user click main Frame while this window is loading
         this.setAutoRequestFocus(false);
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        this.setLocation(dim.width/2-this.getSize().width/2, (dim.height/2-this.getSize().height/2));
+        this.setLocation(dim.width / 2 - this.getSize().width / 2, (dim.height / 2 - this.getSize().height / 2));
         //Double gapWdbl = dim.width*0.05;
         //int gapW=gapWdbl.intValue();
         //Double gapHdbl = dim.height*0.1;
@@ -56,7 +57,7 @@ public class DialogWait extends javax.swing.JFrame
     public void setProgress()
     {       
         //  jProgressBar1.setValue(counter++);
-     }
+    }
     
     public String textX;
     public void setElementName(String text)
@@ -65,7 +66,7 @@ public class DialogWait extends javax.swing.JFrame
         this.textX=text;
        
         label2.setText(textX);*/
-     }
+    }
     
     public void setMaximum(int max)
     {
@@ -109,7 +110,7 @@ public class DialogWait extends javax.swing.JFrame
 
         label1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         label1.setForeground(new java.awt.Color(255, 255, 255));
-        label1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/ajax-loader.gif"))); // NOI18N
+        label1.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/ajax-loader.gif"))); // NOI18N
         label1.setText("Please wait");
         label1.setAlignmentX(0.5F);
 
@@ -146,7 +147,7 @@ public class DialogWait extends javax.swing.JFrame
                         .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(label2, javax.swing.GroupLayout.DEFAULT_SIZE, 16, Short.MAX_VALUE)
+                        .addComponent(label2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(41, 41, 41))))
         );
 
@@ -156,12 +157,11 @@ public class DialogWait extends javax.swing.JFrame
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void exitForm(java.awt.event.WindowEvent evt)                          
+    private void exitForm(java.awt.event.WindowEvent evt)
     {
         System.exit(0);
     }                         
         
-    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JProgressBar jProgressBar1;
     public static javax.swing.JLabel label1;

@@ -25,19 +25,16 @@ import java.awt.*;
 
 public class XImage extends JVSMain
 {
-  private Image noImage=null;
-
+  private Image noImage = null;
   private VSImage image = new VSImage();
   private VSBoolean interpoliert = new VSBoolean();
   private VSBoolean keepAcpect = new VSBoolean(false);
 
-  private double aspect=1.0;
-  private VSBoolean tiled=new VSBoolean(false);
-  private VSInteger tiledWidth=new VSInteger(100);
-  private VSInteger tiledHeight=new VSInteger(100);
+  private double aspect = 1.0;
+  private VSBoolean tiled = new VSBoolean(false);
+  private VSInteger tiledWidth = new VSInteger(100);
+  private VSInteger tiledHeight = new VSInteger(100);
 
-
-  
   public void drawTiled(java.awt.Graphics2D g, Image image, Rectangle r)
   {
     for (int y=0;y<r.height;y+=tiledHeight.getValue())
@@ -47,7 +44,6 @@ public class XImage extends JVSMain
         g.drawImage(image,r.x+x,r.y+y,tiledWidth.getValue(),tiledHeight.getValue(),null);
       }
     }
-
   }
 
   public void paint(java.awt.Graphics g)
@@ -96,8 +92,7 @@ public class XImage extends JVSMain
     element.jSetResizable(true);
     element.jSetInnerBorderVisibility(false);
     
-
-    image.loadImage(element.jGetSourcePath()+"noImage.png");
+    image.loadImage(element.jGetSourcePath() + "noImage.png");
 
     interpoliert.setValue(false);
     //keepAcpect.setValue(fa);
@@ -106,17 +101,14 @@ public class XImage extends JVSMain
     element.jSetRasterized(false);
   }
   
-  
   public void xOnInit()
   {
-
     processAspect();
   }
 
   public void openPropertyDialog()
   {
   }
-  
   
   public void propertyChanged(Object o)
   {
@@ -129,7 +121,6 @@ public class XImage extends JVSMain
         tiledWidth.setValue(100);
         tiledHeight.setValue((int)(100*aspect));
       }
-
      }
 
      if (o==keepAcpect)
@@ -163,8 +154,7 @@ public class XImage extends JVSMain
       h=w*aspect; 
       System.out.println("w/h="+w+","+h);
       element.jSetSize((int)w,(int)h);
-    }else
-    {
+    } else {
        if (noImage!=null)
        {
         double w=noImage.getWidth(null);
@@ -184,33 +174,32 @@ public class XImage extends JVSMain
     element.jAddPEItem("Keep Aspect",keepAcpect, 0,0);
     element.jAddPEItem("Gekachelt",tiled, 0,0);
     element.jAddPEItem("Kachel-Breite",tiledWidth, 10,1000);
-    element.jAddPEItem("Kachen-Höhe",tiledHeight, 10,1000);
+    element.jAddPEItem("Kachen-Hï¿½he",tiledHeight, 10,1000);
     localize();
   }
 
-
   private void localize()
   {
-    int d=6;
+    int d = 6;
     String language;
 
-    language="en_US";
+    language = "en_US";
 
-    element.jSetPEItemLocale(d+0,language,"Image");
-    element.jSetPEItemLocale(d+1,language,"Interpolation");
-    element.jSetPEItemLocale(d+2,language,"Keep Aspect");
-    element.jSetPEItemLocale(d+3,language,"Tiled");
-    element.jSetPEItemLocale(d+4,language,"Tiled-Width");
-    element.jSetPEItemLocale(d+5,language,"Tiled-Height");
+    element.jSetPEItemLocale(d + 0, language, "Image");
+    element.jSetPEItemLocale(d + 1, language, "Interpolation");
+    element.jSetPEItemLocale(d + 2, language, "Keep Aspect");
+    element.jSetPEItemLocale(d + 3, language, "Tiled");
+    element.jSetPEItemLocale(d + 4, language, "Tiled-Width");
+    element.jSetPEItemLocale(d + 5, language, "Tiled-Height");
 
-    language="es_ES";
+    language = "es_ES";
 
-    element.jSetPEItemLocale(d+0,language,"Imagen");
-    element.jSetPEItemLocale(d+1,language,"Interpolación");
-    element.jSetPEItemLocale(d+2,language,"Mantiene Proporciones");
-    element.jSetPEItemLocale(d+3,language,"Mosaico");
-    element.jSetPEItemLocale(d+4,language,"Anchura Mosaico");
-    element.jSetPEItemLocale(d+5,language,"Altura Mosaico");
+    element.jSetPEItemLocale(d + 0, language, "Imagen");
+    element.jSetPEItemLocale(d + 1, language, "Interpolacin");
+    element.jSetPEItemLocale(d + 2, language, "Mantiene Proporciones");
+    element.jSetPEItemLocale(d + 3, language, "Mosaico");
+    element.jSetPEItemLocale(d + 4, language, "Anchura Mosaico");
+    element.jSetPEItemLocale(d + 5, language, "Altura Mosaico");
   }
 
   public void loadFromStream(java.io.FileInputStream fis)
@@ -224,7 +213,6 @@ public class XImage extends JVSMain
     tiledWidth.loadFromStream(fis);
     tiledHeight.loadFromStream(fis);
     image.loadFromStream(fis);
-
 
     processAspect();
     element.jRepaint();
@@ -248,8 +236,6 @@ public class XImage extends JVSMain
     tiledWidth.saveToStream(fos);
     tiledHeight.saveToStream(fos);
     image.saveToStream(fos);
-
-
   }
 
 }

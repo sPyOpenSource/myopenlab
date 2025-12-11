@@ -9,27 +9,25 @@ package Interface.Raspberry_JV.ADS11X5_JV;
 
 import VisualLogic.*;
 import java.awt.*;
-import java.awt.event.*;
 import tools.*;
 import VisualLogic.variables.*;
 import java.io.*;
-
 
 public class cmdWrite_JV extends JVSMain
 {
   private Image image;
   String s = " ";
-  String sysOut_N_Err= " "; // String System Response without error
-  String sysOut_Err= " ";   // String System Response when error
-  boolean firstTime=false;
+  String sysOut_N_Err = " "; // String System Response without error
+  String sysOut_Err = " ";   // String System Response when error
+  boolean firstTime = false;
+  
   // Properties
-  // Inputs
-    
+  // Inputs  
   VSBoolean enable = new VSBoolean(false);
   VSString CommandIn = new VSString();
   VSBoolean Debug_En = new VSBoolean(false);
+  
   // Outputs
-
   VSString Response_Out = new VSString();
   VSBoolean Error_out = new VSBoolean(false);
   
@@ -38,24 +36,24 @@ public class cmdWrite_JV extends JVSMain
   VSString busPort = new VSString("1");
   VSComboBox gain = new VSComboBox();
   
-  VSInteger Analog0= new VSInteger(0);
-  VSInteger Analog1= new VSInteger(0);
-  VSInteger Analog2= new VSInteger(0);
-  VSInteger Analog3= new VSInteger(0);
-  boolean lastEnable=false;
+  VSInteger Analog0 = new VSInteger(0);
+  VSInteger Analog1 = new VSInteger(0);
+  VSInteger Analog2 = new VSInteger(0);
+  VSInteger Analog3 = new VSInteger(0);
+  boolean lastEnable = false;
 
   public void onDispose()
   {
-    if (image!=null)
+    if (image != null)
     {
       image.flush();
-      image=null;
+      image = null;
     }
   }
 
   public void paint(java.awt.Graphics g)
   {
-    if (image!=null) drawImageCentred(g,image);
+    if (image != null) drawImageCentred(g, image);
   }
 
   public void setPropertyEditor()
@@ -71,12 +69,11 @@ public class cmdWrite_JV extends JVSMain
   private void localize()
   {
     String language;
-    int d=6;
-    language="en_US";
+    int d = 6;
+    language = "en_US";
     
-    language="es_ES";
+    language = "es_ES";
   }
-
 
   public void init()
   {
@@ -90,10 +87,8 @@ public class cmdWrite_JV extends JVSMain
     initPins(0,6,0,2);
     element.jSetInnerBorderVisibility(false);
 
-    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+    image = element.jLoadImage(element.jGetSourcePath() + "icon.gif");
 
-    
-    
     setPin(0, ExternalIF.C_INTEGER, ExternalIF.PIN_OUTPUT);
     setPin(1, ExternalIF.C_INTEGER, ExternalIF.PIN_OUTPUT);
     setPin(2, ExternalIF.C_INTEGER, ExternalIF.PIN_OUTPUT);
@@ -103,7 +98,6 @@ public class cmdWrite_JV extends JVSMain
     
     setPin(6, ExternalIF.C_BOOLEAN, ExternalIF.PIN_INPUT);
     setPin(7, ExternalIF.C_BOOLEAN, ExternalIF.PIN_INPUT);
-    
     
     element.jSetPinDescription(0, "A0 Out");
     element.jSetPinDescription(1, "A1 Out");
@@ -127,17 +121,16 @@ public class cmdWrite_JV extends JVSMain
  
     element.jSetResizable(false);
     element.jSetResizeSynchron(false);
-    firstTime=true;
+    firstTime = true;
   }
 
   public void initInputPins()
   {
-    enable= (VSBoolean)element.getPinInputReference(6);
-    Debug_En= (VSBoolean)element.getPinInputReference(7);
-    if(Debug_En==null){
-       Debug_En=new VSBoolean(false);
+    enable = (VSBoolean)element.getPinInputReference(6);
+    Debug_En = (VSBoolean)element.getPinInputReference(7);
+    if(Debug_En == null){
+       Debug_En = new VSBoolean(false);
     }
-    
   }
 
   public void initOutputPins()
@@ -152,7 +145,7 @@ public class cmdWrite_JV extends JVSMain
 
   public void start()
   {
-      lastEnable=false;
+      lastEnable = false;
   }
 
   public void stop()
@@ -161,11 +154,11 @@ public class cmdWrite_JV extends JVSMain
 
   public void process()
   {
-    if(Debug_En==null){
-       Debug_En=new VSBoolean(false);
+    if(Debug_En == null){
+       Debug_En = new VSBoolean(false);
     }
     
-    if (enable.getValue() && enable!=null && lastEnable==false)
+    if (enable.getValue() && enable != null && lastEnable == false)
     { 
       
       try {
@@ -173,45 +166,41 @@ public class cmdWrite_JV extends JVSMain
           //element.jConsolePrintln();
                     //String cmd = "manual.bat"; //Comando 
                     //Runtime.getRuntime().exec("msg * \"El comano es: \"" +in.getValue());
-                    String path=element.jGetSourcePath();
+                    String path = element.jGetSourcePath();
                     path += "adc.py";
                     //element.jConsolePrintln(path);
                     //String commandADC="sudo python "+path+" 1115 0x48 1 1";
-                    String ModuleTemp ="";
-                    if(Module.selectedIndex==0){
-                    ModuleTemp ="1115";    
-                    }else{
-                    ModuleTemp ="1105";    
+                    String ModuleTemp = "";
+                    if(Module.selectedIndex == 0){
+                        ModuleTemp = "1115";    
+                    } else {
+                        ModuleTemp = "1105";    
                     }
                     
-                    String commandADC="sudo python "+path+" "+ModuleTemp+
-                            " "+address.getValue()+" "+ busPort + " "+gain.getItem(gain.selectedIndex);
+                    String commandADC = "sudo python " + path + " " + ModuleTemp +
+                            " " + address.getValue() + " " + busPort + " " + gain.getItem(gain.selectedIndex);
                     if (Debug_En.getValue()){
-                    element.jConsolePrintln(commandADC);    
+                        element.jConsolePrintln(commandADC);    
                     }
-                    
                     
                     Process p = Runtime.getRuntime().exec(commandADC); 
                     
-                    BufferedReader stdInput = new BufferedReader(new InputStreamReader(
-                                        p.getInputStream()));
+                    BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
 
-                        BufferedReader stdError = new BufferedReader(new InputStreamReader(
-                                        p.getErrorStream()));
-
+                        BufferedReader stdError = new BufferedReader(new InputStreamReader(p.getErrorStream()));
                         
                         while ((s = stdInput.readLine()) != null) {
-                            sysOut_N_Err+=s;
-                            sysOut_N_Err+="\n";
+                            sysOut_N_Err += s;
+                            sysOut_N_Err += "\n";
                             // Leemos la salida del comando
-                            if (Debug_En.getValue() && firstTime==true) {
-                                firstTime=false;
+                            if (Debug_En.getValue() && firstTime == true) {
+                                firstTime = false;
                                 element.jConsolePrintln("Standard output from system:\n");
                             }
                             if (Debug_En.getValue()){
                                 element.jConsolePrintln(s);
                             }
-                        Response_Out.setValue(sysOut_N_Err);
+                            Response_Out.setValue(sysOut_N_Err);
                         }
 
                         
@@ -227,8 +216,7 @@ public class cmdWrite_JV extends JVSMain
                                 element.jConsolePrintln(s);
                             }
                              
-                        Response_Out.setValue(sysOut_Err);
-                        
+                            Response_Out.setValue(sysOut_Err);
                         }
                     Error_out.setValue(false);
                     
@@ -236,14 +224,14 @@ public class cmdWrite_JV extends JVSMain
                     //|   4686 |   4615 |   5237 |   6354 |
                     String tmp = sysOut_N_Err;
         
-                    if(tmp.contains("|") && tmp.length()>=36){
-                    tmp=tmp.trim();    
-                    tmp=tmp.replaceAll(" ", "");
-                    int firstSeparator=tmp.indexOf("|");
-                    int secondSeparator=tmp.indexOf("|",(firstSeparator+1));
-                    int thirdSeparator=tmp.indexOf("|",(secondSeparator+1));
-                    int fourthSeparator=tmp.indexOf("|",(thirdSeparator+1));
-                    int lastSeparator=tmp.lastIndexOf("|");
+                    if(tmp.contains("|") && tmp.length() >= 36){
+                    tmp = tmp.trim();    
+                    tmp = tmp.replaceAll(" ", "");
+                    int firstSeparator = tmp.indexOf("|");
+                    int secondSeparator = tmp.indexOf("|", (firstSeparator + 1));
+                    int thirdSeparator = tmp.indexOf("|", (secondSeparator + 1));
+                    int fourthSeparator = tmp.indexOf("|", (thirdSeparator + 1));
+                    int lastSeparator = tmp.lastIndexOf("|");
                     //System.err.println("Split L: " + firstSeparator + " " + secondSeparator + " " + thirdSeparator
                      //+ " " + fourthSeparator + " "+lastSeparator);
 
@@ -268,7 +256,7 @@ public class cmdWrite_JV extends JVSMain
                     element.notifyPin(1);
                     element.notifyPin(2);
                     element.notifyPin(3);
-                    }else{
+                    } else {
                        Error_out.setValue(true);
                        if (Debug_En.getValue()) {
                           element.jConsolePrintln("I2C Device communication Parameters or Library not Installed error: "+ sysOut_N_Err +" Command:" +  CommandIn.getValue());
@@ -284,10 +272,9 @@ public class cmdWrite_JV extends JVSMain
                      Response_Out.setValue("Response Format Error!! "+sysOut_N_Err);
                     }
 
-                    
-                    s=" ";
-                    sysOut_Err=" ";
-                    sysOut_N_Err=" ";
+                    s = " ";
+                    sysOut_Err = " ";
+                    sysOut_N_Err = " ";
                     
             } catch (IOException ioe) {
                     System.out.println (ioe);
@@ -301,7 +288,8 @@ public class cmdWrite_JV extends JVSMain
        element.notifyPin(4);
        element.notifyPin(5);
        //Debug_En.setValue(false);
-    } lastEnable=enable.getValue();
+    } 
+    lastEnable = enable.getValue();
   }
 
   public void loadFromStream(java.io.FileInputStream fis)
@@ -320,8 +308,6 @@ public class cmdWrite_JV extends JVSMain
       address.saveToStream(fos);
       busPort.saveToStream(fos);
       gain.saveToStream(fos);
-     
   }
-
   
 }

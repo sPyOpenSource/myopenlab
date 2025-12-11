@@ -24,10 +24,9 @@ public class VSColor extends VSObject
 {
     private Color value=Color.BLACK;
 
-   
     public VSColor(Color color) 
     {
-        value=color;
+        value = color;
     }
     
     public void setValue(Color value)
@@ -44,6 +43,7 @@ public class VSColor extends VSObject
         return value;
     }    
     
+    @Override
     public void copyValueFrom(Object in)
     {
         if (in!=null)
@@ -54,30 +54,31 @@ public class VSColor extends VSObject
         } else value=Color.BLACK;
     }      
     
+    @Override
     public void copyReferenceFrom(Object in)
     {
       copyValueFrom(in);
     }    
     
-    
-    
+    @Override
     public void loadFromStream(java.io.FileInputStream fis) 
     {
         try
         {        
             java.io.DataInputStream dis = new java.io.DataInputStream(fis);
 
-            int r=dis.readInt();
-            int g=dis.readInt();
-            int b=dis.readInt();
-            value=new Color(r,g,b);
-        } catch(Exception ex)
+            int r = dis.readInt();
+            int g = dis.readInt();
+            int b = dis.readInt();
+            value = new Color(r,g,b);
+        } catch(IOException ex)
         {
             
         }
 
     }
     
+    @Override
     public void saveToStream(java.io.FileOutputStream fos)
     {
         try
@@ -87,7 +88,7 @@ public class VSColor extends VSObject
             dos.writeInt(value.getGreen());
             dos.writeInt(value.getBlue());
         
-        } catch(Exception ex)
+        } catch(IOException ex)
         {
            System.err.println("Fehler in VSColor.saveToStream() : "+ex.toString());
         }                        
@@ -97,11 +98,11 @@ public class VSColor extends VSObject
     {
         try
         {
-            int r=Integer.parseInt(nodeElement.getAttribute("VSColorR"+name));
-            int g=Integer.parseInt(nodeElement.getAttribute("VSColorG"+name));
-            int b=Integer.parseInt(nodeElement.getAttribute("VSColorB"+name));
-            value=new Color(r,g,b);
-       } catch(Exception ex)
+            int r = Integer.parseInt(nodeElement.getAttribute("VSColorR" + name));
+            int g = Integer.parseInt(nodeElement.getAttribute("VSColorG" + name));
+            int b = Integer.parseInt(nodeElement.getAttribute("VSColorB" + name));
+            value = new Color(r, g, b);
+       } catch(NumberFormatException ex)
        {
            
        }

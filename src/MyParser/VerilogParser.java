@@ -23,11 +23,11 @@ public class VerilogParser{
     int BUFSIZE = 99999;    /* Maximum length of a buffer.*/
     int SIZE = 9999;
     int INPUT = 0;
-    int AND = 1;
+    int AND  = 1;
     int NAND = 2;
-    int OR  = 3;
-    int NOR = 4;
-    int XOR = 5;
+    int OR   = 3;
+    int NOR  = 4;
+    int XOR  = 5;
     int XNOR = 6;
     int BUF = 7;
     int NOT = 8;
@@ -107,6 +107,17 @@ public class VerilogParser{
         String type;	/*input, output, wire, regs*/
         String name;	/*node name*/
         int id;	/*node number*/
+        
+        /**
+         * Set values of a node
+         * @param the node object, the type of node, the name of the node, the node id
+         */
+        void setNode(String type, String name, int id)
+        {
+            this.type = type;
+            this.name = name;
+            this.id = id;			/*Store node id*/
+        }
     };
 
     class Circuit {
@@ -118,6 +129,131 @@ public class VerilogParser{
         String inputs[] = new String[LINESIZE];
         String outputs[] = new String[LINESIZE];	/*List of inputs and outputs in the netlist*/
         int size, id;		        		/*Circuit size and identifier*/
+        
+        /**
+         * Get the id of a wire
+         * @param the signal name, the circuit's name
+         * The id of the wire
+         */
+        int getID(String name)
+        {
+            for(int i = 0; i < size; i++) {
+                if (name.equals(nodes[i].name)) { // If node is found in the circuit, get its index
+                    return nodes[i].id;
+                }
+            }
+            return 0;
+        }
+
+        /**
+         * Get a wire by id
+         * @param the signal name, the circuit's name
+         */
+        Wire getWire(int id)
+        {
+            int i = 0;
+            while (i < wirecount && wires[i] != null) {
+                if (wires[i].id == id) // If node is found in the circuit
+                    return wires[i];
+                i++;
+            }
+            return null;
+        }
+
+        /**
+         * Get a wire by name
+         * @param the signal name, the circuit's name
+         */
+        Wire getWireByName(String name)
+        {
+            int i = 0;
+            while (wires[i] != null) {
+                if (name.equals(wires[i].name)) // If node is found in the circuit
+                    return wires[i];
+                i++;
+            }
+            return null;
+        }
+    
+        /**
+         * Prints the summary of a circuit - Statistical information
+         * @param the circuit object
+         */
+        @Override
+        public String toString()
+        {
+           int i,j;
+           System.out.print("\n************** Circuit %s statistical results *************\n");//, c.name);
+           System.out.print("Circuit size: %d\n");//, c.size);
+           System.out.print("Number of primary inputs: %d\n");//, c.inputcount);
+           for(i = 0; i < inputcount; i++)
+               System.out.print("%s ");//, c.inputs[i]);
+
+           System.out.print("\n\nNumber of outputs: %d\n");//, c.outputcount);
+           for(i = 0; i < outputcount; i++)
+               System.out.print("%s ");//, c.outputs[i]);
+
+           System.out.print("\n\nNumber of gates: %d\n");//, c.gatecount);
+
+           System.out.print("\n\n");
+           i = 0;
+
+           while (i < wirecount && wires[i] != null) {
+               System.out.print ("c->wire[%d]->type: %s, ");//,i, c.wires[i].type);
+               System.out.print ("ID: %d,  ");//, c.wires[i].id);
+               System.out.print ("name: %s, ");//, c.wires[i].name);
+
+               System.out.print ("\nInputs (%d): ");//, c.wires[i].inputcount);/*Wire inputs*/
+               for(j = 0; j < wires[i].inputcount; j++)
+                   System.out.print ("%d ");//,c.wires[i].inputs[j]);
+
+               System.out.print ("\nOutputs (%d): ");//, c.wires[i].outputcount);/*Wire outputs*/
+               for(j = 0; j < wires[i].outputcount; j++)
+                   System.out.print ("%d ");//,c.wires[i].outputs[j]);
+
+               i++;
+               System.out.print ("\n");
+           }
+           System.out.print("*************************** END **************************\n");
+           return name;
+        }
+        
+        /**
+         * Create a wire
+         * @param the circuit object, the wire object, the wire type, the wire name
+         */
+        void buildWire(Wire w, String type, String name)
+        {
+            w.id = getID(name); /*Wire ID*/
+            w.type = type;      /*Wire type*/
+            w.name = name;      /*Wire name*/
+            w.inputcount = 0;	/*Initial number of inputs*/
+            w.outputcount = 0;	/*Initial number of outputs*/
+
+            for(int i = 0; i < inputcount; i++) { /*Circuit primary inputs*/
+                if (w.name.equals(inputs[i])) {
+                    w.primary = true;
+                }
+            }
+
+            System.out.print ("Creating wire: %s, id: %d\n");//, w.name, w.id);
+        }
+
+        /**
+         * Determines if a wire is already created
+         * @param the circuit object, the wire name
+         * @return whether the wire is already created or not
+         */
+        boolean isDefined(String name)
+        {
+            int i = 0;
+            while (wires[i] != null) {
+                if (wires[i].name.equals(name))
+                    return true;
+                i++;
+            }
+            return false;
+        }
     };
 
     class Module {
@@ -130,6 +266,38 @@ public class VerilogParser{
         String regs[] = new String [LINESIZE]; 		/*List of wires, regs, gates in the netlist*/
         String gates[] = new String [LINESIZE];
         int id;
+        
+        /**
+         * Prints the summary of a module - Statistical information
+         * @param the module object
+         */
+        @Override
+        public String toString()
+        {
+           int i;
+           System.out.print("\n************** Module %s statistical results *************\n");//, m.name);
+           System.out.print("Number of inputs: %d\n");//, m.inputcount);
+           for(i = 0; i < inputcount; i++)
+               System.out.print("%s ");//, m.inputs[i]);
+
+           System.out.print("\n\nNumber of outputs: %d\n");//, m.outputcount);
+           for(i = 0; i < outputcount; i++)
+               System.out.print("%s ");//, m.outputs[i]);
+
+           System.out.print("\n\nNumber of gates: %d\n");//, m.gatecount);
+           for(i = 0; i < gatecount; i++)
+               System.out.print("%s ");//, m.gates[i]);
+
+           System.out.print("\n\nNumber of wires: %d\n");//, m.wirecount);
+           for(i = 0; i < wirecount; i++)
+               System.out.print("%s ");//, m.wires[i]);
+
+           System.out.print("\n\nNumber of regs: %d\n");//, m.regcount);
+           for(i = 0; i < regcount; i++)
+               System.out.print("%s ");//, m.regs[i]);
+           System.out.print("*************************** END **************************\n");
+           return name;
+        }
     };
 
     /**
@@ -152,10 +320,11 @@ public class VerilogParser{
      */
     boolean isGate(String word)
     {
-        int i;
-        for (i = 0; i < Keywords.gate_name.length; i++)
-            if (word.equals(Keywords.gate_name[i]))
+        for (String gate_name : Keywords.gate_name) {
+            if (word.equals(gate_name)) {
                 return true;
+            }
+        }
         return false;
     }
 
@@ -214,171 +383,5 @@ public class VerilogParser{
             return 9;
         else
             return 10;
-    }
-
-    /**
-     * Prints the summary of a module - Statistical information
-     * @param the module object
-     */
-    void print_module_summary(Module m)
-    {
-        int i;
-        System.out.print("\n************** Module %s statistical results *************\n");//, m.name);
-        System.out.print("Number of inputs: %d\n");//, m.inputcount);
-        for(i = 0; i < m.inputcount; i++)
-            System.out.print("%s ");//, m.inputs[i]);
-
-        System.out.print("\n\nNumber of outputs: %d\n");//, m.outputcount);
-        for(i = 0; i < m.outputcount; i++)
-            System.out.print("%s ");//, m.outputs[i]);
-
-        System.out.print("\n\nNumber of gates: %d\n");//, m.gatecount);
-        for(i = 0; i < m.gatecount; i++)
-            System.out.print("%s ");//, m.gates[i]);
-
-        System.out.print("\n\nNumber of wires: %d\n");//, m.wirecount);
-        for(i = 0; i < m.wirecount; i++)
-            System.out.print("%s ");//, m.wires[i]);
-
-        System.out.print("\n\nNumber of regs: %d\n");//, m.regcount);
-        for(i = 0; i < m.regcount; i++)
-            System.out.print("%s ");//, m.regs[i]);
-        System.out.print("*************************** END **************************\n");
-    }
-
-    /**
-     * Prints the summary of a circuit - Statistical information
-     * @param the circuit object
-     */
-    void print_circuit_summary(Circuit c)
-    {
-        int i,j,row,col;
-        System.out.print("\n************** Circuit %s statistical results *************\n");//, c.name);
-        System.out.print("Circuit size: %d\n");//, c.size);
-        System.out.print("Number of primary inputs: %d\n");//, c.inputcount);
-        for(i = 0; i < c.inputcount; i++)
-            System.out.print("%s ");//, c.inputs[i]);
-
-        System.out.print("\n\nNumber of outputs: %d\n");//, c.outputcount);
-        for(i = 0; i < c.outputcount; i++)
-            System.out.print("%s ");//, c.outputs[i]);
-
-        System.out.print("\n\nNumber of gates: %d\n");//, c.gatecount);
-
-        System.out.print("\n\n");
-        i = 0;
-
-        while (i < c.wirecount && c.wires[i] != null) {
-            System.out.print ("c->wire[%d]->type: %s, ");//,i, c.wires[i].type);
-            System.out.print ("ID: %d,  ");//, c.wires[i].id);
-            System.out.print ("name: %s, ");//, c.wires[i].name);
-
-            System.out.print ("\nInputs (%d): ");//, c.wires[i].inputcount);/*Wire inputs*/
-            for(j = 0; j < c.wires[i].inputcount; j++)
-                System.out.print ("%d ");//,c.wires[i].inputs[j]);
-
-            System.out.print ("\nOutputs (%d): ");//, c.wires[i].outputcount);/*Wire outputs*/
-            for(j = 0; j < c.wires[i].outputcount; j++)
-                System.out.print ("%d ");//,c.wires[i].outputs[j]);
-
-            i++;
-            System.out.print ("\n");
-        }
-        System.out.print("*************************** END **************************\n");
-    }
-
-    /**
-     * Get the id of a wire
-     * @param the signal name, the circuit's name
-     * The id of the wire
-     */
-    int getID(String name, Circuit c)
-    {
-        int i;
-        for(i = 0; i < c.size; i++) {
-            if (name.equals(c.nodes[i].name)) { // If node is found in the circuit, get its index
-                return c.nodes[i].id;
-            }
-        }
-        return 0;
-    }
-
-    /**
-     * Get a wire by id
-     * @param the signal name, the circuit's name
-     */
-    Wire getWire(int id, Circuit c)
-    {
-        int i = 0;
-        while (i < c.wirecount && c.wires[i] != null) {
-            if (c.wires[i].id == id) // If node is found in the circuit
-                return c.wires[i];
-            i++;
-        }
-        return null;
-    }
-
-    /**
-     * Get a wire by name
-     * @param the signal name, the circuit's name
-     */
-    Wire getWireByName(String name, Circuit c)
-    {
-        int i = 0;
-        while (c.wires[i] != null) {
-            if (name.equals(c.wires[i].name)) // If node is found in the circuit
-                return c.wires[i];
-            i++;
-        }
-        return null;
-    }
-
-    /**
-     * Set values of a node
-     * @param the node object, the type of node, the name of the node, the node id
-     */
-    void setNode(Node n, String type, String name, int id)
-    {
-        n.type = type;
-        n.name = name;
-        n.id = id;			/*Store node id*/
-    }
-
-    /**
-     * Create a wire
-     * @param the circuit object, the wire object, the wire type, the wire name
-     */
-    void buildWire(Circuit c, Wire w, String type, String name)
-    {
-        int i;
-        w.id = getID (name, c);   /*Wire ID*/
-        w.type = type;		/*Wire type*/
-        w.name = name;		/*Wire name*/
-        w.inputcount = 0;			/*Initial number of inputs*/
-        w.outputcount = 0;			/*Initial number of outputs*/
-
-        for(i = 0; i < c.inputcount; i++) { /*Circuit primary inputs*/
-            if (w.name.equals(c.inputs[i])) {
-                w.primary = true;
-            }
-        }
-
-        System.out.print ("Creating wire: %s, id: %d\n");//, w.name, w.id);
-    }
-
-    /**
-     * Determines if a wire is already created
-     * @param the circuit object, the wire name
-     * @return whether the wire is already created or not
-     */
-    boolean isDefined(Circuit c, String name)
-    {
-        int i = 0;
-        while (c.wires[i] != null) {
-            if (c.wires[i].name.equals(name))
-                return true;
-            i++;
-        }
-        return false;
     }
 }

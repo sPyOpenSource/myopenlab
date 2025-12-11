@@ -14,22 +14,21 @@ import tools.*;
 import VisualLogic.variables.*;
 import java.io.*;
 
-
 public class Write_DO_RPI_JV extends JVSMain
 {
   private Image image;
   String s = "";
-  String sysOut_N_Err= ""; // String System Response without error
-  String sysOut_Err= "";   // String System Response when error
-  boolean Refresh_DO_State=false;
-  boolean Old_DO_State=false;
+  String sysOut_N_Err = ""; // String System Response without error
+  String sysOut_Err = "";   // String System Response when error
+  boolean Refresh_DO_State = false;
+  boolean Old_DO_State = false;
   boolean first_time;
-  final String Element_Tag= "#Element:|Write_DIO_RPI_JV|";
-  final String Error_Tag="#Error:";
-  final String Debug_Tag="#Debug_Msj:";  
+  final String Element_Tag = "#Element:|Write_DIO_RPI_JV|";
+  final String Error_Tag = "#Error:";
+  final String Debug_Tag = "#Debug_Msj:";
+  
 // Properties
-  // Inputs
-    
+  // Inputs  
   VSBoolean Enable_VM_in = new VSBoolean(false);
   VSInteger wPi_Pin_Number_in = new VSInteger();
   VSBoolean State_DO_in = new VSBoolean(false);
@@ -58,22 +57,21 @@ public class Write_DO_RPI_JV extends JVSMain
 
   public void paint(java.awt.Graphics g)
   {
-    if (image!=null) drawImageCentred(g,image);
+    if (image != null) drawImageCentred(g, image);
   }
 
   public void setPropertyEditor()
   {
-  
     localize();
   }
 
   private void localize()
   {
     String language;
-    int d=6;
-    language="en_US";
+    int d = 6;
+    language = "en_US";
     
-    language="es_ES";
+    language = "es_ES";
   }
 
 
@@ -89,9 +87,8 @@ public class Write_DO_RPI_JV extends JVSMain
     initPins(0,5,0,5); //initPins(0,2,0,4);
     element.jSetInnerBorderVisibility(false);
 
-     image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+    image=element.jLoadImage(element.jGetSourcePath() + "icon.gif");
 
-     
     setPin(0, ExternalIF.C_BOOLEAN, ExternalIF.PIN_OUTPUT);
     setPin(1, ExternalIF.C_INTEGER, ExternalIF.PIN_OUTPUT);
     setPin(2, ExternalIF.C_BOOLEAN, ExternalIF.PIN_OUTPUT);
@@ -116,24 +113,23 @@ public class Write_DO_RPI_JV extends JVSMain
     element.jSetPinDescription(8, "Debug_Window_Enable_in");
     element.jSetPinDescription(9, "Error_in");
     
- 
     element.jSetResizable(false);
     element.jSetResizeSynchron(false);
-    Refresh_DO_State=true;
-    Old_DO_State=false;
-    first_time=true;
+    Refresh_DO_State = true;
+    Old_DO_State = false;
+    first_time = true;
   }
 
   public void initInputPins()
   {
-    Enable_VM_in= (VSBoolean)element.getPinInputReference(5);
-    wPi_Pin_Number_in= (VSInteger)element.getPinInputReference(6);
-    State_DO_in= (VSBoolean)element.getPinInputReference(7);
-    Debug_Window_En_in= (VSBoolean)element.getPinInputReference(8);
-    if (Debug_Window_En_in==null){
-       Debug_Window_En_in=new VSBoolean(false);
+    Enable_VM_in = (VSBoolean)element.getPinInputReference(5);
+    wPi_Pin_Number_in = (VSInteger)element.getPinInputReference(6);
+    State_DO_in = (VSBoolean)element.getPinInputReference(7);
+    Debug_Window_En_in = (VSBoolean)element.getPinInputReference(8);
+    if (Debug_Window_En_in == null){
+       Debug_Window_En_in = new VSBoolean(false);
     }
-    Error_in= (VSBoolean)element.getPinInputReference(9);
+    Error_in = (VSBoolean)element.getPinInputReference(9);
   }
 
   public void initOutputPins()
@@ -168,7 +164,7 @@ public class Write_DO_RPI_JV extends JVSMain
       
     if(Enable_VM_in.getValue()==true && State_DO_in.getValue()!=Old_DO_State){ // Refresh DO State only if is different.
        Refresh_DO_State=true;    
-    }else{
+    } else {
         Refresh_DO_State=false;  
     }
     
@@ -191,16 +187,13 @@ public class Write_DO_RPI_JV extends JVSMain
                         }else{
                         DO_State="0";
                     }
-                    Process p =    Runtime.getRuntime().exec("gpio write " + wPi_Pin_Number_in.getValue() + " " +DO_State ); //gpio write <pin> 0/1
+                    Process p = Runtime.getRuntime().exec("gpio write " + wPi_Pin_Number_in.getValue() + " " +DO_State ); //gpio write <pin> 0/1
                     if (Debug_Window_En_in.getValue()) {      
                         element.jConsolePrintln(Element_Tag+Debug_Tag+"|Executing:"+"gpio write " + wPi_Pin_Number_in.getValue() + " " +DO_State +"|");
-                        }
-                    BufferedReader stdInput = new BufferedReader(new InputStreamReader(
-                                        p.getInputStream()));
+                    }
+                    BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
 
-                        BufferedReader stdError = new BufferedReader(new InputStreamReader(
-                                        p.getErrorStream()));
-
+                        BufferedReader stdError = new BufferedReader(new InputStreamReader(p.getErrorStream()));
                         
                         while ((s = stdInput.readLine()) != null) {
                             sysOut_N_Err+=s;
@@ -213,7 +206,7 @@ public class Write_DO_RPI_JV extends JVSMain
                             if (Debug_Window_En_in.getValue()){
                                 element.jConsolePrintln(s);
                             }
-                        System_out.setValue(sysOut_N_Err);  
+                            System_out.setValue(sysOut_N_Err);  
                         }
 
                         
@@ -229,14 +222,14 @@ public class Write_DO_RPI_JV extends JVSMain
                                 element.jConsolePrintln(s);
                             }
                              
-                        System_out.setValue(sysOut_Err);        
+                            System_out.setValue(sysOut_Err);        
                         }
 
                     Error_out.setValue(false);
-                    first_time=false;
-                    s=" ";
-                    sysOut_Err=" ";
-                    sysOut_N_Err=" ";
+                    first_time = false;
+                    s = " ";
+                    sysOut_Err = " ";
+                    sysOut_N_Err = " ";
                                         
             } catch (IOException ioe) {
                     System.out.println (ioe);
@@ -246,9 +239,7 @@ public class Write_DO_RPI_JV extends JVSMain
                     Error_out.setValue(true);
                     
                     System_out.setValue("Command Error!!");
-            }  
-       
-       
+            }
        
     }
    State_DO_out.setValue(State_DO_in.getValue());
@@ -263,6 +254,5 @@ public class Write_DO_RPI_JV extends JVSMain
    Debug_Window_En_out.setValue(Debug_Window_En_in.getValue());
    element.notifyPin(3);
   }
-
 
 }

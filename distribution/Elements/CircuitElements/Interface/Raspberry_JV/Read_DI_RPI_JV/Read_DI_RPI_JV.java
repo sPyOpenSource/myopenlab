@@ -14,22 +14,21 @@ import tools.*;
 import VisualLogic.variables.*;
 import java.io.*;
 
-
 public class Read_DI_RPI_JV extends JVSMain
 {
   private Image image;
   String s = "";
-  String sysOut_N_Err= ""; // String System Response without error
-  String sysOut_Err= "";   // String System Response when error
-  boolean Refresh_DO_State=false;
-  boolean Old_DO_State=false;
+  String sysOut_N_Err = ""; // String System Response without error
+  String sysOut_Err = "";   // String System Response when error
+  boolean Refresh_DO_State = false;
+  boolean Old_DO_State = false;
   boolean first_time;
-  final String Element_Tag= "#Element:|Read_DI_RPI_JV|";
-  final String Error_Tag="#Error:";
-  final String Debug_Tag="#Debug_Msj:";  
+  final String Element_Tag = "#Element:|Read_DI_RPI_JV|";
+  final String Error_Tag = "#Error:";
+  final String Debug_Tag = "#Debug_Msj:";  
+  
 // Properties
   // Inputs
-    
   VSBoolean Enable_VM_in = new VSBoolean(false);
   VSInteger wPi_Pin_Number_in = new VSInteger();
   //VSBoolean State_DI_in = new VSBoolean(false);
@@ -46,34 +45,32 @@ public class Read_DI_RPI_JV extends JVSMain
   
   VSBoolean State_DI_out= new VSBoolean(false);
   
-
   public void onDispose()
   {
-    if (image!=null)
+    if (image != null)
     {
       image.flush();
-      image=null;
+      image = null;
     }
   }
 
   public void paint(java.awt.Graphics g)
   {
-    if (image!=null) drawImageCentred(g,image);
+    if (image!=null) drawImageCentred(g, image);
   }
 
   public void setPropertyEditor()
-  {
-  
+  {  
     localize();
   }
 
   private void localize()
   {
     String language;
-    int d=6;
-    language="en_US";
+    int d = 6;
+    language = "en_US";
     
-    language="es_ES";
+    language = "es_ES";
   }
 
 
@@ -89,8 +86,7 @@ public class Read_DI_RPI_JV extends JVSMain
     initPins(0,5,0,5); //initPins(0,2,0,4);
     element.jSetInnerBorderVisibility(false);
 
-     image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
-
+    image = element.jLoadImage(element.jGetSourcePath() + "icon.gif");
      
     setPin(0, ExternalIF.C_BOOLEAN, ExternalIF.PIN_OUTPUT);
     setPin(1, ExternalIF.C_INTEGER, ExternalIF.PIN_OUTPUT);
@@ -116,7 +112,6 @@ public class Read_DI_RPI_JV extends JVSMain
     element.jSetPinDescription(8, "Debug_Window_Enable_in");
     element.jSetPinDescription(9, "Error_in");
     
- 
     element.jSetResizable(false);
     element.jSetResizeSynchron(false);
     Refresh_DO_State=true;
@@ -165,9 +160,7 @@ public class Read_DI_RPI_JV extends JVSMain
           element.jConsolePrintln(Element_Tag+Error_Tag+"|Element_Not_Executed_Because_Error_in=TRUE|");
         }
     }
-      
-    
-        
+              
     if ((Enable_VM_in.getValue()==true && Error_in.getValue()==false ) || (Enable_VM_in.getValue()==true && first_time==true) )  // Execute the first time and if there are error to continue trying.
     { 
       
@@ -178,16 +171,13 @@ public class Read_DI_RPI_JV extends JVSMain
                     //Runtime.getRuntime().exec("msg * \"El comano es: \"" +in.getValue());
                     sysOut_N_Err="";
                     sysOut_Err="";
-                    Process p =    Runtime.getRuntime().exec("gpio read " + wPi_Pin_Number_in.getValue()); //gpio read <pin>
+                    Process p = Runtime.getRuntime().exec("gpio read " + wPi_Pin_Number_in.getValue()); //gpio read <pin>
                     if (Debug_Window_En_in.getValue()) {      
                         element.jConsolePrintln(Element_Tag+Debug_Tag+"|Executing:"+"gpio read " + wPi_Pin_Number_in.getValue()+"|");
-                        }
-                    BufferedReader stdInput = new BufferedReader(new InputStreamReader(
-                                        p.getInputStream()));
+                    }
+                    BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
 
-                        BufferedReader stdError = new BufferedReader(new InputStreamReader(
-                                        p.getErrorStream()));
-
+                    BufferedReader stdError = new BufferedReader(new InputStreamReader(p.getErrorStream()));
                         
                         while ((s = stdInput.readLine()) != null) {
                             sysOut_N_Err+=s;
@@ -199,10 +189,9 @@ public class Read_DI_RPI_JV extends JVSMain
                                 element.jConsolePrintln(s);
                             }
                                                         
-                        System_out.setValue(sysOut_N_Err);  
+                            System_out.setValue(sysOut_N_Err);  
                         }
 
-                        
                         while ((s = stdError.readLine()) != null) {
                             sysOut_Err+=s;
                             
@@ -213,22 +202,21 @@ public class Read_DI_RPI_JV extends JVSMain
                             }
                             State_DI_out.setValue(false);
                              
-                        System_out.setValue(sysOut_Err);        
+                            System_out.setValue(sysOut_Err);        
                         }
                     
                     if(sysOut_N_Err.contains("1")){
-                    State_DI_out.setValue(true); 
-                    }else{
-                    State_DI_out.setValue(false); 
+                        State_DI_out.setValue(true); 
+                    } else {
+                        State_DI_out.setValue(false); 
                     }
                     element.notifyPin(2); // Notify DI State
                    
-                    first_time=false;
+                    first_time = false;
                     Error_out.setValue(false);
-                    s=" ";
-                    sysOut_Err=" ";
-                    sysOut_N_Err=" ";
-                                        
+                    s = " ";
+                    sysOut_Err = " ";
+                    sysOut_N_Err = " "; 
             } catch (IOException ioe) {
                     System.out.println (ioe);
                     if (Debug_Window_En_in.getValue()) {
@@ -237,13 +225,9 @@ public class Read_DI_RPI_JV extends JVSMain
                     Error_out.setValue(true);
                     
                     System_out.setValue("Command Error!!");
-            }  
-       
-       
+            }
        
     }
-   
-   
    
    element.notifyPin(4);
    Enable_VM_out.setValue(Enable_VM_in.getValue());
@@ -254,6 +238,5 @@ public class Read_DI_RPI_JV extends JVSMain
    Debug_Window_En_out.setValue(Debug_Window_En_in.getValue());
    element.notifyPin(3);
   }
-
 
 }

@@ -14,7 +14,6 @@ import tools.*;
 import VisualLogic.variables.*;
 import java.io.*;
 
-
 public class Read_RPI_Temp_JV extends JVSMain
 {
   private Image image;
@@ -22,16 +21,14 @@ public class Read_RPI_Temp_JV extends JVSMain
   String sysOut_N_Err= ""; // String System Response without error
   String sysOut_Err= "";   // String System Response when error
   
-  
   boolean first_time;
-  final String Element_Tag= "#Element:|Read_RPI_TEMP_JV|";
-  final String Error_Tag="#Error:";
-  final String Debug_Tag="#Debug_Msj:";  
+  final String Element_Tag = "#Element:|Read_RPI_TEMP_JV|";
+  final String Error_Tag = "#Error:";
+  final String Debug_Tag = "#Debug_Msj:";  
+  
 // Properties
   // Inputs
-    
   VSBoolean Enable_VM_in = new VSBoolean(false);
-
  
   VSBoolean Debug_Window_En_in = new VSBoolean(false);
   VSBoolean Error_in = new VSBoolean(false);
@@ -44,15 +41,15 @@ public class Read_RPI_Temp_JV extends JVSMain
   VSBoolean Debug_Window_En_out = new VSBoolean(false);
   VSBoolean Error_out = new VSBoolean(false);
   
-  VSDouble Temperature_RPI_Out= new VSDouble(0.0);
-  String DO_State ="in"; // gpio mode <pin> in/out/pwm/clock/up/down/tri
+  VSDouble Temperature_RPI_Out = new VSDouble(0.0);
+  String DO_State = "in"; // gpio mode <pin> in/out/pwm/clock/up/down/tri
 
   public void onDispose()
   {
-    if (image!=null)
+    if (image != null)
     {
       image.flush();
-      image=null;
+      image = null;
     }
   }
 
@@ -63,7 +60,6 @@ public class Read_RPI_Temp_JV extends JVSMain
 
   public void setPropertyEditor()
   {
-  
     localize();
   }
 
@@ -89,7 +85,7 @@ public class Read_RPI_Temp_JV extends JVSMain
     initPins(0,5,0,5); //initPins(0,2,0,4);
     element.jSetInnerBorderVisibility(false);
 
-     image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+    image = element.jLoadImage(element.jGetSourcePath() + "icon.gif");
 
      
     setPin(0, ExternalIF.C_BOOLEAN, ExternalIF.PIN_OUTPUT);
@@ -119,7 +115,7 @@ public class Read_RPI_Temp_JV extends JVSMain
     element.jSetResizable(false);
     element.jSetResizeSynchron(false);
 
-    first_time=true;
+    first_time = true;
   }
 
   public void initInputPins()
@@ -167,7 +163,6 @@ public class Read_RPI_Temp_JV extends JVSMain
     if ((Enable_VM_in.getValue()==true && first_time==true && Error_in.getValue()==false ) || (Enable_VM_in.getValue()==true && Error_in.getValue()==false) )  // Execute the first time and if there are error to continue trying.
     { 
       
-      
       try {
           //element.jConsolePrintln("Comando ingresado: " +in.getValue());
           //element.jConsolePrintln();
@@ -176,16 +171,13 @@ public class Read_RPI_Temp_JV extends JVSMain
                     sysOut_N_Err="";
                     sysOut_Err="";
                     
-
-                    Process p =    Runtime.getRuntime().exec("vcgencmd measure_temp"); //gpio write <pin> 0/1
+                    Process p = Runtime.getRuntime().exec("vcgencmd measure_temp"); //gpio write <pin> 0/1
                     if (Debug_Window_En_in.getValue()) {      
-                        element.jConsolePrintln(Element_Tag+Debug_Tag+"|Executing:"+"vcgencmd measure_temp|");
-                        }
-                    BufferedReader stdInput = new BufferedReader(new InputStreamReader(
-                                        p.getInputStream()));
+                        element.jConsolePrintln(Element_Tag + Debug_Tag + "|Executing:" + "vcgencmd measure_temp|");
+                    }
+                    BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
 
-                        BufferedReader stdError = new BufferedReader(new InputStreamReader(
-                                        p.getErrorStream()));
+                    BufferedReader stdError = new BufferedReader(new InputStreamReader(p.getErrorStream()));
 
                         
                         while ((s = stdInput.readLine()) != null) {
@@ -193,13 +185,12 @@ public class Read_RPI_Temp_JV extends JVSMain
                             
                             // Leemos la salida del comando
                             if (Debug_Window_En_in.getValue() && first_time==true) {
-
                                 element.jConsolePrintln("Standard output from system:\n");
                             }
                             if (Debug_Window_En_in.getValue()){
                                 element.jConsolePrintln(s);
                             }
-                        System_out.setValue(sysOut_N_Err);  
+                            System_out.setValue(sysOut_N_Err);  
                         }
                                                 
                         while ((s = stdError.readLine()) != null) {
@@ -214,7 +205,7 @@ public class Read_RPI_Temp_JV extends JVSMain
                                 element.jConsolePrintln(s);
                             }
                              
-                        System_out.setValue(sysOut_Err);        
+                            System_out.setValue(sysOut_Err);        
                         }
                     if(sysOut_N_Err.contains("temp=")){
                     Error_out.setValue(false);
@@ -229,17 +220,15 @@ public class Read_RPI_Temp_JV extends JVSMain
                     TempStr=sysOut_N_Err.substring(indexIni, indexEnd);
                     Temperature_Out=Double.parseDouble(TempStr);
                     Temperature_RPI_Out.setValue(Temperature_Out);
-                    }else{
-                    Temperature_RPI_Out.setValue(0.0);
-                    Error_out.setValue(true); 
+                    } else {
+                        Temperature_RPI_Out.setValue(0.0);
+                        Error_out.setValue(true); 
                     }    
 
-                    
-                    first_time=false;
-                    s=" ";
-                    sysOut_Err=" ";
-                    sysOut_N_Err=" ";
-                                        
+                    first_time = false;
+                    s = " ";
+                    sysOut_Err = " ";
+                    sysOut_N_Err = " ";                         
             } catch (IOException ioe) {
                     System.out.println (ioe);
                     if (Debug_Window_En_in.getValue()) {
@@ -249,8 +238,6 @@ public class Read_RPI_Temp_JV extends JVSMain
                     
                     System_out.setValue("Command Error!!");
             }  
-       
-       
        
     }
    
@@ -264,6 +251,5 @@ public class Read_RPI_Temp_JV extends JVSMain
    Debug_Window_En_out.setValue(Debug_Window_En_in.getValue());
    element.notifyPin(3);
   }
-
 
 }

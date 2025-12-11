@@ -25,11 +25,12 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseEvent;
 
+import java.util.ArrayList;
 import java.util.Locale;
-import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.*;
+import assets.Assets;
 
 class MyButton extends JButton {
     public String filePath;
@@ -56,26 +57,33 @@ public class ElementPalette extends javax.swing.JPanel {
 
     public boolean listOnlyUUIDs = false;
     public String thePath = "";
-    private boolean areVMsEditable = false;
-    private String elementPath;
-    public FrameMain frameCircuit = null;
-    private ElementPaletteIF elementPalette;
     public String activeElement;
+    public String rootPath;
+
     public String aktuellesVerzeichniss;
     public VMObject vmObject = null;
-    private final ElementPalette frm = this;
-    private MyButton aktiveButton = null;
+    public FrameMain frameCircuit = null;
+
     public static int MODE_NONE = 0;
     public static int MODE_COPY = 1;
     public static int MODE_CUT = 2;
     public int modus = MODE_NONE;
+    
+    private ElementPaletteIF elementPalette;
+    private final ElementPalette frm = this;
+    private MyButton aktiveButton = null;
+    
     private final String aktuellesVerz = "";
     private String toCopyPath = "";
+    private String elementPath;
+
     private boolean modusCut = false;
     private boolean gruppenAuswahlMode = false;
-    public String rootPath;
+    private boolean areVMsEditable = false;
+
     private FrameMain owner = null;
     private Basis basis = null;
+    private final Assets assets = new Assets();
 
     @Override
     public void setEnabled(boolean enabled) {
@@ -99,9 +107,7 @@ public class ElementPalette extends javax.swing.JPanel {
         this.rootPath = rootPath;
 
         if (basis != null) {
-
             if (rootPath.contains("CircuitElements")) {
-
                 if (basis.elementPaletteCircuitElementsOldPath.length() > 0) {
                     aktuellesVerzeichniss = basis.elementPaletteCircuitElementsOldPath;
                 }
@@ -131,15 +137,13 @@ public class ElementPalette extends javax.swing.JPanel {
         return null;
     }
 
-    public Vector getSortDefinitionFile(File file) {
-        Vector list = new Vector();
-        try {
-            BufferedReader input = new BufferedReader(new FileReader(file.getAbsolutePath() + "/" + "sort.def"));
+    public ArrayList getSortDefinitionFile(File file) {
+        ArrayList list = new ArrayList();
+        try (BufferedReader input = new BufferedReader(new FileReader(file.getAbsolutePath() + "/" + "sort.def"))) {
             String inputString;
             while ((inputString = input.readLine()) != null) {
                 list.add(inputString);
             }
-            input.close();
         } catch (IOException ex) {
             //System.out.println("FEHLER : " + ex.getMessage());
         }
@@ -180,7 +184,7 @@ public class ElementPalette extends javax.swing.JPanel {
     private MyButton createBackButton() {
         MyButton btn = new MyButton();
         btn.setPreferredSize(new Dimension(38, 38));
-        btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/back16.gif")));
+        btn.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/back16.gif")));
 
         btn.setEnabled(true);
         if (aktuellesVerzeichniss.equalsIgnoreCase(rootPath)) {
@@ -202,7 +206,7 @@ public class ElementPalette extends javax.swing.JPanel {
     }
 
     private void reihenfolgeSortieren(File f, File files[]) {
-        Vector lstReihenfolge = getSortDefinitionFile(f);
+        ArrayList lstReihenfolge = getSortDefinitionFile(f);
 
         // Sortiere die Files nach der lstReihenfolge!
         for (int i = 0; i < lstReihenfolge.size(); i++) {
@@ -353,7 +357,7 @@ public class ElementPalette extends javax.swing.JPanel {
              f = new File(thisDirProps.redirect.trim());              
              }*/
             if (thisDirProps.vm_dir_editable.length() > 0) {
-                areVMsEditable = Boolean.valueOf(thisDirProps.vm_dir_editable);
+                areVMsEditable = Boolean.parseBoolean(thisDirProps.vm_dir_editable);
             } else {
                 areVMsEditable = false;
             }
@@ -427,6 +431,7 @@ public class ElementPalette extends javax.swing.JPanel {
                         //jPanelButtons.add(btn);
 
                         btn.addMouseListener(new java.awt.event.MouseAdapter() {
+                            @Override
                             public void mousePressed(java.awt.event.MouseEvent e) {
                                 if (e.getButton() == MouseEvent.BUTTON3) {
                                     MyButton button = (MyButton) e.getSource();
@@ -711,7 +716,7 @@ public class ElementPalette extends javax.swing.JPanel {
 
         jScrollPane1.setViewportView(jPanelButtons);
 
-        jToggleButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/Text.png"))); // NOI18N
+        jToggleButton1.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/16x16/Text.png"))); // NOI18N
         jToggleButton1.setToolTipText(bundle.getString("Show_Item_Names")); // NOI18N
         jToggleButton1.setContentAreaFilled(false);
         jToggleButton1.setPreferredSize(new java.awt.Dimension(25, 23));
@@ -726,7 +731,7 @@ public class ElementPalette extends javax.swing.JPanel {
             }
         });
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/view-refresh.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/view-refresh.png"))); // NOI18N
         jButton1.setToolTipText("Reload");
         jButton1.setContentAreaFilled(false);
         jButton1.setPreferredSize(new java.awt.Dimension(25, 23));

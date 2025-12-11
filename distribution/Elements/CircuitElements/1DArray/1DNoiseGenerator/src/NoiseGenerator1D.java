@@ -23,7 +23,6 @@ import VisualLogic.*;
 import VisualLogic.variables.*;
 import tools.*;
 import java.awt.*;
-import java.awt.event.*;
 import java.util.*;
 import java.util.Random;
 

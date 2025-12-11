@@ -24,12 +24,8 @@ import VisualLogic.variables.*;
 import tools.*;
 
 import java.awt.*;
-import java.awt.event.*;
-import java.text.*;
-import java.awt.geom.Rectangle2D;
 import java.util.*;
 import VisualLogic.variables.*;
-
 
 public class Generator extends JVSMain
 {
