@@ -27,21 +27,18 @@ import java.awt.Graphics;
  */
 public class GraphBackground extends javax.swing.JPanel
 {
-    private double stepX=2;
-    private double stepY=2;
-    
-    public double minX=0;
-    public double maxX=100;
-    public double minY=00;
-    public double maxY=100;
-    
-    private boolean backgroundTransparent=false;
-    
-    public int bufferLen= 600;
-    
+    private double stepX = 2;
+    private double stepY = 2;
+    private boolean backgroundTransparent = false;
+
+    public double minX = 0;
+    public double maxX = 100;
+    public double minY = 0;
+    public double maxY = 100;
+    public int bufferLen = 600;
     
     public void setAutoScaleInterval(Integer Interval){
-        this.bufferLen=Interval;
+        this.bufferLen = Interval;
     }
     
     public Integer getAutosCaleInterval(){
@@ -56,7 +53,6 @@ public class GraphBackground extends javax.swing.JPanel
     {
         backgroundTransparent=value;
     }
-        
     
     /** Creates new form GraphBackground */
     public GraphBackground()
@@ -121,6 +117,7 @@ public class GraphBackground extends javax.swing.JPanel
     //public Color colorSubGrid= new Color(0,90,0);
     public Color colorSubGrid= new Color(240,240,240);
     
+    @Override
     protected void paintComponent(Graphics g)
     {
         super.paintComponent(g);   

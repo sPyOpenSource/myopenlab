@@ -1,21 +1,20 @@
 /*
-MyOpenLab by Carmelo Salafia www.myopenlab.de
-Copyright (C) 2004  Carmelo Salafia cswi@gmx.de
+ MyOpenLab by Carmelo Salafia www.myopenlab.de
+ Copyright (C) 2004  Carmelo Salafia cswi@gmx.de
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
 package BasisStatus;
 
@@ -208,7 +207,6 @@ public class frmElementInfo extends javax.swing.JDialog {
         jLabel9.setText(""+ID);        
     }
   
-    
     public static boolean cancel = true;
     public static String strName;
     public static String strBeschriftung;
@@ -218,7 +216,6 @@ public class frmElementInfo extends javax.swing.JDialog {
     public static int intTop;
     public static int intWidth;
     public static int intHeight;
-    
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;

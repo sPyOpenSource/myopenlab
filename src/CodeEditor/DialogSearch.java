@@ -113,13 +113,12 @@ public class DialogSearch extends javax.swing.JDialog {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     
-    
     java.awt.event.ActionListener actionListener = new java.awt.event.ActionListener() {
+        @Override
         public void actionPerformed(java.awt.event.ActionEvent actionEvent) {
             dispose();
         }
     };
-    
     
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
         
@@ -135,7 +134,6 @@ public class DialogSearch extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton2ActionPerformed
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
     

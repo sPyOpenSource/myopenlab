@@ -69,11 +69,9 @@ public class Start extends MainFlow
 
         g2.setColor(Color.BLACK);
         g.drawString(caption,mitteX-(int)(r.getWidth()/2),(int)(mitteY+fm.getHeight()/2)-3);
-
      }
      super.paint(g);
   }
-  
   
   private void evalMethodExpression(String expression)
   {
@@ -101,7 +99,6 @@ public class Start extends MainFlow
 
       } else element.jShowMessage("ERROR : coud not find \")\"");
     } else element.jShowMessage("ERROR : coud not find \"(\"");
-
   }
 
   private void generateCode()
@@ -141,8 +138,6 @@ public class Start extends MainFlow
 
   }
 
-
-
   public void init()
   {
     standardWidth=130;
@@ -169,7 +164,6 @@ public class Start extends MainFlow
     variable.setValue("");
     
     generateCode();
-    
   }
 
   public void xOnInit()
@@ -230,7 +224,6 @@ public class Start extends MainFlow
     }
   }
 
-
   public void initInputPins()
   {
     in=(VSBoolean)element.getPinInputReference(0);
@@ -284,11 +277,9 @@ public class Start extends MainFlow
      evalMethodExpression(variable.getValue());
   }
 
-
   public void saveToStream(java.io.FileOutputStream fos)
   {
     variable.saveToStream(fos);
   }
 
 }
-

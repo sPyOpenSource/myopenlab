@@ -43,8 +43,6 @@ public class ColorPanel extends javax.swing.JPanel
     public static final int MODE_RADIAL = 2;
     
     public boolean wiederholung = false;
-    
-    
     public BufferedImage image;
     
     /** Creates new form MyPanel */
@@ -54,18 +52,14 @@ public class ColorPanel extends javax.swing.JPanel
     }
 
     public int modus = MODE_FLAT;
-    
     public Point p1 = new Point(100, 100);
     public Point p2 = new Point(200, 200);
     
     public Color color1 = new Color(255, 255, 255);
     public Color color2 = new Color(  0,   0,   0);
     
-    
     public int color1Transparency = 255;
     public int color2Transparency = 255;
-    
-    
     public int selected=0;
     
     /** This method is called from within the constructor to
@@ -152,12 +146,10 @@ public class ColorPanel extends javax.swing.JPanel
         }
     }//GEN-LAST:event_formMousePressed
     
-    
     public Color withTransparency(Color a, int transp)
     {
         return new Color(a.getRed(),a.getGreen(),a.getBlue(),transp);
     }
-    
     
     public void setFillColor(Graphics2D g)
     {
@@ -180,18 +172,17 @@ public class ColorPanel extends javax.swing.JPanel
             default:
                 break;
         }
-        
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
     
+    @Override
     protected void paintComponent(Graphics g)
     {
         super.paintComponent(g);
         
         Graphics2D g2 = (Graphics2D)g;
-        
         
         if (image != null)
         {

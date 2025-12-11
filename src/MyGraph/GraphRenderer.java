@@ -33,57 +33,54 @@ import javax.swing.JPanel;
  */
 public class GraphRenderer extends JPanel
 {
-    private BackGraphXY back;
     
-    public String caption="";
-    public Color captionColor=Color.RED;
-    public int captionX=5;
-    public int captionY=0;
+    public String caption = "";
+    public Color captionColor = Color.RED;
+    public int captionX = 5;
+    public int captionY = 0;
     
-    public double[] xValues=null;
-    public double[] yValues=null;
+    public double[] xValues = null;
+    public double[] yValues = null;
     
-    public static final int P_POINT=0;
-    public static final int P_LINE=1;
-    public static final int P_LINE_MED=2;
-    public static final int P_LINE_BIG=3;
-    public static final int P_LINE_VBIG=4;
-    public static final int P_POINT_VOID=5;
-    public static final int P_POINT_MED=6;
-    public static final int P_POINT_BIG=7;
-    public static final int P_POINT_HIST=8;
-    public static final int P_POINT_HIST_MED=9;
-    public static final int P_POINT_HIST_BIG=10;
-    public static final int P_POINT_HIST_INV=11;
-    public static final int P_POINT_HIST_MED_INV=12;
-    public static final int P_POINT_HIST_BIG_INV=13;
+    public static final int P_POINT = 0;
+    public static final int P_LINE = 1;
+    public static final int P_LINE_MED = 2;
+    public static final int P_LINE_BIG = 3;
+    public static final int P_LINE_VBIG = 4;
+    public static final int P_POINT_VOID = 5;
+    public static final int P_POINT_MED = 6;
+    public static final int P_POINT_BIG = 7;
+    public static final int P_POINT_HIST = 8;
+    public static final int P_POINT_HIST_MED = 9;
+    public static final int P_POINT_HIST_BIG = 10;
+    public static final int P_POINT_HIST_INV = 11;
+    public static final int P_POINT_HIST_MED_INV = 12;
+    public static final int P_POINT_HIST_BIG_INV = 13;
     
     public int bufferLen= 600;
     public int pointType = P_LINE_VBIG; //Default PointType for X/Y Graphs
     
     private Color lineColor= new Color(255,153,0); //Default Line Color for X/Y Graphs
     private boolean FirstPoint=true;
-    
-    
-    
+    private BackGraphXY back;
+
     public void setbufferLen(int Interval){
      this.bufferLen=Interval;
-     
     }
+    
     public int getbufferLen(){
       return this.bufferLen;  
     }
-    
     
     public Color getLineColor()
     {
         return lineColor;
     }
+    
     public void setLineColor(Color color)
     {
         lineColor=color;
     }
-    
     
     /** Creates a new instance of Renderer */
     public GraphRenderer(BackGraphXY back)
@@ -127,38 +124,35 @@ public class GraphRenderer extends JPanel
 
     }
     
-    
-    
     protected void paintComponent(Graphics g)
     {
         super.paintComponent(g);
         
-        double x,y,oldX,oldY;
-        double x1=0.0;
+        double x, y, oldX, oldY;
+        double x1 = 0.0;
         
         Graphics2D g2 = (Graphics2D)g;
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,RenderingHints.VALUE_ANTIALIAS_ON);
         
-        x=0;
-        y=0;
-        oldX=x;
-        oldY=y;
-        int cx,cy;
-        int refx,refy, refX1;
-        int refMaxX,refMaxY;
-        int refMinX,refMinY;
-        int oldCX=0;
-        int oldCY=0;
-        int StepProm=0;
-        Point p=new Point();
-        Point refPoint=new Point(0,0);
-        Point MaxRefPoint=new Point(0,0);
-        Point MinRefPoint=new Point(0,0);
+        x = 0;
+        y = 0;
+        oldX = x;
+        oldY = y;
+        int cx, cy;
+        int refx, refy, refX1;
+        int refMaxX, refMaxY;
+        int refMinX, refMinY;
+        int oldCX = 0;
+        int oldCY = 0;
+        int StepProm = 0;
+        Point p = new Point();
+        Point refPoint = new Point(0,0);
+        Point MaxRefPoint = new Point(0,0);
+        Point MinRefPoint = new Point(0,0);
         
-        boolean firstTime=true;
-        FirstPoint=true;
+        boolean firstTime = true;
+        FirstPoint = true;
         g.setColor(lineColor);
-        
         
         if (xValues!=null && yValues!=null && xValues.length==yValues.length)
         {   
@@ -185,16 +179,14 @@ public class GraphRenderer extends JPanel
                 StepProm=(int) back.stepXX;
                 } 
                 
-                
                 if (x!=oldX || y!=oldY ||FirstPoint==true)
                 {   FirstPoint=false;
                     back.convertPoint(x,y,p);
                     cx=p.x;
                     cy=p.y;
                     if(y==0){
-                    cy=refy;    
+                        cy=refy;    
                     }
-                    
                     
                     if (cx>back.getWidth() && back.owner.autoscroll==true)
                     {
@@ -211,8 +203,7 @@ public class GraphRenderer extends JPanel
                     if (pointType==P_POINT) //Point Type = 0
                     {
                         g.fillRect(cx-3,cy-3,6,6);
-                    }else
-                       {
+                    } else {
                             if (pointType==P_LINE || pointType==P_LINE_MED || pointType==P_LINE_BIG ||pointType==P_LINE_VBIG) ////Point Type = 1
                             {
                                 if (firstTime)
@@ -220,12 +211,9 @@ public class GraphRenderer extends JPanel
                                     firstTime=false;
                                     oldCX=cx;
                                     oldCY=cy;
-                                }
-                                else
-                                {
+                                } else {
                                     if (oldCX!=cx || oldCY!=cy)
                                     {
-
                                         g.drawLine(oldCX,oldCY,cx,cy);
                                         if (pointType==P_LINE_MED){
                                             g.drawLine(oldCX,oldCY+1,cx,cy+1);
@@ -245,14 +233,12 @@ public class GraphRenderer extends JPanel
                                         oldCY=cy;
                                     }
                                 }
-                            }else
-                               {
+                            } else {
                                     if (pointType==P_POINT_VOID)
                                     {
-                                    int d=2;
-                                    g.drawOval(cx-d,cy-d,d*2,d*2);
-                                    }else
-                                       {
+                                        int d=2;
+                                        g.drawOval(cx-d,cy-d,d*2,d*2);
+                                    } else {
                                             if (pointType==P_POINT_MED || pointType==P_POINT_BIG)
                                             {
                                                 int d=0;
@@ -263,15 +249,15 @@ public class GraphRenderer extends JPanel
                                                     d=4;
                                                 }
                                                 g.fillOval(cx-d,cy-d,d*2,d*2);
-                                            }else{
+                                            } else {
                                                     if(pointType==P_POINT_HIST || pointType==P_POINT_HIST_MED || pointType==P_POINT_HIST_BIG)
                                                     {
                                                         if (firstTime)
                                                         {
-                                                        firstTime=false;
-                                                        oldCX=(cx-(StepProm/2));
-                                                        //cx+=(StepProm/2);
-                                                        oldCY=refy;
+                                                            firstTime=false;
+                                                            oldCX=(cx-(StepProm/2));
+                                                            //cx+=(StepProm/2);
+                                                            oldCY=refy;
                                                         } 
                                                         int HistWidth=0;
                                                         int HistHeigh=0;
@@ -298,16 +284,16 @@ public class GraphRenderer extends JPanel
                                                             oldCX=cx;
                                                             oldCY=cy;
                                                             //}
-                                                    }else {
+                                                    } else {
                                                                 if(pointType==P_POINT_HIST_INV || pointType==P_POINT_HIST_MED_INV || pointType==P_POINT_HIST_BIG_INV)
                                                                 {
                                                                     if (firstTime)
-                                                                        {
+                                                                    {
                                                                         firstTime=false;
                                                                         oldCX=(cx-(StepProm/2));
                                                                         //cx+=(StepProm/2);
                                                                         oldCY=refy;
-                                                                        } 
+                                                                    } 
                                                                         int HistWidth=0;
                                                                         
                                                                         if (pointType==P_POINT_HIST_INV) HistWidth=2;
@@ -331,7 +317,6 @@ public class GraphRenderer extends JPanel
 
                                                                             oldCX=cx;
                                                                             oldCY=cy;
-
                                                                 }
                                                             }
                                                 }
@@ -339,7 +324,6 @@ public class GraphRenderer extends JPanel
                                 }
                        }
                           
-     
                     oldY=y;
                     oldX=x;
                 }

@@ -36,27 +36,27 @@ public class BackGraphXY extends GraphBackground
     public double stepXX;
     public double stepYY;
         
-    public boolean autoScaleX=false;
-    public boolean FirstTimeScaleX=true;
-    public boolean autoScaleY=false;
-    public double positionX=0.0;
+    public boolean autoScaleX = false;
+    public boolean FirstTimeScaleX = true;
+    public boolean autoScaleY = false;
+    public double positionX = 0.0;
     private final DecimalFormat format = new DecimalFormat("#0.0");
-    public Color nullLineColor=new Color(0,0,254);
-    public boolean nullLineVisible=true;
+    public Color nullLineColor = new Color(0, 0, 254);
+    public boolean nullLineVisible = true;
     
-    public Integer AustoscaleInterval= 600;
+    public Integer AustoscaleInterval = 600;
     
     public void setAutoScaleInterval(Integer Interval){
-     this.AustoscaleInterval=Interval;
+        this.AustoscaleInterval=Interval;
     }
     
     public Integer getAutosCaleInterval(){
-      return this.AustoscaleInterval;  
+        return this.AustoscaleInterval;  
     }
     
     public BackGraphXY(MyGraphX owner)
     {
-        this.owner=owner;
+        this.owner = owner;
         
         setOpaque(false);
         addMouseMotionListener(new java.awt.event.MouseMotionAdapter()
@@ -72,10 +72,10 @@ public class BackGraphXY extends GraphBackground
     
     public void formMouseMoved(java.awt.event.MouseEvent evt)
     {
-       int x=evt.getX();
-       int y=evt.getY();
-       double x_=((double)x/stepXX)+minX;              
-       double y_=minY+((getHeight()-y)/stepYY);       
+       int x = evt.getX();
+       int y = evt.getY();
+       double x_ = ((double)x / stepXX) + minX;              
+       double y_ = minY + ((getHeight() - y) / stepYY);       
        jLabel1.setForeground(nullLineColor);
        jLabel1.setText("(x,y="+format.format(x_)+" , "+format.format(y_)+")");
        FontMetrics fm= jLabel1.getFontMetrics(jLabel1.getFont());
@@ -98,8 +98,8 @@ public class BackGraphXY extends GraphBackground
     {        
         if (owner.graphRenderer!=null)
         {
-            double minX=99999999.0;
-            double maxX=-9999999.0;            
+            double minX = 99999999.0;
+            double maxX = -9999999.0;            
             for (GraphRenderer graphRenderer : owner.graphRenderer) {
                 double[] xValues = graphRenderer.xValues;
                 if (xValues!=null)

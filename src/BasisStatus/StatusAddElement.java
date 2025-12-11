@@ -1,16 +1,16 @@
 /*
-MyOpenLab by Carmelo Salafia www.myopenlab.de
-Copyright (C) 2004  Carmelo Salafia cswi@gmx.de
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ MyOpenLab by Carmelo Salafia www.myopenlab.de
+ Copyright (C) 2004  Carmelo Salafia cswi@gmx.de
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 package BasisStatus;
@@ -28,6 +28,7 @@ public class StatusAddElement extends Object implements StatusBasisIF {
     private final String circuitClass;
     private final String panelClass;
     private final Element element = null;
+    
     private boolean first = true;
     private int startX,  startY;
     private final int dummyWidth;
@@ -101,9 +102,7 @@ public class StatusAddElement extends Object implements StatusBasisIF {
                 draht2.addPoint(0, dummyElement.getY() + dummyElement.getHeight() + 10);
                 draht2.addPoint(0, 0);               
                 
-                
-            } else
-            {
+            } else {
                 Draht draht1 = vmobject.addDrahtIntoCanvas(element.getID(), pinBottomNr, toAppend.getID(), pinTopNr);
 
                 element.getPin(pinBottomNr).draht = draht1;
@@ -125,6 +124,7 @@ public class StatusAddElement extends Object implements StatusBasisIF {
 
     }
 
+    @Override
     public void mousePressed(MouseEvent e)
     {
         int x = e.getX();
@@ -151,8 +151,7 @@ public class StatusAddElement extends Object implements StatusBasisIF {
             vmobject.processPropertyEditor();
             vmobject.updateUI();
 
-        } else
-        {
+        } else {
             vmobject.setModusIdle();
             dummyElement.processPropertyEditor();
             try
@@ -247,10 +246,10 @@ public class StatusAddElement extends Object implements StatusBasisIF {
         return null;
     }    
     
+    @Override
     public void mouseMoved(MouseEvent e)
     {
-        try
-        {
+        try {
             int w = dummyWidth;
             int h = dummyHeight;
             int w2 = w / 2;
@@ -269,14 +268,10 @@ public class StatusAddElement extends Object implements StatusBasisIF {
 
                 x = element.getX() + e.getX();
                 y = element.getY() + e.getY();
-
-            } else
-            {
-
+            } else {
                 if (vmobject != null)
                 {
-                    try
-                    {
+                    try {
                         x = vmobject.getMousePosition().x;
                         y = vmobject.getMousePosition().y;
                     } catch (Exception ex)
@@ -286,7 +281,6 @@ public class StatusAddElement extends Object implements StatusBasisIF {
                 }
             }
 
-
             int x1 = x - w2;
             int y1 = y - h2;
 
@@ -294,9 +288,7 @@ public class StatusAddElement extends Object implements StatusBasisIF {
 
             dummyElement.setLocation(p.x, p.y);
 
-
-        } catch (Exception ex)
-        {
+        } catch (Exception ex) {
             vmobject.owner.showErrorMessage(ex.toString());
             vmobject.setModusIdle();
         }

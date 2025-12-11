@@ -17,41 +17,39 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 package BasisStatus;
 
-
-import VisualLogic.*;
 import java.awt.event.*;
 import java.awt.*;
 import java.awt.geom.GeneralPath;
 import java.awt.geom.Rectangle2D;
 import java.util.ArrayList;
+
 import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
-
+import VisualLogic.*;
 
 public class StatusEditPathAddMode implements StatusBasisIF
 {
-    public VMObject vmobject;
-    private ArrayList drahtPoints = new ArrayList();
-    private static final int HOZ=0;
-    private static final int VERT=1;
-    private int aktuellesPinType=HOZ;
-    public StatusBasisIF status=null;
-    public Element element;
-    private JPopupMenu popupmenu = new JPopupMenu();
-    private JPopupMenu popupBeginEndNode = new JPopupMenu();
-    private JMenuItem  jmiDeleteNode, jmiOpenClosePath;
-    private JMenuItem  jmiAddLine;
-    private JMenuItem  jmiAddCurve;
-    private JMenuItem  jmiAddQuad;
-    public boolean addPoint=false;
+    private final ArrayList drahtPoints = new ArrayList();
+    private static final int HOZ = 0;
+    private static final int VERT = 1;
+    private final int aktuellesPinType = HOZ;
+    private final JPopupMenu popupmenu = new JPopupMenu();
+    private final JPopupMenu popupBeginEndNode = new JPopupMenu();
+    private final JMenuItem jmiDeleteNode;
+    private final JMenuItem jmiOpenClosePath;
+    private final JMenuItem  jmiAddLine;
+    private final JMenuItem  jmiAddCurve;
+    private final JMenuItem  jmiAddQuad;
     private int posX,posY;
+    private final int oldX, oldY, oldWidth, oldHeight;          
 
-    public int aktuellerPunkt=-1;
-    
-    public int selectedParam=-1; // 0 == Punkt, 1=P1, 2=P2;
-    
-    private int oldX,oldY,oldWidth,oldHeight;          
-    
+    public boolean addPoint = false;
+    public int aktuellerPunkt = -1;
+    public int selectedParam = -1; // 0 == Punkt, 1=P1, 2=P2;
+    public VMObject vmobject;
+    public StatusBasisIF status = null;
+    public Element element;
+
     public StatusEditPathAddMode(VMObject vmobject, Element element)
     {
         this.vmobject=vmobject;
@@ -145,17 +143,27 @@ public class StatusEditPathAddMode implements StatusBasisIF
             
         }
         
-        if (aktuellerPunkt>-1)
+        if (aktuellerPunkt > -1)
         {
-            PathPoint path=element.points.get(aktuellerPunkt);
+            PathPoint path = element.points.get(aktuellerPunkt);
         
             Point p=new Point(0,0);
-            if (selectedParam==0) p=path.p;else
-            if (selectedParam==1) p=path.p1;else
-            if (selectedParam==2) p=path.p2;
+            switch (selectedParam) {
+                case 0:
+                    p = path.p;
+                    break;
+                case 1:
+                    p = path.p1;
+                    break;
+                case 2:
+                    p = path.p2;
+                    break;
+                default:
+                    break;
+            }
             
-            p.x=x;
-            p.y=y;
+            p.x = x;
+            p.y = y;
             element.updateUI();
         }
     }
@@ -199,8 +207,7 @@ public class StatusEditPathAddMode implements StatusBasisIF
                 }
                 
                 //path.curveTo(x,y, p.p1.x,p.p1.y, p.p2.x,p.p2.y);
-            }else
-            if (cmd.equalsIgnoreCase("QUADTO"))
+            } else if (cmd.equalsIgnoreCase("QUADTO"))
             {                
                 //path.quadTo(x,y, p.p1.x,p.p1.y);
                 if (x>=path.p1.x-d && x<=path.p1.x+d && y>=path.p1.y-d && y<=path.p1.y+d)
@@ -214,9 +221,7 @@ public class StatusEditPathAddMode implements StatusBasisIF
                     return i;
                 }
                 
-            }else
-            
-            if (x>=p.x-d && x<=p.x+d && y>=p.y-d && y<=p.y+d)
+            } else if (x>=p.x-d && x<=p.x+d && y>=p.y-d && y<=p.y+d)
             {   
                 selectedParam=0;
                 return i;

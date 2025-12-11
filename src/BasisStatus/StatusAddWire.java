@@ -38,13 +38,12 @@ class MyLine
 public class StatusAddWire extends Object implements StatusBasisIF
 {
     public VMObject vmobject;         
-    private ArrayList drahtPoints = new ArrayList();
+    private final ArrayList drahtPoints = new ArrayList();
     private static final int HOZ=0;
     private static final int VERT=1;
     private int aktuellesPinType=HOZ;
     private StatusBasisIF status=null;
     
-        
     public StatusAddWire(VMObject vmobject,Graphics g, int sourceElementID,int sourcePin)
     {
         this.vmobject=vmobject;        
@@ -63,40 +62,41 @@ public class StatusAddWire extends Object implements StatusBasisIF
         if (aktuellesPinType==HOZ)
         {
             status=new StatusLineHoritontal(vmobject,drahtPoints,sourceElementID, sourcePin,start);
-        } else
-        {
+        } else {
             status=new StatusLineVertikal(vmobject,drahtPoints,sourceElementID, sourcePin,start);
         }
     }
     
+    @Override
     public void elementPinMouseMoved(MouseEvent e, int elementID,int pin)
     {
-        Element element= (Element)vmobject.getObjectWithID(elementID); 
+        Element element = (Element)vmobject.getObjectWithID(elementID); 
         //e.translatePoint(e.getX()+element.getX(),e.getY()+element.getY());
         if (status!=null) status.mouseMoved(e); 
     }
       
+    @Override
     public void mouseMoved(MouseEvent e)
     {    
-       if (vmobject==null)  return;
+       if (vmobject == null) return;
        
-       if (lastOverElement!=null)
+       if (lastOverElement != null)
        {         
-         lastOverElement=null;
+         lastOverElement = null;
        }        
-       Point p =vmobject.getMousePosition();
-       if (p==null) return;
+       Point p = vmobject.getMousePosition();
+       if (p == null) return;
        
        int x = p.x;
        int y = p.y;
-       Element element=vmobject.getNearstElementInMouse(x,y,20);
-       if (element instanceof Element && vmobject==vmobject.owner.getCircuitBasis())
+       Element element = vmobject.getNearstElementInMouse(x, y, 20);
+       if (element instanceof Element && vmobject == vmobject.owner.getCircuitBasis())
        {       
          element.inDenVordergrund();
-         lastOverElement=element;
+         lastOverElement = element;
        } 
         
-        if (status!=null) status.mouseMoved(e);
+        if (status != null) status.mouseMoved(e);
     }
     
     public void mousePressed(MouseEvent e)

@@ -115,7 +115,6 @@ public class Scanner
       }
   }
 
-  
   /**
    * Returns current scanner's position.
    */

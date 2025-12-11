@@ -1,21 +1,20 @@
 /*
-MyOpenLab by Carmelo Salafia www.myopenlab.de
-Copyright (C) 2004  Carmelo Salafia cswi@gmx.de
+ MyOpenLab by Carmelo Salafia www.myopenlab.de
+ Copyright (C) 2004  Carmelo Salafia cswi@gmx.de
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
 package CustomColorPicker;
 
@@ -66,11 +65,9 @@ public class CustomColorPicker extends javax.swing.JDialog
         
         jToggleButtonFlat.setSelected(true);
         makeSelection();        
-        
-               
+         
     }
 
-    
     public void init()
     {
         myPanel.modus=modus;
@@ -362,7 +359,6 @@ public class CustomColorPicker extends javax.swing.JDialog
     {//GEN-HEADEREND:event_jButtonOKActionPerformed
         result=true;
         
-        
         color1=myPanel.color1;
         color2=myPanel.color2;
         
@@ -384,7 +380,6 @@ public class CustomColorPicker extends javax.swing.JDialog
         myPanel.wiederholung=jCheckBoxRepeat.isSelected();
         myPanel.updateUI();
     }//GEN-LAST:event_jCheckBoxRepeatActionPerformed
-
 
     private void makeSelection()    
     {
@@ -417,7 +412,6 @@ public class CustomColorPicker extends javax.swing.JDialog
           jButtonColor2.setEnabled(true);
           jSliderColor2Trans.setEnabled(true);
         }
-        
     }    
     
     private void jToggleButtonRadialActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jToggleButtonRadialActionPerformed
@@ -427,7 +421,6 @@ public class CustomColorPicker extends javax.swing.JDialog
 
     private void jToggleButtonLinearActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jToggleButtonLinearActionPerformed
     {//GEN-HEADEREND:event_jToggleButtonLinearActionPerformed
-        
         makeSelection();
     }//GEN-LAST:event_jToggleButtonLinearActionPerformed
 
@@ -479,24 +472,17 @@ public class CustomColorPicker extends javax.swing.JDialog
         }
     }//GEN-LAST:event_jButtonColor1ActionPerformed
     
-
-    
     public static int modus=0;
-    
     public static Point p1=new Point(100,100);
     public static Point p2=new Point(200,200);
     
     public static Color color1 = new Color(255,255,255);
     public static Color color2 = new Color(0,0,0);
     
-    
     public static int color1Transparency=255;
     public static int color2Transparency=255;
     
     public static boolean wiederholung=false;
-    
-    
-    
     public static boolean result=false;
     
     // Variables declaration - do not modify//GEN-BEGIN:variables

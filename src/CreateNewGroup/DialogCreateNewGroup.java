@@ -31,6 +31,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -92,7 +93,6 @@ public class DialogCreateNewGroup extends javax.swing.JDialog {
         Date date = new Date();
         txtDate.setText(dateFormat.format(date));
 
-        
         load(path);
     }
 
@@ -112,7 +112,6 @@ public class DialogCreateNewGroup extends javax.swing.JDialog {
         }
 
         return type;
-
     }
 
     public boolean load(String directory) {

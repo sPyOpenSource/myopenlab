@@ -18,41 +18,36 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 package BasisStatus;
 
-
-import VisualLogic.*;
 import java.awt.event.*;
 import java.awt.*;
 import java.awt.geom.GeneralPath;
 import java.util.ArrayList;
+
 import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
-
+import VisualLogic.*;
 
 public class StatusEditPathEditMode implements StatusBasisIF
 {
-    public VMObject vmobject;
-    private ArrayList drahtPoints = new ArrayList();
-    private static final int HOZ=0;
-    private static final int VERT=1;
-    private int aktuellesPinType=HOZ;
-    public StatusBasisIF status=null;
-    public Element element;
+    private final ArrayList drahtPoints = new ArrayList();
+    private static final int HOZ = 0;
+    private static final int VERT = 1;
+    private int aktuellesPinType = HOZ;
     private JPopupMenu popupmenu = new JPopupMenu();
     private JPopupMenu popupBeginEndNode = new JPopupMenu();
     private JMenuItem  jmiDeleteNode, jmiSynchAsynch;
     private JMenuItem  jmiAddLine;
     private JMenuItem  jmiAddCurve;
-    
-    public boolean addPoint=false;
     private int posX,posY;
-
-        
-    public int aktuellerPunkt=-1;
-    
-    public int selectedParam=-1; // 0 == Punkt, 1=P1, 2=P2;
-    
     private int oldX,oldY,oldWidth,oldHeight;          
-    
+
+    public boolean addPoint=false;
+    public int aktuellerPunkt=-1;
+    public int selectedParam=-1; // 0 == Punkt, 1=P1, 2=P2;
+    public VMObject vmobject;
+    public StatusBasisIF status = null;
+    public Element element;
+
     public StatusEditPathEditMode(VMObject vmobject, Element element)
     {
         this.vmobject=vmobject;
@@ -109,7 +104,6 @@ public class StatusEditPathEditMode implements StatusBasisIF
         
         //popupBeginEndNode.add(jmiOpenClosePath);
         
-
         createEvent();
     }
     
@@ -118,6 +112,7 @@ public class StatusEditPathEditMode implements StatusBasisIF
         
         jmiAddLine.addActionListener(new java.awt.event.ActionListener()
         {
+            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {                
                 if (aktuellerPunkt>-1)

@@ -1,21 +1,20 @@
 /*
-MyOpenLab by Carmelo Salafia www.myopenlab.de
-Copyright (C) 2004  Carmelo Salafia cswi@gmx.de
+ MyOpenLab by Carmelo Salafia www.myopenlab.de
+ Copyright (C) 2004  Carmelo Salafia cswi@gmx.de
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
 package CodeEditor;
 
@@ -34,9 +33,8 @@ public class frmDefinitonDefEditor extends javax.swing.JDialog
 {
     public MyImage image = new MyImage();
     
-    String elementDir=""; //NOI18N
+    String elementDir = ""; //NOI18N
 
-    
     /** Creates new form frmDefinitonDefEditor */
     public frmDefinitonDefEditor(java.awt.Frame parent, boolean modal)
     {
@@ -57,9 +55,7 @@ public class frmDefinitonDefEditor extends javax.swing.JDialog
         };
         
         javax.swing.KeyStroke stroke = javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0);
-        rootPane.registerKeyboardAction(actionListener, stroke, javax.swing.JComponent.WHEN_IN_FOCUSED_WINDOW);
-        
-        
+        rootPane.registerKeyboardAction(actionListener, stroke, javax.swing.JComponent.WHEN_IN_FOCUSED_WINDOW);  
     }
     
     /** This method is called from within the constructor to
@@ -295,7 +291,6 @@ public class frmDefinitonDefEditor extends javax.swing.JDialog
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
                         
-
         File file = new File(elementDir+"/"+txtIcon.getText()); //NOI18N
 
         Tools.openPaint(file);
@@ -333,7 +328,6 @@ public class frmDefinitonDefEditor extends javax.swing.JDialog
 
     }//GEN-LAST:event_txtENActionPerformed
     
-    
     public void execute(String elementDir)
     {
         this.elementDir=elementDir;
@@ -355,7 +349,6 @@ public class frmDefinitonDefEditor extends javax.swing.JDialog
         
         setVisible(true);
     }
-    
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

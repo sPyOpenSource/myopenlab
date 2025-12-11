@@ -262,7 +262,6 @@ public class frmCodeEditor extends javax.swing.JFrame
         {
             panel.copy();
         }
-
     }//GEN-LAST:event_jmniCopyActionPerformed
 
     private void jmniCutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmniCutActionPerformed
@@ -284,7 +283,6 @@ public class frmCodeEditor extends javax.swing.JFrame
 
     }//GEN-LAST:event_jmnuRedoActionPerformed
 
-    
     public PanelEditor getAktuellerEditor()
     {
         if (jTabbedPane1.getSelectedComponent() instanceof PanelEditor)
@@ -295,10 +293,8 @@ public class frmCodeEditor extends javax.swing.JFrame
         return null;
     }
     
-    
     private void jmniSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmniSearchActionPerformed
 
-       
         PanelEditor panel = getAktuellerEditor();
         if (panel!=null)
         {
@@ -323,7 +319,6 @@ public class frmCodeEditor extends javax.swing.JFrame
     
     private void formWindowClosing(java.awt.event.WindowEvent evt)//GEN-FIRST:event_formWindowClosing
     {//GEN-HEADEREND:event_formWindowClosing
-        
         for (int i=0;i<jTabbedPane1.getTabCount();i++)
         {
             Component comp= jTabbedPane1.getComponentAt(i);
@@ -336,7 +331,6 @@ public class frmCodeEditor extends javax.swing.JFrame
         }
         dispose();
     }//GEN-LAST:event_formWindowClosing
-    
     
     public boolean openFile()
     {
@@ -386,12 +380,9 @@ public class frmCodeEditor extends javax.swing.JFrame
         }
     }
     
-    
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         saveProject();
     }//GEN-LAST:event_jButton3ActionPerformed
-    
-
     
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
                         
@@ -442,7 +433,6 @@ public class frmCodeEditor extends javax.swing.JFrame
         setTitle(java.util.ResourceBundle.getBundle("codeeditor/frmCodeEditor").getString("Code_Editor")+" ["+ elementname+"]");
         setVisible(true);
     }
-    
     
     class JButtonX extends JButton
     {
