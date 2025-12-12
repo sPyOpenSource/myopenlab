@@ -34,28 +34,24 @@ import javax.swing.*;
 
 public class RS232v2 extends JVSMain implements MyOpenLabDriverOwnerIF {
     private Image image;
-
     private MyOpenLabDriverIF driver;
-
     private VS1DByte inBytes;
     private VSBoolean inSend;
 
     // Property
     private final VSInteger timeOut = new VSInteger(50);
+    private final VS1DByte outBytes = new VS1DByte(0);
+    private final VSBoolean outReceived = new VSBoolean(false);
 
-    private VS1DByte outBytes = new VS1DByte(0);
-    private VSBoolean outReceived = new VSBoolean(false);
-
-    private VSComboBox comport = new VSComboBox();
-    private VSComboBox baud = new VSComboBox();
-    private VSComboBox bits = new VSComboBox();
-    private VSComboBox parity = new VSComboBox();
-    private VSComboBox stopBits = new VSComboBox();
+    private final VSComboBox comport = new VSComboBox();
+    private final VSComboBox baud = new VSComboBox();
+    private final VSComboBox bits = new VSComboBox();
+    private final VSComboBox parity = new VSComboBox();
+    private final VSComboBox stopBits = new VSComboBox();
     public VSInteger message_timeout = new VSInteger();
 
     private MyTimer timer;
-
-    private ArrayList<Byte> array = new ArrayList<>();
+    private final ArrayList<Byte> array = new ArrayList<>();
 
     public RS232v2() {
         message_timeout.setValue(100);
@@ -236,10 +232,10 @@ public class RS232v2 extends JVSMain implements MyOpenLabDriverOwnerIF {
         ArrayList<Object> args = new ArrayList<>();
 
         args.add(comport.getItem(comport.selectedIndex));
-        args.add(new Integer(baud.getItem(baud.selectedIndex)));
-        args.add(new Integer(bits.getItem(bits.selectedIndex)));
-        args.add(new Integer(stopBits.getItem(stopBits.selectedIndex)));
-        args.add(new Integer(parity.getItem(parity.selectedIndex)));
+        args.add(Integer.valueOf(baud.getItem(baud.selectedIndex)));
+        args.add(Integer.valueOf(bits.getItem(bits.selectedIndex)));
+        args.add(Integer.valueOf(stopBits.getItem(stopBits.selectedIndex)));
+        args.add(Integer.valueOf(parity.getItem(parity.selectedIndex)));
         args.add(true); // No Parity
 
         driver = element.jOpenDriver("MyOpenLab.RS232", args);

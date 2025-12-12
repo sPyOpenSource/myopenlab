@@ -24,14 +24,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
-
 import java.net.URL;
 import java.util.ArrayList;
+
 import javax.swing.JEditorPane;
 import javax.swing.JFileChooser;
 import javax.swing.JPanel;
 import VisualLogic.*;
-        
+import assets.Assets;
+import java.net.MalformedURLException;
+
 /**
  *
  * @author  Carmelo
@@ -39,25 +41,24 @@ import VisualLogic.*;
 public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteIF
 {
     public Basis basis;
-    
     public DialogLupe lupe ;
-    
     public Peditor.PropertyEditor propertyEditor;
+    
     private Element oldElement = null;
     //private FrameElementDoc dialog;
     
     public JPanel panelCircuit=null;
     public JPanel panelFront=null;
-    
     public javax.swing.Timer timer;
+    
     private String elementPath = "";
     private VMEditorPanelIF owner;
     
     public int oldElementCount=0;
     
     private VMObject vmObject;
-    
     private boolean isEnabled=true;
+    private Assets assets = new Assets();
     
     public void enabled(boolean value)
     {
@@ -101,11 +102,11 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
     
     private void loadDoc(String filename, JEditorPane pane)
     {
-        URL url =null;
+        URL url = null;
         try
         {
-            url = new URL("file://"+filename);
-        } catch(Exception ex)
+            url = new URL("file://" + filename);
+        } catch(MalformedURLException ex)
         {
             
         }
@@ -114,12 +115,11 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
             try
             {
                 pane.setPage(url);
-            } catch (Exception e)
+            } catch (IOException e)
             {
                 basis.showErrorMessage(e.toString());
             }
-        } else
-        {
+        } else {
             /*URL urlx = new File(elementPath).toURL();
             String s=urlx.getFile();
             s = s.substring(0,s.lastIndexOf("/"));
@@ -241,7 +241,7 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
             //setIconImage(basis.getFrameMain().iconImage);
             //iconImage= Toolkit.getDefaultToolkit().getImage();
             //setIconImage(iconImage);
-            basis.vsIcon.loadImage(getClass().getResource("/Assets/Bilder/icon_16.png"));
+            basis.vsIcon.loadImage(assets.getURL("/assets/Bilder/icon_16.png"));
         } catch(Exception ex)
         {
         }

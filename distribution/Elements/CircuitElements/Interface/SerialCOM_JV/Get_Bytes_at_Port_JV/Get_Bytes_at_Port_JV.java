@@ -20,30 +20,32 @@ public class Get_Bytes_at_Port_JV extends JVSMain
 {
 
   private Image image;
-  private Boolean PortOpened=false;
+  private Boolean PortOpened = false;
+  
   String s = "";
-  String sysOut_N_Err= ""; // String System Response without error
-  String sysOut_Err= "";   // String System Response when error
-  boolean firstTime=true;
-  boolean started=false;
-  final String Element_Tag= "#Element:|Get_Bytes_at_Port_JV|";
-  final String Error_Tag="#Error:";
-  final String Debug_Tag="#Debug_Msj:";
+  String sysOut_N_Err = ""; // String System Response without error
+  String sysOut_Err = "";   // String System Response when error
+  boolean firstTime = true;
+  boolean started = false;
+  final String Element_Tag = "#Element:|Get_Bytes_at_Port_JV|";
+  final String Error_Tag = "#Error:";
+  final String Debug_Tag = "#Debug_Msj:";
+  
   // Properties
   // Inputs
-    
-  VSBoolean Enable_VM_in = new VSBoolean(false);
   VSString SerialPortNameOut = new VSString();
   VSString SerialPortNameIn = new VSString("");
   VSserialPort vsPortIn;
   VSBoolean Debug_Window_En_in = new VSBoolean(false);
   VSBoolean Error_in = new VSBoolean(false);
-  
+  VSBoolean Enable_VM_in = new VSBoolean(false);
+
   VSString StrBufferOut_In = new VSString("");
-   VSBoolean Debug_Window_En_out = new VSBoolean(false);
-  VSInteger StartUpDelay =new VSInteger(5);
-  VSBoolean MessageFilterEn =new VSBoolean(false);
-  VSInteger DelayBeforeRead =new VSInteger(50);
+  VSBoolean Debug_Window_En_out = new VSBoolean(false);
+  VSInteger StartUpDelay = new VSInteger(5);
+  VSBoolean MessageFilterEn = new VSBoolean(false);
+  VSInteger DelayBeforeRead = new VSInteger(50);
+  
   // Outputs
   VSBoolean Enable_VM_out = new VSBoolean(false);
   VSString System_out = new VSString();
@@ -53,11 +55,12 @@ public class Get_Bytes_at_Port_JV extends JVSMain
   VSInteger BytesAtPortIndicatorOut= new VSInteger(0);
   
   volatile String BufferRTACOM;
-  volatile Boolean TransactionInit=false;
-  volatile Boolean TransactionFinished=false;
-  volatile Boolean EnableOld=false;
-  volatile Boolean EnableProccess=false;
+  volatile Boolean TransactionInit = false;
+  volatile Boolean TransactionFinished = false;
+  volatile Boolean EnableOld = false;
+  volatile Boolean EnableProccess = false;
   
+  @Override
   public void onDispose()
   {
     if (image!=null)
@@ -71,9 +74,6 @@ public class Get_Bytes_at_Port_JV extends JVSMain
   {
     if (image!=null) drawImageCentred(g,image);
   }
-
-  
-
 
   public void init()
   { 

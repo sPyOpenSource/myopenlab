@@ -17,20 +17,19 @@ public class InitSerialCOM_JV extends JVSMain
 {
   private Image image;
   String s = "";
-  String sysOut_N_Err= ""; // String System Response without error
-  String sysOut_Err= "";   // String System Response when error
-  boolean started=false;
-  boolean PortOpened=false;
-  boolean firstTime=true;
-  boolean BaudRateExternalEnable=false;
+  String sysOut_N_Err = ""; // String System Response without error
+  String sysOut_Err = "";   // String System Response when error
+  boolean started = false;
+  boolean PortOpened = false;
+  boolean firstTime = true;
+  boolean BaudRateExternalEnable = false;
   
-  final String Element_Tag= "#Element:|InitSerialCOM_JV|";
-  final String Error_Tag="#Error:";
-  final String Debug_Tag="#Debug_Msj:";
+  final String Element_Tag = "#Element:|InitSerialCOM_JV|";
+  final String Error_Tag = "#Error:";
+  final String Debug_Tag = "#Debug_Msj:";
+  
   // Properties
   // Inputs
-    
-  VSBoolean Enable_VM_in = new VSBoolean(false);
   VSString SerialPortNameIn = new VSString("");
   VSString SerialPortNameOut = new VSString("");  //VSString  SerialPortNameOut = new VSString("COM3");
   VSComboBox BaudRateComboBox = new VSComboBox();
@@ -39,28 +38,30 @@ public class InitSerialCOM_JV extends JVSMain
   VSComboBox ParityComboBox = new VSComboBox();
   
   VSBoolean ArduinoAutoRESET = new VSBoolean(true);
-  
+  VSBoolean Enable_VM_in = new VSBoolean(false);
   VSBoolean Debug_Window_En_in = new VSBoolean(false);
   VSBoolean Error_in = new VSBoolean(false);
   VSInteger AutoResetTime =new VSInteger(1500);
   VSInteger BaudRate_External =null;
   VSInteger MessageTimeOUT =new VSInteger(50);
+  
   // Outputs
   VSBoolean Enable_VM_out = new VSBoolean(false);
-  VSString System_out = new VSString();
   VSBoolean Debug_Window_En_out = new VSBoolean(false);
   VSBoolean Error_out = new VSBoolean(false);
   VSBoolean CR_Enable = new VSBoolean(true);
   VSBoolean LF_Enable = new VSBoolean(true);
   VSBoolean RTS_Enable = new VSBoolean(false);
   VSBoolean DTR_Enable = new VSBoolean(false);
-  
+  VSString System_out = new VSString();
+
   volatile Boolean EnableOld=false;
   volatile Boolean EnableProccess=false;
 
   NewSerialDriverManager serialDriverJV;
   VSserialPort vsSerial;
           
+  @Override
   public void onDispose()
   { 
     if (image!=null)
@@ -70,14 +71,16 @@ public class InitSerialCOM_JV extends JVSMain
     }
   }
 
+  @Override
   public void paint(java.awt.Graphics g)
   { //element.jConsolePrintln("Paint");
-    if (image!=null) {
-    drawImageCentred(g,image);
+    if (image != null) {
+        drawImageCentred(g,image);
     }
 
   }
 
+  @Override
   public void init()
   { //element.jConsolePrintln("Init!");
     element.jSetName("Open_COM_Port_JV");
@@ -176,14 +179,15 @@ public class InitSerialCOM_JV extends JVSMain
     //initInputPins();
   }
 
+  @Override
   public void initInputPins()
   { //element.jConsolePrintln("Init Input Pins!");
     BaudRate_External=(VSInteger) element.getPinInputReference(0);
     if(BaudRate_External==null){
-    BaudRate_External=new VSInteger();
-    BaudRateExternalEnable=false;
-    }else{
-    BaudRateExternalEnable=true;    
+        BaudRate_External=new VSInteger();
+        BaudRateExternalEnable=false;
+    } else {
+        BaudRateExternalEnable=true;    
     }
     
     Enable_VM_in= (VSBoolean)element.getPinInputReference(7);
@@ -218,6 +222,7 @@ public class InitSerialCOM_JV extends JVSMain
     element.setPinOutputReference(5, Error_out);
   }
 
+  @Override
   public void start()
   { //element.jConsolePrintln("start!");
     Error_in.setValue(false);
@@ -237,12 +242,11 @@ public class InitSerialCOM_JV extends JVSMain
     element.notifyPin(5); // Error Out
     started=true;
     firstTime=true;
-
   }
 
   public void stop()
   { //element.jConsolePrintln("Stop");
-    String ErrorData="";
+    String ErrorData = "";
     Error_out.setValue(false);
     
     if(SerialPortNameIn!=null)
@@ -250,11 +254,11 @@ public class InitSerialCOM_JV extends JVSMain
      if(vsSerial!=null){
       try {
           if(vsSerial.isOpened()){
-          //JSSC.ClosePort();
-          NewSerialDriverManager.RemoveSerialPortByPortName(SerialPortNameIn.getValue());
-          PortOpened=false; 
-          vsSerial=null;
-          //System.err.println("PuertoCerradoOK");
+            //JSSC.ClosePort();
+            NewSerialDriverManager.RemoveSerialPortByPortName(SerialPortNameIn.getValue());
+            PortOpened = false; 
+            vsSerial = null;
+            //System.err.println("PuertoCerradoOK");
           }
           Error_out.setValue(false);  
        
@@ -266,11 +270,12 @@ public class InitSerialCOM_JV extends JVSMain
     }
   }
 
+  @Override
   public void process()
   { //element.jConsolePrintln("Proccess");
     
-   if(EnableOld==false && Enable_VM_in.getValue() && started){
-      EnableProccess=true; 
+   if(EnableOld == false && Enable_VM_in.getValue() && started){
+      EnableProccess = true; 
       //element.jConsolePrintln("Enable Proccess!");
     }   
 
@@ -278,26 +283,26 @@ public class InitSerialCOM_JV extends JVSMain
    { EnableProccess=false; 
    
     if(firstTime){
-    firstTime=false;
-    Enable_VM_out.setValue(false);
-    element.notifyPin(1); // Enable VM Out
-    SerialPortNameOut.setValue(SerialPortNameIn.getValue());
-    element.notifyPin(2); //Serial PortNameOut
-    Debug_Window_En_out.setValue(Debug_Window_En_in.getValue());
-    element.notifyPin(4); // Debug Enable Out
+        firstTime = false;
+        Enable_VM_out.setValue(false);
+        element.notifyPin(1); // Enable VM Out
+        SerialPortNameOut.setValue(SerialPortNameIn.getValue());
+        element.notifyPin(2); //Serial PortNameOut
+        Debug_Window_En_out.setValue(Debug_Window_En_in.getValue());
+        element.notifyPin(4); // Debug Enable Out
     }
-    if(SerialPortNameIn!=null)
+    if(SerialPortNameIn != null)
     {
-      String BufferError="";
+      String BufferError = "";
       try {
-        int BaudRateTemp=0;
+        int BaudRateTemp;
         //element.jConsolePrintln("Doing Proccess!");
         if(BaudRateExternalEnable){
-        BaudRateTemp=BaudRate_External.getValue();
-        }else{
-        BaudRateTemp= Integer.valueOf(BaudRateComboBox.getItem(BaudRateComboBox.selectedIndex));
+            BaudRateTemp = BaudRate_External.getValue();
+        } else {
+            BaudRateTemp = Integer.parseInt(BaudRateComboBox.getItem(BaudRateComboBox.selectedIndex));
         }
-        int dataBitsTemp = Integer.valueOf(dataBitsComboBox.getItem(dataBitsComboBox.selectedIndex));
+        int dataBitsTemp = Integer.parseInt(dataBitsComboBox.getItem(dataBitsComboBox.selectedIndex));
         int stopBitsIndex = stopBitsComboBox.selectedIndex; //
         int ParityTemp = ParityComboBox.selectedIndex;
         int stopBitsInt = 0;
@@ -310,12 +315,12 @@ public class InitSerialCOM_JV extends JVSMain
         vsSerial=serialDriverJV.NewSerialPort(SerialPortNameIn.getValue());
         //System.err.println("SerialPortNameIn.getValue()"+SerialPortNameIn.getValue());
         if(vsSerial.getValue().isOpened()){
-        PortOpened=true;
-        //vsSerial.getSerialPort().closePort();
-        }else{
-        PortOpened=false;
-        vsSerial.getSerialPort().openPort();
-        PortOpened=vsSerial.getValue().isOpened();
+            PortOpened=true;
+            //vsSerial.getSerialPort().closePort();
+        } else {
+            PortOpened=false;
+            vsSerial.getSerialPort().openPort();
+            PortOpened=vsSerial.getValue().isOpened();
         }
         vsSerial.setEnableCR(CR_Enable.getValue());
         vsSerial.setEnableLF(LF_Enable.getValue());
@@ -351,15 +356,14 @@ public class InitSerialCOM_JV extends JVSMain
           Error_out.setValue(true);
           element.notifyPin(5); // Error Out
           PortOpened=false;
-      }
-      finally{
+      } finally {
         if (Debug_Window_En_in.getValue() && Error_out.getValue()) {
             element.jConsolePrintln(Element_Tag+Error_Tag+"|ErrorOpeningPort:"+SerialPortNameIn.getValue()+BufferError);
             System_out.setValue(Element_Tag+Error_Tag+"|ErrorOpeningPort:"+SerialPortNameIn.getValue()+BufferError);
         }
       }
       
-    }else{ // PORT Null
+    } else { // PORT Null
           Error_out.setValue(true);
           element.notifyPin(5); // Error Out
           if (Debug_Window_En_in.getValue()){
@@ -370,13 +374,13 @@ public class InitSerialCOM_JV extends JVSMain
     
    if(vsSerial!=null){
     try{    
-    PortOpened=vsSerial.getSerialPort().isOpened();
+        PortOpened=vsSerial.getSerialPort().isOpened();
     } catch (Exception e){
-    PortOpened=false;
-    Error_out.setValue(true); 
-    element.notifyPin(5); // Error Out
+        PortOpened=false;
+        Error_out.setValue(true); 
+        element.notifyPin(5); // Error Out
     }
-   }else{
+   } else {
    PortOpened=false;
    Error_out.setValue(true); 
    element.notifyPin(5); // Error Out  
@@ -404,6 +408,7 @@ public class InitSerialCOM_JV extends JVSMain
   EnableOld=Enable_VM_in.getValue(); 
 }
 
+  @Override
    public void setPropertyEditor()
   { //element.jConsolePrintln("Set Property Editor!");
     element.jAddPEItem("BaudRate", BaudRateComboBox, 0,100);
@@ -443,6 +448,7 @@ public class InitSerialCOM_JV extends JVSMain
     element.jSetPEItemLocale(d+7,language,"Retardo_de_AutoReset[mS]");
   }
   
+  @Override
   public void propertyChanged(Object o)
   {   
     element.jRepaint();

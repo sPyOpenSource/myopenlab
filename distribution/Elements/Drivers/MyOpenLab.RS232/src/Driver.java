@@ -35,15 +35,12 @@ public class Driver {
     public int timeOut = 50;
     public boolean error;
 
-    public MyOpenLabDriverOwnerIF owner;
-
     private VS1DByte outBytes = new VS1DByte(0);
-
     private SerialReader serialThread;
 
     public boolean useOwnInHandler = false;
-
     public String port;
+    public MyOpenLabDriverOwnerIF owner;
 
     public String[] listSerialPorts() {
         return SerialPortList.getPortNames();
@@ -67,7 +64,7 @@ public class Driver {
                 serss.setParams(baud, bits, stopBits, parity);
 
                 error = false;
-            } catch (Exception ex) {
+            } catch (SerialPortException ex) {
                 System.out.println("Fehler in RS232 Driver : " + ex);
             }
         }
@@ -86,7 +83,7 @@ public class Driver {
                 serss.addEventListener(new commListener());
                 //serss.notifyOnDataAvailable(true);
             }
-        } catch (Exception e) {
+        } catch (SerialPortException e) {
             System.out.println("Fehler: " + e);
         }
     }
@@ -141,7 +138,7 @@ public class Driver {
                 serss.writeBytes(bytes);
                 //serss.flush();
             }
-        } catch (Exception ex) {
+        } catch (SerialPortException ex) {
             //element.jShowMessage("Error sending Bytes  : "+ex.toString());
         }
     }
@@ -256,8 +253,6 @@ public class Driver {
     }
 
     class commListener implements SerialPortEventListener {
-        int dato = 0;
-
         @Override
         public void serialEvent(SerialPortEvent event) {
             if (event.getEventType() == SerialPortEvent.TXEMPTY) {
@@ -273,7 +268,7 @@ public class Driver {
                     }
 
                     make();
-                } catch (Exception e) {
+                } catch (SerialPortException e) {
                     System.out.println("Fehler: " + e);
                 }
             }

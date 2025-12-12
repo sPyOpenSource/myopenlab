@@ -18,6 +18,7 @@
 //* along with this library; if not, write to the Free Software Foundation,   *
 //* Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110, USA                  *
 //*****************************************************************************
+
 import VisualLogic.*;
 import VisualLogic.variables.*;
 import java.util.*;
@@ -28,9 +29,8 @@ import jssc.SerialPort;
 import jssc.SerialPortException;
 
 public class RS232 implements MyOpenLabDriverIF {
-    private VS1DByte outBytes = new VS1DByte(0);
+    private final VS1DByte outBytes = new VS1DByte(0);
     private final ArrayList<Driver> liste = new ArrayList<>();
-
     private MyOpenLabDriverOwnerIF owner;
 
     public RS232() {

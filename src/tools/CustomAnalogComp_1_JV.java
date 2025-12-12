@@ -37,11 +37,13 @@ public class CustomAnalogComp_1_JV extends JVSMain
   public VSDouble value0=new VSDouble();
   public VSDouble initValue=new VSDouble();
   public Graphics2D gb =null;
-  private int oldH=0,oldW=0;
   public double oldValue;
   public VSDouble min=new VSDouble(0);
   public VSDouble max=new VSDouble(100);
+  
   private final ArrayList listeBeschriftungen = new ArrayList();
+  private int oldH=0,oldW=0;
+
   public VSInteger abschnitte=new VSInteger(10);
   public VSInteger abstand=new VSInteger(12);
   public VSInteger knobSizeInProzent=new VSInteger(30);
@@ -64,12 +66,14 @@ public class CustomAnalogComp_1_JV extends JVSMain
   public VSPropertyDialog captions= new VSPropertyDialog();
   public VSBoolean transparent = new VSBoolean(false);
   public VSBoolean onlyNumbers = new VSBoolean(true);
+  
   private boolean firstTime=true;
   private FontMetrics fm ;
   private Rectangle2D   r ;
   private DecimalFormat df = new DecimalFormat(formatierung.getValue());
   private final double theAngle=0.0;
   private ExternalIF circuitElement;
+  
   public VSInteger lineStrokeValue=new VSInteger(2);
   public VSInteger nibbleStrokeValue=new VSInteger(10);
   public VSInteger buttonStroke=new VSInteger(7);
@@ -81,7 +85,6 @@ public class CustomAnalogComp_1_JV extends JVSMain
     value0.setValue(value);
     element.jRepaint(); 
   }
-
 
   public Point getPointFromAngle(double angle,double vectorLaenge)
   {
@@ -153,8 +156,6 @@ public class CustomAnalogComp_1_JV extends JVSMain
           
         }
   }
-  
-  
   
   public void drawAnzeige(java.awt.Graphics gx,int x, int y, int w, int h)
   {
@@ -360,13 +361,11 @@ public class CustomAnalogComp_1_JV extends JVSMain
         //g.drawString("X_"+value0.getValue(),20,20);
         drawAnzeige(g,11,11,bounds.width-22,bounds.height-22);
         
-
         initSubElements();
-
-     }
-     
+     } 
     }
 
+  @Override
     public void init()
     {
       initPins(0,0,0,0);
@@ -408,7 +407,6 @@ public class CustomAnalogComp_1_JV extends JVSMain
       
       element.jSetInfo("Carmelo Salafia","Open Source 2006 & Freeware","");
       
-
     }
     
     public void xOnInit()
@@ -667,8 +665,7 @@ public class CustomAnalogComp_1_JV extends JVSMain
     initSubElements();
   }
 
-
-
+  @Override
   public void setPropertyEditor()
   {
     element.jAddPEItem("Min",min, -9999999,9999999);
@@ -678,12 +675,12 @@ public class CustomAnalogComp_1_JV extends JVSMain
     element.jAddPEItem("Anfangswert",initValue, 0,9999999);
     
     element.jAddPEItem("Zeige Nibble als Kreis",showNibbleAsCircle, 0,0); // Nibble Settings
-    element.jAddPEItem("Nibble-Kreis-Gr��e [%]",nibbleCircleSizeInProzent, 0,100);
+    element.jAddPEItem("Nibble-Kreis-Gre [%]",nibbleCircleSizeInProzent, 0,100);
     element.jAddPEItem("Nibble-Breite",nibbleStrokeValue, 0,50); 
     element.jAddPEItem("Nibble-Farbe",nibbleColor, 0,0);
-    element.jAddPEItem("Nibble-Gr��e[%]",nibbleLenInProzent, 0,100);
+    element.jAddPEItem("Nibble-Gre[%]",nibbleLenInProzent, 0,100);
     element.jAddPEItem("Knopf-Farbe",buttonColor, 0,0); //KNOB Settings
-    element.jAddPEItem("Knopf-Gr��e[%]",knobSizeInProzent, 0,100);
+    element.jAddPEItem("Knopf-Gre[%]",knobSizeInProzent, 0,100);
     element.jAddPEItem("Knopf-Breite",buttonStroke, 0,50);
     element.jAddPEItem("Knopf-Breite-Farbe",strokeColor, 0,0); 
     element.jAddPEItem("Knopf Sockel",showBackground, 0,0);
@@ -759,43 +756,41 @@ public class CustomAnalogComp_1_JV extends JVSMain
     element.jSetPEItemLocale(d+0,language,"Min");
     element.jSetPEItemLocale(d+1,language,"Max");
     element.jSetPEItemLocale(d+2,language,"Divisiones");
-    element.jSetPEItemLocale(d+3,language,"Posici�n Actual");
+    element.jSetPEItemLocale(d+3,language,"Posicin Actual");
     
     element.jSetPEItemLocale(d+4,language,"Valor Inicial");
     
     
-    element.jSetPEItemLocale(d+5,language,"C�rculo - Aguja");
-    element.jSetPEItemLocale(d+6,language,"Tama�o c�rculo [%]");
+    element.jSetPEItemLocale(d+5,language,"Crculo - Aguja");
+    element.jSetPEItemLocale(d+6,language,"Tamao crculo [%]");
     element.jSetPEItemLocale(d+7,language,"Grosor de Aguja");
     element.jSetPEItemLocale(d+8,language,"Color de Aguja");
     element.jSetPEItemLocale(d+9,language,"Distancia de Aguja[%]");
-    element.jSetPEItemLocale(d+10,language,"Color �rea Central");
-    element.jSetPEItemLocale(d+11,language,"Di�metro del Bot�n[%]");
+    element.jSetPEItemLocale(d+10,language,"Color rea Central");
+    element.jSetPEItemLocale(d+11,language,"Dimetro del Botn[%]");
     
-    element.jSetPEItemLocale(d+12,language,"Grosor Borde C�rculo Central");
-    element.jSetPEItemLocale(d+13,language,"Color Borde C�rculo Central");
+    element.jSetPEItemLocale(d+12,language,"Grosor Borde Crculo Central");
+    element.jSetPEItemLocale(d+13,language,"Color Borde Crculo Central");
     
-    element.jSetPEItemLocale(d+14,language,"Mostrar Base del Bot�n");
+    element.jSetPEItemLocale(d+14,language,"Mostrar Base del Botn");
     element.jSetPEItemLocale(d+15,language,"Transparente?");
-    element.jSetPEItemLocale(d+16,language,"Color �rea Media");
-    element.jSetPEItemLocale(d+17,language,"Color L�neas del Bot�n");
-    element.jSetPEItemLocale(d+18,language,"Grosor L�neas del Bot�n");
-    element.jSetPEItemLocale(d+19,language,"Color �rea Externa del Bot�n");
+    element.jSetPEItemLocale(d+16,language,"Color rea Media");
+    element.jSetPEItemLocale(d+17,language,"Color Lneas del Botn");
+    element.jSetPEItemLocale(d+18,language,"Grosor Lneas del Botn");
+    element.jSetPEItemLocale(d+19,language,"Color rea Externa del Botn");
     
     element.jSetPEItemLocale(d+20,language,"Mostrar Textos"); // Show Text? Or Only Knob Button
     element.jSetPEItemLocale(d+21,language,"Texto Interno/Externo");
-    element.jSetPEItemLocale(d+22,language,"Solo N�meros");
+    element.jSetPEItemLocale(d+22,language,"Solo Nmeros");
     element.jSetPEItemLocale(d+23,language,"Etiquetas");
     element.jSetPEItemLocale(d+24,language,"Formato (#0)");
     element.jSetPEItemLocale(d+25,language,"Distancia Texto");
     element.jSetPEItemLocale(d+26,language,"Fuente");
     element.jSetPEItemLocale(d+27,language,"Color Textos");
     
-    element.jSetPEItemLocale(d+28,language,"Grado M�nimo");
-    element.jSetPEItemLocale(d+29,language,"Grado M�ximo");    
+    element.jSetPEItemLocale(d+28,language,"Grado Mnimo");
+    element.jSetPEItemLocale(d+29,language,"Grado Mximo");    
 }
-
-
 
   public void loadFromStream(java.io.FileInputStream fis)
   {
@@ -878,8 +873,7 @@ public class CustomAnalogComp_1_JV extends JVSMain
   }
 
 }
- 
- 
+
 class Beschriftung extends JPanel
 {
     public String text="";
@@ -894,6 +888,7 @@ class Beschriftung extends JPanel
       this.setOpaque(false);
     }
     
+    @Override
     public void paint(java.awt.Graphics g)
     {
       //super.paintComponent(g);

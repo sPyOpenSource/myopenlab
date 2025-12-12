@@ -25,6 +25,7 @@ import java.awt.Toolkit;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
 
@@ -67,10 +68,8 @@ public class VSImage extends VSObject
   {    
     try
     {       
-       image=il.loadImage(Toolkit.getDefaultToolkit().getImage(url));
-
-    } catch(Exception ex)
-    {
+       image = il.loadImage(Toolkit.getDefaultToolkit().getImage(url));
+    } catch(Exception ex) {
       System.out.println(ex.getMessage());
     }
       
@@ -86,7 +85,7 @@ public class VSImage extends VSObject
           input.read(imageBytes);
           input.close();
           input=null;
-      } catch(Exception ex)
+      } catch(IOException ex)
       {
          System.out.println(ex);
       }

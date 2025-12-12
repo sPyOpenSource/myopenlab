@@ -25,8 +25,6 @@ import VisualLogic.*;
 import VisualLogic.variables.*;
 import tools.*;
 import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
 import java.util.*;
 import java.net.*;
 import java.applet.*;
@@ -37,7 +35,7 @@ public class PlayFromFile extends JVSMain
   public VSBoolean inPlay;
   public VSBoolean inStop;
   public VSString  inFilename;
-  private AudioClip clip =null;
+  private AudioClip clip = null;
 
   private Image image;
 
@@ -55,7 +53,6 @@ public class PlayFromFile extends JVSMain
     drawImageCentred(g,image);
   }
 
-
  public void init()
   {
     initPins(0,0,0,3);
@@ -64,9 +61,9 @@ public class PlayFromFile extends JVSMain
 
     image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
 
-    setPin(0,ExternalIF.C_BOOLEAN,element.PIN_INPUT);
-    setPin(1,ExternalIF.C_BOOLEAN,element.PIN_INPUT);
-    setPin(2,ExternalIF.C_STRING,element.PIN_INPUT);
+    setPin(0,ExternalIF.C_BOOLEAN,ExternalIF.PIN_INPUT);
+    setPin(1,ExternalIF.C_BOOLEAN,ExternalIF.PIN_INPUT);
+    setPin(2,ExternalIF.C_STRING,ExternalIF.PIN_INPUT);
 
     String strLocale=Locale.getDefault().toString();
 
@@ -89,14 +86,10 @@ public class PlayFromFile extends JVSMain
       element.jSetPinDescription(2,"Archivo de los sonidos");
     }
 
-
-
     element.jSetCaptionVisible(true);
     element.jSetCaption("PlayFromFile");
     setName("PlayFromFile");
   }
-
-
 
   public void setPropertyEditor(){}
 
@@ -141,15 +134,15 @@ public class PlayFromFile extends JVSMain
       if (inPlay.getValue()==true)
       try
       {
-         URL url = new URL("file:"+inFilename.getValue());
-         if (clip!=null) clip.stop();
+         URL url = new URL("file:" + inFilename.getValue());
+         if (clip != null) clip.stop();
          clip = Applet.newAudioClip(url);
          clip.play();
-      } catch (Exception e) {}
+      } catch (MalformedURLException e) {}
       
-      if (inStop.getValue()==true)
+      if (inStop.getValue() == true)
       {
-        if (clip!=null) clip.stop();
+        if (clip != null) clip.stop();
       }
       
   }

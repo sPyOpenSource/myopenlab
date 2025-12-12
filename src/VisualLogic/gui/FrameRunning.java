@@ -23,6 +23,7 @@ import VisualLogic.BasisPanel;
 import java.awt.Dimension;
 import javax.swing.JPanel;
 import javax.swing.SpinnerNumberModel;
+import assets.Assets;
 
 /**
  *
@@ -32,8 +33,8 @@ public class FrameRunning extends javax.swing.JFrame
 {
     
     private Basis basis;
-    
-    
+    private Assets assets = new Assets();
+
     /** Creates new form FrameRunning */
     public FrameRunning(Basis basis, boolean unDecorated)
     {
@@ -65,8 +66,6 @@ public class FrameRunning extends javax.swing.JFrame
         }
         
     }
-    
-    
     
     /** This method is called from within the constructor to
      * initialize the form.
@@ -100,7 +99,7 @@ public class FrameRunning extends javax.swing.JFrame
         jToolBar1.setRollover(true);
         jToolBar1.setPreferredSize(new java.awt.Dimension(100, 33));
 
-        jButton_PauseVM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/pause24.gif"))); // NOI18N
+        jButton_PauseVM.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/pause24.gif"))); // NOI18N
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/FrameCircuit"); // NOI18N
         jButton_PauseVM.setToolTipText(bundle.getString("Pause_VM")); // NOI18N
         jButton_PauseVM.setPreferredSize(new java.awt.Dimension(25, 25));
@@ -111,7 +110,7 @@ public class FrameRunning extends javax.swing.JFrame
         });
         jToolBar1.add(jButton_PauseVM);
 
-        jButtonStopVM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/stop24.gif"))); // NOI18N
+        jButtonStopVM.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/stop24.gif"))); // NOI18N
         jButtonStopVM.setToolTipText(bundle.getString("Stop_VM")); // NOI18N
         jButtonStopVM.setPreferredSize(new java.awt.Dimension(25, 25));
         jButtonStopVM.addActionListener(new java.awt.event.ActionListener() {
@@ -121,7 +120,7 @@ public class FrameRunning extends javax.swing.JFrame
         });
         jToolBar1.add(jButtonStopVM);
 
-        jButtonStepVM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/Resume.GIF"))); // NOI18N
+        jButtonStepVM.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/Resume.GIF"))); // NOI18N
         jButtonStepVM.setToolTipText(bundle.getString("Weiter_VM")); // NOI18N
         jButtonStepVM.setPreferredSize(new java.awt.Dimension(25, 25));
         jButtonStepVM.addActionListener(new java.awt.event.ActionListener() {
@@ -131,7 +130,7 @@ public class FrameRunning extends javax.swing.JFrame
         });
         jToolBar1.add(jButtonStepVM);
 
-        jButtonAnalogWindow.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/graphDouble.gif"))); // NOI18N
+        jButtonAnalogWindow.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/graphDouble.gif"))); // NOI18N
         jButtonAnalogWindow.setToolTipText(bundle.getString("NumerikGraphWindow")); // NOI18N
         jButtonAnalogWindow.setPreferredSize(new java.awt.Dimension(25, 25));
         jButtonAnalogWindow.addActionListener(new java.awt.event.ActionListener() {
@@ -141,7 +140,7 @@ public class FrameRunning extends javax.swing.JFrame
         });
         jToolBar1.add(jButtonAnalogWindow);
 
-        jButtonDigitalWindow.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/gif/graphBoolean.gif"))); // NOI18N
+        jButtonDigitalWindow.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/graphBoolean.gif"))); // NOI18N
         jButtonDigitalWindow.setToolTipText(bundle.getString("DigitalGraphWindow")); // NOI18N
         jButtonDigitalWindow.setPreferredSize(new java.awt.Dimension(25, 25));
         jButtonDigitalWindow.addActionListener(new java.awt.event.ActionListener() {
@@ -151,7 +150,7 @@ public class FrameRunning extends javax.swing.JFrame
         });
         jToolBar1.add(jButtonDigitalWindow);
 
-        jButtonTestPoint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/testpoint.PNG"))); // NOI18N
+        jButtonTestPoint.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/testpoint.PNG"))); // NOI18N
         jButtonTestPoint.setToolTipText(bundle.getString("TestpointWindow")); // NOI18N
         jButtonTestPoint.setPreferredSize(new java.awt.Dimension(25, 25));
         jButtonTestPoint.addActionListener(new java.awt.event.ActionListener() {
@@ -161,7 +160,7 @@ public class FrameRunning extends javax.swing.JFrame
         });
         jToolBar1.add(jButtonTestPoint);
 
-        jButtonDebugConsole.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/utilities-terminal.png"))); // NOI18N
+        jButtonDebugConsole.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/utilities-terminal.png"))); // NOI18N
         jButtonDebugConsole.setToolTipText("Console");
         jButtonDebugConsole.setPreferredSize(new java.awt.Dimension(25, 25));
         jButtonDebugConsole.addActionListener(new java.awt.event.ActionListener() {
@@ -202,13 +201,13 @@ public class FrameRunning extends javax.swing.JFrame
     private void jSpinnerDebugDelayStateChanged(javax.swing.event.ChangeEvent evt)//GEN-FIRST:event_jSpinnerDebugDelayStateChanged
     {//GEN-HEADEREND:event_jSpinnerDebugDelayStateChanged
         
-        basis.delay=((Integer)jSpinnerDebugDelay.getValue()).intValue();
+        basis.delay = (Integer)jSpinnerDebugDelay.getValue();
         
     }//GEN-LAST:event_jSpinnerDebugDelayStateChanged
     
     private void jButtonAnalogWindowActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonAnalogWindowActionPerformed
     {//GEN-HEADEREND:event_jButtonAnalogWindowActionPerformed
-        if (basis.frameCircuit!=null)
+        if (basis.frameCircuit != null)
         {
             basis.frameDoubleGraph.setVisible(true);
         }
@@ -226,19 +225,17 @@ public class FrameRunning extends javax.swing.JFrame
     
     private void jButtonStopVMActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonStopVMActionPerformed
     {//GEN-HEADEREND:event_jButtonStopVMActionPerformed
-        
         basis.stop();
-        if (basis.frameCircuit!=null)
+        if (basis.frameCircuit != null)
         {
             //basis.frameCircuit.stopBasis();
             //basis.frameCircuit.setVisible(true);
         }
-        
     }//GEN-LAST:event_jButtonStopVMActionPerformed
     
     private void jButtonTestPointActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonTestPointActionPerformed
     {//GEN-HEADEREND:event_jButtonTestPointActionPerformed
-        if (basis.frameCircuit!=null)
+        if (basis.frameCircuit != null)
         {
             basis.dialogTestpoint.setVisible(true);
         }
@@ -246,7 +243,7 @@ public class FrameRunning extends javax.swing.JFrame
     
     private void jButtonDigitalWindowActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButtonDigitalWindowActionPerformed
     {//GEN-HEADEREND:event_jButtonDigitalWindowActionPerformed
-        if (basis.frameCircuit!=null)
+        if (basis.frameCircuit != null)
         {
             basis.frameBooleanGraph.setVisible(true);
         }
@@ -260,8 +257,6 @@ public class FrameRunning extends javax.swing.JFrame
         if (basis.panelMode) basis.closeCircuitWindow();
         else basis.frameCircuit.setVisible(true);
     }//GEN-LAST:event_formWindowClosing
-    
-    
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonAnalogWindow;

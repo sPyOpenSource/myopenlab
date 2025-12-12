@@ -25,22 +25,14 @@ import VisualLogic.*;
 import VisualLogic.variables.*;
 import tools.*;
 import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
 import java.util.*;
-import java.net.*;
-
-import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.MalformedURLException;
-import java.net.URL;
-import javax.sound.sampled.AudioFileFormat;
+
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
@@ -48,18 +40,16 @@ import javax.sound.sampled.Clip;
 import javax.sound.sampled.DataLine;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
-import javax.sound.sampled.spi.AudioFileReader;
 
 public class PlaySound extends JVSMain
 {
   public VSBoolean inPlay;
   public VSBoolean inStop;
   public VSFile  inFilename = new VSFile("");
+  
   private Clip clip=null;
   private byte[] data=null;
-
   private Image image;
-
 
   public void paint(java.awt.Graphics g)
   {
@@ -112,7 +102,6 @@ public class PlaySound extends JVSMain
     
   }
   
-  
   public void loadSoundFile(String filename)
   {
     try
@@ -124,7 +113,7 @@ public class PlaySound extends JVSMain
       int size=(int)(new File(filename)).length();
       data=new byte[size];
       dis.read(data);
-    } catch(Exception ex)
+    } catch(IOException ex)
     {
       System.out.println(ex.toString());
     }
@@ -161,9 +150,7 @@ public class PlaySound extends JVSMain
       dis2.close();
       
     } catch (MalformedURLException e) {
-    } catch (IOException e) {
-    } catch (LineUnavailableException e) {
-    } catch (UnsupportedAudioFileException e) {
+    } catch (IOException | LineUnavailableException | UnsupportedAudioFileException e) {
     }
   }
 
@@ -271,13 +258,14 @@ public class PlaySound extends JVSMain
       data=new byte[size];
       dis.read(data);
       loadFromBytes();
-    } catch(Exception ex)
+    } catch(IOException ex)
     {
       element.jException("Fehler in PlaySound Methode loadFromStream() : "+ex.toString());
     }
 
   }
 
+  @Override
   public void saveToStream(java.io.FileOutputStream fos)
   {
     java.io.DataOutputStream dos = new java.io.DataOutputStream(fos);

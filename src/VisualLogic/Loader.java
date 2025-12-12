@@ -27,7 +27,7 @@ public class Loader
 {    
     URLClassLoader cl;
 
-  public Object ladeClasse(String elementPath, String pfad, String klassename ) throws Exception
+  public Object ladeClasse(String elementPath, String pfad, String klassename) throws Exception
   {
     URL url;
     Object o = null;

@@ -105,7 +105,7 @@ public class DialogUpdate extends javax.swing.JDialog
                     dispose();
                     
                 }
-                catch (Exception e)
+                catch (IOException e)
                 {
                     Tools.showMessage("No Connection!");
                 }
