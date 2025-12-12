@@ -63,8 +63,6 @@ class ComboBoxEditor extends JComboBox implements PEIF, ActionListener {
     public Object getReference() {
         return referenz;
     }
-
-    ;
             
     public void jChanged() {
         item.processChanged();
@@ -101,7 +99,6 @@ class ComboBoxEditor extends JComboBox implements PEIF, ActionListener {
 }
 
 class NopeEditor extends JPanel implements PEIF {
-
     @Override
     public void changed() {
 
@@ -115,15 +112,13 @@ class NopeEditor extends JPanel implements PEIF {
 
 class BooleanEditor extends JCheckBox implements PEIF {
 
-    private VSBoolean referenz;
-    private PropertyEditorItem item;
+    private final VSBoolean referenz;
+    private final PropertyEditorItem item;
 
     @Override
     public Object getReference() {
         return referenz;
     }
-
-    ;
     
     public void jChanged() {
         item.processChanged();
@@ -162,10 +157,10 @@ class BooleanEditor extends JCheckBox implements PEIF {
 
 class AdvancedColorEditor extends JPanel implements PEIF {
 
-    private VSColorAdvanced referenz;
-    private PropertyEditorItem item;
-    private JFrame frame;
-    private JButton button = new JButton("...");
+    private final VSColorAdvanced referenz;
+    private final PropertyEditorItem item;
+    private final JFrame frame;
+    private final JButton button = new JButton("...");
 
     @Override
     public Object getReference() {
@@ -204,22 +199,21 @@ class AdvancedColorEditor extends JPanel implements PEIF {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 CustomColorPicker frm = new CustomColorPicker(null, true);
 
-                frm.modus = getRef().modus;
-                frm.p1 = getRef().p1;
-                frm.p2 = getRef().p2;
-                frm.color1 = getRef().color1;
-                frm.color2 = getRef().color2;
-                frm.color1Transparency = getRef().color1Transparency;
-                frm.color2Transparency = getRef().color2Transparency;
-                frm.wiederholung = getRef().wiederholung;
+                CustomColorPicker.modus = getRef().modus;
+                CustomColorPicker.p1 = getRef().p1;
+                CustomColorPicker.p2 = getRef().p2;
+                CustomColorPicker.color1 = getRef().color1;
+                CustomColorPicker.color2 = getRef().color2;
+                CustomColorPicker.color1Transparency = getRef().color1Transparency;
+                CustomColorPicker.color2Transparency = getRef().color2Transparency;
+                CustomColorPicker.wiederholung = getRef().wiederholung;
                 frm.init();
                 frm.setVisible(true);
-                if (frm.result) {
-                    setValue(frm.modus, frm.p1, frm.p2, frm.color1, frm.color2, frm.color1Transparency, frm.color2Transparency, frm.wiederholung);
+                if (CustomColorPicker.result) {
+                    setValue(CustomColorPicker.modus, CustomColorPicker.p1, CustomColorPicker.p2, CustomColorPicker.color1, CustomColorPicker.color2, CustomColorPicker.color1Transparency, CustomColorPicker.color2Transparency, CustomColorPicker.wiederholung);
                 }
             }
         });
-
     }
 
     @Override
@@ -231,10 +225,10 @@ class AdvancedColorEditor extends JPanel implements PEIF {
 
 class ColorEditor extends JPanel implements PEIF {
 
-    private VSColor referenz;
-    private PropertyEditorItem item;
-    private JFrame frame;
-    private JButton button = new JButton("...");
+    private final VSColor referenz;
+    private final PropertyEditorItem item;
+    private final JFrame frame;
+    private final JButton button = new JButton("...");
 
     @Override
     public Object getReference() {
@@ -292,14 +286,13 @@ class ColorEditor extends JPanel implements PEIF {
 
 class ReadonlySelector extends JButton implements PEIF {
 
-    private VSObject referenz;
-    private PropertyEditorItem item;
+    private final VSObject referenz;
+    private final PropertyEditorItem item;
 
     @Override
     public Object getReference() {
         return referenz;
     }
-    
     
     private void callElementPropertyMethode() {
 
@@ -324,7 +317,6 @@ class ReadonlySelector extends JButton implements PEIF {
                 jChanged();
             }
         });
-
     }
 
     @Override
@@ -334,17 +326,16 @@ class ReadonlySelector extends JButton implements PEIF {
 
 class OpenPropertyDialogEditor extends JPanel implements PEIF {
 
-    private VSPropertyDialog referenz;
-    private Element element;
-    private JButton button = new JButton("...");
-    private JLabel label = new JLabel("XXXXX");
-    private PropertyEditorItem item;
+    private final VSPropertyDialog referenz;
+    private final Element element;
+    private final JButton button = new JButton("...");
+    private final JLabel label = new JLabel("XXXXX");
+    private final PropertyEditorItem item;
 
     @Override
     public Object getReference() {
         return referenz;
     }
-    
     
     private void callElementPropertyMethode() {
         if (element != null) {
@@ -380,7 +371,6 @@ class OpenPropertyDialogEditor extends JPanel implements PEIF {
                 jChanged();
             }
         });
-
     }
 
     @Override
@@ -402,8 +392,6 @@ class FileEditor extends JPanel implements PEIF {
     public Object getReference() {
         return referenz;
     }
-
-    ;
     
     private void mySetFile(String filename) {
         if (referenz != null) {
@@ -494,8 +482,6 @@ class FontEditor extends JPanel implements PEIF {
     public Object getReference() {
         return referenz;
     }
-
-    ;
     
     private void mySetFont(Font font) {
         referenz.setValue(font);
@@ -601,7 +587,7 @@ class DoubleEditor extends JTextField implements PEIF {
         try {
             String txt = getText();
 
-            double value = Double.valueOf(txt);
+            double value = Double.parseDouble(txt);
 
             if (value < min) {
                 value = min;
@@ -628,7 +614,6 @@ class IntegerEditor extends JTextField implements PEIF {
     public Object getReference() {
         return referenz;
     }
-    
     
     public void pChanged() {
         item.processChanged();
@@ -657,7 +642,7 @@ class IntegerEditor extends JTextField implements PEIF {
     public void changed() {
         try {
 
-            referenz.setValue(Integer.valueOf(getText()));
+            referenz.setValue(Integer.parseInt(getText()));
 
             if (referenz.getValue() < min) {
                 referenz.setValue(min);
@@ -743,8 +728,6 @@ class ImageEditor extends JPanel implements PEIF {
     public Object getReference() {
         return referenz;
     }
-
-    ;
     
     private void mySetFile(String filename) {
         if (referenz != null) {
@@ -853,17 +836,17 @@ class PropertiesEditor extends JButton implements PEIF, ActionListener {
         DialogPropertiesChoice frm = new DialogPropertiesChoice(frame, true, vmobject);
 
         frm.execute();
-        if (frm.result) {
+        if (DialogPropertiesChoice.result) {
             vmobject.owner.setChanged(true);
             int newVersion = 0;
             try {
                 newVersion = Integer.parseInt(vmobject.owner.basisVersion);
-            } catch (Exception ex) {
+            } catch (NumberFormatException ex) {
             }
             newVersion++;
             vmobject.owner.basisVersion = "" + newVersion;
 
-            vmobject.propertyList = (ArrayList) frm.props.clone();
+            vmobject.propertyList = (ArrayList) DialogPropertiesChoice.props.clone();
         }
     }
 
@@ -882,8 +865,6 @@ class StringEditor extends JTextField implements PEIF {
     public Object getReference() {
         return referenz;
     }
-
-    ;
     
     public void pChanged() {
         item.processChanged();
@@ -918,15 +899,15 @@ class StringEditor extends JTextField implements PEIF {
  */
 public class PropertyEditor extends javax.swing.JPanel {
 
-    ArrayList liste = new ArrayList();
-    private final int itemHeight = 25;
     public Element element;
     public VMObject vmobject;
-    private JFrame frame;
     public boolean locked = false;
-    private JPanel myGUI = null;
-
     public int mode = 0;
+
+    private final JFrame frame;
+    private final JPanel myGUI = null;
+    private final int itemHeight = 25;
+    ArrayList liste = new ArrayList();
 
     public void setElement(Element element) {
         this.element = element;

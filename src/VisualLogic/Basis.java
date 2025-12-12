@@ -2032,8 +2032,8 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             OpenVariable node;
             Object o1;
 
-            Bindings b=bindings;
-            ArrayList vars=variablenListe;
+            Bindings b = bindings;
+            ArrayList vars = variablenListe;
 
             if (flowInfo.bindings != null) {
                 b = flowInfo.bindings;
@@ -2260,7 +2260,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             node = (OpenVariable) variablenListe.get(i);
 
             bindings.put(node.name, node.value);
-
         }
     }
 
