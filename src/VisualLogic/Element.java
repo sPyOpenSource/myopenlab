@@ -34,19 +34,24 @@ import javax.swing.JFrame;
 public class Element extends Shape implements MouseListener, MouseMotionListener, ExternalIF, PinIF, Comparable {
     // Sichtbarkeit der Pins
     public boolean highlighted = false;
+    public SelectionPane layeredPane = new SelectionPane(this);
+
     private boolean leftPinsVisible = true;
     private boolean changed = false;
-    public SelectionPane layeredPane = new SelectionPane(this);
     private boolean topPinsVisible = true;
     private boolean rightPinsVisible = true;
     private boolean bottomPinsVisible = true;
     private Stroke standardStroke = new BasicStroke(1);
     private Stroke strokeDick = new BasicStroke(2);
+    
     public ElementIF classRef;
     public ExternalIF circuitElement = null;
     public ExternalIF panelElement = null;
+    
     private boolean elementFixed = false;
     private boolean simplePaintModus = false;
+    private boolean docPathIsAlreadySet = false;
+
     public ElementIF mouseEventsTo = null;
     public String docPath = "";
     public boolean isAlreadyCompiled = false; // zum Compilieren von SPS Code!
@@ -57,8 +62,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     // bis zu 10 Tags knnen hier von FrontElement zu CircuitElement als sog. Parameter
     // ausgetauscht werden
     public Object[] tags = new Object[10];
-
-    private boolean docPathIsAlreadySet = false;
 
     @Override
     public void jSetTag(int index, Object tag) {
@@ -332,15 +335,20 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public int oldID = -1;
     public int circuitElementID = -1;
     public int panelElementID = -1;
+    
     private Font stdFont = new Font("Arial", 0, 10);
     private Font pinFont = new Font("Arial", 0, 8);
+    
     public ArrayList datenTypListe = new ArrayList();
     public ArrayList changedList = new ArrayList();
     public boolean locked = false;
+    
     private Graphics2D elementG = null;
     private boolean oki = false;
+    
     public int oldX, oldY;
     public int oldDX, oldDY;
+    
     private int oldPositionX, oldPositionY;
     private final int maxPins = 100;
     private final int pinWidth = 8;
@@ -567,10 +575,12 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     }
     
     private String[] args;
+    private String description = "";
+    private int yDescriptionDistance = 0;
+
     public VMObject owner;
     public String definitionPath = "";
     public DFProperties definition_def = null;
-    private String description = "";
 
     public String getDescription() {
         return description;
@@ -579,8 +589,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
     public void setDescription(String value) {
         description = value;
     }
-    private int yDescriptionDistance = 0;
-
+    
     @Override
     public ArrayList<PathPoint> jGetPointList() {
         return points;
@@ -1849,7 +1858,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         for (int i = 0; i < getPinCount(); i++) {
             JPin pin = getPin(i);
 
-            if (pin.pinIO == pin.PIN_OUTPUT) {
+            if (pin.pinIO == JPin.PIN_OUTPUT) {
                 pin.object = VSDataType.createPinDataType(pin.dataType);
                 temp[counter++] = pin.object;
             }
@@ -2054,12 +2063,14 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
     }
 
+    @Override
     public void jSetBottomPinsVisible(boolean bVal) {
         if (bottomPinsVisible != bVal) {
             bottomPinsVisible = bVal;
         }
     }
 
+    @Override
     public boolean jIsPathEditing() {
         if (owner.getStatus() instanceof StatusEditPath) {
             StatusEditPath status = (StatusEditPath) owner.getStatus();
@@ -2236,7 +2247,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                 this.remove(pin);
                 pinsLstLeft.remove(pin);
             }
-
         } else {
             int c = value - pinsLeft;
             for (int i = 0; i < c; i++) {
@@ -2273,7 +2283,7 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                 pinsLstRight.add(pin);
             }
         }
-        // die draht.pinIndex f�r die Linken Pins m�ssen auf die neuen Pin Index umgestellt werden!
+        // die draht.pinIndex fr die Linken Pins mssen auf die neuen Pin Index umgestellt werden!
         for (int i = 0; i < pinsLstLeft.size(); i++) {
             JPin pin = (JPin) pinsLstLeft.get(i);
             if (pin.draht != null) {
@@ -2287,7 +2297,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
 
     @Override
     public void jSetTopPins(int value) {
-
         if (value < pinsTop) {
             while (pinsLstTop.size() > value) {
                 int c = pinsLstTop.size() - 1;
@@ -2326,7 +2335,6 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                 this.remove(pin);
                 pinsLstBottom.remove(pin);
             }
-
         } else {
             int c = value - pinsBottom;
             for (int i = 0; i < c; i++) {

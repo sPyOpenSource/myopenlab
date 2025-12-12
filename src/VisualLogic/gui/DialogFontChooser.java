@@ -30,10 +30,11 @@ import javax.swing.text.StyleConstants;
  */
 public class DialogFontChooser extends javax.swing.JDialog
 {
-    private SimpleAttributeSet attributes = new SimpleAttributeSet();
-    public static boolean result=false;
+    private final SimpleAttributeSet attributes = new SimpleAttributeSet();
+    public static boolean result = false;
     public static Font newFont = null;
-    private boolean init=true;
+    private boolean init = true;
+    
     /** Creates new form FrameFontChooser */
     public DialogFontChooser(java.awt.Frame parent, boolean modal)
     {
@@ -203,7 +204,7 @@ public class DialogFontChooser extends javax.swing.JDialog
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
     {//GEN-HEADEREND:event_jButton2ActionPerformed
-        result=true;
+        result = true;
         newFont = jTextPane1.getFont();
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -220,7 +221,6 @@ public class DialogFontChooser extends javax.swing.JDialog
 
     private void fontSizeActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_fontSizeActionPerformed
     {//GEN-HEADEREND:event_fontSizeActionPerformed
-    
         process();
     }//GEN-LAST:event_fontSizeActionPerformed
 
@@ -231,7 +231,7 @@ public class DialogFontChooser extends javax.swing.JDialog
 
     private void process()
     {
-        if (init==false)
+        if (init == false)
         {
         if (!StyleConstants.getFontFamily(attributes).equals(fontName.getSelectedItem())) 
         {
@@ -243,8 +243,7 @@ public class DialogFontChooser extends javax.swing.JDialog
             {
               StyleConstants.setFontSize(attributes,Integer.parseInt(fontSize.getText()));
             }
-        } catch(Exception ex)
-        {
+        } catch(NumberFormatException ex) {
             fontSize.setText("12");
             StyleConstants.setFontSize(attributes,Integer.parseInt(fontSize.getText()));
         }
@@ -280,33 +279,33 @@ public class DialogFontChooser extends javax.swing.JDialog
     private void selectFont(String name)
     {
         String nm;
-        for (int i=0;i<fontName.getItemCount();i++)
+        for (int i = 0; i < fontName.getItemCount(); i++)
         {
-            nm=fontName.getItemAt(i).toString();
+            nm = fontName.getItemAt(i).toString();
             if (name.equalsIgnoreCase(nm))
             {
                 fontName.setSelectedIndex(i);
                 return;
             }
-        }
-            
+        }  
     }
+    
+    @Override
     public void setFont(Font font)
     {        
         selectFont(font.getName());
         fontSize.setText(""+font.getSize());
         fontBold.setSelected(font.isBold());
         fontItalic.setSelected(font.isItalic());
-        jTextPane1.setFont(font);
-                
+        jTextPane1.setFont(font);         
     }
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
     {//GEN-HEADEREND:event_jButton1ActionPerformed
         result=false;
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
     
-   
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JCheckBox fontBold;
     private javax.swing.JCheckBox fontItalic;
