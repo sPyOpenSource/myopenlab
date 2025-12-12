@@ -1,20 +1,20 @@
 /*
-MyOpenLab by Carmelo Salafia www.myopenlab.de
-Copyright (C) 2004  Carmelo Salafia cswi@gmx.de
+ MyOpenLab by Carmelo Salafia www.myopenlab.de
+ Copyright (C) 2004  Carmelo Salafia cswi@gmx.de
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
 package Peditor;
 
@@ -23,6 +23,7 @@ import VisualLogic.ElementProperty;
 import VisualLogic.VMObject;
 import java.awt.Component;
 import java.util.ArrayList;
+
 import javax.swing.DefaultListModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
@@ -33,7 +34,6 @@ import javax.swing.table.DefaultTableModel;
  * @author  Homer
  */
 
-
 class ElementItem
 {
     Element element=null;
@@ -43,6 +43,7 @@ class ElementItem
         this.element=element;
     }
     
+    @Override
     public String toString()
     {
         return element.toString();
@@ -52,9 +53,9 @@ class ElementItem
 public class DialogPropertiesChoice extends javax.swing.JDialog  implements ListSelectionListener
 {
     private PropertyEditor propertyEditor;
-    private VMObject vmobject;  
+    private final VMObject vmobject;  
     private boolean loading=false;
-    private DefaultListModel model = new DefaultListModel();
+    private final DefaultListModel model = new DefaultListModel();
     
     public static boolean result=false;
     public static ArrayList props = new ArrayList();    
@@ -289,7 +290,6 @@ public class DialogPropertiesChoice extends javax.swing.JDialog  implements List
     }//GEN-LAST:event_formWindowClosing
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        
         Element element=(Element)jComboBox1.getSelectedItem();
                 
         if (element!=null && loading==false)
@@ -344,7 +344,6 @@ public class DialogPropertiesChoice extends javax.swing.JDialog  implements List
                 data[1]=elProp.label;
                 tabellenModel.addRow(data);                        
             }
-            
         }
     }
     
@@ -363,14 +362,13 @@ public class DialogPropertiesChoice extends javax.swing.JDialog  implements List
         //jComboBox2.setSelectedIndex(0);        
     }    
     
-    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
     {//GEN-HEADEREND:event_jButton1ActionPerformed
-        
-        result=false;
+        result = false;
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    @Override
     public void valueChanged(ListSelectionEvent e)
     {
         

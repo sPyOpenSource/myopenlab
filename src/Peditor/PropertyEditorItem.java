@@ -92,19 +92,17 @@ public class PropertyEditorItem
         this.element=element;
         this.vmobject=vmobject;      
         
-        label=new JLabel(strLabel);
+        label = new JLabel(strLabel);
         //label.setBorder(new LineBorder(Color.lightGray));
         
         EmptyBorder eBorder = new EmptyBorder(2, 5, 2, 5); // oben, rechts, unten, links 
         LineBorder lBorder = new LineBorder(new Color(180, 180, 180)); 
         label.setBorder(BorderFactory.createCompoundBorder(lBorder, eBorder)); 
 
-        
-        
         label.setBackground(Color.WHITE);
         leftPanel.add(label);
         
-        if (modus==0)
+        if (modus == 0)
         {
             if (value instanceof VSProperties) 
             {
@@ -164,9 +162,9 @@ public class PropertyEditorItem
             }
         } 
                 
-        if (modus==1)
+        if (modus == 1)
         {
-            component=new ReadonlySelector(this,(VSObject)value);
+            component = new ReadonlySelector(this, (VSObject)value);
         }         
         
         component.addFocusListener(new java.awt.event.FocusAdapter() 

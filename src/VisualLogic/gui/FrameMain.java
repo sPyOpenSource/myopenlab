@@ -815,7 +815,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         basis.panelLabel = tabLabel;
 
-        javax.swing.ImageIcon closeXIcon = new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/Cross9x9.png"));
+        javax.swing.ImageIcon closeXIcon = new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/Cross9x9.png"));
         Dimension closeButtonSize;
 
         closeButtonSize = new Dimension(closeXIcon.getIconWidth() + 3, closeXIcon.getIconHeight() + 3);
@@ -826,7 +826,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         tabCloseButton.setPreferredSize(closeButtonSize);
         tabCloseButton.panel = pnl;
 
-        ImageIcon icon = new ImageIcon(getClass().getResource("/Assets/Bilder/16x16/text-x-script.png"));
+        ImageIcon icon = new ImageIcon(assets.getURL("/assets/Bilder/16x16/text-x-script.png"));
         tabLabel.setIcon(icon);
         tabLabel.setBorder(null);
         tab.setBorder(null);

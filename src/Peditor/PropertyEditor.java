@@ -42,6 +42,7 @@ import VisualLogic.variables.VSString;
 import java.util.ArrayList;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.ResourceBundle;
 import javax.swing.*;
 
 interface PEIF {
@@ -573,13 +574,13 @@ class DoubleEditor extends JTextField implements PEIF {
 
         setText("" + referenz.getValue());
         this.addKeyListener(new java.awt.event.KeyAdapter() {
+            @Override
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 if (evt.getKeyCode() == 10) {
                     jchanged();
                 }
             }
         });
-
     }
 
     @Override
@@ -605,9 +606,9 @@ class DoubleEditor extends JTextField implements PEIF {
 
 class IntegerEditor extends JTextField implements PEIF {
 
-    private VSInteger referenz;
-    private int min;
-    private int max;
+    private final VSInteger referenz;
+    private final int min;
+    private final int max;
     public PropertyEditorItem item;
 
     @Override
@@ -635,7 +636,6 @@ class IntegerEditor extends JTextField implements PEIF {
                 }
             }
         });
-
     }
 
     @Override
@@ -716,13 +716,13 @@ class ByteEditor extends JTextField implements PEIF {
 
 class ImageEditor extends JPanel implements PEIF {
 
-    private VSImage referenz;
+    private final VSImage referenz;
     private static String letztesVerzeichniss = ".";
-    private PropertyEditorItem item;
+    private final PropertyEditorItem item;
     private String path = "";
-    private JFrame frame;
-    private JLabel label = new JLabel("   ");
-    private JButton button = new JButton("...");
+    private final JFrame frame;
+    private final JLabel label = new JLabel("   ");
+    private final JButton button = new JButton("...");
 
     @Override
     public Object getReference() {
@@ -806,10 +806,10 @@ class ImageEditor extends JPanel implements PEIF {
 
 class PropertiesEditor extends JButton implements PEIF, ActionListener {
 
-    private VSProperties referenz;
-    private PropertyEditorItem item;
-    private JFrame frame;
-    private VMObject vmobject;
+    private final VSProperties referenz;
+    private final PropertyEditorItem item;
+    private final JFrame frame;
+    private final VMObject vmobject;
 
     @Override
     public Object getReference() {
@@ -857,9 +857,8 @@ class PropertiesEditor extends JButton implements PEIF, ActionListener {
 }
 
 class StringEditor extends JTextField implements PEIF {
-
-    private VSString referenz;
-    private PropertyEditorItem item;
+    private final VSString referenz;
+    private final PropertyEditorItem item;
 
     @Override
     public Object getReference() {
@@ -914,18 +913,18 @@ public class PropertyEditor extends javax.swing.JPanel {
         this.vmobject = element.owner;
         element.initVars();
 
-        addItem(java.util.ResourceBundle.getBundle("Peditor/PropertyEditor").getString("caption"), element.vCaption, 0, 0, true);
-        addItem(java.util.ResourceBundle.getBundle("Peditor/PropertyEditor").getString("Show_Caption"), element.vShowCaption, 0, 0, true);
-        addItem(java.util.ResourceBundle.getBundle("Peditor/PropertyEditor").getString("Left"), element.vLeft, 0, 999999, true);
-        addItem(java.util.ResourceBundle.getBundle("Peditor/PropertyEditor").getString("Top"), element.vTop, 0, 999999, true);
+        addItem(ResourceBundle.getBundle("Peditor/PropertyEditor").getString("caption"), element.vCaption, 0, 0, true);
+        addItem(ResourceBundle.getBundle("Peditor/PropertyEditor").getString("Show_Caption"), element.vShowCaption, 0, 0, true);
+        addItem(ResourceBundle.getBundle("Peditor/PropertyEditor").getString("Left"), element.vLeft, 0, 999999, true);
+        addItem(ResourceBundle.getBundle("Peditor/PropertyEditor").getString("Top"), element.vTop, 0, 999999, true);
 
         if (element.owner == element.owner.owner.getFrontBasis()) {
-            addItem(java.util.ResourceBundle.getBundle("Peditor/PropertyEditor").getString("Visible"), element.vVisible, 0, 0, true);
+            addItem(ResourceBundle.getBundle("Peditor/PropertyEditor").getString("Visible"), element.vVisible, 0, 0, true);
         }
 
         boolean editable = element.isResizable();
-        addItem(java.util.ResourceBundle.getBundle("Peditor/PropertyEditor").getString("Width"), element.vWidth, 0, 99999, editable);
-        addItem(java.util.ResourceBundle.getBundle("Peditor/PropertyEditor").getString("Height"), element.vHeight, 0, 99999, editable);
+        addItem(ResourceBundle.getBundle("Peditor/PropertyEditor").getString("Width"), element.vWidth, 0, 99999, editable);
+        addItem(ResourceBundle.getBundle("Peditor/PropertyEditor").getString("Height"), element.vHeight, 0, 99999, editable);
         //addItem("", new VSNope(), 0, 0);
     }
 
@@ -938,7 +937,6 @@ public class PropertyEditor extends javax.swing.JPanel {
      * Creates new form PropertyEditor
      */
     public PropertyEditor(JFrame frame) {
-
         initComponents();
         this.frame = frame;
         clear();
@@ -978,7 +976,6 @@ public class PropertyEditor extends javax.swing.JPanel {
             }
         });
 
-        jSplitPane1.setBorder(null);
         jSplitPane1.setForeground(new java.awt.Color(250, 250, 150));
         jSplitPane1.setAutoscrolls(true);
         jSplitPane1.setMinimumSize(new java.awt.Dimension(100, 2));
@@ -1062,6 +1059,11 @@ public class PropertyEditor extends javax.swing.JPanel {
                 jComboBox1FocusLost(evt);
             }
         });
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
         rightPanel.add(jComboBox1);
         jComboBox1.setBounds(0, 60, 130, 30);
 
@@ -1090,7 +1092,6 @@ public class PropertyEditor extends javax.swing.JPanel {
     }//GEN-LAST:event_jSplitPane1MouseReleased
 
     private void leftPanelComponentResized(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_leftPanelComponentResized
-
         reorderItems();
     }//GEN-LAST:event_leftPanelComponentResized
 
@@ -1118,12 +1119,16 @@ public class PropertyEditor extends javax.swing.JPanel {
         reorderItems();
     }//GEN-LAST:event_jScrollPane1ComponentResized
 
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+        System.out.println(evt);
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
     public void reorderItems() {
         if (vmobject != null && vmobject.owner.isLoading() == false) {
-            PropertyEditorItem item = null;
             int y = -1;
             for (int i = 0; i < liste.size(); i++) {
-                item = (PropertyEditorItem) liste.get(i);
+                PropertyEditorItem item = (PropertyEditorItem) liste.get(i);
 
                 item.label.setSize(new Dimension(leftPanel.getWidth() + 2, itemHeight));
                 item.label.setFont(Font.getFont("Tahoma"));
