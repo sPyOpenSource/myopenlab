@@ -4,6 +4,7 @@
 [submodule "RaspberryGPIO"]
 	path = distribution/Elements/CircuitElements/Interface/Raspberry_GPIO
 	url = https://github.com/sPyOpenSource/RaspberryGPIO.git
+        branch = AIRobot
 [submodule "MicroPython"]
 	path = distribution/Elements/CircuitElements/Interface/MicroPython
 	url = https://github.com/sPyOpenSource/armOS.git

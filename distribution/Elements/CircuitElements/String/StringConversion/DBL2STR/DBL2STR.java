@@ -21,35 +21,35 @@ package String.StringConversion.DBL2STR;
 //* Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110, USA                  *
 //*****************************************************************************
 
-
 import VisualLogic.*;
 import VisualLogic.variables.*;
 import tools.*;
-
 import java.awt.*;
-import java.awt.event.*;
-
 
 public class DBL2STR extends JVSMain
 {
+    
   private Image image;
   private VSDouble in;
-  private VSString out= new VSString();
+  private final VSString out = new VSString();
 
+  @Override
   public void onDispose()
   {
-    if (image!=null)
+    if (image != null)
     {
       image.flush();
-      image=null;
+      image = null;
     }
   }
   
+  @Override
   public void paint(java.awt.Graphics g)
   {
-    drawImageCentred(g,image);
+    drawImageCentred(g, image);
   }
 
+  @Override
   public void init()
   {
     initPins(0,1,0,1);
@@ -58,39 +58,37 @@ public class DBL2STR extends JVSMain
     element.jSetTopPinsVisible(false);
     element.jSetBottomPinsVisible(false);
 
-    image=element.jLoadImage(element.jGetSourcePath()+"icon.gif");
+    image = element.jLoadImage(element.jGetSourcePath() + "icon.gif");
     
-    setPin(0,ExternalIF.C_STRING,element.PIN_OUTPUT);
-    setPin(1,ExternalIF.C_DOUBLE,element.PIN_INPUT);
+    setPin(0, ExternalIF.C_STRING, ExternalIF.PIN_OUTPUT);
+    setPin(1, ExternalIF.C_DOUBLE, ExternalIF.PIN_INPUT);
     element.jSetPinDescription(0,"Out");
     element.jSetPinDescription(1,"In");
 
     setName("DBL->Str");
   }
   
-
+  @Override
   public void initInputPins()
   {
-    in=(VSDouble)element.getPinInputReference(1);
+    in = (VSDouble)element.getPinInputReference(1);
   }
 
+  @Override
   public void initOutputPins()
   {
     element.setPinOutputReference(0,out);
   }
 
-
-
+  @Override
   public void process()
   {
-    if (in!=null)
+    if (in != null)
     {
-         out.setValue(""+in.getValue());
+         out.setValue("" + in.getValue());
          out.setChanged(true);
          element.notifyPin(0);
     }
   }
 
-
 }
-
