@@ -39,7 +39,6 @@ import java.util.*;
 public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
 {
   private Image image;
-  
   private MyOpenLabDriverIF driver ;
 
   private VS1DByte inBytes;
@@ -47,7 +46,6 @@ public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
   
   // Property
   private VSInteger timeOut = new VSInteger(50);
-  
   private VS1DByte outBytes = new VS1DByte(0);
   private VSBoolean outReceived = new VSBoolean(false);
 
@@ -60,7 +58,6 @@ public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
   private VSInteger stopBits = new VSInteger(2);
 
   private VSComboBox parity=new VSComboBox();
-
 
   public void paint(java.awt.Graphics g)
   {
@@ -305,6 +302,3 @@ public class RS232 extends JVSMain implements MyOpenLabDriverOwnerIF
   }
   
 }
-
-
-

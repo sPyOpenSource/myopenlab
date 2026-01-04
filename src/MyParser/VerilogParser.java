@@ -361,27 +361,32 @@ public class VerilogParser{
      */
     int Convert(String gate)
     {
-        if ("INPUT".equals(gate))
-            return 0;
-        else if ("AND".equals(gate))
-            return 1;
-        else if ("NAND".equals(gate))
-            return 2;
-        else if ("OR".equals(gate))
-            return 3;
-        else if ("NOR".equals(gate))
-            return 4;
-        else if ("XOR".equals(gate))
-            return 5;
-        else if ("XNOR".equals(gate))
-            return 6;
-        else if ("BUF".equals(gate))
-            return 7;
-        else if ("NOT".equals(gate) || "INV".equals(gate))
-            return 8;
-        else if ("I".equals(gate))
-            return 9;
-        else
+        if (null == gate)
             return 10;
+        else switch (gate) {
+            case "INPUT":
+                return 0;
+            case "AND":
+                return 1;
+            case "NAND":
+                return 2;
+            case "OR":
+                return 3;
+            case "NOR":
+                return 4;
+            case "XOR":
+                return 5;
+            case "XNOR":
+                return 6;
+            case "BUF":
+                return 7;
+            case "NOT":
+            case "INV":
+                return 8;
+            case "I":
+                return 9;
+            default:
+                return 10;
+        }
     }
 }
