@@ -1,20 +1,20 @@
 /*
-MyOpenLab by Carmelo Salafia www.myopenlab.de
-Copyright (C) 2004  Carmelo Salafia cswi@gmx.de
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
+ * MyOpenLab by Carmelo Salafia www.myopenlab.de
+ * Copyright (C) 2004  Carmelo Salafia cswi@gmx.de
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
 package MyParser;
 
@@ -169,7 +169,7 @@ public class Parser
           {
               result += ch;
           } else
-          if (!ch.equalsIgnoreCase(" ") )
+          if (!ch.equalsIgnoreCase(" "))
           {
               result += ch;
           }
@@ -207,9 +207,8 @@ public class Parser
     
     private static double fakultaet (double a)
     {
-      double i,r;
-      r = 1.0;
-      for(i = 2 ; i <= a ; i++) {
+      double r = 1.0;
+      for(int i = 2 ; i <= a ; i++) {
         r *= i;
       }
       return r;
@@ -441,28 +440,28 @@ public class Parser
             } else
             if (token.isFunc)
             {
-                if (token.func.equalsIgnoreCase("sin")) return Math.sin(calcDouble(vector)); else
-                if (token.func.equalsIgnoreCase("cos")) return Math.cos(calcDouble(vector)); else
-                if (token.func.equalsIgnoreCase("tan")) return Math.tan(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("sin")) return Math.sin(calcDouble(vector));
+                if (token.func.equalsIgnoreCase("cos")) return Math.cos(calcDouble(vector));
+                if (token.func.equalsIgnoreCase("tan")) return Math.tan(calcDouble(vector));
                     
-                if (token.func.equalsIgnoreCase("asin")) return Math.asin(calcDouble(vector)); else
-                if (token.func.equalsIgnoreCase("acos")) return Math.acos(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("asin")) return Math.asin(calcDouble(vector));
+                if (token.func.equalsIgnoreCase("acos")) return Math.acos(calcDouble(vector));
                 if (token.func.equalsIgnoreCase("atan")) return Math.atan(calcDouble(vector));
 
-                if (token.func.equalsIgnoreCase("sinh")) return Math.sinh(calcDouble(vector)); else
-                if (token.func.equalsIgnoreCase("cosh")) return Math.cosh(calcDouble(vector)); else
-                if (token.func.equalsIgnoreCase("tanh")) return Math.tanh(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("sinh")) return Math.sinh(calcDouble(vector));
+                if (token.func.equalsIgnoreCase("cosh")) return Math.cosh(calcDouble(vector));
+                if (token.func.equalsIgnoreCase("tanh")) return Math.tanh(calcDouble(vector));
                     
-                if (token.func.equalsIgnoreCase("abs")) return Math.abs(calcDouble(vector)); else
-                if (token.func.equalsIgnoreCase("log")) return Math.log10(calcDouble(vector)); else
-                if (token.func.equalsIgnoreCase("ln")) return Math.log(calcDouble(vector)); else
-                if (token.func.equalsIgnoreCase("exp")) return Math.exp(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("abs")) return Math.abs(calcDouble(vector));
+                if (token.func.equalsIgnoreCase("log")) return Math.log10(calcDouble(vector));
+                if (token.func.equalsIgnoreCase("ln")) return Math.log(calcDouble(vector));
+                if (token.func.equalsIgnoreCase("exp")) return Math.exp(calcDouble(vector));
                 
-                if (token.func.equalsIgnoreCase("sqrt")) return Math.sqrt(calcDouble(vector)); else
-                if (token.func.equalsIgnoreCase("round")) return Math.round(calcDouble(vector)); else
-                if (token.func.equalsIgnoreCase("fak")) return fakultaet(calcDouble(vector)); else
-                if (token.func.equalsIgnoreCase("toDeg")) return Math.toDegrees(calcDouble(vector)); else
-                if (token.func.equalsIgnoreCase("toRad")) return Math.toRadians(calcDouble(vector)); else
+                if (token.func.equalsIgnoreCase("sqrt")) return Math.sqrt(calcDouble(vector));
+                if (token.func.equalsIgnoreCase("round")) return Math.round(calcDouble(vector));
+                if (token.func.equalsIgnoreCase("fak")) return fakultaet(calcDouble(vector));
+                if (token.func.equalsIgnoreCase("toDeg")) return Math.toDegrees(calcDouble(vector));
+                if (token.func.equalsIgnoreCase("toRad")) return Math.toRadians(calcDouble(vector));
                 {
                     setErrorMessage("Function " + token.varName + " not found!");
                 }
@@ -493,15 +492,15 @@ public class Parser
     
     private int sucheLinksNachKlammer(ArrayList tokenListe, int pos)
     {
-        int c=0;
-        for (int i=pos;i>=0;i--)
+        int c = 0;
+        for (int i = pos; i >= 0; i--)
         {
-           String str=(String)tokenListe.get(i); 
+           String str = (String)tokenListe.get(i); 
            
            if (str.equals(")")) c++;
            if (str.equals("(")) c--;
            
-           if (c==0)
+           if (c == 0)
            {
              return i;   
            }
@@ -511,17 +510,17 @@ public class Parser
     
     
     /* liefert die anzahl der zuviele oder zu wenige Klammern
-     * zb: wenn eine Klammer nicht geschlossen oder nicht ge�ffnet
+     * zb: wenn eine Klammer nicht geschlossen oder nicht geffnet
      * worden ist
-     * Liefert bei zu viel ge�ffneten Klammern > 0
+     * Liefert bei zu viel geffneten Klammern > 0
      * Liefert bei zu viel geschlossenen Klammern < 0
      */
     private int getKlammerPlus(ArrayList tokenListe)
     {
-        int c=0;
-        for (int i=0;i<tokenListe.size();i++)
+        int c = 0;
+        for (int i = 0; i < tokenListe.size(); i++)
         {
-           String str=(String)tokenListe.get(i);
+           String str = (String)tokenListe.get(i);
            
            if (str.equals("(")) c++;
            if (str.equals(")")) c--;           
@@ -533,25 +532,23 @@ public class Parser
     // bei -5+(-1)  -> 0-5+(0-1)
     private void handleMinusOperator(ArrayList tokenListe)
     {
-       
-        int i=0;
+        int i = 0;
         
-        while(i<tokenListe.size()-1)
+        while(i < tokenListe.size() - 1)
         {
-            String str=(String)tokenListe.get(i);
-            String str2=(String)tokenListe.get(i+1);
+            String str = (String)tokenListe.get(i);
+            String str2 = (String)tokenListe.get(i + 1);
 
-            
             if (str.equals("(") && str2.equals("-"))
             {
-                tokenListe.add(i+1,"0");
+                tokenListe.add(i + 1, "0");
                 i++;
             }
             if (str.equals("-"))
             {
-                if (i==0)
+                if (i == 0)
                 {
-                    tokenListe.add(0,"0");
+                    tokenListe.add(0, "0");
                     i++;
                 }
             }
@@ -561,12 +558,12 @@ public class Parser
 
     public void print()
     {
-        int i=0;
+        int i = 0;
         System.out.println("--------------------------");
-        while(i<mainVector.size())
+        while(i < mainVector.size())
         {
-            String str=(String)mainVector.get(i);
-            System.out.print(str+",");
+            String str = (String)mainVector.get(i);
+            System.out.print(str + ",");
             i++;
         }
         System.out.println();
@@ -575,12 +572,12 @@ public class Parser
     
     private void klammere(ArrayList tokenListe, int ops)
     {
-       boolean inKlammer=false;
-       int i=0;
+       boolean inKlammer = false;
+       int i = 0;
         
-        while(i<tokenListe.size())
+        while(i < tokenListe.size())
         {
-            String str=(String)tokenListe.get(i);
+            String str = (String)tokenListe.get(i);
             
             if (inKlammer==false && str.equalsIgnoreCase("\"")) inKlammer=true;else
             if (inKlammer==true && str.equalsIgnoreCase("\"")) inKlammer=false;
