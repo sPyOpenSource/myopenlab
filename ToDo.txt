@@ -1,8 +1,8 @@
 1. Fix Setter y Getter for Array Type
-Poner en la Ayuda la ubicacin del componente dentro de la paleta de elementos
+Add the component's location within the elements palette to the Help section.
 2. Nodo splitter notifica en proccess error
 Blink Automtico? booleans
-Bombas de Agua
+Water Pumps
 3. Display Analogico media aguja
 Teclado 
 4. Display 7S
@@ -10,7 +10,7 @@ Clima
 Resistencia y quemadores
 Cilindro Neumtico
 Banda Transportadora
-Arreglar ejemplos VectorAndMatrix AppendToFile
+Fix VectorAndMatrix AppendToFile examples
 5. y Server TCP
 6. Servomotor
 7. Ventilador
@@ -50,3 +50,4 @@ Teclado
 Joy stick
 Indicador LCD
 Torniquete
+
