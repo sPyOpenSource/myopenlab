@@ -10,7 +10,7 @@
           </Border>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Serif" size="36" style="3"/>
+          <Font name="Dialog" size="13" style="0"/>
         </Property>
       </Properties>
       <SubComponents>

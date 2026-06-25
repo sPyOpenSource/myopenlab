@@ -1,6 +1,5 @@
 %{
 
-
   package tools;
 
   import java.io.InputStreamReader;
@@ -58,7 +57,7 @@ expr  : expr '+' expr         { code.add("ADD_I");}
       | expr '/' expr         { code.add("DIV_I");}
       | expr '%' expr         { code.add("MOD_I");}
 
-      // Bitweise Verknüpfungen
+      // Bitweise Verknï¿½pfungen
       | expr '&' expr         { code.add("AND");}
       | expr '|' expr         { code.add("OR");}
       | expr '^' expr         { code.add("XOR");}
@@ -102,9 +101,6 @@ prog : expr
      //| IF '(' expr  ')'            { code.add("JMP_IF_FALSE");}
      //| IF '(' expr  ')' '{' prog '}' { code.add("JMP_IF_FALSE"+$1+"-"+$2);}
      //| THEN statement              { code.add("THEN "+$1);}
-
-
-
 
 %%
 

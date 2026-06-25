@@ -76,9 +76,9 @@ public class Parser
     private String errorMessage = "";
     private Basis basis = null;
     
-    private static final int C_DOUBLE = 1;
+    private static final int C_DOUBLE  = 1;
     private static final int C_BOOLEAN = 2;
-    private static final int C_STRING = 3;
+    private static final int C_STRING  = 3;
     private final int modus = C_DOUBLE;
     
     public boolean gleichheitsZeichenGefunden = false;
@@ -227,12 +227,12 @@ public class Parser
             {
                 token.isString=true;
                 token.setValue(new String(str.substring(1,str.length()-1)));
-            }else
+            } else
             if (isBoolean(str)) 
             {
                 boolean x = Boolean.parseBoolean(str);
                 token.setValue(x);
-            }else                       
+            } else                       
             if (isNum(str)) 
             {
                 double x = Double.parseDouble(str);
@@ -322,7 +322,7 @@ public class Parser
 
     private boolean calcBoolean(ArrayList vector)
     {
-        boolean value=false;
+        boolean value = false;
         
         while (pointer<vector.size())
         {
@@ -330,7 +330,7 @@ public class Parser
             
             if (token.value instanceof Boolean)
             {
-                value=((Boolean)token.value);            
+                value = (Boolean)token.value;            
                 if (token.isVar)
                 {
                     lastVar=token.varName;
@@ -346,35 +346,32 @@ public class Parser
                 if (token.op.equals("=")) 
                 {                   
                     
-                    OpenVariable v=getVarByName(lastVar);  
-                    if (v!=null)
+                    OpenVariable v = getVarByName(lastVar);  
+                    if (v != null)
                     {
-                        if (v.global==false)
+                        if (v.global == false)
                         {
                           flowInfo.setVariable(lastVar,calcBoolean(vector)); 
-                        } else
-                        {
+                        } else {
                           basis.vsSetVar(lastVar,calcBoolean(vector));    
                         }
-                    } else
-                    {
-                        setErrorMessage("Variable "+lastVar+" not exist!");                        
+                    } else {
+                        setErrorMessage("Variable " + lastVar + " not exist!");                        
                     }
              
                 } else
-                if (token.op.equals("&")) return value && calcBoolean(vector);else
-                if (token.op.equals("=")) 
+                if (token.op.equals("&")) return value && calcBoolean(vector); else
+                if (token.op.equals("==")) 
                 {                    
-                    return (value==calcBoolean(vector));
+                    return (value == calcBoolean(vector));
                 } else                    
-                if (token.op.equals("|")) return value || calcBoolean(vector);else
+                if (token.op.equals("|")) return value || calcBoolean(vector); else
                 if (token.op.equals("!")) return !calcBoolean(vector); else
                 {
-                    setErrorMessage("Operator "+token.varName+" not found!");
+                    setErrorMessage("Operator " + token.varName + " not found!");
                 }
-            } else
-            {
-                setErrorMessage(token.varName+" not found!");
+            } else {
+                setErrorMessage(token.varName + " not found!");
             }            
         }
         
@@ -383,7 +380,7 @@ public class Parser
     
     private double calcDouble(ArrayList vector)
     {
-        double num=0.0;
+        double num = 0.0;
         
         while (pointer<vector.size())
         {
@@ -393,10 +390,10 @@ public class Parser
             {
                 if (token.value instanceof Double)
                 {
-                    num=((Double)token.value);                    
+                    num = (Double)token.value;                    
                     if (token.isVar)
                     {
-                        lastVar=token.varName;
+                        lastVar = token.varName;
                     }                    
                 }                
             } else

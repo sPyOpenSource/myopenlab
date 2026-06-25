@@ -28,7 +28,6 @@ import VisualLogic.variables.VS2DInteger;
 import VisualLogic.variables.VS2DString;
 
 public class OpenVariable {
-
     public String name;
     public int datatype;
 

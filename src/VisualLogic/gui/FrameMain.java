@@ -2059,27 +2059,27 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         jPanelMainToolsMenuAndDebugTime = new javax.swing.JPanel();
         jToolBar_MainToolbar = new javax.swing.JToolBar();
-        jButtonNewProject_A = new javax.swing.JButton();
-        jButtonOpenProject_B = new javax.swing.JButton();
-        jButtonSave_C = new javax.swing.JButton();
-        jButtonUndo_D = new javax.swing.JButton();
-        jButtonRedo_E = new javax.swing.JButton();
-        jButtonRefreshVM_F = new javax.swing.JButton();
-        jButtonOptions_G = new javax.swing.JButton();
-        jButtonVariables_H = new javax.swing.JButton();
-        jButtonWireLegends_I = new javax.swing.JButton();
-        jButtonStart_J = new javax.swing.JButton();
-        jButtonDebug_K = new javax.swing.JButton();
-        jButtonStop_L = new javax.swing.JButton();
-        jButtonPause_M = new javax.swing.JButton();
-        jButtonResume_N = new javax.swing.JButton();
-        jButtonStep_O = new javax.swing.JButton();
-        jButtonAnalogWindow_P = new javax.swing.JButton();
-        jButtonDigitalWindow_Q = new javax.swing.JButton();
-        jButtonTestPointWin_R = new javax.swing.JButton();
-        jButtonConsoleOut_S = new javax.swing.JButton();
-        jButtonRepository_T = new javax.swing.JButton();
-        jButtonAbout_U = new javax.swing.JButton();
+        jButtonNewProject_A = new ModernToolBarButton("");
+        jButtonOpenProject_B = new ModernToolBarButton("");
+        jButtonSave_C = new ModernToolBarButton("");
+        jButtonUndo_D = new ModernToolBarButton("");
+        jButtonRedo_E = new ModernToolBarButton("");
+        jButtonRefreshVM_F = new ModernToolBarButton("");
+        jButtonOptions_G = new ModernToolBarButton("");
+        jButtonVariables_H = new ModernToolBarButton("");
+        jButtonWireLegends_I = new ModernToolBarButton("");
+        jButtonStart_J = new ModernToolBarButton("");
+        jButtonDebug_K = new ModernToolBarButton("");
+        jButtonStop_L = new ModernToolBarButton("");
+        jButtonPause_M = new ModernToolBarButton("");
+        jButtonResume_N = new ModernToolBarButton("");
+        jButtonStep_O = new ModernToolBarButton("");
+        jButtonAnalogWindow_P = new ModernToolBarButton("");
+        jButtonDigitalWindow_Q = new ModernToolBarButton("");
+        jButtonTestPointWin_R = new ModernToolBarButton("");
+        jButtonConsoleOut_S = new ModernToolBarButton("");
+        jButtonRepository_T = new ModernToolBarButton("");
+        jButtonAbout_U = new ModernToolBarButton("");
         jPanelDebugTimeSettings = new javax.swing.JPanel();
         jLabelDebugDelay = new javax.swing.JLabel();
         jSpinnerDebugDelayTime = new javax.swing.JSpinner();
@@ -2234,6 +2234,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             }
         });
         jToolBar_MainToolbar.add(jButtonSave_C);
+        jToolBar_MainToolbar.add(new ToolBarSeparator());
 
         jButtonUndo_D.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/edit-undo.png"))); // NOI18N
         jButtonUndo_D.setToolTipText(bundle.getString("Rückgängig")); // NOI18N
@@ -2256,6 +2257,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             }
         });
         jToolBar_MainToolbar.add(jButtonRedo_E);
+        jToolBar_MainToolbar.add(new ToolBarSeparator());
 
         jButtonRefreshVM_F.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/view-refresh.png"))); // NOI18N
         jButtonRefreshVM_F.setToolTipText(bundle.getString("Reload VM")); // NOI18N
@@ -2300,6 +2302,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             }
         });
         jToolBar_MainToolbar.add(jButtonWireLegends_I);
+        jToolBar_MainToolbar.add(new ToolBarSeparator());
 
         jButtonStart_J.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/play24.gif"))); // NOI18N
         jButtonStart_J.setToolTipText(bundle.getString("Start_VM")); // NOI18N
@@ -2366,6 +2369,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             }
         });
         jToolBar_MainToolbar.add(jButtonStep_O);
+        jToolBar_MainToolbar.add(new ToolBarSeparator());
 
         jButtonAnalogWindow_P.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/graphDouble.gif"))); // NOI18N
         jButtonAnalogWindow_P.setToolTipText(bundle.getString("NumerikGraphWindow")); // NOI18N
@@ -2410,6 +2414,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             }
         });
         jToolBar_MainToolbar.add(jButtonConsoleOut_S);
+        jToolBar_MainToolbar.add(new ToolBarSeparator());
 
         jButtonRepository_T.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/storage24x24.png"))); // NOI18N
         jButtonRepository_T.setText(bundle.getString("FrameMain.jButtonRepository_T.text")); // NOI18N
@@ -2683,7 +2688,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         getContentPane().add(jSplitPane3, java.awt.BorderLayout.CENTER);
 
         jMenuBar_MainMenuBar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jMenuBar_MainMenuBar.setFont(new java.awt.Font("Serif", 3, 36)); // NOI18N
+        jMenuBar_MainMenuBar.setFont(new java.awt.Font("Dialog", 0, 13)); // NOI18N
 
         jmnuDatei.setMnemonic('D');
         jmnuDatei.setText(bundle.getString("Datei")); // NOI18N
