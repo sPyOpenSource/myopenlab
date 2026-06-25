@@ -280,7 +280,6 @@ public class ElementPalette extends javax.swing.JPanel {
 
             if (rootPath.contains("CircuitElements")) {
                 basis.elementPaletteCircuitElementsOldPath = path;
-
             } else {
                 basis.elementPaletteFrontElementsOldPath = path;
             }
