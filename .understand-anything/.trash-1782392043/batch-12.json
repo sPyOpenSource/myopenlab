@@ -1,0 +1,57 @@
+{
+  "batchIndex": 12,
+  "nodes": [
+    {
+      "id": "file:MyGraph/FrameMain.form",
+      "type": "file",
+      "name": "FrameMain.form",
+      "filePath": "MyGraph/FrameMain.form",
+      "summary": "NetBeans form definition for MyGraph main frame window",
+      "tags": ["form", "swing", "netbeans", "frame"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:MyGraph/GraphBackground.form",
+      "type": "file",
+      "name": "GraphBackground.form",
+      "filePath": "MyGraph/GraphBackground.form",
+      "summary": "NetBeans form definition for GraphBackground panel with custom painting support",
+      "tags": ["form", "swing", "netbeans", "panel", "graph"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:MyGraph/MyGraph.form",
+      "type": "file",
+      "name": "MyGraph.form",
+      "filePath": "MyGraph/MyGraph.form",
+      "summary": "NetBeans form definition for MyGraph main graph component with complex nested panel layout",
+      "tags": ["form", "swing", "netbeans", "graph", "panel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:MyGraph/MyGraphX.form",
+      "type": "file",
+      "name": "MyGraphX.form",
+      "filePath": "MyGraph/MyGraphX.form",
+      "summary": "NetBeans form definition for MyGraphX extended graph component",
+      "tags": ["form", "swing", "netbeans", "graph", "extended"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:MyGraph/MyGraph.form",
+      "target": "file:MyGraph/GraphBackground.form",
+      "type": "contains",
+      "weight": 0.8,
+      "label": "contains background panel"
+    },
+    {
+      "source": "file:MyGraph/MyGraphX.form",
+      "target": "file:MyGraph/MyGraph.form",
+      "type": "extends",
+      "weight": 0.7,
+      "label": "extends base graph"
+    }
+  ]
+}

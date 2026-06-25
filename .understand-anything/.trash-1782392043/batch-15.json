@@ -1,0 +1,278 @@
+{
+  "batchIndex": 15,
+  "nodes": [
+    {
+      "id": "file:VisualLogic/NOI18N/DialogPassword_en_US.properties",
+      "type": "file",
+      "name": "DialogPassword_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogPassword_en_US.properties",
+      "summary": "US English language properties for Password dialog",
+      "tags": ["properties", "i18n", "english", "config", "dialog", "password"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogPassword_es_ES.properties",
+      "type": "file",
+      "name": "DialogPassword_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogPassword_es_ES.properties",
+      "summary": "Spanish language properties for Password dialog",
+      "tags": ["properties", "i18n", "spanish", "config", "dialog", "password"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogProjectProperties.properties",
+      "type": "file",
+      "name": "DialogProjectProperties.properties",
+      "filePath": "VisualLogic/NOI18N/DialogProjectProperties.properties",
+      "summary": "German language properties for Project Properties dialog",
+      "tags": ["properties", "i18n", "german", "config", "dialog", "project"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogProjectProperties_en_US.properties",
+      "type": "file",
+      "name": "DialogProjectProperties_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogProjectProperties_en_US.properties",
+      "summary": "US English language properties for Project Properties dialog",
+      "tags": ["properties", "i18n", "english", "config", "dialog", "project"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogProjectProperties_es_ES.properties",
+      "type": "file",
+      "name": "DialogProjectProperties_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogProjectProperties_es_ES.properties",
+      "summary": "Spanish language properties for Project Properties dialog",
+      "tags": ["properties", "i18n", "spanish", "config", "dialog", "project"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogRename.properties",
+      "type": "file",
+      "name": "DialogRename.properties",
+      "filePath": "VisualLogic/NOI18N/DialogRename.properties",
+      "summary": "German language properties for Rename dialog",
+      "tags": ["properties", "i18n", "german", "config", "dialog", "rename"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogRename_en_US.properties",
+      "type": "file",
+      "name": "DialogRename_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogRename_en_US.properties",
+      "summary": "US English language properties for Rename dialog",
+      "tags": ["properties", "i18n", "english", "config", "dialog", "rename"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogRename_es_ES.properties",
+      "type": "file",
+      "name": "DialogRename_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogRename_es_ES.properties",
+      "summary": "Spanish language properties for Rename dialog",
+      "tags": ["properties", "i18n", "spanish", "config", "dialog", "rename"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogSaveAsModul.properties",
+      "type": "file",
+      "name": "DialogSaveAsModul.properties",
+      "filePath": "VisualLogic/NOI18N/DialogSaveAsModul.properties",
+      "summary": "German language properties for Save As Module dialog",
+      "tags": ["properties", "i18n", "german", "config", "dialog", "module", "save"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogSaveAsModul_en_US.properties",
+      "type": "file",
+      "name": "DialogSaveAsModul_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogSaveAsModul_en_US.properties",
+      "summary": "US English language properties for Save As Module dialog",
+      "tags": ["properties", "i18n", "english", "config", "dialog", "module", "save"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogSaveAsModul_es_ES.properties",
+      "type": "file",
+      "name": "DialogSaveAsModul_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogSaveAsModul_es_ES.properties",
+      "summary": "Spanish language properties for Save As Module dialog",
+      "tags": ["properties", "i18n", "spanish", "config", "dialog", "module", "save"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogSubVMAssistent.properties",
+      "type": "file",
+      "name": "DialogSubVMAssistent.properties",
+      "filePath": "VisualLogic/NOI18N/DialogSubVMAssistent.properties",
+      "summary": "German language properties for SubVM Assistant dialog",
+      "tags": ["properties", "i18n", "german", "config", "dialog", "subvm", "assistant"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogSubVMAssistent_en_US.properties",
+      "type": "file",
+      "name": "DialogSubVMAssistent_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogSubVMAssistent_en_US.properties",
+      "summary": "US English language properties for SubVM Assistant dialog",
+      "tags": ["properties", "i18n", "english", "config", "dialog", "subvm", "assistant"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogSubVMAssistent_es_ES.properties",
+      "type": "file",
+      "name": "DialogSubVMAssistent_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogSubVMAssistent_es_ES.properties",
+      "summary": "Spanish language properties for SubVM Assistant dialog",
+      "tags": ["properties", "i18n", "spanish", "config", "dialog", "subvm", "assistant"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogUpdate.properties",
+      "type": "file",
+      "name": "DialogUpdate.properties",
+      "filePath": "VisualLogic/NOI18N/DialogUpdate.properties",
+      "summary": "German language properties for Update dialog",
+      "tags": ["properties", "i18n", "german", "config", "dialog", "update"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogUpdate_en_US.properties",
+      "type": "file",
+      "name": "DialogUpdate_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogUpdate_en_US.properties",
+      "summary": "US English language properties for Update dialog",
+      "tags": ["properties", "i18n", "english", "config", "dialog", "update"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogUpdate_es_ES.properties",
+      "type": "file",
+      "name": "DialogUpdate_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogUpdate_es_ES.properties",
+      "summary": "Spanish language properties for Update dialog",
+      "tags": ["properties", "i18n", "spanish", "config", "dialog", "update"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogVMName.properties",
+      "type": "file",
+      "name": "DialogVMName.properties",
+      "filePath": "VisualLogic/NOI18N/DialogVMName.properties",
+      "summary": "German language properties for VM Name dialog",
+      "tags": ["properties", "i18n", "german", "config", "dialog", "vm", "name"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogVMName_en_US.properties",
+      "type": "file",
+      "name": "DialogVMName_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogVMName_en_US.properties",
+      "summary": "US English language properties for VM Name dialog",
+      "tags": ["properties", "i18n", "english", "config", "dialog", "vm", "name"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogVMName_es_ES.properties",
+      "type": "file",
+      "name": "DialogVMName_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogVMName_es_ES.properties",
+      "summary": "Spanish language properties for VM Name dialog",
+      "tags": ["properties", "i18n", "spanish", "config", "dialog", "vm", "name"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:VisualLogic/NOI18N/DialogPassword_en_US.properties",
+      "target": "file:VisualLogic/NOI18N/DialogPassword_es_ES.properties",
+      "type": "localization",
+      "weight": 0.8,
+      "label": "parallel localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogProjectProperties.properties",
+      "target": "file:VisualLogic/NOI18N/DialogProjectProperties_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogProjectProperties.properties",
+      "target": "file:VisualLogic/NOI18N/DialogProjectProperties_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogRename.properties",
+      "target": "file:VisualLogic/NOI18N/DialogRename_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogRename.properties",
+      "target": "file:VisualLogic/NOI18N/DialogRename_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogSaveAsModul.properties",
+      "target": "file:VisualLogic/NOI18N/DialogSaveAsModul_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogSaveAsModul.properties",
+      "target": "file:VisualLogic/NOI18N/DialogSaveAsModul_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogSubVMAssistent.properties",
+      "target": "file:VisualLogic/NOI18N/DialogSubVMAssistent_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogSubVMAssistent.properties",
+      "target": "file:VisualLogic/NOI18N/DialogSubVMAssistent_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogUpdate.properties",
+      "target": "file:VisualLogic/NOI18N/DialogUpdate_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogUpdate.properties",
+      "target": "file:VisualLogic/NOI18N/DialogUpdate_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogVMName.properties",
+      "target": "file:VisualLogic/NOI18N/DialogVMName_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogVMName.properties",
+      "target": "file:VisualLogic/NOI18N/DialogVMName_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization"
+    }
+  ]
+}

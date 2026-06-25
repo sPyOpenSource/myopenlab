@@ -1,0 +1,142 @@
+{
+  "batchIndex": 22,
+  "nodes": [
+    {
+      "id": "file:VisualLogic/variables/VS2DByte.java",
+      "type": "file",
+      "name": "VS2DByte.java",
+      "filePath": "VisualLogic/variables/VS2DByte.java",
+      "summary": "2-dimensional byte array variable type with columns/rows dimensions and serialization",
+      "tags": ["variable", "2d-array", "byte", "data-type"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS2DDouble.java",
+      "type": "file",
+      "name": "VS2DDouble.java",
+      "filePath": "VisualLogic/variables/VS2DDouble.java",
+      "summary": "2-dimensional double array variable type with columns/rows dimensions and serialization",
+      "tags": ["variable", "2d-array", "double", "data-type"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS2DInteger.java",
+      "type": "file",
+      "name": "VS2DInteger.java",
+      "filePath": "VisualLogic/variables/VS2DInteger.java",
+      "summary": "2-dimensional integer array variable type with columns/rows dimensions and serialization",
+      "tags": ["variable", "2d-array", "integer", "data-type"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS2DString.java",
+      "type": "file",
+      "name": "VS2DString.java",
+      "filePath": "VisualLogic/variables/VS2DString.java",
+      "summary": "2-dimensional string array variable type with columns/rows dimensions and serialization",
+      "tags": ["variable", "2d-array", "string", "data-type"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSBoolean.java",
+      "type": "file",
+      "name": "VSBoolean.java",
+      "filePath": "VisualLogic/variables/VSBoolean.java",
+      "summary": "Single boolean variable type with comparison operators and XML serialization",
+      "tags": ["variable", "boolean", "data-type", "primitive"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSByte.java",
+      "type": "file",
+      "name": "VSByte.java",
+      "filePath": "VisualLogic/variables/VSByte.java",
+      "summary": "Single byte variable type with unsigned/signed conversion utilities and serialization",
+      "tags": ["variable", "byte", "data-type", "primitive"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSCanvas.java",
+      "type": "file",
+      "name": "VSCanvas.java",
+      "filePath": "VisualLogic/variables/VSCanvas.java",
+      "summary": "Canvas drawing variable type with image, transformation (translation, rotation, scale, shear), stroke/fill colors, and anti-aliasing properties",
+      "tags": ["variable", "canvas", "drawing", "graphics", "data-type"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSColor.java",
+      "type": "file",
+      "name": "VSColor.java",
+      "filePath": "VisualLogic/variables/VSColor.java",
+      "summary": "Color variable type wrapping java.awt.Color with RGB serialization to stream and XML",
+      "tags": ["variable", "color", "data-type", "awt"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:VisualLogic/variables/VS2DByte.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS2DDouble.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS2DInteger.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS2DString.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSBoolean.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSByte.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSByte.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports VisualLogic.Tools"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSCanvas.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSColor.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "batchIndex": 3,
+  "nodes": [
+    {
+      "id": "file:src/BasisStatus/StatusAddElement.java",
+      "type": "file",
+      "name": "StatusAddElement.java",
+      "filePath": "src/BasisStatus/StatusAddElement.java",
+      "summary": "State handler for adding new elements to the circuit with drag-and-drop positioning",
+      "tags": ["state-machine", "element", "interaction", "circuit"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusAddWire.java",
+      "type": "file",
+      "name": "StatusAddWire.java",
+      "filePath": "src/BasisStatus/StatusAddWire.java",
+      "summary": "State handler for drawing wires between element pins",
+      "tags": ["state-machine", "wire", "interaction", "circuit"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusGummiBandX.java",
+      "type": "file",
+      "name": "StatusGummiBandX.java",
+      "filePath": "src/BasisStatus/StatusGummiBandX.java",
+      "summary": "State handler for rubber-band selection of multiple elements",
+      "tags": ["state-machine", "selection", "interaction"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "file",
+      "name": "StatusBasisIF.java",
+      "filePath": "src/BasisStatus/StatusBasisIF.java",
+      "summary": "Interface defining state handler methods for circuit interaction",
+      "tags": ["interface", "state-machine", "contract"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusIdle.java",
+      "type": "file",
+      "name": "StatusIdle.java",
+      "filePath": "src/BasisStatus/StatusIdle.java",
+      "summary": "Default idle state handler with no active interaction",
+      "tags": ["state-machine", "idle", "default"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusRun.java",
+      "type": "file",
+      "name": "StatusRun.java",
+      "filePath": "src/BasisStatus/StatusRun.java",
+      "summary": "State handler for simulation/runtime mode",
+      "tags": ["state-machine", "simulation", "runtime"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusMoveElements.java",
+      "type": "file",
+      "name": "StatusMoveElements.java",
+      "filePath": "src/BasisStatus/StatusMoveElements.java",
+      "summary": "State handler for moving selected elements with mouse drag",
+      "tags": ["state-machine", "move", "interaction", "elements"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusResizeElement.java",
+      "type": "file",
+      "name": "StatusResizeElement.java",
+      "filePath": "src/BasisStatus/StatusResizeElement.java",
+      "summary": "State handler for resizing elements with drag handles",
+      "tags": ["state-machine", "resize", "interaction"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusResizeBasis.java",
+      "type": "file",
+      "name": "StatusResizeBasis.java",
+      "filePath": "src/BasisStatus/StatusResizeBasis.java",
+      "summary": "State handler for resizing the circuit canvas",
+      "tags": ["state-machine", "resize", "canvas"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusEditPath.java",
+      "type": "file",
+      "name": "StatusEditPath.java",
+      "filePath": "src/BasisStatus/StatusEditPath.java",
+      "summary": "State handler for editing wire path points",
+      "tags": ["state-machine", "path", "wire", "editing"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusEditPathAddMode.java",
+      "type": "file",
+      "name": "StatusEditPathAddMode.java",
+      "filePath": "src/BasisStatus/StatusEditPathAddMode.java",
+      "summary": "State handler for adding new points to wire paths",
+      "tags": ["state-machine", "path", "add", "wire"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusEditPathEditMode.java",
+      "type": "file",
+      "name": "StatusEditPathEditMode.java",
+      "filePath": "src/BasisStatus/StatusEditPathEditMode.java",
+      "summary": "State handler for editing existing wire path points",
+      "tags": ["state-machine", "path", "edit", "wire"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusEditPath_ADD_CurveTo.java",
+      "type": "file",
+      "name": "StatusEditPath_ADD_CurveTo.java",
+      "filePath": "src/BasisStatus/StatusEditPath_ADD_CurveTo.java",
+      "summary": "State handler for adding curve points to wire paths",
+      "tags": ["state-machine", "path", "curve", "wire"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusLineHoritontal.java",
+      "type": "file",
+      "name": "StatusLineHoritontal.java",
+      "filePath": "src/BasisStatus/StatusLineHoritontal.java",
+      "summary": "State handler for drawing horizontal wire segments",
+      "tags": ["state-machine", "wire", "horizontal", "drawing"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusLineVertikal.java",
+      "type": "file",
+      "name": "StatusLineVertikal.java",
+      "filePath": "src/BasisStatus/StatusLineVertikal.java",
+      "summary": "State handler for drawing vertical wire segments",
+      "tags": ["state-machine", "wire", "vertical", "drawing"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusNone.java",
+      "type": "file",
+      "name": "StatusNone.java",
+      "filePath": "src/BasisStatus/StatusNone.java",
+      "summary": "Null state handler for initialization or disabled states",
+      "tags": ["state-machine", "null", "initialization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusNOP.java",
+      "type": "file",
+      "name": "StatusNOP.java",
+      "filePath": "src/BasisStatus/StatusNOP.java",
+      "summary": "No-operation state handler that ignores all inputs",
+      "tags": ["state-machine", "nop", "ignore"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusGummiBand.java",
+      "type": "file",
+      "name": "StatusGummiBand.java",
+      "filePath": "src/BasisStatus/StatusGummiBand.java",
+      "summary": "State handler for rubber-band selection with visual feedback",
+      "tags": ["state-machine", "selection", "rubber-band"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusGummiBandXBackIF.java",
+      "type": "file",
+      "name": "StatusGummiBandXBackIF.java",
+      "filePath": "src/BasisStatus/StatusGummiBandXBackIF.java",
+      "summary": "Interface for rubber-band selection completion callback",
+      "tags": ["interface", "callback", "selection"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/BasisStatus/frmElementInfo.java",
+      "type": "file",
+      "name": "frmElementInfo.java",
+      "filePath": "src/BasisStatus/frmElementInfo.java",
+      "summary": "Dialog displaying element information and properties",
+      "tags": ["gui", "dialog", "element-info", "properties"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/BasisStatus/StatusAddElement.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusAddWire.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusAddWire.java",
+      "target": "file:src/BasisStatus/StatusLineHoritontal.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusAddWire.java",
+      "target": "file:src/BasisStatus/StatusLineVertikal.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusGummiBandX.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusGummiBandX.java",
+      "target": "file:src/BasisStatus/StatusGummiBandXBackIF.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusIdle.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusRun.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusMoveElements.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusResizeElement.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusResizeBasis.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusEditPath.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusEditPath.java",
+      "target": "file:src/BasisStatus/StatusEditPathAddMode.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusEditPath.java",
+      "target": "file:src/BasisStatus/StatusEditPathEditMode.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusEditPath.java",
+      "target": "file:src/BasisStatus/StatusEditPath_ADD_CurveTo.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusEditPathAddMode.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusEditPathEditMode.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusEditPath_ADD_CurveTo.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusLineHoritontal.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusLineVertikal.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusNone.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusNOP.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusGummiBand.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    }
+  ]
+}

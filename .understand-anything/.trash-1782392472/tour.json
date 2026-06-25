@@ -1,0 +1,62 @@
+[
+  {
+    "order": 1,
+    "title": "Foundation: The Variable System",
+    "description": "Start with VSObject — the root of the type hierarchy that represents all data flowing through circuits. Every integer, boolean, string, color, and image in MyOpenLab is a subclass of this base class. Understanding it first is essential because elements communicate by passing VSObject instances through wires.",
+    "nodeIds": ["file:VisualLogic/variables/VSObject.java"]
+  },
+  {
+    "order": 2,
+    "title": "Core Engine: VMObject — The Simulation Canvas",
+    "description": "VMObject is the heart of MyOpenLab. It manages the canvas where circuit elements are placed and connected by wires. It handles element lifecycle, wire routing, drag-and-drop, printing, and runs the simulation loop. Notice how it imports StatusIdle and other status classes — the state machine delegates mouse/keyboard events to these states.",
+    "nodeIds": ["file:VisualLogic/VMObject.java"]
+  },
+  {
+    "order": 3,
+    "title": "Core Engine: The State Machine (StatusIdle)",
+    "description": "StatusIdle implements StatusBasisIF and handles the default editor interaction mode — selecting elements, opening context menus, editing wires, and aligning to grid. It is the most complex state in the BasisStatus package. Each Status* class encapsulates a distinct editing mode (adding elements, moving, resizing, drawing wires, running simulation).",
+    "nodeIds": ["file:BasisStatus/StatusIdle.java"]
+  },
+  {
+    "order": 4,
+    "title": "Parser: Expression Evaluation",
+    "description": "The Parser tokenizes and evaluates mathematical expressions written by users inside element code. It supports arithmetic, boolean logic, comparisons, and function calls — bridging the visual circuit diagram and the underlying computation. It is used at runtime to execute user-defined logic for each element step.",
+    "nodeIds": ["file:MyParser/Parser.java"]
+  },
+  {
+    "order": 5,
+    "title": "Components: The Code Editor",
+    "description": "PanelEditor provides the in-app Java code editor with syntax highlighting (via JavaSyntaxDocument), undo/redo, and search. Users write element behavior here. It connects the visual design to the underlying Java code that elements execute during simulation.",
+    "nodeIds": ["file:CodeEditor/PanelEditor.java"]
+  },
+  {
+    "order": 6,
+    "title": "Components: Graph Rendering",
+    "description": "GraphRenderer is a JPanel that draws oscilloscope-style waveforms and XY plots. It supports 14 different point/line styles (points, lines, histograms, inverted variants) and manages circular buffers for real-time data. It is the visualization backend for the Graph element.",
+    "nodeIds": ["file:MyGraph/GraphRenderer.java"]
+  },
+  {
+    "order": 7,
+    "title": "Components: Property Editor",
+    "description": "PropertyEditor dynamically builds UI controls for any VSObject — checkboxes for VSBoolean, color pickers for VSColor, combo boxes for VSComboBox, file choosers for VSFile, etc. It inspects an element's propertyList and generates the appropriate editor items. This is how element configuration is exposed to users.",
+    "nodeIds": ["file:Peditor/PropertyEditor.java"]
+  },
+  {
+    "order": 8,
+    "title": "Components: Project File Browser",
+    "description": "ProjectPalette renders a JTree of the user's project directory, with custom icons for folders, elements, and files. It reads info.xml files for captions and notifies FrameMain when the user selects a project or file. This is the entry point for loading and managing circuits.",
+    "nodeIds": ["file:projectfolder/ProjectPalette.java"]
+  },
+  {
+    "order": 9,
+    "title": "UI Composition: The Editor Panel",
+    "description": "VMEditorPanel is the central editing workspace that hosts a VMObject canvas, a property editor, and an element palette. It manages tab switching between circuit and front panel views, and delegates element placement to the active VMObject. It bridges the visual editor with the rest of the application.",
+    "nodeIds": ["file:VisualLogic/gui/VMEditorPanel.java"]
+  },
+  {
+    "order": 10,
+    "title": "UI Composition: The Main Window",
+    "description": "FrameMain is the application entry point — a JFrame with split panes for the project palette, editor panel, and documentation. It wires up menus, toolbars, file dialogs, compilation, and coordinates all major subsystems. Start here when exploring how the application boots and how all components connect.",
+    "nodeIds": ["file:VisualLogic/gui/FrameMain.java"]
+  }
+]

@@ -1,0 +1,217 @@
+{
+  "batchIndex": 2,
+  "nodes": [
+    {
+      "id": "file:src/MyGraph/MyGraph.java",
+      "type": "file",
+      "name": "MyGraph.java",
+      "filePath": "src/MyGraph/MyGraph.java",
+      "summary": "Main graph panel component with X/Y axis configuration, grid settings, and rendering options",
+      "tags": ["gui", "graph", "chart", "visualization"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/MyParser/OpenVariable.java",
+      "type": "file",
+      "name": "OpenVariable.java",
+      "filePath": "src/MyParser/OpenVariable.java",
+      "summary": "Variable representation supporting multiple data types (double, string, boolean, integer) with 1D/2D array support",
+      "tags": ["parser", "variable", "data-type"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/MyParser/Parser.java",
+      "type": "file",
+      "name": "Parser.java",
+      "filePath": "src/MyParser/Parser.java",
+      "summary": "Expression parser supporting mathematical operations, string concatenation, boolean logic, and built-in functions",
+      "tags": ["parser", "expression", "evaluator", "math"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/MyGraph/MyGraphX.java",
+      "type": "file",
+      "name": "MyGraphX.java",
+      "filePath": "src/MyGraph/MyGraphX.java",
+      "summary": "Extended graph component with multiple renderers and coordinate display",
+      "tags": ["gui", "graph", "renderer", "visualization"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/MyGraph/Turn90Label.java",
+      "type": "file",
+      "name": "Turn90Label.java",
+      "filePath": "src/MyGraph/Turn90Label.java",
+      "summary": "Custom label component that renders text rotated 90 degrees",
+      "tags": ["gui", "component", "rotation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/MyGraph/GraphRenderer.java",
+      "type": "file",
+      "name": "GraphRenderer.java",
+      "filePath": "src/MyGraph/GraphRenderer.java",
+      "summary": "Graph rendering engine for line charts with configurable point types and buffer management",
+      "tags": ["renderer", "graph", "chart", "line-chart"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/MyGraph/GraphBackground.java",
+      "type": "file",
+      "name": "GraphBackground.java",
+      "filePath": "src/MyGraph/GraphBackground.java",
+      "summary": "Background rendering for graph with grid lines, coordinates display, and auto-scaling",
+      "tags": ["renderer", "graph", "grid", "background"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/MyGraph/XAxis.java",
+      "type": "file",
+      "name": "XAxis.java",
+      "filePath": "src/MyGraph/XAxis.java",
+      "summary": "X-axis rendering and configuration for graph display",
+      "tags": ["renderer", "graph", "axis", "x-axis"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/MyGraph/YAxis.java",
+      "type": "file",
+      "name": "YAxis.java",
+      "filePath": "src/MyGraph/YAxis.java",
+      "summary": "Y-axis rendering and configuration for graph display",
+      "tags": ["renderer", "graph", "axis", "y-axis"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/MyGraph/BackGraphXY.java",
+      "type": "file",
+      "name": "BackGraphXY.java",
+      "filePath": "src/MyGraph/BackGraphXY.java",
+      "summary": "XY graph background with coordinate tracking and mouse interaction",
+      "tags": ["renderer", "graph", "xy-plot", "interaction"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/MyGraph/FrameMain.java",
+      "type": "file",
+      "name": "FrameMain.java",
+      "filePath": "src/MyGraph/FrameMain.java",
+      "summary": "Main frame for graph display with rendering controls and data management",
+      "tags": ["gui", "frame", "graph", "main"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/MyParser/Expression.java",
+      "type": "file",
+      "name": "Expression.java",
+      "filePath": "src/MyParser/Expression.java",
+      "summary": "Expression representation for parsed mathematical or logical expressions",
+      "tags": ["parser", "expression", "data-class"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/MyParser/VerilogParser.java",
+      "type": "file",
+      "name": "VerilogParser.java",
+      "filePath": "src/MyParser/VerilogParser.java",
+      "summary": "Parser for Verilog hardware description language syntax",
+      "tags": ["parser", "verilog", "hardware", "hdl"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/MyParser/Keywords.java",
+      "type": "file",
+      "name": "Keywords.java",
+      "filePath": "src/MyParser/Keywords.java",
+      "summary": "Keyword definitions and constants for parser",
+      "tags": ["parser", "keywords", "constants"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/MyGraph/MyGraph.java",
+      "target": "file:src/MyGraph/MyGraphX.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/MyGraph/MyGraph.java",
+      "target": "file:src/MyGraph/Turn90Label.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/MyGraph/MyGraphX.java",
+      "target": "file:src/MyGraph/GraphRenderer.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/MyGraph/MyGraphX.java",
+      "target": "file:src/MyGraph/GraphBackground.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/MyGraph/MyGraphX.java",
+      "target": "file:src/MyGraph/XAxis.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/MyGraph/MyGraphX.java",
+      "target": "file:src/MyGraph/YAxis.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/MyGraph/MyGraphX.java",
+      "target": "file:src/MyGraph/BackGraphXY.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/MyParser/Parser.java",
+      "target": "file:src/MyParser/OpenVariable.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/MyParser/Parser.java",
+      "target": "file:src/MyParser/Expression.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/MyParser/VerilogParser.java",
+      "target": "file:src/MyParser/Keywords.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/MyGraph/FrameMain.java",
+      "target": "file:src/MyGraph/MyGraph.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/MyGraph/FrameMain.java",
+      "target": "file:src/MyGraph/GraphRenderer.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports"
+    }
+  ]
+}

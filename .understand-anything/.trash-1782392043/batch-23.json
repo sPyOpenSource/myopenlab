@@ -1,0 +1,156 @@
+{
+  "batchIndex": 23,
+  "nodes": [
+    {
+      "id": "file:VisualLogic/variables/VSColorAdvanced.java",
+      "type": "file",
+      "name": "VSColorAdvanced.java",
+      "filePath": "VisualLogic/variables/VSColorAdvanced.java",
+      "summary": "Advanced color variable supporting flat, linear gradient, and radial gradient fill modes with transparency",
+      "tags": ["variable", "color", "gradient", "graphics", "data-type"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSComboBox.java",
+      "type": "file",
+      "name": "VSComboBox.java",
+      "filePath": "VisualLogic/variables/VSComboBox.java",
+      "summary": "ComboBox/dropdown variable type with string item list and selected index serialization",
+      "tags": ["variable", "combobox", "ui", "data-type"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSDouble.java",
+      "type": "file",
+      "name": "VSDouble.java",
+      "filePath": "VisualLogic/variables/VSDouble.java",
+      "summary": "Single double variable type with comparison operators and XML/stream serialization",
+      "tags": ["variable", "double", "data-type", "primitive"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSFile.java",
+      "type": "file",
+      "name": "VSFile.java",
+      "filePath": "VisualLogic/variables/VSFile.java",
+      "summary": "File path variable type with file extension list and description metadata",
+      "tags": ["variable", "file", "data-type", "io"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSFlowInfo.java",
+      "type": "file",
+      "name": "VSFlowInfo.java",
+      "filePath": "VisualLogic/variables/VSFlowInfo.java",
+      "summary": "Flow control variable holding parameter definitions, variable list, tags hashtable, return value, source element, and script bindings",
+      "tags": ["variable", "flow-control", "scripting", "bindings", "data-type"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSFont.java",
+      "type": "file",
+      "name": "VSFont.java",
+      "filePath": "VisualLogic/variables/VSFont.java",
+      "summary": "Font variable type wrapping java.awt.Font with name, style, size serialization to stream and XML",
+      "tags": ["variable", "font", "data-type", "awt"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSGroup.java",
+      "type": "file",
+      "name": "VSGroup.java",
+      "filePath": "VisualLogic/variables/VSGroup.java",
+      "summary": "Group variable type containing an ArrayList of elements for grouping related data",
+      "tags": ["variable", "group", "collection", "data-type"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSImage.java",
+      "type": "file",
+      "name": "VSImage.java",
+      "filePath": "VisualLogic/variables/VSImage.java",
+      "summary": "Image variable type supporting file/URL loading, byte array serialization, and async image loading via ImageLoader",
+      "tags": ["variable", "image", "graphics", "data-type", "io"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:VisualLogic/variables/VSColorAdvanced.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSColorAdvanced.java",
+      "target": "file:CustomColorPicker/RoundGradientPaint.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports CustomColorPicker.RoundGradientPaint"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSComboBox.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSDouble.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSFile.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSFlowInfo.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSFlowInfo.java",
+      "target": "file:MyParser/OpenVariable.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports MyParser.OpenVariable"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSFlowInfo.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports VisualLogic.ExternalIF"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSFont.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSGroup.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSImage.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    }
+  ]
+}

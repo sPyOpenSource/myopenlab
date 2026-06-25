@@ -1,0 +1,4784 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 428,
+  "totalBatches": 27,
+  "exportsByPath": {
+    "CodeEditor/DialogSearch.java": [],
+    "CodeEditor/ExpandingArray.java": [],
+    "CodeEditor/JavaSyntaxDocument.java": [],
+    "CodeEditor/MyEditorPane.java": [],
+    "CodeEditor/PanelEditor.java": [],
+    "CodeEditor/Scanner.java": [],
+    "CodeEditor/frmCodeEditor.java": [],
+    "CodeEditor/frmDefinitonDefEditor.java": [],
+    "tools/BinAnzeige.java": [],
+    "tools/BinSchalter.java": [],
+    "tools/CustomAnalogComp_1_JV.java": [],
+    "tools/CustomAnalogComp_2_JV.java": [],
+    "tools/Expression.java": [],
+    "tools/Gatter.java": [],
+    "tools/Gatter2.java": [],
+    "tools/Gatter3.java": [],
+    "tools/GatterProperties.java": [],
+    "tools/JVSMain.java": [],
+    "tools/MCUMainFlow.java": [],
+    "tools/MainFlow.java": [],
+    "tools/Properties.java": [],
+    "tools/Scanner.java": [],
+    "tools/ZipFiles.java": [],
+    "SimpleFileSystem/FileSystemInput.java": [],
+    "SimpleFileSystem/FileSystemOutput.java": [],
+    "SimpleFileSystem/SFileDescriptor.java": [],
+    "SimpleFileSystem/Test.java": [],
+    "BasisStatus/StatusAddElement.java": [],
+    "BasisStatus/StatusAddWire.java": [],
+    "BasisStatus/StatusBasisIF.java": [],
+    "BasisStatus/StatusEditPath.java": [],
+    "BasisStatus/StatusEditPathAddMode.java": [],
+    "BasisStatus/StatusEditPathEditMode.java": [],
+    "BasisStatus/StatusEditPath_ADD_CurveTo.java": [],
+    "BasisStatus/StatusGummiBand.java": [],
+    "BasisStatus/StatusGummiBandX.java": [],
+    "BasisStatus/StatusGummiBandXBackIF.java": [],
+    "BasisStatus/StatusIdle.java": [],
+    "BasisStatus/StatusLineHoritontal.java": [],
+    "BasisStatus/StatusLineVertikal.java": [],
+    "BasisStatus/StatusMoveElements.java": [],
+    "BasisStatus/StatusNOP.java": [],
+    "BasisStatus/StatusNone.java": [],
+    "BasisStatus/StatusResizeBasis.java": [],
+    "BasisStatus/StatusResizeElement.java": [],
+    "BasisStatus/StatusRun.java": [],
+    "BasisStatus/frmElementInfo.java": [],
+    "CustomColorPicker/ColorPanel.java": [],
+    "CustomColorPicker/CustomColorPicker.java": [],
+    "CustomColorPicker/RoundGradientPaint.java": [],
+    "MyParser/Expression.java": [],
+    "MyParser/Keywords.java": [],
+    "MyParser/OpenVariable.java": [],
+    "MyParser/Parser.java": [],
+    "MyParser/VerilogParser.java": [],
+    "CreateNewGroup/DialogCreateNewGroup.java": [],
+    "CreateNewGroup/ImageComponent.java": [],
+    "CreateNewGroup/SummaryCart.java": [],
+    "Peditor/BasisProperty.java": [],
+    "Peditor/DialogPropertiesChoice.java": [],
+    "Peditor/PropertyEditor.java": [],
+    "Peditor/PropertyEditorItem.java": [],
+    "SimulatorSocket/Client.java": [],
+    "SimulatorSocket/FrameMain.java": [],
+    "SimulatorSocket/MyOpenLabOwnerIF.java": [],
+    "SimulatorSocket/Server.java": [],
+    "de/myopenlab/update/DeletePackages.java": [],
+    "de/myopenlab/update/IniFile.java": [],
+    "de/myopenlab/update/InstallPackages.java": [],
+    "de/myopenlab/update/MyOpenLabRow.java": [],
+    "de/myopenlab/update/MyTableModel.java": [],
+    "de/myopenlab/update/MyTableRow.java": [],
+    "de/myopenlab/update/TestItem.java": [],
+    "de/myopenlab/update/Tools2.java": [],
+    "de/myopenlab/update/UnzipFiles.java": [],
+    "de/myopenlab/update/frmUpdate.java": [],
+    "projectfolder/FrameMain.java": [],
+    "projectfolder/MyNode.java": [],
+    "projectfolder/ProjectPalette.java": [],
+    "projectfolder/ProjectPaletteIF.java": [],
+    "MyGraph/BackGraphXY.java": [],
+    "MyGraph/FrameMain.java": [],
+    "MyGraph/GraphBackground.java": [],
+    "MyGraph/GraphRenderer.java": [],
+    "MyGraph/MyGraph.java": [],
+    "MyGraph/MyGraphX.java": [],
+    "MyGraph/Turn90Label.java": [],
+    "MyGraph/XAxis.java": [],
+    "MyGraph/YAxis.java": [],
+    "VisualLogic/Basis.java": [],
+    "VisualLogic/BasisPanel.java": [],
+    "VisualLogic/ColorRenderer.java": [],
+    "VisualLogic/ColoredListCell.java": [],
+    "VisualLogic/CommandIF.java": [],
+    "VisualLogic/DFProperties.java": [],
+    "VisualLogic/DataEntry.java": [],
+    "VisualLogic/DataHistory.java": [],
+    "VisualLogic/Draht.java": [],
+    "VisualLogic/DriverInfo.java": [],
+    "VisualLogic/DriverManager.java": [],
+    "VisualLogic/DummyElement.java": [],
+    "VisualLogic/Element.java": [],
+    "VisualLogic/ElementActionEvent.java": [],
+    "VisualLogic/ElementIF.java": [],
+    "VisualLogic/ElementPaletteIF.java": [],
+    "VisualLogic/ElementProperty.java": [],
+    "VisualLogic/ElementPropertyX.java": [],
+    "VisualLogic/ExtensionFileFilter.java": [],
+    "VisualLogic/ExternalIF.java": [],
+    "VisualLogic/FontChooser.java": [],
+    "VisualLogic/JPin.java": [],
+    "VisualLogic/JavaFileView.java": [],
+    "VisualLogic/Line.java": [],
+    "VisualLogic/LineInfo.java": [],
+    "VisualLogic/Loader.java": [],
+    "VisualLogic/MyImage.java": [],
+    "VisualLogic/MyMenuItem.java": [],
+    "VisualLogic/MyOpenLabDriverIF.java": [],
+    "VisualLogic/MyOpenLabDriverOwnerIF.java": [],
+    "VisualLogic/NewJavaCompSettings.java": [],
+    "VisualLogic/NewSerialDriverManager.java": [],
+    "VisualLogic/OnlyDirectoryFilter.java": [],
+    "VisualLogic/PanelIF.java": [],
+    "VisualLogic/PathPoint.java": [],
+    "VisualLogic/PinIF.java": [],
+    "VisualLogic/PinsSettings.java": [],
+    "VisualLogic/PinsSettingsItem.java": [],
+    "VisualLogic/PolyPoint.java": [],
+    "VisualLogic/ProjectProperties.java": [],
+    "VisualLogic/SearchElement.java": [],
+    "VisualLogic/SearchFoundItem.java": [],
+    "VisualLogic/Settings.java": [],
+    "VisualLogic/Shape.java": [],
+    "VisualLogic/SimpleFilter.java": [],
+    "VisualLogic/SubElement.java": [],
+    "VisualLogic/Tools.java": [],
+    "VisualLogic/Transparency.java": [],
+    "VisualLogic/VMEditorPanelIF.java": [],
+    "VisualLogic/VMObject.java": [],
+    "VisualLogic/VMObjectIF.java": [],
+    "VisualLogic/VSBasisIF.java": [],
+    "VisualLogic/VSDataType.java": [],
+    "VisualLogic/Version.java": [],
+    "VisualLogic/VisualObject.java": [],
+    "VisualLogic/VlogicFilter.java": [],
+    "VisualLogic/Wrapper.java": [],
+    "VisualLogic/XMLSerializer.java": [],
+    "VisualLogic/variables/VS1DBoolean.java": [],
+    "VisualLogic/variables/VS1DByte.java": [],
+    "VisualLogic/variables/VS1DDouble.java": [],
+    "VisualLogic/variables/VS1DInteger.java": [],
+    "VisualLogic/variables/VS1DString.java": [],
+    "VisualLogic/variables/VS2DBoolean.java": [],
+    "VisualLogic/variables/VS2DByte.java": [],
+    "VisualLogic/variables/VS2DDouble.java": [],
+    "VisualLogic/variables/VS2DInteger.java": [],
+    "VisualLogic/variables/VS2DString.java": [],
+    "VisualLogic/variables/VSBoolean.java": [],
+    "VisualLogic/variables/VSByte.java": [],
+    "VisualLogic/variables/VSCanvas.java": [],
+    "VisualLogic/variables/VSColor.java": [],
+    "VisualLogic/variables/VSColorAdvanced.java": [],
+    "VisualLogic/variables/VSComboBox.java": [],
+    "VisualLogic/variables/VSDouble.java": [],
+    "VisualLogic/variables/VSFile.java": [],
+    "VisualLogic/variables/VSFlowInfo.java": [],
+    "VisualLogic/variables/VSFont.java": [],
+    "VisualLogic/variables/VSGroup.java": [],
+    "VisualLogic/variables/VSImage.java": [],
+    "VisualLogic/variables/VSImage24.java": [],
+    "VisualLogic/variables/VSInteger.java": [],
+    "VisualLogic/variables/VSObjRef.java": [],
+    "VisualLogic/variables/VSObject.java": [],
+    "VisualLogic/variables/VSProperties.java": [],
+    "VisualLogic/variables/VSPropertyDialog.java": [],
+    "VisualLogic/variables/VSString.java": [],
+    "VisualLogic/variables/VSserialPort.java": [],
+    "VisualLogic/gui/DialogAddEditvariable.java": [],
+    "VisualLogic/gui/DialogDistributionAssistent.java": [],
+    "VisualLogic/gui/DialogElementSearchAssistent.java": [],
+    "VisualLogic/gui/DialogFontChooser.java": [],
+    "VisualLogic/gui/DialogLanguage.java": [],
+    "VisualLogic/gui/DialogLicence.java": [],
+    "VisualLogic/gui/DialogLupe.java": [],
+    "VisualLogic/gui/DialogNewJavaComponentAssistent.java": [],
+    "VisualLogic/gui/DialogNewProject.java": [],
+    "VisualLogic/gui/DialogOptions.java": [],
+    "VisualLogic/gui/DialogPassword.java": [],
+    "VisualLogic/gui/DialogProjectProperties.java": [],
+    "VisualLogic/gui/DialogRename.java": [],
+    "VisualLogic/gui/DialogSaveAsModul.java": [],
+    "VisualLogic/gui/DialogSubVMAssistent.java": [],
+    "VisualLogic/gui/DialogTranslateForm.java": [],
+    "VisualLogic/gui/DialogUpdate.java": [],
+    "VisualLogic/gui/DialogUserdefinedElementsHome.java": [],
+    "VisualLogic/gui/DialogVMName.java": [],
+    "VisualLogic/gui/DialogVariableWatcher.java": [],
+    "VisualLogic/gui/DialogVariables.java": [],
+    "VisualLogic/gui/DialogWait.java": [],
+    "VisualLogic/gui/ElementPalette.java": [],
+    "VisualLogic/gui/FrameBooleanGraph.java": [],
+    "VisualLogic/gui/FrameCode.java": [],
+    "VisualLogic/gui/FrameConsoleOutput.java": [],
+    "VisualLogic/gui/FrameDoc.java": [],
+    "VisualLogic/gui/FrameDoubleGraph.java": [],
+    "VisualLogic/gui/FrameErrorWarnings.java": [],
+    "VisualLogic/gui/FrameImageViewer.java": [],
+    "VisualLogic/gui/FrameInfo.java": [],
+    "VisualLogic/gui/FrameMain.java": [],
+    "VisualLogic/gui/FrameRunning.java": [],
+    "VisualLogic/gui/FrmTestpoints.java": [],
+    "VisualLogic/gui/ModernToolBarButton.java": [],
+    "VisualLogic/gui/PanelDokumentation.java": [],
+    "VisualLogic/gui/PanelImage.java": [],
+    "VisualLogic/gui/SelectionPane.java": [],
+    "VisualLogic/gui/SubDialog.java": [],
+    "VisualLogic/gui/ToolBarSeparator.java": [],
+    "VisualLogic/gui/VMEditorPanel.java": [],
+    "VisualLogic/gui/VMProperties.java": [],
+    "VisualLogic/gui/frmDTLengend.java": []
+  },
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "CodeEditor/frmDefinitonDefEditor.java",
+          "language": "java",
+          "sizeLines": 376,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/DFProperties.java",
+            "VisualLogic/MyImage.java",
+            "VisualLogic/Tools.java"
+          ]
+        },
+        {
+          "path": "CreateNewGroup/DialogCreateNewGroup.java",
+          "language": "java",
+          "sizeLines": 876,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/DFProperties.java",
+            "VisualLogic/gui/DialogSaveAsModul.java",
+            "VisualLogic/gui/FrameMain.java",
+            "VisualLogic/Tools.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/DFProperties.java",
+          "language": "java",
+          "sizeLines": 42,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/DriverInfo.java",
+          "language": "java",
+          "sizeLines": 34,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/JavaFileView.java",
+          "language": "java",
+          "sizeLines": 70,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/MyImage.java",
+          "language": "java",
+          "sizeLines": 112,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/OnlyDirectoryFilter.java",
+          "language": "java",
+          "sizeLines": 46,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/ProjectProperties.java",
+          "language": "java",
+          "sizeLines": 31,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/Settings.java",
+          "language": "java",
+          "sizeLines": 761,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/Tools.java",
+          "language": "java",
+          "sizeLines": 1621,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/gui/DialogWait.java",
+            "VisualLogic/gui/FrameImageViewer.java",
+            "de/myopenlab/update/frmUpdate.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/Version.java",
+          "language": "java",
+          "sizeLines": 31,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogAddEditvariable.java",
+          "language": "java",
+          "sizeLines": 297,
+          "fileCategory": "code",
+          "importMap": [
+            "MyParser/OpenVariable.java",
+            "VisualLogic/Tools.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/DialogDistributionAssistent.java",
+          "language": "java",
+          "sizeLines": 355,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/OnlyDirectoryFilter.java",
+            "VisualLogic/ProjectProperties.java",
+            "VisualLogic/Tools.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/DialogElementSearchAssistent.java",
+          "language": "java",
+          "sizeLines": 252,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Tools.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/DialogNewProject.java",
+          "language": "java",
+          "sizeLines": 394,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/JavaFileView.java",
+            "VisualLogic/Tools.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/DialogOptions.java",
+          "language": "java",
+          "sizeLines": 756,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Tools.java",
+            "VisualLogic/Settings.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/DialogPassword.java",
+          "language": "java",
+          "sizeLines": 168,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Tools.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/DialogProjectProperties.java",
+          "language": "java",
+          "sizeLines": 190,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Tools.java",
+            "VisualLogic/ProjectProperties.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/DialogSaveAsModul.java",
+          "language": "java",
+          "sizeLines": 951,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogUpdate.java",
+          "language": "java",
+          "sizeLines": 416,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Tools.java",
+            "VisualLogic/Version.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/DialogWait.java",
+          "language": "java",
+          "sizeLines": 171,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/ElementPalette.java",
+          "language": "java",
+          "sizeLines": 1123,
+          "fileCategory": "code",
+          "importMap": [
+            "CreateNewGroup/DialogCreateNewGroup.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/FrameDoc.java",
+          "language": "java",
+          "sizeLines": 124,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Element.java",
+            "VisualLogic/MyImage.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/FrameImageViewer.java",
+          "language": "java",
+          "sizeLines": 80,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/MyImage.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/FrameInfo.java",
+          "language": "java",
+          "sizeLines": 573,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Tools.java",
+            "VisualLogic/Version.java",
+            "VisualLogic/DriverInfo.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/PanelDokumentation.java",
+          "language": "java",
+          "sizeLines": 416,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Element.java",
+            "VisualLogic/MyImage.java"
+          ]
+        },
+        {
+          "path": "de/myopenlab/update/Tools2.java",
+          "language": "java",
+          "sizeLines": 63,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Settings.java"
+          ]
+        },
+        {
+          "path": "de/myopenlab/update/frmUpdate.java",
+          "language": "java",
+          "sizeLines": 1655,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/DFProperties.java",
+            "VisualLogic/gui/DialogSaveAsModul.java",
+            "VisualLogic/gui/FrameMain.java",
+            "VisualLogic/Tools.java",
+            "CreateNewGroup/DialogCreateNewGroup.java",
+            "projectfolder/MyNode.java",
+            "tools/ZipFiles.java"
+          ]
+        },
+        {
+          "path": "projectfolder/MyNode.java",
+          "language": "java",
+          "sizeLines": 47,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "tools/ZipFiles.java",
+          "language": "java",
+          "sizeLines": 109,
+          "fileCategory": "code",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "CodeEditor/frmDefinitonDefEditor.java": [
+          "VisualLogic/DFProperties.java",
+          "VisualLogic/MyImage.java",
+          "VisualLogic/Tools.java"
+        ],
+        "CreateNewGroup/DialogCreateNewGroup.java": [
+          "VisualLogic/DFProperties.java",
+          "VisualLogic/gui/DialogSaveAsModul.java",
+          "VisualLogic/gui/FrameMain.java",
+          "VisualLogic/Tools.java"
+        ],
+        "VisualLogic/DFProperties.java": [],
+        "VisualLogic/DriverInfo.java": [],
+        "VisualLogic/JavaFileView.java": [],
+        "VisualLogic/MyImage.java": [],
+        "VisualLogic/OnlyDirectoryFilter.java": [],
+        "VisualLogic/ProjectProperties.java": [],
+        "VisualLogic/Settings.java": [],
+        "VisualLogic/Tools.java": [
+          "VisualLogic/gui/DialogWait.java",
+          "VisualLogic/gui/FrameImageViewer.java",
+          "de/myopenlab/update/frmUpdate.java"
+        ],
+        "VisualLogic/Version.java": [],
+        "VisualLogic/gui/DialogAddEditvariable.java": [
+          "MyParser/OpenVariable.java",
+          "VisualLogic/Tools.java"
+        ],
+        "VisualLogic/gui/DialogDistributionAssistent.java": [
+          "VisualLogic/OnlyDirectoryFilter.java",
+          "VisualLogic/ProjectProperties.java",
+          "VisualLogic/Tools.java"
+        ],
+        "VisualLogic/gui/DialogElementSearchAssistent.java": [
+          "VisualLogic/Tools.java"
+        ],
+        "VisualLogic/gui/DialogNewProject.java": [
+          "VisualLogic/JavaFileView.java",
+          "VisualLogic/Tools.java"
+        ],
+        "VisualLogic/gui/DialogOptions.java": [
+          "VisualLogic/Tools.java",
+          "VisualLogic/Settings.java"
+        ],
+        "VisualLogic/gui/DialogPassword.java": [
+          "VisualLogic/Tools.java"
+        ],
+        "VisualLogic/gui/DialogProjectProperties.java": [
+          "VisualLogic/Tools.java",
+          "VisualLogic/ProjectProperties.java"
+        ],
+        "VisualLogic/gui/DialogSaveAsModul.java": [],
+        "VisualLogic/gui/DialogUpdate.java": [
+          "VisualLogic/Tools.java",
+          "VisualLogic/Version.java"
+        ],
+        "VisualLogic/gui/DialogWait.java": [],
+        "VisualLogic/gui/ElementPalette.java": [
+          "CreateNewGroup/DialogCreateNewGroup.java"
+        ],
+        "VisualLogic/gui/FrameDoc.java": [
+          "VisualLogic/Element.java",
+          "VisualLogic/MyImage.java"
+        ],
+        "VisualLogic/gui/FrameImageViewer.java": [
+          "VisualLogic/MyImage.java"
+        ],
+        "VisualLogic/gui/FrameInfo.java": [
+          "VisualLogic/Tools.java",
+          "VisualLogic/Version.java",
+          "VisualLogic/DriverInfo.java"
+        ],
+        "VisualLogic/gui/PanelDokumentation.java": [
+          "VisualLogic/Element.java",
+          "VisualLogic/MyImage.java"
+        ],
+        "de/myopenlab/update/Tools2.java": [
+          "VisualLogic/Settings.java"
+        ],
+        "de/myopenlab/update/frmUpdate.java": [
+          "VisualLogic/DFProperties.java",
+          "VisualLogic/gui/DialogSaveAsModul.java",
+          "VisualLogic/gui/FrameMain.java",
+          "VisualLogic/Tools.java",
+          "CreateNewGroup/DialogCreateNewGroup.java",
+          "projectfolder/MyNode.java",
+          "tools/ZipFiles.java"
+        ],
+        "projectfolder/MyNode.java": [],
+        "tools/ZipFiles.java": []
+      },
+      "neighborMap": {
+        "CreateNewGroup/DialogCreateNewGroup.java": [
+          {
+            "path": "VisualLogic/gui/FrameMain.java",
+            "batchIndex": 5,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/Tools.java": [
+          {
+            "path": "BasisStatus/StatusLineHoritontal.java",
+            "batchIndex": 6,
+            "symbols": []
+          },
+          {
+            "path": "BasisStatus/StatusLineVertikal.java",
+            "batchIndex": 6,
+            "symbols": []
+          },
+          {
+            "path": "projectfolder/ProjectPalette.java",
+            "batchIndex": 5,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/gui/DialogAddEditvariable.java": [
+          {
+            "path": "MyParser/OpenVariable.java",
+            "batchIndex": 2,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/gui/DialogWait.java": [
+          {
+            "path": "VisualLogic/VMObject.java",
+            "batchIndex": 3,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/gui/FrameDoc.java": [
+          {
+            "path": "VisualLogic/Element.java",
+            "batchIndex": 3,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/gui/PanelDokumentation.java": [
+          {
+            "path": "VisualLogic/Element.java",
+            "batchIndex": 3,
+            "symbols": []
+          }
+        ],
+        "de/myopenlab/update/frmUpdate.java": [
+          {
+            "path": "VisualLogic/gui/FrameMain.java",
+            "batchIndex": 5,
+            "symbols": []
+          }
+        ],
+        "projectfolder/MyNode.java": [
+          {
+            "path": "VisualLogic/gui/FrameMain.java",
+            "batchIndex": 5,
+            "symbols": []
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": "MyGraph/MyGraph.java",
+          "language": "java",
+          "sizeLines": 178,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "MyParser/OpenVariable.java",
+          "language": "java",
+          "sizeLines": 164,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/variables/VS1DBoolean.java",
+            "VisualLogic/variables/VS1DDouble.java",
+            "VisualLogic/variables/VS1DInteger.java",
+            "VisualLogic/variables/VS1DString.java",
+            "VisualLogic/variables/VS2DBoolean.java",
+            "VisualLogic/variables/VS2DDouble.java",
+            "VisualLogic/variables/VS2DInteger.java",
+            "VisualLogic/variables/VS2DString.java"
+          ]
+        },
+        {
+          "path": "MyParser/Parser.java",
+          "language": "java",
+          "sizeLines": 929,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Basis.java",
+            "VisualLogic/variables/VSFlowInfo.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/Basis.java",
+          "language": "java",
+          "sizeLines": 2270,
+          "fileCategory": "code",
+          "importMap": [
+            "MyParser/OpenVariable.java",
+            "MyParser/Parser.java",
+            "Peditor/PropertyEditor.java",
+            "SimpleFileSystem/FileSystemInput.java",
+            "SimpleFileSystem/FileSystemOutput.java",
+            "VisualLogic/variables/VS1DDouble.java",
+            "VisualLogic/variables/VSBoolean.java",
+            "VisualLogic/variables/VSColor.java",
+            "VisualLogic/variables/VSComboBox.java",
+            "VisualLogic/variables/VSDouble.java",
+            "VisualLogic/variables/VSFlowInfo.java",
+            "VisualLogic/variables/VSImage.java",
+            "VisualLogic/variables/VSInteger.java",
+            "VisualLogic/variables/VSObject.java",
+            "VisualLogic/variables/VSString.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/BasisPanel.java",
+          "language": "java",
+          "sizeLines": 52,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/DataEntry.java",
+          "language": "java",
+          "sizeLines": 40,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/variables/VSObject.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/ElementIF.java",
+          "language": "java",
+          "sizeLines": 101,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/variables/VSFlowInfo.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/VSBasisIF.java",
+          "language": "java",
+          "sizeLines": 92,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/variables/VSFlowInfo.java",
+            "VisualLogic/variables/VSObject.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/DialogLupe.java",
+          "language": "java",
+          "sizeLines": 123,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Basis.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/DialogVariableWatcher.java",
+          "language": "java",
+          "sizeLines": 114,
+          "fileCategory": "code",
+          "importMap": [
+            "MyParser/OpenVariable.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/DialogVariables.java",
+          "language": "java",
+          "sizeLines": 256,
+          "fileCategory": "code",
+          "importMap": [
+            "MyParser/OpenVariable.java",
+            "VisualLogic/Basis.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/FrameBooleanGraph.java",
+          "language": "java",
+          "sizeLines": 410,
+          "fileCategory": "code",
+          "importMap": [
+            "MyGraph/MyGraph.java",
+            "VisualLogic/Basis.java",
+            "VisualLogic/Element.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/FrameConsoleOutput.java",
+          "language": "java",
+          "sizeLines": 116,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Basis.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/FrameDoubleGraph.java",
+          "language": "java",
+          "sizeLines": 477,
+          "fileCategory": "code",
+          "importMap": [
+            "MyGraph/MyGraph.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/FrameRunning.java",
+          "language": "java",
+          "sizeLines": 275,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Basis.java",
+            "VisualLogic/BasisPanel.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/variables/VS1DBoolean.java",
+          "language": "java",
+          "sizeLines": 129,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VS1DDouble.java",
+          "language": "java",
+          "sizeLines": 144,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VS1DInteger.java",
+          "language": "java",
+          "sizeLines": 130,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VS1DString.java",
+          "language": "java",
+          "sizeLines": 161,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VS2DBoolean.java",
+          "language": "java",
+          "sizeLines": 169,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VS2DDouble.java",
+          "language": "java",
+          "sizeLines": 170,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VS2DInteger.java",
+          "language": "java",
+          "sizeLines": 169,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VS2DString.java",
+          "language": "java",
+          "sizeLines": 179,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSFlowInfo.java",
+          "language": "java",
+          "sizeLines": 204,
+          "fileCategory": "code",
+          "importMap": [
+            "MyParser/OpenVariable.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/variables/VSObject.java",
+          "language": "java",
+          "sizeLines": 106,
+          "fileCategory": "code",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "MyGraph/MyGraph.java": [],
+        "MyParser/OpenVariable.java": [
+          "VisualLogic/variables/VS1DBoolean.java",
+          "VisualLogic/variables/VS1DDouble.java",
+          "VisualLogic/variables/VS1DInteger.java",
+          "VisualLogic/variables/VS1DString.java",
+          "VisualLogic/variables/VS2DBoolean.java",
+          "VisualLogic/variables/VS2DDouble.java",
+          "VisualLogic/variables/VS2DInteger.java",
+          "VisualLogic/variables/VS2DString.java"
+        ],
+        "MyParser/Parser.java": [
+          "VisualLogic/Basis.java",
+          "VisualLogic/variables/VSFlowInfo.java"
+        ],
+        "VisualLogic/Basis.java": [
+          "MyParser/OpenVariable.java",
+          "MyParser/Parser.java",
+          "Peditor/PropertyEditor.java",
+          "SimpleFileSystem/FileSystemInput.java",
+          "SimpleFileSystem/FileSystemOutput.java",
+          "VisualLogic/variables/VS1DDouble.java",
+          "VisualLogic/variables/VSBoolean.java",
+          "VisualLogic/variables/VSColor.java",
+          "VisualLogic/variables/VSComboBox.java",
+          "VisualLogic/variables/VSDouble.java",
+          "VisualLogic/variables/VSFlowInfo.java",
+          "VisualLogic/variables/VSImage.java",
+          "VisualLogic/variables/VSInteger.java",
+          "VisualLogic/variables/VSObject.java",
+          "VisualLogic/variables/VSString.java"
+        ],
+        "VisualLogic/BasisPanel.java": [],
+        "VisualLogic/DataEntry.java": [
+          "VisualLogic/variables/VSObject.java"
+        ],
+        "VisualLogic/ElementIF.java": [
+          "VisualLogic/variables/VSFlowInfo.java"
+        ],
+        "VisualLogic/VSBasisIF.java": [
+          "VisualLogic/variables/VSFlowInfo.java",
+          "VisualLogic/variables/VSObject.java"
+        ],
+        "VisualLogic/gui/DialogLupe.java": [
+          "VisualLogic/Basis.java"
+        ],
+        "VisualLogic/gui/DialogVariableWatcher.java": [
+          "MyParser/OpenVariable.java"
+        ],
+        "VisualLogic/gui/DialogVariables.java": [
+          "MyParser/OpenVariable.java",
+          "VisualLogic/Basis.java"
+        ],
+        "VisualLogic/gui/FrameBooleanGraph.java": [
+          "MyGraph/MyGraph.java",
+          "VisualLogic/Basis.java",
+          "VisualLogic/Element.java"
+        ],
+        "VisualLogic/gui/FrameConsoleOutput.java": [
+          "VisualLogic/Basis.java"
+        ],
+        "VisualLogic/gui/FrameDoubleGraph.java": [
+          "MyGraph/MyGraph.java"
+        ],
+        "VisualLogic/gui/FrameRunning.java": [
+          "VisualLogic/Basis.java",
+          "VisualLogic/BasisPanel.java"
+        ],
+        "VisualLogic/variables/VS1DBoolean.java": [],
+        "VisualLogic/variables/VS1DDouble.java": [],
+        "VisualLogic/variables/VS1DInteger.java": [],
+        "VisualLogic/variables/VS1DString.java": [],
+        "VisualLogic/variables/VS2DBoolean.java": [],
+        "VisualLogic/variables/VS2DDouble.java": [],
+        "VisualLogic/variables/VS2DInteger.java": [],
+        "VisualLogic/variables/VS2DString.java": [],
+        "VisualLogic/variables/VSFlowInfo.java": [
+          "MyParser/OpenVariable.java"
+        ],
+        "VisualLogic/variables/VSObject.java": []
+      },
+      "neighborMap": {
+        "MyParser/OpenVariable.java": [
+          {
+            "path": "VisualLogic/gui/DialogAddEditvariable.java",
+            "batchIndex": 1,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/Basis.java": [
+          {
+            "path": "Peditor/PropertyEditor.java",
+            "batchIndex": 4,
+            "symbols": []
+          },
+          {
+            "path": "SimpleFileSystem/FileSystemInput.java",
+            "batchIndex": 3,
+            "symbols": []
+          },
+          {
+            "path": "SimpleFileSystem/FileSystemOutput.java",
+            "batchIndex": 3,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/variables/VSBoolean.java",
+            "batchIndex": 4,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/variables/VSColor.java",
+            "batchIndex": 4,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/variables/VSComboBox.java",
+            "batchIndex": 4,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/variables/VSDouble.java",
+            "batchIndex": 4,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/variables/VSImage.java",
+            "batchIndex": 4,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/variables/VSInteger.java",
+            "batchIndex": 4,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/variables/VSString.java",
+            "batchIndex": 4,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/gui/FrmTestpoints.java",
+            "batchIndex": 3,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/gui/FrameBooleanGraph.java": [
+          {
+            "path": "VisualLogic/Element.java",
+            "batchIndex": 3,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/variables/VSObject.java": [
+          {
+            "path": "Peditor/PropertyEditor.java",
+            "batchIndex": 4,
+            "symbols": []
+          },
+          {
+            "path": "Peditor/PropertyEditorItem.java",
+            "batchIndex": 4,
+            "symbols": []
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 3,
+      "files": [
+        {
+          "path": "BasisStatus/StatusAddElement.java",
+          "language": "java",
+          "sizeLines": 341,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/StatusAddWire.java",
+          "language": "java",
+          "sizeLines": 138,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/StatusBasisIF.java",
+          "language": "java",
+          "sizeLines": 44,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/StatusEditPath.java",
+          "language": "java",
+          "sizeLines": 99,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/StatusGummiBand.java",
+          "language": "java",
+          "sizeLines": 169,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/StatusIdle.java",
+          "language": "java",
+          "sizeLines": 1074,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/StatusMoveElements.java",
+          "language": "java",
+          "sizeLines": 361,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/gui/SelectionPane.java"
+          ]
+        },
+        {
+          "path": "BasisStatus/StatusNOP.java",
+          "language": "java",
+          "sizeLines": 89,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/StatusNone.java",
+          "language": "java",
+          "sizeLines": 152,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Element.java"
+          ]
+        },
+        {
+          "path": "BasisStatus/StatusResizeBasis.java",
+          "language": "java",
+          "sizeLines": 80,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/StatusResizeElement.java",
+          "language": "java",
+          "sizeLines": 227,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/gui/SelectionPane.java"
+          ]
+        },
+        {
+          "path": "BasisStatus/StatusRun.java",
+          "language": "java",
+          "sizeLines": 247,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Element.java",
+            "VisualLogic/gui/SelectionPane.java"
+          ]
+        },
+        {
+          "path": "Peditor/BasisProperty.java",
+          "language": "java",
+          "sizeLines": 55,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Element.java",
+            "VisualLogic/ElementProperty.java",
+            "VisualLogic/VMObject.java"
+          ]
+        },
+        {
+          "path": "Peditor/DialogPropertiesChoice.java",
+          "language": "java",
+          "sizeLines": 390,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Element.java",
+            "VisualLogic/ElementProperty.java",
+            "VisualLogic/VMObject.java"
+          ]
+        },
+        {
+          "path": "SimpleFileSystem/FileSystemInput.java",
+          "language": "java",
+          "sizeLines": 162,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "SimpleFileSystem/FileSystemOutput.java",
+          "language": "java",
+          "sizeLines": 156,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/Element.java",
+          "language": "java",
+          "sizeLines": 3420,
+          "fileCategory": "code",
+          "importMap": [
+            "BasisStatus/StatusEditPath.java",
+            "Peditor/BasisProperty.java",
+            "Peditor/PropertyEditor.java",
+            "SimpleFileSystem/FileSystemOutput.java",
+            "VisualLogic/gui/SelectionPane.java",
+            "VisualLogic/gui/SubDialog.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/ElementProperty.java",
+          "language": "java",
+          "sizeLines": 54,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/VMObject.java",
+          "language": "java",
+          "sizeLines": 3686,
+          "fileCategory": "code",
+          "importMap": [
+            "BasisStatus/StatusEditPath.java",
+            "BasisStatus/StatusNOP.java",
+            "BasisStatus/StatusNone.java",
+            "BasisStatus/StatusAddElement.java",
+            "BasisStatus/StatusMoveElements.java",
+            "BasisStatus/StatusAddWire.java",
+            "BasisStatus/StatusIdle.java",
+            "BasisStatus/StatusRun.java",
+            "BasisStatus/StatusGummiBand.java",
+            "BasisStatus/StatusBasisIF.java",
+            "BasisStatus/StatusResizeElement.java",
+            "BasisStatus/StatusResizeBasis.java",
+            "Peditor/BasisProperty.java",
+            "VisualLogic/gui/DialogWait.java",
+            "VisualLogic/variables/VSString.java",
+            "SimpleFileSystem/FileSystemInput.java",
+            "SimpleFileSystem/FileSystemOutput.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/FrmTestpoints.java",
+          "language": "java",
+          "sizeLines": 310,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Basis.java",
+            "VisualLogic/Element.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/SelectionPane.java",
+          "language": "java",
+          "sizeLines": 340,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Element.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/SubDialog.java",
+          "language": "java",
+          "sizeLines": 86,
+          "fileCategory": "code",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "BasisStatus/StatusAddElement.java": [],
+        "BasisStatus/StatusAddWire.java": [],
+        "BasisStatus/StatusBasisIF.java": [],
+        "BasisStatus/StatusEditPath.java": [],
+        "BasisStatus/StatusGummiBand.java": [],
+        "BasisStatus/StatusIdle.java": [],
+        "BasisStatus/StatusMoveElements.java": [
+          "VisualLogic/gui/SelectionPane.java"
+        ],
+        "BasisStatus/StatusNOP.java": [],
+        "BasisStatus/StatusNone.java": [
+          "VisualLogic/Element.java"
+        ],
+        "BasisStatus/StatusResizeBasis.java": [],
+        "BasisStatus/StatusResizeElement.java": [
+          "VisualLogic/gui/SelectionPane.java"
+        ],
+        "BasisStatus/StatusRun.java": [
+          "VisualLogic/Element.java",
+          "VisualLogic/gui/SelectionPane.java"
+        ],
+        "Peditor/BasisProperty.java": [
+          "VisualLogic/Element.java",
+          "VisualLogic/ElementProperty.java",
+          "VisualLogic/VMObject.java"
+        ],
+        "Peditor/DialogPropertiesChoice.java": [
+          "VisualLogic/Element.java",
+          "VisualLogic/ElementProperty.java",
+          "VisualLogic/VMObject.java"
+        ],
+        "SimpleFileSystem/FileSystemInput.java": [],
+        "SimpleFileSystem/FileSystemOutput.java": [],
+        "VisualLogic/Element.java": [
+          "BasisStatus/StatusEditPath.java",
+          "Peditor/BasisProperty.java",
+          "Peditor/PropertyEditor.java",
+          "SimpleFileSystem/FileSystemOutput.java",
+          "VisualLogic/gui/SelectionPane.java",
+          "VisualLogic/gui/SubDialog.java"
+        ],
+        "VisualLogic/ElementProperty.java": [],
+        "VisualLogic/VMObject.java": [
+          "BasisStatus/StatusEditPath.java",
+          "BasisStatus/StatusNOP.java",
+          "BasisStatus/StatusNone.java",
+          "BasisStatus/StatusAddElement.java",
+          "BasisStatus/StatusMoveElements.java",
+          "BasisStatus/StatusAddWire.java",
+          "BasisStatus/StatusIdle.java",
+          "BasisStatus/StatusRun.java",
+          "BasisStatus/StatusGummiBand.java",
+          "BasisStatus/StatusBasisIF.java",
+          "BasisStatus/StatusResizeElement.java",
+          "BasisStatus/StatusResizeBasis.java",
+          "Peditor/BasisProperty.java",
+          "VisualLogic/gui/DialogWait.java",
+          "VisualLogic/variables/VSString.java",
+          "SimpleFileSystem/FileSystemInput.java",
+          "SimpleFileSystem/FileSystemOutput.java"
+        ],
+        "VisualLogic/gui/FrmTestpoints.java": [
+          "VisualLogic/Basis.java",
+          "VisualLogic/Element.java"
+        ],
+        "VisualLogic/gui/SelectionPane.java": [
+          "VisualLogic/Element.java"
+        ],
+        "VisualLogic/gui/SubDialog.java": []
+      },
+      "neighborMap": {
+        "SimpleFileSystem/FileSystemInput.java": [
+          {
+            "path": "VisualLogic/Basis.java",
+            "batchIndex": 2,
+            "symbols": []
+          }
+        ],
+        "SimpleFileSystem/FileSystemOutput.java": [
+          {
+            "path": "VisualLogic/Basis.java",
+            "batchIndex": 2,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/Element.java": [
+          {
+            "path": "Peditor/PropertyEditor.java",
+            "batchIndex": 4,
+            "symbols": []
+          },
+          {
+            "path": "BasisStatus/StatusLineHoritontal.java",
+            "batchIndex": 6,
+            "symbols": []
+          },
+          {
+            "path": "BasisStatus/StatusLineVertikal.java",
+            "batchIndex": 6,
+            "symbols": []
+          },
+          {
+            "path": "Peditor/PropertyEditorItem.java",
+            "batchIndex": 4,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/gui/FrameBooleanGraph.java",
+            "batchIndex": 2,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/gui/FrameDoc.java",
+            "batchIndex": 1,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/gui/PanelDokumentation.java",
+            "batchIndex": 1,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/VMObject.java": [
+          {
+            "path": "VisualLogic/gui/DialogWait.java",
+            "batchIndex": 1,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/variables/VSString.java",
+            "batchIndex": 4,
+            "symbols": []
+          },
+          {
+            "path": "BasisStatus/StatusGummiBandXBackIF.java",
+            "batchIndex": 5,
+            "symbols": []
+          },
+          {
+            "path": "BasisStatus/StatusLineHoritontal.java",
+            "batchIndex": 6,
+            "symbols": []
+          },
+          {
+            "path": "BasisStatus/StatusLineVertikal.java",
+            "batchIndex": 6,
+            "symbols": []
+          },
+          {
+            "path": "Peditor/PropertyEditor.java",
+            "batchIndex": 4,
+            "symbols": []
+          },
+          {
+            "path": "Peditor/PropertyEditorItem.java",
+            "batchIndex": 4,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/gui/FrmTestpoints.java": [
+          {
+            "path": "VisualLogic/Basis.java",
+            "batchIndex": 2,
+            "symbols": []
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 4,
+      "files": [
+        {
+          "path": "CustomColorPicker/CustomColorPicker.java",
+          "language": "java",
+          "sizeLines": 508,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "CustomColorPicker/RoundGradientPaint.java",
+          "language": "java",
+          "sizeLines": 117,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "Peditor/PropertyEditor.java",
+          "language": "java",
+          "sizeLines": 1184,
+          "fileCategory": "code",
+          "importMap": [
+            "CustomColorPicker/CustomColorPicker.java",
+            "VisualLogic/gui/DialogFontChooser.java",
+            "VisualLogic/Element.java",
+            "VisualLogic/ExtensionFileFilter.java",
+            "VisualLogic/VMObject.java",
+            "VisualLogic/variables/VSBoolean.java",
+            "VisualLogic/variables/VSByte.java",
+            "VisualLogic/variables/VSColor.java",
+            "VisualLogic/variables/VSColorAdvanced.java",
+            "VisualLogic/variables/VSComboBox.java",
+            "VisualLogic/variables/VSDouble.java",
+            "VisualLogic/variables/VSFile.java",
+            "VisualLogic/variables/VSFont.java",
+            "VisualLogic/variables/VSImage.java",
+            "VisualLogic/variables/VSInteger.java",
+            "VisualLogic/variables/VSObject.java",
+            "VisualLogic/variables/VSProperties.java",
+            "VisualLogic/variables/VSPropertyDialog.java",
+            "VisualLogic/variables/VSString.java"
+          ]
+        },
+        {
+          "path": "Peditor/PropertyEditorItem.java",
+          "language": "java",
+          "sizeLines": 193,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Element.java",
+            "VisualLogic/VMObject.java",
+            "VisualLogic/variables/VSBoolean.java",
+            "VisualLogic/variables/VSByte.java",
+            "VisualLogic/variables/VSColor.java",
+            "VisualLogic/variables/VSColorAdvanced.java",
+            "VisualLogic/variables/VSComboBox.java",
+            "VisualLogic/variables/VSDouble.java",
+            "VisualLogic/variables/VSFile.java",
+            "VisualLogic/variables/VSFont.java",
+            "VisualLogic/variables/VSImage.java",
+            "VisualLogic/variables/VSInteger.java",
+            "VisualLogic/variables/VSObject.java",
+            "VisualLogic/variables/VSProperties.java",
+            "VisualLogic/variables/VSPropertyDialog.java",
+            "VisualLogic/variables/VSString.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/ExtensionFileFilter.java",
+          "language": "java",
+          "sizeLines": 137,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/VisualObject.java",
+          "language": "java",
+          "sizeLines": 65,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/variables/VSBoolean.java",
+            "VisualLogic/variables/VSInteger.java",
+            "VisualLogic/variables/VSString.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/DialogFontChooser.java",
+          "language": "java",
+          "sizeLines": 322,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSBoolean.java",
+          "language": "java",
+          "sizeLines": 130,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSByte.java",
+          "language": "java",
+          "sizeLines": 179,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSColor.java",
+          "language": "java",
+          "sizeLines": 119,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSColorAdvanced.java",
+          "language": "java",
+          "sizeLines": 205,
+          "fileCategory": "code",
+          "importMap": [
+            "CustomColorPicker/RoundGradientPaint.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/variables/VSComboBox.java",
+          "language": "java",
+          "sizeLines": 122,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSDouble.java",
+          "language": "java",
+          "sizeLines": 127,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSFile.java",
+          "language": "java",
+          "sizeLines": 131,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSFont.java",
+          "language": "java",
+          "sizeLines": 122,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSImage.java",
+          "language": "java",
+          "sizeLines": 221,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSInteger.java",
+          "language": "java",
+          "sizeLines": 127,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSProperties.java",
+          "language": "java",
+          "sizeLines": 104,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSPropertyDialog.java",
+          "language": "java",
+          "sizeLines": 49,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSString.java",
+          "language": "java",
+          "sizeLines": 133,
+          "fileCategory": "code",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "CustomColorPicker/CustomColorPicker.java": [],
+        "CustomColorPicker/RoundGradientPaint.java": [],
+        "Peditor/PropertyEditor.java": [
+          "CustomColorPicker/CustomColorPicker.java",
+          "VisualLogic/gui/DialogFontChooser.java",
+          "VisualLogic/Element.java",
+          "VisualLogic/ExtensionFileFilter.java",
+          "VisualLogic/VMObject.java",
+          "VisualLogic/variables/VSBoolean.java",
+          "VisualLogic/variables/VSByte.java",
+          "VisualLogic/variables/VSColor.java",
+          "VisualLogic/variables/VSColorAdvanced.java",
+          "VisualLogic/variables/VSComboBox.java",
+          "VisualLogic/variables/VSDouble.java",
+          "VisualLogic/variables/VSFile.java",
+          "VisualLogic/variables/VSFont.java",
+          "VisualLogic/variables/VSImage.java",
+          "VisualLogic/variables/VSInteger.java",
+          "VisualLogic/variables/VSObject.java",
+          "VisualLogic/variables/VSProperties.java",
+          "VisualLogic/variables/VSPropertyDialog.java",
+          "VisualLogic/variables/VSString.java"
+        ],
+        "Peditor/PropertyEditorItem.java": [
+          "VisualLogic/Element.java",
+          "VisualLogic/VMObject.java",
+          "VisualLogic/variables/VSBoolean.java",
+          "VisualLogic/variables/VSByte.java",
+          "VisualLogic/variables/VSColor.java",
+          "VisualLogic/variables/VSColorAdvanced.java",
+          "VisualLogic/variables/VSComboBox.java",
+          "VisualLogic/variables/VSDouble.java",
+          "VisualLogic/variables/VSFile.java",
+          "VisualLogic/variables/VSFont.java",
+          "VisualLogic/variables/VSImage.java",
+          "VisualLogic/variables/VSInteger.java",
+          "VisualLogic/variables/VSObject.java",
+          "VisualLogic/variables/VSProperties.java",
+          "VisualLogic/variables/VSPropertyDialog.java",
+          "VisualLogic/variables/VSString.java"
+        ],
+        "VisualLogic/ExtensionFileFilter.java": [],
+        "VisualLogic/VisualObject.java": [
+          "VisualLogic/variables/VSBoolean.java",
+          "VisualLogic/variables/VSInteger.java",
+          "VisualLogic/variables/VSString.java"
+        ],
+        "VisualLogic/gui/DialogFontChooser.java": [],
+        "VisualLogic/variables/VSBoolean.java": [],
+        "VisualLogic/variables/VSByte.java": [],
+        "VisualLogic/variables/VSColor.java": [],
+        "VisualLogic/variables/VSColorAdvanced.java": [
+          "CustomColorPicker/RoundGradientPaint.java"
+        ],
+        "VisualLogic/variables/VSComboBox.java": [],
+        "VisualLogic/variables/VSDouble.java": [],
+        "VisualLogic/variables/VSFile.java": [],
+        "VisualLogic/variables/VSFont.java": [],
+        "VisualLogic/variables/VSImage.java": [],
+        "VisualLogic/variables/VSInteger.java": [],
+        "VisualLogic/variables/VSProperties.java": [],
+        "VisualLogic/variables/VSPropertyDialog.java": [],
+        "VisualLogic/variables/VSString.java": []
+      },
+      "neighborMap": {
+        "Peditor/PropertyEditor.java": [
+          {
+            "path": "VisualLogic/Element.java",
+            "batchIndex": 3,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/VMObject.java",
+            "batchIndex": 3,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/variables/VSObject.java",
+            "batchIndex": 2,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/Basis.java",
+            "batchIndex": 2,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/gui/FrameMain.java",
+            "batchIndex": 5,
+            "symbols": []
+          }
+        ],
+        "Peditor/PropertyEditorItem.java": [
+          {
+            "path": "VisualLogic/Element.java",
+            "batchIndex": 3,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/VMObject.java",
+            "batchIndex": 3,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/variables/VSObject.java",
+            "batchIndex": 2,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/variables/VSBoolean.java": [
+          {
+            "path": "VisualLogic/Basis.java",
+            "batchIndex": 2,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/variables/VSColor.java": [
+          {
+            "path": "VisualLogic/Basis.java",
+            "batchIndex": 2,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/variables/VSComboBox.java": [
+          {
+            "path": "VisualLogic/Basis.java",
+            "batchIndex": 2,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/variables/VSDouble.java": [
+          {
+            "path": "VisualLogic/Basis.java",
+            "batchIndex": 2,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/variables/VSImage.java": [
+          {
+            "path": "VisualLogic/Basis.java",
+            "batchIndex": 2,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/variables/VSInteger.java": [
+          {
+            "path": "VisualLogic/Basis.java",
+            "batchIndex": 2,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/variables/VSString.java": [
+          {
+            "path": "VisualLogic/Basis.java",
+            "batchIndex": 2,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/VMObject.java",
+            "batchIndex": 3,
+            "symbols": []
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 5,
+      "files": [
+        {
+          "path": "BasisStatus/StatusGummiBandX.java",
+          "language": "java",
+          "sizeLines": 197,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/StatusGummiBandXBackIF.java",
+          "language": "java",
+          "sizeLines": 32,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/VMObject.java"
+          ]
+        },
+        {
+          "path": "CodeEditor/frmCodeEditor.java",
+          "language": "java",
+          "sizeLines": 537,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/gui/FrameMain.java"
+          ]
+        },
+        {
+          "path": "MyParser/Expression.java",
+          "language": "java",
+          "sizeLines": 743,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "SimulatorSocket/MyOpenLabOwnerIF.java",
+          "language": "java",
+          "sizeLines": 30,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/DriverManager.java",
+          "language": "java",
+          "sizeLines": 127,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/gui/FrameMain.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/NewSerialDriverManager.java",
+          "language": "java",
+          "sizeLines": 132,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/variables/VSserialPort.java",
+            "VisualLogic/gui/FrameMain.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/gui/FrameMain.java",
+          "language": "java",
+          "sizeLines": 5675,
+          "fileCategory": "code",
+          "importMap": [
+            "BasisStatus/StatusGummiBandX.java",
+            "BasisStatus/StatusGummiBandXBackIF.java",
+            "MyParser/Expression.java",
+            "Peditor/PropertyEditor.java",
+            "SimulatorSocket/MyOpenLabOwnerIF.java",
+            "projectfolder/MyNode.java",
+            "projectfolder/ProjectPalette.java",
+            "de/myopenlab/update/frmUpdate.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/variables/VSserialPort.java",
+          "language": "java",
+          "sizeLines": 237,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/ProjectPalette.java",
+          "language": "java",
+          "sizeLines": 948,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Tools.java"
+          ]
+        }
+      ],
+      "batchImportData": {
+        "BasisStatus/StatusGummiBandX.java": [],
+        "BasisStatus/StatusGummiBandXBackIF.java": [
+          "VisualLogic/VMObject.java"
+        ],
+        "CodeEditor/frmCodeEditor.java": [
+          "VisualLogic/gui/FrameMain.java"
+        ],
+        "MyParser/Expression.java": [],
+        "SimulatorSocket/MyOpenLabOwnerIF.java": [],
+        "VisualLogic/DriverManager.java": [
+          "VisualLogic/gui/FrameMain.java"
+        ],
+        "VisualLogic/NewSerialDriverManager.java": [
+          "VisualLogic/variables/VSserialPort.java",
+          "VisualLogic/gui/FrameMain.java"
+        ],
+        "VisualLogic/gui/FrameMain.java": [
+          "BasisStatus/StatusGummiBandX.java",
+          "BasisStatus/StatusGummiBandXBackIF.java",
+          "MyParser/Expression.java",
+          "Peditor/PropertyEditor.java",
+          "SimulatorSocket/MyOpenLabOwnerIF.java",
+          "projectfolder/MyNode.java",
+          "projectfolder/ProjectPalette.java",
+          "de/myopenlab/update/frmUpdate.java"
+        ],
+        "VisualLogic/variables/VSserialPort.java": [],
+        "projectfolder/ProjectPalette.java": [
+          "VisualLogic/Tools.java"
+        ]
+      },
+      "neighborMap": {
+        "BasisStatus/StatusGummiBandXBackIF.java": [
+          {
+            "path": "VisualLogic/VMObject.java",
+            "batchIndex": 3,
+            "symbols": []
+          }
+        ],
+        "VisualLogic/gui/FrameMain.java": [
+          {
+            "path": "Peditor/PropertyEditor.java",
+            "batchIndex": 4,
+            "symbols": []
+          },
+          {
+            "path": "projectfolder/MyNode.java",
+            "batchIndex": 1,
+            "symbols": []
+          },
+          {
+            "path": "de/myopenlab/update/frmUpdate.java",
+            "batchIndex": 1,
+            "symbols": []
+          },
+          {
+            "path": "CreateNewGroup/DialogCreateNewGroup.java",
+            "batchIndex": 1,
+            "symbols": []
+          }
+        ],
+        "projectfolder/ProjectPalette.java": [
+          {
+            "path": "VisualLogic/Tools.java",
+            "batchIndex": 1,
+            "symbols": []
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 6,
+      "files": [
+        {
+          "path": "BasisStatus/StatusLineHoritontal.java",
+          "language": "java",
+          "sizeLines": 597,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Draht.java",
+            "VisualLogic/Element.java",
+            "VisualLogic/ExternalIF.java",
+            "VisualLogic/JPin.java",
+            "VisualLogic/Line.java",
+            "VisualLogic/Tools.java",
+            "VisualLogic/VMObject.java",
+            "VisualLogic/VSDataType.java"
+          ]
+        },
+        {
+          "path": "BasisStatus/StatusLineVertikal.java",
+          "language": "java",
+          "sizeLines": 727,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/Draht.java",
+            "VisualLogic/Element.java",
+            "VisualLogic/ExternalIF.java",
+            "VisualLogic/JPin.java",
+            "VisualLogic/Line.java",
+            "VisualLogic/PolyPoint.java",
+            "VisualLogic/Tools.java",
+            "VisualLogic/VMObject.java",
+            "VisualLogic/VSDataType.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/Draht.java",
+          "language": "java",
+          "sizeLines": 860,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/ExternalIF.java",
+          "language": "java",
+          "sizeLines": 354,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/JPin.java",
+          "language": "java",
+          "sizeLines": 344,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/Line.java",
+          "language": "java",
+          "sizeLines": 265,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/PolyPoint.java",
+          "language": "java",
+          "sizeLines": 125,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/VSDataType.java",
+          "language": "java",
+          "sizeLines": 323,
+          "fileCategory": "code",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "BasisStatus/StatusLineHoritontal.java": [
+          "VisualLogic/Draht.java",
+          "VisualLogic/Element.java",
+          "VisualLogic/ExternalIF.java",
+          "VisualLogic/JPin.java",
+          "VisualLogic/Line.java",
+          "VisualLogic/Tools.java",
+          "VisualLogic/VMObject.java",
+          "VisualLogic/VSDataType.java"
+        ],
+        "BasisStatus/StatusLineVertikal.java": [
+          "VisualLogic/Draht.java",
+          "VisualLogic/Element.java",
+          "VisualLogic/ExternalIF.java",
+          "VisualLogic/JPin.java",
+          "VisualLogic/Line.java",
+          "VisualLogic/PolyPoint.java",
+          "VisualLogic/Tools.java",
+          "VisualLogic/VMObject.java",
+          "VisualLogic/VSDataType.java"
+        ],
+        "VisualLogic/Draht.java": [],
+        "VisualLogic/ExternalIF.java": [],
+        "VisualLogic/JPin.java": [],
+        "VisualLogic/Line.java": [],
+        "VisualLogic/PolyPoint.java": [],
+        "VisualLogic/VSDataType.java": []
+      },
+      "neighborMap": {
+        "BasisStatus/StatusLineHoritontal.java": [
+          {
+            "path": "VisualLogic/Element.java",
+            "batchIndex": 3,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/Tools.java",
+            "batchIndex": 1,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/VMObject.java",
+            "batchIndex": 3,
+            "symbols": []
+          }
+        ],
+        "BasisStatus/StatusLineVertikal.java": [
+          {
+            "path": "VisualLogic/Element.java",
+            "batchIndex": 3,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/Tools.java",
+            "batchIndex": 1,
+            "symbols": []
+          },
+          {
+            "path": "VisualLogic/VMObject.java",
+            "batchIndex": 3,
+            "symbols": []
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 7,
+      "files": [
+        {
+          "path": "CodeEditor/DialogSearch.java",
+          "language": "java",
+          "sizeLines": 154,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/CommandIF.java"
+          ]
+        },
+        {
+          "path": "CodeEditor/PanelEditor.java",
+          "language": "java",
+          "sizeLines": 313,
+          "fileCategory": "code",
+          "importMap": [
+            "VisualLogic/CommandIF.java"
+          ]
+        },
+        {
+          "path": "VisualLogic/CommandIF.java",
+          "language": "java",
+          "sizeLines": 30,
+          "fileCategory": "code",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "CodeEditor/DialogSearch.java": [
+          "VisualLogic/CommandIF.java"
+        ],
+        "CodeEditor/PanelEditor.java": [
+          "VisualLogic/CommandIF.java"
+        ],
+        "VisualLogic/CommandIF.java": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 8,
+      "files": [
+        {
+          "path": "BasisStatus/StatusIdle.properties",
+          "language": "properties",
+          "sizeLines": 35,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/StatusIdle_en_US.properties",
+          "language": "properties",
+          "sizeLines": 35,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/StatusIdle_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 35,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/frmElementInfo.form",
+          "language": "form",
+          "sizeLines": 260,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/frmElementInfo.properties",
+          "language": "properties",
+          "sizeLines": 15,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/frmElementInfo_en_US.properties",
+          "language": "properties",
+          "sizeLines": 15,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/frmElementInfo_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 15,
+          "fileCategory": "config",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "BasisStatus/StatusIdle.properties": [],
+        "BasisStatus/StatusIdle_en_US.properties": [],
+        "BasisStatus/StatusIdle_es_ES.properties": [],
+        "BasisStatus/frmElementInfo.form": [],
+        "BasisStatus/frmElementInfo.properties": [],
+        "BasisStatus/frmElementInfo_en_US.properties": [],
+        "BasisStatus/frmElementInfo_es_ES.properties": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 9,
+      "files": [
+        {
+          "path": "CodeEditor/DialogSearch.form",
+          "language": "form",
+          "sizeLines": 102,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/DialogSearch.properties",
+          "language": "properties",
+          "sizeLines": 7,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/DialogSearch_en_US.properties",
+          "language": "properties",
+          "sizeLines": 7,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/DialogSearch_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 7,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/PanelEditor.properties",
+          "language": "properties",
+          "sizeLines": 9,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/PanelEditor_en_US.properties",
+          "language": "properties",
+          "sizeLines": 7,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/PanelEditor_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 7,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/StatusIdle.properties",
+          "language": "properties",
+          "sizeLines": 29,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/StatusIdle_en_US.properties",
+          "language": "properties",
+          "sizeLines": 29,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/StatusIdle_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 29,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/frmCodeEditor.form",
+          "language": "form",
+          "sizeLines": 268,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/frmCodeEditor.properties",
+          "language": "properties",
+          "sizeLines": 31,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/frmCodeEditor_en_US.properties",
+          "language": "properties",
+          "sizeLines": 31,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/frmCodeEditor_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 31,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/frmDefinitonDefEditor.form",
+          "language": "form",
+          "sizeLines": 354,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/frmDefinitonDefEditor.properties",
+          "language": "properties",
+          "sizeLines": 28,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/frmDefinitonDefEditor_en_US.properties",
+          "language": "properties",
+          "sizeLines": 31,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/frmDefinitonDefEditor_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 31,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/frmElementInfo.properties",
+          "language": "properties",
+          "sizeLines": 15,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/frmElementInfo_en_US.properties",
+          "language": "properties",
+          "sizeLines": 15,
+          "fileCategory": "config",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "CodeEditor/DialogSearch.form": [],
+        "CodeEditor/DialogSearch.properties": [],
+        "CodeEditor/DialogSearch_en_US.properties": [],
+        "CodeEditor/DialogSearch_es_ES.properties": [],
+        "CodeEditor/PanelEditor.properties": [],
+        "CodeEditor/PanelEditor_en_US.properties": [],
+        "CodeEditor/PanelEditor_es_ES.properties": [],
+        "CodeEditor/StatusIdle.properties": [],
+        "CodeEditor/StatusIdle_en_US.properties": [],
+        "CodeEditor/StatusIdle_es_ES.properties": [],
+        "CodeEditor/frmCodeEditor.form": [],
+        "CodeEditor/frmCodeEditor.properties": [],
+        "CodeEditor/frmCodeEditor_en_US.properties": [],
+        "CodeEditor/frmCodeEditor_es_ES.properties": [],
+        "CodeEditor/frmDefinitonDefEditor.form": [],
+        "CodeEditor/frmDefinitonDefEditor.properties": [],
+        "CodeEditor/frmDefinitonDefEditor_en_US.properties": [],
+        "CodeEditor/frmDefinitonDefEditor_es_ES.properties": [],
+        "CodeEditor/frmElementInfo.properties": [],
+        "CodeEditor/frmElementInfo_en_US.properties": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 10,
+      "files": [
+        {
+          "path": "CreateNewGroup/DialogCreateNewGroup.form",
+          "language": "form",
+          "sizeLines": 592,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "CreateNewGroup/Dialog_create_new_group.properties",
+          "language": "properties",
+          "sizeLines": 31,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CreateNewGroup/Dialog_create_new_group_en_US.properties",
+          "language": "properties",
+          "sizeLines": 35,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CreateNewGroup/Dialog_create_new_group_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 35,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CreateNewGroup/std_lib_icon_32.png",
+          "language": "data",
+          "sizeLines": 5,
+          "fileCategory": "data",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "CreateNewGroup/DialogCreateNewGroup.form": [],
+        "CreateNewGroup/Dialog_create_new_group.properties": [],
+        "CreateNewGroup/Dialog_create_new_group_en_US.properties": [],
+        "CreateNewGroup/Dialog_create_new_group_es_ES.properties": [],
+        "CreateNewGroup/std_lib_icon_32.png": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 11,
+      "files": [
+        {
+          "path": "CustomColorPicker/Bild1.gif",
+          "language": "data",
+          "sizeLines": 6,
+          "fileCategory": "data",
+          "importMap": []
+        },
+        {
+          "path": "CustomColorPicker/ColorPanel.form",
+          "language": "form",
+          "sizeLines": 41,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "CustomColorPicker/CustomColorPicker.form",
+          "language": "form",
+          "sizeLines": 346,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "CustomColorPicker/CustomColorPicker.properties",
+          "language": "properties",
+          "sizeLines": 23,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CustomColorPicker/CustomColorPicker_en_US.properties",
+          "language": "properties",
+          "sizeLines": 23,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CustomColorPicker/CustomColorPicker_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 23,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CustomColorPicker/gitter.gif",
+          "language": "data",
+          "sizeLines": 8,
+          "fileCategory": "data",
+          "importMap": []
+        },
+        {
+          "path": "CustomColorPicker/rasterSelection.png",
+          "language": "data",
+          "sizeLines": 7,
+          "fileCategory": "data",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "CustomColorPicker/Bild1.gif": [],
+        "CustomColorPicker/ColorPanel.form": [],
+        "CustomColorPicker/CustomColorPicker.form": [],
+        "CustomColorPicker/CustomColorPicker.properties": [],
+        "CustomColorPicker/CustomColorPicker_en_US.properties": [],
+        "CustomColorPicker/CustomColorPicker_es_ES.properties": [],
+        "CustomColorPicker/gitter.gif": [],
+        "CustomColorPicker/rasterSelection.png": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 12,
+      "files": [
+        {
+          "path": "MyGraph/FrameMain.form",
+          "language": "form",
+          "sizeLines": 28,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "MyGraph/GraphBackground.form",
+          "language": "form",
+          "sizeLines": 45,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "MyGraph/MyGraph.form",
+          "language": "form",
+          "sizeLines": 73,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "MyGraph/MyGraphX.form",
+          "language": "form",
+          "sizeLines": 34,
+          "fileCategory": "markup",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "MyGraph/FrameMain.form": [],
+        "MyGraph/GraphBackground.form": [],
+        "MyGraph/MyGraph.form": [],
+        "MyGraph/MyGraphX.form": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 13,
+      "files": [
+        {
+          "path": "Peditor/DialogPropertiesChoice.form",
+          "language": "form",
+          "sizeLines": 172,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "Peditor/PropertyEditor.form",
+          "language": "form",
+          "sizeLines": 199,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "Peditor/PropertyEditor.properties",
+          "language": "properties",
+          "sizeLines": 18,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "Peditor/PropertyEditor_en_US.properties",
+          "language": "properties",
+          "sizeLines": 18,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "Peditor/PropertyEditor_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 18,
+          "fileCategory": "config",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "Peditor/DialogPropertiesChoice.form": [],
+        "Peditor/PropertyEditor.form": [],
+        "Peditor/PropertyEditor.properties": [],
+        "Peditor/PropertyEditor_en_US.properties": [],
+        "Peditor/PropertyEditor_es_ES.properties": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 14,
+      "files": [
+        {
+          "path": "VisualLogic/NOI18N/Basic.properties",
+          "language": "properties",
+          "sizeLines": 29,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/Basic_en_US.properties",
+          "language": "properties",
+          "sizeLines": 29,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/Basic_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 29,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogAddEditvariable.properties",
+          "language": "properties",
+          "sizeLines": 6,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogAddEditvariable_en_US.properties",
+          "language": "properties",
+          "sizeLines": 10,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogAddEditvariable_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 10,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogDistributionAssistent_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 20,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogFontChooser.properties",
+          "language": "properties",
+          "sizeLines": 16,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogFontChooser_en_US.properties",
+          "language": "properties",
+          "sizeLines": 17,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogFontChooser_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 17,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogLanguage.properties",
+          "language": "properties",
+          "sizeLines": 3,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogLanguage_en_US.properties",
+          "language": "properties",
+          "sizeLines": 3,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogLanguage_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 3,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogNewJavaComponentAssistent.properties",
+          "language": "properties",
+          "sizeLines": 65,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogNewJavaComponentAssistent_en_US.properties",
+          "language": "properties",
+          "sizeLines": 67,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogNewJavaComponentAssistent_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 67,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogNewProject.properties",
+          "language": "properties",
+          "sizeLines": 21,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogNewProject_en_US.properties",
+          "language": "properties",
+          "sizeLines": 23,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogNewProject_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 25,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogPassword.properties",
+          "language": "properties",
+          "sizeLines": 9,
+          "fileCategory": "config",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "VisualLogic/NOI18N/Basic.properties": [],
+        "VisualLogic/NOI18N/Basic_en_US.properties": [],
+        "VisualLogic/NOI18N/Basic_es_ES.properties": [],
+        "VisualLogic/NOI18N/DialogAddEditvariable.properties": [],
+        "VisualLogic/NOI18N/DialogAddEditvariable_en_US.properties": [],
+        "VisualLogic/NOI18N/DialogAddEditvariable_es_ES.properties": [],
+        "VisualLogic/NOI18N/DialogDistributionAssistent_es_ES.properties": [],
+        "VisualLogic/NOI18N/DialogFontChooser.properties": [],
+        "VisualLogic/NOI18N/DialogFontChooser_en_US.properties": [],
+        "VisualLogic/NOI18N/DialogFontChooser_es_ES.properties": [],
+        "VisualLogic/NOI18N/DialogLanguage.properties": [],
+        "VisualLogic/NOI18N/DialogLanguage_en_US.properties": [],
+        "VisualLogic/NOI18N/DialogLanguage_es_ES.properties": [],
+        "VisualLogic/NOI18N/DialogNewJavaComponentAssistent.properties": [],
+        "VisualLogic/NOI18N/DialogNewJavaComponentAssistent_en_US.properties": [],
+        "VisualLogic/NOI18N/DialogNewJavaComponentAssistent_es_ES.properties": [],
+        "VisualLogic/NOI18N/DialogNewProject.properties": [],
+        "VisualLogic/NOI18N/DialogNewProject_en_US.properties": [],
+        "VisualLogic/NOI18N/DialogNewProject_es_ES.properties": [],
+        "VisualLogic/NOI18N/DialogPassword.properties": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 15,
+      "files": [
+        {
+          "path": "VisualLogic/NOI18N/DialogPassword_en_US.properties",
+          "language": "properties",
+          "sizeLines": 9,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogPassword_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 9,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogProjectProperties.properties",
+          "language": "properties",
+          "sizeLines": 11,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogProjectProperties_en_US.properties",
+          "language": "properties",
+          "sizeLines": 11,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogProjectProperties_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 11,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogRename.properties",
+          "language": "properties",
+          "sizeLines": 5,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogRename_en_US.properties",
+          "language": "properties",
+          "sizeLines": 9,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogRename_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 9,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogSaveAsModul.properties",
+          "language": "properties",
+          "sizeLines": 49,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogSaveAsModul_en_US.properties",
+          "language": "properties",
+          "sizeLines": 52,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogSaveAsModul_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 52,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogSubVMAssistent.properties",
+          "language": "properties",
+          "sizeLines": 13,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogSubVMAssistent_en_US.properties",
+          "language": "properties",
+          "sizeLines": 15,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogSubVMAssistent_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 15,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogUpdate.properties",
+          "language": "properties",
+          "sizeLines": 31,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogUpdate_en_US.properties",
+          "language": "properties",
+          "sizeLines": 29,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogUpdate_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 29,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogVMName.properties",
+          "language": "properties",
+          "sizeLines": 7,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogVMName_en_US.properties",
+          "language": "properties",
+          "sizeLines": 9,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogVMName_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 9,
+          "fileCategory": "config",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "VisualLogic/NOI18N/DialogPassword_en_US.properties": [],
+        "VisualLogic/NOI18N/DialogPassword_es_ES.properties": [],
+        "VisualLogic/NOI18N/DialogProjectProperties.properties": [],
+        "VisualLogic/NOI18N/DialogProjectProperties_en_US.properties": [],
+        "VisualLogic/NOI18N/DialogProjectProperties_es_ES.properties": [],
+        "VisualLogic/NOI18N/DialogRename.properties": [],
+        "VisualLogic/NOI18N/DialogRename_en_US.properties": [],
+        "VisualLogic/NOI18N/DialogRename_es_ES.properties": [],
+        "VisualLogic/NOI18N/DialogSaveAsModul.properties": [],
+        "VisualLogic/NOI18N/DialogSaveAsModul_en_US.properties": [],
+        "VisualLogic/NOI18N/DialogSaveAsModul_es_ES.properties": [],
+        "VisualLogic/NOI18N/DialogSubVMAssistent.properties": [],
+        "VisualLogic/NOI18N/DialogSubVMAssistent_en_US.properties": [],
+        "VisualLogic/NOI18N/DialogSubVMAssistent_es_ES.properties": [],
+        "VisualLogic/NOI18N/DialogUpdate.properties": [],
+        "VisualLogic/NOI18N/DialogUpdate_en_US.properties": [],
+        "VisualLogic/NOI18N/DialogUpdate_es_ES.properties": [],
+        "VisualLogic/NOI18N/DialogVMName.properties": [],
+        "VisualLogic/NOI18N/DialogVMName_en_US.properties": [],
+        "VisualLogic/NOI18N/DialogVMName_es_ES.properties": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 16,
+      "files": [
+        {
+          "path": "VisualLogic/NOI18N/DialogVariableWatcher.properties",
+          "language": "properties",
+          "sizeLines": 3,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogVariableWatcher_en_US.properties",
+          "language": "properties",
+          "sizeLines": 3,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogVariableWatcher_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 3,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogVariables.properties",
+          "language": "properties",
+          "sizeLines": 11,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogVariables_en_US.properties",
+          "language": "properties",
+          "sizeLines": 13,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/DialogVariables_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 13,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/ElementPalette.properties",
+          "language": "properties",
+          "sizeLines": 27,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/ElementPalette_en_US.properties",
+          "language": "properties",
+          "sizeLines": 29,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/ElementPalette_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 28,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameBooleanGraph.properties",
+          "language": "properties",
+          "sizeLines": 12,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameBooleanGraph_en_US.properties",
+          "language": "properties",
+          "sizeLines": 12,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameBooleanGraph_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 9,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameCircuit.properties",
+          "language": "properties",
+          "sizeLines": 213,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameCircuit_en_US.properties",
+          "language": "properties",
+          "sizeLines": 177,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameCircuit_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 194,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameConsoleOutput.properties",
+          "language": "properties",
+          "sizeLines": 5,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameConsoleOutput_en_US.properties",
+          "language": "properties",
+          "sizeLines": 5,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameConsoleOutput_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 5,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameDoc.properties",
+          "language": "properties",
+          "sizeLines": 8,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameDoc_en_US.properties",
+          "language": "properties",
+          "sizeLines": 5,
+          "fileCategory": "config",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "VisualLogic/NOI18N/DialogVariableWatcher.properties": [],
+        "VisualLogic/NOI18N/DialogVariableWatcher_en_US.properties": [],
+        "VisualLogic/NOI18N/DialogVariableWatcher_es_ES.properties": [],
+        "VisualLogic/NOI18N/DialogVariables.properties": [],
+        "VisualLogic/NOI18N/DialogVariables_en_US.properties": [],
+        "VisualLogic/NOI18N/DialogVariables_es_ES.properties": [],
+        "VisualLogic/NOI18N/ElementPalette.properties": [],
+        "VisualLogic/NOI18N/ElementPalette_en_US.properties": [],
+        "VisualLogic/NOI18N/ElementPalette_es_ES.properties": [],
+        "VisualLogic/NOI18N/FrameBooleanGraph.properties": [],
+        "VisualLogic/NOI18N/FrameBooleanGraph_en_US.properties": [],
+        "VisualLogic/NOI18N/FrameBooleanGraph_es_ES.properties": [],
+        "VisualLogic/NOI18N/FrameCircuit.properties": [],
+        "VisualLogic/NOI18N/FrameCircuit_en_US.properties": [],
+        "VisualLogic/NOI18N/FrameCircuit_es_ES.properties": [],
+        "VisualLogic/NOI18N/FrameConsoleOutput.properties": [],
+        "VisualLogic/NOI18N/FrameConsoleOutput_en_US.properties": [],
+        "VisualLogic/NOI18N/FrameConsoleOutput_es_ES.properties": [],
+        "VisualLogic/NOI18N/FrameDoc.properties": [],
+        "VisualLogic/NOI18N/FrameDoc_en_US.properties": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 17,
+      "files": [
+        {
+          "path": "VisualLogic/NOI18N/FrameDoc_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 8,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameDoubleGraph.properties",
+          "language": "properties",
+          "sizeLines": 9,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameDoubleGraph_en_US.properties",
+          "language": "properties",
+          "sizeLines": 9,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameDoubleGraph_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 9,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameErrorWarnings.properties",
+          "language": "properties",
+          "sizeLines": 3,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameErrorWarnings_en_US.properties",
+          "language": "properties",
+          "sizeLines": 5,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameErrorWarnings_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 2,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameInfo.properties",
+          "language": "properties",
+          "sizeLines": 47,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameInfo_en_US.properties",
+          "language": "properties",
+          "sizeLines": 43,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrameInfo_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 43,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrmTestpoints.properties",
+          "language": "properties",
+          "sizeLines": 5,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrmTestpoints_en_US.properties",
+          "language": "properties",
+          "sizeLines": 7,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/FrmTestpoints_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 7,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/Messages.properties",
+          "language": "properties",
+          "sizeLines": 51,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/Messages_en_US.properties",
+          "language": "properties",
+          "sizeLines": 51,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/Messages_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 51,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/PanelEditor_en_US.properties",
+          "language": "properties",
+          "sizeLines": 5,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/PanelEditor_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 5,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/VMObject.properties",
+          "language": "properties",
+          "sizeLines": 43,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/VMObject_en_US.properties",
+          "language": "properties",
+          "sizeLines": 43,
+          "fileCategory": "config",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "VisualLogic/NOI18N/FrameDoc_es_ES.properties": [],
+        "VisualLogic/NOI18N/FrameDoubleGraph.properties": [],
+        "VisualLogic/NOI18N/FrameDoubleGraph_en_US.properties": [],
+        "VisualLogic/NOI18N/FrameDoubleGraph_es_ES.properties": [],
+        "VisualLogic/NOI18N/FrameErrorWarnings.properties": [],
+        "VisualLogic/NOI18N/FrameErrorWarnings_en_US.properties": [],
+        "VisualLogic/NOI18N/FrameErrorWarnings_es_ES.properties": [],
+        "VisualLogic/NOI18N/FrameInfo.properties": [],
+        "VisualLogic/NOI18N/FrameInfo_en_US.properties": [],
+        "VisualLogic/NOI18N/FrameInfo_es_ES.properties": [],
+        "VisualLogic/NOI18N/FrmTestpoints.properties": [],
+        "VisualLogic/NOI18N/FrmTestpoints_en_US.properties": [],
+        "VisualLogic/NOI18N/FrmTestpoints_es_ES.properties": [],
+        "VisualLogic/NOI18N/Messages.properties": [],
+        "VisualLogic/NOI18N/Messages_en_US.properties": [],
+        "VisualLogic/NOI18N/Messages_es_ES.properties": [],
+        "VisualLogic/NOI18N/PanelEditor_en_US.properties": [],
+        "VisualLogic/NOI18N/PanelEditor_es_ES.properties": [],
+        "VisualLogic/NOI18N/VMObject.properties": [],
+        "VisualLogic/NOI18N/VMObject_en_US.properties": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 18,
+      "files": [
+        {
+          "path": "VisualLogic/NOI18N/VMObject_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 43,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/VMProperties.properties",
+          "language": "properties",
+          "sizeLines": 13,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/VMProperties_en_US.properties",
+          "language": "properties",
+          "sizeLines": 13,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/VMProperties_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 13,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/frmDTLengend.properties",
+          "language": "properties",
+          "sizeLines": 3,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/frmDTLengend_en_US.properties",
+          "language": "properties",
+          "sizeLines": 3,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/frmDTLengend_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 3,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/frmOptions.properties",
+          "language": "properties",
+          "sizeLines": 55,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/frmOptions_en_US.properties",
+          "language": "properties",
+          "sizeLines": 53,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NOI18N/frmOptions_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 53,
+          "fileCategory": "config",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "VisualLogic/NOI18N/VMObject_es_ES.properties": [],
+        "VisualLogic/NOI18N/VMProperties.properties": [],
+        "VisualLogic/NOI18N/VMProperties_en_US.properties": [],
+        "VisualLogic/NOI18N/VMProperties_es_ES.properties": [],
+        "VisualLogic/NOI18N/frmDTLengend.properties": [],
+        "VisualLogic/NOI18N/frmDTLengend_en_US.properties": [],
+        "VisualLogic/NOI18N/frmDTLengend_es_ES.properties": [],
+        "VisualLogic/NOI18N/frmOptions.properties": [],
+        "VisualLogic/NOI18N/frmOptions_en_US.properties": [],
+        "VisualLogic/NOI18N/frmOptions_es_ES.properties": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 19,
+      "files": [
+        {
+          "path": "VisualLogic/gui/DialogAddEditvariable.form",
+          "language": "form",
+          "sizeLines": 166,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogDistributionAssistent.form",
+          "language": "form",
+          "sizeLines": 237,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogElementSearchAssistent.form",
+          "language": "form",
+          "sizeLines": 138,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogFontChooser.form",
+          "language": "form",
+          "sizeLines": 206,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogLanguage.form",
+          "language": "form",
+          "sizeLines": 98,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogLicence.form",
+          "language": "form",
+          "sizeLines": 127,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogLupe.form",
+          "language": "form",
+          "sizeLines": 52,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogNewJavaComponentAssistent.form",
+          "language": "form",
+          "sizeLines": 1034,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogNewProject.form",
+          "language": "form",
+          "sizeLines": 254,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogOptions.form",
+          "language": "form",
+          "sizeLines": 808,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogPassword.form",
+          "language": "form",
+          "sizeLines": 98,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogProjectProperties.form",
+          "language": "form",
+          "sizeLines": 130,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogRename.form",
+          "language": "form",
+          "sizeLines": 125,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogSaveAsModul.form",
+          "language": "form",
+          "sizeLines": 467,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogSubVMAssistent.form",
+          "language": "form",
+          "sizeLines": 167,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogTranslateForm.form",
+          "language": "form",
+          "sizeLines": 121,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogUpdate.form",
+          "language": "form",
+          "sizeLines": 148,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogUserdefinedElementsHome.form",
+          "language": "form",
+          "sizeLines": 95,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogVMName.form",
+          "language": "form",
+          "sizeLines": 97,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogVariableWatcher.form",
+          "language": "form",
+          "sizeLines": 72,
+          "fileCategory": "markup",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "VisualLogic/gui/DialogAddEditvariable.form": [],
+        "VisualLogic/gui/DialogDistributionAssistent.form": [],
+        "VisualLogic/gui/DialogElementSearchAssistent.form": [],
+        "VisualLogic/gui/DialogFontChooser.form": [],
+        "VisualLogic/gui/DialogLanguage.form": [],
+        "VisualLogic/gui/DialogLicence.form": [],
+        "VisualLogic/gui/DialogLupe.form": [],
+        "VisualLogic/gui/DialogNewJavaComponentAssistent.form": [],
+        "VisualLogic/gui/DialogNewProject.form": [],
+        "VisualLogic/gui/DialogOptions.form": [],
+        "VisualLogic/gui/DialogPassword.form": [],
+        "VisualLogic/gui/DialogProjectProperties.form": [],
+        "VisualLogic/gui/DialogRename.form": [],
+        "VisualLogic/gui/DialogSaveAsModul.form": [],
+        "VisualLogic/gui/DialogSubVMAssistent.form": [],
+        "VisualLogic/gui/DialogTranslateForm.form": [],
+        "VisualLogic/gui/DialogUpdate.form": [],
+        "VisualLogic/gui/DialogUserdefinedElementsHome.form": [],
+        "VisualLogic/gui/DialogVMName.form": [],
+        "VisualLogic/gui/DialogVariableWatcher.form": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 20,
+      "files": [
+        {
+          "path": "VisualLogic/gui/DialogVariables.form",
+          "language": "form",
+          "sizeLines": 171,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogWait.form",
+          "language": "form",
+          "sizeLines": 150,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/ElementPalette.form",
+          "language": "form",
+          "sizeLines": 354,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/FrameBooleanGraph.form",
+          "language": "form",
+          "sizeLines": 159,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/FrameCode.form",
+          "language": "form",
+          "sizeLines": 75,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/FrameConsoleOutput.form",
+          "language": "form",
+          "sizeLines": 94,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/FrameDoc.form",
+          "language": "form",
+          "sizeLines": 116,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/FrameDoubleGraph.form",
+          "language": "form",
+          "sizeLines": 186,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/FrameErrorWarnings.form",
+          "language": "form",
+          "sizeLines": 86,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/FrameImageViewer.form",
+          "language": "form",
+          "sizeLines": 51,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/FrameInfo.form",
+          "language": "form",
+          "sizeLines": 503,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/FrameMain.form",
+          "language": "form",
+          "sizeLines": 1593,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/FrameRunning.form",
+          "language": "form",
+          "sizeLines": 184,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/FrmTestpoints.form",
+          "language": "form",
+          "sizeLines": 145,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/PanelDokumentation.form",
+          "language": "form",
+          "sizeLines": 180,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/PanelImage.form",
+          "language": "form",
+          "sizeLines": 24,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/SelectionPane.form",
+          "language": "form",
+          "sizeLines": 28,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/SubDialog.form",
+          "language": "form",
+          "sizeLines": 29,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/VMEditorPanel.form",
+          "language": "form",
+          "sizeLines": 110,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/VMProperties.form",
+          "language": "form",
+          "sizeLines": 144,
+          "fileCategory": "markup",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "VisualLogic/gui/DialogVariables.form": [],
+        "VisualLogic/gui/DialogWait.form": [],
+        "VisualLogic/gui/ElementPalette.form": [],
+        "VisualLogic/gui/FrameBooleanGraph.form": [],
+        "VisualLogic/gui/FrameCode.form": [],
+        "VisualLogic/gui/FrameConsoleOutput.form": [],
+        "VisualLogic/gui/FrameDoc.form": [],
+        "VisualLogic/gui/FrameDoubleGraph.form": [],
+        "VisualLogic/gui/FrameErrorWarnings.form": [],
+        "VisualLogic/gui/FrameImageViewer.form": [],
+        "VisualLogic/gui/FrameInfo.form": [],
+        "VisualLogic/gui/FrameMain.form": [],
+        "VisualLogic/gui/FrameRunning.form": [],
+        "VisualLogic/gui/FrmTestpoints.form": [],
+        "VisualLogic/gui/PanelDokumentation.form": [],
+        "VisualLogic/gui/PanelImage.form": [],
+        "VisualLogic/gui/SelectionPane.form": [],
+        "VisualLogic/gui/SubDialog.form": [],
+        "VisualLogic/gui/VMEditorPanel.form": [],
+        "VisualLogic/gui/VMProperties.form": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 21,
+      "files": [
+        {
+          "path": "de/myopenlab/update/MainFrame.properties",
+          "language": "properties",
+          "sizeLines": 22,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "de/myopenlab/update/MainFrame_en_US.properties",
+          "language": "properties",
+          "sizeLines": 25,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "de/myopenlab/update/MainFrame_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 22,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "de/myopenlab/update/frmUpdate.form",
+          "language": "form",
+          "sizeLines": 505,
+          "fileCategory": "markup",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "de/myopenlab/update/MainFrame.properties": [],
+        "de/myopenlab/update/MainFrame_en_US.properties": [],
+        "de/myopenlab/update/MainFrame_es_ES.properties": [],
+        "de/myopenlab/update/frmUpdate.form": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 22,
+      "files": [
+        {
+          "path": "projectfolder/FrameMain.form",
+          "language": "form",
+          "sizeLines": 36,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/ProjectPalette.form",
+          "language": "form",
+          "sizeLines": 466,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/ProjectPalette.properties",
+          "language": "properties",
+          "sizeLines": 37,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/ProjectPalette_en_US.properties",
+          "language": "properties",
+          "sizeLines": 37,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/ProjectPalette_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 37,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/Test.jpg",
+          "language": "data",
+          "sizeLines": 91,
+          "fileCategory": "data",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/execfolder.png",
+          "language": "data",
+          "sizeLines": 9,
+          "fileCategory": "data",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/folder-open.png",
+          "language": "data",
+          "sizeLines": 9,
+          "fileCategory": "data",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/folder.png",
+          "language": "data",
+          "sizeLines": 11,
+          "fileCategory": "data",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/image-x-generic.png",
+          "language": "data",
+          "sizeLines": 10,
+          "fileCategory": "data",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/oldexecfolder.png",
+          "language": "data",
+          "sizeLines": 9,
+          "fileCategory": "data",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/package-x-generic.png",
+          "language": "data",
+          "sizeLines": 11,
+          "fileCategory": "data",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/page_deny.gif",
+          "language": "data",
+          "sizeLines": 3,
+          "fileCategory": "data",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/projectCollapsed.png",
+          "language": "data",
+          "sizeLines": 10,
+          "fileCategory": "data",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/projectExpanded.png",
+          "language": "data",
+          "sizeLines": 10,
+          "fileCategory": "data",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/text-html.png",
+          "language": "data",
+          "sizeLines": 5,
+          "fileCategory": "data",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/text-x-script.png",
+          "language": "data",
+          "sizeLines": 10,
+          "fileCategory": "data",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/user-home.png",
+          "language": "data",
+          "sizeLines": 10,
+          "fileCategory": "data",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "projectfolder/FrameMain.form": [],
+        "projectfolder/ProjectPalette.form": [],
+        "projectfolder/ProjectPalette.properties": [],
+        "projectfolder/ProjectPalette_en_US.properties": [],
+        "projectfolder/ProjectPalette_es_ES.properties": [],
+        "projectfolder/Test.jpg": [],
+        "projectfolder/execfolder.png": [],
+        "projectfolder/folder-open.png": [],
+        "projectfolder/folder.png": [],
+        "projectfolder/image-x-generic.png": [],
+        "projectfolder/oldexecfolder.png": [],
+        "projectfolder/package-x-generic.png": [],
+        "projectfolder/page_deny.gif": [],
+        "projectfolder/projectCollapsed.png": [],
+        "projectfolder/projectExpanded.png": [],
+        "projectfolder/text-html.png": [],
+        "projectfolder/text-x-script.png": [],
+        "projectfolder/user-home.png": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 23,
+      "files": [
+        {
+          "path": "BasisStatus/frmElementInfo.java",
+          "language": "java",
+          "sizeLines": 237,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/StatusEditPath_ADD_CurveTo.java",
+          "language": "java",
+          "sizeLines": 111,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/StatusEditPathAddMode.java",
+          "language": "java",
+          "sizeLines": 352,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "BasisStatus/StatusEditPathEditMode.java",
+          "language": "java",
+          "sizeLines": 563,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/ExpandingArray.java",
+          "language": "java",
+          "sizeLines": 117,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/frmElementInfo_es_ES.properties",
+          "language": "properties",
+          "sizeLines": 15,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/JavaSyntaxDocument.java",
+          "language": "java",
+          "sizeLines": 402,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/MyEditorPane.java",
+          "language": "java",
+          "sizeLines": 33,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "CodeEditor/Scanner.java",
+          "language": "java",
+          "sizeLines": 400,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "CreateNewGroup/ImageComponent.java",
+          "language": "java",
+          "sizeLines": 40,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "CreateNewGroup/SummaryCart.java",
+          "language": "java",
+          "sizeLines": 188,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "CustomColorPicker/ColorPanel.java",
+          "language": "java",
+          "sizeLines": 233,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "de/myopenlab/update/DeletePackages.java",
+          "language": "java",
+          "sizeLines": 46,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "de/myopenlab/update/IniFile.java",
+          "language": "java",
+          "sizeLines": 80,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "de/myopenlab/update/InstallPackages.java",
+          "language": "java",
+          "sizeLines": 75,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "de/myopenlab/update/MyOpenLabRow.java",
+          "language": "java",
+          "sizeLines": 190,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "de/myopenlab/update/MyTableModel.java",
+          "language": "java",
+          "sizeLines": 103,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "de/myopenlab/update/MyTableRow.java",
+          "language": "java",
+          "sizeLines": 171,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "de/myopenlab/update/TestItem.java",
+          "language": "java",
+          "sizeLines": 19,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "de/myopenlab/update/UnzipFiles.java",
+          "language": "java",
+          "sizeLines": 71,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "MyGraph/BackGraphXY.java",
+          "language": "java",
+          "sizeLines": 184,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "MyGraph/FrameMain.java",
+          "language": "java",
+          "sizeLines": 94,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "MyGraph/GraphBackground.java",
+          "language": "java",
+          "sizeLines": 165,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "MyGraph/GraphRenderer.java",
+          "language": "java",
+          "sizeLines": 349,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "MyGraph/MyGraphX.java",
+          "language": "java",
+          "sizeLines": 262,
+          "fileCategory": "code",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "BasisStatus/frmElementInfo.java": [],
+        "BasisStatus/StatusEditPath_ADD_CurveTo.java": [],
+        "BasisStatus/StatusEditPathAddMode.java": [],
+        "BasisStatus/StatusEditPathEditMode.java": [],
+        "CodeEditor/ExpandingArray.java": [],
+        "CodeEditor/frmElementInfo_es_ES.properties": [],
+        "CodeEditor/JavaSyntaxDocument.java": [],
+        "CodeEditor/MyEditorPane.java": [],
+        "CodeEditor/Scanner.java": [],
+        "CreateNewGroup/ImageComponent.java": [],
+        "CreateNewGroup/SummaryCart.java": [],
+        "CustomColorPicker/ColorPanel.java": [],
+        "de/myopenlab/update/DeletePackages.java": [],
+        "de/myopenlab/update/IniFile.java": [],
+        "de/myopenlab/update/InstallPackages.java": [],
+        "de/myopenlab/update/MyOpenLabRow.java": [],
+        "de/myopenlab/update/MyTableModel.java": [],
+        "de/myopenlab/update/MyTableRow.java": [],
+        "de/myopenlab/update/TestItem.java": [],
+        "de/myopenlab/update/UnzipFiles.java": [],
+        "MyGraph/BackGraphXY.java": [],
+        "MyGraph/FrameMain.java": [],
+        "MyGraph/GraphBackground.java": [],
+        "MyGraph/GraphRenderer.java": [],
+        "MyGraph/MyGraphX.java": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 24,
+      "files": [
+        {
+          "path": "MyGraph/Turn90Label.java",
+          "language": "java",
+          "sizeLines": 71,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "MyGraph/XAxis.java",
+          "language": "java",
+          "sizeLines": 300,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "MyGraph/YAxis.java",
+          "language": "java",
+          "sizeLines": 305,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "MyParser/functions.h",
+          "language": "other",
+          "sizeLines": 83,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "MyParser/Keywords.java",
+          "language": "java",
+          "sizeLines": 153,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "MyParser/Parser.BAK",
+          "language": "other",
+          "sizeLines": 516,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "MyParser/VerilogParser.java",
+          "language": "java",
+          "sizeLines": 392,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/FrameMain.java",
+          "language": "java",
+          "sizeLines": 62,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "projectfolder/ProjectPaletteIF.java",
+          "language": "java",
+          "sizeLines": 38,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "SimpleFileSystem/SFileDescriptor.java",
+          "language": "java",
+          "sizeLines": 36,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "SimpleFileSystem/Test.java",
+          "language": "java",
+          "sizeLines": 91,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "SimulatorSocket/Client.java",
+          "language": "java",
+          "sizeLines": 105,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "SimulatorSocket/FrameMain.form",
+          "language": "form",
+          "sizeLines": 91,
+          "fileCategory": "markup",
+          "importMap": []
+        },
+        {
+          "path": "SimulatorSocket/FrameMain.java",
+          "language": "java",
+          "sizeLines": 141,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "SimulatorSocket/Server.java",
+          "language": "java",
+          "sizeLines": 81,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "tools/BinAnzeige.java",
+          "language": "java",
+          "sizeLines": 103,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "tools/BinSchalter.java",
+          "language": "java",
+          "sizeLines": 123,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "tools/CustomAnalogComp_1_JV.java",
+          "language": "java",
+          "sizeLines": 906,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "tools/CustomAnalogComp_2_JV.java",
+          "language": "java",
+          "sizeLines": 978,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "tools/Expression.java",
+          "language": "java",
+          "sizeLines": 560,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "tools/Expression.jay",
+          "language": "other",
+          "sizeLines": 107,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "tools/Gatter.java",
+          "language": "java",
+          "sizeLines": 95,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "tools/Gatter2.java",
+          "language": "java",
+          "sizeLines": 159,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "tools/Gatter3.java",
+          "language": "java",
+          "sizeLines": 165,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "tools/GatterProperties.java",
+          "language": "java",
+          "sizeLines": 168,
+          "fileCategory": "code",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "MyGraph/Turn90Label.java": [],
+        "MyGraph/XAxis.java": [],
+        "MyGraph/YAxis.java": [],
+        "MyParser/functions.h": [],
+        "MyParser/Keywords.java": [],
+        "MyParser/Parser.BAK": [],
+        "MyParser/VerilogParser.java": [],
+        "projectfolder/FrameMain.java": [],
+        "projectfolder/ProjectPaletteIF.java": [],
+        "SimpleFileSystem/SFileDescriptor.java": [],
+        "SimpleFileSystem/Test.java": [],
+        "SimulatorSocket/Client.java": [],
+        "SimulatorSocket/FrameMain.form": [],
+        "SimulatorSocket/FrameMain.java": [],
+        "SimulatorSocket/Server.java": [],
+        "tools/BinAnzeige.java": [],
+        "tools/BinSchalter.java": [],
+        "tools/CustomAnalogComp_1_JV.java": [],
+        "tools/CustomAnalogComp_2_JV.java": [],
+        "tools/Expression.java": [],
+        "tools/Expression.jay": [],
+        "tools/Gatter.java": [],
+        "tools/Gatter2.java": [],
+        "tools/Gatter3.java": [],
+        "tools/GatterProperties.java": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 25,
+      "files": [
+        {
+          "path": "tools/JVSMain.java",
+          "language": "java",
+          "sizeLines": 213,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "tools/MainFlow.java",
+          "language": "java",
+          "sizeLines": 208,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "tools/MCUMainFlow.java",
+          "language": "java",
+          "sizeLines": 337,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "tools/OLD_CustomAnalogComp.javaX",
+          "language": "other",
+          "sizeLines": 898,
+          "fileCategory": "config",
+          "importMap": []
+        },
+        {
+          "path": "tools/Properties.java",
+          "language": "java",
+          "sizeLines": 74,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "tools/Scanner.java",
+          "language": "java",
+          "sizeLines": 113,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/ColoredListCell.java",
+          "language": "java",
+          "sizeLines": 39,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/ColorRenderer.java",
+          "language": "java",
+          "sizeLines": 57,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/DataHistory.java",
+          "language": "java",
+          "sizeLines": 85,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/DummyElement.java",
+          "language": "java",
+          "sizeLines": 44,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/ElementActionEvent.java",
+          "language": "java",
+          "sizeLines": 39,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/ElementPaletteIF.java",
+          "language": "java",
+          "sizeLines": 29,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/ElementPropertyX.java",
+          "language": "java",
+          "sizeLines": 32,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/FontChooser.java",
+          "language": "java",
+          "sizeLines": 185,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogLanguage.java",
+          "language": "java",
+          "sizeLines": 160,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogLicence.java",
+          "language": "java",
+          "sizeLines": 122,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogNewJavaComponentAssistent.java",
+          "language": "java",
+          "sizeLines": 2063,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogRename.java",
+          "language": "java",
+          "sizeLines": 156,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogSubVMAssistent.java",
+          "language": "java",
+          "sizeLines": 197,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogTranslateForm.java",
+          "language": "java",
+          "sizeLines": 306,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogUserdefinedElementsHome.java",
+          "language": "java",
+          "sizeLines": 154,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/DialogVMName.java",
+          "language": "java",
+          "sizeLines": 131,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/FrameCode.java",
+          "language": "java",
+          "sizeLines": 109,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/FrameErrorWarnings.java",
+          "language": "java",
+          "sizeLines": 140,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/frmDTLengend.form",
+          "language": "form",
+          "sizeLines": 77,
+          "fileCategory": "markup",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "tools/JVSMain.java": [],
+        "tools/MainFlow.java": [],
+        "tools/MCUMainFlow.java": [],
+        "tools/OLD_CustomAnalogComp.javaX": [],
+        "tools/Properties.java": [],
+        "tools/Scanner.java": [],
+        "VisualLogic/ColoredListCell.java": [],
+        "VisualLogic/ColorRenderer.java": [],
+        "VisualLogic/DataHistory.java": [],
+        "VisualLogic/DummyElement.java": [],
+        "VisualLogic/ElementActionEvent.java": [],
+        "VisualLogic/ElementPaletteIF.java": [],
+        "VisualLogic/ElementPropertyX.java": [],
+        "VisualLogic/FontChooser.java": [],
+        "VisualLogic/gui/DialogLanguage.java": [],
+        "VisualLogic/gui/DialogLicence.java": [],
+        "VisualLogic/gui/DialogNewJavaComponentAssistent.java": [],
+        "VisualLogic/gui/DialogRename.java": [],
+        "VisualLogic/gui/DialogSubVMAssistent.java": [],
+        "VisualLogic/gui/DialogTranslateForm.java": [],
+        "VisualLogic/gui/DialogUserdefinedElementsHome.java": [],
+        "VisualLogic/gui/DialogVMName.java": [],
+        "VisualLogic/gui/FrameCode.java": [],
+        "VisualLogic/gui/FrameErrorWarnings.java": [],
+        "VisualLogic/gui/frmDTLengend.form": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 26,
+      "files": [
+        {
+          "path": "VisualLogic/gui/frmDTLengend.java",
+          "language": "java",
+          "sizeLines": 138,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/ModernToolBarButton.java",
+          "language": "java",
+          "sizeLines": 109,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/PanelImage.java",
+          "language": "java",
+          "sizeLines": 66,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/ToolBarSeparator.java",
+          "language": "java",
+          "sizeLines": 40,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/VMEditorPanel.java",
+          "language": "java",
+          "sizeLines": 824,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/gui/VMProperties.java",
+          "language": "java",
+          "sizeLines": 197,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/LineInfo.java",
+          "language": "java",
+          "sizeLines": 31,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/Loader.java",
+          "language": "java",
+          "sizeLines": 71,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/MyMenuItem.java",
+          "language": "java",
+          "sizeLines": 18,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/MyOpenLabDriverIF.java",
+          "language": "java",
+          "sizeLines": 35,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/MyOpenLabDriverOwnerIF.java",
+          "language": "java",
+          "sizeLines": 29,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/NewJavaCompSettings.java",
+          "language": "java",
+          "sizeLines": 47,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/PanelIF.java",
+          "language": "java",
+          "sizeLines": 27,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/PathPoint.java",
+          "language": "java",
+          "sizeLines": 32,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/PinIF.java",
+          "language": "java",
+          "sizeLines": 36,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/PinsSettings.java",
+          "language": "java",
+          "sizeLines": 32,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/PinsSettingsItem.java",
+          "language": "java",
+          "sizeLines": 31,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/SearchElement.java",
+          "language": "java",
+          "sizeLines": 121,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/SearchFoundItem.java",
+          "language": "java",
+          "sizeLines": 15,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/Shape.java",
+          "language": "java",
+          "sizeLines": 327,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/SimpleFilter.java",
+          "language": "java",
+          "sizeLines": 53,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/SubElement.java",
+          "language": "java",
+          "sizeLines": 37,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/Transparency.java",
+          "language": "java",
+          "sizeLines": 45,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VS1DByte.java",
+          "language": "java",
+          "sizeLines": 140,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VS2DByte.java",
+          "language": "java",
+          "sizeLines": 179,
+          "fileCategory": "code",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "VisualLogic/gui/frmDTLengend.java": [],
+        "VisualLogic/gui/ModernToolBarButton.java": [],
+        "VisualLogic/gui/PanelImage.java": [],
+        "VisualLogic/gui/ToolBarSeparator.java": [],
+        "VisualLogic/gui/VMEditorPanel.java": [],
+        "VisualLogic/gui/VMProperties.java": [],
+        "VisualLogic/LineInfo.java": [],
+        "VisualLogic/Loader.java": [],
+        "VisualLogic/MyMenuItem.java": [],
+        "VisualLogic/MyOpenLabDriverIF.java": [],
+        "VisualLogic/MyOpenLabDriverOwnerIF.java": [],
+        "VisualLogic/NewJavaCompSettings.java": [],
+        "VisualLogic/PanelIF.java": [],
+        "VisualLogic/PathPoint.java": [],
+        "VisualLogic/PinIF.java": [],
+        "VisualLogic/PinsSettings.java": [],
+        "VisualLogic/PinsSettingsItem.java": [],
+        "VisualLogic/SearchElement.java": [],
+        "VisualLogic/SearchFoundItem.java": [],
+        "VisualLogic/Shape.java": [],
+        "VisualLogic/SimpleFilter.java": [],
+        "VisualLogic/SubElement.java": [],
+        "VisualLogic/Transparency.java": [],
+        "VisualLogic/variables/VS1DByte.java": [],
+        "VisualLogic/variables/VS2DByte.java": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 27,
+      "files": [
+        {
+          "path": "VisualLogic/variables/VSCanvas.java",
+          "language": "java",
+          "sizeLines": 149,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSGroup.java",
+          "language": "java",
+          "sizeLines": 51,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSImage24.java",
+          "language": "java",
+          "sizeLines": 111,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/variables/VSObjRef.java",
+          "language": "java",
+          "sizeLines": 131,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/VlogicFilter.java",
+          "language": "java",
+          "sizeLines": 49,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/VMEditorPanelIF.java",
+          "language": "java",
+          "sizeLines": 30,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/VMObjectIF.java",
+          "language": "java",
+          "sizeLines": 48,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/Wrapper.java",
+          "language": "java",
+          "sizeLines": 37,
+          "fileCategory": "code",
+          "importMap": []
+        },
+        {
+          "path": "VisualLogic/XMLSerializer.java",
+          "language": "java",
+          "sizeLines": 41,
+          "fileCategory": "code",
+          "importMap": []
+        }
+      ],
+      "batchImportData": {
+        "VisualLogic/variables/VSCanvas.java": [],
+        "VisualLogic/variables/VSGroup.java": [],
+        "VisualLogic/variables/VSImage24.java": [],
+        "VisualLogic/variables/VSObjRef.java": [],
+        "VisualLogic/VlogicFilter.java": [],
+        "VisualLogic/VMEditorPanelIF.java": [],
+        "VisualLogic/VMObjectIF.java": [],
+        "VisualLogic/Wrapper.java": [],
+        "VisualLogic/XMLSerializer.java": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

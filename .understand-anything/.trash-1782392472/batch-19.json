@@ -1,0 +1,26 @@
+{
+  "batchIndex": 19,
+  "nodes": [
+    {"id": "file:VisualLogic/gui/DialogTranslateForm.java", "type": "file", "name": "DialogTranslateForm.java", "filePath": "VisualLogic/gui/DialogTranslateForm.java", "summary": "Dialog for translating/localizing form labels and text", "tags": ["dialog", "translation", "localization"], "complexity": "moderate"},
+    {"id": "file:VisualLogic/gui/DialogUpdate.java", "type": "file", "name": "DialogUpdate.java", "filePath": "VisualLogic/gui/DialogUpdate.java", "summary": "Application update checker dialog", "tags": ["dialog", "update"], "complexity": "moderate"},
+    {"id": "file:VisualLogic/gui/DialogUserdefinedElementsHome.java", "type": "file", "name": "DialogUserdefinedElementsHome.java", "filePath": "VisualLogic/gui/DialogUserdefinedElementsHome.java", "summary": "Dialog for setting user-defined elements home directory", "tags": ["dialog", "elements", "configuration"], "complexity": "simple"},
+    {"id": "file:VisualLogic/gui/DialogVMName.java", "type": "file", "name": "DialogVMName.java", "filePath": "VisualLogic/gui/DialogVMName.java", "summary": "Dialog for entering VM name", "tags": ["dialog", "vm", "name"], "complexity": "simple"},
+    {"id": "file:VisualLogic/gui/DialogVariableWatcher.java", "type": "file", "name": "DialogVariableWatcher.java", "filePath": "VisualLogic/gui/DialogVariableWatcher.java", "summary": "Dialog for watching variable values during simulation", "tags": ["dialog", "variable", "debug", "simulation"], "complexity": "simple"},
+    {"id": "file:VisualLogic/gui/DialogVariables.java", "type": "file", "name": "DialogVariables.java", "filePath": "VisualLogic/gui/DialogVariables.java", "summary": "Dialog for managing project variables", "tags": ["dialog", "variable", "management"], "complexity": "moderate"},
+    {"id": "file:VisualLogic/gui/DialogWait.java", "type": "file", "name": "DialogWait.java", "filePath": "VisualLogic/gui/DialogWait.java", "summary": "Progress/wait dialog shown during long operations", "tags": ["dialog", "progress", "wait"], "complexity": "simple"},
+    {"id": "file:VisualLogic/gui/ElementPalette.java", "type": "file", "name": "ElementPalette.java", "filePath": "VisualLogic/gui/ElementPalette.java", "summary": "Panel displaying available elements for drag-and-drop into the editor", "tags": ["panel", "elements", "palette", "drag-drop"], "complexity": "complex"}
+  ],
+  "edges": [
+    {"source": "file:VisualLogic/gui/DialogUpdate.java", "target": "file:VisualLogic/Tools.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/DialogUpdate.java", "target": "file:VisualLogic/Version.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/DialogVariableWatcher.java", "target": "file:MyParser/OpenVariable.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/DialogVariables.java", "target": "file:MyParser/OpenVariable.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/DialogVariables.java", "target": "file:VisualLogic/Basis.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/DialogWait.java", "target": "file:assets/Assets.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/ElementPalette.java", "target": "file:VisualLogic/Tools.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/ElementPalette.java", "target": "file:VisualLogic/Settings.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/ElementPalette.java", "target": "file:VisualLogic/SearchElement.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/ElementPalette.java", "target": "file:CreateNewGroup/DialogCreateNewGroup.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/ElementPalette.java", "target": "file:assets/Assets.java", "type": "imports", "weight": 0.7, "label": "imports"}
+  ]
+}

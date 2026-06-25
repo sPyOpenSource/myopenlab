@@ -1,0 +1,135 @@
+{
+  "batchIndex": 21,
+  "nodes": [
+    {
+      "id": "file:VisualLogic/gui/VMProperties.java",
+      "type": "file",
+      "name": "VMProperties.java",
+      "filePath": "VisualLogic/gui/VMProperties.java",
+      "summary": "JDialog for editing virtual machine properties (author name, email, website) with OK/Cancel buttons",
+      "tags": ["gui", "dialog", "properties", "swing"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/frmDTLengend.java",
+      "type": "file",
+      "name": "frmDTLengend.java",
+      "filePath": "VisualLogic/gui/frmDTLengend.java",
+      "summary": "JFrame displaying data type legend HTML documentation with locale-based file selection (de/en/es)",
+      "tags": ["gui", "documentation", "legend", "i18n"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS1DBoolean.java",
+      "type": "file",
+      "name": "VS1DBoolean.java",
+      "filePath": "VisualLogic/variables/VS1DBoolean.java",
+      "summary": "1-dimensional boolean array variable type with serialization support for the visual logic system",
+      "tags": ["variable", "array", "boolean", "data-type"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS1DByte.java",
+      "type": "file",
+      "name": "VS1DByte.java",
+      "filePath": "VisualLogic/variables/VS1DByte.java",
+      "summary": "1-dimensional byte array variable type with serialization support for the visual logic system",
+      "tags": ["variable", "array", "byte", "data-type"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS1DDouble.java",
+      "type": "file",
+      "name": "VS1DDouble.java",
+      "filePath": "VisualLogic/variables/VS1DDouble.java",
+      "summary": "1-dimensional double array variable type with serialization support for the visual logic system",
+      "tags": ["variable", "array", "double", "data-type"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS1DInteger.java",
+      "type": "file",
+      "name": "VS1DInteger.java",
+      "filePath": "VisualLogic/variables/VS1DInteger.java",
+      "summary": "1-dimensional integer array variable type with serialization support for the visual logic system",
+      "tags": ["variable", "array", "integer", "data-type"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS1DString.java",
+      "type": "file",
+      "name": "VS1DString.java",
+      "filePath": "VisualLogic/variables/VS1DString.java",
+      "summary": "1-dimensional string array variable type with stream and XML serialization support",
+      "tags": ["variable", "array", "string", "data-type"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS2DBoolean.java",
+      "type": "file",
+      "name": "VS2DBoolean.java",
+      "filePath": "VisualLogic/variables/VS2DBoolean.java",
+      "summary": "2-dimensional boolean array variable type with columns/rows dimensions and serialization",
+      "tags": ["variable", "2d-array", "boolean", "data-type"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:VisualLogic/gui/VMProperties.java",
+      "target": "file:VisualLogic/gui/VMProperties.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports java.awt.*, javax.swing.*"
+    },
+    {
+      "source": "file:VisualLogic/gui/frmDTLengend.java",
+      "target": "file:VisualLogic/gui/frmDTLengend.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports java.awt.Image, java.net.URL, java.util.Locale"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS1DBoolean.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS1DByte.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS1DDouble.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS1DInteger.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS1DString.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS2DBoolean.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    }
+  ]
+}

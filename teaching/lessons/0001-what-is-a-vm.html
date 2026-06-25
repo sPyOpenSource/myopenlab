@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 001: MyOpenLab Basics — What is a VM?</title>
+<style>
+  :root {
+    --bg: #fafafa;
+    --fg: #1a1a1a;
+    --accent: #2563eb;
+    --accent-light: #dbeafe;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --code-bg: #f3f4f6;
+    --success: #059669;
+    --warning: #d97706;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.7;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+  }
+  .lesson-meta {
+    color: var(--muted);
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+    color: var(--accent);
+  }
+  p { margin-bottom: 1rem; }
+  .key-concept {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .key-concept strong { color: var(--accent); }
+  .diagram {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    font-family: 'Menlo', 'Consolas', monospace;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    overflow-x: auto;
+    white-space: pre;
+  }
+  code {
+    font-family: 'Menlo', 'Consolas', monospace;
+    background: var(--code-bg);
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+  .quiz {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+  }
+  .quiz h3 {
+    font-size: 1rem;
+    color: var(--success);
+    margin-bottom: 0.75rem;
+  }
+  .quiz label {
+    display: block;
+    padding: 0.5rem 0;
+    cursor: pointer;
+  }
+  .quiz input[type="radio"] { margin-right: 0.5rem; }
+  .quiz .feedback {
+    display: none;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+  }
+  .quiz .feedback.correct { background: #dcfce7; color: #166534; }
+  .quiz .feedback.incorrect { background: #fef2f2; color: #991b1b; }
+  nav {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+  nav a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  nav a:hover { text-decoration: underline; }
+  .cite {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .cite a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<h1>Lesson 001: What is a VM?</h1>
+<div class="lesson-meta">
+  Lesson 1 of 10 &middot; MyOpenLab GUI/Dashboard Course &middot;
+  <a href="../MISSION.md">Mission</a>
+</div>
+
+<h2>The Core Concept</h2>
+
+<p>Every MyOpenLab project is built around a <strong>VM</strong> (Virtual Machine). Despite the name, this isn't a Java VM or CPU emulator — it's a <strong>visual canvas</strong> where you place and connect programming blocks.</p>
+
+<div class="key-concept">
+  <strong>Key Concept:</strong> A VM is a workspace containing elements (blocks) connected by wires. Each VM can be either a <em>Circuit</em> (logic) or a <em>Front Panel</em> (UI).
+</div>
+
+<h2>Circuit vs Front Panel</h2>
+
+<p>MyOpenLab has two types of VMs:</p>
+
+<div class="diagram">
+┌─────────────────────────────────────┐
+│  CIRCUIT VM (Logic)                 │
+│                                     │
+│  [Timer] ──wire──▶ [Counter] ──▶ [LED]  │
+│                                     │
+│  Elements process data              │
+│  Wires carry values between pins    │
+└─────────────────────────────────────┘
+
+┌─────────────────────────────────────┐
+│  FRONT PANEL VM (UI)                │
+│                                     │
+│  ┌──────────┐  ┌──────────┐        │
+│  │ Slider   │  │ Display  │        │
+│  │ (input)  │──│ (output) │        │
+│  └──────────┘  └──────────┘        │
+│                                     │
+│  Elements are GUI widgets           │
+│  Users interact directly            │
+└─────────────────────────────────────┘</div>
+
+<h2>The Element</h2>
+
+<p>Every block in a VM is an <strong>Element</strong>. Elements have:</p>
+
+<ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+  <li><strong>Pins</strong> — connection points (inputs on left, outputs on right)</li>
+  <li><strong>Properties</strong> — configurable settings (color, size, range, etc.)</li>
+  <li><strong>Code</strong> — Java behavior executed each simulation step</li>
+</ul>
+
+<div class="key-concept">
+  <strong>Front Panel Elements</strong> are GUI widgets users can interact with:
+  <br>• <strong>Input:</strong> Sliders, buttons, text fields, combo boxes
+  <br>• <strong>Output:</strong> Displays, LEDs, graphs, gauges, oscilloscopes
+</div>
+
+<h2>How Data Flows</h2>
+
+<p>Data flows through <strong>wires</strong> connecting element pins. When the simulation runs:</p>
+
+<ol style="margin-left: 1.5rem; margin-bottom: 1rem;">
+  <li>Each element reads values from input pins</li>
+  <li>Executes its code</li>
+  <li>Writes results to output pins</li>
+  <li>Values propagate through wires to next elements</li>
+</ol>
+
+<h2>Quiz</h2>
+
+<div class="quiz" id="quiz1">
+  <h3>Check Your Understanding</h3>
+  <p>What is a VM in MyOpenLab?</p>
+  <label><input type="radio" name="q1" value="a"> A Java Virtual Machine instance</label>
+  <label><input type="radio" name="q1" value="b"> A visual canvas for placing and connecting elements</label>
+  <label><input type="radio" name="q1" value="c"> A database for storing project files</label>
+  <label><input type="radio" name="q1" value="d"> A compiler for Java code</label>
+  <div class="feedback" id="feedback1"></div>
+</div>
+
+<p class="cite">
+  Source: <a href="https://www.myopenlab.de">myopenlab.de</a> &middot;
+  Code: <code>src/VisualLogic/VMObject.java:62</code>
+</p>
+
+<h2>Next Steps</h2>
+
+<p>You now understand the core concept — a VM is a visual workspace. In the next lesson, we'll learn how to create your first project and place elements on the canvas.</p>
+
+<p><strong>Questions?</strong> Ask me anything about VMs, elements, or how MyOpenLab works. I'm your teacher.</p>
+
+<nav>
+  <span></span>
+  <a href="0002-your-first-project.html">Next: Your First Project →</a>
+</nav>
+
+<script>
+document.getElementById('quiz1').addEventListener('change', function(e) {
+  if (e.target.name === 'q1') {
+    const fb = document.getElementById('feedback1');
+    if (e.target.value === 'b') {
+      fb.textContent = 'Correct! A VM is a visual canvas where you place and connect elements.';
+      fb.className = 'feedback correct';
+    } else {
+      fb.textContent = 'Not quite. A VM is a visual canvas for placing and connecting elements — not a Java VM, database, or compiler.';
+      fb.className = 'feedback incorrect';
+    }
+    fb.style.display = 'block';
+  }
+});
+</script>
+
+</body>
+</html>

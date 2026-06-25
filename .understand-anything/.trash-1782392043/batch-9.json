@@ -1,0 +1,186 @@
+{
+  "batchIndex": 9,
+  "nodes": [
+    {
+      "id": "file:CodeEditor/DialogSearch.form",
+      "type": "file",
+      "name": "DialogSearch.form",
+      "filePath": "CodeEditor/DialogSearch.form",
+      "summary": "GUI form definition for code editor search dialog",
+      "tags": ["gui", "form", "search-dialog"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/DialogSearch.properties",
+      "type": "file",
+      "name": "DialogSearch.properties",
+      "filePath": "CodeEditor/DialogSearch.properties",
+      "summary": "Internationalization strings for search dialog (default locale)",
+      "tags": ["i18n", "properties", "search-dialog"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/DialogSearch_en_US.properties",
+      "type": "file",
+      "name": "DialogSearch_en_US.properties",
+      "filePath": "CodeEditor/DialogSearch_en_US.properties",
+      "summary": "Internationalization strings for search dialog (English US locale)",
+      "tags": ["i18n", "properties", "search-dialog", "en-US"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/DialogSearch_es_ES.properties",
+      "type": "file",
+      "name": "DialogSearch_es_ES.properties",
+      "filePath": "CodeEditor/DialogSearch_es_ES.properties",
+      "summary": "Internationalization strings for search dialog (Spanish locale)",
+      "tags": ["i18n", "properties", "search-dialog", "es-ES"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/PanelEditor.properties",
+      "type": "file",
+      "name": "PanelEditor.properties",
+      "filePath": "CodeEditor/PanelEditor.properties",
+      "summary": "Internationalization strings for panel editor (default locale)",
+      "tags": ["i18n", "properties", "panel-editor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/PanelEditor_en_US.properties",
+      "type": "file",
+      "name": "PanelEditor_en_US.properties",
+      "filePath": "CodeEditor/PanelEditor_en_US.properties",
+      "summary": "Internationalization strings for panel editor (English US locale)",
+      "tags": ["i18n", "properties", "panel-editor", "en-US"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/PanelEditor_es_ES.properties",
+      "type": "file",
+      "name": "PanelEditor_es_ES.properties",
+      "filePath": "CodeEditor/PanelEditor_es_ES.properties",
+      "summary": "Internationalization strings for panel editor (Spanish locale)",
+      "tags": ["i18n", "properties", "panel-editor", "es-ES"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/StatusIdle.properties",
+      "type": "file",
+      "name": "StatusIdle.properties",
+      "filePath": "CodeEditor/StatusIdle.properties",
+      "summary": "Internationalization strings for code editor idle state (default locale)",
+      "tags": ["i18n", "properties", "status-idle"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/StatusIdle_en_US.properties",
+      "type": "file",
+      "name": "StatusIdle_en_US.properties",
+      "filePath": "CodeEditor/StatusIdle_en_US.properties",
+      "summary": "Internationalization strings for code editor idle state (English US locale)",
+      "tags": ["i18n", "properties", "status-idle", "en-US"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/StatusIdle_es_ES.properties",
+      "type": "file",
+      "name": "StatusIdle_es_ES.properties",
+      "filePath": "CodeEditor/StatusIdle_es_ES.properties",
+      "summary": "Internationalization strings for code editor idle state (Spanish locale)",
+      "tags": ["i18n", "properties", "status-idle", "es-ES"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmCodeEditor.form",
+      "type": "file",
+      "name": "frmCodeEditor.form",
+      "filePath": "CodeEditor/frmCodeEditor.form",
+      "summary": "GUI form definition for main code editor window",
+      "tags": ["gui", "form", "code-editor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmCodeEditor.properties",
+      "type": "file",
+      "name": "frmCodeEditor.properties",
+      "filePath": "CodeEditor/frmCodeEditor.properties",
+      "summary": "Internationalization strings for main code editor window (default locale)",
+      "tags": ["i18n", "properties", "code-editor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmCodeEditor_en_US.properties",
+      "type": "file",
+      "name": "frmCodeEditor_en_US.properties",
+      "filePath": "CodeEditor/frmCodeEditor_en_US.properties",
+      "summary": "Internationalization strings for main code editor window (English US locale)",
+      "tags": ["i18n", "properties", "code-editor", "en-US"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmCodeEditor_es_ES.properties",
+      "type": "file",
+      "name": "frmCodeEditor_es_ES.properties",
+      "filePath": "CodeEditor/frmCodeEditor_es_ES.properties",
+      "summary": "Internationalization strings for main code editor window (Spanish locale)",
+      "tags": ["i18n", "properties", "code-editor", "es-ES"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmDefinitonDefEditor.form",
+      "type": "file",
+      "name": "frmDefinitonDefEditor.form",
+      "filePath": "CodeEditor/frmDefinitonDefEditor.form",
+      "summary": "GUI form definition for definition editor window",
+      "tags": ["gui", "form", "definition-editor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmDefinitonDefEditor.properties",
+      "type": "file",
+      "name": "frmDefinitonDefEditor.properties",
+      "filePath": "CodeEditor/frmDefinitonDefEditor.properties",
+      "summary": "Internationalization strings for definition editor window (default locale)",
+      "tags": ["i18n", "properties", "definition-editor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmDefinitonDefEditor_en_US.properties",
+      "type": "file",
+      "name": "frmDefinitonDefEditor_en_US.properties",
+      "filePath": "CodeEditor/frmDefinitonDefEditor_en_US.properties",
+      "summary": "Internationalization strings for definition editor window (English US locale)",
+      "tags": ["i18n", "properties", "definition-editor", "en-US"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmDefinitonDefEditor_es_ES.properties",
+      "type": "file",
+      "name": "frmDefinitonDefEditor_es_ES.properties",
+      "filePath": "CodeEditor/frmDefinitonDefEditor_es_ES.properties",
+      "summary": "Internationalization strings for definition editor window (Spanish locale)",
+      "tags": ["i18n", "properties", "definition-editor", "es-ES"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmElementInfo.properties",
+      "type": "file",
+      "name": "frmElementInfo.properties",
+      "filePath": "CodeEditor/frmElementInfo.properties",
+      "summary": "Internationalization strings for element info (default locale)",
+      "tags": ["i18n", "properties", "element-info"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmElementInfo_en_US.properties",
+      "type": "file",
+      "name": "frmElementInfo_en_US.properties",
+      "filePath": "CodeEditor/frmElementInfo_en_US.properties",
+      "summary": "Internationalization strings for element info (English US locale)",
+      "tags": ["i18n", "properties", "element-info", "en-US"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

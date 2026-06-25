@@ -1,0 +1,93 @@
+{
+  "batchIndex": 11,
+  "nodes": [
+    {
+      "id": "file:CustomColorPicker/Bild1.gif",
+      "type": "file",
+      "name": "Bild1.gif",
+      "filePath": "CustomColorPicker/Bild1.gif",
+      "summary": "Small GIF image file (10x10 pixels) used in the CustomColorPicker component",
+      "tags": ["image", "gif", "resource"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CustomColorPicker/ColorPanel.form",
+      "type": "file",
+      "name": "ColorPanel.form",
+      "filePath": "CustomColorPicker/ColorPanel.form",
+      "summary": "NetBeans form definition for ColorPanel JPanel component with mouse event handlers",
+      "tags": ["form", "swing", "netbeans", "ui"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CustomColorPicker/CustomColorPicker.form",
+      "type": "file",
+      "name": "CustomColorPicker.form",
+      "filePath": "CustomColorPicker/CustomColorPicker.form",
+      "summary": "NetBeans form definition for CustomColorPicker dialog with complex layout and color selection components",
+      "tags": ["form", "swing", "netbeans", "dialog", "color-picker"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:CustomColorPicker/CustomColorPicker.properties",
+      "type": "file",
+      "name": "CustomColorPicker.properties",
+      "filePath": "CustomColorPicker/CustomColorPicker.properties",
+      "summary": "German language properties for CustomColorPicker dialog (default locale)",
+      "tags": ["properties", "i18n", "german", "config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CustomColorPicker/CustomColorPicker_en_US.properties",
+      "type": "file",
+      "name": "CustomColorPicker_en_US.properties",
+      "filePath": "CustomColorPicker/CustomColorPicker_en_US.properties",
+      "summary": "US English language properties for CustomColorPicker dialog",
+      "tags": ["properties", "i18n", "english", "config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CustomColorPicker/CustomColorPicker_es_ES.properties",
+      "type": "file",
+      "name": "CustomColorPicker_es_ES.properties",
+      "filePath": "CustomColorPicker/CustomColorPicker_es_ES.properties",
+      "summary": "Spanish language properties for CustomColorPicker dialog",
+      "tags": ["properties", "i18n", "spanish", "config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CustomColorPicker/gitter.gif",
+      "type": "file",
+      "name": "gitter.gif",
+      "filePath": "CustomColorPicker/gitter.gif",
+      "summary": "GIF image file used for grid pattern in the color picker",
+      "tags": ["image", "gif", "resource", "grid"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CustomColorPicker/rasterSelection.png",
+      "type": "file",
+      "name": "rasterSelection.png",
+      "filePath": "CustomColorPicker/rasterSelection.png",
+      "summary": "PNG image file used for raster selection indicator in color picker",
+      "tags": ["image", "png", "resource", "selection"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:CustomColorPicker/CustomColorPicker.properties",
+      "target": "file:CustomColorPicker/CustomColorPicker_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization"
+    },
+    {
+      "source": "file:CustomColorPicker/CustomColorPicker.properties",
+      "target": "file:CustomColorPicker/CustomColorPicker_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization"
+    }
+  ]
+}

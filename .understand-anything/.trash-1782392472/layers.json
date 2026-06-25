@@ -1,0 +1,93 @@
+[
+  {
+    "id": "layer:foundation",
+    "name": "Foundation Layer",
+    "description": "Base data types, serialization, and file I/O. No dependencies on other application layers.",
+    "nodeIds": [
+      "file:VisualLogic/variables/VSObject.java",
+      "file:SimpleFileSystem/FileSystemInput.java",
+      "file:SimpleFileSystem/FileSystemOutput.java",
+      "file:SimpleFileSystem/SFileDescriptor.java",
+      "file:tools/Properties.java"
+    ]
+  },
+  {
+    "id": "layer:core-engine",
+    "name": "Core Engine",
+    "description": "VM objects, elements, wires, simulation logic, and configuration. Depends on Foundation.",
+    "nodeIds": [
+      "file:VisualLogic/VMObject.java",
+      "file:VisualLogic/NewJavaCompSettings.java",
+      "file:VisualLogic/NewSerialDriverManager.java"
+    ]
+  },
+  {
+    "id": "layer:parsers",
+    "name": "Parser Layer",
+    "description": "Expression and Verilog parsing. Consumes core types, used by editor and code generation.",
+    "nodeIds": [
+      "file:MyParser/Parser.java"
+    ]
+  },
+  {
+    "id": "layer:state-machine",
+    "name": "Editor State Machine",
+    "description": "BasisStatus states controlling editor interaction modes (idle, edit, resize, add element, add wire, run). Depends on Core Engine.",
+    "nodeIds": [
+      "file:BasisStatus/StatusIdle.java"
+    ]
+  },
+  {
+    "id": "layer:components",
+    "name": "Reusable UI Components",
+    "description": "Specialized Swing widgets: code editor, graph renderer, property editor, color picker.",
+    "nodeIds": [
+      "file:CodeEditor/PanelEditor.java",
+      "file:MyGraph/GraphRenderer.java",
+      "file:Peditor/PropertyEditor.java",
+      "file:CustomColorPicker/CustomColorPicker.java"
+    ]
+  },
+  {
+    "id": "layer:networking",
+    "name": "Networking / Simulator Communication",
+    "description": "Socket-based client/server for remote simulator communication.",
+    "nodeIds": [
+      "file:SimulatorSocket/Client.java",
+      "file:SimulatorSocket/Server.java",
+      "file:SimulatorSocket/MyOpenLabOwnerIF.java"
+    ]
+  },
+  {
+    "id": "layer:ui-composition",
+    "name": "UI Composition Layer",
+    "description": "Top-level frames, panels, dialogs, and project management. Composes components from all lower layers.",
+    "nodeIds": [
+      "file:VisualLogic/gui/FrameMain.java",
+      "file:VisualLogic/gui/VMEditorPanel.java",
+      "file:projectfolder/ProjectPalette.java",
+      "file:CreateNewGroup/CreateNewGroup.java"
+    ]
+  },
+  {
+    "id": "layer:utilities",
+    "name": "Utility / Support Tools",
+    "description": "Auxiliary tools: logic gates, binary displays, flow management, ZIP utilities, software updater.",
+    "nodeIds": [
+      "file:tools/BinAnzeige.java",
+      "file:tools/BinSchalter.java",
+      "file:tools/Gatter.java",
+      "file:tools/Gatter2.java",
+      "file:tools/Gatter3.java",
+      "file:tools/GatterProperties.java",
+      "file:tools/Expression.java",
+      "file:tools/Scanner.java",
+      "file:tools/ZipFiles.java",
+      "file:tools/MainFlow.java",
+      "file:tools/MCUMainFlow.java",
+      "file:tools/JVSMain.java",
+      "file:tools/CustomAnalogComp_1_JV.java",
+      "file:tools/CustomAnalogComp_2_JV.java"
+    ]
+  }
+]

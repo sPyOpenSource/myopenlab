@@ -1,0 +1,173 @@
+{
+  "batchIndex": 16,
+  "nodes": [
+    {
+      "id": "file:VisualLogic/NewJavaCompSettings.java",
+      "type": "file",
+      "name": "NewJavaCompSettings.java",
+      "filePath": "VisualLogic/NewJavaCompSettings.java",
+      "summary": "Configuration settings for new Java components with pin and property definitions",
+      "tags": ["configuration", "component", "java"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NewSerialDriverManager.java",
+      "type": "file",
+      "name": "NewSerialDriverManager.java",
+      "filePath": "VisualLogic/NewSerialDriverManager.java",
+      "summary": "Manages serial port connections for Arduino/MCU communication",
+      "tags": ["serial", "hardware", "communication", "arduino"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/OnlyDirectoryFilter.java",
+      "type": "file",
+      "name": "OnlyDirectoryFilter.java",
+      "filePath": "VisualLogic/OnlyDirectoryFilter.java",
+      "summary": "File filter that accepts only directories and .myopenlab files",
+      "tags": ["file-filter", "ui"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PanelIF.java",
+      "type": "file",
+      "name": "PanelIF.java",
+      "filePath": "VisualLogic/PanelIF.java",
+      "summary": "Interface for panel processing of pin values",
+      "tags": ["interface", "panel", "pin"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PathPoint.java",
+      "type": "file",
+      "name": "PathPoint.java",
+      "filePath": "VisualLogic/PathPoint.java",
+      "summary": "Data class for path/bezier curve control points",
+      "tags": ["geometry", "path", "point"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PinIF.java",
+      "type": "file",
+      "name": "PinIF.java",
+      "filePath": "VisualLogic/PinIF.java",
+      "summary": "Interface for handling pin mouse events in the visual editor",
+      "tags": ["interface", "pin", "mouse-events"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PinsSettings.java",
+      "type": "file",
+      "name": "PinsSettings.java",
+      "filePath": "VisualLogic/PinsSettings.java",
+      "summary": "Configuration container for pin settings with visibility and count",
+      "tags": ["configuration", "pin"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PinsSettingsItem.java",
+      "type": "file",
+      "name": "PinsSettingsItem.java",
+      "filePath": "VisualLogic/PinsSettingsItem.java",
+      "summary": "Individual pin configuration item with name, datatype, and IO direction",
+      "tags": ["configuration", "pin", "data-type"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PolyPoint.java",
+      "type": "file",
+      "name": "PolyPoint.java",
+      "filePath": "VisualLogic/PolyPoint.java",
+      "summary": "Polygon point with selection state and XML/binary serialization",
+      "tags": ["geometry", "polygon", "serialization"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/ProjectProperties.java",
+      "type": "file",
+      "name": "ProjectProperties.java",
+      "filePath": "VisualLogic/ProjectProperties.java",
+      "summary": "Stores main VM reference and project type",
+      "tags": ["configuration", "project"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/SearchElement.java",
+      "type": "file",
+      "name": "SearchElement.java",
+      "filePath": "VisualLogic/SearchElement.java",
+      "summary": "Searches for elements by keyword in definition.def files across directories",
+      "tags": ["search", "elements", "file-io"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/SearchFoundItem.java",
+      "type": "file",
+      "name": "SearchFoundItem.java",
+      "filePath": "VisualLogic/SearchFoundItem.java",
+      "summary": "Data class for storing search results with matched word and element directory",
+      "tags": ["search", "data-class"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/Settings.java",
+      "type": "file",
+      "name": "Settings.java",
+      "filePath": "VisualLogic/Settings.java",
+      "summary": "Application-wide settings including UI layout, editors, and repository configuration",
+      "tags": ["configuration", "settings", "ui"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:VisualLogic/NewSerialDriverManager.java",
+      "target": "file:VisualLogic/variables/VSserialPort.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:VisualLogic/NewSerialDriverManager.java",
+      "target": "file:VisualLogic/gui/FrameMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:VisualLogic/PolyPoint.java",
+      "target": "file:VisualLogic/VisualObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends"
+    },
+    {
+      "source": "file:VisualLogic/PolyPoint.java",
+      "target": "file:VisualLogic/VMObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "uses"
+    },
+    {
+      "source": "file:VisualLogic/PinsSettings.java",
+      "target": "file:VisualLogic/PinsSettingsItem.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "contains"
+    },
+    {
+      "source": "file:VisualLogic/NewJavaCompSettings.java",
+      "target": "file:VisualLogic/PinsSettings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "contains"
+    },
+    {
+      "source": "file:VisualLogic/SearchElement.java",
+      "target": "file:VisualLogic/SearchFoundItem.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "uses"
+    }
+  ]
+}

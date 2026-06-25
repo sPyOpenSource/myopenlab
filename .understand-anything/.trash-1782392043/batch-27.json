@@ -1,0 +1,285 @@
+{
+  "batchIndex": 27,
+  "nodes": [
+    {
+      "id": "file:tools/CustomAnalogComp_1_JV.java",
+      "type": "file",
+      "name": "CustomAnalogComp_1_JV.java",
+      "filePath": "tools/CustomAnalogComp_1_JV.java",
+      "summary": "Custom analog gauge/dial element with configurable needle, knob, text labels, gradient colors, and mouse-drag value control",
+      "tags": ["element", "analog-gauge", "ui", "custom-drawing", "visual-logic"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tools/CustomAnalogComp_2_JV.java",
+      "type": "file",
+      "name": "CustomAnalogComp_2_JV.java",
+      "filePath": "tools/CustomAnalogComp_2_JV.java",
+      "summary": "Second custom analog gauge element with image-based needle, circular background, multi-color nibble selector, and extensive property editor",
+      "tags": ["element", "analog-gauge", "ui", "custom-drawing", "visual-logic"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tools/Expression.java",
+      "type": "file",
+      "name": "Expression.java",
+      "filePath": "tools/Expression.java",
+      "summary": "Generated expression parser (jay) supporting arithmetic, comparison, and bitwise operations with code generation to instruction list",
+      "tags": ["parser", "expression", "code-generation", "compiler"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tools/Gatter.java",
+      "type": "file",
+      "name": "Gatter.java",
+      "filePath": "tools/Gatter.java",
+      "summary": "Base logic gate element with fixed number of boolean input pins and one output pin, displaying an icon image",
+      "tags": ["element", "logic-gate", "boolean", "visual-logic"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tools/Gatter2.java",
+      "type": "file",
+      "name": "Gatter2.java",
+      "filePath": "tools/Gatter2.java",
+      "summary": "Configurable logic gate element with variable number of input pins (2-20) set via property editor",
+      "tags": ["element", "logic-gate", "boolean", "configurable", "visual-logic"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tools/Gatter3.java",
+      "type": "file",
+      "name": "Gatter3.java",
+      "filePath": "tools/Gatter3.java",
+      "summary": "Logic gate element with variable input pins and configurable propagation delay in microseconds",
+      "tags": ["element", "logic-gate", "boolean", "delay", "visual-logic"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tools/GatterProperties.java",
+      "type": "file",
+      "name": "GatterProperties.java",
+      "filePath": "tools/GatterProperties.java",
+      "summary": "JDialog for configuring logic gate input pin count (2-10) with spinner control",
+      "tags": ["gui", "dialog", "properties", "gate-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tools/JVSMain.java",
+      "type": "file",
+      "name": "JVSMain.java",
+      "filePath": "tools/JVSMain.java",
+      "summary": "Base class for all visual logic element components implementing ElementIF with default lifecycle methods, pin management, and image drawing utilities",
+      "tags": ["base-class", "element", "interface", "visual-logic", "framework"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tools/MCUMainFlow.java",
+      "type": "file",
+      "name": "MCUMainFlow.java",
+      "filePath": "tools/MCUMainFlow.java",
+      "summary": "MCU main flow element with variable display, expression parsing to MCU code, inline text editing, and auto-resize",
+      "tags": ["element", "mcu", "code-generation", "flow-control", "visual-logic"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tools/MainFlow.java",
+      "type": "file",
+      "name": "MainFlow.java",
+      "filePath": "tools/MainFlow.java",
+      "summary": "Main flow element with variable display, inline text editing, and auto-resize based on caption width",
+      "tags": ["element", "flow-control", "ui", "visual-logic"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tools/Properties.java",
+      "type": "file",
+      "name": "Properties.java",
+      "filePath": "tools/Properties.java",
+      "summary": "Simple text editing JDialog with OK/Cancel buttons for editing multi-line text properties",
+      "tags": ["gui", "dialog", "text-editor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tools/Scanner.java",
+      "type": "file",
+      "name": "Scanner.java",
+      "filePath": "tools/Scanner.java",
+      "summary": "Token scanner extending StreamTokenizer implementing Expression.yyInput for parsing expressions with variable/constant recognition",
+      "tags": ["scanner", "tokenizer", "parser", "expression"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tools/ZipFiles.java",
+      "type": "file",
+      "name": "ZipFiles.java",
+      "filePath": "tools/ZipFiles.java",
+      "summary": "Utility class for zipping single files and directories using java.util.zip",
+      "tags": ["utility", "zip", "compression", "io"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:tools/CustomAnalogComp_1_JV.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain"
+    },
+    {
+      "source": "file:tools/CustomAnalogComp_1_JV.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses ExternalIF for circuit element"
+    },
+    {
+      "source": "file:tools/CustomAnalogComp_1_JV.java",
+      "target": "file:VisualLogic/variables/VSColorAdvanced.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses VSColorAdvanced"
+    },
+    {
+      "source": "file:tools/CustomAnalogComp_1_JV.java",
+      "target": "file:tools/Properties.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "opens Properties dialog"
+    },
+    {
+      "source": "file:tools/CustomAnalogComp_2_JV.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain"
+    },
+    {
+      "source": "file:tools/CustomAnalogComp_2_JV.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses ExternalIF for circuit element"
+    },
+    {
+      "source": "file:tools/CustomAnalogComp_2_JV.java",
+      "target": "file:tools/Properties.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "opens Properties dialog"
+    },
+    {
+      "source": "file:tools/Expression.java",
+      "target": "file:tools/Scanner.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses Scanner for tokenization"
+    },
+    {
+      "source": "file:tools/Gatter.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain"
+    },
+    {
+      "source": "file:tools/Gatter.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses ExternalIF.C_BOOLEAN"
+    },
+    {
+      "source": "file:tools/Gatter2.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain"
+    },
+    {
+      "source": "file:tools/Gatter2.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses ExternalIF.C_BOOLEAN"
+    },
+    {
+      "source": "file:tools/Gatter3.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain"
+    },
+    {
+      "source": "file:tools/Gatter3.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses ExternalIF.C_BOOLEAN"
+    },
+    {
+      "source": "file:tools/JVSMain.java",
+      "target": "file:VisualLogic/ElementIF.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "implements ElementIF"
+    },
+    {
+      "source": "file:tools/JVSMain.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses ExternalIF"
+    },
+    {
+      "source": "file:tools/MCUMainFlow.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain"
+    },
+    {
+      "source": "file:tools/MCUMainFlow.java",
+      "target": "file:tools/Expression.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses Expression parser"
+    },
+    {
+      "source": "file:tools/MCUMainFlow.java",
+      "target": "file:tools/Scanner.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses Scanner"
+    },
+    {
+      "source": "file:tools/MCUMainFlow.java",
+      "target": "file:VisualLogic/VSBasisIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses VSBasisIF for variable lookup"
+    },
+    {
+      "source": "file:tools/MainFlow.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain"
+    },
+    {
+      "source": "file:tools/Scanner.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses ExternalIF"
+    },
+    {
+      "source": "file:tools/Scanner.java",
+      "target": "file:VisualLogic/VSBasisIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses VSBasisIF for variable type lookup"
+    }
+  ]
+}

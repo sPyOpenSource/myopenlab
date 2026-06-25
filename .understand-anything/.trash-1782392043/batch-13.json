@@ -1,0 +1,73 @@
+{
+  "batchIndex": 13,
+  "nodes": [
+    {
+      "id": "file:Peditor/DialogPropertiesChoice.form",
+      "type": "file",
+      "name": "DialogPropertiesChoice.form",
+      "filePath": "Peditor/DialogPropertiesChoice.form",
+      "summary": "NetBeans form definition for property selection dialog with list and button components",
+      "tags": ["form", "swing", "netbeans", "dialog", "property-editor"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Peditor/PropertyEditor.form",
+      "type": "file",
+      "name": "PropertyEditor.form",
+      "filePath": "Peditor/PropertyEditor.form",
+      "summary": "NetBeans form definition for property editor panel with complex layout",
+      "tags": ["form", "swing", "netbeans", "property-editor", "panel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Peditor/PropertyEditor.properties",
+      "type": "file",
+      "name": "PropertyEditor.properties",
+      "filePath": "Peditor/PropertyEditor.properties",
+      "summary": "German language properties for PropertyEditor (default locale)",
+      "tags": ["properties", "i18n", "german", "config", "property-editor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Peditor/PropertyEditor_en_US.properties",
+      "type": "file",
+      "name": "PropertyEditor_en_US.properties",
+      "filePath": "Peditor/PropertyEditor_en_US.properties",
+      "summary": "US English language properties for PropertyEditor",
+      "tags": ["properties", "i18n", "english", "config", "property-editor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Peditor/PropertyEditor_es_ES.properties",
+      "type": "file",
+      "name": "PropertyEditor_es_ES.properties",
+      "filePath": "Peditor/PropertyEditor_es_ES.properties",
+      "summary": "Spanish language properties for PropertyEditor",
+      "tags": ["properties", "i18n", "spanish", "config", "property-editor"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:Peditor/PropertyEditor.properties",
+      "target": "file:Peditor/PropertyEditor_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization"
+    },
+    {
+      "source": "file:Peditor/PropertyEditor.properties",
+      "target": "file:Peditor/PropertyEditor_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization"
+    },
+    {
+      "source": "file:Peditor/PropertyEditor.form",
+      "target": "file:Peditor/DialogPropertiesChoice.form",
+      "type": "uses",
+      "weight": 0.6,
+      "label": "uses choice dialog"
+    }
+  ]
+}

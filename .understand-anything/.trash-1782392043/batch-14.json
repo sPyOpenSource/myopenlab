@@ -1,0 +1,271 @@
+{
+  "batchIndex": 14,
+  "nodes": [
+    {
+      "id": "file:VisualLogic/NOI18N/Basic.properties",
+      "type": "file",
+      "name": "Basic.properties",
+      "filePath": "VisualLogic/NOI18N/Basic.properties",
+      "summary": "German language properties for basic error messages and UI strings (default locale)",
+      "tags": ["properties", "i18n", "german", "config", "error-messages", "ui"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/Basic_en_US.properties",
+      "type": "file",
+      "name": "Basic_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/Basic_en_US.properties",
+      "summary": "US English language properties for basic error messages and UI strings",
+      "tags": ["properties", "i18n", "english", "config", "error-messages", "ui"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/Basic_es_ES.properties",
+      "type": "file",
+      "name": "Basic_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/Basic_es_ES.properties",
+      "summary": "Spanish language properties for basic error messages and UI strings",
+      "tags": ["properties", "i18n", "spanish", "config", "error-messages", "ui"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogAddEditvariable.properties",
+      "type": "file",
+      "name": "DialogAddEditvariable.properties",
+      "filePath": "VisualLogic/NOI18N/DialogAddEditvariable.properties",
+      "summary": "German language properties for Add/Edit Variable dialog",
+      "tags": ["properties", "i18n", "german", "config", "dialog", "variable"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogAddEditvariable_en_US.properties",
+      "type": "file",
+      "name": "DialogAddEditvariable_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogAddEditvariable_en_US.properties",
+      "summary": "US English language properties for Add/Edit Variable dialog",
+      "tags": ["properties", "i18n", "english", "config", "dialog", "variable"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogAddEditvariable_es_ES.properties",
+      "type": "file",
+      "name": "DialogAddEditvariable_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogAddEditvariable_es_ES.properties",
+      "summary": "Spanish language properties for Add/Edit Variable dialog",
+      "tags": ["properties", "i18n", "spanish", "config", "dialog", "variable"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogDistributionAssistent_es_ES.properties",
+      "type": "file",
+      "name": "DialogDistributionAssistent_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogDistributionAssistent_es_ES.properties",
+      "summary": "Spanish language properties for Distribution Assistant dialog",
+      "tags": ["properties", "i18n", "spanish", "config", "dialog", "distribution"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogFontChooser.properties",
+      "type": "file",
+      "name": "DialogFontChooser.properties",
+      "filePath": "VisualLogic/NOI18N/DialogFontChooser.properties",
+      "summary": "German language properties for Font Chooser dialog",
+      "tags": ["properties", "i18n", "german", "config", "dialog", "font"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogFontChooser_en_US.properties",
+      "type": "file",
+      "name": "DialogFontChooser_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogFontChooser_en_US.properties",
+      "summary": "US English language properties for Font Chooser dialog",
+      "tags": ["properties", "i18n", "english", "config", "dialog", "font"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogFontChooser_es_ES.properties",
+      "type": "file",
+      "name": "DialogFontChooser_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogFontChooser_es_ES.properties",
+      "summary": "Spanish language properties for Font Chooser dialog",
+      "tags": ["properties", "i18n", "spanish", "config", "dialog", "font"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogLanguage.properties",
+      "type": "file",
+      "name": "DialogLanguage.properties",
+      "filePath": "VisualLogic/NOI18N/DialogLanguage.properties",
+      "summary": "German language properties for Language selection dialog",
+      "tags": ["properties", "i18n", "german", "config", "dialog", "language"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogLanguage_en_US.properties",
+      "type": "file",
+      "name": "DialogLanguage_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogLanguage_en_US.properties",
+      "summary": "US English language properties for Language selection dialog",
+      "tags": ["properties", "i18n", "english", "config", "dialog", "language"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogLanguage_es_ES.properties",
+      "type": "file",
+      "name": "DialogLanguage_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogLanguage_es_ES.properties",
+      "summary": "Spanish language properties for Language selection dialog",
+      "tags": ["properties", "i18n", "spanish", "config", "dialog", "language"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogNewJavaComponentAssistent.properties",
+      "type": "file",
+      "name": "DialogNewJavaComponentAssistent.properties",
+      "filePath": "VisualLogic/NOI18N/DialogNewJavaComponentAssistent.properties",
+      "summary": "German language properties for New Java Component Assistant dialog",
+      "tags": ["properties", "i18n", "german", "config", "dialog", "component", "assistant"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogNewJavaComponentAssistent_en_US.properties",
+      "type": "file",
+      "name": "DialogNewJavaComponentAssistent_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogNewJavaComponentAssistent_en_US.properties",
+      "summary": "US English language properties for New Java Component Assistant dialog",
+      "tags": ["properties", "i18n", "english", "config", "dialog", "component", "assistant"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogNewJavaComponentAssistent_es_ES.properties",
+      "type": "file",
+      "name": "DialogNewJavaComponentAssistent_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogNewJavaComponentAssistent_es_ES.properties",
+      "summary": "Spanish language properties for New Java Component Assistant dialog",
+      "tags": ["properties", "i18n", "spanish", "config", "dialog", "component", "assistant"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogNewProject.properties",
+      "type": "file",
+      "name": "DialogNewProject.properties",
+      "filePath": "VisualLogic/NOI18N/DialogNewProject.properties",
+      "summary": "German language properties for New Project dialog",
+      "tags": ["properties", "i18n", "german", "config", "dialog", "project"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogNewProject_en_US.properties",
+      "type": "file",
+      "name": "DialogNewProject_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogNewProject_en_US.properties",
+      "summary": "US English language properties for New Project dialog",
+      "tags": ["properties", "i18n", "english", "config", "dialog", "project"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogNewProject_es_ES.properties",
+      "type": "file",
+      "name": "DialogNewProject_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogNewProject_es_ES.properties",
+      "summary": "Spanish language properties for New Project dialog",
+      "tags": ["properties", "i18n", "spanish", "config", "dialog", "project"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogPassword.properties",
+      "type": "file",
+      "name": "DialogPassword.properties",
+      "filePath": "VisualLogic/NOI18N/DialogPassword.properties",
+      "summary": "German language properties for Password dialog",
+      "tags": ["properties", "i18n", "german", "config", "dialog", "password"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:VisualLogic/NOI18N/Basic.properties",
+      "target": "file:VisualLogic/NOI18N/Basic_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/Basic.properties",
+      "target": "file:VisualLogic/NOI18N/Basic_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogAddEditvariable.properties",
+      "target": "file:VisualLogic/NOI18N/DialogAddEditvariable_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogAddEditvariable.properties",
+      "target": "file:VisualLogic/NOI18N/DialogAddEditvariable_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogFontChooser.properties",
+      "target": "file:VisualLogic/NOI18N/DialogFontChooser_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogFontChooser.properties",
+      "target": "file:VisualLogic/NOI18N/DialogFontChooser_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogLanguage.properties",
+      "target": "file:VisualLogic/NOI18N/DialogLanguage_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogLanguage.properties",
+      "target": "file:VisualLogic/NOI18N/DialogLanguage_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogNewJavaComponentAssistent.properties",
+      "target": "file:VisualLogic/NOI18N/DialogNewJavaComponentAssistent_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogNewJavaComponentAssistent.properties",
+      "target": "file:VisualLogic/NOI18N/DialogNewJavaComponentAssistent_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogNewProject.properties",
+      "target": "file:VisualLogic/NOI18N/DialogNewProject_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogNewProject.properties",
+      "target": "file:VisualLogic/NOI18N/DialogNewProject_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization"
+    }
+  ]
+}

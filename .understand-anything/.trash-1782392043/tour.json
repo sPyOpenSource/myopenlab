@@ -1,0 +1,62 @@
+[
+  {
+    "order": 1,
+    "title": "Visual Logic Core",
+    "description": "The heart of the application: Basis (main canvas), VMObject (virtual machine), Element (visual components), Draht (wires connecting elements), and JPin (input/output pins). This forms the simulation engine.",
+    "nodeIds": ["file:src/VisualLogic/Basis.java", "file:src/VisualLogic/VMObject.java", "file:src/VisualLogic/Element.java"]
+  },
+  {
+    "order": 2,
+    "title": "Variable Types System",
+    "description": "VS* classes extend VSObject to represent different data types (Boolean, Integer, Double, String, Color, Image, Canvas, etc.) including 1D and 2D array variants. These are the data containers that flow through the visual logic.",
+    "nodeIds": ["file:src/VisualLogic/variables/VSObject.java", "file:src/VisualLogic/variables/VSBoolean.java", "file:src/VisualLogic/variables/VSInteger.java"]
+  },
+  {
+    "order": 3,
+    "title": "State Machine (BasisStatus)",
+    "description": "StatusBasisIF defines the interface for interaction states: Idle, Run, AddElement, AddWire, MoveElements, Resize, EditPath, GummiBand (selection). Each state handles mouse/keyboard events differently.",
+    "nodeIds": ["file:src/BasisStatus/StatusBasisIF.java", "file:src/BasisStatus/StatusIdle.java", "file:src/BasisStatus/StatusRun.java"]
+  },
+  {
+    "order": 4,
+    "title": "Tools (Visual Elements)",
+    "description": "JVSMain is the base class for all user-created visual elements. Gatter* are logic gates, BinAnzeige/BinSchalter are binary display/switch, MainFlow/MCUMainFlow are flow control elements.",
+    "nodeIds": ["file:tools/JVSMain.java", "file:tools/Gatter.java", "file:tools/BinAnzeige.java", "file:tools/MainFlow.java"]
+  },
+  {
+    "order": 5,
+    "title": "GUI Dialogs",
+    "description": "Swing dialogs for project management, settings, variable editing, and element configuration. DialogAddEditvariable handles variable creation, DialogNewProject for new projects, DialogOptions for settings.",
+    "nodeIds": ["file:src/VisualLogic/gui/DialogAddEditvariable.java", "file:src/VisualLogic/gui/DialogNewProject.java", "file:src/VisualLogic/gui/DialogOptions.java"]
+  },
+  {
+    "order": 6,
+    "title": "Code Editor",
+    "description": "PanelEditor provides syntax-highlighted code editing with undo/redo. Scanner handles tokenization for highlighting. JavaSyntaxDocument manages document structure.",
+    "nodeIds": ["file:src/CodeEditor/PanelEditor.java", "file:src/CodeEditor/Scanner.java", "file:src/CodeEditor/JavaSyntaxDocument.java"]
+  },
+  {
+    "order": 7,
+    "title": "Property Editor",
+    "description": "PropertyEditor allows users to configure element properties through a dynamic UI. BasisProperty is the base, PropertyEditorItem represents individual properties.",
+    "nodeIds": ["file:src/Peditor/PropertyEditor.java", "file:src/Peditor/BasisProperty.java", "file:src/Peditor/PropertyEditorItem.java"]
+  },
+  {
+    "order": 8,
+    "title": "Update System",
+    "description": "frmUpdate manages package updates: downloading from repository, installing/removing packages. Uses IniFile for config, Tools2 for HTTP/IO, UnzipFiles for extraction.",
+    "nodeIds": ["file:de/myopenlab/update/frmUpdate.java", "file:de/myopenlab/update/InstallPackages.java", "file:de/myopenlab/update/Tools2.java"]
+  },
+  {
+    "order": 9,
+    "title": "Project Folder Browser",
+    "description": "ProjectPalette provides a tree view for browsing project files. MyNode extends DefaultMutableTreeNode with custom icons. ProjectPaletteIF defines the callback interface.",
+    "nodeIds": ["file:projectfolder/ProjectPalette.java", "file:projectfolder/MyNode.java", "file:projectfolder/ProjectPaletteIF.java"]
+  },
+  {
+    "order": 10,
+    "title": "Graph Visualization",
+    "description": "MyGraph/MyGraphX components for plotting data with axes, renderers, and background. Used for displaying simulation results.",
+    "nodeIds": ["file:src/MyGraph/MyGraph.java", "file:src/MyGraph/GraphRenderer.java", "file:src/MyGraph/XAxis.java"]
+  }
+]

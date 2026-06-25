@@ -1,0 +1,233 @@
+{
+  "batchIndex": 6,
+  "nodes": [
+    {
+      "id": "file:BasisStatus/StatusLineHoritontal.java",
+      "type": "file",
+      "name": "StatusLineHoritontal.java",
+      "filePath": "BasisStatus/StatusLineHoritontal.java",
+      "summary": "Manages horizontal wire drawing state for circuit editor, handles mouse events for wire creation and pin selection",
+      "tags": ["circuit-editor", "wire-drawing", "state-pattern", "mouse-events"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:BasisStatus/StatusLineVertikal.java",
+      "type": "file",
+      "name": "StatusLineVertikal.java",
+      "filePath": "BasisStatus/StatusLineVertikal.java",
+      "summary": "Manages vertical wire drawing state for circuit editor, handles node insertion into existing wires",
+      "tags": ["circuit-editor", "wire-drawing", "state-pattern", "node-insertion"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/Draht.java",
+      "type": "file",
+      "name": "Draht.java",
+      "filePath": "VisualLogic/Draht.java",
+      "summary": "Represents a wire connection between element pins, manages polyline points, serialization, and drawing",
+      "tags": ["wire", "connection", "serializable", "polyline"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/ExternalIF.java",
+      "type": "file",
+      "name": "ExternalIF.java",
+      "filePath": "VisualLogic/ExternalIF.java",
+      "summary": "Core interface defining element API for circuit components, including pin management, data types, and processing",
+      "tags": ["interface", "element-api", "data-types", "circuit-component"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/JPin.java",
+      "type": "file",
+      "name": "JPin.java",
+      "filePath": "VisualLogic/JPin.java",
+      "summary": "Visual pin component for circuit elements, handles mouse events and displays pin connections",
+      "tags": ["pin", "gui-component", "mouse-events", "visual"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/Line.java",
+      "type": "file",
+      "name": "Line.java",
+      "filePath": "VisualLogic/Line.java",
+      "summary": "Represents a line segment in wire rendering, provides point-in-line testing and proximity detection",
+      "tags": ["line-segment", "geometry", "hit-testing"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PolyPoint.java",
+      "type": "file",
+      "name": "PolyPoint.java",
+      "filePath": "VisualLogic/PolyPoint.java",
+      "summary": "Represents a point in a polyline wire path, supports serialization and selection state",
+      "tags": ["point", "polyline", "serializable"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/VSDataType.java",
+      "type": "file",
+      "name": "VSDataType.java",
+      "filePath": "VisualLogic/VSDataType.java",
+      "summary": "Utility class for data type management, provides color/stroke mapping and type creation factory",
+      "tags": ["data-type", "utility", "factory", "color-mapping"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:BasisStatus/StatusLineHoritontal.java",
+      "target": "file:VisualLogic/Draht.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineHoritontal.java",
+      "target": "file:VisualLogic/Element.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineHoritontal.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineHoritontal.java",
+      "target": "file:VisualLogic/JPin.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineHoritontal.java",
+      "target": "file:VisualLogic/Line.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineHoritontal.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineHoritontal.java",
+      "target": "file:VisualLogic/VMObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineHoritontal.java",
+      "target": "file:VisualLogic/VSDataType.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/Draht.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/Element.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/JPin.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/Line.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/PolyPoint.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/VMObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/VSDataType.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports"
+    },
+    {
+      "source": "file:VisualLogic/JPin.java",
+      "target": "file:VisualLogic/VSDataType.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports"
+    },
+    {
+      "source": "file:VisualLogic/VSDataType.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:VisualLogic/Draht.java",
+      "target": "file:VisualLogic/PolyPoint.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:VisualLogic/Draht.java",
+      "target": "file:VisualLogic/Line.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:VisualLogic/Draht.java",
+      "target": "file:VisualLogic/VSDataType.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports"
+    }
+  ]
+}

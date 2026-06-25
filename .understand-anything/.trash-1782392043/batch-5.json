@@ -1,0 +1,440 @@
+{
+  "batchIndex": 5,
+  "nodes": [
+    {
+      "id": "file:src/BasisStatus/StatusGummiBandX.java",
+      "type": "file",
+      "name": "StatusGummiBandX.java",
+      "filePath": "src/BasisStatus/StatusGummiBandX.java",
+      "summary": "State handler for rubber-band selection with visual rectangle feedback",
+      "tags": ["state-machine", "selection", "interaction", "visual"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/CodeEditor/frmCodeEditor.java",
+      "type": "file",
+      "name": "frmCodeEditor.java",
+      "filePath": "src/CodeEditor/frmCodeEditor.java",
+      "summary": "Main code editor window with tabbed interface for editing Java source files",
+      "tags": ["gui", "frame", "editor", "ide"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/Settings.java",
+      "type": "file",
+      "name": "Settings.java",
+      "filePath": "src/VisualLogic/Settings.java",
+      "summary": "Application settings management for VisualLogic environment",
+      "tags": ["configuration", "settings", "preferences"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/Wrapper.java",
+      "type": "file",
+      "name": "Wrapper.java",
+      "filePath": "src/VisualLogic/Wrapper.java",
+      "summary": "Wrapper class for element container and lifecycle management",
+      "tags": ["core", "wrapper", "container", "lifecycle"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/Loader.java",
+      "type": "file",
+      "name": "Loader.java",
+      "filePath": "src/VisualLogic/Loader.java",
+      "summary": "Dynamic class loader for loading element classes from JAR files",
+      "tags": ["core", "loader", "dynamic", "jar"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/DriverManager.java",
+      "type": "file",
+      "name": "DriverManager.java",
+      "filePath": "src/VisualLogic/DriverManager.java",
+      "summary": "Manager for hardware drivers (Arduino, Raspberry Pi, etc.)",
+      "tags": ["core", "driver", "hardware", "management"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/NewSerialDriverManager.java",
+      "type": "file",
+      "name": "NewSerialDriverManager.java",
+      "filePath": "src/VisualLogic/NewSerialDriverManager.java",
+      "summary": "Serial communication driver manager for hardware interfaces",
+      "tags": ["core", "serial", "driver", "communication"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/MyImage.java",
+      "type": "file",
+      "name": "MyImage.java",
+      "filePath": "src/VisualLogic/MyImage.java",
+      "summary": "Custom image component for element icons with scaling support",
+      "tags": ["gui", "image", "component", "icon"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/XMLSerializer.java",
+      "type": "file",
+      "name": "XMLSerializer.java",
+      "filePath": "src/VisualLogic/XMLSerializer.java",
+      "summary": "XML serialization/deserialization utility for project files",
+      "tags": ["serialization", "xml", "io", "utility"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/ExtensionFileFilter.java",
+      "type": "file",
+      "name": "ExtensionFileFilter.java",
+      "filePath": "src/VisualLogic/ExtensionFileFilter.java",
+      "summary": "File filter for file chooser dialogs based on extensions",
+      "tags": ["utility", "file-filter", "io"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/PathPoint.java",
+      "type": "file",
+      "name": "PathPoint.java",
+      "filePath": "src/VisualLogic/PathPoint.java",
+      "summary": "Point on a wire path for routing connections",
+      "tags": ["circuit", "wire", "path", "point"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/PolyPoint.java",
+      "type": "file",
+      "name": "PolyPoint.java",
+      "filePath": "src/VisualLogic/PolyPoint.java",
+      "summary": "Polyline point for wire path representation",
+      "tags": ["circuit", "wire", "path", "polyline"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/SearchElement.java",
+      "type": "file",
+      "name": "SearchElement.java",
+      "filePath": "src/VisualLogic/SearchElement.java",
+      "summary": "Element search functionality for finding components in circuit",
+      "tags": ["search", "element", "utility"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/SearchFoundItem.java",
+      "type": "file",
+      "name": "SearchFoundItem.java",
+      "filePath": "src/VisualLogic/SearchFoundItem.java",
+      "summary": "Data class representing a search result",
+      "tags": ["search", "data-class", "result"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/ProjectProperties.java",
+      "type": "file",
+      "name": "ProjectProperties.java",
+      "filePath": "src/VisualLogic/ProjectProperties.java",
+      "summary": "Project-level properties and configuration management",
+      "tags": ["configuration", "project", "properties"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/VSDataType.java",
+      "type": "file",
+      "name": "VSDataType.java",
+      "filePath": "src/VisualLogic/VSDataType.java",
+      "summary": "Data type definitions for VisualLogic variables",
+      "tags": ["data-type", "variable", "definition"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/Transparency.java",
+      "type": "file",
+      "name": "Transparency.java",
+      "filePath": "src/VisualLogic/Transparency.java",
+      "summary": "Transparency/alpha value management for visual elements",
+      "tags": ["visual", "transparency", "alpha", "rendering"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/PinsSettings.java",
+      "type": "file",
+      "name": "PinsSettings.java",
+      "filePath": "src/VisualLogic/PinsSettings.java",
+      "summary": "Configuration panel for element pin settings",
+      "tags": ["gui", "pin", "configuration", "settings"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/PinsSettingsItem.java",
+      "type": "file",
+      "name": "PinsSettingsItem.java",
+      "filePath": "src/VisualLogic/PinsSettingsItem.java",
+      "summary": "Individual pin setting item for pin configuration",
+      "tags": ["pin", "configuration", "item", "settings"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/DataEntry.java",
+      "type": "file",
+      "name": "DataEntry.java",
+      "filePath": "src/VisualLogic/DataEntry.java",
+      "summary": "Data entry component for runtime variable input",
+      "tags": ["gui", "data-entry", "input", "runtime"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/DataHistory.java",
+      "type": "file",
+      "name": "DataHistory.java",
+      "filePath": "src/VisualLogic/DataHistory.java",
+      "summary": "Historical data storage for plotting and recording",
+      "tags": ["data", "history", "recording", "plotting"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/ElementActionEvent.java",
+      "type": "file",
+      "name": "ElementActionEvent.java",
+      "filePath": "src/VisualLogic/ElementActionEvent.java",
+      "summary": "Event class for element user interactions",
+      "tags": ["event", "element", "interaction"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/ElementPaletteIF.java",
+      "type": "file",
+      "name": "ElementPaletteIF.java",
+      "filePath": "src/VisualLogic/ElementPaletteIF.java",
+      "summary": "Interface for element palette functionality",
+      "tags": ["interface", "palette", "element"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/VMObjectIF.java",
+      "type": "file",
+      "name": "VMObjectIF.java",
+      "filePath": "src/VisualLogic/VMObjectIF.java",
+      "summary": "Interface for virtual machine object operations",
+      "tags": ["interface", "virtual-machine", "contract"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/VMEditorPanelIF.java",
+      "type": "file",
+      "name": "VMEditorPanelIF.java",
+      "filePath": "src/VisualLogic/VMEditorPanelIF.java",
+      "summary": "Interface for VM editor panel operations",
+      "tags": ["interface", "editor", "panel", "contract"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/MyMenuItem.java",
+      "type": "file",
+      "name": "MyMenuItem.java",
+      "filePath": "src/VisualLogic/MyMenuItem.java",
+      "summary": "Custom menu item for context menus",
+      "tags": ["gui", "menu", "item", "component"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/ColorRenderer.java",
+      "type": "file",
+      "name": "ColorRenderer.java",
+      "filePath": "src/VisualLogic/ColorRenderer.java",
+      "summary": "Color cell renderer for lists and tables",
+      "tags": ["gui", "renderer", "color", "component"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/ColoredListCell.java",
+      "type": "file",
+      "name": "ColoredListCell.java",
+      "filePath": "src/VisualLogic/ColoredListCell.java",
+      "summary": "Custom list cell renderer with color support",
+      "tags": ["gui", "renderer", "list", "component"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/SimpleFilter.java",
+      "type": "file",
+      "name": "SimpleFilter.java",
+      "filePath": "src/VisualLogic/SimpleFilter.java",
+      "summary": "Simple file filter implementation",
+      "tags": ["utility", "file-filter", "io"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/OnlyDirectoryFilter.java",
+      "type": "file",
+      "name": "OnlyDirectoryFilter.java",
+      "filePath": "src/VisualLogic/OnlyDirectoryFilter.java",
+      "summary": "File filter for directories only",
+      "tags": ["utility", "file-filter", "directory"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/VlogicFilter.java",
+      "type": "file",
+      "name": "VlogicFilter.java",
+      "filePath": "src/VisualLogic/VlogicFilter.java",
+      "summary": "File filter for VisualLogic project files",
+      "tags": ["utility", "file-filter", "project"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/JavaFileView.java",
+      "type": "file",
+      "name": "JavaFileView.java",
+      "filePath": "src/VisualLogic/JavaFileView.java",
+      "summary": "Custom file view for Java source files in file choosers",
+      "tags": ["gui", "file-view", "java", "component"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/NewJavaCompSettings.java",
+      "type": "file",
+      "name": "NewJavaCompSettings.java",
+      "filePath": "src/VisualLogic/NewJavaCompSettings.java",
+      "summary": "Java compiler settings configuration",
+      "tags": ["configuration", "compiler", "java"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/BasisPanel.java",
+      "type": "file",
+      "name": "BasisPanel.java",
+      "filePath": "src/VisualLogic/BasisPanel.java",
+      "summary": "Base panel for circuit editing canvas",
+      "tags": ["gui", "panel", "canvas", "base-class"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/PanelIF.java",
+      "type": "file",
+      "name": "PanelIF.java",
+      "filePath": "src/VisualLogic/PanelIF.java",
+      "summary": "Interface for panel operations",
+      "tags": ["interface", "panel", "contract"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/VSBasisIF.java",
+      "type": "file",
+      "name": "VSBasisIF.java",
+      "filePath": "src/VisualLogic/VSBasisIF.java",
+      "summary": "Interface for VisualLogic variable system",
+      "tags": ["interface", "variable", "system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/MyOpenLabDriverIF.java",
+      "type": "file",
+      "name": "MyOpenLabDriverIF.java",
+      "filePath": "src/VisualLogic/MyOpenLabDriverIF.java",
+      "summary": "Interface for MyOpenLab hardware drivers",
+      "tags": ["interface", "driver", "hardware"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/MyOpenLabDriverOwnerIF.java",
+      "type": "file",
+      "name": "MyOpenLabDriverOwnerIF.java",
+      "filePath": "src/VisualLogic/MyOpenLabDriverOwnerIF.java",
+      "summary": "Interface for driver ownership management",
+      "tags": ["interface", "driver", "ownership"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/VisualLogic/Loader.java",
+      "target": "file:src/VisualLogic/DriverManager.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/DriverManager.java",
+      "target": "file:src/VisualLogic/NewSerialDriverManager.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/VMObject.java",
+      "target": "file:src/VisualLogic/Settings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/VMObject.java",
+      "target": "file:src/VisualLogic/Wrapper.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/VMObject.java",
+      "target": "file:src/VisualLogic/Loader.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/Element.java",
+      "target": "file:src/VisualLogic/ElementProperty.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/Element.java",
+      "target": "file:src/VisualLogic/SubElement.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/Element.java",
+      "target": "file:src/VisualLogic/PathPoint.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/Draht.java",
+      "target": "file:src/VisualLogic/PathPoint.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/Draht.java",
+      "target": "file:src/VisualLogic/PolyPoint.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/BasisPanel.java",
+      "target": "file:src/VisualLogic/PanelIF.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/PinsSettings.java",
+      "target": "file:src/VisualLogic/PinsSettingsItem.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/SearchElement.java",
+      "target": "file:src/VisualLogic/SearchFoundItem.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    }
+  ]
+}

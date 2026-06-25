@@ -1,0 +1,299 @@
+{
+  "batchIndex": 4,
+  "nodes": [
+    {
+      "id": "file:src/CustomColorPicker/CustomColorPicker.java",
+      "type": "file",
+      "name": "CustomColorPicker.java",
+      "filePath": "src/CustomColorPicker/CustomColorPicker.java",
+      "summary": "Advanced color picker dialog with flat, linear, and radial gradient modes with transparency support",
+      "tags": ["gui", "dialog", "color", "gradient"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/CustomColorPicker/ColorPanel.java",
+      "type": "file",
+      "name": "ColorPanel.java",
+      "filePath": "src/CustomColorPicker/ColorPanel.java",
+      "summary": "Custom panel for displaying and selecting colors with gradient rendering",
+      "tags": ["gui", "component", "color", "gradient"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/CustomColorPicker/RoundGradientPaint.java",
+      "type": "file",
+      "name": "RoundGradientPaint.java",
+      "filePath": "src/CustomColorPicker/RoundGradientPaint.java",
+      "summary": "Custom Paint implementation for radial gradient effects",
+      "tags": ["graphics", "gradient", "paint", "rendering"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/Peditor/PropertyEditor.java",
+      "type": "file",
+      "name": "PropertyEditor.java",
+      "filePath": "src/Peditor/PropertyEditor.java",
+      "summary": "Property editor panel with editors for various data types (boolean, color, double, integer, string, font, file)",
+      "tags": ["gui", "property-editor", "data-binding", "component"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/Peditor/PropertyEditorItem.java",
+      "type": "file",
+      "name": "PropertyEditorItem.java",
+      "filePath": "src/Peditor/PropertyEditorItem.java",
+      "summary": "Individual property item connecting label and editor component for property editing",
+      "tags": ["gui", "property-editor", "item", "binding"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/Peditor/BasisProperty.java",
+      "type": "file",
+      "name": "BasisProperty.java",
+      "filePath": "src/Peditor/BasisProperty.java",
+      "summary": "Base class for property definitions with metadata",
+      "tags": ["property", "base-class", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/Peditor/DialogPropertiesChoice.java",
+      "type": "file",
+      "name": "DialogPropertiesChoice.java",
+      "filePath": "src/Peditor/DialogPropertiesChoice.java",
+      "summary": "Dialog for selecting and configuring element properties",
+      "tags": ["gui", "dialog", "properties", "configuration"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "filePath": "src/VisualLogic/Element.java",
+      "summary": "Base class for all circuit elements with pins, properties, and rendering",
+      "tags": ["core", "element", "circuit", "base-class"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/VMObject.java",
+      "type": "file",
+      "name": "VMObject.java",
+      "filePath": "src/VisualLogic/VMObject.java",
+      "summary": "Virtual machine object managing elements, wires, and circuit state",
+      "tags": ["core", "circuit", "management", "state"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/Basis.java",
+      "type": "file",
+      "name": "Basis.java",
+      "filePath": "src/VisualLogic/Basis.java",
+      "summary": "Base class providing core functionality for the visual logic system",
+      "tags": ["core", "base-class", "foundation"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/Tools.java",
+      "type": "file",
+      "name": "Tools.java",
+      "filePath": "src/VisualLogic/Tools.java",
+      "summary": "Utility class with static helper methods for file operations, compilation, and UI",
+      "tags": ["utility", "static", "helper", "io"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/Draht.java",
+      "type": "file",
+      "name": "Draht.java",
+      "filePath": "src/VisualLogic/Draht.java",
+      "summary": "Wire/connection class linking element pins with path points",
+      "tags": ["circuit", "wire", "connection", "pin"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/JPin.java",
+      "type": "file",
+      "name": "JPin.java",
+      "filePath": "src/VisualLogic/JPin.java",
+      "summary": "Element pin with alignment, data type, and connection information",
+      "tags": ["circuit", "pin", "connection", "element"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/SubElement.java",
+      "type": "file",
+      "name": "SubElement.java",
+      "filePath": "src/VisualLogic/SubElement.java",
+      "summary": "Sub-element component within a visual element",
+      "tags": ["element", "component", "visual"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/VisualObject.java",
+      "type": "file",
+      "name": "VisualObject.java",
+      "filePath": "src/VisualLogic/VisualObject.java",
+      "summary": "Base class for all visual objects with location, size, and variable bindings",
+      "tags": ["visual", "base-class", "property-binding"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/ElementProperty.java",
+      "type": "file",
+      "name": "ElementProperty.java",
+      "filePath": "src/VisualLogic/ElementProperty.java",
+      "summary": "Property definition for element configuration",
+      "tags": ["element", "property", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/ElementPropertyX.java",
+      "type": "file",
+      "name": "ElementPropertyX.java",
+      "filePath": "src/VisualLogic/ElementPropertyX.java",
+      "summary": "Extended element property with additional metadata",
+      "tags": ["element", "property", "configuration", "extended"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/CommandIF.java",
+      "type": "file",
+      "name": "CommandIF.java",
+      "filePath": "src/VisualLogic/CommandIF.java",
+      "summary": "Interface for command pattern implementation",
+      "tags": ["interface", "command", "pattern"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/ElementIF.java",
+      "type": "file",
+      "name": "ElementIF.java",
+      "filePath": "src/VisualLogic/ElementIF.java",
+      "summary": "Interface defining element contract for circuit components",
+      "tags": ["interface", "element", "contract"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/PinIF.java",
+      "type": "file",
+      "name": "PinIF.java",
+      "filePath": "src/VisualLogic/PinIF.java",
+      "summary": "Interface defining pin contract for element connections",
+      "tags": ["interface", "pin", "contract"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/CustomColorPicker/CustomColorPicker.java",
+      "target": "file:src/CustomColorPicker/ColorPanel.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/CustomColorPicker/ColorPanel.java",
+      "target": "file:src/CustomColorPicker/RoundGradientPaint.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/Peditor/PropertyEditor.java",
+      "target": "file:src/Peditor/PropertyEditorItem.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/Peditor/PropertyEditor.java",
+      "target": "file:src/CustomColorPicker/CustomColorPicker.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/Peditor/PropertyEditorItem.java",
+      "target": "file:src/Peditor/BasisProperty.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/Element.java",
+      "target": "file:src/VisualLogic/VMObject.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/Element.java",
+      "target": "file:src/VisualLogic/JPin.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/Element.java",
+      "target": "file:src/VisualLogic/Draht.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/VMObject.java",
+      "target": "file:src/VisualLogic/Element.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/VMObject.java",
+      "target": "file:src/VisualLogic/Draht.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/VMObject.java",
+      "target": "file:src/VisualLogic/Basis.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/VMObject.java",
+      "target": "file:src/VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/Draht.java",
+      "target": "file:src/VisualLogic/JPin.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/Draht.java",
+      "target": "file:src/VisualLogic/Line.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/VisualObject.java",
+      "target": "file:src/VisualLogic/Element.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/Shape.java",
+      "target": "file:src/VisualLogic/VisualObject.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    }
+  ]
+}

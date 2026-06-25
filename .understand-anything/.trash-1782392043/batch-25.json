@@ -1,0 +1,149 @@
+{
+  "batchIndex": 25,
+  "nodes": [
+    {
+      "id": "file:de/myopenlab/update/DeletePackages.java",
+      "type": "file",
+      "name": "DeletePackages.java",
+      "filePath": "de/myopenlab/update/DeletePackages.java",
+      "summary": "Runnable that deletes selected installed packages from the Elements directory using Tools2.deleteFolder",
+      "tags": ["update", "package-management", "deletion", "runnable"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:de/myopenlab/update/IniFile.java",
+      "type": "file",
+      "name": "IniFile.java",
+      "filePath": "de/myopenlab/update/IniFile.java",
+      "summary": "INI file parser that reads section/key-value pairs from a file using regex pattern matching",
+      "tags": ["config", "ini-file", "parser", "utility"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:de/myopenlab/update/InstallPackages.java",
+      "type": "file",
+      "name": "InstallPackages.java",
+      "filePath": "de/myopenlab/update/InstallPackages.java",
+      "summary": "Runnable that downloads and installs selected packages from repository, unzipping to Elements directory",
+      "tags": ["update", "package-management", "installation", "runnable"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:de/myopenlab/update/MyOpenLabRow.java",
+      "type": "file",
+      "name": "MyOpenLabRow.java",
+      "filePath": "de/myopenlab/update/MyOpenLabRow.java",
+      "summary": "Data model class representing a repository entry with name, version, author, description, category, type, date, and localized captions",
+      "tags": ["data-model", "repository", "package-metadata"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:de/myopenlab/update/MyTableModel.java",
+      "type": "file",
+      "name": "MyTableModel.java",
+      "filePath": "de/myopenlab/update/MyTableModel.java",
+      "summary": "Swing AbstractTableModel for displaying package data with locale-aware captions and checkbox selection",
+      "tags": ["gui", "table-model", "swing", "i18n"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:de/myopenlab/update/MyTableRow.java",
+      "type": "file",
+      "name": "MyTableRow.java",
+      "filePath": "de/myopenlab/update/MyTableRow.java",
+      "summary": "Data model class representing a single table row with selection state, icon, name, category, date, author, type, and localized captions",
+      "tags": ["data-model", "table-row", "gui"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:de/myopenlab/update/TestItem.java",
+      "type": "file",
+      "name": "TestItem.java",
+      "filePath": "de/myopenlab/update/TestItem.java",
+      "summary": "Simple data class holding package item metadata (name, type, localized captions) used in repository data parsing",
+      "tags": ["data-model", "package-item", "metadata"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:de/myopenlab/update/Tools2.java",
+      "type": "file",
+      "name": "Tools2.java",
+      "filePath": "de/myopenlab/update/Tools2.java",
+      "summary": "Utility class providing folder deletion, stream copy, and authenticated HTTP download of package zip files",
+      "tags": ["utility", "io", "http", "file-management"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:de/myopenlab/update/DeletePackages.java",
+      "target": "file:de/myopenlab/update/frmUpdate.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "references frmUpdate owner"
+    },
+    {
+      "source": "file:de/myopenlab/update/DeletePackages.java",
+      "target": "file:de/myopenlab/update/MyTableRow.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses MyTableRow"
+    },
+    {
+      "source": "file:de/myopenlab/update/DeletePackages.java",
+      "target": "file:de/myopenlab/update/Tools2.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "calls Tools2.deleteFolder"
+    },
+    {
+      "source": "file:de/myopenlab/update/InstallPackages.java",
+      "target": "file:de/myopenlab/update/frmUpdate.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "references frmUpdate owner"
+    },
+    {
+      "source": "file:de/myopenlab/update/InstallPackages.java",
+      "target": "file:de/myopenlab/update/Tools2.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "calls Tools2.getPackageZip"
+    },
+    {
+      "source": "file:de/myopenlab/update/InstallPackages.java",
+      "target": "file:de/myopenlab/update/UnzipFiles.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses UnzipFiles"
+    },
+    {
+      "source": "file:de/myopenlab/update/InstallPackages.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports VisualLogic.Tools.settings"
+    },
+    {
+      "source": "file:de/myopenlab/update/MyOpenLabRow.java",
+      "target": "file:de/myopenlab/update/TestItem.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "contains ArrayList<TestItem>"
+    },
+    {
+      "source": "file:de/myopenlab/update/MyTableModel.java",
+      "target": "file:de/myopenlab/update/MyTableRow.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses List<MyTableRow>"
+    },
+    {
+      "source": "file:de/myopenlab/update/Tools2.java",
+      "target": "file:VisualLogic/Settings.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports VisualLogic.Settings"
+    }
+  ]
+}

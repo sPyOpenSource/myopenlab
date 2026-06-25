@@ -1,0 +1,55 @@
+{
+  "batchIndex": 7,
+  "nodes": [
+    {
+      "id": "file:CodeEditor/DialogSearch.java",
+      "type": "file",
+      "name": "DialogSearch.java",
+      "filePath": "CodeEditor/DialogSearch.java",
+      "summary": "Search dialog for code editor, provides text search functionality with command pattern",
+      "tags": ["code-editor", "search-dialog", "gui"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/PanelEditor.java",
+      "type": "file",
+      "name": "PanelEditor.java",
+      "filePath": "CodeEditor/PanelEditor.java",
+      "summary": "Main code editor panel with syntax highlighting, undo/redo, and file operations",
+      "tags": ["code-editor", "text-editor", "undo-redo", "syntax-highlighting"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/CommandIF.java",
+      "type": "file",
+      "name": "CommandIF.java",
+      "filePath": "VisualLogic/CommandIF.java",
+      "summary": "Simple command interface for inter-component communication",
+      "tags": ["interface", "command-pattern", "communication"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:CodeEditor/DialogSearch.java",
+      "target": "file:VisualLogic/CommandIF.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:CodeEditor/PanelEditor.java",
+      "target": "file:VisualLogic/CommandIF.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:CodeEditor/PanelEditor.java",
+      "target": "file:CodeEditor/DialogSearch.java",
+      "type": "implements",
+      "weight": 0.8,
+      "label": "uses"
+    }
+  ]
+}

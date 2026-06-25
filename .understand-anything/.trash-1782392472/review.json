@@ -1,0 +1,49 @@
+{
+  "issues": [],
+  "warnings": [
+    "Node 'file:VisualLogic/OnlyDirectoryFilter.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/PanelIF.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/PathPoint.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/PinIF.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/SimpleFilter.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/Transparency.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/VMEditorPanelIF.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/VMObjectIF.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/VSBasisIF.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/VSDataType.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/VlogicFilter.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/Wrapper.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/XMLSerializer.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/DialogRename.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/DialogSubVMAssistent.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/DialogTranslateForm.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/DialogUserdefinedElementsHome.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/DialogVMName.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/DialogVariableWatcher.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/DialogVariables.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/FrameBooleanGraph.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/FrameCode.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/FrameConsoleOutput.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/FrameDoc.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/FrameDoubleGraph.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/FrameErrorWarnings.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/FrameRunning.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/FrmTestpoints.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/ModernToolBarButton.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/PanelDokumentation.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/PanelImage.java' has no edges (orphan)",
+    "Node 'file:VisualLogic/gui/SelectionPane.java' has no edges (orphan)"
+  ],
+  "stats": {
+    "totalNodes": 59,
+    "totalEdges": 33,
+    "totalLayers": 5,
+    "tourSteps": 10,
+    "nodeTypes": {
+      "file": 59
+    },
+    "edgeTypes": {
+      "imports": 33
+    }
+  }
+}

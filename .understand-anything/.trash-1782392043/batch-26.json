@@ -1,0 +1,184 @@
+{
+  "batchIndex": 26,
+  "nodes": [
+    {
+      "id": "file:de/myopenlab/update/UnzipFiles.java",
+      "type": "file",
+      "name": "UnzipFiles.java",
+      "filePath": "de/myopenlab/update/UnzipFiles.java",
+      "summary": "Utility class for extracting zip files to a destination directory with buffer-based file extraction",
+      "tags": ["utility", "zip", "extraction", "io"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:de/myopenlab/update/frmUpdate.java",
+      "type": "file",
+      "name": "frmUpdate.java",
+      "filePath": "de/myopenlab/update/frmUpdate.java",
+      "summary": "Main update manager JFrame with tabs for installing/deleting packages, repository data fetching via JSON/HTTP, SSL trust-all configuration, and package creation wizards",
+      "tags": ["gui", "update", "repository", "package-management", "swing", "complex"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:projectfolder/FrameMain.java",
+      "type": "file",
+      "name": "FrameMain.java",
+      "filePath": "projectfolder/FrameMain.java",
+      "summary": "Simple empty JFrame placeholder for the project folder application",
+      "tags": ["gui", "frame", "placeholder"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:projectfolder/MyNode.java",
+      "type": "file",
+      "name": "MyNode.java",
+      "filePath": "projectfolder/MyNode.java",
+      "summary": "Custom tree node extending DefaultMutableTreeNode with expanded/collapsed icons and project/folder/file metadata",
+      "tags": ["tree-node", "gui", "file-system"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:projectfolder/ProjectPalette.java",
+      "type": "file",
+      "name": "ProjectPalette.java",
+      "filePath": "projectfolder/ProjectPalette.java",
+      "summary": "JPanel with JTree for project file browser, supporting context menus for project/folder/file operations, custom cell renderer with locale-aware captions from info.xml",
+      "tags": ["gui", "tree", "project-browser", "file-management", "swing"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:projectfolder/ProjectPaletteIF.java",
+      "type": "file",
+      "name": "ProjectPaletteIF.java",
+      "filePath": "projectfolder/ProjectPaletteIF.java",
+      "summary": "Interface defining callback methods for project palette actions (add/delete/rename projects and VMs, file operations)",
+      "tags": ["interface", "callback", "project-management"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tools/BinAnzeige.java",
+      "type": "file",
+      "name": "BinAnzeige.java",
+      "filePath": "tools/BinAnzeige.java",
+      "summary": "Binary display element showing ON/OFF images based on input pin boolean value with custom painting",
+      "tags": ["element", "binary", "display", "visual-logic"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tools/BinSchalter.java",
+      "type": "file",
+      "name": "BinSchalter.java",
+      "filePath": "tools/BinSchalter.java",
+      "summary": "Binary switch element with mouse click toggle between ON/OFF states, writing 1.0/0.0 to output pin",
+      "tags": ["element", "binary", "switch", "interactive", "visual-logic"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:de/myopenlab/update/InstallPackages.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "creates InstallPackages thread"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:de/myopenlab/update/DeletePackages.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "creates DeletePackages thread"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:de/myopenlab/update/MyOpenLabRow.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses MyOpenLabRow"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:de/myopenlab/update/MyTableModel.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "creates MyTableModel"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:de/myopenlab/update/Tools2.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses Tools2"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports VisualLogic.Tools"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:VisualLogic/gui/FrameMain.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports VisualLogic.gui.FrameMain"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:CreateNewGroup/DialogCreateNewGroup.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports DialogCreateNewGroup"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:projectfolder/MyNode.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports projectfolder.MyNode"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:tools/ZipFiles.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports tools.ZipFiles"
+    },
+    {
+      "source": "file:projectfolder/ProjectPalette.java",
+      "target": "file:projectfolder/MyNode.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "uses MyNode tree nodes"
+    },
+    {
+      "source": "file:projectfolder/ProjectPalette.java",
+      "target": "file:projectfolder/ProjectPaletteIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "implements ProjectPaletteIF callbacks"
+    },
+    {
+      "source": "file:projectfolder/ProjectPalette.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports VisualLogic.Tools"
+    },
+    {
+      "source": "file:tools/BinAnzeige.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain"
+    },
+    {
+      "source": "file:tools/BinSchalter.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain"
+    }
+  ]
+}

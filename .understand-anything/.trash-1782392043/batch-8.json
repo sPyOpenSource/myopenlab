@@ -1,0 +1,69 @@
+{
+  "batchIndex": 8,
+  "nodes": [
+    {
+      "id": "file:BasisStatus/StatusIdle.properties",
+      "type": "file",
+      "name": "StatusIdle.properties",
+      "filePath": "BasisStatus/StatusIdle.properties",
+      "summary": "Internationalization strings for StatusIdle component (default locale)",
+      "tags": ["i18n", "properties", "status-idle"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:BasisStatus/StatusIdle_en_US.properties",
+      "type": "file",
+      "name": "StatusIdle_en_US.properties",
+      "filePath": "BasisStatus/StatusIdle_en_US.properties",
+      "summary": "Internationalization strings for StatusIdle component (English US locale)",
+      "tags": ["i18n", "properties", "status-idle", "en-US"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:BasisStatus/StatusIdle_es_ES.properties",
+      "type": "file",
+      "name": "StatusIdle_es_ES.properties",
+      "filePath": "BasisStatus/StatusIdle_es_ES.properties",
+      "summary": "Internationalization strings for StatusIdle component (Spanish locale)",
+      "tags": ["i18n", "properties", "status-idle", "es-ES"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:BasisStatus/frmElementInfo.form",
+      "type": "file",
+      "name": "frmElementInfo.form",
+      "filePath": "BasisStatus/frmElementInfo.form",
+      "summary": "GUI form definition for element info dialog",
+      "tags": ["gui", "form", "element-info"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:BasisStatus/frmElementInfo.properties",
+      "type": "file",
+      "name": "frmElementInfo.properties",
+      "filePath": "BasisStatus/frmElementInfo.properties",
+      "summary": "Internationalization strings for element info dialog (default locale)",
+      "tags": ["i18n", "properties", "element-info"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:BasisStatus/frmElementInfo_en_US.properties",
+      "type": "file",
+      "name": "frmElementInfo_en_US.properties",
+      "filePath": "BasisStatus/frmElementInfo_en_US.properties",
+      "summary": "Internationalization strings for element info dialog (English US locale)",
+      "tags": ["i18n", "properties", "element-info", "en-US"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:BasisStatus/frmElementInfo_es_ES.properties",
+      "type": "file",
+      "name": "frmElementInfo_es_ES.properties",
+      "filePath": "BasisStatus/frmElementInfo_es_ES.properties",
+      "summary": "Internationalization strings for element info dialog (Spanish locale)",
+      "tags": ["i18n", "properties", "element-info", "es-ES"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

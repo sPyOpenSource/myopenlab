@@ -1,0 +1,51 @@
+{
+  "batchIndex": 10,
+  "nodes": [
+    {
+      "id": "file:CreateNewGroup/DialogCreateNewGroup.form",
+      "type": "file",
+      "name": "DialogCreateNewGroup.form",
+      "filePath": "CreateNewGroup/DialogCreateNewGroup.form",
+      "summary": "GUI form definition for create new group dialog",
+      "tags": ["gui", "form", "group-creation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CreateNewGroup/Dialog_create_new_group.properties",
+      "type": "file",
+      "name": "Dialog_create_new_group.properties",
+      "filePath": "CreateNewGroup/Dialog_create_new_group.properties",
+      "summary": "Internationalization strings for create new group dialog (default locale)",
+      "tags": ["i18n", "properties", "group-creation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CreateNewGroup/Dialog_create_new_group_en_US.properties",
+      "type": "file",
+      "name": "Dialog_create_new_group_en_US.properties",
+      "filePath": "CreateNewGroup/Dialog_create_new_group_en_US.properties",
+      "summary": "Internationalization strings for create new group dialog (English US locale)",
+      "tags": ["i18n", "properties", "group-creation", "en-US"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CreateNewGroup/Dialog_create_new_group_es_ES.properties",
+      "type": "file",
+      "name": "Dialog_create_new_group_es_ES.properties",
+      "filePath": "CreateNewGroup/Dialog_create_new_group_es_ES.properties",
+      "summary": "Internationalization strings for create new group dialog (Spanish locale)",
+      "tags": ["i18n", "properties", "group-creation", "es-ES"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CreateNewGroup/std_lib_icon_32.png",
+      "type": "file",
+      "name": "std_lib_icon_32.png",
+      "filePath": "CreateNewGroup/std_lib_icon_32.png",
+      "summary": "32x32 pixel icon for standard library in group creation dialog",
+      "tags": ["image", "icon", "gui-resource"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

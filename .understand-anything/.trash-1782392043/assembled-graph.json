@@ -1,0 +1,6520 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/CodeEditor/frmDefinitonDefEditor.java",
+      "type": "file",
+      "name": "frmDefinitonDefEditor.java",
+      "filePath": "src/CodeEditor/frmDefinitonDefEditor.java",
+      "summary": "Dialog for editing element definition properties including icon, captions in multiple languages, and class assignments",
+      "tags": [
+        "gui",
+        "dialog",
+        "editor",
+        "element-properties"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/CreateNewGroup/DialogCreateNewGroup.java",
+      "type": "file",
+      "name": "DialogCreateNewGroup.java",
+      "filePath": "src/CreateNewGroup/DialogCreateNewGroup.java",
+      "summary": "Dialog for creating new element groups/packages with metadata like title, author, version, and descriptions",
+      "tags": [
+        "gui",
+        "dialog",
+        "package-management",
+        "xml"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/DFProperties.java",
+      "type": "file",
+      "name": "DFProperties.java",
+      "filePath": "src/VisualLogic/DFProperties.java",
+      "summary": "Data class storing element definition properties including class paths, captions, and configuration flags",
+      "tags": [
+        "data-class",
+        "properties",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/CodeEditor/PanelEditor.java",
+      "type": "file",
+      "name": "PanelEditor.java",
+      "filePath": "src/CodeEditor/PanelEditor.java",
+      "summary": "Panel component for code editing with undo/redo support, search functionality, and file I/O",
+      "tags": [
+        "gui",
+        "editor",
+        "code-editing",
+        "undo-redo"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/CodeEditor/MyEditorPane.java",
+      "type": "file",
+      "name": "MyEditorPane.java",
+      "filePath": "src/CodeEditor/MyEditorPane.java",
+      "summary": "Custom JEditorPane with scrollable viewport width tracking",
+      "tags": [
+        "gui",
+        "component",
+        "editor"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/CodeEditor/Scanner.java",
+      "type": "file",
+      "name": "Scanner.java",
+      "filePath": "src/CodeEditor/Scanner.java",
+      "summary": "Token-based scanner for syntax highlighting with support for strings, comments, keywords, and whitespace",
+      "tags": [
+        "parser",
+        "scanner",
+        "syntax-highlighting",
+        "tokens"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/CodeEditor/ExpandingArray.java",
+      "type": "file",
+      "name": "ExpandingArray.java",
+      "filePath": "src/CodeEditor/ExpandingArray.java",
+      "summary": "Dynamically resizing array implementation with amortized doubling",
+      "tags": [
+        "data-structure",
+        "array",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/CodeEditor/frmCodeEditor.java",
+      "type": "file",
+      "name": "frmCodeEditor.java",
+      "filePath": "src/CodeEditor/frmCodeEditor.java",
+      "summary": "Main code editor window with tabbed interface for editing Java source files",
+      "tags": [
+        "gui",
+        "frame",
+        "editor",
+        "ide"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/CodeEditor/DialogSearch.java",
+      "type": "file",
+      "name": "DialogSearch.java",
+      "filePath": "src/CodeEditor/DialogSearch.java",
+      "summary": "Simple search dialog for finding text in code editor",
+      "tags": [
+        "gui",
+        "dialog",
+        "search"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/CodeEditor/JavaSyntaxDocument.java",
+      "type": "file",
+      "name": "JavaSyntaxDocument.java",
+      "filePath": "src/CodeEditor/JavaSyntaxDocument.java",
+      "summary": "Styled document implementing Java syntax highlighting with keyword and comment recognition",
+      "tags": [
+        "syntax-highlighting",
+        "document",
+        "editor"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/CreateNewGroup/SummaryCart.java",
+      "type": "file",
+      "name": "SummaryCart.java",
+      "filePath": "src/CreateNewGroup/SummaryCart.java",
+      "summary": "XML-annotated data class for package metadata including captions, author, and version info",
+      "tags": [
+        "data-class",
+        "xml",
+        "metadata"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/CreateNewGroup/ImageComponent.java",
+      "type": "file",
+      "name": "ImageComponent.java",
+      "filePath": "src/CreateNewGroup/ImageComponent.java",
+      "summary": "Custom JPanel for displaying image icons with file loading support",
+      "tags": [
+        "gui",
+        "component",
+        "image"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/Line.java",
+      "type": "file",
+      "name": "Line.java",
+      "filePath": "src/VisualLogic/Line.java",
+      "summary": "Geometric line class with drawing, hit-testing, and directional properties for circuit wiring",
+      "tags": [
+        "geometry",
+        "drawing",
+        "circuit",
+        "wire"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/Shape.java",
+      "type": "file",
+      "name": "Shape.java",
+      "filePath": "src/VisualLogic/Shape.java",
+      "summary": "Visual element shape with selection, resizing, caption, and sub-element management",
+      "tags": [
+        "gui",
+        "element",
+        "shape",
+        "visual-object"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/LineInfo.java",
+      "type": "file",
+      "name": "LineInfo.java",
+      "filePath": "src/VisualLogic/LineInfo.java",
+      "summary": "Simple data class pairing a Line with its associated JPin",
+      "tags": [
+        "data-class",
+        "circuit",
+        "pin"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/DriverInfo.java",
+      "type": "file",
+      "name": "DriverInfo.java",
+      "filePath": "src/VisualLogic/DriverInfo.java",
+      "summary": "Data class storing driver information including JAR, class name, classpath, and metadata",
+      "tags": [
+        "data-class",
+        "driver",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/Version.java",
+      "type": "file",
+      "name": "Version.java",
+      "filePath": "src/VisualLogic/Version.java",
+      "summary": "Application version constants for MyOpenLab",
+      "tags": [
+        "constants",
+        "version",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/FontChooser.java",
+      "type": "file",
+      "name": "FontChooser.java",
+      "filePath": "src/VisualLogic/FontChooser.java",
+      "summary": "Font selection dialog with preview for choosing font name, size, style, and color",
+      "tags": [
+        "gui",
+        "dialog",
+        "font",
+        "chooser"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/MyGraph/MyGraph.java",
+      "type": "file",
+      "name": "MyGraph.java",
+      "filePath": "src/MyGraph/MyGraph.java",
+      "summary": "Main graph panel component with X/Y axis configuration, grid settings, and rendering options",
+      "tags": [
+        "gui",
+        "graph",
+        "chart",
+        "visualization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/MyParser/OpenVariable.java",
+      "type": "file",
+      "name": "OpenVariable.java",
+      "filePath": "src/MyParser/OpenVariable.java",
+      "summary": "Variable representation supporting multiple data types (double, string, boolean, integer) with 1D/2D array support",
+      "tags": [
+        "parser",
+        "variable",
+        "data-type"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/MyParser/Parser.java",
+      "type": "file",
+      "name": "Parser.java",
+      "filePath": "src/MyParser/Parser.java",
+      "summary": "Expression parser supporting mathematical operations, string concatenation, boolean logic, and built-in functions",
+      "tags": [
+        "parser",
+        "expression",
+        "evaluator",
+        "math"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/MyGraph/MyGraphX.java",
+      "type": "file",
+      "name": "MyGraphX.java",
+      "filePath": "src/MyGraph/MyGraphX.java",
+      "summary": "Extended graph component with multiple renderers and coordinate display",
+      "tags": [
+        "gui",
+        "graph",
+        "renderer",
+        "visualization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/MyGraph/Turn90Label.java",
+      "type": "file",
+      "name": "Turn90Label.java",
+      "filePath": "src/MyGraph/Turn90Label.java",
+      "summary": "Custom label component that renders text rotated 90 degrees",
+      "tags": [
+        "gui",
+        "component",
+        "rotation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/MyGraph/GraphRenderer.java",
+      "type": "file",
+      "name": "GraphRenderer.java",
+      "filePath": "src/MyGraph/GraphRenderer.java",
+      "summary": "Graph rendering engine for line charts with configurable point types and buffer management",
+      "tags": [
+        "renderer",
+        "graph",
+        "chart",
+        "line-chart"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/MyGraph/GraphBackground.java",
+      "type": "file",
+      "name": "GraphBackground.java",
+      "filePath": "src/MyGraph/GraphBackground.java",
+      "summary": "Background rendering for graph with grid lines, coordinates display, and auto-scaling",
+      "tags": [
+        "renderer",
+        "graph",
+        "grid",
+        "background"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/MyGraph/XAxis.java",
+      "type": "file",
+      "name": "XAxis.java",
+      "filePath": "src/MyGraph/XAxis.java",
+      "summary": "X-axis rendering and configuration for graph display",
+      "tags": [
+        "renderer",
+        "graph",
+        "axis",
+        "x-axis"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/MyGraph/YAxis.java",
+      "type": "file",
+      "name": "YAxis.java",
+      "filePath": "src/MyGraph/YAxis.java",
+      "summary": "Y-axis rendering and configuration for graph display",
+      "tags": [
+        "renderer",
+        "graph",
+        "axis",
+        "y-axis"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/MyGraph/BackGraphXY.java",
+      "type": "file",
+      "name": "BackGraphXY.java",
+      "filePath": "src/MyGraph/BackGraphXY.java",
+      "summary": "XY graph background with coordinate tracking and mouse interaction",
+      "tags": [
+        "renderer",
+        "graph",
+        "xy-plot",
+        "interaction"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/MyGraph/FrameMain.java",
+      "type": "file",
+      "name": "FrameMain.java",
+      "filePath": "src/MyGraph/FrameMain.java",
+      "summary": "Main frame for graph display with rendering controls and data management",
+      "tags": [
+        "gui",
+        "frame",
+        "graph",
+        "main"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/MyParser/Expression.java",
+      "type": "file",
+      "name": "Expression.java",
+      "filePath": "src/MyParser/Expression.java",
+      "summary": "Expression representation for parsed mathematical or logical expressions",
+      "tags": [
+        "parser",
+        "expression",
+        "data-class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/MyParser/VerilogParser.java",
+      "type": "file",
+      "name": "VerilogParser.java",
+      "filePath": "src/MyParser/VerilogParser.java",
+      "summary": "Parser for Verilog hardware description language syntax",
+      "tags": [
+        "parser",
+        "verilog",
+        "hardware",
+        "hdl"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/MyParser/Keywords.java",
+      "type": "file",
+      "name": "Keywords.java",
+      "filePath": "src/MyParser/Keywords.java",
+      "summary": "Keyword definitions and constants for parser",
+      "tags": [
+        "parser",
+        "keywords",
+        "constants"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusAddElement.java",
+      "type": "file",
+      "name": "StatusAddElement.java",
+      "filePath": "src/BasisStatus/StatusAddElement.java",
+      "summary": "State handler for adding new elements to the circuit with drag-and-drop positioning",
+      "tags": [
+        "state-machine",
+        "element",
+        "interaction",
+        "circuit"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusAddWire.java",
+      "type": "file",
+      "name": "StatusAddWire.java",
+      "filePath": "src/BasisStatus/StatusAddWire.java",
+      "summary": "State handler for drawing wires between element pins",
+      "tags": [
+        "state-machine",
+        "wire",
+        "interaction",
+        "circuit"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusGummiBandX.java",
+      "type": "file",
+      "name": "StatusGummiBandX.java",
+      "filePath": "src/BasisStatus/StatusGummiBandX.java",
+      "summary": "State handler for rubber-band selection with visual rectangle feedback",
+      "tags": [
+        "state-machine",
+        "selection",
+        "interaction",
+        "visual"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "file",
+      "name": "StatusBasisIF.java",
+      "filePath": "src/BasisStatus/StatusBasisIF.java",
+      "summary": "Interface defining state handler methods for circuit interaction",
+      "tags": [
+        "interface",
+        "state-machine",
+        "contract"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusIdle.java",
+      "type": "file",
+      "name": "StatusIdle.java",
+      "filePath": "src/BasisStatus/StatusIdle.java",
+      "summary": "Default idle state handler with no active interaction",
+      "tags": [
+        "state-machine",
+        "idle",
+        "default"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusRun.java",
+      "type": "file",
+      "name": "StatusRun.java",
+      "filePath": "src/BasisStatus/StatusRun.java",
+      "summary": "State handler for simulation/runtime mode",
+      "tags": [
+        "state-machine",
+        "simulation",
+        "runtime"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusMoveElements.java",
+      "type": "file",
+      "name": "StatusMoveElements.java",
+      "filePath": "src/BasisStatus/StatusMoveElements.java",
+      "summary": "State handler for moving selected elements with mouse drag",
+      "tags": [
+        "state-machine",
+        "move",
+        "interaction",
+        "elements"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusResizeElement.java",
+      "type": "file",
+      "name": "StatusResizeElement.java",
+      "filePath": "src/BasisStatus/StatusResizeElement.java",
+      "summary": "State handler for resizing elements with drag handles",
+      "tags": [
+        "state-machine",
+        "resize",
+        "interaction"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusResizeBasis.java",
+      "type": "file",
+      "name": "StatusResizeBasis.java",
+      "filePath": "src/BasisStatus/StatusResizeBasis.java",
+      "summary": "State handler for resizing the circuit canvas",
+      "tags": [
+        "state-machine",
+        "resize",
+        "canvas"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusEditPath.java",
+      "type": "file",
+      "name": "StatusEditPath.java",
+      "filePath": "src/BasisStatus/StatusEditPath.java",
+      "summary": "State handler for editing wire path points",
+      "tags": [
+        "state-machine",
+        "path",
+        "wire",
+        "editing"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusEditPathAddMode.java",
+      "type": "file",
+      "name": "StatusEditPathAddMode.java",
+      "filePath": "src/BasisStatus/StatusEditPathAddMode.java",
+      "summary": "State handler for adding new points to wire paths",
+      "tags": [
+        "state-machine",
+        "path",
+        "add",
+        "wire"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusEditPathEditMode.java",
+      "type": "file",
+      "name": "StatusEditPathEditMode.java",
+      "filePath": "src/BasisStatus/StatusEditPathEditMode.java",
+      "summary": "State handler for editing existing wire path points",
+      "tags": [
+        "state-machine",
+        "path",
+        "edit",
+        "wire"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusEditPath_ADD_CurveTo.java",
+      "type": "file",
+      "name": "StatusEditPath_ADD_CurveTo.java",
+      "filePath": "src/BasisStatus/StatusEditPath_ADD_CurveTo.java",
+      "summary": "State handler for adding curve points to wire paths",
+      "tags": [
+        "state-machine",
+        "path",
+        "curve",
+        "wire"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusLineHoritontal.java",
+      "type": "file",
+      "name": "StatusLineHoritontal.java",
+      "filePath": "src/BasisStatus/StatusLineHoritontal.java",
+      "summary": "State handler for drawing horizontal wire segments",
+      "tags": [
+        "state-machine",
+        "wire",
+        "horizontal",
+        "drawing"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusLineVertikal.java",
+      "type": "file",
+      "name": "StatusLineVertikal.java",
+      "filePath": "src/BasisStatus/StatusLineVertikal.java",
+      "summary": "State handler for drawing vertical wire segments",
+      "tags": [
+        "state-machine",
+        "wire",
+        "vertical",
+        "drawing"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusNone.java",
+      "type": "file",
+      "name": "StatusNone.java",
+      "filePath": "src/BasisStatus/StatusNone.java",
+      "summary": "Null state handler for initialization or disabled states",
+      "tags": [
+        "state-machine",
+        "null",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusNOP.java",
+      "type": "file",
+      "name": "StatusNOP.java",
+      "filePath": "src/BasisStatus/StatusNOP.java",
+      "summary": "No-operation state handler that ignores all inputs",
+      "tags": [
+        "state-machine",
+        "nop",
+        "ignore"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusGummiBand.java",
+      "type": "file",
+      "name": "StatusGummiBand.java",
+      "filePath": "src/BasisStatus/StatusGummiBand.java",
+      "summary": "State handler for rubber-band selection with visual feedback",
+      "tags": [
+        "state-machine",
+        "selection",
+        "rubber-band"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/BasisStatus/StatusGummiBandXBackIF.java",
+      "type": "file",
+      "name": "StatusGummiBandXBackIF.java",
+      "filePath": "src/BasisStatus/StatusGummiBandXBackIF.java",
+      "summary": "Interface for rubber-band selection completion callback",
+      "tags": [
+        "interface",
+        "callback",
+        "selection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/BasisStatus/frmElementInfo.java",
+      "type": "file",
+      "name": "frmElementInfo.java",
+      "filePath": "src/BasisStatus/frmElementInfo.java",
+      "summary": "Dialog displaying element information and properties",
+      "tags": [
+        "gui",
+        "dialog",
+        "element-info",
+        "properties"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/CustomColorPicker/CustomColorPicker.java",
+      "type": "file",
+      "name": "CustomColorPicker.java",
+      "filePath": "src/CustomColorPicker/CustomColorPicker.java",
+      "summary": "Advanced color picker dialog with flat, linear, and radial gradient modes with transparency support",
+      "tags": [
+        "gui",
+        "dialog",
+        "color",
+        "gradient"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/CustomColorPicker/ColorPanel.java",
+      "type": "file",
+      "name": "ColorPanel.java",
+      "filePath": "src/CustomColorPicker/ColorPanel.java",
+      "summary": "Custom panel for displaying and selecting colors with gradient rendering",
+      "tags": [
+        "gui",
+        "component",
+        "color",
+        "gradient"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/CustomColorPicker/RoundGradientPaint.java",
+      "type": "file",
+      "name": "RoundGradientPaint.java",
+      "filePath": "src/CustomColorPicker/RoundGradientPaint.java",
+      "summary": "Custom Paint implementation for radial gradient effects",
+      "tags": [
+        "graphics",
+        "gradient",
+        "paint",
+        "rendering"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/Peditor/PropertyEditor.java",
+      "type": "file",
+      "name": "PropertyEditor.java",
+      "filePath": "src/Peditor/PropertyEditor.java",
+      "summary": "Property editor panel with editors for various data types (boolean, color, double, integer, string, font, file)",
+      "tags": [
+        "gui",
+        "property-editor",
+        "data-binding",
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/Peditor/PropertyEditorItem.java",
+      "type": "file",
+      "name": "PropertyEditorItem.java",
+      "filePath": "src/Peditor/PropertyEditorItem.java",
+      "summary": "Individual property item connecting label and editor component for property editing",
+      "tags": [
+        "gui",
+        "property-editor",
+        "item",
+        "binding"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/Peditor/BasisProperty.java",
+      "type": "file",
+      "name": "BasisProperty.java",
+      "filePath": "src/Peditor/BasisProperty.java",
+      "summary": "Base class for property definitions with metadata",
+      "tags": [
+        "property",
+        "base-class",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/Peditor/DialogPropertiesChoice.java",
+      "type": "file",
+      "name": "DialogPropertiesChoice.java",
+      "filePath": "src/Peditor/DialogPropertiesChoice.java",
+      "summary": "Dialog for selecting and configuring element properties",
+      "tags": [
+        "gui",
+        "dialog",
+        "properties",
+        "configuration"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "filePath": "src/VisualLogic/Element.java",
+      "summary": "Base class for all circuit elements with pins, properties, and rendering",
+      "tags": [
+        "core",
+        "element",
+        "circuit",
+        "base-class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/VMObject.java",
+      "type": "file",
+      "name": "VMObject.java",
+      "filePath": "src/VisualLogic/VMObject.java",
+      "summary": "Virtual machine object managing elements, wires, and circuit state",
+      "tags": [
+        "core",
+        "circuit",
+        "management",
+        "state"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/Basis.java",
+      "type": "file",
+      "name": "Basis.java",
+      "filePath": "src/VisualLogic/Basis.java",
+      "summary": "Base class providing core functionality for the visual logic system",
+      "tags": [
+        "core",
+        "base-class",
+        "foundation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/Tools.java",
+      "type": "file",
+      "name": "Tools.java",
+      "filePath": "src/VisualLogic/Tools.java",
+      "summary": "Utility class with static helper methods for file operations, compilation, and UI",
+      "tags": [
+        "utility",
+        "static",
+        "helper",
+        "io"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/Draht.java",
+      "type": "file",
+      "name": "Draht.java",
+      "filePath": "src/VisualLogic/Draht.java",
+      "summary": "Wire/connection class linking element pins with path points",
+      "tags": [
+        "circuit",
+        "wire",
+        "connection",
+        "pin"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/JPin.java",
+      "type": "file",
+      "name": "JPin.java",
+      "filePath": "src/VisualLogic/JPin.java",
+      "summary": "Element pin with alignment, data type, and connection information",
+      "tags": [
+        "circuit",
+        "pin",
+        "connection",
+        "element"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/SubElement.java",
+      "type": "file",
+      "name": "SubElement.java",
+      "filePath": "src/VisualLogic/SubElement.java",
+      "summary": "Sub-element component within a visual element",
+      "tags": [
+        "element",
+        "component",
+        "visual"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/VisualObject.java",
+      "type": "file",
+      "name": "VisualObject.java",
+      "filePath": "src/VisualLogic/VisualObject.java",
+      "summary": "Base class for all visual objects with location, size, and variable bindings",
+      "tags": [
+        "visual",
+        "base-class",
+        "property-binding"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/ElementProperty.java",
+      "type": "file",
+      "name": "ElementProperty.java",
+      "filePath": "src/VisualLogic/ElementProperty.java",
+      "summary": "Property definition for element configuration",
+      "tags": [
+        "element",
+        "property",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/ElementPropertyX.java",
+      "type": "file",
+      "name": "ElementPropertyX.java",
+      "filePath": "src/VisualLogic/ElementPropertyX.java",
+      "summary": "Extended element property with additional metadata",
+      "tags": [
+        "element",
+        "property",
+        "configuration",
+        "extended"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/CommandIF.java",
+      "type": "file",
+      "name": "CommandIF.java",
+      "filePath": "src/VisualLogic/CommandIF.java",
+      "summary": "Interface for command pattern implementation",
+      "tags": [
+        "interface",
+        "command",
+        "pattern"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/ElementIF.java",
+      "type": "file",
+      "name": "ElementIF.java",
+      "filePath": "src/VisualLogic/ElementIF.java",
+      "summary": "Interface defining element contract for circuit components",
+      "tags": [
+        "interface",
+        "element",
+        "contract"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/PinIF.java",
+      "type": "file",
+      "name": "PinIF.java",
+      "filePath": "src/VisualLogic/PinIF.java",
+      "summary": "Interface defining pin contract for element connections",
+      "tags": [
+        "interface",
+        "pin",
+        "contract"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/Settings.java",
+      "type": "file",
+      "name": "Settings.java",
+      "filePath": "src/VisualLogic/Settings.java",
+      "summary": "Application settings management for VisualLogic environment",
+      "tags": [
+        "configuration",
+        "settings",
+        "preferences"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/Wrapper.java",
+      "type": "file",
+      "name": "Wrapper.java",
+      "filePath": "src/VisualLogic/Wrapper.java",
+      "summary": "Wrapper class for element container and lifecycle management",
+      "tags": [
+        "core",
+        "wrapper",
+        "container",
+        "lifecycle"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/Loader.java",
+      "type": "file",
+      "name": "Loader.java",
+      "filePath": "src/VisualLogic/Loader.java",
+      "summary": "Dynamic class loader for loading element classes from JAR files",
+      "tags": [
+        "core",
+        "loader",
+        "dynamic",
+        "jar"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/DriverManager.java",
+      "type": "file",
+      "name": "DriverManager.java",
+      "filePath": "src/VisualLogic/DriverManager.java",
+      "summary": "Manager for hardware drivers (Arduino, Raspberry Pi, etc.)",
+      "tags": [
+        "core",
+        "driver",
+        "hardware",
+        "management"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/NewSerialDriverManager.java",
+      "type": "file",
+      "name": "NewSerialDriverManager.java",
+      "filePath": "src/VisualLogic/NewSerialDriverManager.java",
+      "summary": "Serial communication driver manager for hardware interfaces",
+      "tags": [
+        "core",
+        "serial",
+        "driver",
+        "communication"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/MyImage.java",
+      "type": "file",
+      "name": "MyImage.java",
+      "filePath": "src/VisualLogic/MyImage.java",
+      "summary": "Custom image component for element icons with scaling support",
+      "tags": [
+        "gui",
+        "image",
+        "component",
+        "icon"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/XMLSerializer.java",
+      "type": "file",
+      "name": "XMLSerializer.java",
+      "filePath": "src/VisualLogic/XMLSerializer.java",
+      "summary": "XML serialization/deserialization utility for project files",
+      "tags": [
+        "serialization",
+        "xml",
+        "io",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/ExtensionFileFilter.java",
+      "type": "file",
+      "name": "ExtensionFileFilter.java",
+      "filePath": "src/VisualLogic/ExtensionFileFilter.java",
+      "summary": "File filter for file chooser dialogs based on extensions",
+      "tags": [
+        "utility",
+        "file-filter",
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/PathPoint.java",
+      "type": "file",
+      "name": "PathPoint.java",
+      "filePath": "src/VisualLogic/PathPoint.java",
+      "summary": "Point on a wire path for routing connections",
+      "tags": [
+        "circuit",
+        "wire",
+        "path",
+        "point"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/PolyPoint.java",
+      "type": "file",
+      "name": "PolyPoint.java",
+      "filePath": "src/VisualLogic/PolyPoint.java",
+      "summary": "Polyline point for wire path representation",
+      "tags": [
+        "circuit",
+        "wire",
+        "path",
+        "polyline"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/SearchElement.java",
+      "type": "file",
+      "name": "SearchElement.java",
+      "filePath": "src/VisualLogic/SearchElement.java",
+      "summary": "Element search functionality for finding components in circuit",
+      "tags": [
+        "search",
+        "element",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/SearchFoundItem.java",
+      "type": "file",
+      "name": "SearchFoundItem.java",
+      "filePath": "src/VisualLogic/SearchFoundItem.java",
+      "summary": "Data class representing a search result",
+      "tags": [
+        "search",
+        "data-class",
+        "result"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/ProjectProperties.java",
+      "type": "file",
+      "name": "ProjectProperties.java",
+      "filePath": "src/VisualLogic/ProjectProperties.java",
+      "summary": "Project-level properties and configuration management",
+      "tags": [
+        "configuration",
+        "project",
+        "properties"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/VSDataType.java",
+      "type": "file",
+      "name": "VSDataType.java",
+      "filePath": "src/VisualLogic/VSDataType.java",
+      "summary": "Data type definitions for VisualLogic variables",
+      "tags": [
+        "data-type",
+        "variable",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/Transparency.java",
+      "type": "file",
+      "name": "Transparency.java",
+      "filePath": "src/VisualLogic/Transparency.java",
+      "summary": "Transparency/alpha value management for visual elements",
+      "tags": [
+        "visual",
+        "transparency",
+        "alpha",
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/PinsSettings.java",
+      "type": "file",
+      "name": "PinsSettings.java",
+      "filePath": "src/VisualLogic/PinsSettings.java",
+      "summary": "Configuration panel for element pin settings",
+      "tags": [
+        "gui",
+        "pin",
+        "configuration",
+        "settings"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/PinsSettingsItem.java",
+      "type": "file",
+      "name": "PinsSettingsItem.java",
+      "filePath": "src/VisualLogic/PinsSettingsItem.java",
+      "summary": "Individual pin setting item for pin configuration",
+      "tags": [
+        "pin",
+        "configuration",
+        "item",
+        "settings"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/DataEntry.java",
+      "type": "file",
+      "name": "DataEntry.java",
+      "filePath": "src/VisualLogic/DataEntry.java",
+      "summary": "Data entry component for runtime variable input",
+      "tags": [
+        "gui",
+        "data-entry",
+        "input",
+        "runtime"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/DataHistory.java",
+      "type": "file",
+      "name": "DataHistory.java",
+      "filePath": "src/VisualLogic/DataHistory.java",
+      "summary": "Historical data storage for plotting and recording",
+      "tags": [
+        "data",
+        "history",
+        "recording",
+        "plotting"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/ElementActionEvent.java",
+      "type": "file",
+      "name": "ElementActionEvent.java",
+      "filePath": "src/VisualLogic/ElementActionEvent.java",
+      "summary": "Event class for element user interactions",
+      "tags": [
+        "event",
+        "element",
+        "interaction"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/ElementPaletteIF.java",
+      "type": "file",
+      "name": "ElementPaletteIF.java",
+      "filePath": "src/VisualLogic/ElementPaletteIF.java",
+      "summary": "Interface for element palette functionality",
+      "tags": [
+        "interface",
+        "palette",
+        "element"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/VMObjectIF.java",
+      "type": "file",
+      "name": "VMObjectIF.java",
+      "filePath": "src/VisualLogic/VMObjectIF.java",
+      "summary": "Interface for virtual machine object operations",
+      "tags": [
+        "interface",
+        "virtual-machine",
+        "contract"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/VMEditorPanelIF.java",
+      "type": "file",
+      "name": "VMEditorPanelIF.java",
+      "filePath": "src/VisualLogic/VMEditorPanelIF.java",
+      "summary": "Interface for VM editor panel operations",
+      "tags": [
+        "interface",
+        "editor",
+        "panel",
+        "contract"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/MyMenuItem.java",
+      "type": "file",
+      "name": "MyMenuItem.java",
+      "filePath": "src/VisualLogic/MyMenuItem.java",
+      "summary": "Custom menu item for context menus",
+      "tags": [
+        "gui",
+        "menu",
+        "item",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/ColorRenderer.java",
+      "type": "file",
+      "name": "ColorRenderer.java",
+      "filePath": "src/VisualLogic/ColorRenderer.java",
+      "summary": "Color cell renderer for lists and tables",
+      "tags": [
+        "gui",
+        "renderer",
+        "color",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/ColoredListCell.java",
+      "type": "file",
+      "name": "ColoredListCell.java",
+      "filePath": "src/VisualLogic/ColoredListCell.java",
+      "summary": "Custom list cell renderer with color support",
+      "tags": [
+        "gui",
+        "renderer",
+        "list",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/SimpleFilter.java",
+      "type": "file",
+      "name": "SimpleFilter.java",
+      "filePath": "src/VisualLogic/SimpleFilter.java",
+      "summary": "Simple file filter implementation",
+      "tags": [
+        "utility",
+        "file-filter",
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/OnlyDirectoryFilter.java",
+      "type": "file",
+      "name": "OnlyDirectoryFilter.java",
+      "filePath": "src/VisualLogic/OnlyDirectoryFilter.java",
+      "summary": "File filter for directories only",
+      "tags": [
+        "utility",
+        "file-filter",
+        "directory"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/VlogicFilter.java",
+      "type": "file",
+      "name": "VlogicFilter.java",
+      "filePath": "src/VisualLogic/VlogicFilter.java",
+      "summary": "File filter for VisualLogic project files",
+      "tags": [
+        "utility",
+        "file-filter",
+        "project"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/JavaFileView.java",
+      "type": "file",
+      "name": "JavaFileView.java",
+      "filePath": "src/VisualLogic/JavaFileView.java",
+      "summary": "Custom file view for Java source files in file choosers",
+      "tags": [
+        "gui",
+        "file-view",
+        "java",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/NewJavaCompSettings.java",
+      "type": "file",
+      "name": "NewJavaCompSettings.java",
+      "filePath": "src/VisualLogic/NewJavaCompSettings.java",
+      "summary": "Java compiler settings configuration",
+      "tags": [
+        "configuration",
+        "compiler",
+        "java"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/BasisPanel.java",
+      "type": "file",
+      "name": "BasisPanel.java",
+      "filePath": "src/VisualLogic/BasisPanel.java",
+      "summary": "Base panel for circuit editing canvas",
+      "tags": [
+        "gui",
+        "panel",
+        "canvas",
+        "base-class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/PanelIF.java",
+      "type": "file",
+      "name": "PanelIF.java",
+      "filePath": "src/VisualLogic/PanelIF.java",
+      "summary": "Interface for panel operations",
+      "tags": [
+        "interface",
+        "panel",
+        "contract"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/VSBasisIF.java",
+      "type": "file",
+      "name": "VSBasisIF.java",
+      "filePath": "src/VisualLogic/VSBasisIF.java",
+      "summary": "Interface for VisualLogic variable system",
+      "tags": [
+        "interface",
+        "variable",
+        "system"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/MyOpenLabDriverIF.java",
+      "type": "file",
+      "name": "MyOpenLabDriverIF.java",
+      "filePath": "src/VisualLogic/MyOpenLabDriverIF.java",
+      "summary": "Interface for MyOpenLab hardware drivers",
+      "tags": [
+        "interface",
+        "driver",
+        "hardware"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/MyOpenLabDriverOwnerIF.java",
+      "type": "file",
+      "name": "MyOpenLabDriverOwnerIF.java",
+      "filePath": "src/VisualLogic/MyOpenLabDriverOwnerIF.java",
+      "summary": "Interface for driver ownership management",
+      "tags": [
+        "interface",
+        "driver",
+        "ownership"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:BasisStatus/StatusLineHoritontal.java",
+      "type": "file",
+      "name": "StatusLineHoritontal.java",
+      "filePath": "BasisStatus/StatusLineHoritontal.java",
+      "summary": "Manages horizontal wire drawing state for circuit editor, handles mouse events for wire creation and pin selection",
+      "tags": [
+        "circuit-editor",
+        "wire-drawing",
+        "state-pattern",
+        "mouse-events"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:BasisStatus/StatusLineVertikal.java",
+      "type": "file",
+      "name": "StatusLineVertikal.java",
+      "filePath": "BasisStatus/StatusLineVertikal.java",
+      "summary": "Manages vertical wire drawing state for circuit editor, handles node insertion into existing wires",
+      "tags": [
+        "circuit-editor",
+        "wire-drawing",
+        "state-pattern",
+        "node-insertion"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/Draht.java",
+      "type": "file",
+      "name": "Draht.java",
+      "filePath": "VisualLogic/Draht.java",
+      "summary": "Represents a wire connection between element pins, manages polyline points, serialization, and drawing",
+      "tags": [
+        "wire",
+        "connection",
+        "serializable",
+        "polyline"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/ExternalIF.java",
+      "type": "file",
+      "name": "ExternalIF.java",
+      "filePath": "VisualLogic/ExternalIF.java",
+      "summary": "Core interface defining element API for circuit components, including pin management, data types, and processing",
+      "tags": [
+        "interface",
+        "element-api",
+        "data-types",
+        "circuit-component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/JPin.java",
+      "type": "file",
+      "name": "JPin.java",
+      "filePath": "VisualLogic/JPin.java",
+      "summary": "Visual pin component for circuit elements, handles mouse events and displays pin connections",
+      "tags": [
+        "pin",
+        "gui-component",
+        "mouse-events",
+        "visual"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/Line.java",
+      "type": "file",
+      "name": "Line.java",
+      "filePath": "VisualLogic/Line.java",
+      "summary": "Represents a line segment in wire rendering, provides point-in-line testing and proximity detection",
+      "tags": [
+        "line-segment",
+        "geometry",
+        "hit-testing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PolyPoint.java",
+      "type": "file",
+      "name": "PolyPoint.java",
+      "filePath": "VisualLogic/PolyPoint.java",
+      "summary": "Polygon point with selection state and XML/binary serialization",
+      "tags": [
+        "geometry",
+        "polygon",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/VSDataType.java",
+      "type": "file",
+      "name": "VSDataType.java",
+      "filePath": "VisualLogic/VSDataType.java",
+      "summary": "Maps data types to VS objects, colors, and wire styles",
+      "tags": [
+        "data-type",
+        "color",
+        "wire"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:CodeEditor/DialogSearch.java",
+      "type": "file",
+      "name": "DialogSearch.java",
+      "filePath": "CodeEditor/DialogSearch.java",
+      "summary": "Search dialog for code editor, provides text search functionality with command pattern",
+      "tags": [
+        "code-editor",
+        "search-dialog",
+        "gui"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/PanelEditor.java",
+      "type": "file",
+      "name": "PanelEditor.java",
+      "filePath": "CodeEditor/PanelEditor.java",
+      "summary": "Main code editor panel with syntax highlighting, undo/redo, and file operations",
+      "tags": [
+        "code-editor",
+        "text-editor",
+        "undo-redo",
+        "syntax-highlighting"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/CommandIF.java",
+      "type": "file",
+      "name": "CommandIF.java",
+      "filePath": "VisualLogic/CommandIF.java",
+      "summary": "Simple command interface for inter-component communication",
+      "tags": [
+        "interface",
+        "command-pattern",
+        "communication"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:BasisStatus/StatusIdle.properties",
+      "type": "file",
+      "name": "StatusIdle.properties",
+      "filePath": "BasisStatus/StatusIdle.properties",
+      "summary": "Internationalization strings for StatusIdle component (default locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "status-idle"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:BasisStatus/StatusIdle_en_US.properties",
+      "type": "file",
+      "name": "StatusIdle_en_US.properties",
+      "filePath": "BasisStatus/StatusIdle_en_US.properties",
+      "summary": "Internationalization strings for StatusIdle component (English US locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "status-idle",
+        "en-US"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:BasisStatus/StatusIdle_es_ES.properties",
+      "type": "file",
+      "name": "StatusIdle_es_ES.properties",
+      "filePath": "BasisStatus/StatusIdle_es_ES.properties",
+      "summary": "Internationalization strings for StatusIdle component (Spanish locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "status-idle",
+        "es-ES"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:BasisStatus/frmElementInfo.form",
+      "type": "file",
+      "name": "frmElementInfo.form",
+      "filePath": "BasisStatus/frmElementInfo.form",
+      "summary": "GUI form definition for element info dialog",
+      "tags": [
+        "gui",
+        "form",
+        "element-info"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:BasisStatus/frmElementInfo.properties",
+      "type": "file",
+      "name": "frmElementInfo.properties",
+      "filePath": "BasisStatus/frmElementInfo.properties",
+      "summary": "Internationalization strings for element info dialog (default locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "element-info"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:BasisStatus/frmElementInfo_en_US.properties",
+      "type": "file",
+      "name": "frmElementInfo_en_US.properties",
+      "filePath": "BasisStatus/frmElementInfo_en_US.properties",
+      "summary": "Internationalization strings for element info dialog (English US locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "element-info",
+        "en-US"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:BasisStatus/frmElementInfo_es_ES.properties",
+      "type": "file",
+      "name": "frmElementInfo_es_ES.properties",
+      "filePath": "BasisStatus/frmElementInfo_es_ES.properties",
+      "summary": "Internationalization strings for element info dialog (Spanish locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "element-info",
+        "es-ES"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/DialogSearch.form",
+      "type": "file",
+      "name": "DialogSearch.form",
+      "filePath": "CodeEditor/DialogSearch.form",
+      "summary": "GUI form definition for code editor search dialog",
+      "tags": [
+        "gui",
+        "form",
+        "search-dialog"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/DialogSearch.properties",
+      "type": "file",
+      "name": "DialogSearch.properties",
+      "filePath": "CodeEditor/DialogSearch.properties",
+      "summary": "Internationalization strings for search dialog (default locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "search-dialog"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/DialogSearch_en_US.properties",
+      "type": "file",
+      "name": "DialogSearch_en_US.properties",
+      "filePath": "CodeEditor/DialogSearch_en_US.properties",
+      "summary": "Internationalization strings for search dialog (English US locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "search-dialog",
+        "en-US"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/DialogSearch_es_ES.properties",
+      "type": "file",
+      "name": "DialogSearch_es_ES.properties",
+      "filePath": "CodeEditor/DialogSearch_es_ES.properties",
+      "summary": "Internationalization strings for search dialog (Spanish locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "search-dialog",
+        "es-ES"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/PanelEditor.properties",
+      "type": "file",
+      "name": "PanelEditor.properties",
+      "filePath": "CodeEditor/PanelEditor.properties",
+      "summary": "Internationalization strings for panel editor (default locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "panel-editor"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/PanelEditor_en_US.properties",
+      "type": "file",
+      "name": "PanelEditor_en_US.properties",
+      "filePath": "CodeEditor/PanelEditor_en_US.properties",
+      "summary": "Internationalization strings for panel editor (English US locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "panel-editor",
+        "en-US"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/PanelEditor_es_ES.properties",
+      "type": "file",
+      "name": "PanelEditor_es_ES.properties",
+      "filePath": "CodeEditor/PanelEditor_es_ES.properties",
+      "summary": "Internationalization strings for panel editor (Spanish locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "panel-editor",
+        "es-ES"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/StatusIdle.properties",
+      "type": "file",
+      "name": "StatusIdle.properties",
+      "filePath": "CodeEditor/StatusIdle.properties",
+      "summary": "Internationalization strings for code editor idle state (default locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "status-idle"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/StatusIdle_en_US.properties",
+      "type": "file",
+      "name": "StatusIdle_en_US.properties",
+      "filePath": "CodeEditor/StatusIdle_en_US.properties",
+      "summary": "Internationalization strings for code editor idle state (English US locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "status-idle",
+        "en-US"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/StatusIdle_es_ES.properties",
+      "type": "file",
+      "name": "StatusIdle_es_ES.properties",
+      "filePath": "CodeEditor/StatusIdle_es_ES.properties",
+      "summary": "Internationalization strings for code editor idle state (Spanish locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "status-idle",
+        "es-ES"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmCodeEditor.form",
+      "type": "file",
+      "name": "frmCodeEditor.form",
+      "filePath": "CodeEditor/frmCodeEditor.form",
+      "summary": "GUI form definition for main code editor window",
+      "tags": [
+        "gui",
+        "form",
+        "code-editor"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmCodeEditor.properties",
+      "type": "file",
+      "name": "frmCodeEditor.properties",
+      "filePath": "CodeEditor/frmCodeEditor.properties",
+      "summary": "Internationalization strings for main code editor window (default locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "code-editor"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmCodeEditor_en_US.properties",
+      "type": "file",
+      "name": "frmCodeEditor_en_US.properties",
+      "filePath": "CodeEditor/frmCodeEditor_en_US.properties",
+      "summary": "Internationalization strings for main code editor window (English US locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "code-editor",
+        "en-US"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmCodeEditor_es_ES.properties",
+      "type": "file",
+      "name": "frmCodeEditor_es_ES.properties",
+      "filePath": "CodeEditor/frmCodeEditor_es_ES.properties",
+      "summary": "Internationalization strings for main code editor window (Spanish locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "code-editor",
+        "es-ES"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmDefinitonDefEditor.form",
+      "type": "file",
+      "name": "frmDefinitonDefEditor.form",
+      "filePath": "CodeEditor/frmDefinitonDefEditor.form",
+      "summary": "GUI form definition for definition editor window",
+      "tags": [
+        "gui",
+        "form",
+        "definition-editor"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmDefinitonDefEditor.properties",
+      "type": "file",
+      "name": "frmDefinitonDefEditor.properties",
+      "filePath": "CodeEditor/frmDefinitonDefEditor.properties",
+      "summary": "Internationalization strings for definition editor window (default locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "definition-editor"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmDefinitonDefEditor_en_US.properties",
+      "type": "file",
+      "name": "frmDefinitonDefEditor_en_US.properties",
+      "filePath": "CodeEditor/frmDefinitonDefEditor_en_US.properties",
+      "summary": "Internationalization strings for definition editor window (English US locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "definition-editor",
+        "en-US"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmDefinitonDefEditor_es_ES.properties",
+      "type": "file",
+      "name": "frmDefinitonDefEditor_es_ES.properties",
+      "filePath": "CodeEditor/frmDefinitonDefEditor_es_ES.properties",
+      "summary": "Internationalization strings for definition editor window (Spanish locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "definition-editor",
+        "es-ES"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmElementInfo.properties",
+      "type": "file",
+      "name": "frmElementInfo.properties",
+      "filePath": "CodeEditor/frmElementInfo.properties",
+      "summary": "Internationalization strings for element info (default locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "element-info"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CodeEditor/frmElementInfo_en_US.properties",
+      "type": "file",
+      "name": "frmElementInfo_en_US.properties",
+      "filePath": "CodeEditor/frmElementInfo_en_US.properties",
+      "summary": "Internationalization strings for element info (English US locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "element-info",
+        "en-US"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CreateNewGroup/DialogCreateNewGroup.form",
+      "type": "file",
+      "name": "DialogCreateNewGroup.form",
+      "filePath": "CreateNewGroup/DialogCreateNewGroup.form",
+      "summary": "GUI form definition for create new group dialog",
+      "tags": [
+        "gui",
+        "form",
+        "group-creation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CreateNewGroup/Dialog_create_new_group.properties",
+      "type": "file",
+      "name": "Dialog_create_new_group.properties",
+      "filePath": "CreateNewGroup/Dialog_create_new_group.properties",
+      "summary": "Internationalization strings for create new group dialog (default locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "group-creation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CreateNewGroup/Dialog_create_new_group_en_US.properties",
+      "type": "file",
+      "name": "Dialog_create_new_group_en_US.properties",
+      "filePath": "CreateNewGroup/Dialog_create_new_group_en_US.properties",
+      "summary": "Internationalization strings for create new group dialog (English US locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "group-creation",
+        "en-US"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CreateNewGroup/Dialog_create_new_group_es_ES.properties",
+      "type": "file",
+      "name": "Dialog_create_new_group_es_ES.properties",
+      "filePath": "CreateNewGroup/Dialog_create_new_group_es_ES.properties",
+      "summary": "Internationalization strings for create new group dialog (Spanish locale)",
+      "tags": [
+        "i18n",
+        "properties",
+        "group-creation",
+        "es-ES"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CreateNewGroup/std_lib_icon_32.png",
+      "type": "file",
+      "name": "std_lib_icon_32.png",
+      "filePath": "CreateNewGroup/std_lib_icon_32.png",
+      "summary": "32x32 pixel icon for standard library in group creation dialog",
+      "tags": [
+        "image",
+        "icon",
+        "gui-resource"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CustomColorPicker/Bild1.gif",
+      "type": "file",
+      "name": "Bild1.gif",
+      "filePath": "CustomColorPicker/Bild1.gif",
+      "summary": "Small GIF image file (10x10 pixels) used in the CustomColorPicker component",
+      "tags": [
+        "image",
+        "gif",
+        "resource"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CustomColorPicker/ColorPanel.form",
+      "type": "file",
+      "name": "ColorPanel.form",
+      "filePath": "CustomColorPicker/ColorPanel.form",
+      "summary": "NetBeans form definition for ColorPanel JPanel component with mouse event handlers",
+      "tags": [
+        "form",
+        "swing",
+        "netbeans",
+        "ui"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CustomColorPicker/CustomColorPicker.form",
+      "type": "file",
+      "name": "CustomColorPicker.form",
+      "filePath": "CustomColorPicker/CustomColorPicker.form",
+      "summary": "NetBeans form definition for CustomColorPicker dialog with complex layout and color selection components",
+      "tags": [
+        "form",
+        "swing",
+        "netbeans",
+        "dialog",
+        "color-picker"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:CustomColorPicker/CustomColorPicker.properties",
+      "type": "file",
+      "name": "CustomColorPicker.properties",
+      "filePath": "CustomColorPicker/CustomColorPicker.properties",
+      "summary": "German language properties for CustomColorPicker dialog (default locale)",
+      "tags": [
+        "properties",
+        "i18n",
+        "german",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CustomColorPicker/CustomColorPicker_en_US.properties",
+      "type": "file",
+      "name": "CustomColorPicker_en_US.properties",
+      "filePath": "CustomColorPicker/CustomColorPicker_en_US.properties",
+      "summary": "US English language properties for CustomColorPicker dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "english",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CustomColorPicker/CustomColorPicker_es_ES.properties",
+      "type": "file",
+      "name": "CustomColorPicker_es_ES.properties",
+      "filePath": "CustomColorPicker/CustomColorPicker_es_ES.properties",
+      "summary": "Spanish language properties for CustomColorPicker dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CustomColorPicker/gitter.gif",
+      "type": "file",
+      "name": "gitter.gif",
+      "filePath": "CustomColorPicker/gitter.gif",
+      "summary": "GIF image file used for grid pattern in the color picker",
+      "tags": [
+        "image",
+        "gif",
+        "resource",
+        "grid"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CustomColorPicker/rasterSelection.png",
+      "type": "file",
+      "name": "rasterSelection.png",
+      "filePath": "CustomColorPicker/rasterSelection.png",
+      "summary": "PNG image file used for raster selection indicator in color picker",
+      "tags": [
+        "image",
+        "png",
+        "resource",
+        "selection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:MyGraph/FrameMain.form",
+      "type": "file",
+      "name": "FrameMain.form",
+      "filePath": "MyGraph/FrameMain.form",
+      "summary": "NetBeans form definition for MyGraph main frame window",
+      "tags": [
+        "form",
+        "swing",
+        "netbeans",
+        "frame"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:MyGraph/GraphBackground.form",
+      "type": "file",
+      "name": "GraphBackground.form",
+      "filePath": "MyGraph/GraphBackground.form",
+      "summary": "NetBeans form definition for GraphBackground panel with custom painting support",
+      "tags": [
+        "form",
+        "swing",
+        "netbeans",
+        "panel",
+        "graph"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:MyGraph/MyGraph.form",
+      "type": "file",
+      "name": "MyGraph.form",
+      "filePath": "MyGraph/MyGraph.form",
+      "summary": "NetBeans form definition for MyGraph main graph component with complex nested panel layout",
+      "tags": [
+        "form",
+        "swing",
+        "netbeans",
+        "graph",
+        "panel"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:MyGraph/MyGraphX.form",
+      "type": "file",
+      "name": "MyGraphX.form",
+      "filePath": "MyGraph/MyGraphX.form",
+      "summary": "NetBeans form definition for MyGraphX extended graph component",
+      "tags": [
+        "form",
+        "swing",
+        "netbeans",
+        "graph",
+        "extended"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Peditor/DialogPropertiesChoice.form",
+      "type": "file",
+      "name": "DialogPropertiesChoice.form",
+      "filePath": "Peditor/DialogPropertiesChoice.form",
+      "summary": "NetBeans form definition for property selection dialog with list and button components",
+      "tags": [
+        "form",
+        "swing",
+        "netbeans",
+        "dialog",
+        "property-editor"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Peditor/PropertyEditor.form",
+      "type": "file",
+      "name": "PropertyEditor.form",
+      "filePath": "Peditor/PropertyEditor.form",
+      "summary": "NetBeans form definition for property editor panel with complex layout",
+      "tags": [
+        "form",
+        "swing",
+        "netbeans",
+        "property-editor",
+        "panel"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Peditor/PropertyEditor.properties",
+      "type": "file",
+      "name": "PropertyEditor.properties",
+      "filePath": "Peditor/PropertyEditor.properties",
+      "summary": "German language properties for PropertyEditor (default locale)",
+      "tags": [
+        "properties",
+        "i18n",
+        "german",
+        "config",
+        "property-editor"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Peditor/PropertyEditor_en_US.properties",
+      "type": "file",
+      "name": "PropertyEditor_en_US.properties",
+      "filePath": "Peditor/PropertyEditor_en_US.properties",
+      "summary": "US English language properties for PropertyEditor",
+      "tags": [
+        "properties",
+        "i18n",
+        "english",
+        "config",
+        "property-editor"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Peditor/PropertyEditor_es_ES.properties",
+      "type": "file",
+      "name": "PropertyEditor_es_ES.properties",
+      "filePath": "Peditor/PropertyEditor_es_ES.properties",
+      "summary": "Spanish language properties for PropertyEditor",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config",
+        "property-editor"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/Basic.properties",
+      "type": "file",
+      "name": "Basic.properties",
+      "filePath": "VisualLogic/NOI18N/Basic.properties",
+      "summary": "German language properties for basic error messages and UI strings (default locale)",
+      "tags": [
+        "properties",
+        "i18n",
+        "german",
+        "config",
+        "error-messages",
+        "ui"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/Basic_en_US.properties",
+      "type": "file",
+      "name": "Basic_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/Basic_en_US.properties",
+      "summary": "US English language properties for basic error messages and UI strings",
+      "tags": [
+        "properties",
+        "i18n",
+        "english",
+        "config",
+        "error-messages",
+        "ui"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/Basic_es_ES.properties",
+      "type": "file",
+      "name": "Basic_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/Basic_es_ES.properties",
+      "summary": "Spanish language properties for basic error messages and UI strings",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config",
+        "error-messages",
+        "ui"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogAddEditvariable.properties",
+      "type": "file",
+      "name": "DialogAddEditvariable.properties",
+      "filePath": "VisualLogic/NOI18N/DialogAddEditvariable.properties",
+      "summary": "German language properties for Add/Edit Variable dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "german",
+        "config",
+        "dialog",
+        "variable"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogAddEditvariable_en_US.properties",
+      "type": "file",
+      "name": "DialogAddEditvariable_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogAddEditvariable_en_US.properties",
+      "summary": "US English language properties for Add/Edit Variable dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "english",
+        "config",
+        "dialog",
+        "variable"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogAddEditvariable_es_ES.properties",
+      "type": "file",
+      "name": "DialogAddEditvariable_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogAddEditvariable_es_ES.properties",
+      "summary": "Spanish language properties for Add/Edit Variable dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config",
+        "dialog",
+        "variable"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogDistributionAssistent_es_ES.properties",
+      "type": "file",
+      "name": "DialogDistributionAssistent_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogDistributionAssistent_es_ES.properties",
+      "summary": "Spanish language properties for Distribution Assistant dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config",
+        "dialog",
+        "distribution"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogFontChooser.properties",
+      "type": "file",
+      "name": "DialogFontChooser.properties",
+      "filePath": "VisualLogic/NOI18N/DialogFontChooser.properties",
+      "summary": "German language properties for Font Chooser dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "german",
+        "config",
+        "dialog",
+        "font"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogFontChooser_en_US.properties",
+      "type": "file",
+      "name": "DialogFontChooser_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogFontChooser_en_US.properties",
+      "summary": "US English language properties for Font Chooser dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "english",
+        "config",
+        "dialog",
+        "font"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogFontChooser_es_ES.properties",
+      "type": "file",
+      "name": "DialogFontChooser_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogFontChooser_es_ES.properties",
+      "summary": "Spanish language properties for Font Chooser dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config",
+        "dialog",
+        "font"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogLanguage.properties",
+      "type": "file",
+      "name": "DialogLanguage.properties",
+      "filePath": "VisualLogic/NOI18N/DialogLanguage.properties",
+      "summary": "German language properties for Language selection dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "german",
+        "config",
+        "dialog",
+        "language"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogLanguage_en_US.properties",
+      "type": "file",
+      "name": "DialogLanguage_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogLanguage_en_US.properties",
+      "summary": "US English language properties for Language selection dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "english",
+        "config",
+        "dialog",
+        "language"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogLanguage_es_ES.properties",
+      "type": "file",
+      "name": "DialogLanguage_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogLanguage_es_ES.properties",
+      "summary": "Spanish language properties for Language selection dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config",
+        "dialog",
+        "language"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogNewJavaComponentAssistent.properties",
+      "type": "file",
+      "name": "DialogNewJavaComponentAssistent.properties",
+      "filePath": "VisualLogic/NOI18N/DialogNewJavaComponentAssistent.properties",
+      "summary": "German language properties for New Java Component Assistant dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "german",
+        "config",
+        "dialog",
+        "component",
+        "assistant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogNewJavaComponentAssistent_en_US.properties",
+      "type": "file",
+      "name": "DialogNewJavaComponentAssistent_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogNewJavaComponentAssistent_en_US.properties",
+      "summary": "US English language properties for New Java Component Assistant dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "english",
+        "config",
+        "dialog",
+        "component",
+        "assistant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogNewJavaComponentAssistent_es_ES.properties",
+      "type": "file",
+      "name": "DialogNewJavaComponentAssistent_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogNewJavaComponentAssistent_es_ES.properties",
+      "summary": "Spanish language properties for New Java Component Assistant dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config",
+        "dialog",
+        "component",
+        "assistant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogNewProject.properties",
+      "type": "file",
+      "name": "DialogNewProject.properties",
+      "filePath": "VisualLogic/NOI18N/DialogNewProject.properties",
+      "summary": "German language properties for New Project dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "german",
+        "config",
+        "dialog",
+        "project"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogNewProject_en_US.properties",
+      "type": "file",
+      "name": "DialogNewProject_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogNewProject_en_US.properties",
+      "summary": "US English language properties for New Project dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "english",
+        "config",
+        "dialog",
+        "project"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogNewProject_es_ES.properties",
+      "type": "file",
+      "name": "DialogNewProject_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogNewProject_es_ES.properties",
+      "summary": "Spanish language properties for New Project dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config",
+        "dialog",
+        "project"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogPassword.properties",
+      "type": "file",
+      "name": "DialogPassword.properties",
+      "filePath": "VisualLogic/NOI18N/DialogPassword.properties",
+      "summary": "German language properties for Password dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "german",
+        "config",
+        "dialog",
+        "password"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogPassword_en_US.properties",
+      "type": "file",
+      "name": "DialogPassword_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogPassword_en_US.properties",
+      "summary": "US English language properties for Password dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "english",
+        "config",
+        "dialog",
+        "password"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogPassword_es_ES.properties",
+      "type": "file",
+      "name": "DialogPassword_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogPassword_es_ES.properties",
+      "summary": "Spanish language properties for Password dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config",
+        "dialog",
+        "password"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogProjectProperties.properties",
+      "type": "file",
+      "name": "DialogProjectProperties.properties",
+      "filePath": "VisualLogic/NOI18N/DialogProjectProperties.properties",
+      "summary": "German language properties for Project Properties dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "german",
+        "config",
+        "dialog",
+        "project"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogProjectProperties_en_US.properties",
+      "type": "file",
+      "name": "DialogProjectProperties_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogProjectProperties_en_US.properties",
+      "summary": "US English language properties for Project Properties dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "english",
+        "config",
+        "dialog",
+        "project"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogProjectProperties_es_ES.properties",
+      "type": "file",
+      "name": "DialogProjectProperties_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogProjectProperties_es_ES.properties",
+      "summary": "Spanish language properties for Project Properties dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config",
+        "dialog",
+        "project"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogRename.properties",
+      "type": "file",
+      "name": "DialogRename.properties",
+      "filePath": "VisualLogic/NOI18N/DialogRename.properties",
+      "summary": "German language properties for Rename dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "german",
+        "config",
+        "dialog",
+        "rename"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogRename_en_US.properties",
+      "type": "file",
+      "name": "DialogRename_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogRename_en_US.properties",
+      "summary": "US English language properties for Rename dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "english",
+        "config",
+        "dialog",
+        "rename"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogRename_es_ES.properties",
+      "type": "file",
+      "name": "DialogRename_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogRename_es_ES.properties",
+      "summary": "Spanish language properties for Rename dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config",
+        "dialog",
+        "rename"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogSaveAsModul.properties",
+      "type": "file",
+      "name": "DialogSaveAsModul.properties",
+      "filePath": "VisualLogic/NOI18N/DialogSaveAsModul.properties",
+      "summary": "German language properties for Save As Module dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "german",
+        "config",
+        "dialog",
+        "module",
+        "save"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogSaveAsModul_en_US.properties",
+      "type": "file",
+      "name": "DialogSaveAsModul_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogSaveAsModul_en_US.properties",
+      "summary": "US English language properties for Save As Module dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "english",
+        "config",
+        "dialog",
+        "module",
+        "save"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogSaveAsModul_es_ES.properties",
+      "type": "file",
+      "name": "DialogSaveAsModul_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogSaveAsModul_es_ES.properties",
+      "summary": "Spanish language properties for Save As Module dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config",
+        "dialog",
+        "module",
+        "save"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogSubVMAssistent.properties",
+      "type": "file",
+      "name": "DialogSubVMAssistent.properties",
+      "filePath": "VisualLogic/NOI18N/DialogSubVMAssistent.properties",
+      "summary": "German language properties for SubVM Assistant dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "german",
+        "config",
+        "dialog",
+        "subvm",
+        "assistant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogSubVMAssistent_en_US.properties",
+      "type": "file",
+      "name": "DialogSubVMAssistent_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogSubVMAssistent_en_US.properties",
+      "summary": "US English language properties for SubVM Assistant dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "english",
+        "config",
+        "dialog",
+        "subvm",
+        "assistant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogSubVMAssistent_es_ES.properties",
+      "type": "file",
+      "name": "DialogSubVMAssistent_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogSubVMAssistent_es_ES.properties",
+      "summary": "Spanish language properties for SubVM Assistant dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config",
+        "dialog",
+        "subvm",
+        "assistant"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogUpdate.properties",
+      "type": "file",
+      "name": "DialogUpdate.properties",
+      "filePath": "VisualLogic/NOI18N/DialogUpdate.properties",
+      "summary": "German language properties for Update dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "german",
+        "config",
+        "dialog",
+        "update"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogUpdate_en_US.properties",
+      "type": "file",
+      "name": "DialogUpdate_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogUpdate_en_US.properties",
+      "summary": "US English language properties for Update dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "english",
+        "config",
+        "dialog",
+        "update"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogUpdate_es_ES.properties",
+      "type": "file",
+      "name": "DialogUpdate_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogUpdate_es_ES.properties",
+      "summary": "Spanish language properties for Update dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config",
+        "dialog",
+        "update"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogVMName.properties",
+      "type": "file",
+      "name": "DialogVMName.properties",
+      "filePath": "VisualLogic/NOI18N/DialogVMName.properties",
+      "summary": "German language properties for VM Name dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "german",
+        "config",
+        "dialog",
+        "vm",
+        "name"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogVMName_en_US.properties",
+      "type": "file",
+      "name": "DialogVMName_en_US.properties",
+      "filePath": "VisualLogic/NOI18N/DialogVMName_en_US.properties",
+      "summary": "US English language properties for VM Name dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "english",
+        "config",
+        "dialog",
+        "vm",
+        "name"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NOI18N/DialogVMName_es_ES.properties",
+      "type": "file",
+      "name": "DialogVMName_es_ES.properties",
+      "filePath": "VisualLogic/NOI18N/DialogVMName_es_ES.properties",
+      "summary": "Spanish language properties for VM Name dialog",
+      "tags": [
+        "properties",
+        "i18n",
+        "spanish",
+        "config",
+        "dialog",
+        "vm",
+        "name"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NewJavaCompSettings.java",
+      "type": "file",
+      "name": "NewJavaCompSettings.java",
+      "filePath": "VisualLogic/NewJavaCompSettings.java",
+      "summary": "Configuration settings for new Java components with pin and property definitions",
+      "tags": [
+        "configuration",
+        "component",
+        "java"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NewSerialDriverManager.java",
+      "type": "file",
+      "name": "NewSerialDriverManager.java",
+      "filePath": "VisualLogic/NewSerialDriverManager.java",
+      "summary": "Manages serial port connections for Arduino/MCU communication",
+      "tags": [
+        "serial",
+        "hardware",
+        "communication",
+        "arduino"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/OnlyDirectoryFilter.java",
+      "type": "file",
+      "name": "OnlyDirectoryFilter.java",
+      "filePath": "VisualLogic/OnlyDirectoryFilter.java",
+      "summary": "File filter that accepts only directories and .myopenlab files",
+      "tags": [
+        "file-filter",
+        "ui"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PanelIF.java",
+      "type": "file",
+      "name": "PanelIF.java",
+      "filePath": "VisualLogic/PanelIF.java",
+      "summary": "Interface for panel processing of pin values",
+      "tags": [
+        "interface",
+        "panel",
+        "pin"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PathPoint.java",
+      "type": "file",
+      "name": "PathPoint.java",
+      "filePath": "VisualLogic/PathPoint.java",
+      "summary": "Data class for path/bezier curve control points",
+      "tags": [
+        "geometry",
+        "path",
+        "point"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PinIF.java",
+      "type": "file",
+      "name": "PinIF.java",
+      "filePath": "VisualLogic/PinIF.java",
+      "summary": "Interface for handling pin mouse events in the visual editor",
+      "tags": [
+        "interface",
+        "pin",
+        "mouse-events"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PinsSettings.java",
+      "type": "file",
+      "name": "PinsSettings.java",
+      "filePath": "VisualLogic/PinsSettings.java",
+      "summary": "Configuration container for pin settings with visibility and count",
+      "tags": [
+        "configuration",
+        "pin"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PinsSettingsItem.java",
+      "type": "file",
+      "name": "PinsSettingsItem.java",
+      "filePath": "VisualLogic/PinsSettingsItem.java",
+      "summary": "Individual pin configuration item with name, datatype, and IO direction",
+      "tags": [
+        "configuration",
+        "pin",
+        "data-type"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/ProjectProperties.java",
+      "type": "file",
+      "name": "ProjectProperties.java",
+      "filePath": "VisualLogic/ProjectProperties.java",
+      "summary": "Stores main VM reference and project type",
+      "tags": [
+        "configuration",
+        "project"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/SearchElement.java",
+      "type": "file",
+      "name": "SearchElement.java",
+      "filePath": "VisualLogic/SearchElement.java",
+      "summary": "Searches for elements by keyword in definition.def files across directories",
+      "tags": [
+        "search",
+        "elements",
+        "file-io"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/SearchFoundItem.java",
+      "type": "file",
+      "name": "SearchFoundItem.java",
+      "filePath": "VisualLogic/SearchFoundItem.java",
+      "summary": "Data class for storing search results with matched word and element directory",
+      "tags": [
+        "search",
+        "data-class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/Settings.java",
+      "type": "file",
+      "name": "Settings.java",
+      "filePath": "VisualLogic/Settings.java",
+      "summary": "Application-wide settings including UI layout, editors, and repository configuration",
+      "tags": [
+        "configuration",
+        "settings",
+        "ui"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/Shape.java",
+      "type": "file",
+      "name": "Shape.java",
+      "filePath": "VisualLogic/Shape.java",
+      "summary": "Visual shape element with caption, sub-elements, selection, and resizing support",
+      "tags": [
+        "visual",
+        "shape",
+        "element",
+        "ui"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/SimpleFilter.java",
+      "type": "file",
+      "name": "SimpleFilter.java",
+      "filePath": "VisualLogic/SimpleFilter.java",
+      "summary": "File filter that accepts files with specific extension",
+      "tags": [
+        "file-filter",
+        "ui"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/SubElement.java",
+      "type": "file",
+      "name": "SubElement.java",
+      "filePath": "VisualLogic/SubElement.java",
+      "summary": "Data class for sub-element positioning within a visual element",
+      "tags": [
+        "visual",
+        "element",
+        "position"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/Tools.java",
+      "type": "file",
+      "name": "Tools.java",
+      "filePath": "VisualLogic/Tools.java",
+      "summary": "Utility class with file operations, compilation, wire manipulation, and UI helpers",
+      "tags": [
+        "utility",
+        "file-io",
+        "compilation",
+        "wire"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/Transparency.java",
+      "type": "file",
+      "name": "Transparency.java",
+      "filePath": "VisualLogic/Transparency.java",
+      "summary": "Utility for making colors transparent in images",
+      "tags": [
+        "image",
+        "transparency",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/VMEditorPanelIF.java",
+      "type": "file",
+      "name": "VMEditorPanelIF.java",
+      "filePath": "VisualLogic/VMEditorPanelIF.java",
+      "summary": "Interface for VM editor panel tab change notifications",
+      "tags": [
+        "interface",
+        "editor",
+        "panel"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/VMObject.java",
+      "type": "file",
+      "name": "VMObject.java",
+      "filePath": "VisualLogic/VMObject.java",
+      "summary": "Core VM panel managing elements, wires, properties, and simulation",
+      "tags": [
+        "core",
+        "vm",
+        "editor",
+        "simulation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/VMObjectIF.java",
+      "type": "file",
+      "name": "VMObjectIF.java",
+      "filePath": "VisualLogic/VMObjectIF.java",
+      "summary": "Interface for VM object mouse events and wire reordering",
+      "tags": [
+        "interface",
+        "vm",
+        "mouse-events"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/VSBasisIF.java",
+      "type": "file",
+      "name": "VSBasisIF.java",
+      "filePath": "VisualLogic/VSBasisIF.java",
+      "summary": "Interface for VM basis operations including simulation, variables, and scripting",
+      "tags": [
+        "interface",
+        "vm",
+        "simulation",
+        "scripting"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/Version.java",
+      "type": "file",
+      "name": "Version.java",
+      "filePath": "VisualLogic/Version.java",
+      "summary": "Application version and title constants",
+      "tags": [
+        "version",
+        "constants"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/VisualObject.java",
+      "type": "file",
+      "name": "VisualObject.java",
+      "filePath": "VisualLogic/VisualObject.java",
+      "summary": "Base class for visual elements with position, size, and caption properties",
+      "tags": [
+        "visual",
+        "base-class",
+        "properties"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/VlogicFilter.java",
+      "type": "file",
+      "name": "VlogicFilter.java",
+      "filePath": "VisualLogic/VlogicFilter.java",
+      "summary": "File filter for .vlogic files",
+      "tags": [
+        "file-filter",
+        "vlogic"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/Wrapper.java",
+      "type": "file",
+      "name": "Wrapper.java",
+      "filePath": "VisualLogic/Wrapper.java",
+      "summary": "Simple JPanel wrapper with null layout for element containment",
+      "tags": [
+        "ui",
+        "wrapper",
+        "panel"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/XMLSerializer.java",
+      "type": "file",
+      "name": "XMLSerializer.java",
+      "filePath": "VisualLogic/XMLSerializer.java",
+      "summary": "XML serialization/deserialization using XMLEncoder/XMLDecoder",
+      "tags": [
+        "serialization",
+        "xml"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogAddEditvariable.java",
+      "type": "file",
+      "name": "DialogAddEditvariable.java",
+      "filePath": "VisualLogic/gui/DialogAddEditvariable.java",
+      "summary": "Dialog for adding or editing variables in the visual logic editor",
+      "tags": [
+        "dialog",
+        "variable",
+        "ui"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogDistributionAssistent.java",
+      "type": "file",
+      "name": "DialogDistributionAssistent.java",
+      "filePath": "VisualLogic/gui/DialogDistributionAssistent.java",
+      "summary": "Wizard for distributing/packaging MyOpenLab projects",
+      "tags": [
+        "dialog",
+        "distribution",
+        "wizard"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogElementSearchAssistent.java",
+      "type": "file",
+      "name": "DialogElementSearchAssistent.java",
+      "filePath": "VisualLogic/gui/DialogElementSearchAssistent.java",
+      "summary": "Search dialog for finding elements by keyword",
+      "tags": [
+        "dialog",
+        "search",
+        "elements"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogFontChooser.java",
+      "type": "file",
+      "name": "DialogFontChooser.java",
+      "filePath": "VisualLogic/gui/DialogFontChooser.java",
+      "summary": "Font selection dialog for choosing font family, size, and style",
+      "tags": [
+        "dialog",
+        "font",
+        "ui"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogLanguage.java",
+      "type": "file",
+      "name": "DialogLanguage.java",
+      "filePath": "VisualLogic/gui/DialogLanguage.java",
+      "summary": "Language selection dialog for changing application locale",
+      "tags": [
+        "dialog",
+        "language",
+        "localization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogLicence.java",
+      "type": "file",
+      "name": "DialogLicence.java",
+      "filePath": "VisualLogic/gui/DialogLicence.java",
+      "summary": "License information display dialog",
+      "tags": [
+        "dialog",
+        "license"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogLupe.java",
+      "type": "file",
+      "name": "DialogLupe.java",
+      "filePath": "VisualLogic/gui/DialogLupe.java",
+      "summary": "Magnifier/zoom dialog for inspecting visual elements",
+      "tags": [
+        "dialog",
+        "zoom",
+        "magnifier"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogNewJavaComponentAssistent.java",
+      "type": "file",
+      "name": "DialogNewJavaComponentAssistent.java",
+      "filePath": "VisualLogic/gui/DialogNewJavaComponentAssistent.java",
+      "summary": "Wizard for creating new Java components with circuit and front panel elements",
+      "tags": [
+        "dialog",
+        "wizard",
+        "component",
+        "java"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogNewProject.java",
+      "type": "file",
+      "name": "DialogNewProject.java",
+      "filePath": "VisualLogic/gui/DialogNewProject.java",
+      "summary": "Dialog for creating new MyOpenLab projects",
+      "tags": [
+        "dialog",
+        "project",
+        "create"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogOptions.java",
+      "type": "file",
+      "name": "DialogOptions.java",
+      "filePath": "VisualLogic/gui/DialogOptions.java",
+      "summary": "Application options/preferences dialog for configuring editors, paths, and settings",
+      "tags": [
+        "dialog",
+        "options",
+        "settings",
+        "configuration"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogPassword.java",
+      "type": "file",
+      "name": "DialogPassword.java",
+      "filePath": "VisualLogic/gui/DialogPassword.java",
+      "summary": "Password input dialog for repository login",
+      "tags": [
+        "dialog",
+        "password",
+        "authentication"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogProjectProperties.java",
+      "type": "file",
+      "name": "DialogProjectProperties.java",
+      "filePath": "VisualLogic/gui/DialogProjectProperties.java",
+      "summary": "Dialog for editing project properties (main VM, project type)",
+      "tags": [
+        "dialog",
+        "project",
+        "properties"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogRename.java",
+      "type": "file",
+      "name": "DialogRename.java",
+      "filePath": "VisualLogic/gui/DialogRename.java",
+      "summary": "Simple rename dialog with text input",
+      "tags": [
+        "dialog",
+        "rename"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogSaveAsModul.java",
+      "type": "file",
+      "name": "DialogSaveAsModul.java",
+      "filePath": "VisualLogic/gui/DialogSaveAsModul.java",
+      "summary": "Dialog for saving elements as reusable modules with element palette",
+      "tags": [
+        "dialog",
+        "save",
+        "module",
+        "palette"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogSubVMAssistent.java",
+      "type": "file",
+      "name": "DialogSubVMAssistent.java",
+      "filePath": "VisualLogic/gui/DialogSubVMAssistent.java",
+      "summary": "Wizard for adding sub-VM elements to the circuit",
+      "tags": [
+        "dialog",
+        "wizard",
+        "sub-vm"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogTranslateForm.java",
+      "type": "file",
+      "name": "DialogTranslateForm.java",
+      "filePath": "VisualLogic/gui/DialogTranslateForm.java",
+      "summary": "Dialog for translating/localizing form labels and text",
+      "tags": [
+        "dialog",
+        "translation",
+        "localization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogUpdate.java",
+      "type": "file",
+      "name": "DialogUpdate.java",
+      "filePath": "VisualLogic/gui/DialogUpdate.java",
+      "summary": "Application update checker dialog",
+      "tags": [
+        "dialog",
+        "update"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogUserdefinedElementsHome.java",
+      "type": "file",
+      "name": "DialogUserdefinedElementsHome.java",
+      "filePath": "VisualLogic/gui/DialogUserdefinedElementsHome.java",
+      "summary": "Dialog for setting user-defined elements home directory",
+      "tags": [
+        "dialog",
+        "elements",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogVMName.java",
+      "type": "file",
+      "name": "DialogVMName.java",
+      "filePath": "VisualLogic/gui/DialogVMName.java",
+      "summary": "Dialog for entering VM name",
+      "tags": [
+        "dialog",
+        "vm",
+        "name"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogVariableWatcher.java",
+      "type": "file",
+      "name": "DialogVariableWatcher.java",
+      "filePath": "VisualLogic/gui/DialogVariableWatcher.java",
+      "summary": "Dialog for watching variable values during simulation",
+      "tags": [
+        "dialog",
+        "variable",
+        "debug",
+        "simulation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogVariables.java",
+      "type": "file",
+      "name": "DialogVariables.java",
+      "filePath": "VisualLogic/gui/DialogVariables.java",
+      "summary": "Dialog for managing project variables",
+      "tags": [
+        "dialog",
+        "variable",
+        "management"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogWait.java",
+      "type": "file",
+      "name": "DialogWait.java",
+      "filePath": "VisualLogic/gui/DialogWait.java",
+      "summary": "Progress/wait dialog shown during long operations",
+      "tags": [
+        "dialog",
+        "progress",
+        "wait"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/ElementPalette.java",
+      "type": "file",
+      "name": "ElementPalette.java",
+      "filePath": "VisualLogic/gui/ElementPalette.java",
+      "summary": "Panel displaying available elements for drag-and-drop into the editor",
+      "tags": [
+        "panel",
+        "elements",
+        "palette",
+        "drag-drop"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/gui/VMProperties.java",
+      "type": "file",
+      "name": "VMProperties.java",
+      "filePath": "VisualLogic/gui/VMProperties.java",
+      "summary": "JDialog for editing virtual machine properties (author name, email, website) with OK/Cancel buttons",
+      "tags": [
+        "gui",
+        "dialog",
+        "properties",
+        "swing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/frmDTLengend.java",
+      "type": "file",
+      "name": "frmDTLengend.java",
+      "filePath": "VisualLogic/gui/frmDTLengend.java",
+      "summary": "JFrame displaying data type legend HTML documentation with locale-based file selection (de/en/es)",
+      "tags": [
+        "gui",
+        "documentation",
+        "legend",
+        "i18n"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS1DBoolean.java",
+      "type": "file",
+      "name": "VS1DBoolean.java",
+      "filePath": "VisualLogic/variables/VS1DBoolean.java",
+      "summary": "1-dimensional boolean array variable type with serialization support for the visual logic system",
+      "tags": [
+        "variable",
+        "array",
+        "boolean",
+        "data-type"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS1DByte.java",
+      "type": "file",
+      "name": "VS1DByte.java",
+      "filePath": "VisualLogic/variables/VS1DByte.java",
+      "summary": "1-dimensional byte array variable type with serialization support for the visual logic system",
+      "tags": [
+        "variable",
+        "array",
+        "byte",
+        "data-type"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS1DDouble.java",
+      "type": "file",
+      "name": "VS1DDouble.java",
+      "filePath": "VisualLogic/variables/VS1DDouble.java",
+      "summary": "1-dimensional double array variable type with serialization support for the visual logic system",
+      "tags": [
+        "variable",
+        "array",
+        "double",
+        "data-type"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS1DInteger.java",
+      "type": "file",
+      "name": "VS1DInteger.java",
+      "filePath": "VisualLogic/variables/VS1DInteger.java",
+      "summary": "1-dimensional integer array variable type with serialization support for the visual logic system",
+      "tags": [
+        "variable",
+        "array",
+        "integer",
+        "data-type"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS1DString.java",
+      "type": "file",
+      "name": "VS1DString.java",
+      "filePath": "VisualLogic/variables/VS1DString.java",
+      "summary": "1-dimensional string array variable type with stream and XML serialization support",
+      "tags": [
+        "variable",
+        "array",
+        "string",
+        "data-type"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS2DBoolean.java",
+      "type": "file",
+      "name": "VS2DBoolean.java",
+      "filePath": "VisualLogic/variables/VS2DBoolean.java",
+      "summary": "2-dimensional boolean array variable type with columns/rows dimensions and serialization",
+      "tags": [
+        "variable",
+        "2d-array",
+        "boolean",
+        "data-type"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS2DByte.java",
+      "type": "file",
+      "name": "VS2DByte.java",
+      "filePath": "VisualLogic/variables/VS2DByte.java",
+      "summary": "2-dimensional byte array variable type with columns/rows dimensions and serialization",
+      "tags": [
+        "variable",
+        "2d-array",
+        "byte",
+        "data-type"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS2DDouble.java",
+      "type": "file",
+      "name": "VS2DDouble.java",
+      "filePath": "VisualLogic/variables/VS2DDouble.java",
+      "summary": "2-dimensional double array variable type with columns/rows dimensions and serialization",
+      "tags": [
+        "variable",
+        "2d-array",
+        "double",
+        "data-type"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS2DInteger.java",
+      "type": "file",
+      "name": "VS2DInteger.java",
+      "filePath": "VisualLogic/variables/VS2DInteger.java",
+      "summary": "2-dimensional integer array variable type with columns/rows dimensions and serialization",
+      "tags": [
+        "variable",
+        "2d-array",
+        "integer",
+        "data-type"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VS2DString.java",
+      "type": "file",
+      "name": "VS2DString.java",
+      "filePath": "VisualLogic/variables/VS2DString.java",
+      "summary": "2-dimensional string array variable type with columns/rows dimensions and serialization",
+      "tags": [
+        "variable",
+        "2d-array",
+        "string",
+        "data-type"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSBoolean.java",
+      "type": "file",
+      "name": "VSBoolean.java",
+      "filePath": "VisualLogic/variables/VSBoolean.java",
+      "summary": "Single boolean variable type with comparison operators and XML serialization",
+      "tags": [
+        "variable",
+        "boolean",
+        "data-type",
+        "primitive"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSByte.java",
+      "type": "file",
+      "name": "VSByte.java",
+      "filePath": "VisualLogic/variables/VSByte.java",
+      "summary": "Single byte variable type with unsigned/signed conversion utilities and serialization",
+      "tags": [
+        "variable",
+        "byte",
+        "data-type",
+        "primitive"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSCanvas.java",
+      "type": "file",
+      "name": "VSCanvas.java",
+      "filePath": "VisualLogic/variables/VSCanvas.java",
+      "summary": "Canvas drawing variable type with image, transformation (translation, rotation, scale, shear), stroke/fill colors, and anti-aliasing properties",
+      "tags": [
+        "variable",
+        "canvas",
+        "drawing",
+        "graphics",
+        "data-type"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSColor.java",
+      "type": "file",
+      "name": "VSColor.java",
+      "filePath": "VisualLogic/variables/VSColor.java",
+      "summary": "Color variable type wrapping java.awt.Color with RGB serialization to stream and XML",
+      "tags": [
+        "variable",
+        "color",
+        "data-type",
+        "awt"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSColorAdvanced.java",
+      "type": "file",
+      "name": "VSColorAdvanced.java",
+      "filePath": "VisualLogic/variables/VSColorAdvanced.java",
+      "summary": "Advanced color variable supporting flat, linear gradient, and radial gradient fill modes with transparency",
+      "tags": [
+        "variable",
+        "color",
+        "gradient",
+        "graphics",
+        "data-type"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSComboBox.java",
+      "type": "file",
+      "name": "VSComboBox.java",
+      "filePath": "VisualLogic/variables/VSComboBox.java",
+      "summary": "ComboBox/dropdown variable type with string item list and selected index serialization",
+      "tags": [
+        "variable",
+        "combobox",
+        "ui",
+        "data-type"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSDouble.java",
+      "type": "file",
+      "name": "VSDouble.java",
+      "filePath": "VisualLogic/variables/VSDouble.java",
+      "summary": "Single double variable type with comparison operators and XML/stream serialization",
+      "tags": [
+        "variable",
+        "double",
+        "data-type",
+        "primitive"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSFile.java",
+      "type": "file",
+      "name": "VSFile.java",
+      "filePath": "VisualLogic/variables/VSFile.java",
+      "summary": "File path variable type with file extension list and description metadata",
+      "tags": [
+        "variable",
+        "file",
+        "data-type",
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSFlowInfo.java",
+      "type": "file",
+      "name": "VSFlowInfo.java",
+      "filePath": "VisualLogic/variables/VSFlowInfo.java",
+      "summary": "Flow control variable holding parameter definitions, variable list, tags hashtable, return value, source element, and script bindings",
+      "tags": [
+        "variable",
+        "flow-control",
+        "scripting",
+        "bindings",
+        "data-type"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSFont.java",
+      "type": "file",
+      "name": "VSFont.java",
+      "filePath": "VisualLogic/variables/VSFont.java",
+      "summary": "Font variable type wrapping java.awt.Font with name, style, size serialization to stream and XML",
+      "tags": [
+        "variable",
+        "font",
+        "data-type",
+        "awt"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSGroup.java",
+      "type": "file",
+      "name": "VSGroup.java",
+      "filePath": "VisualLogic/variables/VSGroup.java",
+      "summary": "Group variable type containing an ArrayList of elements for grouping related data",
+      "tags": [
+        "variable",
+        "group",
+        "collection",
+        "data-type"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSImage.java",
+      "type": "file",
+      "name": "VSImage.java",
+      "filePath": "VisualLogic/variables/VSImage.java",
+      "summary": "Image variable type supporting file/URL loading, byte array serialization, and async image loading via ImageLoader",
+      "tags": [
+        "variable",
+        "image",
+        "graphics",
+        "data-type",
+        "io"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSImage24.java",
+      "type": "file",
+      "name": "VSImage24.java",
+      "filePath": "VisualLogic/variables/VSImage24.java",
+      "summary": "24-bit image variable type storing pixel data as int array with width/height dimensions",
+      "tags": [
+        "variable",
+        "image",
+        "pixel",
+        "data-type"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSInteger.java",
+      "type": "file",
+      "name": "VSInteger.java",
+      "filePath": "VisualLogic/variables/VSInteger.java",
+      "summary": "Single integer variable type with comparison operators and XML/stream serialization",
+      "tags": [
+        "variable",
+        "integer",
+        "data-type",
+        "primitive"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSObjRef.java",
+      "type": "file",
+      "name": "VSObjRef.java",
+      "filePath": "VisualLogic/variables/VSObjRef.java",
+      "summary": "Object reference variable type holding a generic Object reference with string serialization",
+      "tags": [
+        "variable",
+        "object-reference",
+        "data-type",
+        "reflection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSObject.java",
+      "type": "file",
+      "name": "VSObject.java",
+      "filePath": "VisualLogic/variables/VSObject.java",
+      "summary": "Base class for all VisualLogic variable types providing changed tracking, pin index, and copy/serialization contract",
+      "tags": [
+        "variable",
+        "base-class",
+        "abstract",
+        "data-type"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSProperties.java",
+      "type": "file",
+      "name": "VSProperties.java",
+      "filePath": "VisualLogic/variables/VSProperties.java",
+      "summary": "Stub/placeholder variable type for properties with empty implementations of copy and serialization",
+      "tags": [
+        "variable",
+        "properties",
+        "stub",
+        "data-type"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSPropertyDialog.java",
+      "type": "file",
+      "name": "VSPropertyDialog.java",
+      "filePath": "VisualLogic/variables/VSPropertyDialog.java",
+      "summary": "Simple text-based variable type used for property dialog text storage",
+      "tags": [
+        "variable",
+        "dialog",
+        "text",
+        "data-type"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSString.java",
+      "type": "file",
+      "name": "VSString.java",
+      "filePath": "VisualLogic/variables/VSString.java",
+      "summary": "Single string variable type with comparison operators and XML/stream serialization",
+      "tags": [
+        "variable",
+        "string",
+        "data-type",
+        "primitive"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSserialPort.java",
+      "type": "file",
+      "name": "VSserialPort.java",
+      "filePath": "VisualLogic/variables/VSserialPort.java",
+      "summary": "Serial port variable type wrapping jssc.SerialPort with configurable baud rate, CR/LF, timeout, and Arduino auto-reset support",
+      "tags": [
+        "variable",
+        "serial",
+        "hardware",
+        "communication",
+        "data-type"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:de/myopenlab/update/DeletePackages.java",
+      "type": "file",
+      "name": "DeletePackages.java",
+      "filePath": "de/myopenlab/update/DeletePackages.java",
+      "summary": "Runnable that deletes selected installed packages from the Elements directory using Tools2.deleteFolder",
+      "tags": [
+        "update",
+        "package-management",
+        "deletion",
+        "runnable"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:de/myopenlab/update/IniFile.java",
+      "type": "file",
+      "name": "IniFile.java",
+      "filePath": "de/myopenlab/update/IniFile.java",
+      "summary": "INI file parser that reads section/key-value pairs from a file using regex pattern matching",
+      "tags": [
+        "config",
+        "ini-file",
+        "parser",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:de/myopenlab/update/InstallPackages.java",
+      "type": "file",
+      "name": "InstallPackages.java",
+      "filePath": "de/myopenlab/update/InstallPackages.java",
+      "summary": "Runnable that downloads and installs selected packages from repository, unzipping to Elements directory",
+      "tags": [
+        "update",
+        "package-management",
+        "installation",
+        "runnable"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:de/myopenlab/update/MyOpenLabRow.java",
+      "type": "file",
+      "name": "MyOpenLabRow.java",
+      "filePath": "de/myopenlab/update/MyOpenLabRow.java",
+      "summary": "Data model class representing a repository entry with name, version, author, description, category, type, date, and localized captions",
+      "tags": [
+        "data-model",
+        "repository",
+        "package-metadata"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:de/myopenlab/update/MyTableModel.java",
+      "type": "file",
+      "name": "MyTableModel.java",
+      "filePath": "de/myopenlab/update/MyTableModel.java",
+      "summary": "Swing AbstractTableModel for displaying package data with locale-aware captions and checkbox selection",
+      "tags": [
+        "gui",
+        "table-model",
+        "swing",
+        "i18n"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:de/myopenlab/update/MyTableRow.java",
+      "type": "file",
+      "name": "MyTableRow.java",
+      "filePath": "de/myopenlab/update/MyTableRow.java",
+      "summary": "Data model class representing a single table row with selection state, icon, name, category, date, author, type, and localized captions",
+      "tags": [
+        "data-model",
+        "table-row",
+        "gui"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:de/myopenlab/update/TestItem.java",
+      "type": "file",
+      "name": "TestItem.java",
+      "filePath": "de/myopenlab/update/TestItem.java",
+      "summary": "Simple data class holding package item metadata (name, type, localized captions) used in repository data parsing",
+      "tags": [
+        "data-model",
+        "package-item",
+        "metadata"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:de/myopenlab/update/Tools2.java",
+      "type": "file",
+      "name": "Tools2.java",
+      "filePath": "de/myopenlab/update/Tools2.java",
+      "summary": "Utility class providing folder deletion, stream copy, and authenticated HTTP download of package zip files",
+      "tags": [
+        "utility",
+        "io",
+        "http",
+        "file-management"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:de/myopenlab/update/UnzipFiles.java",
+      "type": "file",
+      "name": "UnzipFiles.java",
+      "filePath": "de/myopenlab/update/UnzipFiles.java",
+      "summary": "Utility class for extracting zip files to a destination directory with buffer-based file extraction",
+      "tags": [
+        "utility",
+        "zip",
+        "extraction",
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:de/myopenlab/update/frmUpdate.java",
+      "type": "file",
+      "name": "frmUpdate.java",
+      "filePath": "de/myopenlab/update/frmUpdate.java",
+      "summary": "Main update manager JFrame with tabs for installing/deleting packages, repository data fetching via JSON/HTTP, SSL trust-all configuration, and package creation wizards",
+      "tags": [
+        "gui",
+        "update",
+        "repository",
+        "package-management",
+        "swing",
+        "complex"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:projectfolder/FrameMain.java",
+      "type": "file",
+      "name": "FrameMain.java",
+      "filePath": "projectfolder/FrameMain.java",
+      "summary": "Simple empty JFrame placeholder for the project folder application",
+      "tags": [
+        "gui",
+        "frame",
+        "placeholder"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:projectfolder/MyNode.java",
+      "type": "file",
+      "name": "MyNode.java",
+      "filePath": "projectfolder/MyNode.java",
+      "summary": "Custom tree node extending DefaultMutableTreeNode with expanded/collapsed icons and project/folder/file metadata",
+      "tags": [
+        "tree-node",
+        "gui",
+        "file-system"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:projectfolder/ProjectPalette.java",
+      "type": "file",
+      "name": "ProjectPalette.java",
+      "filePath": "projectfolder/ProjectPalette.java",
+      "summary": "JPanel with JTree for project file browser, supporting context menus for project/folder/file operations, custom cell renderer with locale-aware captions from info.xml",
+      "tags": [
+        "gui",
+        "tree",
+        "project-browser",
+        "file-management",
+        "swing"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:projectfolder/ProjectPaletteIF.java",
+      "type": "file",
+      "name": "ProjectPaletteIF.java",
+      "filePath": "projectfolder/ProjectPaletteIF.java",
+      "summary": "Interface defining callback methods for project palette actions (add/delete/rename projects and VMs, file operations)",
+      "tags": [
+        "interface",
+        "callback",
+        "project-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tools/BinAnzeige.java",
+      "type": "file",
+      "name": "BinAnzeige.java",
+      "filePath": "tools/BinAnzeige.java",
+      "summary": "Binary display element showing ON/OFF images based on input pin boolean value with custom painting",
+      "tags": [
+        "element",
+        "binary",
+        "display",
+        "visual-logic"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tools/BinSchalter.java",
+      "type": "file",
+      "name": "BinSchalter.java",
+      "filePath": "tools/BinSchalter.java",
+      "summary": "Binary switch element with mouse click toggle between ON/OFF states, writing 1.0/0.0 to output pin",
+      "tags": [
+        "element",
+        "binary",
+        "switch",
+        "interactive",
+        "visual-logic"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tools/CustomAnalogComp_1_JV.java",
+      "type": "file",
+      "name": "CustomAnalogComp_1_JV.java",
+      "filePath": "tools/CustomAnalogComp_1_JV.java",
+      "summary": "Custom analog gauge/dial element with configurable needle, knob, text labels, gradient colors, and mouse-drag value control",
+      "tags": [
+        "element",
+        "analog-gauge",
+        "ui",
+        "custom-drawing",
+        "visual-logic"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tools/CustomAnalogComp_2_JV.java",
+      "type": "file",
+      "name": "CustomAnalogComp_2_JV.java",
+      "filePath": "tools/CustomAnalogComp_2_JV.java",
+      "summary": "Second custom analog gauge element with image-based needle, circular background, multi-color nibble selector, and extensive property editor",
+      "tags": [
+        "element",
+        "analog-gauge",
+        "ui",
+        "custom-drawing",
+        "visual-logic"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tools/Expression.java",
+      "type": "file",
+      "name": "Expression.java",
+      "filePath": "tools/Expression.java",
+      "summary": "Generated expression parser (jay) supporting arithmetic, comparison, and bitwise operations with code generation to instruction list",
+      "tags": [
+        "parser",
+        "expression",
+        "code-generation",
+        "compiler"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tools/Gatter.java",
+      "type": "file",
+      "name": "Gatter.java",
+      "filePath": "tools/Gatter.java",
+      "summary": "Base logic gate element with fixed number of boolean input pins and one output pin, displaying an icon image",
+      "tags": [
+        "element",
+        "logic-gate",
+        "boolean",
+        "visual-logic"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tools/Gatter2.java",
+      "type": "file",
+      "name": "Gatter2.java",
+      "filePath": "tools/Gatter2.java",
+      "summary": "Configurable logic gate element with variable number of input pins (2-20) set via property editor",
+      "tags": [
+        "element",
+        "logic-gate",
+        "boolean",
+        "configurable",
+        "visual-logic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tools/Gatter3.java",
+      "type": "file",
+      "name": "Gatter3.java",
+      "filePath": "tools/Gatter3.java",
+      "summary": "Logic gate element with variable input pins and configurable propagation delay in microseconds",
+      "tags": [
+        "element",
+        "logic-gate",
+        "boolean",
+        "delay",
+        "visual-logic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tools/GatterProperties.java",
+      "type": "file",
+      "name": "GatterProperties.java",
+      "filePath": "tools/GatterProperties.java",
+      "summary": "JDialog for configuring logic gate input pin count (2-10) with spinner control",
+      "tags": [
+        "gui",
+        "dialog",
+        "properties",
+        "gate-config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tools/JVSMain.java",
+      "type": "file",
+      "name": "JVSMain.java",
+      "filePath": "tools/JVSMain.java",
+      "summary": "Base class for all visual logic element components implementing ElementIF with default lifecycle methods, pin management, and image drawing utilities",
+      "tags": [
+        "base-class",
+        "element",
+        "interface",
+        "visual-logic",
+        "framework"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tools/MCUMainFlow.java",
+      "type": "file",
+      "name": "MCUMainFlow.java",
+      "filePath": "tools/MCUMainFlow.java",
+      "summary": "MCU main flow element with variable display, expression parsing to MCU code, inline text editing, and auto-resize",
+      "tags": [
+        "element",
+        "mcu",
+        "code-generation",
+        "flow-control",
+        "visual-logic"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tools/MainFlow.java",
+      "type": "file",
+      "name": "MainFlow.java",
+      "filePath": "tools/MainFlow.java",
+      "summary": "Main flow element with variable display, inline text editing, and auto-resize based on caption width",
+      "tags": [
+        "element",
+        "flow-control",
+        "ui",
+        "visual-logic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tools/Properties.java",
+      "type": "file",
+      "name": "Properties.java",
+      "filePath": "tools/Properties.java",
+      "summary": "Simple text editing JDialog with OK/Cancel buttons for editing multi-line text properties",
+      "tags": [
+        "gui",
+        "dialog",
+        "text-editor"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tools/Scanner.java",
+      "type": "file",
+      "name": "Scanner.java",
+      "filePath": "tools/Scanner.java",
+      "summary": "Token scanner extending StreamTokenizer implementing Expression.yyInput for parsing expressions with variable/constant recognition",
+      "tags": [
+        "scanner",
+        "tokenizer",
+        "parser",
+        "expression"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tools/ZipFiles.java",
+      "type": "file",
+      "name": "ZipFiles.java",
+      "filePath": "tools/ZipFiles.java",
+      "summary": "Utility class for zipping single files and directories using java.util.zip",
+      "tags": [
+        "utility",
+        "zip",
+        "compression",
+        "io"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/CodeEditor/frmDefinitonDefEditor.java",
+      "target": "file:src/VisualLogic/DFProperties.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/CodeEditor/frmDefinitonDefEditor.java",
+      "target": "file:src/CodeEditor/PanelEditor.java",
+      "type": "imports",
+      "weight": 0.3,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/CreateNewGroup/DialogCreateNewGroup.java",
+      "target": "file:src/VisualLogic/DFProperties.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/CreateNewGroup/DialogCreateNewGroup.java",
+      "target": "file:src/CreateNewGroup/ImageComponent.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/CodeEditor/PanelEditor.java",
+      "target": "file:src/CodeEditor/MyEditorPane.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/CodeEditor/PanelEditor.java",
+      "target": "file:src/CodeEditor/JavaSyntaxDocument.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/CodeEditor/PanelEditor.java",
+      "target": "file:src/CodeEditor/DialogSearch.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/CodeEditor/frmCodeEditor.java",
+      "target": "file:src/CodeEditor/PanelEditor.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/CodeEditor/frmCodeEditor.java",
+      "target": "file:src/VisualLogic/DFProperties.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/CodeEditor/DialogSearch.java",
+      "target": "file:src/CodeEditor/PanelEditor.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/CodeEditor/JavaSyntaxDocument.java",
+      "target": "file:src/CodeEditor/PanelEditor.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/CodeEditor/JavaSyntaxDocument.java",
+      "target": "file:src/CodeEditor/Scanner.java",
+      "type": "imports",
+      "weight": 0.4,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/Shape.java",
+      "target": "file:src/VisualLogic/VMObject.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/LineInfo.java",
+      "target": "file:src/VisualLogic/Line.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/LineInfo.java",
+      "target": "file:src/VisualLogic/JPin.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/MyGraph/MyGraph.java",
+      "target": "file:src/MyGraph/MyGraphX.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/MyGraph/MyGraph.java",
+      "target": "file:src/MyGraph/Turn90Label.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/MyGraph/MyGraphX.java",
+      "target": "file:src/MyGraph/GraphRenderer.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/MyGraph/MyGraphX.java",
+      "target": "file:src/MyGraph/GraphBackground.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/MyGraph/MyGraphX.java",
+      "target": "file:src/MyGraph/XAxis.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/MyGraph/MyGraphX.java",
+      "target": "file:src/MyGraph/YAxis.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/MyGraph/MyGraphX.java",
+      "target": "file:src/MyGraph/BackGraphXY.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/MyParser/Parser.java",
+      "target": "file:src/MyParser/OpenVariable.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/MyParser/Parser.java",
+      "target": "file:src/MyParser/Expression.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/MyParser/VerilogParser.java",
+      "target": "file:src/MyParser/Keywords.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/MyGraph/FrameMain.java",
+      "target": "file:src/MyGraph/MyGraph.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/MyGraph/FrameMain.java",
+      "target": "file:src/MyGraph/GraphRenderer.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusAddElement.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusAddWire.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusAddWire.java",
+      "target": "file:src/BasisStatus/StatusLineHoritontal.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusAddWire.java",
+      "target": "file:src/BasisStatus/StatusLineVertikal.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusGummiBandX.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusGummiBandX.java",
+      "target": "file:src/BasisStatus/StatusGummiBandXBackIF.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusIdle.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusRun.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusMoveElements.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusResizeElement.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusResizeBasis.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusEditPath.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusEditPath.java",
+      "target": "file:src/BasisStatus/StatusEditPathAddMode.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusEditPath.java",
+      "target": "file:src/BasisStatus/StatusEditPathEditMode.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusEditPath.java",
+      "target": "file:src/BasisStatus/StatusEditPath_ADD_CurveTo.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusEditPathAddMode.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusEditPathEditMode.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusEditPath_ADD_CurveTo.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusLineHoritontal.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusLineVertikal.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusNone.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusNOP.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/BasisStatus/StatusGummiBand.java",
+      "target": "file:src/BasisStatus/StatusBasisIF.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/CustomColorPicker/CustomColorPicker.java",
+      "target": "file:src/CustomColorPicker/ColorPanel.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/CustomColorPicker/ColorPanel.java",
+      "target": "file:src/CustomColorPicker/RoundGradientPaint.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/Peditor/PropertyEditor.java",
+      "target": "file:src/Peditor/PropertyEditorItem.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/Peditor/PropertyEditor.java",
+      "target": "file:src/CustomColorPicker/CustomColorPicker.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/Peditor/PropertyEditorItem.java",
+      "target": "file:src/Peditor/BasisProperty.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/Element.java",
+      "target": "file:src/VisualLogic/VMObject.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/Element.java",
+      "target": "file:src/VisualLogic/JPin.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/Element.java",
+      "target": "file:src/VisualLogic/Draht.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/VMObject.java",
+      "target": "file:src/VisualLogic/Element.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/VMObject.java",
+      "target": "file:src/VisualLogic/Draht.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/VMObject.java",
+      "target": "file:src/VisualLogic/Basis.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/VMObject.java",
+      "target": "file:src/VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/Draht.java",
+      "target": "file:src/VisualLogic/JPin.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/Draht.java",
+      "target": "file:src/VisualLogic/Line.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/VisualObject.java",
+      "target": "file:src/VisualLogic/Element.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/Shape.java",
+      "target": "file:src/VisualLogic/VisualObject.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/Loader.java",
+      "target": "file:src/VisualLogic/DriverManager.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/DriverManager.java",
+      "target": "file:src/VisualLogic/NewSerialDriverManager.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/VMObject.java",
+      "target": "file:src/VisualLogic/Settings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/VMObject.java",
+      "target": "file:src/VisualLogic/Wrapper.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/VMObject.java",
+      "target": "file:src/VisualLogic/Loader.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/Element.java",
+      "target": "file:src/VisualLogic/ElementProperty.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/Element.java",
+      "target": "file:src/VisualLogic/SubElement.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/Element.java",
+      "target": "file:src/VisualLogic/PathPoint.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/Draht.java",
+      "target": "file:src/VisualLogic/PathPoint.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/Draht.java",
+      "target": "file:src/VisualLogic/PolyPoint.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/BasisPanel.java",
+      "target": "file:src/VisualLogic/PanelIF.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/PinsSettings.java",
+      "target": "file:src/VisualLogic/PinsSettingsItem.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/VisualLogic/SearchElement.java",
+      "target": "file:src/VisualLogic/SearchFoundItem.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineHoritontal.java",
+      "target": "file:VisualLogic/Draht.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineHoritontal.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineHoritontal.java",
+      "target": "file:VisualLogic/JPin.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineHoritontal.java",
+      "target": "file:VisualLogic/Line.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineHoritontal.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineHoritontal.java",
+      "target": "file:VisualLogic/VMObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineHoritontal.java",
+      "target": "file:VisualLogic/VSDataType.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/Draht.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/JPin.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/Line.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/PolyPoint.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/VMObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:BasisStatus/StatusLineVertikal.java",
+      "target": "file:VisualLogic/VSDataType.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/JPin.java",
+      "target": "file:VisualLogic/VSDataType.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/VSDataType.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Draht.java",
+      "target": "file:VisualLogic/PolyPoint.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Draht.java",
+      "target": "file:VisualLogic/Line.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Draht.java",
+      "target": "file:VisualLogic/VSDataType.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:CodeEditor/DialogSearch.java",
+      "target": "file:VisualLogic/CommandIF.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:CodeEditor/PanelEditor.java",
+      "target": "file:VisualLogic/CommandIF.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:CodeEditor/PanelEditor.java",
+      "target": "file:CodeEditor/DialogSearch.java",
+      "type": "implements",
+      "weight": 0.8,
+      "label": "uses",
+      "direction": "forward"
+    },
+    {
+      "source": "file:CustomColorPicker/CustomColorPicker.properties",
+      "target": "file:CustomColorPicker/CustomColorPicker_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:CustomColorPicker/CustomColorPicker.properties",
+      "target": "file:CustomColorPicker/CustomColorPicker_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:MyGraph/MyGraph.form",
+      "target": "file:MyGraph/GraphBackground.form",
+      "type": "contains",
+      "weight": 0.8,
+      "label": "contains background panel",
+      "direction": "forward"
+    },
+    {
+      "source": "file:MyGraph/MyGraphX.form",
+      "target": "file:MyGraph/MyGraph.form",
+      "type": "extends",
+      "weight": 0.7,
+      "label": "extends base graph",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Peditor/PropertyEditor.properties",
+      "target": "file:Peditor/PropertyEditor_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Peditor/PropertyEditor.properties",
+      "target": "file:Peditor/PropertyEditor_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:Peditor/PropertyEditor.form",
+      "target": "file:Peditor/DialogPropertiesChoice.form",
+      "type": "uses",
+      "weight": 0.6,
+      "label": "uses choice dialog",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/Basic.properties",
+      "target": "file:VisualLogic/NOI18N/Basic_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/Basic.properties",
+      "target": "file:VisualLogic/NOI18N/Basic_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogAddEditvariable.properties",
+      "target": "file:VisualLogic/NOI18N/DialogAddEditvariable_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogAddEditvariable.properties",
+      "target": "file:VisualLogic/NOI18N/DialogAddEditvariable_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogFontChooser.properties",
+      "target": "file:VisualLogic/NOI18N/DialogFontChooser_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogFontChooser.properties",
+      "target": "file:VisualLogic/NOI18N/DialogFontChooser_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogLanguage.properties",
+      "target": "file:VisualLogic/NOI18N/DialogLanguage_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogLanguage.properties",
+      "target": "file:VisualLogic/NOI18N/DialogLanguage_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogNewJavaComponentAssistent.properties",
+      "target": "file:VisualLogic/NOI18N/DialogNewJavaComponentAssistent_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogNewJavaComponentAssistent.properties",
+      "target": "file:VisualLogic/NOI18N/DialogNewJavaComponentAssistent_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogNewProject.properties",
+      "target": "file:VisualLogic/NOI18N/DialogNewProject_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogNewProject.properties",
+      "target": "file:VisualLogic/NOI18N/DialogNewProject_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogPassword_en_US.properties",
+      "target": "file:VisualLogic/NOI18N/DialogPassword_es_ES.properties",
+      "type": "localization",
+      "weight": 0.8,
+      "label": "parallel localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogProjectProperties.properties",
+      "target": "file:VisualLogic/NOI18N/DialogProjectProperties_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogProjectProperties.properties",
+      "target": "file:VisualLogic/NOI18N/DialogProjectProperties_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogRename.properties",
+      "target": "file:VisualLogic/NOI18N/DialogRename_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogRename.properties",
+      "target": "file:VisualLogic/NOI18N/DialogRename_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogSaveAsModul.properties",
+      "target": "file:VisualLogic/NOI18N/DialogSaveAsModul_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogSaveAsModul.properties",
+      "target": "file:VisualLogic/NOI18N/DialogSaveAsModul_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogSubVMAssistent.properties",
+      "target": "file:VisualLogic/NOI18N/DialogSubVMAssistent_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogSubVMAssistent.properties",
+      "target": "file:VisualLogic/NOI18N/DialogSubVMAssistent_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogUpdate.properties",
+      "target": "file:VisualLogic/NOI18N/DialogUpdate_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogUpdate.properties",
+      "target": "file:VisualLogic/NOI18N/DialogUpdate_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogVMName.properties",
+      "target": "file:VisualLogic/NOI18N/DialogVMName_en_US.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "en_US localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NOI18N/DialogVMName.properties",
+      "target": "file:VisualLogic/NOI18N/DialogVMName_es_ES.properties",
+      "type": "localization",
+      "weight": 0.9,
+      "label": "es_ES localization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NewSerialDriverManager.java",
+      "target": "file:VisualLogic/variables/VSserialPort.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/PolyPoint.java",
+      "target": "file:VisualLogic/VisualObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/PolyPoint.java",
+      "target": "file:VisualLogic/VMObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "uses",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/PinsSettings.java",
+      "target": "file:VisualLogic/PinsSettingsItem.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "contains",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NewJavaCompSettings.java",
+      "target": "file:VisualLogic/PinsSettings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "contains",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/SearchElement.java",
+      "target": "file:VisualLogic/SearchFoundItem.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "uses",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Shape.java",
+      "target": "file:VisualLogic/VisualObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Shape.java",
+      "target": "file:VisualLogic/VMObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "uses",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Shape.java",
+      "target": "file:VisualLogic/SubElement.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "contains",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Tools.java",
+      "target": "file:VisualLogic/ProjectProperties.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "uses",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Tools.java",
+      "target": "file:VisualLogic/Settings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "uses",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Tools.java",
+      "target": "file:VisualLogic/gui/DialogWait.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/VSDataType.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "uses",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/VMObject.java",
+      "target": "file:VisualLogic/Draht.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "contains",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/VMObject.java",
+      "target": "file:VisualLogic/gui/DialogWait.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/VMObject.java",
+      "target": "file:VisualLogic/variables/VSString.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/VMObject.java",
+      "target": "file:VisualLogic/variables/VSInteger.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/VMObject.java",
+      "target": "file:VisualLogic/variables/VSBoolean.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/VMObject.java",
+      "target": "file:VisualLogic/variables/VSColor.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/VMObject.java",
+      "target": "file:VisualLogic/variables/VSComboBox.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/VMObject.java",
+      "target": "file:VisualLogic/variables/VSProperties.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogAddEditvariable.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogDistributionAssistent.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogDistributionAssistent.java",
+      "target": "file:VisualLogic/OnlyDirectoryFilter.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogDistributionAssistent.java",
+      "target": "file:VisualLogic/ProjectProperties.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogElementSearchAssistent.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogNewJavaComponentAssistent.java",
+      "target": "file:VisualLogic/NewJavaCompSettings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogNewProject.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogOptions.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogOptions.java",
+      "target": "file:VisualLogic/Settings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogPassword.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogProjectProperties.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogProjectProperties.java",
+      "target": "file:VisualLogic/ProjectProperties.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogSaveAsModul.java",
+      "target": "file:VisualLogic/NewJavaCompSettings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogUpdate.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogUpdate.java",
+      "target": "file:VisualLogic/Version.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/ElementPalette.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/ElementPalette.java",
+      "target": "file:VisualLogic/Settings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/ElementPalette.java",
+      "target": "file:VisualLogic/SearchElement.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/VMProperties.java",
+      "target": "file:VisualLogic/gui/VMProperties.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports java.awt.*, javax.swing.*",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/frmDTLengend.java",
+      "target": "file:VisualLogic/gui/frmDTLengend.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports java.awt.Image, java.net.URL, java.util.Locale",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS1DBoolean.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS1DByte.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS1DDouble.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS1DInteger.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS1DString.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS2DBoolean.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS2DByte.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS2DDouble.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS2DInteger.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VS2DString.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSBoolean.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSByte.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSByte.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports VisualLogic.Tools",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSCanvas.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSColor.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSColorAdvanced.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSComboBox.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSDouble.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSFile.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSFlowInfo.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSFlowInfo.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports VisualLogic.ExternalIF",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSFont.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSGroup.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSImage.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSImage24.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSInteger.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSInteger.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports VisualLogic.Tools",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSObjRef.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSProperties.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSPropertyDialog.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSString.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSserialPort.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/DeletePackages.java",
+      "target": "file:de/myopenlab/update/frmUpdate.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "references frmUpdate owner",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/DeletePackages.java",
+      "target": "file:de/myopenlab/update/MyTableRow.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses MyTableRow",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/DeletePackages.java",
+      "target": "file:de/myopenlab/update/Tools2.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "calls Tools2.deleteFolder",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/InstallPackages.java",
+      "target": "file:de/myopenlab/update/frmUpdate.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "references frmUpdate owner",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/InstallPackages.java",
+      "target": "file:de/myopenlab/update/Tools2.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "calls Tools2.getPackageZip",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/InstallPackages.java",
+      "target": "file:de/myopenlab/update/UnzipFiles.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses UnzipFiles",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/InstallPackages.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports VisualLogic.Tools.settings",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/MyOpenLabRow.java",
+      "target": "file:de/myopenlab/update/TestItem.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "contains ArrayList<TestItem>",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/MyTableModel.java",
+      "target": "file:de/myopenlab/update/MyTableRow.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses List<MyTableRow>",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/Tools2.java",
+      "target": "file:VisualLogic/Settings.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports VisualLogic.Settings",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:de/myopenlab/update/InstallPackages.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "creates InstallPackages thread",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:de/myopenlab/update/DeletePackages.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "creates DeletePackages thread",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:de/myopenlab/update/MyOpenLabRow.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses MyOpenLabRow",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:de/myopenlab/update/MyTableModel.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "creates MyTableModel",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:de/myopenlab/update/Tools2.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses Tools2",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports VisualLogic.Tools",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:projectfolder/MyNode.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports projectfolder.MyNode",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:tools/ZipFiles.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports tools.ZipFiles",
+      "direction": "forward"
+    },
+    {
+      "source": "file:projectfolder/ProjectPalette.java",
+      "target": "file:projectfolder/MyNode.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "uses MyNode tree nodes",
+      "direction": "forward"
+    },
+    {
+      "source": "file:projectfolder/ProjectPalette.java",
+      "target": "file:projectfolder/ProjectPaletteIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "implements ProjectPaletteIF callbacks",
+      "direction": "forward"
+    },
+    {
+      "source": "file:projectfolder/ProjectPalette.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports VisualLogic.Tools",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/BinAnzeige.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/BinSchalter.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/CustomAnalogComp_1_JV.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/CustomAnalogComp_1_JV.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses ExternalIF for circuit element",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/CustomAnalogComp_1_JV.java",
+      "target": "file:VisualLogic/variables/VSColorAdvanced.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses VSColorAdvanced",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/CustomAnalogComp_1_JV.java",
+      "target": "file:tools/Properties.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "opens Properties dialog",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/CustomAnalogComp_2_JV.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/CustomAnalogComp_2_JV.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses ExternalIF for circuit element",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/CustomAnalogComp_2_JV.java",
+      "target": "file:tools/Properties.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "opens Properties dialog",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/Expression.java",
+      "target": "file:tools/Scanner.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses Scanner for tokenization",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/Gatter.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/Gatter.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses ExternalIF.C_BOOLEAN",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/Gatter2.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/Gatter2.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses ExternalIF.C_BOOLEAN",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/Gatter3.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/Gatter3.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses ExternalIF.C_BOOLEAN",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/JVSMain.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses ExternalIF",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/MCUMainFlow.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/MCUMainFlow.java",
+      "target": "file:tools/Expression.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses Expression parser",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/MCUMainFlow.java",
+      "target": "file:tools/Scanner.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses Scanner",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/MCUMainFlow.java",
+      "target": "file:VisualLogic/VSBasisIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses VSBasisIF for variable lookup",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/MainFlow.java",
+      "target": "file:tools/JVSMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends JVSMain",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/Scanner.java",
+      "target": "file:VisualLogic/ExternalIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses ExternalIF",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tools/Scanner.java",
+      "target": "file:VisualLogic/VSBasisIF.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "uses VSBasisIF for variable type lookup",
+      "direction": "forward"
+    },
+    {
+      "source": "file:de/myopenlab/update/frmUpdate.java",
+      "target": "file:VisualLogic/gui/DialogSaveAsModul.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7,
+      "recoveredFromImportMap": true
+    },
+    {
+      "source": "file:VisualLogic/Tools.java",
+      "target": "file:de/myopenlab/update/frmUpdate.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7,
+      "recoveredFromImportMap": true
+    },
+    {
+      "source": "file:VisualLogic/VSBasisIF.java",
+      "target": "file:VisualLogic/variables/VSFlowInfo.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7,
+      "recoveredFromImportMap": true
+    },
+    {
+      "source": "file:VisualLogic/VSBasisIF.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7,
+      "recoveredFromImportMap": true
+    },
+    {
+      "source": "file:VisualLogic/VisualObject.java",
+      "target": "file:VisualLogic/variables/VSBoolean.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7,
+      "recoveredFromImportMap": true
+    },
+    {
+      "source": "file:VisualLogic/VisualObject.java",
+      "target": "file:VisualLogic/variables/VSInteger.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7,
+      "recoveredFromImportMap": true
+    },
+    {
+      "source": "file:VisualLogic/VisualObject.java",
+      "target": "file:VisualLogic/variables/VSString.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7,
+      "recoveredFromImportMap": true
+    }
+  ]
+}

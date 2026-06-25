@@ -1,0 +1,1235 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "MyOpenLab",
+    "languages": [
+      "java",
+      "xml",
+      "properties"
+    ],
+    "frameworks": [
+      "Java Swing",
+      "Apache Ant"
+    ],
+    "description": "Java-based Software for Graphical Programming for Raspberry Pi and Arduino",
+    "analyzedAt": "2026-06-25T14:56:00Z",
+    "gitCommitHash": "9b5321467f2ae85c434b766e768819a04c13c4a4"
+  },
+  "nodes": [
+    {
+      "id": "file:VisualLogic/NewJavaCompSettings.java",
+      "type": "file",
+      "name": "NewJavaCompSettings.java",
+      "filePath": "VisualLogic/NewJavaCompSettings.java",
+      "summary": "Configuration settings for new Java components with pin and property definitions",
+      "tags": [
+        "configuration",
+        "component",
+        "java"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/NewSerialDriverManager.java",
+      "type": "file",
+      "name": "NewSerialDriverManager.java",
+      "filePath": "VisualLogic/NewSerialDriverManager.java",
+      "summary": "Manages serial port connections for Arduino/MCU communication",
+      "tags": [
+        "serial",
+        "hardware",
+        "communication",
+        "arduino"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/OnlyDirectoryFilter.java",
+      "type": "file",
+      "name": "OnlyDirectoryFilter.java",
+      "filePath": "VisualLogic/OnlyDirectoryFilter.java",
+      "summary": "File filter that accepts only directories and .myopenlab files",
+      "tags": [
+        "file-filter",
+        "ui"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PanelIF.java",
+      "type": "file",
+      "name": "PanelIF.java",
+      "filePath": "VisualLogic/PanelIF.java",
+      "summary": "Interface for panel processing of pin values",
+      "tags": [
+        "interface",
+        "panel",
+        "pin"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PathPoint.java",
+      "type": "file",
+      "name": "PathPoint.java",
+      "filePath": "VisualLogic/PathPoint.java",
+      "summary": "Data class for path/bezier curve control points",
+      "tags": [
+        "geometry",
+        "path",
+        "point"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PinIF.java",
+      "type": "file",
+      "name": "PinIF.java",
+      "filePath": "VisualLogic/PinIF.java",
+      "summary": "Interface for handling pin mouse events in the visual editor",
+      "tags": [
+        "interface",
+        "pin",
+        "mouse-events"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PinsSettings.java",
+      "type": "file",
+      "name": "PinsSettings.java",
+      "filePath": "VisualLogic/PinsSettings.java",
+      "summary": "Configuration container for pin settings with visibility and count",
+      "tags": [
+        "configuration",
+        "pin"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PinsSettingsItem.java",
+      "type": "file",
+      "name": "PinsSettingsItem.java",
+      "filePath": "VisualLogic/PinsSettingsItem.java",
+      "summary": "Individual pin configuration item with name, datatype, and IO direction",
+      "tags": [
+        "configuration",
+        "pin",
+        "data-type"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/PolyPoint.java",
+      "type": "file",
+      "name": "PolyPoint.java",
+      "filePath": "VisualLogic/PolyPoint.java",
+      "summary": "Polygon point with selection state and XML/binary serialization",
+      "tags": [
+        "geometry",
+        "polygon",
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/ProjectProperties.java",
+      "type": "file",
+      "name": "ProjectProperties.java",
+      "filePath": "VisualLogic/ProjectProperties.java",
+      "summary": "Stores main VM reference and project type",
+      "tags": [
+        "configuration",
+        "project"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/SearchElement.java",
+      "type": "file",
+      "name": "SearchElement.java",
+      "filePath": "VisualLogic/SearchElement.java",
+      "summary": "Searches for elements by keyword in definition.def files across directories",
+      "tags": [
+        "search",
+        "elements",
+        "file-io"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/SearchFoundItem.java",
+      "type": "file",
+      "name": "SearchFoundItem.java",
+      "filePath": "VisualLogic/SearchFoundItem.java",
+      "summary": "Data class for storing search results with matched word and element directory",
+      "tags": [
+        "search",
+        "data-class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/Settings.java",
+      "type": "file",
+      "name": "Settings.java",
+      "filePath": "VisualLogic/Settings.java",
+      "summary": "Application-wide settings including UI layout, editors, and repository configuration",
+      "tags": [
+        "configuration",
+        "settings",
+        "ui"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/Shape.java",
+      "type": "file",
+      "name": "Shape.java",
+      "filePath": "VisualLogic/Shape.java",
+      "summary": "Visual shape element with caption, sub-elements, selection, and resizing support",
+      "tags": [
+        "visual",
+        "shape",
+        "element",
+        "ui"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/SimpleFilter.java",
+      "type": "file",
+      "name": "SimpleFilter.java",
+      "filePath": "VisualLogic/SimpleFilter.java",
+      "summary": "File filter that accepts files with specific extension",
+      "tags": [
+        "file-filter",
+        "ui"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/SubElement.java",
+      "type": "file",
+      "name": "SubElement.java",
+      "filePath": "VisualLogic/SubElement.java",
+      "summary": "Data class for sub-element positioning within a visual element",
+      "tags": [
+        "visual",
+        "element",
+        "position"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/Tools.java",
+      "type": "file",
+      "name": "Tools.java",
+      "filePath": "VisualLogic/Tools.java",
+      "summary": "Utility class with file operations, compilation, wire manipulation, and UI helpers",
+      "tags": [
+        "utility",
+        "file-io",
+        "compilation",
+        "wire"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/Transparency.java",
+      "type": "file",
+      "name": "Transparency.java",
+      "filePath": "VisualLogic/Transparency.java",
+      "summary": "Utility for making colors transparent in images",
+      "tags": [
+        "image",
+        "transparency",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/VMEditorPanelIF.java",
+      "type": "file",
+      "name": "VMEditorPanelIF.java",
+      "filePath": "VisualLogic/VMEditorPanelIF.java",
+      "summary": "Interface for VM editor panel tab change notifications",
+      "tags": [
+        "interface",
+        "editor",
+        "panel"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/VMObject.java",
+      "type": "file",
+      "name": "VMObject.java",
+      "filePath": "VisualLogic/VMObject.java",
+      "summary": "Core VM panel managing elements, wires, properties, and simulation",
+      "tags": [
+        "core",
+        "vm",
+        "editor",
+        "simulation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/VMObjectIF.java",
+      "type": "file",
+      "name": "VMObjectIF.java",
+      "filePath": "VisualLogic/VMObjectIF.java",
+      "summary": "Interface for VM object mouse events and wire reordering",
+      "tags": [
+        "interface",
+        "vm",
+        "mouse-events"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/VSBasisIF.java",
+      "type": "file",
+      "name": "VSBasisIF.java",
+      "filePath": "VisualLogic/VSBasisIF.java",
+      "summary": "Interface for VM basis operations including simulation, variables, and scripting",
+      "tags": [
+        "interface",
+        "vm",
+        "simulation",
+        "scripting"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/VSDataType.java",
+      "type": "file",
+      "name": "VSDataType.java",
+      "filePath": "VisualLogic/VSDataType.java",
+      "summary": "Maps data types to VS objects, colors, and wire styles",
+      "tags": [
+        "data-type",
+        "color",
+        "wire"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/Version.java",
+      "type": "file",
+      "name": "Version.java",
+      "filePath": "VisualLogic/Version.java",
+      "summary": "Application version and title constants",
+      "tags": [
+        "version",
+        "constants"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/VisualObject.java",
+      "type": "file",
+      "name": "VisualObject.java",
+      "filePath": "VisualLogic/VisualObject.java",
+      "summary": "Base class for visual elements with position, size, and caption properties",
+      "tags": [
+        "visual",
+        "base-class",
+        "properties"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/VlogicFilter.java",
+      "type": "file",
+      "name": "VlogicFilter.java",
+      "filePath": "VisualLogic/VlogicFilter.java",
+      "summary": "File filter for .vlogic files",
+      "tags": [
+        "file-filter",
+        "vlogic"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/Wrapper.java",
+      "type": "file",
+      "name": "Wrapper.java",
+      "filePath": "VisualLogic/Wrapper.java",
+      "summary": "Simple JPanel wrapper with null layout for element containment",
+      "tags": [
+        "ui",
+        "wrapper",
+        "panel"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/XMLSerializer.java",
+      "type": "file",
+      "name": "XMLSerializer.java",
+      "filePath": "VisualLogic/XMLSerializer.java",
+      "summary": "XML serialization/deserialization using XMLEncoder/XMLDecoder",
+      "tags": [
+        "serialization",
+        "xml"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogNewJavaComponentAssistent.java",
+      "type": "file",
+      "name": "DialogNewJavaComponentAssistent.java",
+      "filePath": "VisualLogic/gui/DialogNewJavaComponentAssistent.java",
+      "summary": "Wizard for creating new Java components with circuit and front panel elements",
+      "tags": [
+        "dialog",
+        "wizard",
+        "component",
+        "java"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogNewProject.java",
+      "type": "file",
+      "name": "DialogNewProject.java",
+      "filePath": "VisualLogic/gui/DialogNewProject.java",
+      "summary": "Dialog for creating new MyOpenLab projects",
+      "tags": [
+        "dialog",
+        "project",
+        "create"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogOptions.java",
+      "type": "file",
+      "name": "DialogOptions.java",
+      "filePath": "VisualLogic/gui/DialogOptions.java",
+      "summary": "Application options/preferences dialog for configuring editors, paths, and settings",
+      "tags": [
+        "dialog",
+        "options",
+        "settings",
+        "configuration"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogPassword.java",
+      "type": "file",
+      "name": "DialogPassword.java",
+      "filePath": "VisualLogic/gui/DialogPassword.java",
+      "summary": "Password input dialog for repository login",
+      "tags": [
+        "dialog",
+        "password",
+        "authentication"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogProjectProperties.java",
+      "type": "file",
+      "name": "DialogProjectProperties.java",
+      "filePath": "VisualLogic/gui/DialogProjectProperties.java",
+      "summary": "Dialog for editing project properties (main VM, project type)",
+      "tags": [
+        "dialog",
+        "project",
+        "properties"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogRename.java",
+      "type": "file",
+      "name": "DialogRename.java",
+      "filePath": "VisualLogic/gui/DialogRename.java",
+      "summary": "Simple rename dialog with text input",
+      "tags": [
+        "dialog",
+        "rename"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogSaveAsModul.java",
+      "type": "file",
+      "name": "DialogSaveAsModul.java",
+      "filePath": "VisualLogic/gui/DialogSaveAsModul.java",
+      "summary": "Dialog for saving elements as reusable modules with element palette",
+      "tags": [
+        "dialog",
+        "save",
+        "module",
+        "palette"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogSubVMAssistent.java",
+      "type": "file",
+      "name": "DialogSubVMAssistent.java",
+      "filePath": "VisualLogic/gui/DialogSubVMAssistent.java",
+      "summary": "Wizard for adding sub-VM elements to the circuit",
+      "tags": [
+        "dialog",
+        "wizard",
+        "sub-vm"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogTranslateForm.java",
+      "type": "file",
+      "name": "DialogTranslateForm.java",
+      "filePath": "VisualLogic/gui/DialogTranslateForm.java",
+      "summary": "Dialog for translating/localizing form labels and text",
+      "tags": [
+        "dialog",
+        "translation",
+        "localization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogUpdate.java",
+      "type": "file",
+      "name": "DialogUpdate.java",
+      "filePath": "VisualLogic/gui/DialogUpdate.java",
+      "summary": "Application update checker dialog",
+      "tags": [
+        "dialog",
+        "update"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogUserdefinedElementsHome.java",
+      "type": "file",
+      "name": "DialogUserdefinedElementsHome.java",
+      "filePath": "VisualLogic/gui/DialogUserdefinedElementsHome.java",
+      "summary": "Dialog for setting user-defined elements home directory",
+      "tags": [
+        "dialog",
+        "elements",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogVMName.java",
+      "type": "file",
+      "name": "DialogVMName.java",
+      "filePath": "VisualLogic/gui/DialogVMName.java",
+      "summary": "Dialog for entering VM name",
+      "tags": [
+        "dialog",
+        "vm",
+        "name"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogVariableWatcher.java",
+      "type": "file",
+      "name": "DialogVariableWatcher.java",
+      "filePath": "VisualLogic/gui/DialogVariableWatcher.java",
+      "summary": "Dialog for watching variable values during simulation",
+      "tags": [
+        "dialog",
+        "variable",
+        "debug",
+        "simulation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogVariables.java",
+      "type": "file",
+      "name": "DialogVariables.java",
+      "filePath": "VisualLogic/gui/DialogVariables.java",
+      "summary": "Dialog for managing project variables",
+      "tags": [
+        "dialog",
+        "variable",
+        "management"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/DialogWait.java",
+      "type": "file",
+      "name": "DialogWait.java",
+      "filePath": "VisualLogic/gui/DialogWait.java",
+      "summary": "Progress/wait dialog shown during long operations",
+      "tags": [
+        "dialog",
+        "progress",
+        "wait"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/ElementPalette.java",
+      "type": "file",
+      "name": "ElementPalette.java",
+      "filePath": "VisualLogic/gui/ElementPalette.java",
+      "summary": "Panel displaying available elements for drag-and-drop into the editor",
+      "tags": [
+        "panel",
+        "elements",
+        "palette",
+        "drag-drop"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/gui/FrameBooleanGraph.java",
+      "type": "file",
+      "name": "FrameBooleanGraph.java",
+      "filePath": "VisualLogic/gui/FrameBooleanGraph.java",
+      "summary": "Window for displaying boolean signal graphs during simulation",
+      "tags": [
+        "frame",
+        "graph",
+        "boolean",
+        "simulation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/FrameCode.java",
+      "type": "file",
+      "name": "FrameCode.java",
+      "filePath": "VisualLogic/gui/FrameCode.java",
+      "summary": "Window for displaying generated code",
+      "tags": [
+        "frame",
+        "code",
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/FrameConsoleOutput.java",
+      "type": "file",
+      "name": "FrameConsoleOutput.java",
+      "filePath": "VisualLogic/gui/FrameConsoleOutput.java",
+      "summary": "Console output window for application messages",
+      "tags": [
+        "frame",
+        "console",
+        "output"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/FrameDoc.java",
+      "type": "file",
+      "name": "FrameDoc.java",
+      "filePath": "VisualLogic/gui/FrameDoc.java",
+      "summary": "Documentation viewer dialog for element help",
+      "tags": [
+        "frame",
+        "documentation",
+        "help"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/FrameDoubleGraph.java",
+      "type": "file",
+      "name": "FrameDoubleGraph.java",
+      "filePath": "VisualLogic/gui/FrameDoubleGraph.java",
+      "summary": "Window for displaying double/numeric signal graphs during simulation",
+      "tags": [
+        "frame",
+        "graph",
+        "double",
+        "simulation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/FrameErrorWarnings.java",
+      "type": "file",
+      "name": "FrameErrorWarnings.java",
+      "filePath": "VisualLogic/gui/FrameErrorWarnings.java",
+      "summary": "Window for displaying compilation errors and warnings",
+      "tags": [
+        "frame",
+        "errors",
+        "warnings"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/FrameImageViewer.java",
+      "type": "file",
+      "name": "FrameImageViewer.java",
+      "filePath": "VisualLogic/gui/FrameImageViewer.java",
+      "summary": "Image viewer window for displaying element images",
+      "tags": [
+        "frame",
+        "image",
+        "viewer"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/FrameInfo.java",
+      "type": "file",
+      "name": "FrameInfo.java",
+      "filePath": "VisualLogic/gui/FrameInfo.java",
+      "summary": "Information dialog showing element properties, driver info, and license details",
+      "tags": [
+        "frame",
+        "info",
+        "properties"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/gui/FrameMain.java",
+      "type": "file",
+      "name": "FrameMain.java",
+      "filePath": "VisualLogic/gui/FrameMain.java",
+      "summary": "Main application window with toolbar, project management, and editor integration",
+      "tags": [
+        "frame",
+        "main",
+        "application",
+        "editor"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:VisualLogic/gui/FrameRunning.java",
+      "type": "file",
+      "name": "FrameRunning.java",
+      "filePath": "VisualLogic/gui/FrameRunning.java",
+      "summary": "Window displayed when simulation is running",
+      "tags": [
+        "frame",
+        "running",
+        "simulation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/FrmTestpoints.java",
+      "type": "file",
+      "name": "FrmTestpoints.java",
+      "filePath": "VisualLogic/gui/FrmTestpoints.java",
+      "summary": "Window for monitoring testpoint values during simulation",
+      "tags": [
+        "frame",
+        "testpoints",
+        "simulation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/ModernToolBarButton.java",
+      "type": "file",
+      "name": "ModernToolBarButton.java",
+      "filePath": "VisualLogic/gui/ModernToolBarButton.java",
+      "summary": "Custom toolbar button with modern styling",
+      "tags": [
+        "ui",
+        "toolbar",
+        "button"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/PanelDokumentation.java",
+      "type": "file",
+      "name": "PanelDokumentation.java",
+      "filePath": "VisualLogic/gui/PanelDokumentation.java",
+      "summary": "Panel for displaying element documentation with images and text",
+      "tags": [
+        "panel",
+        "documentation",
+        "element"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/gui/PanelImage.java",
+      "type": "file",
+      "name": "PanelImage.java",
+      "filePath": "VisualLogic/gui/PanelImage.java",
+      "summary": "Simple image display panel/window",
+      "tags": [
+        "panel",
+        "image",
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/gui/SelectionPane.java",
+      "type": "file",
+      "name": "SelectionPane.java",
+      "filePath": "VisualLogic/gui/SelectionPane.java",
+      "summary": "Panel handling multi-element selection with rubber-band and keyboard support",
+      "tags": [
+        "panel",
+        "selection",
+        "interaction"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:VisualLogic/NewSerialDriverManager.java",
+      "target": "file:VisualLogic/gui/FrameMain.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/PolyPoint.java",
+      "target": "file:VisualLogic/VisualObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/PolyPoint.java",
+      "target": "file:VisualLogic/VMObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "uses",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/PinsSettings.java",
+      "target": "file:VisualLogic/PinsSettingsItem.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "contains",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/NewJavaCompSettings.java",
+      "target": "file:VisualLogic/PinsSettings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "contains",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/SearchElement.java",
+      "target": "file:VisualLogic/SearchFoundItem.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "uses",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Shape.java",
+      "target": "file:VisualLogic/VisualObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Shape.java",
+      "target": "file:VisualLogic/VMObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "uses",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Shape.java",
+      "target": "file:VisualLogic/SubElement.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "contains",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Tools.java",
+      "target": "file:VisualLogic/ProjectProperties.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "uses",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Tools.java",
+      "target": "file:VisualLogic/Settings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "uses",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Tools.java",
+      "target": "file:VisualLogic/gui/DialogWait.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/Tools.java",
+      "target": "file:VisualLogic/gui/FrameImageViewer.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/VMObject.java",
+      "target": "file:VisualLogic/gui/DialogWait.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogNewJavaComponentAssistent.java",
+      "target": "file:VisualLogic/NewJavaCompSettings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogNewProject.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogOptions.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogOptions.java",
+      "target": "file:VisualLogic/Settings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogPassword.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogProjectProperties.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogProjectProperties.java",
+      "target": "file:VisualLogic/ProjectProperties.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogSaveAsModul.java",
+      "target": "file:VisualLogic/NewJavaCompSettings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogUpdate.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/DialogUpdate.java",
+      "target": "file:VisualLogic/Version.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/ElementPalette.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/ElementPalette.java",
+      "target": "file:VisualLogic/Settings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/ElementPalette.java",
+      "target": "file:VisualLogic/SearchElement.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/FrameInfo.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/FrameInfo.java",
+      "target": "file:VisualLogic/Version.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/FrameMain.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/FrameMain.java",
+      "target": "file:VisualLogic/Settings.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/FrameMain.java",
+      "target": "file:VisualLogic/VMObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:VisualLogic/gui/FrameMain.java",
+      "target": "file:VisualLogic/Version.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports",
+      "direction": "forward"
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:core-logic",
+      "name": "Core Logic",
+      "description": "VM objects, elements, shapes, and simulation",
+      "nodeIds": [
+        "file:VisualLogic/NewSerialDriverManager.java",
+        "file:VisualLogic/OnlyDirectoryFilter.java",
+        "file:VisualLogic/PathPoint.java",
+        "file:VisualLogic/PolyPoint.java",
+        "file:VisualLogic/ProjectProperties.java",
+        "file:VisualLogic/SearchElement.java",
+        "file:VisualLogic/SearchFoundItem.java",
+        "file:VisualLogic/Shape.java",
+        "file:VisualLogic/SimpleFilter.java",
+        "file:VisualLogic/SubElement.java",
+        "file:VisualLogic/Tools.java",
+        "file:VisualLogic/Transparency.java",
+        "file:VisualLogic/VMObject.java",
+        "file:VisualLogic/VSDataType.java",
+        "file:VisualLogic/Version.java",
+        "file:VisualLogic/VisualObject.java",
+        "file:VisualLogic/VlogicFilter.java",
+        "file:VisualLogic/Wrapper.java",
+        "file:VisualLogic/XMLSerializer.java"
+      ]
+    },
+    {
+      "id": "layer:gui-frames",
+      "name": "GUI Frames & Dialogs",
+      "description": "Swing frames, dialogs, and windows",
+      "nodeIds": [
+        "file:VisualLogic/gui/DialogNewJavaComponentAssistent.java",
+        "file:VisualLogic/gui/DialogNewProject.java",
+        "file:VisualLogic/gui/DialogOptions.java",
+        "file:VisualLogic/gui/DialogPassword.java",
+        "file:VisualLogic/gui/DialogProjectProperties.java",
+        "file:VisualLogic/gui/DialogRename.java",
+        "file:VisualLogic/gui/DialogSaveAsModul.java",
+        "file:VisualLogic/gui/DialogSubVMAssistent.java",
+        "file:VisualLogic/gui/DialogTranslateForm.java",
+        "file:VisualLogic/gui/DialogUpdate.java",
+        "file:VisualLogic/gui/DialogUserdefinedElementsHome.java",
+        "file:VisualLogic/gui/DialogVMName.java",
+        "file:VisualLogic/gui/DialogVariableWatcher.java",
+        "file:VisualLogic/gui/DialogVariables.java",
+        "file:VisualLogic/gui/DialogWait.java",
+        "file:VisualLogic/gui/FrameBooleanGraph.java",
+        "file:VisualLogic/gui/FrameCode.java",
+        "file:VisualLogic/gui/FrameConsoleOutput.java",
+        "file:VisualLogic/gui/FrameDoc.java",
+        "file:VisualLogic/gui/FrameDoubleGraph.java",
+        "file:VisualLogic/gui/FrameErrorWarnings.java",
+        "file:VisualLogic/gui/FrameImageViewer.java",
+        "file:VisualLogic/gui/FrameInfo.java",
+        "file:VisualLogic/gui/FrameMain.java",
+        "file:VisualLogic/gui/FrameRunning.java"
+      ]
+    },
+    {
+      "id": "layer:gui-components",
+      "name": "GUI Components",
+      "description": "Reusable Swing widgets and panels",
+      "nodeIds": [
+        "file:VisualLogic/gui/ElementPalette.java",
+        "file:VisualLogic/gui/FrmTestpoints.java",
+        "file:VisualLogic/gui/ModernToolBarButton.java",
+        "file:VisualLogic/gui/PanelDokumentation.java",
+        "file:VisualLogic/gui/PanelImage.java",
+        "file:VisualLogic/gui/SelectionPane.java"
+      ]
+    },
+    {
+      "id": "layer:config",
+      "name": "Configuration",
+      "description": "Settings and properties",
+      "nodeIds": [
+        "file:VisualLogic/NewJavaCompSettings.java",
+        "file:VisualLogic/PinsSettings.java",
+        "file:VisualLogic/PinsSettingsItem.java",
+        "file:VisualLogic/Settings.java"
+      ]
+    },
+    {
+      "id": "layer:interfaces",
+      "name": "Interfaces",
+      "description": "Java interfaces and abstract types",
+      "nodeIds": [
+        "file:VisualLogic/PanelIF.java",
+        "file:VisualLogic/PinIF.java",
+        "file:VisualLogic/VMEditorPanelIF.java",
+        "file:VisualLogic/VMObjectIF.java",
+        "file:VisualLogic/VSBasisIF.java"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Application Entry Point",
+      "description": "FrameMain is the main JFrame window. It wires up menus, toolbars, split panes, and coordinates all subsystems. Start here to understand how the application boots.",
+      "nodeIds": [
+        "file:VisualLogic/gui/FrameMain.java"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Core Simulation Engine",
+      "description": "VMObject manages the canvas where circuit elements are placed and connected by wires. It handles element lifecycle, wire routing, and runs the simulation loop.",
+      "nodeIds": [
+        "file:VisualLogic/VMObject.java"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Shape Rendering",
+      "description": "Shape handles the visual rendering of circuit elements, including drawing, hit-testing, and boundary calculations.",
+      "nodeIds": [
+        "file:VisualLogic/Shape.java"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Tools and Utilities",
+      "description": "Tools provides utility methods for file I/O, compilation, wire manipulation, and other common operations.",
+      "nodeIds": [
+        "file:VisualLogic/Tools.java"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Settings Management",
+      "description": "Settings manages application-wide configuration including window positions, splitter positions, and user preferences.",
+      "nodeIds": [
+        "file:VisualLogic/Settings.java"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Data Type System",
+      "description": "VSDataType maps data types to VS objects and wire colors, enabling type-safe connections between elements.",
+      "nodeIds": [
+        "file:VisualLogic/VSDataType.java"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Pin Configuration",
+      "description": "PinsSettings and PinsSettingsItem define how element input/output pins are configured, including visibility and data types.",
+      "nodeIds": [
+        "file:VisualLogic/PinsSettings.java",
+        "file:VisualLogic/PinsSettingsItem.java"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "Visual Editor",
+      "description": "VMEditorPanel is the central editing workspace that hosts the VMObject canvas and element palette.",
+      "nodeIds": [
+        "file:VisualLogic/VMEditorPanelIF.java"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "Selection Handling",
+      "description": "SelectionPane manages element selection, rubber-band selection, and mouse interaction in the editor.",
+      "nodeIds": [
+        "file:VisualLogic/gui/SelectionPane.java"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "Element Palette",
+      "description": "ElementPalette displays available circuit elements organized by category, allowing drag-and-drop placement.",
+      "nodeIds": [
+        "file:VisualLogic/gui/ElementPalette.java"
+      ]
+    }
+  ]
+}

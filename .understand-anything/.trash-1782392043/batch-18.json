@@ -1,0 +1,24 @@
+{
+  "batchIndex": 18,
+  "nodes": [
+    {"id": "file:VisualLogic/gui/DialogNewJavaComponentAssistent.java", "type": "file", "name": "DialogNewJavaComponentAssistent.java", "filePath": "VisualLogic/gui/DialogNewJavaComponentAssistent.java", "summary": "Wizard for creating new Java components with circuit and front panel elements", "tags": ["dialog", "wizard", "component", "java"], "complexity": "complex"},
+    {"id": "file:VisualLogic/gui/DialogNewProject.java", "type": "file", "name": "DialogNewProject.java", "filePath": "VisualLogic/gui/DialogNewProject.java", "summary": "Dialog for creating new MyOpenLab projects", "tags": ["dialog", "project", "create"], "complexity": "moderate"},
+    {"id": "file:VisualLogic/gui/DialogOptions.java", "type": "file", "name": "DialogOptions.java", "filePath": "VisualLogic/gui/DialogOptions.java", "summary": "Application options/preferences dialog for configuring editors, paths, and settings", "tags": ["dialog", "options", "settings", "configuration"], "complexity": "complex"},
+    {"id": "file:VisualLogic/gui/DialogPassword.java", "type": "file", "name": "DialogPassword.java", "filePath": "VisualLogic/gui/DialogPassword.java", "summary": "Password input dialog for repository login", "tags": ["dialog", "password", "authentication"], "complexity": "simple"},
+    {"id": "file:VisualLogic/gui/DialogProjectProperties.java", "type": "file", "name": "DialogProjectProperties.java", "filePath": "VisualLogic/gui/DialogProjectProperties.java", "summary": "Dialog for editing project properties (main VM, project type)", "tags": ["dialog", "project", "properties"], "complexity": "simple"},
+    {"id": "file:VisualLogic/gui/DialogRename.java", "type": "file", "name": "DialogRename.java", "filePath": "VisualLogic/gui/DialogRename.java", "summary": "Simple rename dialog with text input", "tags": ["dialog", "rename"], "complexity": "simple"},
+    {"id": "file:VisualLogic/gui/DialogSaveAsModul.java", "type": "file", "name": "DialogSaveAsModul.java", "filePath": "VisualLogic/gui/DialogSaveAsModul.java", "summary": "Dialog for saving elements as reusable modules with element palette", "tags": ["dialog", "save", "module", "palette"], "complexity": "complex"},
+    {"id": "file:VisualLogic/gui/DialogSubVMAssistent.java", "type": "file", "name": "DialogSubVMAssistent.java", "filePath": "VisualLogic/gui/DialogSubVMAssistent.java", "summary": "Wizard for adding sub-VM elements to the circuit", "tags": ["dialog", "wizard", "sub-vm"], "complexity": "moderate"}
+  ],
+  "edges": [
+    {"source": "file:VisualLogic/gui/DialogNewJavaComponentAssistent.java", "target": "file:VisualLogic/NewJavaCompSettings.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/DialogNewProject.java", "target": "file:VisualLogic/Tools.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/DialogNewProject.java", "target": "file:VisualLogic/JavaFileView.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/DialogOptions.java", "target": "file:VisualLogic/Tools.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/DialogOptions.java", "target": "file:VisualLogic/Settings.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/DialogPassword.java", "target": "file:VisualLogic/Tools.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/DialogProjectProperties.java", "target": "file:VisualLogic/Tools.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/DialogProjectProperties.java", "target": "file:VisualLogic/ProjectProperties.java", "type": "imports", "weight": 0.7, "label": "imports"},
+    {"source": "file:VisualLogic/gui/DialogSaveAsModul.java", "target": "file:VisualLogic/NewJavaCompSettings.java", "type": "imports", "weight": 0.7, "label": "imports"}
+  ]
+}

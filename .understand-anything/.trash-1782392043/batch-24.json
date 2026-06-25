@@ -1,0 +1,142 @@
+{
+  "batchIndex": 24,
+  "nodes": [
+    {
+      "id": "file:VisualLogic/variables/VSImage24.java",
+      "type": "file",
+      "name": "VSImage24.java",
+      "filePath": "VisualLogic/variables/VSImage24.java",
+      "summary": "24-bit image variable type storing pixel data as int array with width/height dimensions",
+      "tags": ["variable", "image", "pixel", "data-type"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSInteger.java",
+      "type": "file",
+      "name": "VSInteger.java",
+      "filePath": "VisualLogic/variables/VSInteger.java",
+      "summary": "Single integer variable type with comparison operators and XML/stream serialization",
+      "tags": ["variable", "integer", "data-type", "primitive"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSObjRef.java",
+      "type": "file",
+      "name": "VSObjRef.java",
+      "filePath": "VisualLogic/variables/VSObjRef.java",
+      "summary": "Object reference variable type holding a generic Object reference with string serialization",
+      "tags": ["variable", "object-reference", "data-type", "reflection"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSObject.java",
+      "type": "file",
+      "name": "VSObject.java",
+      "filePath": "VisualLogic/variables/VSObject.java",
+      "summary": "Base class for all VisualLogic variable types providing changed tracking, pin index, and copy/serialization contract",
+      "tags": ["variable", "base-class", "abstract", "data-type"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSProperties.java",
+      "type": "file",
+      "name": "VSProperties.java",
+      "filePath": "VisualLogic/variables/VSProperties.java",
+      "summary": "Stub/placeholder variable type for properties with empty implementations of copy and serialization",
+      "tags": ["variable", "properties", "stub", "data-type"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSPropertyDialog.java",
+      "type": "file",
+      "name": "VSPropertyDialog.java",
+      "filePath": "VisualLogic/variables/VSPropertyDialog.java",
+      "summary": "Simple text-based variable type used for property dialog text storage",
+      "tags": ["variable", "dialog", "text", "data-type"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSString.java",
+      "type": "file",
+      "name": "VSString.java",
+      "filePath": "VisualLogic/variables/VSString.java",
+      "summary": "Single string variable type with comparison operators and XML/stream serialization",
+      "tags": ["variable", "string", "data-type", "primitive"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:VisualLogic/variables/VSserialPort.java",
+      "type": "file",
+      "name": "VSserialPort.java",
+      "filePath": "VisualLogic/variables/VSserialPort.java",
+      "summary": "Serial port variable type wrapping jssc.SerialPort with configurable baud rate, CR/LF, timeout, and Arduino auto-reset support",
+      "tags": ["variable", "serial", "hardware", "communication", "data-type"],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:VisualLogic/variables/VSImage24.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSInteger.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSInteger.java",
+      "target": "file:VisualLogic/Tools.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports VisualLogic.Tools"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSObjRef.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSProperties.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSPropertyDialog.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSString.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSserialPort.java",
+      "target": "file:VisualLogic/variables/VSObject.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "extends VSObject"
+    },
+    {
+      "source": "file:VisualLogic/variables/VSserialPort.java",
+      "target": "file:jssc/SerialPort.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports jssc.SerialPort"
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "batchIndex": 1,
+  "nodes": [
+    {
+      "id": "file:src/CodeEditor/frmDefinitonDefEditor.java",
+      "type": "file",
+      "name": "frmDefinitonDefEditor.java",
+      "filePath": "src/CodeEditor/frmDefinitonDefEditor.java",
+      "summary": "Dialog for editing element definition properties including icon, captions in multiple languages, and class assignments",
+      "tags": ["gui", "dialog", "editor", "element-properties"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/CreateNewGroup/DialogCreateNewGroup.java",
+      "type": "file",
+      "name": "DialogCreateNewGroup.java",
+      "filePath": "src/CreateNewGroup/DialogCreateNewGroup.java",
+      "summary": "Dialog for creating new element groups/packages with metadata like title, author, version, and descriptions",
+      "tags": ["gui", "dialog", "package-management", "xml"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/DFProperties.java",
+      "type": "file",
+      "name": "DFProperties.java",
+      "filePath": "src/VisualLogic/DFProperties.java",
+      "summary": "Data class storing element definition properties including class paths, captions, and configuration flags",
+      "tags": ["data-class", "properties", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/CodeEditor/PanelEditor.java",
+      "type": "file",
+      "name": "PanelEditor.java",
+      "filePath": "src/CodeEditor/PanelEditor.java",
+      "summary": "Panel component for code editing with undo/redo support, search functionality, and file I/O",
+      "tags": ["gui", "editor", "code-editing", "undo-redo"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/CodeEditor/MyEditorPane.java",
+      "type": "file",
+      "name": "MyEditorPane.java",
+      "filePath": "src/CodeEditor/MyEditorPane.java",
+      "summary": "Custom JEditorPane with scrollable viewport width tracking",
+      "tags": ["gui", "component", "editor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/CodeEditor/Scanner.java",
+      "type": "file",
+      "name": "Scanner.java",
+      "filePath": "src/CodeEditor/Scanner.java",
+      "summary": "Token-based scanner for syntax highlighting with support for strings, comments, keywords, and whitespace",
+      "tags": ["parser", "scanner", "syntax-highlighting", "tokens"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/CodeEditor/ExpandingArray.java",
+      "type": "file",
+      "name": "ExpandingArray.java",
+      "filePath": "src/CodeEditor/ExpandingArray.java",
+      "summary": "Dynamically resizing array implementation with amortized doubling",
+      "tags": ["data-structure", "array", "utility"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/CodeEditor/frmCodeEditor.java",
+      "type": "file",
+      "name": "frmCodeEditor.java",
+      "filePath": "src/CodeEditor/frmCodeEditor.java",
+      "summary": "Main code editor window with tabbed interface for editing Java source files",
+      "tags": ["gui", "frame", "editor", "ide"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/CodeEditor/DialogSearch.java",
+      "type": "file",
+      "name": "DialogSearch.java",
+      "filePath": "src/CodeEditor/DialogSearch.java",
+      "summary": "Simple search dialog for finding text in code editor",
+      "tags": ["gui", "dialog", "search"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/CodeEditor/JavaSyntaxDocument.java",
+      "type": "file",
+      "name": "JavaSyntaxDocument.java",
+      "filePath": "src/CodeEditor/JavaSyntaxDocument.java",
+      "summary": "Styled document implementing Java syntax highlighting with keyword and comment recognition",
+      "tags": ["syntax-highlighting", "document", "editor"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/CreateNewGroup/SummaryCart.java",
+      "type": "file",
+      "name": "SummaryCart.java",
+      "filePath": "src/CreateNewGroup/SummaryCart.java",
+      "summary": "XML-annotated data class for package metadata including captions, author, and version info",
+      "tags": ["data-class", "xml", "metadata"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/CreateNewGroup/ImageComponent.java",
+      "type": "file",
+      "name": "ImageComponent.java",
+      "filePath": "src/CreateNewGroup/ImageComponent.java",
+      "summary": "Custom JPanel for displaying image icons with file loading support",
+      "tags": ["gui", "component", "image"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/Line.java",
+      "type": "file",
+      "name": "Line.java",
+      "filePath": "src/VisualLogic/Line.java",
+      "summary": "Geometric line class with drawing, hit-testing, and directional properties for circuit wiring",
+      "tags": ["geometry", "drawing", "circuit", "wire"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/VisualLogic/Shape.java",
+      "type": "file",
+      "name": "Shape.java",
+      "filePath": "src/VisualLogic/Shape.java",
+      "summary": "Visual element shape with selection, resizing, caption, and sub-element management",
+      "tags": ["gui", "element", "shape", "visual-object"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/VisualLogic/LineInfo.java",
+      "type": "file",
+      "name": "LineInfo.java",
+      "filePath": "src/VisualLogic/LineInfo.java",
+      "summary": "Simple data class pairing a Line with its associated JPin",
+      "tags": ["data-class", "circuit", "pin"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/DriverInfo.java",
+      "type": "file",
+      "name": "DriverInfo.java",
+      "filePath": "src/VisualLogic/DriverInfo.java",
+      "summary": "Data class storing driver information including JAR, class name, classpath, and metadata",
+      "tags": ["data-class", "driver", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/Version.java",
+      "type": "file",
+      "name": "Version.java",
+      "filePath": "src/VisualLogic/Version.java",
+      "summary": "Application version constants for MyOpenLab",
+      "tags": ["constants", "version", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/VisualLogic/FontChooser.java",
+      "type": "file",
+      "name": "FontChooser.java",
+      "filePath": "src/VisualLogic/FontChooser.java",
+      "summary": "Font selection dialog with preview for choosing font name, size, style, and color",
+      "tags": ["gui", "dialog", "font", "chooser"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/CodeEditor/frmDefinitonDefEditor.java",
+      "target": "file:src/VisualLogic/DFProperties.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/CodeEditor/frmDefinitonDefEditor.java",
+      "target": "file:src/CodeEditor/PanelEditor.java",
+      "type": "imports",
+      "weight": 0.3,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/CreateNewGroup/DialogCreateNewGroup.java",
+      "target": "file:src/VisualLogic/DFProperties.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/CreateNewGroup/DialogCreateNewGroup.java",
+      "target": "file:src/CreateNewGroup/ImageComponent.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/CodeEditor/PanelEditor.java",
+      "target": "file:src/CodeEditor/MyEditorPane.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/CodeEditor/PanelEditor.java",
+      "target": "file:src/CodeEditor/JavaSyntaxDocument.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/CodeEditor/PanelEditor.java",
+      "target": "file:src/CodeEditor/DialogSearch.java",
+      "type": "imports",
+      "weight": 0.6,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/CodeEditor/frmCodeEditor.java",
+      "target": "file:src/CodeEditor/PanelEditor.java",
+      "type": "imports",
+      "weight": 0.9,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/CodeEditor/frmCodeEditor.java",
+      "target": "file:src/VisualLogic/DFProperties.java",
+      "type": "imports",
+      "weight": 0.7,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/CodeEditor/DialogSearch.java",
+      "target": "file:src/CodeEditor/PanelEditor.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/CodeEditor/JavaSyntaxDocument.java",
+      "target": "file:src/CodeEditor/PanelEditor.java",
+      "type": "imports",
+      "weight": 0.5,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/CodeEditor/JavaSyntaxDocument.java",
+      "target": "file:src/CodeEditor/Scanner.java",
+      "type": "imports",
+      "weight": 0.4,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/Shape.java",
+      "target": "file:src/VisualLogic/VMObject.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/LineInfo.java",
+      "target": "file:src/VisualLogic/Line.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    },
+    {
+      "source": "file:src/VisualLogic/LineInfo.java",
+      "target": "file:src/VisualLogic/JPin.java",
+      "type": "imports",
+      "weight": 0.8,
+      "label": "imports"
+    }
+  ]
+}
