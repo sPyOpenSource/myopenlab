@@ -1,0 +1,3965 @@
+{
+  "batch": 5,
+  "total_batches": 39,
+  "project": "Elements",
+  "description": "CircuitElements - Boolean logic gates, Canvas drawing elements",
+  "nodes": [
+    {
+      "id": "file://CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "type": "file",
+      "label": "DigitalCircuitSim.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+        "language": "Java",
+        "lines": 326
+      }
+    },
+    {
+      "id": "class://DigitalCircuitSim",
+      "type": "class",
+      "label": "DigitalCircuitSim",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "JVSMain"
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.parseString(String,boolean[])",
+      "type": "function",
+      "label": "parseString(String,boolean[])",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "String line",
+          "boolean[] array"
+        ]
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.onDispose()",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.paint(Graphics)",
+      "type": "function",
+      "label": "paint(Graphics)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.awt.Graphics g"
+        ]
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.init()",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.xOnInit()",
+      "type": "function",
+      "label": "xOnInit()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.initAllPins()",
+      "type": "function",
+      "label": "initAllPins()",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.initInputPins()",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.initOutputPins()",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.copyVSArrayToStringArray(VS1DString)",
+      "type": "function",
+      "label": "copyVSArrayToStringArray(VS1DString)",
+      "properties": {
+        "visibility": "private",
+        "returnType": "String[]",
+        "params": [
+          "VS1DString values"
+        ]
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.openDataDialog()",
+      "type": "function",
+      "label": "openDataDialog()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.setPropertyEditor()",
+      "type": "function",
+      "label": "setPropertyEditor()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.propertyChanged(Object)",
+      "type": "function",
+      "label": "propertyChanged(Object)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "Object o"
+        ]
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.sucheInpuitString(String)",
+      "type": "function",
+      "label": "sucheInpuitString(String)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "int",
+        "params": [
+          "String val"
+        ]
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.loadFromStream(FileInputStream)",
+      "type": "function",
+      "label": "loadFromStream(FileInputStream)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.io.FileInputStream fis"
+        ]
+      }
+    },
+    {
+      "id": "func://DigitalCircuitSim.saveToStream(FileOutputStream)",
+      "type": "function",
+      "label": "saveToStream(FileOutputStream)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.io.FileOutputStream fos"
+        ]
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+      "type": "file",
+      "label": "MyTableEditor.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+        "language": "Java",
+        "lines": 674
+      }
+    },
+    {
+      "id": "class://MyTableEditor",
+      "type": "class",
+      "label": "MyTableEditor",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "javax.swing.JDialog"
+      }
+    },
+    {
+      "id": "func://MyTableEditor.MyTableEditor(Frame,boolean)",
+      "type": "function",
+      "label": "MyTableEditor(Frame,boolean)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "constructor",
+        "params": [
+          "java.awt.Frame parent",
+          "boolean modal"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.clearTable(DefaultTableModel)",
+      "type": "function",
+      "label": "clearTable(DefaultTableModel)",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "DefaultTableModel model"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.parseString(String)",
+      "type": "function",
+      "label": "parseString(String)",
+      "properties": {
+        "visibility": "private",
+        "returnType": "Boolean[]",
+        "params": [
+          "String str"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.setInputs(String[])",
+      "type": "function",
+      "label": "setInputs(String[])",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "String[] inputs"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.setInputColumns(String)",
+      "type": "function",
+      "label": "setInputColumns(String)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "String cols"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.getInputColumns()",
+      "type": "function",
+      "label": "getInputColumns()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String",
+        "params": []
+      }
+    },
+    {
+      "id": "func://MyTableEditor.getOutputColumns()",
+      "type": "function",
+      "label": "getOutputColumns()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String",
+        "params": []
+      }
+    },
+    {
+      "id": "func://MyTableEditor.setOutputColumns(String)",
+      "type": "function",
+      "label": "setOutputColumns(String)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "String cols"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.setOutputs(String[])",
+      "type": "function",
+      "label": "setOutputs(String[])",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "String[] outputs"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.getData(DefaultTableModel)",
+      "type": "function",
+      "label": "getData(DefaultTableModel)",
+      "properties": {
+        "visibility": "private",
+        "returnType": "String[]",
+        "params": [
+          "DefaultTableModel model"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.getInputs()",
+      "type": "function",
+      "label": "getInputs()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String[]",
+        "params": []
+      }
+    },
+    {
+      "id": "func://MyTableEditor.geOutputs()",
+      "type": "function",
+      "label": "geOutputs()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String[]",
+        "params": []
+      }
+    },
+    {
+      "id": "func://MyTableEditor.initComponents()",
+      "type": "function",
+      "label": "initComponents()",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://MyTableEditor.mniEraseOutputDataActionPerformed(ActionEvent)",
+      "type": "function",
+      "label": "mniEraseOutputDataActionPerformed(ActionEvent)",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "java.awt.event.ActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.mniEditOutputColumnsActionPerformed(ActionEvent)",
+      "type": "function",
+      "label": "mniEditOutputColumnsActionPerformed(ActionEvent)",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "java.awt.event.ActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.mniEraseInDataActionPerformed(ActionEvent)",
+      "type": "function",
+      "label": "mniEraseInDataActionPerformed(ActionEvent)",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "java.awt.event.ActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.mniEditInputColumnsActionPerformed(ActionEvent)",
+      "type": "function",
+      "label": "mniEditInputColumnsActionPerformed(ActionEvent)",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "java.awt.event.ActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.mniGenInputDataActionPerformed(ActionEvent)",
+      "type": "function",
+      "label": "mniGenInputDataActionPerformed(ActionEvent)",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "java.awt.event.ActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.eraseData(DefaultTableModel)",
+      "type": "function",
+      "label": "eraseData(DefaultTableModel)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "DefaultTableModel model"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.test(JTable,DefaultTableModel)",
+      "type": "function",
+      "label": "test(JTable,DefaultTableModel)",
+      "properties": {
+        "visibility": "private",
+        "returnType": "String",
+        "params": [
+          "JTable table",
+          "DefaultTableModel model"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.shiftRight(String[])",
+      "type": "function",
+      "label": "shiftRight(String[])",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "String[] inputs"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.IntToBin(int,int)",
+      "type": "function",
+      "label": "IntToBin(int,int)",
+      "properties": {
+        "visibility": "private",
+        "returnType": "String",
+        "params": [
+          "int value",
+          "int digits"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.jButton2ActionPerformed(ActionEvent)",
+      "type": "function",
+      "label": "jButton2ActionPerformed(ActionEvent)",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "java.awt.event.ActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.jButton1ActionPerformed(ActionEvent)",
+      "type": "function",
+      "label": "jButton1ActionPerformed(ActionEvent)",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "java.awt.event.ActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "func://MyTableEditor.main(String[])",
+      "type": "function",
+      "label": "main(String[])",
+      "properties": {
+        "visibility": "public",
+        "static": true,
+        "returnType": "void",
+        "params": [
+          "String[] args"
+        ]
+      }
+    },
+    {
+      "id": "class://BooleanModel",
+      "type": "class",
+      "label": "BooleanModel",
+      "properties": {
+        "visibility": "package-private",
+        "abstract": false,
+        "extends": "javax.swing.table.DefaultTableModel"
+      }
+    },
+    {
+      "id": "func://BooleanModel.getColumnClass(int)",
+      "type": "function",
+      "label": "getColumnClass(int)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Class",
+        "params": [
+          "int columnIndex"
+        ]
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor/src/MyTableEditor.java",
+      "type": "file",
+      "label": "MyTableEditor.java (nested copy)",
+      "properties": {
+        "path": "CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor/src/MyTableEditor.java",
+        "language": "Java",
+        "lines": 674,
+        "note": "Duplicate of root MyTableEditor.java"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/EdgeDetect/src/EdgeDetect.java",
+      "type": "file",
+      "label": "EdgeDetect.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/EdgeDetect/src/EdgeDetect.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND on disk"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/Encoder/Encoder8x3/src/Encoder8x3.java",
+      "type": "file",
+      "label": "Encoder8x3.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/Encoder/Encoder8x3/src/Encoder8x3.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND on disk"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/FlipFlop/DAC_FlipFlop/src/DACFlipFlop.java",
+      "type": "file",
+      "label": "DACFlipFlop.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/FlipFlop/DAC_FlipFlop/src/DACFlipFlop.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND on disk"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/FlipFlop/JKFlipFlop/src/JKFlipFlop.java",
+      "type": "file",
+      "label": "JKFlipFlop.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/FlipFlop/JKFlipFlop/src/JKFlipFlop.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND on disk"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/FlipFlop/MSJKFlipFlop/src/MSJKFlipFlop.java",
+      "type": "file",
+      "label": "MSJKFlipFlop.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/FlipFlop/MSJKFlipFlop/src/MSJKFlipFlop.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND on disk"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/FlipFlop/RSFlipFlop/src/RSFlipFlop.java",
+      "type": "file",
+      "label": "RSFlipFlop.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/FlipFlop/RSFlipFlop/src/RSFlipFlop.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND on disk"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/Multiplexer/Demux4/Demux.java",
+      "type": "file",
+      "label": "Demux.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/Multiplexer/Demux4/Demux.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND at specified path; see Demultiplexer.java instead"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+      "type": "file",
+      "label": "Demultiplexer.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+        "language": "Java",
+        "lines": 179
+      }
+    },
+    {
+      "id": "class://Demultiplexer",
+      "type": "class",
+      "label": "Demultiplexer",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "JVSMain"
+      }
+    },
+    {
+      "id": "func://Demultiplexer.onDispose()",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Demultiplexer.paint(Graphics)",
+      "type": "function",
+      "label": "paint(Graphics)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.awt.Graphics g"
+        ]
+      }
+    },
+    {
+      "id": "func://Demultiplexer.init()",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Demultiplexer.propertyChanged(Object)",
+      "type": "function",
+      "label": "propertyChanged(Object)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "Object o"
+        ]
+      }
+    },
+    {
+      "id": "func://Demultiplexer.setPropertyEditor()",
+      "type": "function",
+      "label": "setPropertyEditor()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Demultiplexer.initInputPins()",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Demultiplexer.initOutputPins()",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Demultiplexer.start()",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Demultiplexer.stop()",
+      "type": "function",
+      "label": "stop()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Demultiplexer.bolToInt(boolean,boolean,boolean,boolean)",
+      "type": "function",
+      "label": "bolToInt(boolean,boolean,boolean,boolean)",
+      "properties": {
+        "visibility": "private",
+        "returnType": "int",
+        "params": [
+          "boolean d",
+          "boolean c",
+          "boolean b",
+          "boolean a"
+        ]
+      }
+    },
+    {
+      "id": "func://Demultiplexer.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/Multiplexer/Mux4/src/Multiplexer.java",
+      "type": "file",
+      "label": "Multiplexer.java (Mux4)",
+      "properties": {
+        "path": "CircuitElements/Boolean/Multiplexer/Mux4/src/Multiplexer.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND at specified path; see Multiplexer/src/Multiplexer.java instead"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/Multiplexer/src/Multiplexer.java",
+      "type": "file",
+      "label": "Multiplexer.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/Multiplexer/src/Multiplexer.java",
+        "language": "Java",
+        "lines": 181
+      }
+    },
+    {
+      "id": "class://Multiplexer",
+      "type": "class",
+      "label": "Multiplexer",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "JVSMain"
+      }
+    },
+    {
+      "id": "func://Multiplexer.onDispose()",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Multiplexer.paint(Graphics)",
+      "type": "function",
+      "label": "paint(Graphics)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.awt.Graphics g"
+        ]
+      }
+    },
+    {
+      "id": "func://Multiplexer.init()",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Multiplexer.propertyChanged(Object)",
+      "type": "function",
+      "label": "propertyChanged(Object)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "Object o"
+        ]
+      }
+    },
+    {
+      "id": "func://Multiplexer.setPropertyEditor()",
+      "type": "function",
+      "label": "setPropertyEditor()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Multiplexer.initInputPins()",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Multiplexer.initOutputPins()",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Multiplexer.start()",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Multiplexer.stop()",
+      "type": "function",
+      "label": "stop()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Multiplexer.bolToInt(boolean,boolean,boolean,boolean)",
+      "type": "function",
+      "label": "bolToInt(boolean,boolean,boolean,boolean)",
+      "properties": {
+        "visibility": "private",
+        "returnType": "int",
+        "params": [
+          "boolean d",
+          "boolean c",
+          "boolean b",
+          "boolean a"
+        ]
+      }
+    },
+    {
+      "id": "func://Multiplexer.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/NAND/src/NAND.java",
+      "type": "file",
+      "label": "NAND.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/NAND/src/NAND.java",
+        "language": "Java",
+        "lines": 73
+      }
+    },
+    {
+      "id": "class://NAND",
+      "type": "class",
+      "label": "NAND",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "Gatter"
+      }
+    },
+    {
+      "id": "func://NAND.NAND()",
+      "type": "function",
+      "label": "NAND()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "constructor",
+        "params": []
+      }
+    },
+    {
+      "id": "func://NAND.start()",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://NAND.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/Noetig/src/Noetig.java",
+      "type": "file",
+      "label": "Noetig.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/Noetig/src/Noetig.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND on disk"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/NOR/src/NOR.java",
+      "type": "file",
+      "label": "NOR.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/NOR/src/NOR.java",
+        "language": "Java",
+        "lines": 73
+      }
+    },
+    {
+      "id": "class://NOR",
+      "type": "class",
+      "label": "NOR",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "Gatter"
+      }
+    },
+    {
+      "id": "func://NOR.NOR()",
+      "type": "function",
+      "label": "NOR()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "constructor",
+        "params": []
+      }
+    },
+    {
+      "id": "func://NOR.start()",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://NOR.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/NOT/src/NOT.java",
+      "type": "file",
+      "label": "NOT.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/NOT/src/NOT.java",
+        "language": "Java",
+        "lines": 65
+      }
+    },
+    {
+      "id": "class://NOT",
+      "type": "class",
+      "label": "NOT",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "Gatter"
+      }
+    },
+    {
+      "id": "func://NOT.NOT()",
+      "type": "function",
+      "label": "NOT()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "constructor",
+        "params": []
+      }
+    },
+    {
+      "id": "func://NOT.start()",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://NOT.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/RSFlipFlopCLK/src/RSFlipFlop.java",
+      "type": "file",
+      "label": "RSFlipFlop.java (CLK)",
+      "properties": {
+        "path": "CircuitElements/Boolean/RSFlipFlopCLK/src/RSFlipFlop.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND on disk"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/SchiebeRegister/SchiebeRegister.java",
+      "type": "file",
+      "label": "SchiebeRegister.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/SchiebeRegister/SchiebeRegister.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND on disk"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/Siebensegment/src/Logic.java",
+      "type": "file",
+      "label": "Logic.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/Siebensegment/src/Logic.java",
+        "language": "Java",
+        "lines": 192
+      }
+    },
+    {
+      "id": "class://Logic",
+      "type": "class",
+      "label": "Logic",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "JVSMain"
+      }
+    },
+    {
+      "id": "func://Logic.parseString(String,boolean[])",
+      "type": "function",
+      "label": "parseString(String,boolean[])",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "String line",
+          "boolean[] array"
+        ]
+      }
+    },
+    {
+      "id": "func://Logic.onDispose()",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Logic.paint(Graphics)",
+      "type": "function",
+      "label": "paint(Graphics)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.awt.Graphics g"
+        ]
+      }
+    },
+    {
+      "id": "func://Logic.init()",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Logic.initInputPins()",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Logic.initOutputPins()",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Logic.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/SRAM/SRAM.java",
+      "type": "file",
+      "label": "SRAM.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/SRAM/SRAM.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND on disk"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/toggle/Toggle.java",
+      "type": "file",
+      "label": "Toggle.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/toggle/Toggle.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND on disk"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/Warte/Warte.java",
+      "type": "file",
+      "label": "Warte.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/Warte/Warte.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND on disk"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/Zaehler/Zaehler.java",
+      "type": "file",
+      "label": "Zaehler.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/Zaehler/Zaehler.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND on disk"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Canvas/Canvas/src/Canvas.java",
+      "type": "file",
+      "label": "Canvas.java",
+      "properties": {
+        "path": "CircuitElements/Canvas/Canvas/src/Canvas.java",
+        "language": "Java",
+        "note": "FILE NOT FOUND in CircuitElements/Canvas; exists in FrontElements/Output/Canvas/src/Canvas.java and FrontElements/2Extras/Canvas/src/Canvas.java"
+      }
+    },
+    {
+      "id": "file://CircuitElements/Canvas/DrawString/DrawString.java",
+      "type": "file",
+      "label": "DrawString.java",
+      "properties": {
+        "path": "CircuitElements/Canvas/DrawString/DrawString.java",
+        "language": "Java",
+        "lines": 193
+      }
+    },
+    {
+      "id": "class://DrawString",
+      "type": "class",
+      "label": "DrawString",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "JVSMain"
+      }
+    },
+    {
+      "id": "func://DrawString.onDispose()",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DrawString.paint(Graphics)",
+      "type": "function",
+      "label": "paint(Graphics)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.awt.Graphics g"
+        ]
+      }
+    },
+    {
+      "id": "func://DrawString.init()",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DrawString.start()",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DrawString.initInputPins()",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DrawString.initOutputPins()",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DrawString.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "file://CircuitElements/Canvas/Transform/src/Transformation.java",
+      "type": "file",
+      "label": "Transformation.java",
+      "properties": {
+        "path": "CircuitElements/Canvas/Transform/src/Transformation.java",
+        "language": "Java",
+        "lines": 184
+      }
+    },
+    {
+      "id": "class://Transformation",
+      "type": "class",
+      "label": "Transformation",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "JVSMain"
+      }
+    },
+    {
+      "id": "func://Transformation.onDispose()",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Transformation.paint(Graphics)",
+      "type": "function",
+      "label": "paint(Graphics)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.awt.Graphics g"
+        ]
+      }
+    },
+    {
+      "id": "func://Transformation.init()",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Transformation.initInputPins()",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Transformation.initOutputPins()",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Transformation.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/AND/src/AND.java",
+      "type": "file",
+      "label": "AND.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/AND/src/AND.java",
+        "language": "Java",
+        "lines": 73
+      }
+    },
+    {
+      "id": "class://AND",
+      "type": "class",
+      "label": "AND",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "Gatter"
+      }
+    },
+    {
+      "id": "func://AND.AND()",
+      "type": "function",
+      "label": "AND()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "constructor",
+        "params": []
+      }
+    },
+    {
+      "id": "func://AND.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/OR/src/OR.java",
+      "type": "file",
+      "label": "OR.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/OR/src/OR.java",
+        "language": "Java",
+        "lines": 63
+      }
+    },
+    {
+      "id": "class://OR",
+      "type": "class",
+      "label": "OR",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "Gatter"
+      }
+    },
+    {
+      "id": "func://OR.OR()",
+      "type": "function",
+      "label": "OR()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "constructor",
+        "params": []
+      }
+    },
+    {
+      "id": "func://OR.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/XOR/XOR.java",
+      "type": "file",
+      "label": "XOR.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/XOR/XOR.java",
+        "language": "Java",
+        "lines": 73
+      }
+    },
+    {
+      "id": "class://XOR",
+      "type": "class",
+      "label": "XOR",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "Gatter"
+      }
+    },
+    {
+      "id": "func://XOR.XOR()",
+      "type": "function",
+      "label": "XOR()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "constructor",
+        "params": []
+      }
+    },
+    {
+      "id": "func://XOR.XOR(boolean,boolean)",
+      "type": "function",
+      "label": "XOR(boolean,boolean)",
+      "properties": {
+        "visibility": "public",
+        "static": true,
+        "returnType": "boolean",
+        "params": [
+          "boolean a",
+          "boolean b"
+        ]
+      }
+    },
+    {
+      "id": "func://XOR.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/NXOR/src/NXOR.java",
+      "type": "file",
+      "label": "NXOR.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/NXOR/src/NXOR.java",
+        "language": "Java",
+        "lines": 76
+      }
+    },
+    {
+      "id": "class://NXOR",
+      "type": "class",
+      "label": "NXOR",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "Gatter"
+      }
+    },
+    {
+      "id": "func://NXOR.NXOR()",
+      "type": "function",
+      "label": "NXOR()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "constructor",
+        "params": []
+      }
+    },
+    {
+      "id": "func://NXOR.XNOR(boolean,boolean)",
+      "type": "function",
+      "label": "XNOR(boolean,boolean)",
+      "properties": {
+        "visibility": "public",
+        "static": true,
+        "returnType": "boolean",
+        "params": [
+          "boolean a",
+          "boolean b"
+        ]
+      }
+    },
+    {
+      "id": "func://NXOR.start()",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://NXOR.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/FlipFlop/FlipFlop.java",
+      "type": "file",
+      "label": "FlipFlop.java (RS)",
+      "properties": {
+        "path": "CircuitElements/Boolean/FlipFlop/FlipFlop.java",
+        "language": "Java",
+        "lines": 166
+      }
+    },
+    {
+      "id": "class://FlipFlop",
+      "type": "class",
+      "label": "FlipFlop",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "JVSMain"
+      }
+    },
+    {
+      "id": "func://FlipFlop.onDispose()",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://FlipFlop.paint(Graphics)",
+      "type": "function",
+      "label": "paint(Graphics)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.awt.Graphics g"
+        ]
+      }
+    },
+    {
+      "id": "func://FlipFlop.init()",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://FlipFlop.propertyChanged(Object)",
+      "type": "function",
+      "label": "propertyChanged(Object)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "Object o"
+        ]
+      }
+    },
+    {
+      "id": "func://FlipFlop.setPropertyEditor()",
+      "type": "function",
+      "label": "setPropertyEditor()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://FlipFlop.initInputPins()",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://FlipFlop.initOutputPins()",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://FlipFlop.start()",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://FlipFlop.stop()",
+      "type": "function",
+      "label": "stop()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://FlipFlop.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+      "type": "file",
+      "label": "DFlipFlop.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+        "language": "Java",
+        "lines": 160
+      }
+    },
+    {
+      "id": "class://DFlipFlop",
+      "type": "class",
+      "label": "DFlipFlop",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "JVSMain"
+      }
+    },
+    {
+      "id": "func://DFlipFlop.onDispose()",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DFlipFlop.paint(Graphics)",
+      "type": "function",
+      "label": "paint(Graphics)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.awt.Graphics g"
+        ]
+      }
+    },
+    {
+      "id": "func://DFlipFlop.init()",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DFlipFlop.propertyChanged(Object)",
+      "type": "function",
+      "label": "propertyChanged(Object)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "Object o"
+        ]
+      }
+    },
+    {
+      "id": "func://DFlipFlop.setPropertyEditor()",
+      "type": "function",
+      "label": "setPropertyEditor()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DFlipFlop.initInputPins()",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DFlipFlop.initOutputPins()",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DFlipFlop.start()",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DFlipFlop.stop()",
+      "type": "function",
+      "label": "stop()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://DFlipFlop.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/Impluse/Impluse.java",
+      "type": "file",
+      "label": "Impluse.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/Impluse/Impluse.java",
+        "language": "Java",
+        "lines": 148
+      }
+    },
+    {
+      "id": "class://Impluse",
+      "type": "class",
+      "label": "Impluse",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "JVSMain"
+      }
+    },
+    {
+      "id": "func://Impluse.paint(Graphics)",
+      "type": "function",
+      "label": "paint(Graphics)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.awt.Graphics g"
+        ]
+      }
+    },
+    {
+      "id": "func://Impluse.init()",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Impluse.propertyChanged(Object)",
+      "type": "function",
+      "label": "propertyChanged(Object)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "Object o"
+        ]
+      }
+    },
+    {
+      "id": "func://Impluse.setPropertyEditor()",
+      "type": "function",
+      "label": "setPropertyEditor()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Impluse.initInputPins()",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Impluse.initOutputPins()",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Impluse.start()",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Impluse.stop()",
+      "type": "function",
+      "label": "stop()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Impluse.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Impluse.onDispose()",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Impluse.loadFromStream(FileInputStream)",
+      "type": "function",
+      "label": "loadFromStream(FileInputStream)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.io.FileInputStream fis"
+        ]
+      }
+    },
+    {
+      "id": "func://Impluse.saveToStream(FileOutputStream)",
+      "type": "function",
+      "label": "saveToStream(FileOutputStream)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.io.FileOutputStream fos"
+        ]
+      }
+    },
+    {
+      "id": "file://CircuitElements/Boolean/const/src/Const.java",
+      "type": "file",
+      "label": "Const.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/const/src/Const.java",
+        "language": "Java",
+        "lines": 156
+      }
+    },
+    {
+      "id": "class://Const",
+      "type": "class",
+      "label": "Const",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "JVSMain"
+      }
+    },
+    {
+      "id": "func://Const.paint(Graphics)",
+      "type": "function",
+      "label": "paint(Graphics)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.awt.Graphics g"
+        ]
+      }
+    },
+    {
+      "id": "func://Const.init()",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Const.initInputPins()",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Const.initOutputPins()",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Const.start()",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Const.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Const.setPropertyEditor()",
+      "type": "function",
+      "label": "setPropertyEditor()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Const.localize()",
+      "type": "function",
+      "label": "localize()",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": []
+      }
+    },
+    {
+      "id": "func://Const.propertyChanged(Object)",
+      "type": "function",
+      "label": "propertyChanged(Object)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "Object o"
+        ]
+      }
+    },
+    {
+      "id": "func://Const.loadFromStream(FileInputStream)",
+      "type": "function",
+      "label": "loadFromStream(FileInputStream)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.io.FileInputStream fis"
+        ]
+      }
+    },
+    {
+      "id": "func://Const.saveToStream(FileOutputStream)",
+      "type": "function",
+      "label": "saveToStream(FileOutputStream)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.io.FileOutputStream fos"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "class://DigitalCircuitSim",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.parseString(String,boolean[])",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.paint(Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.xOnInit()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.initAllPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.copyVSArrayToStringArray(VS1DString)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.openDataDialog()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.propertyChanged(Object)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.sucheInpuitString(String)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.loadFromStream(FileInputStream)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "func://DigitalCircuitSim.saveToStream(FileOutputStream)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+      "target": "class://MyTableEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.MyTableEditor(Frame,boolean)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.clearTable(DefaultTableModel)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.parseString(String)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.setInputs(String[])",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.setInputColumns(String)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.getInputColumns()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.getOutputColumns()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.setOutputColumns(String)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.setOutputs(String[])",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.getData(DefaultTableModel)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.getInputs()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.geOutputs()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.initComponents()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.mniEraseOutputDataActionPerformed(ActionEvent)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.mniEditOutputColumnsActionPerformed(ActionEvent)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.mniEraseInDataActionPerformed(ActionEvent)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.mniEditInputColumnsActionPerformed(ActionEvent)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.mniGenInputDataActionPerformed(ActionEvent)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.eraseData(DefaultTableModel)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.test(JTable,DefaultTableModel)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.shiftRight(String[])",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.IntToBin(int,int)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.jButton2ActionPerformed(ActionEvent)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.jButton1ActionPerformed(ActionEvent)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "func://MyTableEditor.main(String[])",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+      "target": "class://BooleanModel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://BooleanModel",
+      "target": "func://BooleanModel.getColumnClass(int)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+      "target": "class://Demultiplexer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Demultiplexer",
+      "target": "func://Demultiplexer.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Demultiplexer",
+      "target": "func://Demultiplexer.paint(Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Demultiplexer",
+      "target": "func://Demultiplexer.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Demultiplexer",
+      "target": "func://Demultiplexer.propertyChanged(Object)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Demultiplexer",
+      "target": "func://Demultiplexer.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Demultiplexer",
+      "target": "func://Demultiplexer.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Demultiplexer",
+      "target": "func://Demultiplexer.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Demultiplexer",
+      "target": "func://Demultiplexer.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Demultiplexer",
+      "target": "func://Demultiplexer.stop()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Demultiplexer",
+      "target": "func://Demultiplexer.bolToInt(boolean,boolean,boolean,boolean)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Demultiplexer",
+      "target": "func://Demultiplexer.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Multiplexer/src/Multiplexer.java",
+      "target": "class://Multiplexer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Multiplexer",
+      "target": "func://Multiplexer.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Multiplexer",
+      "target": "func://Multiplexer.paint(Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Multiplexer",
+      "target": "func://Multiplexer.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Multiplexer",
+      "target": "func://Multiplexer.propertyChanged(Object)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Multiplexer",
+      "target": "func://Multiplexer.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Multiplexer",
+      "target": "func://Multiplexer.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Multiplexer",
+      "target": "func://Multiplexer.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Multiplexer",
+      "target": "func://Multiplexer.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Multiplexer",
+      "target": "func://Multiplexer.stop()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Multiplexer",
+      "target": "func://Multiplexer.bolToInt(boolean,boolean,boolean,boolean)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Multiplexer",
+      "target": "func://Multiplexer.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NAND/src/NAND.java",
+      "target": "class://NAND",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://NAND",
+      "target": "func://NAND.NAND()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://NAND",
+      "target": "func://NAND.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://NAND",
+      "target": "func://NAND.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NOR/src/NOR.java",
+      "target": "class://NOR",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://NOR",
+      "target": "func://NOR.NOR()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://NOR",
+      "target": "func://NOR.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://NOR",
+      "target": "func://NOR.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NOT/src/NOT.java",
+      "target": "class://NOT",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://NOT",
+      "target": "func://NOT.NOT()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://NOT",
+      "target": "func://NOT.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://NOT",
+      "target": "func://NOT.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Siebensegment/src/Logic.java",
+      "target": "class://Logic",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Logic",
+      "target": "func://Logic.parseString(String,boolean[])",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Logic",
+      "target": "func://Logic.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Logic",
+      "target": "func://Logic.paint(Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Logic",
+      "target": "func://Logic.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Logic",
+      "target": "func://Logic.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Logic",
+      "target": "func://Logic.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Logic",
+      "target": "func://Logic.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Canvas/DrawString/DrawString.java",
+      "target": "class://DrawString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DrawString",
+      "target": "func://DrawString.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DrawString",
+      "target": "func://DrawString.paint(Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DrawString",
+      "target": "func://DrawString.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DrawString",
+      "target": "func://DrawString.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DrawString",
+      "target": "func://DrawString.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DrawString",
+      "target": "func://DrawString.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DrawString",
+      "target": "func://DrawString.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Canvas/Transform/src/Transformation.java",
+      "target": "class://Transformation",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Transformation",
+      "target": "func://Transformation.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Transformation",
+      "target": "func://Transformation.paint(Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Transformation",
+      "target": "func://Transformation.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Transformation",
+      "target": "func://Transformation.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Transformation",
+      "target": "func://Transformation.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Transformation",
+      "target": "func://Transformation.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/AND/src/AND.java",
+      "target": "class://AND",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://AND",
+      "target": "func://AND.AND()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://AND",
+      "target": "func://AND.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/OR/src/OR.java",
+      "target": "class://OR",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://OR",
+      "target": "func://OR.OR()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://OR",
+      "target": "func://OR.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/XOR/XOR.java",
+      "target": "class://XOR",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://XOR",
+      "target": "func://XOR.XOR()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://XOR",
+      "target": "func://XOR.XOR(boolean,boolean)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://XOR",
+      "target": "func://XOR.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NXOR/src/NXOR.java",
+      "target": "class://NXOR",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://NXOR",
+      "target": "func://NXOR.NXOR()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://NXOR",
+      "target": "func://NXOR.XNOR(boolean,boolean)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://NXOR",
+      "target": "func://NXOR.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://NXOR",
+      "target": "func://NXOR.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/FlipFlop/FlipFlop.java",
+      "target": "class://FlipFlop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://FlipFlop",
+      "target": "func://FlipFlop.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://FlipFlop",
+      "target": "func://FlipFlop.paint(Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://FlipFlop",
+      "target": "func://FlipFlop.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://FlipFlop",
+      "target": "func://FlipFlop.propertyChanged(Object)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://FlipFlop",
+      "target": "func://FlipFlop.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://FlipFlop",
+      "target": "func://FlipFlop.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://FlipFlop",
+      "target": "func://FlipFlop.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://FlipFlop",
+      "target": "func://FlipFlop.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://FlipFlop",
+      "target": "func://FlipFlop.stop()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://FlipFlop",
+      "target": "func://FlipFlop.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+      "target": "class://DFlipFlop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DFlipFlop",
+      "target": "func://DFlipFlop.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DFlipFlop",
+      "target": "func://DFlipFlop.paint(Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DFlipFlop",
+      "target": "func://DFlipFlop.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DFlipFlop",
+      "target": "func://DFlipFlop.propertyChanged(Object)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DFlipFlop",
+      "target": "func://DFlipFlop.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DFlipFlop",
+      "target": "func://DFlipFlop.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DFlipFlop",
+      "target": "func://DFlipFlop.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DFlipFlop",
+      "target": "func://DFlipFlop.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DFlipFlop",
+      "target": "func://DFlipFlop.stop()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://DFlipFlop",
+      "target": "func://DFlipFlop.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Impluse/Impluse.java",
+      "target": "class://Impluse",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Impluse",
+      "target": "func://Impluse.paint(Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Impluse",
+      "target": "func://Impluse.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Impluse",
+      "target": "func://Impluse.propertyChanged(Object)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Impluse",
+      "target": "func://Impluse.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Impluse",
+      "target": "func://Impluse.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Impluse",
+      "target": "func://Impluse.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Impluse",
+      "target": "func://Impluse.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Impluse",
+      "target": "func://Impluse.stop()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Impluse",
+      "target": "func://Impluse.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Impluse",
+      "target": "func://Impluse.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Impluse",
+      "target": "func://Impluse.loadFromStream(FileInputStream)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Impluse",
+      "target": "func://Impluse.saveToStream(FileOutputStream)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/const/src/Const.java",
+      "target": "class://Const",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Const",
+      "target": "func://Const.paint(Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Const",
+      "target": "func://Const.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Const",
+      "target": "func://Const.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Const",
+      "target": "func://Const.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Const",
+      "target": "func://Const.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Const",
+      "target": "func://Const.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Const",
+      "target": "func://Const.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Const",
+      "target": "func://Const.localize()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Const",
+      "target": "func://Const.propertyChanged(Object)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Const",
+      "target": "func://Const.loadFromStream(FileInputStream)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class://Const",
+      "target": "func://Const.saveToStream(FileOutputStream)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "class://java.io.BufferedReader",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "class://java.io.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "class://java.util.ArrayList",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "class://javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+      "target": "class://javax.swing.JOptionPane",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+      "target": "class://javax.swing.JTable",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+      "target": "class://javax.swing.table.DefaultTableModel",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+      "target": "class://javax.swing.table.TableColumn",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NAND/src/NAND.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NAND/src/NAND.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NAND/src/NAND.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NAND/src/NAND.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NAND/src/NAND.java",
+      "target": "class://java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NAND/src/NAND.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NOR/src/NOR.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NOR/src/NOR.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NOR/src/NOR.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NOR/src/NOR.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NOR/src/NOR.java",
+      "target": "class://java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NOR/src/NOR.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NOT/src/NOT.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NOT/src/NOT.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NOT/src/NOT.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NOT/src/NOT.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NOT/src/NOT.java",
+      "target": "class://java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NOT/src/NOT.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/AND/src/AND.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/AND/src/AND.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/AND/src/AND.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/AND/src/AND.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/AND/src/AND.java",
+      "target": "class://java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/AND/src/AND.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/OR/src/OR.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/OR/src/OR.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/OR/src/OR.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/OR/src/OR.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/OR/src/OR.java",
+      "target": "class://java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/OR/src/OR.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/XOR/XOR.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/XOR/XOR.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/XOR/XOR.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/XOR/XOR.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/XOR/XOR.java",
+      "target": "class://java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/XOR/XOR.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NXOR/src/NXOR.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NXOR/src/NXOR.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NXOR/src/NXOR.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NXOR/src/NXOR.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NXOR/src/NXOR.java",
+      "target": "class://java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/NXOR/src/NXOR.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Siebensegment/src/Logic.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Siebensegment/src/Logic.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Siebensegment/src/Logic.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Siebensegment/src/Logic.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Siebensegment/src/Logic.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Siebensegment/src/Logic.java",
+      "target": "class://java.io.BufferedReader",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Siebensegment/src/Logic.java",
+      "target": "class://java.io.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Siebensegment/src/Logic.java",
+      "target": "class://java.util.ArrayList",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Siebensegment/src/Logic.java",
+      "target": "class://javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Multiplexer/src/Multiplexer.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Multiplexer/src/Multiplexer.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Multiplexer/src/Multiplexer.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Multiplexer/src/Multiplexer.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Multiplexer/src/Multiplexer.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Multiplexer/src/Multiplexer.java",
+      "target": "class://javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+      "target": "class://javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/FlipFlop/FlipFlop.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/FlipFlop/FlipFlop.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/FlipFlop/FlipFlop.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/FlipFlop/FlipFlop.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/FlipFlop/FlipFlop.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/FlipFlop/FlipFlop.java",
+      "target": "class://javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+      "target": "class://javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Impluse/Impluse.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Impluse/Impluse.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Impluse/Impluse.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Impluse/Impluse.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Impluse/Impluse.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/Impluse/Impluse.java",
+      "target": "class://javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/const/src/Const.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/const/src/Const.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/const/src/Const.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/const/src/Const.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/const/src/Const.java",
+      "target": "class://javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Boolean/const/src/Const.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Canvas/DrawString/DrawString.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Canvas/DrawString/DrawString.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Canvas/DrawString/DrawString.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Canvas/DrawString/DrawString.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Canvas/DrawString/DrawString.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Canvas/DrawString/DrawString.java",
+      "target": "class://java.awt.geom.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Canvas/Transform/src/Transformation.java",
+      "target": "class://VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Canvas/Transform/src/Transformation.java",
+      "target": "class://VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Canvas/Transform/src/Transformation.java",
+      "target": "class://tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Canvas/Transform/src/Transformation.java",
+      "target": "class://java.awt.MediaTracker",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Canvas/Transform/src/Transformation.java",
+      "target": "class://java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Canvas/Transform/src/Transformation.java",
+      "target": "class://java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Canvas/Transform/src/Transformation.java",
+      "target": "class://java.awt.image.BufferedImage",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Canvas/Transform/src/Transformation.java",
+      "target": "class://java.awt.image.MemoryImageSource",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file://CircuitElements/Canvas/Transform/src/Transformation.java",
+      "target": "class://java.awt.image.PixelGrabber",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class://DigitalCircuitSim",
+      "target": "class://JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://MyTableEditor",
+      "target": "class://javax.swing.JDialog",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://BooleanModel",
+      "target": "class://javax.swing.table.DefaultTableModel",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://AND",
+      "target": "class://Gatter",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://OR",
+      "target": "class://Gatter",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://NAND",
+      "target": "class://Gatter",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://NOR",
+      "target": "class://Gatter",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://NOT",
+      "target": "class://Gatter",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://XOR",
+      "target": "class://Gatter",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://NXOR",
+      "target": "class://Gatter",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://Gatter",
+      "target": "class://JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://JVSMain",
+      "target": "class://java.lang.Object",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://JVSMain",
+      "target": "class://ElementIF",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://Logic",
+      "target": "class://JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://Multiplexer",
+      "target": "class://JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://Demultiplexer",
+      "target": "class://JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://FlipFlop",
+      "target": "class://JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://DFlipFlop",
+      "target": "class://JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://Impluse",
+      "target": "class://JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://Const",
+      "target": "class://JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://DrawString",
+      "target": "class://JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://Transformation",
+      "target": "class://JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class://JVSMain",
+      "target": "interface://ElementIF",
+      "type": "implements",
+      "weight": 0.9
+    }
+  ]
+}

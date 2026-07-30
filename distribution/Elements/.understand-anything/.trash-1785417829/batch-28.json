@@ -1,0 +1,1752 @@
+{
+  "nodes": [
+    {
+      "id": "file:ExpressionParser/Parser",
+      "type": "file",
+      "name": "Parser.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/Parser/Math Calc2/src/ExpressionParser/Parser.java",
+        "language": "Java",
+        "lines": 531
+      }
+    },
+    {
+      "id": "file:ExpressionParser/Var",
+      "type": "file",
+      "name": "Var.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/Parser/Math Calc2/src/ExpressionParser/Var.java",
+        "language": "Java",
+        "lines": 34
+      }
+    },
+    {
+      "id": "file:ExpressionParser/Visual",
+      "type": "file",
+      "name": "Visual.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/Parser/Math Calc2/src/ExpressionParser/Visual.java",
+        "language": "Java",
+        "lines": 149
+      }
+    },
+    {
+      "id": "file:Subtrahierer",
+      "type": "file",
+      "name": "Subtrahierer.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/subtrahierer/src/Subtrahierer.java",
+        "language": "Java",
+        "lines": 238
+      }
+    },
+    {
+      "id": "file:Multiplizierer",
+      "type": "file",
+      "name": "Multiplizierer.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/multiplizierer/src/Multiplizierer.java",
+        "language": "Java",
+        "lines": 200
+      }
+    },
+    {
+      "id": "file:SubString",
+      "type": "file",
+      "name": "SubString.java",
+      "properties": {
+        "path": "CircuitElements/String/SubString/SubString.java",
+        "language": "Java",
+        "lines": 117
+      }
+    },
+    {
+      "id": "file:Length",
+      "type": "file",
+      "name": "Length.java",
+      "properties": {
+        "path": "CircuitElements/String/LEN/Length.java",
+        "language": "Java",
+        "lines": 96
+      }
+    },
+    {
+      "id": "file:Concat",
+      "type": "file",
+      "name": "Concat.java",
+      "properties": {
+        "path": "CircuitElements/String/Concat/Concat.java",
+        "language": "Java",
+        "lines": 103
+      }
+    },
+    {
+      "id": "pkg:ExpressionParser",
+      "type": "package",
+      "name": "ExpressionParser",
+      "properties": {}
+    },
+    {
+      "id": "pkg:String.SubString",
+      "type": "package",
+      "name": "String.SubString",
+      "properties": {}
+    },
+    {
+      "id": "pkg:String.LEN",
+      "type": "package",
+      "name": "String.LEN",
+      "properties": {}
+    },
+    {
+      "id": "pkg:String.Concat",
+      "type": "package",
+      "name": "String.Concat",
+      "properties": {}
+    },
+    {
+      "id": "class:ExpressionParser.Token",
+      "type": "class",
+      "name": "Token",
+      "properties": {
+        "visibility": "package-private",
+        "isInnerClass": true,
+        "containingFile": "Parser.java"
+      }
+    },
+    {
+      "id": "class:ExpressionParser.Parser",
+      "type": "class",
+      "name": "Parser",
+      "properties": {
+        "visibility": "public",
+        "isInnerClass": false,
+        "containingFile": "Parser.java"
+      }
+    },
+    {
+      "id": "class:ExpressionParser.Var",
+      "type": "class",
+      "name": "Var",
+      "properties": {
+        "visibility": "public",
+        "isInnerClass": false,
+        "containingFile": "Var.java"
+      }
+    },
+    {
+      "id": "class:ExpressionParser.Visual",
+      "type": "class",
+      "name": "Visual",
+      "properties": {
+        "visibility": "public",
+        "isInnerClass": false,
+        "containingFile": "Visual.java"
+      }
+    },
+    {
+      "id": "class:Subtrahierer",
+      "type": "class",
+      "name": "Subtrahierer",
+      "properties": {
+        "visibility": "public",
+        "isInnerClass": false,
+        "containingFile": "Subtrahierer.java"
+      }
+    },
+    {
+      "id": "class:Multiplizierer",
+      "type": "class",
+      "name": "Multiplizierer",
+      "properties": {
+        "visibility": "public",
+        "isInnerClass": false,
+        "containingFile": "Multiplizierer.java"
+      }
+    },
+    {
+      "id": "class:SubString",
+      "type": "class",
+      "name": "SubString",
+      "properties": {
+        "visibility": "public",
+        "isInnerClass": false,
+        "containingFile": "SubString.java"
+      }
+    },
+    {
+      "id": "class:Length",
+      "type": "class",
+      "name": "Length",
+      "properties": {
+        "visibility": "public",
+        "isInnerClass": false,
+        "containingFile": "Length.java"
+      }
+    },
+    {
+      "id": "class:Concat",
+      "type": "class",
+      "name": "Concat",
+      "properties": {
+        "visibility": "public",
+        "isInnerClass": false,
+        "containingFile": "Concat.java"
+      }
+    },
+    {
+      "id": "class:javax.swing.JFrame",
+      "type": "class",
+      "name": "JFrame",
+      "properties": {
+        "external": true
+      }
+    },
+    {
+      "id": "class:VisualLogic.JVSMain",
+      "type": "class",
+      "name": "JVSMain",
+      "properties": {}
+    },
+    {
+      "id": "func:Token.setNum",
+      "type": "function",
+      "name": "setNum",
+      "properties": {
+        "params": "String num",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Token.setOp",
+      "type": "function",
+      "name": "setOp",
+      "properties": {
+        "params": "String op",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Token.setVar",
+      "type": "function",
+      "name": "setVar",
+      "properties": {
+        "params": "String str",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Token.setKlammer",
+      "type": "function",
+      "name": "setKlammer",
+      "properties": {
+        "params": "String klammer",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Token.setFunc",
+      "type": "function",
+      "name": "setFunc",
+      "properties": {
+        "params": "String func",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Parser.getErrorMessage",
+      "type": "function",
+      "name": "getErrorMessage",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Parser.setErrorMessage",
+      "type": "function",
+      "name": "setErrorMessage",
+      "properties": {
+        "params": "String message",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Parser.delErrorMessage",
+      "type": "function",
+      "name": "delErrorMessage",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Parser.setExpression",
+      "type": "function",
+      "name": "setExpression",
+      "properties": {
+        "params": "String expression",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Parser.Parser",
+      "type": "function",
+      "name": "Parser",
+      "properties": {
+        "params": "String expression",
+        "visibility": "public",
+        "isConstructor": true
+      }
+    },
+    {
+      "id": "func:Parser.fakultaet",
+      "type": "function",
+      "name": "fakultaet",
+      "properties": {
+        "params": "double a",
+        "visibility": "private",
+        "static": true
+      }
+    },
+    {
+      "id": "func:Parser.optimize",
+      "type": "function",
+      "name": "optimize",
+      "properties": {
+        "params": "ArrayList vector",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Parser.calc",
+      "type": "function",
+      "name": "calc",
+      "properties": {
+        "params": "ArrayList vector",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Parser.sucheRechtsNachKlammer",
+      "type": "function",
+      "name": "sucheRechtsNachKlammer",
+      "properties": {
+        "params": "ArrayList tokenListe, int pos",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Parser.sucheLinksNachKlammer",
+      "type": "function",
+      "name": "sucheLinksNachKlammer",
+      "properties": {
+        "params": "ArrayList tokenListe, int pos",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Parser.getKlammerPlus",
+      "type": "function",
+      "name": "getKlammerPlus",
+      "properties": {
+        "params": "ArrayList tokenListe",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Parser.handleMinusOperator",
+      "type": "function",
+      "name": "handleMinusOperator",
+      "properties": {
+        "params": "ArrayList tokenListe",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Parser.klammere",
+      "type": "function",
+      "name": "klammere",
+      "properties": {
+        "params": "ArrayList tokenListe, int ops",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Parser.setVariablen",
+      "type": "function",
+      "name": "setVariablen",
+      "properties": {
+        "params": "ArrayList tokenListe",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Parser.tokensToVector",
+      "type": "function",
+      "name": "tokensToVector",
+      "properties": {
+        "params": "ArrayList vector",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Parser.clearVars",
+      "type": "function",
+      "name": "clearVars",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Parser.addVar",
+      "type": "function",
+      "name": "addVar",
+      "properties": {
+        "params": "String name, double value",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Parser.getVar",
+      "type": "function",
+      "name": "getVar",
+      "properties": {
+        "params": "int index",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Parser.getVarValue",
+      "type": "function",
+      "name": "getVarValue",
+      "properties": {
+        "params": "String name",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Parser.varExist",
+      "type": "function",
+      "name": "varExist",
+      "properties": {
+        "params": "String name",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Parser.parseString",
+      "type": "function",
+      "name": "parseString",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Parser.isNum",
+      "type": "function",
+      "name": "isNum",
+      "properties": {
+        "params": "String val",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Parser.getTokens",
+      "type": "function",
+      "name": "getTokens",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Parser.isFunc",
+      "type": "function",
+      "name": "isFunc",
+      "properties": {
+        "params": "String val",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Parser.isIn",
+      "type": "function",
+      "name": "isIn",
+      "properties": {
+        "params": "String a, String set",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Parser.isOP",
+      "type": "function",
+      "name": "isOP",
+      "properties": {
+        "params": "String val",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Parser.isKLAMMER",
+      "type": "function",
+      "name": "isKLAMMER",
+      "properties": {
+        "params": "String val",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Parser.isString",
+      "type": "function",
+      "name": "isString",
+      "properties": {
+        "params": "String val",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Var.Var",
+      "type": "function",
+      "name": "Var",
+      "properties": {
+        "params": "String name, double value",
+        "visibility": "public",
+        "isConstructor": true
+      }
+    },
+    {
+      "id": "func:Visual.Visual",
+      "type": "function",
+      "name": "Visual",
+      "properties": {
+        "params": "",
+        "visibility": "public",
+        "isConstructor": true
+      }
+    },
+    {
+      "id": "func:Visual.initComponents",
+      "type": "function",
+      "name": "initComponents",
+      "properties": {
+        "params": "",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Visual.jButton1ActionPerformed",
+      "type": "function",
+      "name": "jButton1ActionPerformed",
+      "properties": {
+        "params": "ActionEvent evt",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "func:Visual.main",
+      "type": "function",
+      "name": "main",
+      "properties": {
+        "params": "String[] args",
+        "visibility": "public",
+        "static": true
+      }
+    },
+    {
+      "id": "func:Visual.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "params": "Graphics g",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Subtrahierer.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "params": "Graphics g",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Subtrahierer.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Subtrahierer.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Subtrahierer.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Subtrahierer.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Subtrahierer.checkPinDataType",
+      "type": "function",
+      "name": "checkPinDataType",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Subtrahierer.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Subtrahierer.toUnsigned",
+      "type": "function",
+      "name": "toUnsigned",
+      "properties": {
+        "params": "short value",
+        "visibility": "public",
+        "static": true
+      }
+    },
+    {
+      "id": "func:Subtrahierer.toSigned",
+      "type": "function",
+      "name": "toSigned",
+      "properties": {
+        "params": "byte value",
+        "visibility": "public",
+        "static": true
+      }
+    },
+    {
+      "id": "func:Subtrahierer.copyBits",
+      "type": "function",
+      "name": "copyBits",
+      "properties": {
+        "params": "long value, byte bits",
+        "visibility": "private",
+        "static": true
+      }
+    },
+    {
+      "id": "func:Multiplizierer.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "params": "Graphics g",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Multiplizierer.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Multiplizierer.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Multiplizierer.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Multiplizierer.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Multiplizierer.checkPinDataType",
+      "type": "function",
+      "name": "checkPinDataType",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Multiplizierer.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:SubString.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:SubString.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "params": "Graphics g",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:SubString.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:SubString.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:SubString.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:SubString.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Length.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Length.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "params": "Graphics g",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Length.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Length.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Length.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Length.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Concat.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Concat.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "params": "Graphics g",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Concat.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Concat.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Concat.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "func:Concat.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "params": "",
+        "visibility": "public"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:ExpressionParser/Parser",
+      "target": "pkg:ExpressionParser",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:ExpressionParser/Var",
+      "target": "pkg:ExpressionParser",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:ExpressionParser/Visual",
+      "target": "pkg:ExpressionParser",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:SubString",
+      "target": "pkg:String.SubString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:Length",
+      "target": "pkg:String.LEN",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:Concat",
+      "target": "pkg:String.Concat",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:ExpressionParser/Parser",
+      "target": "class:ExpressionParser.Token",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:ExpressionParser/Parser",
+      "target": "class:ExpressionParser.Parser",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:ExpressionParser/Var",
+      "target": "class:ExpressionParser.Var",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:ExpressionParser/Visual",
+      "target": "class:ExpressionParser.Visual",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:Subtrahierer",
+      "target": "class:Subtrahierer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:Multiplizierer",
+      "target": "class:Multiplizierer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:SubString",
+      "target": "class:SubString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:Length",
+      "target": "class:Length",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:Concat",
+      "target": "class:Concat",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Token",
+      "target": "func:Token.setNum",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Token",
+      "target": "func:Token.setOp",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Token",
+      "target": "func:Token.setVar",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Token",
+      "target": "func:Token.setKlammer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Token",
+      "target": "func:Token.setFunc",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.getErrorMessage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.setErrorMessage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.delErrorMessage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.setExpression",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.Parser",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.fakultaet",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.optimize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.calc",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.sucheRechtsNachKlammer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.sucheLinksNachKlammer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.getKlammerPlus",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.handleMinusOperator",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.klammere",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.setVariablen",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.tokensToVector",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.clearVars",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.addVar",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.getVar",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.getVarValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.varExist",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.parseString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.isNum",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.getTokens",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.isFunc",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.isIn",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.isOP",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.isKLAMMER",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser",
+      "target": "func:Parser.isString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Var",
+      "target": "func:Var.Var",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Visual",
+      "target": "func:Visual.Visual",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Visual",
+      "target": "func:Visual.initComponents",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Visual",
+      "target": "func:Visual.jButton1ActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Visual",
+      "target": "func:Visual.main",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Visual",
+      "target": "func:Visual.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Subtrahierer",
+      "target": "func:Subtrahierer.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Subtrahierer",
+      "target": "func:Subtrahierer.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Subtrahierer",
+      "target": "func:Subtrahierer.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Subtrahierer",
+      "target": "func:Subtrahierer.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Subtrahierer",
+      "target": "func:Subtrahierer.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Subtrahierer",
+      "target": "func:Subtrahierer.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Subtrahierer",
+      "target": "func:Subtrahierer.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Subtrahierer",
+      "target": "func:Subtrahierer.toUnsigned",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Subtrahierer",
+      "target": "func:Subtrahierer.toSigned",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Subtrahierer",
+      "target": "func:Subtrahierer.copyBits",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Multiplizierer",
+      "target": "func:Multiplizierer.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Multiplizierer",
+      "target": "func:Multiplizierer.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Multiplizierer",
+      "target": "func:Multiplizierer.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Multiplizierer",
+      "target": "func:Multiplizierer.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Multiplizierer",
+      "target": "func:Multiplizierer.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Multiplizierer",
+      "target": "func:Multiplizierer.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Multiplizierer",
+      "target": "func:Multiplizierer.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SubString",
+      "target": "func:SubString.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SubString",
+      "target": "func:SubString.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SubString",
+      "target": "func:SubString.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SubString",
+      "target": "func:SubString.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SubString",
+      "target": "func:SubString.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SubString",
+      "target": "func:SubString.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Length",
+      "target": "func:Length.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Length",
+      "target": "func:Length.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Length",
+      "target": "func:Length.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Length",
+      "target": "func:Length.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Length",
+      "target": "func:Length.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Length",
+      "target": "func:Length.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Concat",
+      "target": "func:Concat.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Concat",
+      "target": "func:Concat.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Concat",
+      "target": "func:Concat.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Concat",
+      "target": "func:Concat.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Concat",
+      "target": "func:Concat.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Concat",
+      "target": "func:Concat.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Visual",
+      "target": "class:javax.swing.JFrame",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Subtrahierer",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Multiplizierer",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:SubString",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Length",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Concat",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:ExpressionParser/Parser",
+      "target": "class:java.text.DecimalFormat",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:ExpressionParser/Parser",
+      "target": "class:java.util.ArrayList",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:ExpressionParser/Parser",
+      "target": "class:java.util.StringTokenizer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:ExpressionParser/Visual",
+      "target": "class:java.awt.Graphics",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:ExpressionParser/Visual",
+      "target": "class:java.awt.Paint",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:Subtrahierer",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:Multiplizierer",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:SubString",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:Length",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:Concat",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "func:Parser.setExpression",
+      "target": "func:Parser.tokensToVector",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.setExpression",
+      "target": "func:Parser.handleMinusOperator",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.setExpression",
+      "target": "func:Parser.klammere",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.setExpression",
+      "target": "func:Parser.optimize",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.setExpression",
+      "target": "func:Parser.getKlammerPlus",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.setExpression",
+      "target": "func:Parser.setErrorMessage",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.Parser",
+      "target": "func:Parser.setExpression",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.optimize",
+      "target": "func:Parser.isNum",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.optimize",
+      "target": "func:Parser.isString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.optimize",
+      "target": "func:Parser.isOP",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.optimize",
+      "target": "func:Parser.isFunc",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.optimize",
+      "target": "func:Parser.isKLAMMER",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.optimize",
+      "target": "func:Parser.setErrorMessage",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.calc",
+      "target": "func:Parser.calc",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.calc",
+      "target": "func:Parser.fakultaet",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.klammere",
+      "target": "func:Parser.sucheRechtsNachKlammer",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.klammere",
+      "target": "func:Parser.sucheLinksNachKlammer",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.klammere",
+      "target": "func:Parser.isFunc",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.klammere",
+      "target": "func:Parser.isNum",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.klammere",
+      "target": "func:Parser.isString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.setVariablen",
+      "target": "func:Parser.varExist",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.setVariablen",
+      "target": "func:Parser.getVarValue",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.setVariablen",
+      "target": "func:Parser.setErrorMessage",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.parseString",
+      "target": "func:Parser.setVariablen",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.parseString",
+      "target": "func:Parser.calc",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.addVar",
+      "target": "func:Var.Var",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.getVarValue",
+      "target": "func:Parser.getVar",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.varExist",
+      "target": "func:Parser.getVar",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.isOP",
+      "target": "func:Parser.isIn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.isKLAMMER",
+      "target": "func:Parser.isIn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Parser.isString",
+      "target": "func:Parser.isIn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Visual.jButton1ActionPerformed",
+      "target": "func:Parser.Parser",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Visual.paint",
+      "target": "func:Parser.clearVars",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Visual.paint",
+      "target": "func:Parser.addVar",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Visual.paint",
+      "target": "func:Parser.parseString",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Subtrahierer.init",
+      "target": "func:Subtrahierer.initPins",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Subtrahierer.process",
+      "target": "func:Subtrahierer.toSigned",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Subtrahierer.toSigned",
+      "target": "func:Subtrahierer.copyBits",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:Multiplizierer.process",
+      "target": "class:VSByte",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

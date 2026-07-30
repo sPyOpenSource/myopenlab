@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "id": "module:Documentations",
+      "type": "module",
+      "name": "Documentations",
+      "filePath": "Documentations",
+      "summary": "MyOpenLab Element directory for the Documentations element — contains metadata, descriptions in multiple languages, and an info manifest for the Education-category element.",
+      "tags": ["myopenlab", "element", "education", "documentation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:Documentations/definition.def",
+      "type": "config",
+      "name": "definition.def",
+      "filePath": "Documentations/definition.def",
+      "summary": "MyOpenLab element definition file declaring ISDIRECTORY=true, caption in DE/EN/ES, icon reference (icon32.png), and VM_DIR_EDITABLE=true.",
+      "tags": ["myopenlab", "element-definition", "config", "metadata"],
+      "complexity": "simple",
+      "properties": {
+        "ISDIRECTORY": "TRUE",
+        "CAPTION": "11111111111",
+        "CAPTION_EN": "11111111111111111",
+        "CAPTION_ES": "111111111111111111111",
+        "ICON": "icon32.png",
+        "VM_DIR_EDITABLE": "TRUE"
+      }
+    },
+    {
+      "id": "config:Documentations/info.xml",
+      "type": "config",
+      "name": "info.xml",
+      "filePath": "Documentations/info.xml",
+      "summary": "XML element manifest for Documentations — declares caption, category (Education), author, version 1.0.0.0, date 03.10.2016, and destination path.",
+      "tags": ["myopenlab", "element-manifest", "xml", "metadata", "education"],
+      "complexity": "simple",
+      "properties": {
+        "caption": "Documentations",
+        "caption_en": "Documentations",
+        "caption_es": "Documentations",
+        "categorie": "Education",
+        "version": "1.0.0.0",
+        "date": "03.10.2016",
+        "type": "Documentations"
+      }
+    },
+    {
+      "id": "document:Documentations/description_de.html",
+      "type": "document",
+      "name": "description_de.html",
+      "filePath": "Documentations/description_de.html",
+      "summary": "German description for the Documentations element (placeholder content).",
+      "tags": ["myopenlab", "description", "german", "placeholder"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:Documentations/description_en.html",
+      "type": "document",
+      "name": "description_en.html",
+      "filePath": "Documentations/description_en.html",
+      "summary": "English description for the Documentations element (placeholder content).",
+      "tags": ["myopenlab", "description", "english", "placeholder"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:Documentations/description_es.html",
+      "type": "document",
+      "name": "description_es.html",
+      "filePath": "Documentations/description_es.html",
+      "summary": "Spanish description for the Documentations element (placeholder content).",
+      "tags": ["myopenlab", "description", "spanish", "placeholder"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module:Documentations",
+      "target": "config:Documentations/definition.def",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:Documentations",
+      "target": "config:Documentations/info.xml",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:Documentations",
+      "target": "document:Documentations/description_de.html",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:Documentations",
+      "target": "document:Documentations/description_en.html",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:Documentations",
+      "target": "document:Documentations/description_es.html",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "config:Documentations/definition.def",
+      "target": "module:Documentations",
+      "type": "configures",
+      "weight": 0.6
+    },
+    {
+      "source": "config:Documentations/info.xml",
+      "target": "module:Documentations",
+      "type": "configures",
+      "weight": 0.6
+    },
+    {
+      "source": "document:Documentations/description_de.html",
+      "target": "module:Documentations",
+      "type": "documents",
+      "weight": 0.5
+    },
+    {
+      "source": "document:Documentations/description_en.html",
+      "target": "module:Documentations",
+      "type": "documents",
+      "weight": 0.5
+    },
+    {
+      "source": "document:Documentations/description_es.html",
+      "target": "module:Documentations",
+      "type": "documents",
+      "weight": 0.5
+    }
+  ]
+}

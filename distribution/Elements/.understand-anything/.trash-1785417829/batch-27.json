@@ -1,0 +1,6031 @@
+{
+  "nodes": [
+    {
+      "id": "file:///VirtualMachines/VisualLogicElemente/src/CorelDraw.java",
+      "type": "file",
+      "name": "CorelDraw.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogicElemente/src/CorelDraw.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogicElemente.CorelDraw",
+      "type": "class",
+      "name": "CorelDraw",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogicElemente/src/Token.java",
+      "type": "file",
+      "name": "Token.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogicElemente/src/Token.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogicElemente.Token",
+      "type": "class",
+      "name": "Token",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogicElemente/src/VM_Element.java",
+      "type": "file",
+      "name": "VM_Element.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogicElemente/src/VM_Element.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogicElemente.VM_Element",
+      "type": "class",
+      "name": "VM_Element",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogicElemente/src/XMLParser.java",
+      "type": "file",
+      "name": "XMLParser.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogicElemente/src/XMLParser.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogicElemente.XMLParser",
+      "type": "class",
+      "name": "XMLParser",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogicElements/src/CorelDraw.java",
+      "type": "file",
+      "name": "CorelDraw.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogicElements/src/CorelDraw.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogicElements.CorelDraw",
+      "type": "class",
+      "name": "CorelDraw",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogicElements/src/element.java",
+      "type": "file",
+      "name": "element.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogicElements/src/element.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogicElements.element",
+      "type": "class",
+      "name": "element",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogicElements/src/Loader.java",
+      "type": "file",
+      "name": "Loader.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogicElements/src/Loader.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogicElements.Loader",
+      "type": "class",
+      "name": "Loader",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogicElements/src/Token.java",
+      "type": "file",
+      "name": "Token.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogicElements/src/Token.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogicElements.Token",
+      "type": "class",
+      "name": "Token",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogicElements/src/VM_Element.java",
+      "type": "file",
+      "name": "VM_Element.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogicElements/src/VM_Element.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "type": "class",
+      "name": "VM_Element",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogicElements/src/XMLParser.java",
+      "type": "file",
+      "name": "XMLParser.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogicElements/src/XMLParser.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogicElements.XMLParser",
+      "type": "class",
+      "name": "XMLParser",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogic/src/FlowChart.java",
+      "type": "file",
+      "name": "FlowChart.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogic/src/FlowChart.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogic.FlowChart",
+      "type": "class",
+      "name": "FlowChart",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogic/src/VisualLogic.java",
+      "type": "file",
+      "name": "VisualLogic.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogic/src/VisualLogic.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "type": "class",
+      "name": "VisualLogic",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogic/src/VisualSetupManager.java",
+      "type": "file",
+      "name": "VisualSetupManager.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogic/src/VisualSetupManager.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogic.VisualSetupManager",
+      "type": "class",
+      "name": "VisualSetupManager",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogic2/src/VisualLogic2.java",
+      "type": "file",
+      "name": "VisualLogic2.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogic2/src/VisualLogic2.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "type": "class",
+      "name": "VisualLogic2",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogic2/src/VisualLogicSetupManager.java",
+      "type": "file",
+      "name": "VisualLogicSetupManager.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogic2/src/VisualLogicSetupManager.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogic2.VisualLogicSetupManager",
+      "type": "class",
+      "name": "VisualLogicSetupManager",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogic3/src/VisualLogic3.java",
+      "type": "file",
+      "name": "VisualLogic3.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogic3/src/VisualLogic3.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "type": "class",
+      "name": "VisualLogic3",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogic3/src/VisualLogicSetupManager.java",
+      "type": "file",
+      "name": "VisualLogicSetupManager.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogic3/src/VisualLogicSetupManager.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogic3.VisualLogicSetupManager",
+      "type": "class",
+      "name": "VisualLogicSetupManager",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogic3/src/VisualLogicElement.java",
+      "type": "file",
+      "name": "VisualLogicElement.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogic3/src/VisualLogicElement.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "type": "class",
+      "name": "VisualLogicElement",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogic4/src/VisualLogic4.java",
+      "type": "file",
+      "name": "VisualLogic4.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogic4/src/VisualLogic4.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "type": "class",
+      "name": "VisualLogic4",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogic4/src/VisualLogicSetupManager.java",
+      "type": "file",
+      "name": "VisualLogicSetupManager.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogic4/src/VisualLogicSetupManager.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogic4.VisualLogicSetupManager",
+      "type": "class",
+      "name": "VisualLogicSetupManager",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogic4/src/VisualLogicElement.java",
+      "type": "file",
+      "name": "VisualLogicElement.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogic4/src/VisualLogicElement.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "type": "class",
+      "name": "VisualLogicElement",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogic5/src/VisualLogic5.java",
+      "type": "file",
+      "name": "VisualLogic5.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogic5/src/VisualLogic5.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "type": "class",
+      "name": "VisualLogic5",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogic5/src/VisualLogicSetupManager.java",
+      "type": "file",
+      "name": "VisualLogicSetupManager.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogic5/src/VisualLogicSetupManager.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogic5.VisualLogicSetupManager",
+      "type": "class",
+      "name": "VisualLogicSetupManager",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogic5/src/VisualLogicElement.java",
+      "type": "file",
+      "name": "VisualLogicElement.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogic5/src/VisualLogicElement.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "type": "class",
+      "name": "VisualLogicElement",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///VirtualMachines/VisualLogic6/src/VisualLogic6.java",
+      "type": "file",
+      "name": "VisualLogic6.java",
+      "properties": {
+        "path": "VirtualMachines/VisualLogic6/src/VisualLogic6.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "type": "class",
+      "name": "VisualLogic6",
+      "properties": {
+        "visibility": "public",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.CorelDraw.drawRoundRect",
+      "type": "function",
+      "name": "drawRoundRect",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.CorelDraw.drawLine",
+      "type": "function",
+      "name": "drawLine",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.CorelDraw.drawString",
+      "type": "function",
+      "name": "drawString",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.CorelDraw.setColor",
+      "type": "function",
+      "name": "setColor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.CorelDraw.setStroke",
+      "type": "function",
+      "name": "setStroke",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.CorelDraw.drawImage",
+      "type": "function",
+      "name": "drawImage",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.CorelDraw.fillRect",
+      "type": "function",
+      "name": "fillRect",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.CorelDraw.drawRoundRect",
+      "type": "function",
+      "name": "drawRoundRect",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.CorelDraw.drawLine",
+      "type": "function",
+      "name": "drawLine",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.CorelDraw.drawString",
+      "type": "function",
+      "name": "drawString",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.CorelDraw.setColor",
+      "type": "function",
+      "name": "setColor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.CorelDraw.setStroke",
+      "type": "function",
+      "name": "setStroke",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.CorelDraw.drawImage",
+      "type": "function",
+      "name": "drawImage",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.CorelDraw.fillRect",
+      "type": "function",
+      "name": "fillRect",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.Token.getTag",
+      "type": "function",
+      "name": "getTag",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.Token.getValue",
+      "type": "function",
+      "name": "getValue",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.Token.getType",
+      "type": "function",
+      "name": "getType",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.Token.setTag",
+      "type": "function",
+      "name": "setTag",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.Token.setValue",
+      "type": "function",
+      "name": "setValue",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.Token.getTag",
+      "type": "function",
+      "name": "getTag",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.Token.getValue",
+      "type": "function",
+      "name": "getValue",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.Token.getType",
+      "type": "function",
+      "name": "getType",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.Token.setTag",
+      "type": "function",
+      "name": "setTag",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.Token.setValue",
+      "type": "function",
+      "name": "setValue",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.VM_Element.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.VM_Element.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.VM_Element.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.VM_Element.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.VM_Element.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.VM_Element.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.VM_Element.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.VM_Element.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.VM_Element.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.VM_Element.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.VM_Element.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.VM_Element.resetValues",
+      "type": "function",
+      "name": "resetValues",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.VM_Element.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.VM_Element.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.VM_Element.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.VM_Element.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.VM_Element.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.VM_Element.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.VM_Element.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.VM_Element.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.VM_Element.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.VM_Element.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.VM_Element.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.VM_Element.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.VM_Element.resetValues",
+      "type": "function",
+      "name": "resetValues",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.VM_Element.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.XMLParser.parse",
+      "type": "function",
+      "name": "parse",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Object",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.XMLParser.getDocument",
+      "type": "function",
+      "name": "getDocument",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Object",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.XMLParser.getRootElement",
+      "type": "function",
+      "name": "getRootElement",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Object",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.XMLParser.getElementByName",
+      "type": "function",
+      "name": "getElementByName",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Object",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.XMLParser.getAttribute",
+      "type": "function",
+      "name": "getAttribute",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Object",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElemente.XMLParser.getTextContent",
+      "type": "function",
+      "name": "getTextContent",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Object",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.XMLParser.parse",
+      "type": "function",
+      "name": "parse",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Object",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.XMLParser.getDocument",
+      "type": "function",
+      "name": "getDocument",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Object",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.XMLParser.getRootElement",
+      "type": "function",
+      "name": "getRootElement",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Object",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.XMLParser.getElementByName",
+      "type": "function",
+      "name": "getElementByName",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Object",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.XMLParser.getAttribute",
+      "type": "function",
+      "name": "getAttribute",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Object",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.XMLParser.getTextContent",
+      "type": "function",
+      "name": "getTextContent",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Object",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.resetValues",
+      "type": "function",
+      "name": "resetValues",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.destElementCalled",
+      "type": "function",
+      "name": "destElementCalled",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.elementActionPerformed",
+      "type": "function",
+      "name": "elementActionPerformed",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.mousePressed",
+      "type": "function",
+      "name": "mousePressed",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.mouseReleased",
+      "type": "function",
+      "name": "mouseReleased",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.mouseDragged",
+      "type": "function",
+      "name": "mouseDragged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.element.mouseMoved",
+      "type": "function",
+      "name": "mouseMoved",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.Loader.ladeClasse",
+      "type": "function",
+      "name": "ladeClasse",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Object",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogicElements.Loader.ladeClasseDriver",
+      "type": "function",
+      "name": "ladeClasseDriver",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Object",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.xOnInit",
+      "type": "function",
+      "name": "xOnInit",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.destElementCalled",
+      "type": "function",
+      "name": "destElementCalled",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.getVMFilename",
+      "type": "function",
+      "name": "getVMFilename",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.beforeInit",
+      "type": "function",
+      "name": "beforeInit",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.pause",
+      "type": "function",
+      "name": "pause",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.returnFromMethod",
+      "type": "function",
+      "name": "returnFromMethod",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.processMethod",
+      "type": "function",
+      "name": "processMethod",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.processClock",
+      "type": "function",
+      "name": "processClock",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.elementActionPerformed",
+      "type": "function",
+      "name": "elementActionPerformed",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.mouseDragged",
+      "type": "function",
+      "name": "mouseDragged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.mousePressed",
+      "type": "function",
+      "name": "mousePressed",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.mouseReleased",
+      "type": "function",
+      "name": "mouseReleased",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.mouseMoved",
+      "type": "function",
+      "name": "mouseMoved",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.openPropertyDialog",
+      "type": "function",
+      "name": "openPropertyDialog",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.setSize",
+      "type": "function",
+      "name": "setSize",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.changePin",
+      "type": "function",
+      "name": "changePin",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.checkPinDataType",
+      "type": "function",
+      "name": "checkPinDataType",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.resetValues",
+      "type": "function",
+      "name": "resetValues",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.initPins",
+      "type": "function",
+      "name": "initPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.initPinVisibility",
+      "type": "function",
+      "name": "initPinVisibility",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.setPin",
+      "type": "function",
+      "name": "setPin",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.onChangeElement",
+      "type": "function",
+      "name": "onChangeElement",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualLogic.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.FlowChart.execute",
+      "type": "function",
+      "name": "execute",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.FlowChart.evaluate",
+      "type": "function",
+      "name": "evaluate",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.FlowChart.getFlowChart",
+      "type": "function",
+      "name": "getFlowChart",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.FlowChart.setFlowChart",
+      "type": "function",
+      "name": "setFlowChart",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.FlowChart.nextStep",
+      "type": "function",
+      "name": "nextStep",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.FlowChart.run",
+      "type": "function",
+      "name": "run",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualSetupManager.setupUI",
+      "type": "function",
+      "name": "setupUI",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualSetupManager.getVersion",
+      "type": "function",
+      "name": "getVersion",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualSetupManager.initComponents",
+      "type": "function",
+      "name": "initComponents",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic.VisualSetupManager.setupPanel",
+      "type": "function",
+      "name": "setupPanel",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.xOnInit",
+      "type": "function",
+      "name": "xOnInit",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.destElementCalled",
+      "type": "function",
+      "name": "destElementCalled",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.getVMFilename",
+      "type": "function",
+      "name": "getVMFilename",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.beforeInit",
+      "type": "function",
+      "name": "beforeInit",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.pause",
+      "type": "function",
+      "name": "pause",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.returnFromMethod",
+      "type": "function",
+      "name": "returnFromMethod",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.processMethod",
+      "type": "function",
+      "name": "processMethod",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.processClock",
+      "type": "function",
+      "name": "processClock",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.elementActionPerformed",
+      "type": "function",
+      "name": "elementActionPerformed",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.openPropertyDialog",
+      "type": "function",
+      "name": "openPropertyDialog",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.setSize",
+      "type": "function",
+      "name": "setSize",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.changePin",
+      "type": "function",
+      "name": "changePin",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.checkPinDataType",
+      "type": "function",
+      "name": "checkPinDataType",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.resetValues",
+      "type": "function",
+      "name": "resetValues",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.initPins",
+      "type": "function",
+      "name": "initPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogic2.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogicSetupManager.setupUI",
+      "type": "function",
+      "name": "setupUI",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogicSetupManager.getVersion",
+      "type": "function",
+      "name": "getVersion",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic2.VisualLogicSetupManager.initComponents",
+      "type": "function",
+      "name": "initComponents",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.xOnInit",
+      "type": "function",
+      "name": "xOnInit",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.destElementCalled",
+      "type": "function",
+      "name": "destElementCalled",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.getVMFilename",
+      "type": "function",
+      "name": "getVMFilename",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.beforeInit",
+      "type": "function",
+      "name": "beforeInit",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.pause",
+      "type": "function",
+      "name": "pause",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.returnFromMethod",
+      "type": "function",
+      "name": "returnFromMethod",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.processMethod",
+      "type": "function",
+      "name": "processMethod",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.processClock",
+      "type": "function",
+      "name": "processClock",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.elementActionPerformed",
+      "type": "function",
+      "name": "elementActionPerformed",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.openPropertyDialog",
+      "type": "function",
+      "name": "openPropertyDialog",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.setSize",
+      "type": "function",
+      "name": "setSize",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.changePin",
+      "type": "function",
+      "name": "changePin",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.checkPinDataType",
+      "type": "function",
+      "name": "checkPinDataType",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.resetValues",
+      "type": "function",
+      "name": "resetValues",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.initPins",
+      "type": "function",
+      "name": "initPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogic3.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicSetupManager.setupUI",
+      "type": "function",
+      "name": "setupUI",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicSetupManager.getVersion",
+      "type": "function",
+      "name": "getVersion",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicSetupManager.initComponents",
+      "type": "function",
+      "name": "initComponents",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicElement.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicElement.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicElement.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicElement.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicElement.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicElement.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicElement.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicElement.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicElement.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicElement.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicElement.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicElement.resetValues",
+      "type": "function",
+      "name": "resetValues",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic3.VisualLogicElement.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.xOnInit",
+      "type": "function",
+      "name": "xOnInit",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.destElementCalled",
+      "type": "function",
+      "name": "destElementCalled",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.getVMFilename",
+      "type": "function",
+      "name": "getVMFilename",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.beforeInit",
+      "type": "function",
+      "name": "beforeInit",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.pause",
+      "type": "function",
+      "name": "pause",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.returnFromMethod",
+      "type": "function",
+      "name": "returnFromMethod",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.processMethod",
+      "type": "function",
+      "name": "processMethod",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.processClock",
+      "type": "function",
+      "name": "processClock",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.elementActionPerformed",
+      "type": "function",
+      "name": "elementActionPerformed",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.openPropertyDialog",
+      "type": "function",
+      "name": "openPropertyDialog",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.setSize",
+      "type": "function",
+      "name": "setSize",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.changePin",
+      "type": "function",
+      "name": "changePin",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.checkPinDataType",
+      "type": "function",
+      "name": "checkPinDataType",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.resetValues",
+      "type": "function",
+      "name": "resetValues",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.initPins",
+      "type": "function",
+      "name": "initPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogic4.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicSetupManager.setupUI",
+      "type": "function",
+      "name": "setupUI",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicSetupManager.getVersion",
+      "type": "function",
+      "name": "getVersion",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicSetupManager.initComponents",
+      "type": "function",
+      "name": "initComponents",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicElement.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicElement.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicElement.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicElement.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicElement.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicElement.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicElement.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicElement.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicElement.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicElement.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicElement.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicElement.resetValues",
+      "type": "function",
+      "name": "resetValues",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic4.VisualLogicElement.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.xOnInit",
+      "type": "function",
+      "name": "xOnInit",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.destElementCalled",
+      "type": "function",
+      "name": "destElementCalled",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.getVMFilename",
+      "type": "function",
+      "name": "getVMFilename",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.beforeInit",
+      "type": "function",
+      "name": "beforeInit",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.pause",
+      "type": "function",
+      "name": "pause",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.returnFromMethod",
+      "type": "function",
+      "name": "returnFromMethod",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.processMethod",
+      "type": "function",
+      "name": "processMethod",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.processClock",
+      "type": "function",
+      "name": "processClock",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.elementActionPerformed",
+      "type": "function",
+      "name": "elementActionPerformed",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.openPropertyDialog",
+      "type": "function",
+      "name": "openPropertyDialog",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.setSize",
+      "type": "function",
+      "name": "setSize",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.changePin",
+      "type": "function",
+      "name": "changePin",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.checkPinDataType",
+      "type": "function",
+      "name": "checkPinDataType",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.resetValues",
+      "type": "function",
+      "name": "resetValues",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.initPins",
+      "type": "function",
+      "name": "initPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogic5.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicSetupManager.setupUI",
+      "type": "function",
+      "name": "setupUI",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicSetupManager.getVersion",
+      "type": "function",
+      "name": "getVersion",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicSetupManager.initComponents",
+      "type": "function",
+      "name": "initComponents",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicElement.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicElement.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicElement.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicElement.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicElement.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicElement.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicElement.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicElement.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicElement.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicElement.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicElement.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicElement.resetValues",
+      "type": "function",
+      "name": "resetValues",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic5.VisualLogicElement.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.xOnInit",
+      "type": "function",
+      "name": "xOnInit",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.destElementCalled",
+      "type": "function",
+      "name": "destElementCalled",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.getVMFilename",
+      "type": "function",
+      "name": "getVMFilename",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.beforeInit",
+      "type": "function",
+      "name": "beforeInit",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.pause",
+      "type": "function",
+      "name": "pause",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.returnFromMethod",
+      "type": "function",
+      "name": "returnFromMethod",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.processMethod",
+      "type": "function",
+      "name": "processMethod",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.processClock",
+      "type": "function",
+      "name": "processClock",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.elementActionPerformed",
+      "type": "function",
+      "name": "elementActionPerformed",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.openPropertyDialog",
+      "type": "function",
+      "name": "openPropertyDialog",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.setSize",
+      "type": "function",
+      "name": "setSize",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.changePin",
+      "type": "function",
+      "name": "changePin",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.checkPinDataType",
+      "type": "function",
+      "name": "checkPinDataType",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.resetValues",
+      "type": "function",
+      "name": "resetValues",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.initPins",
+      "type": "function",
+      "name": "initPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "function:VirtualMachines.VisualLogic6.VisualLogic6.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "status": "not_found"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:///VirtualMachines/VisualLogicElemente/src/CorelDraw.java",
+      "target": "class:VirtualMachines.VisualLogicElemente.CorelDraw",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogicElemente/src/Token.java",
+      "target": "class:VirtualMachines.VisualLogicElemente.Token",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogicElemente/src/VM_Element.java",
+      "target": "class:VirtualMachines.VisualLogicElemente.VM_Element",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogicElemente/src/XMLParser.java",
+      "target": "class:VirtualMachines.VisualLogicElemente.XMLParser",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogicElements/src/CorelDraw.java",
+      "target": "class:VirtualMachines.VisualLogicElements.CorelDraw",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogicElements/src/element.java",
+      "target": "class:VirtualMachines.VisualLogicElements.element",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogicElements/src/Loader.java",
+      "target": "class:VirtualMachines.VisualLogicElements.Loader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogicElements/src/Token.java",
+      "target": "class:VirtualMachines.VisualLogicElements.Token",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogicElements/src/VM_Element.java",
+      "target": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogicElements/src/XMLParser.java",
+      "target": "class:VirtualMachines.VisualLogicElements.XMLParser",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic/src/FlowChart.java",
+      "target": "class:VirtualMachines.VisualLogic.FlowChart",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic/src/VisualLogic.java",
+      "target": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic/src/VisualSetupManager.java",
+      "target": "class:VirtualMachines.VisualLogic.VisualSetupManager",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic2/src/VisualLogic2.java",
+      "target": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic2/src/VisualLogicSetupManager.java",
+      "target": "class:VirtualMachines.VisualLogic2.VisualLogicSetupManager",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic3/src/VisualLogic3.java",
+      "target": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic3/src/VisualLogicSetupManager.java",
+      "target": "class:VirtualMachines.VisualLogic3.VisualLogicSetupManager",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic3/src/VisualLogicElement.java",
+      "target": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic4/src/VisualLogic4.java",
+      "target": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic4/src/VisualLogicSetupManager.java",
+      "target": "class:VirtualMachines.VisualLogic4.VisualLogicSetupManager",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic4/src/VisualLogicElement.java",
+      "target": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic5/src/VisualLogic5.java",
+      "target": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic5/src/VisualLogicSetupManager.java",
+      "target": "class:VirtualMachines.VisualLogic5.VisualLogicSetupManager",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic5/src/VisualLogicElement.java",
+      "target": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic6/src/VisualLogic6.java",
+      "target": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.CorelDraw",
+      "target": "function:VirtualMachines.VisualLogicElemente.CorelDraw.drawRoundRect",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.CorelDraw",
+      "target": "function:VirtualMachines.VisualLogicElemente.CorelDraw.drawLine",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.CorelDraw",
+      "target": "function:VirtualMachines.VisualLogicElemente.CorelDraw.drawString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.CorelDraw",
+      "target": "function:VirtualMachines.VisualLogicElemente.CorelDraw.setColor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.CorelDraw",
+      "target": "function:VirtualMachines.VisualLogicElemente.CorelDraw.setStroke",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.CorelDraw",
+      "target": "function:VirtualMachines.VisualLogicElemente.CorelDraw.drawImage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.CorelDraw",
+      "target": "function:VirtualMachines.VisualLogicElemente.CorelDraw.fillRect",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.CorelDraw",
+      "target": "function:VirtualMachines.VisualLogicElements.CorelDraw.drawRoundRect",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.CorelDraw",
+      "target": "function:VirtualMachines.VisualLogicElements.CorelDraw.drawLine",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.CorelDraw",
+      "target": "function:VirtualMachines.VisualLogicElements.CorelDraw.drawString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.CorelDraw",
+      "target": "function:VirtualMachines.VisualLogicElements.CorelDraw.setColor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.CorelDraw",
+      "target": "function:VirtualMachines.VisualLogicElements.CorelDraw.setStroke",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.CorelDraw",
+      "target": "function:VirtualMachines.VisualLogicElements.CorelDraw.drawImage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.CorelDraw",
+      "target": "function:VirtualMachines.VisualLogicElements.CorelDraw.fillRect",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.Token",
+      "target": "function:VirtualMachines.VisualLogicElemente.Token.getTag",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.Token",
+      "target": "function:VirtualMachines.VisualLogicElemente.Token.getValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.Token",
+      "target": "function:VirtualMachines.VisualLogicElemente.Token.getType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.Token",
+      "target": "function:VirtualMachines.VisualLogicElemente.Token.setTag",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.Token",
+      "target": "function:VirtualMachines.VisualLogicElemente.Token.setValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.Token",
+      "target": "function:VirtualMachines.VisualLogicElements.Token.getTag",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.Token",
+      "target": "function:VirtualMachines.VisualLogicElements.Token.getValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.Token",
+      "target": "function:VirtualMachines.VisualLogicElements.Token.getType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.Token",
+      "target": "function:VirtualMachines.VisualLogicElements.Token.setTag",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.Token",
+      "target": "function:VirtualMachines.VisualLogicElements.Token.setValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElemente.VM_Element.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElemente.VM_Element.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElemente.VM_Element.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElemente.VM_Element.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElemente.VM_Element.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElemente.VM_Element.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElemente.VM_Element.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElemente.VM_Element.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElemente.VM_Element.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElemente.VM_Element.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElemente.VM_Element.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElemente.VM_Element.resetValues",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElemente.VM_Element.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElements.VM_Element.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElements.VM_Element.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElements.VM_Element.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElements.VM_Element.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElements.VM_Element.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElements.VM_Element.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElements.VM_Element.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElements.VM_Element.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElements.VM_Element.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElements.VM_Element.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElements.VM_Element.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElements.VM_Element.resetValues",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "target": "function:VirtualMachines.VisualLogicElements.VM_Element.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.XMLParser",
+      "target": "function:VirtualMachines.VisualLogicElemente.XMLParser.parse",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.XMLParser",
+      "target": "function:VirtualMachines.VisualLogicElemente.XMLParser.getDocument",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.XMLParser",
+      "target": "function:VirtualMachines.VisualLogicElemente.XMLParser.getRootElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.XMLParser",
+      "target": "function:VirtualMachines.VisualLogicElemente.XMLParser.getElementByName",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.XMLParser",
+      "target": "function:VirtualMachines.VisualLogicElemente.XMLParser.getAttribute",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElemente.XMLParser",
+      "target": "function:VirtualMachines.VisualLogicElemente.XMLParser.getTextContent",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.XMLParser",
+      "target": "function:VirtualMachines.VisualLogicElements.XMLParser.parse",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.XMLParser",
+      "target": "function:VirtualMachines.VisualLogicElements.XMLParser.getDocument",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.XMLParser",
+      "target": "function:VirtualMachines.VisualLogicElements.XMLParser.getRootElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.XMLParser",
+      "target": "function:VirtualMachines.VisualLogicElements.XMLParser.getElementByName",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.XMLParser",
+      "target": "function:VirtualMachines.VisualLogicElements.XMLParser.getAttribute",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.XMLParser",
+      "target": "function:VirtualMachines.VisualLogicElements.XMLParser.getTextContent",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.resetValues",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.destElementCalled",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.elementActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.mousePressed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.mouseReleased",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.mouseDragged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.element",
+      "target": "function:VirtualMachines.VisualLogicElements.element.mouseMoved",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.Loader",
+      "target": "function:VirtualMachines.VisualLogicElements.Loader.ladeClasse",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.Loader",
+      "target": "function:VirtualMachines.VisualLogicElements.Loader.ladeClasseDriver",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.xOnInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.destElementCalled",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.getVMFilename",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.beforeInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.pause",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.returnFromMethod",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.processMethod",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.processClock",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.elementActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.mouseDragged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.mousePressed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.mouseReleased",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.mouseMoved",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.openPropertyDialog",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.setSize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.changePin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.resetValues",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.initPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.initPinVisibility",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.setPin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.onChangeElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "function:VirtualMachines.VisualLogic.VisualLogic.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.FlowChart",
+      "target": "function:VirtualMachines.VisualLogic.FlowChart.execute",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.FlowChart",
+      "target": "function:VirtualMachines.VisualLogic.FlowChart.evaluate",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.FlowChart",
+      "target": "function:VirtualMachines.VisualLogic.FlowChart.getFlowChart",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.FlowChart",
+      "target": "function:VirtualMachines.VisualLogic.FlowChart.setFlowChart",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.FlowChart",
+      "target": "function:VirtualMachines.VisualLogic.FlowChart.nextStep",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.FlowChart",
+      "target": "function:VirtualMachines.VisualLogic.FlowChart.run",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualSetupManager",
+      "target": "function:VirtualMachines.VisualLogic.VisualSetupManager.setupUI",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualSetupManager",
+      "target": "function:VirtualMachines.VisualLogic.VisualSetupManager.getVersion",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualSetupManager",
+      "target": "function:VirtualMachines.VisualLogic.VisualSetupManager.initComponents",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualSetupManager",
+      "target": "function:VirtualMachines.VisualLogic.VisualSetupManager.setupPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.xOnInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.destElementCalled",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.getVMFilename",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.beforeInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.pause",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.returnFromMethod",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.processMethod",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.processClock",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.elementActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.openPropertyDialog",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.setSize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.changePin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.resetValues",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.initPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogic2.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogicSetupManager",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogicSetupManager.setupUI",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogicSetupManager",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogicSetupManager.getVersion",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogicSetupManager",
+      "target": "function:VirtualMachines.VisualLogic2.VisualLogicSetupManager.initComponents",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.xOnInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.destElementCalled",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.getVMFilename",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.beforeInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.pause",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.returnFromMethod",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.processMethod",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.processClock",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.elementActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.openPropertyDialog",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.setSize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.changePin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.resetValues",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.initPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogic3.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicSetupManager",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicSetupManager.setupUI",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicSetupManager",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicSetupManager.getVersion",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicSetupManager",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicSetupManager.initComponents",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicElement.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicElement.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicElement.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicElement.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicElement.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicElement.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicElement.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicElement.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicElement.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicElement.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicElement.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicElement.resetValues",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic3.VisualLogicElement.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.xOnInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.destElementCalled",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.getVMFilename",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.beforeInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.pause",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.returnFromMethod",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.processMethod",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.processClock",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.elementActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.openPropertyDialog",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.setSize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.changePin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.resetValues",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.initPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogic4.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicSetupManager",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicSetupManager.setupUI",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicSetupManager",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicSetupManager.getVersion",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicSetupManager",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicSetupManager.initComponents",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicElement.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicElement.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicElement.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicElement.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicElement.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicElement.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicElement.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicElement.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicElement.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicElement.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicElement.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicElement.resetValues",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic4.VisualLogicElement.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.xOnInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.destElementCalled",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.getVMFilename",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.beforeInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.pause",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.returnFromMethod",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.processMethod",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.processClock",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.elementActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.openPropertyDialog",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.setSize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.changePin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.resetValues",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.initPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogic5.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicSetupManager",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicSetupManager.setupUI",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicSetupManager",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicSetupManager.getVersion",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicSetupManager",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicSetupManager.initComponents",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicElement.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicElement.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicElement.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicElement.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicElement.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicElement.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicElement.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicElement.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicElement.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicElement.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicElement.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicElement.resetValues",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "target": "function:VirtualMachines.VisualLogic5.VisualLogicElement.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.xOnInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.destElementCalled",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.getVMFilename",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.beforeInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.pause",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.returnFromMethod",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.processMethod",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.processClock",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.elementActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.openPropertyDialog",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.setSize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.changePin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.resetValues",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.initPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "function:VirtualMachines.VisualLogic6.VisualLogic6.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogicElements/src/VM_Element.java",
+      "target": "file:///VirtualMachines/VisualLogicElemente/src/VM_Element.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic/src/VisualLogic.java",
+      "target": "file:///VirtualMachines/VisualLogicElements/src/element.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic/src/VisualLogic.java",
+      "target": "file:///VirtualMachines/VisualLogicElements/src/Loader.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic2/src/VisualLogic2.java",
+      "target": "file:///VirtualMachines/VisualLogic/src/VisualLogic.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic3/src/VisualLogic3.java",
+      "target": "file:///VirtualMachines/VisualLogic2/src/VisualLogic2.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic4/src/VisualLogic4.java",
+      "target": "file:///VirtualMachines/VisualLogic3/src/VisualLogic3.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic5/src/VisualLogic5.java",
+      "target": "file:///VirtualMachines/VisualLogic4/src/VisualLogic4.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic6/src/VisualLogic6.java",
+      "target": "file:///VirtualMachines/VisualLogic5/src/VisualLogic5.java",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicElement",
+      "target": "class:VirtualMachines.VisualLogicElements.element",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicElement",
+      "target": "class:VirtualMachines.VisualLogicElements.element",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicElement",
+      "target": "class:VirtualMachines.VisualLogicElements.element",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic6.VisualLogic6",
+      "target": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.VM_Element",
+      "target": "class:VirtualMachines.VisualLogicElements.element",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogicElements.XMLParser",
+      "target": "class:VirtualMachines.VisualLogicElements.CorelDraw",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.FlowChart",
+      "target": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "class:VirtualMachines.VisualLogicElements.Loader",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic.VisualLogic",
+      "target": "class:VirtualMachines.VisualLogic.VisualSetupManager",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic2.VisualLogic2",
+      "target": "class:VirtualMachines.VisualLogic2.VisualLogicSetupManager",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogic3",
+      "target": "class:VirtualMachines.VisualLogic3.VisualLogicSetupManager",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogic4",
+      "target": "class:VirtualMachines.VisualLogic4.VisualLogicSetupManager",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogic5",
+      "target": "class:VirtualMachines.VisualLogic5.VisualLogicSetupManager",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic3.VisualLogicSetupManager",
+      "target": "class:VirtualMachines.VisualLogic2.VisualLogicSetupManager",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic4.VisualLogicSetupManager",
+      "target": "class:VirtualMachines.VisualLogic3.VisualLogicSetupManager",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:VirtualMachines.VisualLogic5.VisualLogicSetupManager",
+      "target": "class:VirtualMachines.VisualLogic4.VisualLogicSetupManager",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:///VirtualMachines/VisualLogic2/src/VisualLogic2.java",
+      "target": "file:///VirtualMachines/VisualLogicElements/src/XMLParser.java",
+      "type": "imports",
+      "weight": 0.7
+    }
+  ],
+  "batchFiles": [
+    {
+      "path": "VirtualMachines/VisualLogicElemente/src/CorelDraw.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogicElemente/src/Token.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogicElemente/src/VM_Element.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogicElemente/src/XMLParser.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogicElements/src/CorelDraw.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogicElements/src/element.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogicElements/src/Loader.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogicElements/src/Token.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogicElements/src/VM_Element.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogicElements/src/XMLParser.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogic/src/FlowChart.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogic/src/VisualLogic.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogic/src/VisualSetupManager.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogic2/src/VisualLogic2.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogic2/src/VisualLogicSetupManager.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogic3/src/VisualLogic3.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogic3/src/VisualLogicSetupManager.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogic3/src/VisualLogicElement.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogic4/src/VisualLogic4.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogic4/src/VisualLogicSetupManager.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogic4/src/VisualLogicElement.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogic5/src/VisualLogic5.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogic5/src/VisualLogicSetupManager.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogic5/src/VisualLogicElement.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    },
+    {
+      "path": "VirtualMachines/VisualLogic6/src/VisualLogic6.java",
+      "language": "java",
+      "sizeLines": 0,
+      "fileCategory": "code",
+      "status": "not_found"
+    }
+  ]
+}

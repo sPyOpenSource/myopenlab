@@ -1,0 +1,468 @@
+{
+  "nodes": [
+    {
+      "id": "file:///CircuitElements/Numerik/addierer/Addierer.java",
+      "type": "file",
+      "name": "Addierer.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/addierer/Addierer.java",
+        "package": "Numerik.addierer",
+        "language": "java",
+        "loc": 241
+      }
+    },
+    {
+      "id": "class:Numerik.addierer.Addierer",
+      "type": "class",
+      "name": "Addierer",
+      "properties": { "visibility": "public", "superclass": "JVSMain" }
+    },
+    {
+      "id": "function:Numerik.addierer.Addierer.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["java.awt.Graphics g"] }
+    },
+    {
+      "id": "function:Numerik.addierer.Addierer.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.addierer.Addierer.init",
+      "type": "function",
+      "name": "init",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.addierer.Addierer.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.addierer.Addierer.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.addierer.Addierer.checkPinDataType",
+      "type": "function",
+      "name": "checkPinDataType",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.addierer.Addierer.process",
+      "type": "function",
+      "name": "process",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.addierer.Addierer.toUnsigned",
+      "type": "function",
+      "name": "toUnsigned",
+      "properties": { "visibility": "public", "returnType": "byte", "params": ["short value"], "static": true }
+    },
+    {
+      "id": "function:Numerik.addierer.Addierer.toSigned",
+      "type": "function",
+      "name": "toSigned",
+      "properties": { "visibility": "public", "returnType": "short", "params": ["byte value"], "static": true }
+    },
+    {
+      "id": "function:Numerik.addierer.Addierer.copyBits",
+      "type": "function",
+      "name": "copyBits",
+      "properties": { "visibility": "private", "returnType": "long", "params": ["long value", "byte bits"], "static": true }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/ByteConst/Const.java",
+      "type": "file",
+      "name": "Const.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/ByteConst/Const.java",
+        "package": "Numerik.ByteConst",
+        "language": "java",
+        "loc": 161
+      }
+    },
+    {
+      "id": "class:Numerik.ByteConst.Const",
+      "type": "class",
+      "name": "Const",
+      "properties": { "visibility": "public", "superclass": "JVSMain" }
+    },
+    {
+      "id": "function:Numerik.ByteConst.Const.constructor",
+      "type": "function",
+      "name": "Const",
+      "properties": { "visibility": "public", "returnType": "constructor" }
+    },
+    {
+      "id": "function:Numerik.ByteConst.Const.resizeWidth",
+      "type": "function",
+      "name": "resizeWidth",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.ByteConst.Const.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["java.awt.Graphics g"] }
+    },
+    {
+      "id": "function:Numerik.ByteConst.Const.init",
+      "type": "function",
+      "name": "init",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.ByteConst.Const.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.ByteConst.Const.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.ByteConst.Const.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.ByteConst.Const.localize",
+      "type": "function",
+      "name": "localize",
+      "properties": { "visibility": "private", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.ByteConst.Const.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["Object o"] }
+    },
+    {
+      "id": "function:Numerik.ByteConst.Const.start",
+      "type": "function",
+      "name": "start",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.ByteConst.Const.process",
+      "type": "function",
+      "name": "process",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.ByteConst.Const.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["java.io.FileInputStream fis"] }
+    },
+    {
+      "id": "function:Numerik.ByteConst.Const.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["java.io.FileOutputStream fos"] }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/ByteToInt/ByteToInt.java",
+      "type": "file",
+      "name": "ByteToInt.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/ByteToInt/ByteToInt.java",
+        "package": "Numerik.ByteToInt",
+        "language": "java",
+        "loc": 132
+      }
+    },
+    {
+      "id": "class:Numerik.ByteToInt.ByteToInt",
+      "type": "class",
+      "name": "ByteToInt",
+      "properties": { "visibility": "public", "superclass": "JVSMain" }
+    },
+    {
+      "id": "function:Numerik.ByteToInt.ByteToInt.xpaint",
+      "type": "function",
+      "name": "xpaint",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["java.awt.Graphics g"] }
+    },
+    {
+      "id": "function:Numerik.ByteToInt.ByteToInt.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.ByteToInt.ByteToInt.init",
+      "type": "function",
+      "name": "init",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.ByteToInt.ByteToInt.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.ByteToInt.ByteToInt.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:Numerik.ByteToInt.ByteToInt.toSigned",
+      "type": "function",
+      "name": "toSigned",
+      "properties": { "visibility": "public", "returnType": "short", "params": ["byte value"], "static": true }
+    },
+    {
+      "id": "function:Numerik.ByteToInt.ByteToInt.copyBits",
+      "type": "function",
+      "name": "copyBits",
+      "properties": { "visibility": "private", "returnType": "long", "params": ["long value", "byte bits"], "static": true }
+    },
+    {
+      "id": "function:Numerik.ByteToInt.ByteToInt.process",
+      "type": "function",
+      "name": "process",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/ByteToShort/ByteToShort.java",
+      "type": "file",
+      "name": "ByteToShort.java",
+      "properties": { "path": "CircuitElements/Numerik/ByteToShort/ByteToShort.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/ComplexConst/src/ComplexConst.java",
+      "type": "file",
+      "name": "ComplexConst.java",
+      "properties": { "path": "CircuitElements/Numerik/ComplexConst/src/ComplexConst.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/ConstString/ConstString.java",
+      "type": "file",
+      "name": "ConstString.java",
+      "properties": { "path": "CircuitElements/Numerik/ConstString/ConstString.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/DoubleConst/Const.java",
+      "type": "file",
+      "name": "Const.java",
+      "properties": { "path": "CircuitElements/Numerik/DoubleConst/Const.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/DoubleToInteger/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/Numerik/DoubleToInteger/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Filter/FilterElement.java",
+      "type": "file",
+      "name": "FilterElement.java",
+      "properties": { "path": "CircuitElements/Numerik/Filter/FilterElement.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/FloatConst/Const.java",
+      "type": "file",
+      "name": "Const.java",
+      "properties": { "path": "CircuitElements/Numerik/FloatConst/Const.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/IntConst/Const.java",
+      "type": "file",
+      "name": "Const.java",
+      "properties": { "path": "CircuitElements/Numerik/IntConst/Const.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/IntToDouble/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/Numerik/IntToDouble/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/IntToLong/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/Numerik/IntToLong/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/IntToShort/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/Numerik/IntToShort/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/LongConst/Const.java",
+      "type": "file",
+      "name": "Const.java",
+      "properties": { "path": "CircuitElements/Numerik/LongConst/Const.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/LongToInt/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/Numerik/LongToInt/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Math2/src/LogicCircuit.java",
+      "type": "file",
+      "name": "LogicCircuit.java",
+      "properties": { "path": "CircuitElements/Numerik/Math2/src/LogicCircuit.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Math2/src/LogicPanel.java",
+      "type": "file",
+      "name": "LogicPanel.java",
+      "properties": { "path": "CircuitElements/Numerik/Math2/src/LogicPanel.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Math2/src/Math2.java",
+      "type": "file",
+      "name": "Math2.java",
+      "properties": { "path": "CircuitElements/Numerik/Math2/src/Math2.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Multiplizierer_1_0/src/Multiplizierer.java",
+      "type": "file",
+      "name": "Multiplizierer.java",
+      "properties": { "path": "CircuitElements/Numerik/Multiplizierer_1_0/src/Multiplizierer.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Negation/src/Negation.java",
+      "type": "file",
+      "name": "Negation.java",
+      "properties": { "path": "CircuitElements/Numerik/Negation/src/Negation.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/NumericConst/Const.java",
+      "type": "file",
+      "name": "Const.java",
+      "properties": { "path": "CircuitElements/Numerik/NumericConst/Const.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Parser/ExpressionParser.java",
+      "type": "file",
+      "name": "ExpressionParser.java",
+      "properties": { "path": "CircuitElements/Numerik/Parser/ExpressionParser.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Funktionen.java",
+      "type": "file",
+      "name": "Funktionen.java",
+      "properties": { "path": "CircuitElements/Numerik/Parser/Math Calc2/src/ExpressionParser/Funktionen.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Node.java",
+      "type": "file",
+      "name": "Node.java",
+      "properties": { "path": "CircuitElements/Numerik/Parser/Math Calc2/src/ExpressionParser/Node.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "import:VisualLogic",
+      "type": "import",
+      "name": "VisualLogic",
+      "properties": { "package": "VisualLogic" }
+    },
+    {
+      "id": "import:VisualLogic.variables",
+      "type": "import",
+      "name": "VisualLogic.variables",
+      "properties": { "package": "VisualLogic.variables" }
+    },
+    {
+      "id": "import:tools",
+      "type": "import",
+      "name": "tools",
+      "properties": { "package": "tools" }
+    },
+    {
+      "id": "import:java.awt",
+      "type": "import",
+      "name": "java.awt",
+      "properties": { "package": "java.awt" }
+    },
+    {
+      "id": "import:java.awt.event",
+      "type": "import",
+      "name": "java.awt.event",
+      "properties": { "package": "java.awt.event" }
+    },
+    {
+      "id": "class:JVSMain",
+      "type": "class",
+      "name": "JVSMain",
+      "properties": { "visibility": "public", "superclass": null, "external": true }
+    }
+  ],
+  "edges": [
+    {"source": "file:///CircuitElements/Numerik/addierer/Addierer.java", "target": "class:Numerik.addierer.Addierer", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.addierer.Addierer", "target": "function:Numerik.addierer.Addierer.paint", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.addierer.Addierer", "target": "function:Numerik.addierer.Addierer.onDispose", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.addierer.Addierer", "target": "function:Numerik.addierer.Addierer.init", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.addierer.Addierer", "target": "function:Numerik.addierer.Addierer.initInputPins", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.addierer.Addierer", "target": "function:Numerik.addierer.Addierer.initOutputPins", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.addierer.Addierer", "target": "function:Numerik.addierer.Addierer.checkPinDataType", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.addierer.Addierer", "target": "function:Numerik.addierer.Addierer.process", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.addierer.Addierer", "target": "function:Numerik.addierer.Addierer.toUnsigned", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.addierer.Addierer", "target": "function:Numerik.addierer.Addierer.toSigned", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.addierer.Addierer", "target": "function:Numerik.addierer.Addierer.copyBits", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.addierer.Addierer", "target": "class:JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "file:///CircuitElements/Numerik/addierer/Addierer.java", "target": "import:VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/addierer/Addierer.java", "target": "import:VisualLogic.variables", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/addierer/Addierer.java", "target": "import:tools", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/addierer/Addierer.java", "target": "import:java.awt", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/addierer/Addierer.java", "target": "import:java.awt.event", "type": "imports", "weight": 0.7},
+    {"source": "function:Numerik.addierer.Addierer.process", "target": "function:Numerik.addierer.Addierer.toSigned", "type": "calls", "weight": 0.8},
+    {"source": "function:Numerik.addierer.Addierer.process", "target": "function:Numerik.addierer.Addierer.toUnsigned", "type": "calls", "weight": 0.8},
+    {"source": "function:Numerik.addierer.Addierer.toSigned", "target": "function:Numerik.addierer.Addierer.copyBits", "type": "calls", "weight": 0.8},
+    {"source": "file:///CircuitElements/Numerik/ByteConst/Const.java", "target": "class:Numerik.ByteConst.Const", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteConst.Const", "target": "function:Numerik.ByteConst.Const.constructor", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteConst.Const", "target": "function:Numerik.ByteConst.Const.resizeWidth", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteConst.Const", "target": "function:Numerik.ByteConst.Const.paint", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteConst.Const", "target": "function:Numerik.ByteConst.Const.init", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteConst.Const", "target": "function:Numerik.ByteConst.Const.initInputPins", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteConst.Const", "target": "function:Numerik.ByteConst.Const.initOutputPins", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteConst.Const", "target": "function:Numerik.ByteConst.Const.setPropertyEditor", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteConst.Const", "target": "function:Numerik.ByteConst.Const.localize", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteConst.Const", "target": "function:Numerik.ByteConst.Const.propertyChanged", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteConst.Const", "target": "function:Numerik.ByteConst.Const.start", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteConst.Const", "target": "function:Numerik.ByteConst.Const.process", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteConst.Const", "target": "function:Numerik.ByteConst.Const.loadFromStream", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteConst.Const", "target": "function:Numerik.ByteConst.Const.saveToStream", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteConst.Const", "target": "class:JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "file:///CircuitElements/Numerik/ByteConst/Const.java", "target": "import:VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/ByteConst/Const.java", "target": "import:VisualLogic.variables", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/ByteConst/Const.java", "target": "import:tools", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/ByteConst/Const.java", "target": "import:java.awt", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/ByteConst/Const.java", "target": "import:java.awt.event", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/ByteToInt/ByteToInt.java", "target": "class:Numerik.ByteToInt.ByteToInt", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteToInt.ByteToInt", "target": "function:Numerik.ByteToInt.ByteToInt.xpaint", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteToInt.ByteToInt", "target": "function:Numerik.ByteToInt.ByteToInt.onDispose", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteToInt.ByteToInt", "target": "function:Numerik.ByteToInt.ByteToInt.init", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteToInt.ByteToInt", "target": "function:Numerik.ByteToInt.ByteToInt.initInputPins", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteToInt.ByteToInt", "target": "function:Numerik.ByteToInt.ByteToInt.initOutputPins", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteToInt.ByteToInt", "target": "function:Numerik.ByteToInt.ByteToInt.toSigned", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteToInt.ByteToInt", "target": "function:Numerik.ByteToInt.ByteToInt.copyBits", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteToInt.ByteToInt", "target": "function:Numerik.ByteToInt.ByteToInt.process", "type": "contains", "weight": 1.0},
+    {"source": "class:Numerik.ByteToInt.ByteToInt", "target": "class:JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "file:///CircuitElements/Numerik/ByteToInt/ByteToInt.java", "target": "import:VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/ByteToInt/ByteToInt.java", "target": "import:VisualLogic.variables", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/ByteToInt/ByteToInt.java", "target": "import:tools", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/ByteToInt/ByteToInt.java", "target": "import:java.awt", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/ByteToInt/ByteToInt.java", "target": "import:java.awt.event", "type": "imports", "weight": 0.7},
+    {"source": "function:Numerik.ByteToInt.ByteToInt.process", "target": "function:Numerik.ByteToInt.ByteToInt.toSigned", "type": "calls", "weight": 0.8},
+    {"source": "function:Numerik.ByteToInt.ByteToInt.toSigned", "target": "function:Numerik.ByteToInt.ByteToInt.copyBits", "type": "calls", "weight": 0.8}
+  ]
+}

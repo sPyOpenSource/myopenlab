@@ -1,0 +1,2547 @@
+{
+  "nodes": [
+    {
+      "id": "java_file:CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "type": "java_file",
+      "name": "MyTableEditor.java",
+      "summary": "Matrix string table editor dialog with IntegerModel — provides JDialog for editing 2D integer matrices via JTable, with new/create/cancel operations and data export",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["myopenlab", "java", "matrix-editor", "jtable", "jdialog"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_class:StringMatrix.MyTableEditor.IntegerModel",
+      "type": "java_class",
+      "name": "IntegerModel",
+      "summary": "Extends DefaultTableModel to force Integer column class for all columns",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["myopenlab", "java", "table-model"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_class:StringMatrix.MyTableEditor.MyTableEditor",
+      "type": "java_class",
+      "name": "MyTableEditor",
+      "summary": "Extends JDialog — interactive matrix editor with JTable for editing 2D integer arrays, supports OK/Cancel, menu for new matrix, and static result fields",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["myopenlab", "java", "jdialog", "matrix-editor"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:StringMatrix.MyTableEditor.IntegerModel.getColumnClass",
+      "type": "java_function",
+      "name": "getColumnClass",
+      "summary": "Returns Integer.class for every column",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "table-model"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:StringMatrix.MyTableEditor.MyTableEditor.init",
+      "type": "java_function",
+      "name": "MyTableEditor(java.awt.Frame, boolean)",
+      "summary": "Constructor — creates dialog, initializes components, sets table model",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "constructor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:StringMatrix.MyTableEditor.MyTableEditor.clearTable",
+      "type": "java_function",
+      "name": "clearTable",
+      "summary": "Resets column count and row count to zero",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "utility"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:StringMatrix.MyTableEditor.MyTableEditor.setInputs",
+      "type": "java_function",
+      "name": "setInputs",
+      "summary": "Populates table from 2D int array with column headers v0..vN",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "data-input"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:StringMatrix.MyTableEditor.MyTableEditor.setInputColumns",
+      "type": "java_function",
+      "name": "setInputColumns",
+      "summary": "Adds columns from comma-separated string",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "column-setup"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:StringMatrix.MyTableEditor.MyTableEditor.getInputColumns",
+      "type": "java_function",
+      "name": "getInputColumns",
+      "summary": "Returns comma-separated column names",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "column-export"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:StringMatrix.MyTableEditor.MyTableEditor.getData",
+      "type": "java_function",
+      "name": "getData",
+      "summary": "Extracts 2D int array from table model",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "data-extraction"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:StringMatrix.MyTableEditor.MyTableEditor.getInputs",
+      "type": "java_function",
+      "name": "getInputs",
+      "summary": "Public wrapper for getData() — returns the table contents as int[][]",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "data-export"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:StringMatrix.MyTableEditor.MyTableEditor.initComponents",
+      "type": "java_function",
+      "name": "initComponents",
+      "summary": "Auto-generated form initializer — builds JMenuBar, JTable, JButton OK/Cancel, JPanel layout",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "gui-init", "generated"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:StringMatrix.MyTableEditor.MyTableEditor.jmiNewActionPerformed",
+      "type": "java_function",
+      "name": "jmiNewActionPerformed",
+      "summary": "Opens DialogNew to get dimensions, then initializes a zero-filled matrix",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "event-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:StringMatrix.MyTableEditor.MyTableEditor.jButton1ActionPerformed",
+      "type": "java_function",
+      "name": "jButton1ActionPerformed",
+      "summary": "OK handler — stores inputs, dimensions, sets result=true, disposes",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "event-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:StringMatrix.MyTableEditor.MyTableEditor.jButton2ActionPerformed",
+      "type": "java_function",
+      "name": "jButton2ActionPerformed",
+      "summary": "Cancel handler — sets result=false, disposes",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "event-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:StringMatrix.MyTableEditor.MyTableEditor.main",
+      "type": "java_function",
+      "name": "main",
+      "summary": "Entry point — creates editor, populates 3x3 test matrix, shows dialog",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "main"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_file:CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/DialogNew.java",
+      "type": "java_file",
+      "name": "DialogNew.java",
+      "summary": "Simple dialog for creating a new vector — asks for row count, validates numeric input",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/DialogNew.java",
+      "tags": ["myopenlab", "java", "dialog", "vector-creator"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_class:VectorByte.DialogNew.DialogNew",
+      "type": "java_class",
+      "name": "DialogNew",
+      "summary": "Extends JDialog — prompts user for number of rows with OK/Cancel, result stored in static fields",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/DialogNew.java",
+      "tags": ["myopenlab", "java", "jdialog"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.DialogNew.DialogNew.init",
+      "type": "java_function",
+      "name": "DialogNew(java.awt.Frame, boolean)",
+      "summary": "Constructor — initializes components, calls init(0)",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/DialogNew.java",
+      "tags": ["java", "constructor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.DialogNew.DialogNew.initComponents",
+      "type": "java_function",
+      "name": "initComponents",
+      "summary": "Auto-generated form — lays out label, text field, OK/Cancel buttons with GroupLayout",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/DialogNew.java",
+      "tags": ["java", "gui-init", "generated"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.DialogNew.DialogNew.showMessage",
+      "type": "java_function",
+      "name": "showMessage",
+      "summary": "Static error message dialog via JOptionPane",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/DialogNew.java",
+      "tags": ["java", "utility"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.DialogNew.DialogNew.jButton2ActionPerformed",
+      "type": "java_function",
+      "name": "jButton2ActionPerformed",
+      "summary": "Cancel — sets result=false, disposes",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/DialogNew.java",
+      "tags": ["java", "event-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.DialogNew.DialogNew.jButton1ActionPerformed",
+      "type": "java_function",
+      "name": "jButton1ActionPerformed",
+      "summary": "OK — parses integer from text field, sets result=true with resN, disposes",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/DialogNew.java",
+      "tags": ["java", "event-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.DialogNew.DialogNew.init_int",
+      "type": "java_function",
+      "name": "init",
+      "summary": "Sets default text field value",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/DialogNew.java",
+      "tags": ["java", "initialization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_file:CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "type": "java_file",
+      "name": "MyTableEditor.java",
+      "summary": "Byte vector table editor — JDialog for editing VS1DByte arrays with signed/unsigned byte conversion utilities",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["myopenlab", "java", "vector-editor", "byte-conversion"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_class:VectorByte.MyTableEditor.ByteModel",
+      "type": "java_class",
+      "name": "ByteModel",
+      "summary": "Extends DefaultTableModel to return Integer class for columns (displays byte as integer)",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["myopenlab", "java", "table-model"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "type": "java_class",
+      "name": "MyTableEditor",
+      "summary": "Extends JDialog — edits byte vectors with copyBits/toSigned/toUnsigned conversion utilities",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["myopenlab", "java", "jdialog", "vector-editor", "byte-utils"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.ByteModel.getColumnClass",
+      "type": "java_function",
+      "name": "getColumnClass",
+      "summary": "Returns Integer.class for column type",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "table-model"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.MyTableEditor.init",
+      "type": "java_function",
+      "name": "MyTableEditor(java.awt.Frame, boolean)",
+      "summary": "Constructor — creates dialog, initializes components with ByteModel",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "constructor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.MyTableEditor.clearTable",
+      "type": "java_function",
+      "name": "clearTable",
+      "summary": "Resets column and row count",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "utility"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.MyTableEditor.copyBits",
+      "type": "java_function",
+      "name": "copyBits",
+      "summary": "Private static — copies lowest N bits from a long value, clearing upper bits",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "bit-manipulation", "utility"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.MyTableEditor.toSigned",
+      "type": "java_function",
+      "name": "toSigned",
+      "summary": "Public static — converts unsigned byte to signed short via copyBits",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "conversion", "byte-utils"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.MyTableEditor.setInputs",
+      "type": "java_function",
+      "name": "setInputs",
+      "summary": "Populates table from byte array, converting to signed short for display",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "data-input"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.MyTableEditor.setInputColumns",
+      "type": "java_function",
+      "name": "setInputColumns",
+      "summary": "Adds columns from comma-separated string",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "column-setup"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.MyTableEditor.getInputColumns",
+      "type": "java_function",
+      "name": "getInputColumns",
+      "summary": "Returns comma-separated column names",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "column-export"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.MyTableEditor.toUnsigned",
+      "type": "java_function",
+      "name": "toUnsigned",
+      "summary": "Public static — converts signed short back to unsigned byte",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "conversion", "byte-utils"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.MyTableEditor.getData",
+      "type": "java_function",
+      "name": "getData",
+      "summary": "Extracts byte array from table, converting back via toUnsigned",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "data-extraction"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.MyTableEditor.getInputs",
+      "type": "java_function",
+      "name": "getInputs",
+      "summary": "Public wrapper for getData()",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "data-export"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.MyTableEditor.initComponents",
+      "type": "java_function",
+      "name": "initComponents",
+      "summary": "Auto-generated form — menu bar, table, OK/Cancel, column headers",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "gui-init", "generated"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.MyTableEditor.jmiNewActionPerformed",
+      "type": "java_function",
+      "name": "jmiNewActionPerformed",
+      "summary": "Opens DialogNew to get row count, creates zero-filled byte vector",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "event-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.MyTableEditor.jButton1ActionPerformed",
+      "type": "java_function",
+      "name": "jButton1ActionPerformed",
+      "summary": "OK — stores inputs, sets result=true, disposes",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "event-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.MyTableEditor.jButton2ActionPerformed",
+      "type": "java_function",
+      "name": "jButton2ActionPerformed",
+      "summary": "Cancel — sets result=false, disposes",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "event-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.MyTableEditor.MyTableEditor.main",
+      "type": "java_function",
+      "name": "main",
+      "summary": "Entry point — creates editor with test byte vector",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "tags": ["java", "main"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_file:CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "type": "java_file",
+      "name": "VectorByte.java",
+      "summary": "Byte vector circuit element — provides a VS1DByte output pin with property editor for editing values via MyTableEditor",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "tags": ["myopenlab", "java", "circuit-element", "vector", "byte"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_class:VectorByte.VectorByte.VectorByte",
+      "type": "java_class",
+      "name": "VectorByte",
+      "summary": "Extends JVSMain — circuit element with one BYTE array output pin, resizable=false, loads icon, uses MyTableEditor for value editing",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "tags": ["myopenlab", "java", "circuit-element", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:VectorByte.VectorByte.VectorByte.onDispose",
+      "type": "java_function",
+      "name": "onDispose",
+      "summary": "Flushes and nullifies image",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "tags": ["java", "lifecycle"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.VectorByte.VectorByte.paint",
+      "type": "java_function",
+      "name": "paint",
+      "summary": "Draws image centred on element",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "tags": ["java", "rendering"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.VectorByte.VectorByte.init",
+      "type": "java_function",
+      "name": "init",
+      "summary": "Sets size 44x36, configures 1 output pin (C_ARRAY1D_BYTE), loads icon, name=VectorByte, not resizable",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "tags": ["java", "initialization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.VectorByte.VectorByte.initInputPins",
+      "type": "java_function",
+      "name": "initInputPins",
+      "summary": "No input pins configured",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "tags": ["java", "pin-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.VectorByte.VectorByte.initOutputPins",
+      "type": "java_function",
+      "name": "initOutputPins",
+      "summary": "Creates VS1DByte reference from vector, sets pin output reference",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "tags": ["java", "pin-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.VectorByte.VectorByte.setPropertyEditor",
+      "type": "java_function",
+      "name": "setPropertyEditor",
+      "summary": "Adds property editor item for Values...",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "tags": ["java", "property-editor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.VectorByte.VectorByte.localize",
+      "type": "java_function",
+      "name": "localize",
+      "summary": "Sets property locale for en_US and es_ES",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "tags": ["java", "localization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.VectorByte.VectorByte.propertyChanged",
+      "type": "java_function",
+      "name": "propertyChanged",
+      "summary": "Opens MyTableEditor for editing byte vector values when 'more' property triggered",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "tags": ["java", "property-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.VectorByte.VectorByte.start",
+      "type": "java_function",
+      "name": "start",
+      "summary": "Notifies pin 0 on start",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "tags": ["java", "lifecycle", "execution"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.VectorByte.VectorByte.process",
+      "type": "java_function",
+      "name": "process",
+      "summary": "Empty process step",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "tags": ["java", "execution"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.VectorByte.VectorByte.loadFromStream",
+      "type": "java_function",
+      "name": "loadFromStream",
+      "summary": "Loads vector data from FileInputStream",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "tags": ["java", "serialization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorByte.VectorByte.VectorByte.saveToStream",
+      "type": "java_function",
+      "name": "saveToStream",
+      "summary": "Saves vector data to FileOutputStream",
+      "filePath": "CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "tags": ["java", "serialization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_file:CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "type": "java_file",
+      "name": "VectorInt.java",
+      "summary": "Integer vector circuit element — provides VS1DInteger output pin with property editor for editing integer vector values via MyTableEditor",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "tags": ["myopenlab", "java", "circuit-element", "vector", "integer"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_class:VectorInt.VectorInt.VectorInt",
+      "type": "java_class",
+      "name": "VectorInt",
+      "summary": "Extends JVSMain — circuit element with one INTEGER array output pin, not resizable, uses MyTableEditor for editing values via VSPropertyDialog",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "tags": ["myopenlab", "java", "circuit-element", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:VectorInt.VectorInt.VectorInt.onDispose",
+      "type": "java_function",
+      "name": "onDispose",
+      "summary": "Flushes and nullifies image",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "tags": ["java", "lifecycle"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorInt.VectorInt.VectorInt.paint",
+      "type": "java_function",
+      "name": "paint",
+      "summary": "Draws image centred on element",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "tags": ["java", "rendering"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorInt.VectorInt.VectorInt.init",
+      "type": "java_function",
+      "name": "init",
+      "summary": "Sets size 44x36, configures 1 output pin (C_ARRAY1D_INTEGER), loads icon, name=VectorInteger, not resizable",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "tags": ["java", "initialization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorInt.VectorInt.VectorInt.initInputPins",
+      "type": "java_function",
+      "name": "initInputPins",
+      "summary": "No input pins configured",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "tags": ["java", "pin-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorInt.VectorInt.VectorInt.initOutputPins",
+      "type": "java_function",
+      "name": "initOutputPins",
+      "summary": "Creates VS1DInteger reference from vector, sets pin output reference",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "tags": ["java", "pin-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorInt.VectorInt.VectorInt.setPropertyEditor",
+      "type": "java_function",
+      "name": "setPropertyEditor",
+      "summary": "Adds property editor item for Values...",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "tags": ["java", "property-editor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorInt.VectorInt.VectorInt.localize",
+      "type": "java_function",
+      "name": "localize",
+      "summary": "Sets property locale for en_US and es_ES",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "tags": ["java", "localization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorInt.VectorInt.VectorInt.propertyChanged",
+      "type": "java_function",
+      "name": "propertyChanged",
+      "summary": "Opens MyTableEditor for editing integer vector values when 'more' property triggered",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "tags": ["java", "property-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorInt.VectorInt.VectorInt.start",
+      "type": "java_function",
+      "name": "start",
+      "summary": "Notifies pin 0 on start",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "tags": ["java", "lifecycle", "execution"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorInt.VectorInt.VectorInt.process",
+      "type": "java_function",
+      "name": "process",
+      "summary": "Empty process step",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "tags": ["java", "execution"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorInt.VectorInt.VectorInt.loadFromStream",
+      "type": "java_function",
+      "name": "loadFromStream",
+      "summary": "Loads vector data from FileInputStream",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "tags": ["java", "serialization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:VectorInt.VectorInt.VectorInt.saveToStream",
+      "type": "java_function",
+      "name": "saveToStream",
+      "summary": "Saves vector data to FileOutputStream",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "tags": ["java", "serialization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_file:CircuitElements/VectorenMatrix/VectorInt/src/IchBinEinLabel.java",
+      "type": "java_file",
+      "name": "IchBinEinLabel.java",
+      "summary": "A label component for the VectorInt module — file not found on disk",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/IchBinEinLabel.java",
+      "tags": ["myopenlab", "java", "label", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:VectorInt.IchBinEinLabel.IchBinEinLabel",
+      "type": "java_class",
+      "name": "IchBinEinLabel",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "CircuitElements/VectorenMatrix/VectorInt/src/IchBinEinLabel.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/Taster.java",
+      "type": "java_file",
+      "name": "Taster.java",
+      "summary": "Industrial button 4 circuit element (JV) — extends JVSMain, one boolean output pin, displays icon, name=Button_4_JV",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/Taster.java",
+      "tags": ["myopenlab", "java", "circuit-element", "button", "industrial"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_class:Button4JV.Taster.Taster",
+      "type": "java_class",
+      "name": "Taster",
+      "summary": "Extends JVSMain — circuit logic for Button_4_JV, receives boolean input via changePin and forwards to output pin",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/Taster.java",
+      "tags": ["myopenlab", "java", "circuit-element", "jvsmain", "button"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.Taster.Taster.onDispose",
+      "type": "java_function",
+      "name": "onDispose",
+      "summary": "Flushes and nullifies image",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/Taster.java",
+      "tags": ["java", "lifecycle"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.Taster.Taster.paint",
+      "type": "java_function",
+      "name": "paint",
+      "summary": "Draws image centred on element",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/Taster.java",
+      "tags": ["java", "rendering"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.Taster.Taster.init",
+      "type": "java_function",
+      "name": "init",
+      "summary": "Sets size 50x45, 1 output pin (C_BOOLEAN), loads icon.gif, name=Button_4_JV",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/Taster.java",
+      "tags": ["java", "initialization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.Taster.Taster.changePin",
+      "type": "java_function",
+      "name": "changePin",
+      "summary": "Receives VSBoolean value, copies to out, notifies pin 0",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/Taster.java",
+      "tags": ["java", "pin-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.Taster.Taster.initInputPins",
+      "type": "java_function",
+      "name": "initInputPins",
+      "summary": "No input pins configured",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/Taster.java",
+      "tags": ["java", "pin-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.Taster.Taster.initOutputPins",
+      "type": "java_function",
+      "name": "initOutputPins",
+      "summary": "Sets pin output reference 0 to out",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/Taster.java",
+      "tags": ["java", "pin-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.Taster.Taster.process",
+      "type": "java_function",
+      "name": "process",
+      "summary": "Empty process step",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/Taster.java",
+      "tags": ["java", "execution"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "type": "java_file",
+      "name": "TasterPanel.java",
+      "summary": "Industrial button 4 front panel (JV) — renders a circular industrial-style button with base, shadow, focus, recessed/raised layers, boolean text, and mouse interaction for toggle or momentary mode",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "front-panel", "button", "industrial", "rendering"],
+      "complexity": "high"
+    },
+    {
+      "id": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "type": "java_class",
+      "name": "TasterPanel",
+      "summary": "Extends JVSMain — full front panel for Button_4_JV with multi-layer oval button rendering, switch/toggle mode, localized property editor, mouse hover/click handling, serialization of 20+ visual properties",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "front-panel", "jvsmain", "button"],
+      "complexity": "high"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.onDispose",
+      "type": "java_function",
+      "name": "onDispose",
+      "summary": "Removes all components from front panel",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "lifecycle"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.paint",
+      "type": "java_function",
+      "name": "paint",
+      "summary": "Renders multi-layer circular button: base oval, shadow, recessed front, raised front, boolean text (ON/OFF) with antialiasing, customizable colors and stroke",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "rendering", "graphics2d"],
+      "complexity": "high"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.drawButtonBase",
+      "type": "java_function",
+      "name": "drawButtonBase",
+      "summary": "Empty placeholder for button base drawing",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "rendering"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.init",
+      "type": "java_function",
+      "name": "init",
+      "summary": "Sets size 150x150, configures resizable, adds property editor items, registers MouseInputAdapter for hover effects",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "initialization"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.initInputPins",
+      "type": "java_function",
+      "name": "initInputPins",
+      "summary": "No input pins configured",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "pin-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.initOutputPins",
+      "type": "java_function",
+      "name": "initOutputPins",
+      "summary": "No output pins configured",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "pin-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.start",
+      "type": "java_function",
+      "name": "start",
+      "summary": "Resets mouseOver, sets running=true, applies initValue to down, notifies circuit element through Change()",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "lifecycle", "execution"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.stop",
+      "type": "java_function",
+      "name": "stop",
+      "summary": "Calls super.stop(), sets running=false",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "lifecycle"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.setPropertyEditor",
+      "type": "java_function",
+      "name": "setPropertyEditor",
+      "summary": "Adds 19 property editor items: init value, switch mode, captions, visibility, colors (base, stroke, shadow, button, font, focus), calls localize()",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "property-editor"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.localize",
+      "type": "java_function",
+      "name": "localize",
+      "summary": "Sets property editor item locales for en_US and es_ES (19 properties each)",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "localization"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.propertyChanged",
+      "type": "java_function",
+      "name": "propertyChanged",
+      "summary": "Applies initValue to down, repaints",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "property-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.mouseReleased",
+      "type": "java_function",
+      "name": "mouseReleased",
+      "summary": "Toggles or resets down value depending on asSwitch mode, calls circuitElement.Change() and repaints",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "mouse-event"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.mousePressed",
+      "type": "java_function",
+      "name": "mousePressed",
+      "summary": "In non-switch mode, sets down=true, calls Change() and repaints",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "mouse-event"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.mouseMoved",
+      "type": "java_function",
+      "name": "mouseMoved",
+      "summary": "Updates mouseOver based on proximity to panel edge, repaints",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "mouse-event"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.loadFromStream",
+      "type": "java_function",
+      "name": "loadFromStream",
+      "summary": "Deserializes 19 VSObject properties from FileInputStream",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "serialization"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:Button4JV.TasterPanel.TasterPanel.saveToStream",
+      "type": "java_function",
+      "name": "saveToStream",
+      "summary": "Serializes 19 VSObject properties to FileOutputStream",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "tags": ["java", "serialization"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/Taster.java",
+      "type": "java_file",
+      "name": "Taster.java",
+      "summary": "Industrial button 5 circuit element (JV) — extends JVSMain, one boolean output pin, displays icon, name=Button_5_JV",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/Taster.java",
+      "tags": ["myopenlab", "java", "circuit-element", "button", "industrial"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_class:Button5JV.Taster.Taster",
+      "type": "java_class",
+      "name": "Taster",
+      "summary": "Extends JVSMain — circuit logic for Button_5_JV, same structure as Button_4_JV Taster with different name",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/Taster.java",
+      "tags": ["myopenlab", "java", "circuit-element", "jvsmain", "button"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.Taster.Taster.onDispose",
+      "type": "java_function",
+      "name": "onDispose",
+      "summary": "Flushes and nullifies image",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/Taster.java",
+      "tags": ["java", "lifecycle"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.Taster.Taster.paint",
+      "type": "java_function",
+      "name": "paint",
+      "summary": "Draws image centred on element",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/Taster.java",
+      "tags": ["java", "rendering"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.Taster.Taster.init",
+      "type": "java_function",
+      "name": "init",
+      "summary": "Sets size 50x45, 1 output pin (C_BOOLEAN), loads icon.gif, name=Button_5_JV",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/Taster.java",
+      "tags": ["java", "initialization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.Taster.Taster.changePin",
+      "type": "java_function",
+      "name": "changePin",
+      "summary": "Receives VSBoolean value, copies to out, notifies pin 0",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/Taster.java",
+      "tags": ["java", "pin-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.Taster.Taster.initInputPins",
+      "type": "java_function",
+      "name": "initInputPins",
+      "summary": "No input pins configured",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/Taster.java",
+      "tags": ["java", "pin-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.Taster.Taster.initOutputPins",
+      "type": "java_function",
+      "name": "initOutputPins",
+      "summary": "Sets pin output reference 0 to out",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/Taster.java",
+      "tags": ["java", "pin-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.Taster.Taster.process",
+      "type": "java_function",
+      "name": "process",
+      "summary": "Empty process step",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/Taster.java",
+      "tags": ["java", "execution"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "type": "java_file",
+      "name": "TasterPanel.java",
+      "summary": "Industrial button 5 front panel (JV) — renders industrial-style button with inverted toggle rectangles, adds invert property, supports gradient button fills and localized property editor",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "front-panel", "button", "industrial", "rendering"],
+      "complexity": "high"
+    },
+    {
+      "id": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "type": "java_class",
+      "name": "TasterPanel",
+      "summary": "Extends JVSMain — front panel for Button_5_JV with rectangular button layers, invert toggle, gradient fills (modus=1), 20 property editor items, mouse hover/click, dual-language localization",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "front-panel", "jvsmain", "button"],
+      "complexity": "high"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.onDispose",
+      "type": "java_function",
+      "name": "onDispose",
+      "summary": "Removes all components from front panel",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "lifecycle"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.paint",
+      "type": "java_function",
+      "name": "paint",
+      "summary": "Renders multi-layer button with base, shadow, darker background, inner oval, rectangular indicator (horizontal/vertical with invert support), boolean text (ON/OFF), gradient fills and edge strokes",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "rendering", "graphics2d"],
+      "complexity": "high"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.drawButtonBase",
+      "type": "java_function",
+      "name": "drawButtonBase",
+      "summary": "Empty placeholder for button base drawing",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "rendering"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.init",
+      "type": "java_function",
+      "name": "init",
+      "summary": "Sets size 150x150, configures resizable, registers MouseInputAdapter, initializes color properties with gradient",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "initialization"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.initInputPins",
+      "type": "java_function",
+      "name": "initInputPins",
+      "summary": "No input pins configured",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "pin-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.initOutputPins",
+      "type": "java_function",
+      "name": "initOutputPins",
+      "summary": "No output pins configured",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "pin-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.start",
+      "type": "java_function",
+      "name": "start",
+      "summary": "Resets mouseOver, sets running=true, applies initValue to down, notifies circuit element",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "lifecycle", "execution"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.stop",
+      "type": "java_function",
+      "name": "stop",
+      "summary": "Calls super.stop(), sets running=false",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "lifecycle"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.setPropertyEditor",
+      "type": "java_function",
+      "name": "setPropertyEditor",
+      "summary": "Adds 20 property editor items including invert direction (Button Invert), calls localize()",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "property-editor"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.localize",
+      "type": "java_function",
+      "name": "localize",
+      "summary": "Sets property editor item locales for en_US and es_ES (20 properties including Invert)",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "localization"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.propertyChanged",
+      "type": "java_function",
+      "name": "propertyChanged",
+      "summary": "Applies initValue to down, repaints",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "property-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.mouseReleased",
+      "type": "java_function",
+      "name": "mouseReleased",
+      "summary": "Toggles or resets down value depending on asSwitch mode, calls circuitElement.Change() and repaints",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "mouse-event"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.mousePressed",
+      "type": "java_function",
+      "name": "mousePressed",
+      "summary": "In non-switch mode, sets down=true, calls Change() and repaints",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "mouse-event"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.mouseMoved",
+      "type": "java_function",
+      "name": "mouseMoved",
+      "summary": "Updates mouseOver based on proximity, repaints",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "mouse-event"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.loadFromStream",
+      "type": "java_function",
+      "name": "loadFromStream",
+      "summary": "Deserializes 20 VSObject properties including invert from FileInputStream",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "serialization"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_function:Button5JV.TasterPanel.TasterPanel.saveToStream",
+      "type": "java_function",
+      "name": "saveToStream",
+      "summary": "Serializes 20 VSObject properties including invert to FileOutputStream",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "tags": ["java", "serialization"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_1/src/Taster.java",
+      "type": "java_file",
+      "name": "Taster.java",
+      "summary": "Button_JV_1 circuit element — file not found on disk at specified path",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_1/src/Taster.java",
+      "tags": ["myopenlab", "java", "circuit-element", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:ButtonJV1.Taster.Taster",
+      "type": "java_class",
+      "name": "Taster",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_1/src/Taster.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_1/src/TasterPanel.java",
+      "type": "java_file",
+      "name": "TasterPanel.java",
+      "summary": "Button_JV_1 front panel — file not found on disk at specified path",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_1/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "front-panel", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:ButtonJV1.TasterPanel.TasterPanel",
+      "type": "java_class",
+      "name": "TasterPanel",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_1/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_2/src/Taster.java",
+      "type": "java_file",
+      "name": "Taster.java",
+      "summary": "Button_JV_2 circuit element — file not found on disk at specified path",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_2/src/Taster.java",
+      "tags": ["myopenlab", "java", "circuit-element", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:ButtonJV2.Taster.Taster",
+      "type": "java_class",
+      "name": "Taster",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_2/src/Taster.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_2/src/TasterPanel.java",
+      "type": "java_file",
+      "name": "TasterPanel.java",
+      "summary": "Button_JV_2 front panel — file not found on disk at specified path",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_2/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "front-panel", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:ButtonJV2.TasterPanel.TasterPanel",
+      "type": "java_class",
+      "name": "TasterPanel",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_2/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_3/src/Taster.java",
+      "type": "java_file",
+      "name": "Taster.java",
+      "summary": "Button_JV_3 circuit element — file not found on disk at specified path",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_3/src/Taster.java",
+      "tags": ["myopenlab", "java", "circuit-element", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:ButtonJV3.Taster.Taster",
+      "type": "java_class",
+      "name": "Taster",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_3/src/Taster.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_3/src/TasterPanel.java",
+      "type": "java_file",
+      "name": "TasterPanel.java",
+      "summary": "Button_JV_3 front panel — file not found on disk at specified path",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_3/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "front-panel", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:ButtonJV3.TasterPanel.TasterPanel",
+      "type": "java_class",
+      "name": "TasterPanel",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_3/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Down_Button_JV/src/Taster.java",
+      "type": "java_file",
+      "name": "Taster.java",
+      "summary": "Down_Button_JV circuit element — file not found on disk at specified path",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Down_Button_JV/src/Taster.java",
+      "tags": ["myopenlab", "java", "circuit-element", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:DownButtonJV.Taster.Taster",
+      "type": "java_class",
+      "name": "Taster",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Down_Button_JV/src/Taster.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Down_Button_JV/src/TasterPanel.java",
+      "type": "java_file",
+      "name": "TasterPanel.java",
+      "summary": "Down_Button_JV front panel — file not found on disk at specified path",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Down_Button_JV/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "front-panel", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:DownButtonJV.TasterPanel.TasterPanel",
+      "type": "java_class",
+      "name": "TasterPanel",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Down_Button_JV/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Left_Button_JV/src/Taster.java",
+      "type": "java_file",
+      "name": "Taster.java",
+      "summary": "Left_Button_JV circuit element — file not found on disk at specified path",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Left_Button_JV/src/Taster.java",
+      "tags": ["myopenlab", "java", "circuit-element", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:LeftButtonJV.Taster.Taster",
+      "type": "java_class",
+      "name": "Taster",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Left_Button_JV/src/Taster.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Left_Button_JV/src/TasterPanel.java",
+      "type": "java_file",
+      "name": "TasterPanel.java",
+      "summary": "Left_Button_JV front panel — file not found on disk at specified path",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Left_Button_JV/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "front-panel", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:LeftButtonJV.TasterPanel.TasterPanel",
+      "type": "java_class",
+      "name": "TasterPanel",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Left_Button_JV/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Right_Button_JV/src/Taster.java",
+      "type": "java_file",
+      "name": "Taster.java",
+      "summary": "Right_Button_JV circuit element — file not found on disk at specified path",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Right_Button_JV/src/Taster.java",
+      "tags": ["myopenlab", "java", "circuit-element", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:RightButtonJV.Taster.Taster",
+      "type": "java_class",
+      "name": "Taster",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Right_Button_JV/src/Taster.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Right_Button_JV/src/TasterPanel.java",
+      "type": "java_file",
+      "name": "TasterPanel.java",
+      "summary": "Right_Button_JV front panel — file not found on disk at specified path",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Right_Button_JV/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "front-panel", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:RightButtonJV.TasterPanel.TasterPanel",
+      "type": "java_class",
+      "name": "TasterPanel",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Right_Button_JV/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Up_Button_JV/src/Taster.java",
+      "type": "java_file",
+      "name": "Taster.java",
+      "summary": "Up_Button_JV circuit element — file not found on disk at specified path",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Up_Button_JV/src/Taster.java",
+      "tags": ["myopenlab", "java", "circuit-element", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:UpButtonJV.Taster.Taster",
+      "type": "java_class",
+      "name": "Taster",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Up_Button_JV/src/Taster.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Up_Button_JV/src/TasterPanel.java",
+      "type": "java_file",
+      "name": "TasterPanel.java",
+      "summary": "Up_Button_JV front panel — file not found on disk at specified path",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Up_Button_JV/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "front-panel", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:UpButtonJV.TasterPanel.TasterPanel",
+      "type": "java_class",
+      "name": "TasterPanel",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "FrontElements/2Automation/Industrial_Buttons_JV/Up_Button_JV/src/TasterPanel.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_file:FrontElements/2Automation/Pipeline_JV/Cross_JV/src/LED.java",
+      "type": "java_file",
+      "name": "LED.java",
+      "summary": "Cross_JV LED pipeline element — file not found on disk at specified path",
+      "filePath": "FrontElements/2Automation/Pipeline_JV/Cross_JV/src/LED.java",
+      "tags": ["myopenlab", "java", "pipeline", "led", "unresolved"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "java_class:CrossJV.LED.LED",
+      "type": "java_class",
+      "name": "LED",
+      "summary": "Unknown class — source file not present in repository",
+      "filePath": "FrontElements/2Automation/Pipeline_JV/Cross_JV/src/LED.java",
+      "tags": ["myopenlab", "java", "unresolved"],
+      "complexity": "unknown"
+    }
+  ],
+  "edges": [
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "target": "java_class:StringMatrix.MyTableEditor.IntegerModel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "target": "java_class:StringMatrix.MyTableEditor.MyTableEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:StringMatrix.MyTableEditor.IntegerModel",
+      "target": "java_function:StringMatrix.MyTableEditor.IntegerModel.getColumnClass",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:StringMatrix.MyTableEditor.IntegerModel",
+      "target": "javax.swing.table.DefaultTableModel",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "java_class:StringMatrix.MyTableEditor.MyTableEditor",
+      "target": "java_function:StringMatrix.MyTableEditor.MyTableEditor.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:StringMatrix.MyTableEditor.MyTableEditor",
+      "target": "java_function:StringMatrix.MyTableEditor.MyTableEditor.clearTable",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:StringMatrix.MyTableEditor.MyTableEditor",
+      "target": "java_function:StringMatrix.MyTableEditor.MyTableEditor.setInputs",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:StringMatrix.MyTableEditor.MyTableEditor",
+      "target": "java_function:StringMatrix.MyTableEditor.MyTableEditor.setInputColumns",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:StringMatrix.MyTableEditor.MyTableEditor",
+      "target": "java_function:StringMatrix.MyTableEditor.MyTableEditor.getInputColumns",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:StringMatrix.MyTableEditor.MyTableEditor",
+      "target": "java_function:StringMatrix.MyTableEditor.MyTableEditor.getData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:StringMatrix.MyTableEditor.MyTableEditor",
+      "target": "java_function:StringMatrix.MyTableEditor.MyTableEditor.getInputs",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:StringMatrix.MyTableEditor.MyTableEditor",
+      "target": "java_function:StringMatrix.MyTableEditor.MyTableEditor.initComponents",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:StringMatrix.MyTableEditor.MyTableEditor",
+      "target": "java_function:StringMatrix.MyTableEditor.MyTableEditor.jmiNewActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:StringMatrix.MyTableEditor.MyTableEditor",
+      "target": "java_function:StringMatrix.MyTableEditor.MyTableEditor.jButton1ActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:StringMatrix.MyTableEditor.MyTableEditor",
+      "target": "java_function:StringMatrix.MyTableEditor.MyTableEditor.jButton2ActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:StringMatrix.MyTableEditor.MyTableEditor",
+      "target": "java_function:StringMatrix.MyTableEditor.MyTableEditor.main",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:StringMatrix.MyTableEditor.MyTableEditor",
+      "target": "javax.swing.JDialog",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "target": "javax.swing.JOptionPane",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "target": "javax.swing.table.DefaultTableModel",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_function:StringMatrix.MyTableEditor.MyTableEditor.jmiNewActionPerformed",
+      "target": "java_class:VectorByte.DialogNew.DialogNew",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "java_function:StringMatrix.MyTableEditor.MyTableEditor.setInputs",
+      "target": "java_function:StringMatrix.MyTableEditor.MyTableEditor.clearTable",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "java_function:StringMatrix.MyTableEditor.MyTableEditor.getInputs",
+      "target": "java_function:StringMatrix.MyTableEditor.MyTableEditor.getData",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/DialogNew.java",
+      "target": "java_class:VectorByte.DialogNew.DialogNew",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.DialogNew.DialogNew",
+      "target": "java_function:VectorByte.DialogNew.DialogNew.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.DialogNew.DialogNew",
+      "target": "java_function:VectorByte.DialogNew.DialogNew.initComponents",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.DialogNew.DialogNew",
+      "target": "java_function:VectorByte.DialogNew.DialogNew.showMessage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.DialogNew.DialogNew",
+      "target": "java_function:VectorByte.DialogNew.DialogNew.jButton2ActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.DialogNew.DialogNew",
+      "target": "java_function:VectorByte.DialogNew.DialogNew.jButton1ActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.DialogNew.DialogNew",
+      "target": "java_function:VectorByte.DialogNew.DialogNew.init_int",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.DialogNew.DialogNew",
+      "target": "javax.swing.JDialog",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/DialogNew.java",
+      "target": "javax.swing.JOptionPane",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "target": "java_class:VectorByte.MyTableEditor.ByteModel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "target": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.ByteModel",
+      "target": "java_function:VectorByte.MyTableEditor.ByteModel.getColumnClass",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.ByteModel",
+      "target": "javax.swing.table.DefaultTableModel",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.clearTable",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.copyBits",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.toSigned",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.setInputs",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.setInputColumns",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.getInputColumns",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.toUnsigned",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.getData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.getInputs",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.initComponents",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.jmiNewActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.jButton1ActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.jButton2ActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.main",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "target": "javax.swing.JDialog",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "target": "javax.swing.JOptionPane",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/VectorByte/src/MyTableEditor/MyTableEditor.java",
+      "target": "javax.swing.table.DefaultTableModel",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_function:VectorByte.MyTableEditor.MyTableEditor.toSigned",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.copyBits",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "java_function:VectorByte.MyTableEditor.MyTableEditor.getData",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.toUnsigned",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "java_function:VectorByte.MyTableEditor.MyTableEditor.setInputs",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.clearTable",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "java_function:VectorByte.MyTableEditor.MyTableEditor.setInputs",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.toSigned",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "java_function:VectorByte.MyTableEditor.MyTableEditor.getInputs",
+      "target": "java_function:VectorByte.MyTableEditor.MyTableEditor.getData",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "java_function:VectorByte.MyTableEditor.MyTableEditor.jmiNewActionPerformed",
+      "target": "java_class:VectorByte.DialogNew.DialogNew",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "target": "java_class:VectorByte.VectorByte.VectorByte",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.VectorByte.VectorByte",
+      "target": "java_function:VectorByte.VectorByte.VectorByte.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.VectorByte.VectorByte",
+      "target": "java_function:VectorByte.VectorByte.VectorByte.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.VectorByte.VectorByte",
+      "target": "java_function:VectorByte.VectorByte.VectorByte.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.VectorByte.VectorByte",
+      "target": "java_function:VectorByte.VectorByte.VectorByte.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.VectorByte.VectorByte",
+      "target": "java_function:VectorByte.VectorByte.VectorByte.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.VectorByte.VectorByte",
+      "target": "java_function:VectorByte.VectorByte.VectorByte.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.VectorByte.VectorByte",
+      "target": "java_function:VectorByte.VectorByte.VectorByte.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.VectorByte.VectorByte",
+      "target": "java_function:VectorByte.VectorByte.VectorByte.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.VectorByte.VectorByte",
+      "target": "java_function:VectorByte.VectorByte.VectorByte.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.VectorByte.VectorByte",
+      "target": "java_function:VectorByte.VectorByte.VectorByte.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.VectorByte.VectorByte",
+      "target": "java_function:VectorByte.VectorByte.VectorByte.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.VectorByte.VectorByte",
+      "target": "java_function:VectorByte.VectorByte.VectorByte.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorByte.VectorByte.VectorByte",
+      "target": "JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "target": "VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "target": "VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/VectorByte/src/VectorByte.java",
+      "target": "tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_function:VectorByte.VectorByte.VectorByte.propertyChanged",
+      "target": "java_class:VectorByte.MyTableEditor.MyTableEditor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "target": "java_class:VectorInt.VectorInt.VectorInt",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorInt.VectorInt.VectorInt",
+      "target": "java_function:VectorInt.VectorInt.VectorInt.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorInt.VectorInt.VectorInt",
+      "target": "java_function:VectorInt.VectorInt.VectorInt.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorInt.VectorInt.VectorInt",
+      "target": "java_function:VectorInt.VectorInt.VectorInt.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorInt.VectorInt.VectorInt",
+      "target": "java_function:VectorInt.VectorInt.VectorInt.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorInt.VectorInt.VectorInt",
+      "target": "java_function:VectorInt.VectorInt.VectorInt.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorInt.VectorInt.VectorInt",
+      "target": "java_function:VectorInt.VectorInt.VectorInt.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorInt.VectorInt.VectorInt",
+      "target": "java_function:VectorInt.VectorInt.VectorInt.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorInt.VectorInt.VectorInt",
+      "target": "java_function:VectorInt.VectorInt.VectorInt.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorInt.VectorInt.VectorInt",
+      "target": "java_function:VectorInt.VectorInt.VectorInt.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorInt.VectorInt.VectorInt",
+      "target": "java_function:VectorInt.VectorInt.VectorInt.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorInt.VectorInt.VectorInt",
+      "target": "java_function:VectorInt.VectorInt.VectorInt.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorInt.VectorInt.VectorInt",
+      "target": "java_function:VectorInt.VectorInt.VectorInt.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:VectorInt.VectorInt.VectorInt",
+      "target": "JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "target": "VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "target": "VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/VectorInt/src/VectorInt.java",
+      "target": "tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:CircuitElements/VectorenMatrix/VectorInt/src/IchBinEinLabel.java",
+      "target": "java_class:VectorInt.IchBinEinLabel.IchBinEinLabel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/Taster.java",
+      "target": "java_class:Button4JV.Taster.Taster",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.Taster.Taster",
+      "target": "java_function:Button4JV.Taster.Taster.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.Taster.Taster",
+      "target": "java_function:Button4JV.Taster.Taster.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.Taster.Taster",
+      "target": "java_function:Button4JV.Taster.Taster.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.Taster.Taster",
+      "target": "java_function:Button4JV.Taster.Taster.changePin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.Taster.Taster",
+      "target": "java_function:Button4JV.Taster.Taster.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.Taster.Taster",
+      "target": "java_function:Button4JV.Taster.Taster.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.Taster.Taster",
+      "target": "java_function:Button4JV.Taster.Taster.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.Taster.Taster",
+      "target": "JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/Taster.java",
+      "target": "VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/Taster.java",
+      "target": "VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/Taster.java",
+      "target": "java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/Taster.java",
+      "target": "tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "target": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.drawButtonBase",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.mouseReleased",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.mousePressed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.mouseMoved",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button4JV.TasterPanel.TasterPanel.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button4JV.TasterPanel.TasterPanel",
+      "target": "JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "target": "VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "target": "VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "target": "java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "target": "javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "target": "java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "target": "tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "target": "java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_4_JV/src/TasterPanel.java",
+      "target": "javax.swing.event.MouseInputAdapter",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/Taster.java",
+      "target": "java_class:Button5JV.Taster.Taster",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.Taster.Taster",
+      "target": "java_function:Button5JV.Taster.Taster.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.Taster.Taster",
+      "target": "java_function:Button5JV.Taster.Taster.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.Taster.Taster",
+      "target": "java_function:Button5JV.Taster.Taster.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.Taster.Taster",
+      "target": "java_function:Button5JV.Taster.Taster.changePin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.Taster.Taster",
+      "target": "java_function:Button5JV.Taster.Taster.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.Taster.Taster",
+      "target": "java_function:Button5JV.Taster.Taster.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.Taster.Taster",
+      "target": "java_function:Button5JV.Taster.Taster.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.Taster.Taster",
+      "target": "JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/Taster.java",
+      "target": "VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/Taster.java",
+      "target": "VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/Taster.java",
+      "target": "java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/Taster.java",
+      "target": "tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "target": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.drawButtonBase",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.mouseReleased",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.mousePressed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.mouseMoved",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "java_function:Button5JV.TasterPanel.TasterPanel.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_class:Button5JV.TasterPanel.TasterPanel",
+      "target": "JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "target": "VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "target": "VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "target": "java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "target": "javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "target": "java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "target": "tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "target": "java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_5_JV/src/TasterPanel.java",
+      "target": "javax.swing.event.MouseInputAdapter",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_1/src/Taster.java",
+      "target": "java_class:ButtonJV1.Taster.Taster",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_1/src/TasterPanel.java",
+      "target": "java_class:ButtonJV1.TasterPanel.TasterPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_2/src/Taster.java",
+      "target": "java_class:ButtonJV2.Taster.Taster",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_2/src/TasterPanel.java",
+      "target": "java_class:ButtonJV2.TasterPanel.TasterPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_3/src/Taster.java",
+      "target": "java_class:ButtonJV3.Taster.Taster",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Button_JV_3/src/TasterPanel.java",
+      "target": "java_class:ButtonJV3.TasterPanel.TasterPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Down_Button_JV/src/Taster.java",
+      "target": "java_class:DownButtonJV.Taster.Taster",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Down_Button_JV/src/TasterPanel.java",
+      "target": "java_class:DownButtonJV.TasterPanel.TasterPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Left_Button_JV/src/Taster.java",
+      "target": "java_class:LeftButtonJV.Taster.Taster",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Left_Button_JV/src/TasterPanel.java",
+      "target": "java_class:LeftButtonJV.TasterPanel.TasterPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Right_Button_JV/src/Taster.java",
+      "target": "java_class:RightButtonJV.Taster.Taster",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Right_Button_JV/src/TasterPanel.java",
+      "target": "java_class:RightButtonJV.TasterPanel.TasterPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Up_Button_JV/src/Taster.java",
+      "target": "java_class:UpButtonJV.Taster.Taster",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Industrial_Buttons_JV/Up_Button_JV/src/TasterPanel.java",
+      "target": "java_class:UpButtonJV.TasterPanel.TasterPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java_file:FrontElements/2Automation/Pipeline_JV/Cross_JV/src/LED.java",
+      "target": "java_class:CrossJV.LED.LED",
+      "type": "contains",
+      "weight": 1.0
+    }
+  ]
+}

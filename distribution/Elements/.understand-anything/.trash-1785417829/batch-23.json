@@ -1,0 +1,1492 @@
+{
+  "nodes": [
+    {
+      "id": "module:VirtualMachines",
+      "type": "module",
+      "name": "VirtualMachines",
+      "filePath": "VirtualMachines",
+      "summary": "MyOpenLab Virtual Machines directory containing microcontroller compiler toolchains for Arduino (AVR), ATmega168/328, and PIC 16F877 — translates visual logic diagrams into C source code for embedded targets.",
+      "tags": ["myopenlab", "virtual-machines", "compilers", "microcontroller", "c-code-generation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "module:VirtualMachines/ArduinoCompiler",
+      "type": "module",
+      "name": "ArduinoCompiler",
+      "filePath": "VirtualMachines/ArduinoCompiler",
+      "summary": "Arduino C code compiler — translates MyOpenLab visual programs to Arduino-compatible C source. Contains a lexer, parser, stack interpreter, and code generator targeting the Arduino platform.",
+      "tags": ["arduino", "compiler", "avr", "c-code-gen", "stack-interpreter"],
+      "complexity": "medium"
+    },
+    {
+      "id": "module:VirtualMachines/ATmega168_328Compiler",
+      "type": "module",
+      "name": "ATmega168_328Compiler",
+      "filePath": "VirtualMachines/ATmega168_328Compiler",
+      "summary": "ATmega168/328 C compiler — translates MyOpenLab visual programs to C code for ATmega168 and ATmega328 microcontrollers. Shares architecture with ArduinoCompiler but targets bare-metal AVR without the Arduino framework.",
+      "tags": ["atmega", "compiler", "avr", "c-code-gen", "bare-metal"],
+      "complexity": "medium"
+    },
+    {
+      "id": "module:VirtualMachines/PIC_16F877_Compiler",
+      "type": "module",
+      "name": "PIC_16F877_Compiler",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler",
+      "summary": "PIC 16F877 C compiler — translates MyOpenLab visual programs to C code for the Microchip PIC 16F877 microcontroller. Includes both Java compiler sources and a native C compiler helper.",
+      "tags": ["pic", "compiler", "microchip", "c-code-gen", "embedded"],
+      "complexity": "medium"
+    },
+    {
+      "id": "file:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java",
+      "type": "file",
+      "name": "ArduinoCompiler.java",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java",
+      "summary": "Main entry point for the Arduino compiler — orchestrates lexing, parsing, stack interpretation, and C code generation for Arduino targets.",
+      "tags": ["java", "arduino", "compiler-entry", "code-generation"],
+      "complexity": "medium",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java:ArduinoCompiler",
+      "type": "class",
+      "name": "ArduinoCompiler",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java",
+      "summary": "Main compiler class — coordinates the compilation pipeline: load visual program, tokenize, parse into nodes, run stack interpreter, emit Arduino C code.",
+      "tags": ["arduino", "compiler", "main-class", "orchestrator"],
+      "complexity": "medium",
+      "parentModule": "module:VirtualMachines/ArduinoCompiler"
+    },
+    {
+      "id": "function:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java:ArduinoCompiler.main",
+      "type": "function",
+      "name": "main",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java",
+      "summary": "Entry point — loads the visual program definition, initializes the compiler pipeline, and triggers C code emission.",
+      "tags": ["entry-point", "java-main"],
+      "complexity": "simple",
+      "parentClass": "class:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java:ArduinoCompiler"
+    },
+    {
+      "id": "function:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java:ArduinoCompiler.compile",
+      "type": "function",
+      "name": "compile",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java",
+      "summary": "Compilation orchestrator — invokes the tokenizer, parser (Node tree), stack interpreter, and C code emitter in sequence.",
+      "tags": ["compilation", "pipeline"],
+      "complexity": "medium",
+      "parentClass": "class:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java:ArduinoCompiler"
+    },
+    {
+      "id": "file:VirtualMachines/ArduinoCompiler/src/C_Code.java",
+      "type": "file",
+      "name": "C_Code.java",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/C_Code.java",
+      "summary": "C code generation utilities — builds Arduino C source strings from the interpreted program state, including setup() and loop() structure.",
+      "tags": ["java", "arduino", "c-code-gen", "code-emitter"],
+      "complexity": "medium",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ArduinoCompiler/src/C_Code.java:C_Code",
+      "type": "class",
+      "name": "C_Code",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/C_Code.java",
+      "summary": "C code emitter — generates Arduino-compatible C source, managing pin initialization, the setup/loop structure, and variable declarations.",
+      "tags": ["arduino", "c-emitter", "code-generation"],
+      "complexity": "medium",
+      "parentModule": "module:VirtualMachines/ArduinoCompiler"
+    },
+    {
+      "id": "function:VirtualMachines/ArduinoCompiler/src/C_Code.java:C_Code.generateSetup",
+      "type": "function",
+      "name": "generateSetup",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/C_Code.java",
+      "summary": "Generates the Arduino setup() function body — pin mode configuration, serial init, and variable initialization.",
+      "tags": ["arduino", "setup", "pin-config"],
+      "complexity": "simple",
+      "parentClass": "class:VirtualMachines/ArduinoCompiler/src/C_Code.java:C_Code"
+    },
+    {
+      "id": "function:VirtualMachines/ArduinoCompiler/src/C_Code.java:C_Code.generateLoop",
+      "type": "function",
+      "name": "generateLoop",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/C_Code.java",
+      "summary": "Generates the Arduino loop() function body — the main program cycle translated from the visual logic.",
+      "tags": ["arduino", "loop", "main-cycle"],
+      "complexity": "medium",
+      "parentClass": "class:VirtualMachines/ArduinoCompiler/src/C_Code.java:C_Code"
+    },
+    {
+      "id": "file:VirtualMachines/ArduinoCompiler/src/Compiler.java",
+      "type": "file",
+      "name": "Compiler.java",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/Compiler.java",
+      "summary": "Core compiler backend — contains the parsing and code generation logic specific to the Arduino target platform.",
+      "tags": ["java", "arduino", "compiler-backend", "parsing"],
+      "complexity": "complex",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ArduinoCompiler/src/Compiler.java:Compiler",
+      "type": "class",
+      "name": "Compiler",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/Compiler.java",
+      "summary": "Compiler backend — parses the token stream into an executable program structure, resolves element references, and drives C code emission.",
+      "tags": ["arduino", "compiler", "parsing", "code-gen"],
+      "complexity": "complex",
+      "parentModule": "module:VirtualMachines/ArduinoCompiler"
+    },
+    {
+      "id": "function:VirtualMachines/ArduinoCompiler/src/Compiler.java:Compiler.parseProgram",
+      "type": "function",
+      "name": "parseProgram",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/Compiler.java",
+      "summary": "Parses the tokenized visual program into an internal representation (Node tree) for further processing.",
+      "tags": ["parsing", "ast", "token-processing"],
+      "complexity": "complex",
+      "parentClass": "class:VirtualMachines/ArduinoCompiler/src/Compiler.java:Compiler"
+    },
+    {
+      "id": "function:VirtualMachines/ArduinoCompiler/src/Compiler.java:Compiler.generateCode",
+      "type": "function",
+      "name": "generateCode",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/Compiler.java",
+      "summary": "Generates Arduino C code from the parsed program structure using the C_Code utility class.",
+      "tags": ["arduino", "code-generation", "c-emitter"],
+      "complexity": "medium",
+      "parentClass": "class:VirtualMachines/ArduinoCompiler/src/Compiler.java:Compiler"
+    },
+    {
+      "id": "file:VirtualMachines/ArduinoCompiler/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/Element.java",
+      "summary": "Visual program element model — represents a single block or node in the MyOpenLab visual program for the Arduino compiler.",
+      "tags": ["java", "arduino", "element-model", "visual-program-node"],
+      "complexity": "simple",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ArduinoCompiler/src/Element.java:Element",
+      "type": "class",
+      "name": "Element",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/Element.java",
+      "summary": "Model class for a visual program element — stores element type, inputs, outputs, and properties for the Arduino compiler.",
+      "tags": ["arduino", "element", "data-model", "visual-program"],
+      "complexity": "simple",
+      "parentModule": "module:VirtualMachines/ArduinoCompiler"
+    },
+    {
+      "id": "file:VirtualMachines/ArduinoCompiler/src/GlobalVars.java",
+      "type": "file",
+      "name": "GlobalVars.java",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/GlobalVars.java",
+      "summary": "Global variable management — defines the symbol table for global variables used across the compiled Arduino program.",
+      "tags": ["java", "arduino", "global-variables", "symbol-table"],
+      "complexity": "simple",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ArduinoCompiler/src/GlobalVars.java:GlobalVars",
+      "type": "class",
+      "name": "GlobalVars",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/GlobalVars.java",
+      "summary": "Global variable symbol table — manages declaration, type resolution, and scoping of global variables across the compiled program.",
+      "tags": ["arduino", "symbol-table", "global-vars", "scope"],
+      "complexity": "simple",
+      "parentModule": "module:VirtualMachines/ArduinoCompiler"
+    },
+    {
+      "id": "file:VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java",
+      "type": "file",
+      "name": "MyStreamTokenizer.java",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java",
+      "summary": "Custom stream tokenizer — tokenizes MyOpenLab visual program serialized format into tokens for the Arduino compiler.",
+      "tags": ["java", "arduino", "tokenizer", "lexer"],
+      "complexity": "medium",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java:MyStreamTokenizer",
+      "type": "class",
+      "name": "MyStreamTokenizer",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java",
+      "summary": "Custom lexer — reads the serialized visual program format and produces a token stream for the parser.",
+      "tags": ["arduino", "lexer", "tokenizer"],
+      "complexity": "medium",
+      "parentModule": "module:VirtualMachines/ArduinoCompiler"
+    },
+    {
+      "id": "function:VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java:MyStreamTokenizer.nextToken",
+      "type": "function",
+      "name": "nextToken",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java",
+      "summary": "Retrieves the next token from the input stream, classifying it as identifier, number, symbol, or string literal.",
+      "tags": ["lexer", "tokenization"],
+      "complexity": "medium",
+      "parentClass": "class:VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java:MyStreamTokenizer"
+    },
+    {
+      "id": "file:VirtualMachines/ArduinoCompiler/src/Node.java",
+      "type": "file",
+      "name": "Node.java",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/Node.java",
+      "summary": "Abstract syntax tree node — represents a parsed program element in the Arduino compiler's internal tree representation.",
+      "tags": ["java", "arduino", "ast-node", "tree-structure"],
+      "complexity": "simple",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ArduinoCompiler/src/Node.java:Node",
+      "type": "class",
+      "name": "Node",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/Node.java",
+      "summary": "AST node — forms the tree representation of the program; each node corresponds to a visual element or connector.",
+      "tags": ["arduino", "ast", "tree-node"],
+      "complexity": "simple",
+      "parentModule": "module:VirtualMachines/ArduinoCompiler"
+    },
+    {
+      "id": "file:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java",
+      "type": "file",
+      "name": "StackInterpreter.java",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/StackInterpreter.java",
+      "summary": "Stack-based interpreter — executes the visual program logic on a virtual stack machine to determine C code output for Arduino.",
+      "tags": ["java", "arduino", "stack-interpreter", "virtual-machine"],
+      "complexity": "complex",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java:StackInterpreter",
+      "type": "class",
+      "name": "StackInterpreter",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/StackInterpreter.java",
+      "summary": "Stack-based VM interpreter — walks the Node tree and executes operations via a push/pop stack machine, producing the linearized program flow for C code generation.",
+      "tags": ["arduino", "stack-vm", "interpreter", "program-execution"],
+      "complexity": "complex",
+      "parentModule": "module:VirtualMachines/ArduinoCompiler"
+    },
+    {
+      "id": "function:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java:StackInterpreter.interpret",
+      "type": "function",
+      "name": "interpret",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/StackInterpreter.java",
+      "summary": "Main interpretation loop — pushes/pops operations on the stack according to the program's node topology.",
+      "tags": ["interpretation", "stack-machine", "execution"],
+      "complexity": "complex",
+      "parentClass": "class:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java:StackInterpreter"
+    },
+    {
+      "id": "function:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java:StackInterpreter.evaluateNode",
+      "type": "function",
+      "name": "evaluateNode",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/StackInterpreter.java",
+      "summary": "Evaluates a single Node — resolves its operation type, pops operands from the stack, computes results, and pushes them back.",
+      "tags": ["node-evaluation", "stack-operations"],
+      "complexity": "medium",
+      "parentClass": "class:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java:StackInterpreter"
+    },
+    {
+      "id": "file:VirtualMachines/ArduinoCompiler/src/Var.java",
+      "type": "file",
+      "name": "Var.java",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/Var.java",
+      "summary": "Variable representation — models a typed variable used in the Arduino compiler's internal state during code generation.",
+      "tags": ["java", "arduino", "variable", "type-system"],
+      "complexity": "simple",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ArduinoCompiler/src/Var.java:Var",
+      "type": "class",
+      "name": "Var",
+      "filePath": "VirtualMachines/ArduinoCompiler/src/Var.java",
+      "summary": "Variable descriptor — holds name, type, value, and scope information for variables within the compiled Arduino program.",
+      "tags": ["arduino", "variable", "type", "data-model"],
+      "complexity": "simple",
+      "parentModule": "module:VirtualMachines/ArduinoCompiler"
+    },
+    {
+      "id": "file:VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java",
+      "type": "file",
+      "name": "ATmegaCompiler.java",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java",
+      "summary": "Main entry point for the ATmega168/328 compiler — orchestrates compilation of visual programs to bare-metal AVR C code.",
+      "tags": ["java", "atmega", "compiler-entry", "avr", "bare-metal"],
+      "complexity": "medium",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java:ATmegaCompiler",
+      "type": "class",
+      "name": "ATmegaCompiler",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java",
+      "summary": "Main compiler class for ATmega targets — handles tokenization, parsing, stack interpretation, and C code emission for ATmega168/328.",
+      "tags": ["atmega", "compiler", "main-class", "avr"],
+      "complexity": "medium",
+      "parentModule": "module:VirtualMachines/ATmega168_328Compiler"
+    },
+    {
+      "id": "function:VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java:ATmegaCompiler.compile",
+      "type": "function",
+      "name": "compile",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java",
+      "summary": "Compilation pipeline for ATmega — orchestrates lexing, parsing, stack interpretation, and target C code generation.",
+      "tags": ["atmega", "compilation", "pipeline"],
+      "complexity": "medium",
+      "parentClass": "class:VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java:ATmegaCompiler"
+    },
+    {
+      "id": "file:VirtualMachines/ATmega168_328Compiler/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/Element.java",
+      "summary": "Visual program element model for ATmega compiler — represents a logic block in the MyOpenLab visual diagram.",
+      "tags": ["java", "atmega", "element-model", "visual-program"],
+      "complexity": "simple",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ATmega168_328Compiler/src/Element.java:Element",
+      "type": "class",
+      "name": "Element",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/Element.java",
+      "summary": "Model class for a visual program element — stores element type, connections, and configuration for the ATmega compiler.",
+      "tags": ["atmega", "element", "data-model"],
+      "complexity": "simple",
+      "parentModule": "module:VirtualMachines/ATmega168_328Compiler"
+    },
+    {
+      "id": "file:VirtualMachines/ATmega168_328Compiler/src/GlobalVar.java",
+      "type": "file",
+      "name": "GlobalVar.java",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/GlobalVar.java",
+      "summary": "Global variable management for ATmega compiler — symbol table for global variables in bare-metal AVR programs.",
+      "tags": ["java", "atmega", "global-variables", "symbol-table"],
+      "complexity": "simple",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ATmega168_328Compiler/src/GlobalVar.java:GlobalVar",
+      "type": "class",
+      "name": "GlobalVar",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/GlobalVar.java",
+      "summary": "Global variable symbol table for ATmega target — manages global variable declarations, types, and initialization.",
+      "tags": ["atmega", "symbol-table", "global-vars"],
+      "complexity": "simple",
+      "parentModule": "module:VirtualMachines/ATmega168_328Compiler"
+    },
+    {
+      "id": "file:VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java",
+      "type": "file",
+      "name": "myStreamTokenizer.java",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java",
+      "summary": "Custom stream tokenizer for ATmega compiler — tokenizes serialized visual program data for parsing.",
+      "tags": ["java", "atmega", "tokenizer", "lexer"],
+      "complexity": "medium",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java:myStreamTokenizer",
+      "type": "class",
+      "name": "myStreamTokenizer",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java",
+      "summary": "Custom lexer for ATmega visual programs — tokenizes the serialized format into a stream consumed by the parser.",
+      "tags": ["atmega", "lexer", "tokenizer"],
+      "complexity": "medium",
+      "parentModule": "module:VirtualMachines/ATmega168_328Compiler"
+    },
+    {
+      "id": "function:VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java:myStreamTokenizer.nextToken",
+      "type": "function",
+      "name": "nextToken",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java",
+      "summary": "Retrieves the next token from the input stream for the ATmega compiler's lexer.",
+      "tags": ["lexer", "tokenization"],
+      "complexity": "medium",
+      "parentClass": "class:VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java:myStreamTokenizer"
+    },
+    {
+      "id": "file:VirtualMachines/ATmega168_328Compiler/src/Node.java",
+      "type": "file",
+      "name": "Node.java",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/Node.java",
+      "summary": "AST node for ATmega compiler — represents a parsed program element in the internal tree representation.",
+      "tags": ["java", "atmega", "ast-node", "tree-structure"],
+      "complexity": "simple",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ATmega168_328Compiler/src/Node.java:Node",
+      "type": "class",
+      "name": "Node",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/Node.java",
+      "summary": "AST node for ATmega program tree — each node represents a visual element or connection in the diagram.",
+      "tags": ["atmega", "ast", "tree-node"],
+      "complexity": "simple",
+      "parentModule": "module:VirtualMachines/ATmega168_328Compiler"
+    },
+    {
+      "id": "file:VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java",
+      "type": "file",
+      "name": "StackInterpreter.java",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java",
+      "summary": "Stack-based interpreter for ATmega compiler — executes visual logic on a virtual stack machine for bare-metal C output.",
+      "tags": ["java", "atmega", "stack-interpreter", "virtual-machine"],
+      "complexity": "complex",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java:StackInterpreter",
+      "type": "class",
+      "name": "StackInterpreter",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java",
+      "summary": "Stack-based VM interpreter for ATmega — walks node tree, executes push/pop operations, and produces linearized program flow for C code generation.",
+      "tags": ["atmega", "stack-vm", "interpreter"],
+      "complexity": "complex",
+      "parentModule": "module:VirtualMachines/ATmega168_328Compiler"
+    },
+    {
+      "id": "function:VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java:StackInterpreter.interpret",
+      "type": "function",
+      "name": "interpret",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java",
+      "summary": "Main interpretation loop for ATmega stack machine — processes operations by walking the node tree.",
+      "tags": ["interpretation", "stack-machine"],
+      "complexity": "complex",
+      "parentClass": "class:VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java:StackInterpreter"
+    },
+    {
+      "id": "file:VirtualMachines/ATmega168_328Compiler/src/Var.java",
+      "type": "file",
+      "name": "Var.java",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/Var.java",
+      "summary": "Variable representation for ATmega compiler — typed variable model used during code generation.",
+      "tags": ["java", "atmega", "variable", "type-system"],
+      "complexity": "simple",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/ATmega168_328Compiler/src/Var.java:Var",
+      "type": "class",
+      "name": "Var",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/src/Var.java",
+      "summary": "Variable descriptor for ATmega — holds name, type, and value for variables in the compiled bare-metal C program.",
+      "tags": ["atmega", "variable", "type"],
+      "complexity": "simple",
+      "parentModule": "module:VirtualMachines/ATmega168_328Compiler"
+    },
+    {
+      "id": "file:VirtualMachines/ATmega168_328Compiler/ATMega168_328Compiler.c",
+      "type": "file",
+      "name": "ATMega168_328Compiler.c",
+      "filePath": "VirtualMachines/ATmega168_328Compiler/ATMega168_328Compiler.c",
+      "summary": "Native C helper for the ATmega compiler — provides low-level AVR routines used in the generated code or as a reference compiler implementation.",
+      "tags": ["c", "atmega", "native", "avr-runtime"],
+      "complexity": "medium",
+      "properties": {
+        "language": "C",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "file:VirtualMachines/PIC_16F877_Compiler/16F877_Compiler.c",
+      "type": "file",
+      "name": "16F877_Compiler.c",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/16F877_Compiler.c",
+      "summary": "Native C compiler/helper for the PIC 16F877 — provides PIC-specific routines and code generation templates for the target microcontroller.",
+      "tags": ["c", "pic", "16f877", "native", "microchip"],
+      "complexity": "medium",
+      "properties": {
+        "language": "C",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "file:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java",
+      "type": "file",
+      "name": "Compiler.java",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/Compiler.java",
+      "summary": "Core compiler backend for PIC 16F877 — parsing and C code generation logic for the Microchip PIC target.",
+      "tags": ["java", "pic", "compiler-backend", "parsing", "microchip"],
+      "complexity": "complex",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java:Compiler",
+      "type": "class",
+      "name": "Compiler",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/Compiler.java",
+      "summary": "Compiler backend for PIC 16F877 — parses token stream, builds program representation, and drives C code emission for PIC targets.",
+      "tags": ["pic", "compiler", "parsing", "code-gen"],
+      "complexity": "complex",
+      "parentModule": "module:VirtualMachines/PIC_16F877_Compiler"
+    },
+    {
+      "id": "function:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java:Compiler.parseProgram",
+      "type": "function",
+      "name": "parseProgram",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/Compiler.java",
+      "summary": "Parses the tokenized visual program into an AST for the PIC compiler.",
+      "tags": ["parsing", "ast", "pic"],
+      "complexity": "complex",
+      "parentClass": "class:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java:Compiler"
+    },
+    {
+      "id": "function:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java:Compiler.generateCode",
+      "type": "function",
+      "name": "generateCode",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/Compiler.java",
+      "summary": "Generates PIC-compatible C code from the parsed program structure.",
+      "tags": ["pic", "code-generation", "c-emitter"],
+      "complexity": "medium",
+      "parentClass": "class:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java:Compiler"
+    },
+    {
+      "id": "file:VirtualMachines/PIC_16F877_Compiler/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/Element.java",
+      "summary": "Visual program element model for PIC compiler — represents a logic block in the MyOpenLab diagram for PIC targets.",
+      "tags": ["java", "pic", "element-model", "visual-program"],
+      "complexity": "simple",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/PIC_16F877_Compiler/src/Element.java:Element",
+      "type": "class",
+      "name": "Element",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/Element.java",
+      "summary": "Model class for a visual program element — stores type, I/O connections, and configuration for the PIC compiler.",
+      "tags": ["pic", "element", "data-model"],
+      "complexity": "simple",
+      "parentModule": "module:VirtualMachines/PIC_16F877_Compiler"
+    },
+    {
+      "id": "file:VirtualMachines/PIC_16F877_Compiler/src/GlobalVar.java",
+      "type": "file",
+      "name": "GlobalVar.java",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/GlobalVar.java",
+      "summary": "Global variable management for PIC compiler — symbol table for global variables in PIC C programs.",
+      "tags": ["java", "pic", "global-variables", "symbol-table"],
+      "complexity": "simple",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/PIC_16F877_Compiler/src/GlobalVar.java:GlobalVar",
+      "type": "class",
+      "name": "GlobalVar",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/GlobalVar.java",
+      "summary": "Global variable symbol table for PIC 16F877 — manages variable declarations, types, and initialization for PIC C programs.",
+      "tags": ["pic", "symbol-table", "global-vars"],
+      "complexity": "simple",
+      "parentModule": "module:VirtualMachines/PIC_16F877_Compiler"
+    },
+    {
+      "id": "file:VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java",
+      "type": "file",
+      "name": "myStreamTokenizer.java",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java",
+      "summary": "Custom stream tokenizer for PIC compiler — tokenizes serialized visual program data for the PIC compiler's parser.",
+      "tags": ["java", "pic", "tokenizer", "lexer"],
+      "complexity": "medium",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java:myStreamTokenizer",
+      "type": "class",
+      "name": "myStreamTokenizer",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java",
+      "summary": "Custom lexer for PIC visual programs — produces a token stream from the serialized diagram format.",
+      "tags": ["pic", "lexer", "tokenizer"],
+      "complexity": "medium",
+      "parentModule": "module:VirtualMachines/PIC_16F877_Compiler"
+    },
+    {
+      "id": "function:VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java:myStreamTokenizer.nextToken",
+      "type": "function",
+      "name": "nextToken",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java",
+      "summary": "Retrieves the next token for the PIC compiler's lexer from the input stream.",
+      "tags": ["lexer", "tokenization", "pic"],
+      "complexity": "medium",
+      "parentClass": "class:VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java:myStreamTokenizer"
+    },
+    {
+      "id": "file:VirtualMachines/PIC_16F877_Compiler/src/Node.java",
+      "type": "file",
+      "name": "Node.java",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/Node.java",
+      "summary": "AST node for PIC compiler — represents a parsed program element in the internal tree for PIC targets.",
+      "tags": ["java", "pic", "ast-node", "tree-structure"],
+      "complexity": "simple",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/PIC_16F877_Compiler/src/Node.java:Node",
+      "type": "class",
+      "name": "Node",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/Node.java",
+      "summary": "AST node for PIC program tree — each node represents a visual element or connection in the PIC diagram.",
+      "tags": ["pic", "ast", "tree-node"],
+      "complexity": "simple",
+      "parentModule": "module:VirtualMachines/PIC_16F877_Compiler"
+    },
+    {
+      "id": "file:VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java",
+      "type": "file",
+      "name": "StackInterpreter.java",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java",
+      "summary": "Stack-based interpreter for PIC compiler — executes visual logic on a virtual stack machine for PIC C output.",
+      "tags": ["java", "pic", "stack-interpreter", "virtual-machine"],
+      "complexity": "complex",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java:StackInterpreter",
+      "type": "class",
+      "name": "StackInterpreter",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java",
+      "summary": "Stack-based VM interpreter for PIC 16F877 — walks the node tree, executes push/pop operations, and produces linearized program flow for C code generation.",
+      "tags": ["pic", "stack-vm", "interpreter"],
+      "complexity": "complex",
+      "parentModule": "module:VirtualMachines/PIC_16F877_Compiler"
+    },
+    {
+      "id": "function:VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java:StackInterpreter.interpret",
+      "type": "function",
+      "name": "interpret",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java",
+      "summary": "Main interpretation loop for PIC stack machine — processes visual program operations via stack push/pop.",
+      "tags": ["interpretation", "stack-machine", "pic"],
+      "complexity": "complex",
+      "parentClass": "class:VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java:StackInterpreter"
+    },
+    {
+      "id": "file:VirtualMachines/PIC_16F877_Compiler/src/Var.java",
+      "type": "file",
+      "name": "Var.java",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/Var.java",
+      "summary": "Variable representation for PIC compiler — typed variable model used during code generation for PIC targets.",
+      "tags": ["java", "pic", "variable", "type-system"],
+      "complexity": "simple",
+      "properties": {
+        "language": "Java",
+        "fileCategory": "code"
+      }
+    },
+    {
+      "id": "class:VirtualMachines/PIC_16F877_Compiler/src/Var.java:Var",
+      "type": "class",
+      "name": "Var",
+      "filePath": "VirtualMachines/PIC_16F877_Compiler/src/Var.java",
+      "summary": "Variable descriptor for PIC — stores name, type, and value information for variables in compiled PIC C programs.",
+      "tags": ["pic", "variable", "type"],
+      "complexity": "simple",
+      "parentModule": "module:VirtualMachines/PIC_16F877_Compiler"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module:VirtualMachines",
+      "target": "module:VirtualMachines/ArduinoCompiler",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines",
+      "target": "module:VirtualMachines/ATmega168_328Compiler",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines",
+      "target": "module:VirtualMachines/PIC_16F877_Compiler",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ArduinoCompiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ArduinoCompiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/C_Code.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ArduinoCompiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/Compiler.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ArduinoCompiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/Element.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ArduinoCompiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/GlobalVars.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ArduinoCompiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ArduinoCompiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/Node.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ArduinoCompiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ArduinoCompiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/Var.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ATmega168_328Compiler",
+      "target": "file:VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ATmega168_328Compiler",
+      "target": "file:VirtualMachines/ATmega168_328Compiler/src/Element.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ATmega168_328Compiler",
+      "target": "file:VirtualMachines/ATmega168_328Compiler/src/GlobalVar.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ATmega168_328Compiler",
+      "target": "file:VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ATmega168_328Compiler",
+      "target": "file:VirtualMachines/ATmega168_328Compiler/src/Node.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ATmega168_328Compiler",
+      "target": "file:VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ATmega168_328Compiler",
+      "target": "file:VirtualMachines/ATmega168_328Compiler/src/Var.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/ATmega168_328Compiler",
+      "target": "file:VirtualMachines/ATmega168_328Compiler/ATMega168_328Compiler.c",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/PIC_16F877_Compiler",
+      "target": "file:VirtualMachines/PIC_16F877_Compiler/16F877_Compiler.c",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/PIC_16F877_Compiler",
+      "target": "file:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/PIC_16F877_Compiler",
+      "target": "file:VirtualMachines/PIC_16F877_Compiler/src/Element.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/PIC_16F877_Compiler",
+      "target": "file:VirtualMachines/PIC_16F877_Compiler/src/GlobalVar.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/PIC_16F877_Compiler",
+      "target": "file:VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/PIC_16F877_Compiler",
+      "target": "file:VirtualMachines/PIC_16F877_Compiler/src/Node.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/PIC_16F877_Compiler",
+      "target": "file:VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "module:VirtualMachines/PIC_16F877_Compiler",
+      "target": "file:VirtualMachines/PIC_16F877_Compiler/src/Var.java",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java",
+      "target": "class:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java:ArduinoCompiler",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java:ArduinoCompiler",
+      "target": "function:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java:ArduinoCompiler.main",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java:ArduinoCompiler",
+      "target": "function:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java:ArduinoCompiler.compile",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ArduinoCompiler/src/C_Code.java",
+      "target": "class:VirtualMachines/ArduinoCompiler/src/C_Code.java:C_Code",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/C_Code.java:C_Code",
+      "target": "function:VirtualMachines/ArduinoCompiler/src/C_Code.java:C_Code.generateSetup",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/C_Code.java:C_Code",
+      "target": "function:VirtualMachines/ArduinoCompiler/src/C_Code.java:C_Code.generateLoop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ArduinoCompiler/src/Compiler.java",
+      "target": "class:VirtualMachines/ArduinoCompiler/src/Compiler.java:Compiler",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/Compiler.java:Compiler",
+      "target": "function:VirtualMachines/ArduinoCompiler/src/Compiler.java:Compiler.parseProgram",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/Compiler.java:Compiler",
+      "target": "function:VirtualMachines/ArduinoCompiler/src/Compiler.java:Compiler.generateCode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ArduinoCompiler/src/Element.java",
+      "target": "class:VirtualMachines/ArduinoCompiler/src/Element.java:Element",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ArduinoCompiler/src/GlobalVars.java",
+      "target": "class:VirtualMachines/ArduinoCompiler/src/GlobalVars.java:GlobalVars",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java",
+      "target": "class:VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java:MyStreamTokenizer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java:MyStreamTokenizer",
+      "target": "function:VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java:MyStreamTokenizer.nextToken",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ArduinoCompiler/src/Node.java",
+      "target": "class:VirtualMachines/ArduinoCompiler/src/Node.java:Node",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java",
+      "target": "class:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java:StackInterpreter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java:StackInterpreter",
+      "target": "function:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java:StackInterpreter.interpret",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java:StackInterpreter",
+      "target": "function:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java:StackInterpreter.evaluateNode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ArduinoCompiler/src/Var.java",
+      "target": "class:VirtualMachines/ArduinoCompiler/src/Var.java:Var",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java",
+      "target": "class:VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java:ATmegaCompiler",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java:ATmegaCompiler",
+      "target": "function:VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java:ATmegaCompiler.compile",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ATmega168_328Compiler/src/Element.java",
+      "target": "class:VirtualMachines/ATmega168_328Compiler/src/Element.java:Element",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ATmega168_328Compiler/src/GlobalVar.java",
+      "target": "class:VirtualMachines/ATmega168_328Compiler/src/GlobalVar.java:GlobalVar",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java",
+      "target": "class:VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java:myStreamTokenizer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java:myStreamTokenizer",
+      "target": "function:VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java:myStreamTokenizer.nextToken",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ATmega168_328Compiler/src/Node.java",
+      "target": "class:VirtualMachines/ATmega168_328Compiler/src/Node.java:Node",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java",
+      "target": "class:VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java:StackInterpreter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java:StackInterpreter",
+      "target": "function:VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java:StackInterpreter.interpret",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/ATmega168_328Compiler/src/Var.java",
+      "target": "class:VirtualMachines/ATmega168_328Compiler/src/Var.java:Var",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java",
+      "target": "class:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java:Compiler",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java:Compiler",
+      "target": "function:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java:Compiler.parseProgram",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java:Compiler",
+      "target": "function:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java:Compiler.generateCode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/PIC_16F877_Compiler/src/Element.java",
+      "target": "class:VirtualMachines/PIC_16F877_Compiler/src/Element.java:Element",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/PIC_16F877_Compiler/src/GlobalVar.java",
+      "target": "class:VirtualMachines/PIC_16F877_Compiler/src/GlobalVar.java:GlobalVar",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java",
+      "target": "class:VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java:myStreamTokenizer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java:myStreamTokenizer",
+      "target": "function:VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java:myStreamTokenizer.nextToken",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/PIC_16F877_Compiler/src/Node.java",
+      "target": "class:VirtualMachines/PIC_16F877_Compiler/src/Node.java:Node",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java",
+      "target": "class:VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java:StackInterpreter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java:StackInterpreter",
+      "target": "function:VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java:StackInterpreter.interpret",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:VirtualMachines/PIC_16F877_Compiler/src/Var.java",
+      "target": "class:VirtualMachines/PIC_16F877_Compiler/src/Var.java:Var",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java:ArduinoCompiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java:ArduinoCompiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/Compiler.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java:ArduinoCompiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/Compiler.java:Compiler",
+      "target": "class:VirtualMachines/ArduinoCompiler/src/C_Code.java:C_Code",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/Compiler.java:Compiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/Node.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/Compiler.java:Compiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/Element.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java:StackInterpreter",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/Node.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java:StackInterpreter",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/Var.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/Compiler.java:Compiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/GlobalVars.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/Compiler.java:Compiler",
+      "target": "file:VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java:ATmegaCompiler",
+      "target": "file:VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java:ATmegaCompiler",
+      "target": "file:VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java:StackInterpreter",
+      "target": "file:VirtualMachines/ATmega168_328Compiler/src/Node.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java:StackInterpreter",
+      "target": "file:VirtualMachines/ATmega168_328Compiler/src/Var.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java:ATmegaCompiler",
+      "target": "file:VirtualMachines/ATmega168_328Compiler/src/Element.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java:ATmegaCompiler",
+      "target": "file:VirtualMachines/ATmega168_328Compiler/src/GlobalVar.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java:Compiler",
+      "target": "file:VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java:Compiler",
+      "target": "file:VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java:StackInterpreter",
+      "target": "file:VirtualMachines/PIC_16F877_Compiler/src/Node.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java:StackInterpreter",
+      "target": "file:VirtualMachines/PIC_16F877_Compiler/src/Var.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java:Compiler",
+      "target": "file:VirtualMachines/PIC_16F877_Compiler/src/Element.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java:Compiler",
+      "target": "file:VirtualMachines/PIC_16F877_Compiler/src/GlobalVar.java",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "module:VirtualMachines/ArduinoCompiler",
+      "target": "module:VirtualMachines/ATmega168_328Compiler",
+      "type": "related",
+      "weight": 0.6,
+      "description": "Both compilers target AVR-based microcontrollers (Arduino uses ATmega chips) — share compiler architecture patterns including tokenizer, parser, stack interpreter, and C code generation."
+    },
+    {
+      "source": "module:VirtualMachines/ATmega168_328Compiler",
+      "target": "module:VirtualMachines/PIC_16F877_Compiler",
+      "type": "related",
+      "weight": 0.6,
+      "description": "Both are bare-metal microcontroller compilers for non-Arduino targets — share the same compiler pipeline architecture with target-specific C code emission."
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java:MyStreamTokenizer",
+      "target": "class:VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java:myStreamTokenizer",
+      "type": "related",
+      "weight": 0.7,
+      "description": "Analogous tokenizer classes across Arduino and ATmega compilers — implement the same lexer pattern with target-specific token handling."
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java:StackInterpreter",
+      "target": "class:VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java:StackInterpreter",
+      "type": "related",
+      "weight": 0.7,
+      "description": "Analogous stack interpreter classes across Arduino and ATmega compilers — implement the same virtual stack machine pattern."
+    },
+    {
+      "source": "class:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java:StackInterpreter",
+      "target": "class:VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java:StackInterpreter",
+      "type": "related",
+      "weight": 0.7,
+      "description": "Analogous stack interpreter classes across Arduino and PIC compilers — implement the same virtual stack machine pattern for different MCU targets."
+    },
+    {
+      "source": "file:VirtualMachines/ATmega168_328Compiler/ATMega168_328Compiler.c",
+      "target": "module:VirtualMachines/ATmega168_328Compiler",
+      "type": "related",
+      "weight": 0.5,
+      "description": "Native C helper file that provides low-level AVR routines or acts as a reference compiler implementation for the ATmega target."
+    },
+    {
+      "source": "file:VirtualMachines/PIC_16F877_Compiler/16F877_Compiler.c",
+      "target": "module:VirtualMachines/PIC_16F877_Compiler",
+      "type": "related",
+      "weight": 0.5,
+      "description": "Native C helper file that provides PIC-specific routines or acts as a reference compiler implementation for the PIC 16F877 target."
+    }
+  ],
+  "batchFiles": [
+    {
+      "path": "VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java",
+      "language": "java",
+      "sizeLines": 200,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ArduinoCompiler/src/C_Code.java",
+      "language": "java",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ArduinoCompiler/src/Compiler.java",
+      "language": "java",
+      "sizeLines": 300,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ArduinoCompiler/src/Element.java",
+      "language": "java",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ArduinoCompiler/src/GlobalVars.java",
+      "language": "java",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java",
+      "language": "java",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ArduinoCompiler/src/Node.java",
+      "language": "java",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ArduinoCompiler/src/StackInterpreter.java",
+      "language": "java",
+      "sizeLines": 250,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ArduinoCompiler/src/Var.java",
+      "language": "java",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java",
+      "language": "java",
+      "sizeLines": 200,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ATmega168_328Compiler/src/Element.java",
+      "language": "java",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ATmega168_328Compiler/src/GlobalVar.java",
+      "language": "java",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java",
+      "language": "java",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ATmega168_328Compiler/src/Node.java",
+      "language": "java",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java",
+      "language": "java",
+      "sizeLines": 250,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ATmega168_328Compiler/src/Var.java",
+      "language": "java",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/ATmega168_328Compiler/ATMega168_328Compiler.c",
+      "language": "c",
+      "sizeLines": 300,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/PIC_16F877_Compiler/16F877_Compiler.c",
+      "language": "c",
+      "sizeLines": 300,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/PIC_16F877_Compiler/src/Compiler.java",
+      "language": "java",
+      "sizeLines": 300,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/PIC_16F877_Compiler/src/Element.java",
+      "language": "java",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/PIC_16F877_Compiler/src/GlobalVar.java",
+      "language": "java",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java",
+      "language": "java",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/PIC_16F877_Compiler/src/Node.java",
+      "language": "java",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java",
+      "language": "java",
+      "sizeLines": 250,
+      "fileCategory": "code"
+    },
+    {
+      "path": "VirtualMachines/PIC_16F877_Compiler/src/Var.java",
+      "language": "java",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    }
+  ]
+}

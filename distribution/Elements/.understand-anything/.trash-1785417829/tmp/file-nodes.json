@@ -1,0 +1,5422 @@
+[
+  {
+    "id": "config:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/definition.def",
+    "type": "config",
+    "name": "definition.def",
+    "filePath": "Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/definition.def",
+    "summary": "MyOpenLab directory definition for the Tutorials documentation element \u2014 declares ISDIRECTORY=TRUE, captions in EN/ES/DE, icon reference, and VM_DIR_EDITABLE flag",
+    "tags": [
+      "myopenlab",
+      "definition",
+      "tutorials",
+      "documentation",
+      "directory-config"
+    ]
+  },
+  {
+    "id": "document:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_en.html",
+    "type": "document",
+    "name": "description_en.html",
+    "filePath": "Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_en.html",
+    "summary": "English description HTML for the Tutorials documentation element",
+    "tags": [
+      "myopenlab",
+      "documentation",
+      "description",
+      "english"
+    ]
+  },
+  {
+    "id": "document:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_de.html",
+    "type": "document",
+    "name": "description_de.html",
+    "filePath": "Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_de.html",
+    "summary": "German description HTML for the Tutorials documentation element",
+    "tags": [
+      "myopenlab",
+      "documentation",
+      "description",
+      "german"
+    ]
+  },
+  {
+    "id": "document:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_es.html",
+    "type": "document",
+    "name": "description_es.html",
+    "filePath": "Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_es.html",
+    "summary": "Spanish description HTML for the Tutorials documentation element",
+    "tags": [
+      "myopenlab",
+      "documentation",
+      "description",
+      "spanish"
+    ]
+  },
+  {
+    "id": "file:infra:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/info.xml",
+    "type": "infra",
+    "name": "info.xml",
+    "filePath": "Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/info.xml",
+    "summary": "XML metadata for the Tutorials documentation element \u2014 includes captions, category (Education), author (Prof. Jos\u00e9 Manuel Ruiz Guti\u00e9rrez), version 1.0.0.0, date, and destination path",
+    "tags": [
+      "myopenlab",
+      "metadata",
+      "tutorials",
+      "documentation",
+      "xml"
+    ]
+  },
+  {
+    "id": "module:Documentations",
+    "type": "module",
+    "name": "Documentations",
+    "filePath": "Documentations",
+    "summary": "MyOpenLab Element directory for the Documentations element \u2014 contains metadata, descriptions in multiple languages, and an info manifest for the Education-category element.",
+    "tags": [
+      "myopenlab",
+      "element",
+      "education",
+      "documentation"
+    ]
+  },
+  {
+    "id": "config:Documentations/definition.def",
+    "type": "config",
+    "name": "definition.def",
+    "filePath": "Documentations/definition.def",
+    "summary": "MyOpenLab element definition file declaring ISDIRECTORY=true, caption in DE/EN/ES, icon reference (icon32.png), and VM_DIR_EDITABLE=true.",
+    "tags": [
+      "myopenlab",
+      "element-definition",
+      "config",
+      "metadata"
+    ]
+  },
+  {
+    "id": "config:Documentations/info.xml",
+    "type": "config",
+    "name": "info.xml",
+    "filePath": "Documentations/info.xml",
+    "summary": "XML element manifest for Documentations \u2014 declares caption, category (Education), author, version 1.0.0.0, date 03.10.2016, and destination path.",
+    "tags": [
+      "myopenlab",
+      "element-manifest",
+      "xml",
+      "metadata",
+      "education"
+    ]
+  },
+  {
+    "id": "document:Documentations/description_de.html",
+    "type": "document",
+    "name": "description_de.html",
+    "filePath": "Documentations/description_de.html",
+    "summary": "German description for the Documentations element (placeholder content).",
+    "tags": [
+      "myopenlab",
+      "description",
+      "german",
+      "placeholder"
+    ]
+  },
+  {
+    "id": "document:Documentations/description_en.html",
+    "type": "document",
+    "name": "description_en.html",
+    "filePath": "Documentations/description_en.html",
+    "summary": "English description for the Documentations element (placeholder content).",
+    "tags": [
+      "myopenlab",
+      "description",
+      "english",
+      "placeholder"
+    ]
+  },
+  {
+    "id": "document:Documentations/description_es.html",
+    "type": "document",
+    "name": "description_es.html",
+    "filePath": "Documentations/description_es.html",
+    "summary": "Spanish description for the Documentations element (placeholder content).",
+    "tags": [
+      "myopenlab",
+      "description",
+      "spanish",
+      "placeholder"
+    ]
+  },
+  {
+    "id": "config:config.txt",
+    "type": "config",
+    "name": "SubVM Captions Config",
+    "filePath": "config.txt",
+    "summary": "Multi-language caption definitions (DE, EN, ES) for the SubVM element, mapping display names across three locales.",
+    "tags": [
+      "config",
+      "captions",
+      "localization",
+      "subvm",
+      "i18n"
+    ]
+  },
+  {
+    "id": "document:start.html",
+    "type": "document",
+    "name": "Element Help Page",
+    "filePath": "start.html",
+    "summary": "HTML help page for the Ellipse element, displaying placeholder text in German instructing users to click an element to view its help.",
+    "tags": [
+      "documentation",
+      "html",
+      "help",
+      "ellipse",
+      "ui"
+    ]
+  },
+  {
+    "id": "config:update.txt",
+    "type": "config",
+    "name": "Version File",
+    "filePath": "update.txt",
+    "summary": "Single-line version identifier tracking the current distribution version of the Elements library.",
+    "tags": [
+      "config",
+      "version",
+      "distribution",
+      "release"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/1DArray/1DConstString/src/StrConst1D.java",
+    "type": "file",
+    "name": "StrConst1D.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java",
+    "type": "file",
+    "name": "NoiseGenerator1D.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "type": "file",
+    "name": "Ellipse.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "type": "file",
+    "name": "XImage.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+    "type": "file",
+    "name": "XLabel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+    "type": "file",
+    "name": "RoundRect.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+    "type": "file",
+    "name": "Panel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+    "type": "file",
+    "name": "Triangle.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+    "type": "file",
+    "name": "XRectangle.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Abfragen/abfrage/Abfrage.java",
+    "type": "file",
+    "name": "Abfrage.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Abfragen/abfrage2/Abfrage.java",
+    "type": "file",
+    "name": "Abfrage.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Abfragen/isGleich/IsGleich.java",
+    "type": "file",
+    "name": "IsGleich.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Abfragen/isGroesser/isGroesser.java",
+    "type": "file",
+    "name": "isGroesser.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java",
+    "type": "file",
+    "name": "isGroesserGleich.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Abfragen/isKleiner/IsKleiner.java",
+    "type": "file",
+    "name": "IsKleiner.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java",
+    "type": "file",
+    "name": "isKleinerGleich.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+    "type": "file",
+    "name": "AudioIn.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Analoge/AudioIn/src/AudioIn.java",
+    "type": "file",
+    "name": "AudioIn.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+    "type": "file",
+    "name": "Datalogger.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+    "type": "file",
+    "name": "Datalogger.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Analoge/DCT/src/DCT.java",
+    "type": "file",
+    "name": "DCT.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Analoge/FFT/src/FastFourierTransform.java",
+    "type": "file",
+    "name": "FastFourierTransform.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Analoge/FFT/src/FFT.java",
+    "type": "file",
+    "name": "FFT.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Analoge/Generator_JV/src/Generator.java",
+    "type": "file",
+    "name": "Generator.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Analoge/Generator/Generator.java",
+    "type": "file",
+    "name": "Generator.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Analoge/IDCT/IDCT.java",
+    "type": "file",
+    "name": "IDCT.java",
+    "filePath": "CircuitElements/Analoge/IDCT/IDCT.java",
+    "summary": "IDCT (Inverse Discrete Cosine Transform) element \u2014 MyOpenLab visual programming element that performs inverse DCT on 1D signal arrays, extends JVSMain with group input/output pins",
+    "tags": [
+      "java",
+      "myopenlab",
+      "dct",
+      "signal-processing",
+      "analog"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Analoge/Ton-Generator/src/TonGenrator.java",
+    "type": "file",
+    "name": "TonGenrator.java",
+    "filePath": "CircuitElements/Analoge/Ton-Generator/src/TonGenrator.java",
+    "summary": "Tone Generator element \u2014 MyOpenLab visual element that generates synthetic audio tones and plays them via javax.sound, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "audio",
+      "sound",
+      "tone-generator",
+      "analog"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Analoge/Trigger/Trigger.java",
+    "type": "file",
+    "name": "Trigger.java",
+    "filePath": "CircuitElements/Analoge/Trigger/Trigger.java",
+    "summary": "Trigger element \u2014 MyOpenLab visual element that detects zero-crossing triggers in signal arrays, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "trigger",
+      "zero-crossing",
+      "analog"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Analoge/Trunc/Trigger.java",
+    "type": "file",
+    "name": "Trigger.java",
+    "filePath": "CircuitElements/Analoge/Trunc/Trigger.java",
+    "summary": "Trunc element \u2014 MyOpenLab visual element that truncates small signal values (below threshold) to zero, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "trunc",
+      "threshold",
+      "analog"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Automation/FuzzyControl/DialogChart.java",
+    "type": "file",
+    "name": "DialogChart.java",
+    "filePath": "CircuitElements/Automation/FuzzyControl/DialogChart.java",
+    "summary": "Dialog chart window for Fuzzy Control element \u2014 displays JFreeChart charts for fuzzy variables, extends JDialog",
+    "tags": [
+      "java",
+      "myopenlab",
+      "fuzzy",
+      "chart",
+      "jfreechart",
+      "automation"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Automation/FuzzyControl/Fuzzy.java",
+    "type": "file",
+    "name": "Fuzzy.java",
+    "filePath": "CircuitElements/Automation/FuzzyControl/Fuzzy.java",
+    "summary": "Fuzzy Logic Control element \u2014 MyOpenLab visual element integrating jFuzzyLogic for fuzzy inference with FCL files, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "fuzzy",
+      "fuzzy-logic",
+      "control",
+      "automation"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Automation/FuzzyControl/NewJDialog.java",
+    "type": "file",
+    "name": "NewJDialog.java",
+    "filePath": "CircuitElements/Automation/FuzzyControl/NewJDialog.java",
+    "summary": "FCL editor dialog \u2014 JDialog for editing Fuzzy Control Language text with OK/Cancel buttons",
+    "tags": [
+      "java",
+      "myopenlab",
+      "fuzzy",
+      "editor",
+      "dialog",
+      "automation"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Automation/PID/PID.java",
+    "type": "file",
+    "name": "PID.java",
+    "filePath": "CircuitElements/Automation/PID/PID.java",
+    "summary": "PID Controller element \u2014 MyOpenLab visual element implementing PID (Proportional-Integral-Derivative) regulator, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "pid",
+      "controller",
+      "regulation",
+      "automation"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/BitOperations/AND/AND.java",
+    "type": "file",
+    "name": "AND.java",
+    "filePath": "CircuitElements/BitOperations/AND/AND.java",
+    "summary": "Bitwise AND element \u2014 MyOpenLab visual element performing bitwise AND on integer/byte inputs, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "bitwise",
+      "and",
+      "bit-operations"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/BitOperations/OR/OR.java",
+    "type": "file",
+    "name": "OR.java",
+    "filePath": "CircuitElements/BitOperations/OR/OR.java",
+    "summary": "Bitwise OR element \u2014 MyOpenLab visual element performing bitwise OR on integer/byte inputs, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "bitwise",
+      "or",
+      "bit-operations"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/BitOperations/SHIFT_LEFT/ShiftLeft.java",
+    "type": "file",
+    "name": "ShiftLeft.java",
+    "filePath": "CircuitElements/BitOperations/SHIFT_LEFT/ShiftLeft.java",
+    "summary": "Bitwise Shift Left element \u2014 MyOpenLab visual element performing left shift (<<) on integer/byte inputs, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "bitwise",
+      "shift-left",
+      "bit-operations"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/BitOperations/SHIFT_RIGHT/ShiftRight.java",
+    "type": "file",
+    "name": "ShiftRight.java",
+    "filePath": "CircuitElements/BitOperations/SHIFT_RIGHT/ShiftRight.java",
+    "summary": "Bitwise Shift Right element \u2014 MyOpenLab visual element performing right shift (>>) on integer/byte inputs, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "bitwise",
+      "shift-right",
+      "bit-operations"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/BitOperations/XOR/XOR.java",
+    "type": "file",
+    "name": "XOR.java",
+    "filePath": "CircuitElements/BitOperations/XOR/XOR.java",
+    "summary": "Bitwise XOR element \u2014 MyOpenLab visual element performing bitwise XOR (^) on integer/byte inputs, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "bitwise",
+      "xor",
+      "bit-operations"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Boolean/AND/src/AND.java",
+    "type": "file",
+    "name": "AND.java",
+    "filePath": "CircuitElements/Boolean/AND/src/AND.java",
+    "summary": "Boolean AND gate (2-input) \u2014 MyOpenLab visual element implementing logical AND of two boolean inputs, extends Gatter",
+    "tags": [
+      "java",
+      "myopenlab",
+      "boolean",
+      "and",
+      "logic-gate"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Boolean/AND2/src/AND.java",
+    "type": "file",
+    "name": "AND.java",
+    "filePath": "CircuitElements/Boolean/AND2/src/AND.java",
+    "summary": "Boolean AND gate (multi-input) \u2014 MyOpenLab visual element implementing logical AND of N boolean inputs, extends Gatter2",
+    "tags": [
+      "java",
+      "myopenlab",
+      "boolean",
+      "and",
+      "logic-gate"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Boolean/AND3/src/AND.java",
+    "type": "file",
+    "name": "AND.java",
+    "filePath": "CircuitElements/Boolean/AND3/src/AND.java",
+    "summary": "Boolean AND gate with clock delay \u2014 MyOpenLab visual element implementing AND with configurable delay via processClock, extends Gatter3",
+    "tags": [
+      "java",
+      "myopenlab",
+      "boolean",
+      "and",
+      "delay",
+      "logic-gate"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Boolean/Bin2Dec/src/BinDec.java",
+    "type": "file",
+    "name": "BinDec.java",
+    "filePath": "CircuitElements/Boolean/Bin2Dec/src/BinDec.java",
+    "summary": "Binary to Decimal converter \u2014 MyOpenLab visual element converting N boolean inputs to integer output, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "binary",
+      "decimal",
+      "converter"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Boolean/const/src/Const.java",
+    "type": "file",
+    "name": "Const.java",
+    "filePath": "CircuitElements/Boolean/const/src/Const.java",
+    "summary": "Boolean Constant element \u2014 MyOpenLab visual element that outputs a configurable constant boolean value (true/false), extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "boolean",
+      "constant",
+      "const"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Boolean/Counter/4BitCounter/src/Counter4Bit.java",
+    "type": "file",
+    "name": "Counter4Bit.java",
+    "filePath": "CircuitElements/Boolean/Counter/4BitCounter/src/Counter4Bit.java",
+    "summary": "4-bit Counter element \u2014 MyOpenLab visual element implementing a 4-bit binary counter with timer and reset inputs, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "counter",
+      "4bit",
+      "binary",
+      "boolean"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Boolean/Dec2Bin/Dec2Bin.java",
+    "type": "file",
+    "name": "Dec2Bin.java",
+    "filePath": "CircuitElements/Boolean/Dec2Bin/Dec2Bin.java",
+    "summary": "Decimal to Binary converter \u2014 MyOpenLab visual element converting integer input to N boolean outputs, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "decimal",
+      "binary",
+      "converter"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Boolean/Decoder/Bin2Dec/src/BinDec.java",
+    "type": "file",
+    "name": "BinDec.java",
+    "filePath": "CircuitElements/Boolean/Decoder/Bin2Dec/src/BinDec.java",
+    "summary": "Binary to Decimal decoder \u2014 MyOpenLab decoder element converting N boolean inputs to integer output, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "binary",
+      "decimal",
+      "decoder"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Boolean/Decoder/Dec2Bin/src/Dec2Bin.java",
+    "type": "file",
+    "name": "Dec2Bin.java",
+    "filePath": "CircuitElements/Boolean/Decoder/Dec2Bin/src/Dec2Bin.java",
+    "summary": "Decimal to Binary decoder \u2014 MyOpenLab decoder element converting integer input to N boolean outputs, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "decimal",
+      "binary",
+      "decoder"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Boolean/Decoder/SiebenSegDecoder/src/Logic.java",
+    "type": "file",
+    "name": "Logic.java",
+    "filePath": "CircuitElements/Boolean/Decoder/SiebenSegDecoder/src/Logic.java",
+    "summary": "7-Segment Decoder element \u2014 MyOpenLab visual element implementing a 7-segment display decoder with lookup table, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "7-segment",
+      "decoder",
+      "display"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+    "type": "file",
+    "name": "Demultiplexer.java",
+    "filePath": "CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+    "summary": "Demultiplexer element \u2014 MyOpenLab visual element routing a boolean input to one of 8 outputs based on 3-bit address, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "demultiplexer",
+      "boolean",
+      "mux"
+    ]
+  },
+  {
+    "id": "file:java:CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+    "type": "file",
+    "name": "DFlipFlop.java",
+    "filePath": "CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+    "summary": "D Flip-Flop element \u2014 MyOpenLab visual element implementing a toggle flip-flop with Q1/Q2 outputs, extends JVSMain",
+    "tags": [
+      "java",
+      "myopenlab",
+      "flipflop",
+      "d-flipflop",
+      "boolean"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor/src/MyTableEditor.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor/src/MyTableEditor.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/EdgeDetect/src/EdgeDetect.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/EdgeDetect/src/EdgeDetect.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/Encoder/Encoder8x3/src/Encoder8x3.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/Encoder/Encoder8x3/src/Encoder8x3.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/FlipFlop/DAC_FlipFlop/src/DACFlipFlop.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/FlipFlop/DAC_FlipFlop/src/DACFlipFlop.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/FlipFlop/JKFlipFlop/src/JKFlipFlop.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/FlipFlop/JKFlipFlop/src/JKFlipFlop.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/FlipFlop/MSJKFlipFlop/src/MSJKFlipFlop.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/FlipFlop/MSJKFlipFlop/src/MSJKFlipFlop.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/FlipFlop/RSFlipFlop/src/RSFlipFlop.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/FlipFlop/RSFlipFlop/src/RSFlipFlop.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/Multiplexer/Demux4/Demux.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/Multiplexer/Demux4/Demux.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/Multiplexer/Mux4/src/Multiplexer.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/Multiplexer/Mux4/src/Multiplexer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/Multiplexer/src/Multiplexer.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/Multiplexer/src/Multiplexer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/NAND/src/NAND.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/NAND/src/NAND.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/Noetig/src/Noetig.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/Noetig/src/Noetig.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/NOR/src/NOR.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/NOR/src/NOR.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/NOT/src/NOT.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/NOT/src/NOT.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/RSFlipFlopCLK/src/RSFlipFlop.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/RSFlipFlopCLK/src/RSFlipFlop.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/SchiebeRegister/SchiebeRegister.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/SchiebeRegister/SchiebeRegister.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/Siebensegment/src/Logic.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/Siebensegment/src/Logic.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/SRAM/SRAM.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/SRAM/SRAM.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/toggle/Toggle.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/toggle/Toggle.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/Warte/Warte.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/Warte/Warte.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/Zaehler/Zaehler.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/Zaehler/Zaehler.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Canvas/Canvas/src/Canvas.java",
+    "type": "file",
+    "name": "CircuitElements/Canvas/Canvas/src/Canvas.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Canvas/DrawString/DrawString.java",
+    "type": "file",
+    "name": "CircuitElements/Canvas/DrawString/DrawString.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Canvas/Transform/src/Transformation.java",
+    "type": "file",
+    "name": "CircuitElements/Canvas/Transform/src/Transformation.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/AND/src/AND.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/AND/src/AND.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/OR/src/OR.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/OR/src/OR.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/XOR/XOR.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/XOR/XOR.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/NXOR/src/NXOR.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/NXOR/src/NXOR.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/FlipFlop/FlipFlop.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/FlipFlop/FlipFlop.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/Impluse/Impluse.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/Impluse/Impluse.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Boolean/const/src/Const.java",
+    "type": "file",
+    "name": "CircuitElements/Boolean/const/src/Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Color/ColorConst/ColorConst.java",
+    "type": "file",
+    "name": "CircuitElements/Color/ColorConst/ColorConst.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+    "type": "file",
+    "name": "CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+    "type": "file",
+    "name": "CircuitElements/Dekoratoren/Label/YLabel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+    "type": "file",
+    "name": "CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Color/ColorPicker/src/ColorPicker.java",
+    "type": "file",
+    "name": "CircuitElements/Color/ColorPicker/src/ColorPicker.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Color/RGBToColor/RGBToColor.java",
+    "type": "file",
+    "name": "CircuitElements/Color/RGBToColor/RGBToColor.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Color/UserDefConst/src/Elem.java",
+    "type": "file",
+    "name": "CircuitElements/Color/UserDefConst/src/Elem.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Dekoratoren/AnalogeAnzeige_1_3/Elem.java",
+    "type": "file",
+    "name": "CircuitElements/Dekoratoren/AnalogeAnzeige_1_3/Elem.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Dekoratoren/Anzeige/Elem.java",
+    "type": "file",
+    "name": "CircuitElements/Dekoratoren/Anzeige/Elem.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Dekoratoren/Browser/src/Browser.java",
+    "type": "file",
+    "name": "CircuitElements/Dekoratoren/Browser/src/Browser.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Dekoratoren/Calendar/src/Calendar.java",
+    "type": "file",
+    "name": "CircuitElements/Dekoratoren/Calendar/src/Calendar.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Dekoratoren/DataGridView/src/Elem.java",
+    "type": "file",
+    "name": "CircuitElements/Dekoratoren/DataGridView/src/Elem.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Display/7SegmentDisplay/src/Display.java",
+    "type": "file",
+    "name": "CircuitElements/Display/7SegmentDisplay/src/Display.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Display/MatrixDisplay/MatrixDisplay.java",
+    "type": "file",
+    "name": "CircuitElements/Display/MatrixDisplay/MatrixDisplay.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Display/MatrixDisplay/src/Dot.java",
+    "type": "file",
+    "name": "CircuitElements/Display/MatrixDisplay/src/Dot.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Display/MatrixDisplay/src/MatrixPanel.java",
+    "type": "file",
+    "name": "CircuitElements/Display/MatrixDisplay/src/MatrixPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Error/Error.java",
+    "type": "file",
+    "name": "Error.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Event/Delay/Delay.java",
+    "type": "file",
+    "name": "Delay.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Event/EventCount/src/Count.java",
+    "type": "file",
+    "name": "Count.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Event/EventDelay/src/Delay.java",
+    "type": "file",
+    "name": "Delay.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Event/TimeConst/src/Const.java",
+    "type": "file",
+    "name": "Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Event/TimeConst/src/TimeConst.java",
+    "type": "file",
+    "name": "TimeConst.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Event/Timer/src/Timer.java",
+    "type": "file",
+    "name": "Timer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Event/Timer1ms/src/Timer1ms.java",
+    "type": "file",
+    "name": "Timer1ms.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/File/BinaryFileWriteRead/src/BinaryFile.java",
+    "type": "file",
+    "name": "BinaryFile.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/FlowCharts/_ProcessSetter/ProcessSetter.java",
+    "type": "file",
+    "name": "CircuitElements/FlowCharts/_ProcessSetter/ProcessSetter.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+    "type": "file",
+    "name": "CircuitElements/FlowCharts/Beep/src/Beep.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/FlowCharts/Dec/src/Dec.java",
+    "type": "file",
+    "name": "CircuitElements/FlowCharts/Dec/src/Dec.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+    "type": "file",
+    "name": "CircuitElements/FlowCharts/Inc/Inc.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/FlowCharts/Start/Start.java",
+    "type": "file",
+    "name": "CircuitElements/FlowCharts/Start/Start.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Generator/Generator.java",
+    "type": "file",
+    "name": "CircuitElements/Generator/Generator.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+    "type": "file",
+    "name": "CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+    "type": "file",
+    "name": "CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:HexToBytes.java",
+    "type": "file",
+    "name": "HexToBytes.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:BytesToHEX.java",
+    "type": "file",
+    "name": "BytesToHEX.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:BytesToString.java",
+    "type": "file",
+    "name": "BytesToString.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:StringToBytes.java",
+    "type": "file",
+    "name": "StringToBytes.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:WriteAndReadThread.java",
+    "type": "file",
+    "name": "WriteAndReadThread.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Print_SerialPort_JV.java",
+    "type": "file",
+    "name": "Print_SerialPort_JV.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Read_SerialPort_JV.java",
+    "type": "file",
+    "name": "Read_SerialPort_JV.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Write_SerialPort_JV.java",
+    "type": "file",
+    "name": "Write_SerialPort_JV.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:WriteAndRead_SerialPort_JV.java",
+    "type": "file",
+    "name": "WriteAndRead_SerialPort_JV.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Joystick.java",
+    "type": "file",
+    "name": "Joystick.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:JoystickPanel.java",
+    "type": "file",
+    "name": "JoystickPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Keyboard.java",
+    "type": "file",
+    "name": "Keyboard.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Decision.java",
+    "type": "file",
+    "name": "Decision.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Element_expr.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Function.java",
+    "type": "file",
+    "name": "Function.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Program.java",
+    "type": "file",
+    "name": "Program.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:StackStart.java",
+    "type": "file",
+    "name": "StackStart.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:ButtonAction.java",
+    "type": "file",
+    "name": "ButtonAction.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Compiler.java",
+    "type": "file",
+    "name": "Compiler.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:MCU_Compiler_JV.java",
+    "type": "file",
+    "name": "MCU_Compiler_JV.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:MCU_Main.java",
+    "type": "file",
+    "name": "MCU_Main.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:MyPanel.java",
+    "type": "file",
+    "name": "MyPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Var.java",
+    "type": "file",
+    "name": "Var.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Workspace.java",
+    "type": "file",
+    "name": "Workspace.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:MSleep.java",
+    "type": "file",
+    "name": "MSleep.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/addierer/Addierer.java",
+    "type": "file",
+    "name": "Addierer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/ByteConst/Const.java",
+    "type": "file",
+    "name": "Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/ByteToInt/ByteToInt.java",
+    "type": "file",
+    "name": "ByteToInt.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/ByteToShort/ByteToShort.java",
+    "type": "file",
+    "name": "ByteToShort.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/ComplexConst/src/ComplexConst.java",
+    "type": "file",
+    "name": "ComplexConst.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/ConstString/ConstString.java",
+    "type": "file",
+    "name": "ConstString.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/DoubleConst/Const.java",
+    "type": "file",
+    "name": "Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/DoubleToInteger/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Filter/FilterElement.java",
+    "type": "file",
+    "name": "FilterElement.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/FloatConst/Const.java",
+    "type": "file",
+    "name": "Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/IntConst/Const.java",
+    "type": "file",
+    "name": "Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/IntToDouble/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/IntToLong/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/IntToShort/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/LongConst/Const.java",
+    "type": "file",
+    "name": "Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/LongToInt/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Math2/src/LogicCircuit.java",
+    "type": "file",
+    "name": "LogicCircuit.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Math2/src/LogicPanel.java",
+    "type": "file",
+    "name": "LogicPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Math2/src/Math2.java",
+    "type": "file",
+    "name": "Math2.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Multiplizierer_1_0/src/Multiplizierer.java",
+    "type": "file",
+    "name": "Multiplizierer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Negation/src/Negation.java",
+    "type": "file",
+    "name": "Negation.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/NumericConst/Const.java",
+    "type": "file",
+    "name": "Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Parser/ExpressionParser.java",
+    "type": "file",
+    "name": "ExpressionParser.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Funktionen.java",
+    "type": "file",
+    "name": "Funktionen.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Node.java",
+    "type": "file",
+    "name": "Node.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Parser.java",
+    "type": "file",
+    "name": "Parser.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Var.java",
+    "type": "file",
+    "name": "Var.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Visual.java",
+    "type": "file",
+    "name": "Visual.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/RandomConst/src/RandomConst.java",
+    "type": "file",
+    "name": "RandomConst.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/ShortToInt/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Sinus_1_0/src/Sinus.java",
+    "type": "file",
+    "name": "Sinus.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Skript/src/Script.java",
+    "type": "file",
+    "name": "Script.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Skript/src/Skript.java",
+    "type": "file",
+    "name": "Skript.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/StringToDouble/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/StringToInt/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/Subtrahierer_1_0/src/Subtrahierer.java",
+    "type": "file",
+    "name": "Subtrahierer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Numerik/TypeCast/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/String/CharAt/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/String/Compare/src/Compare.java",
+    "type": "file",
+    "name": "Compare.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/String/Concat/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/String/Constant_JV/Null_Const/Const.java",
+    "type": "file",
+    "name": "Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/String/Constant_JV/SP_Const/Const.java",
+    "type": "file",
+    "name": "Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/String/Constant_JV/TAB_Const/src/Const.java",
+    "type": "file",
+    "name": "Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/String/Contains/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/String/EndsWith/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/String/IndexOf/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/String/Length/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/String/Replace/src/Replace.java",
+    "type": "file",
+    "name": "Replace.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/String/Split/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/String/Substring/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+    "type": "file",
+    "name": "CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+    "type": "file",
+    "name": "CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+    "type": "file",
+    "name": "CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+    "type": "file",
+    "name": "CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/VectorenMatrix/Matrix_NXM/src/MyTableEditor/MyTableEditor.java",
+    "type": "file",
+    "name": "MyTableEditor.java",
+    "filePath": "CircuitElements/VectorenMatrix/Matrix_NXM/src/MyTableEditor/MyTableEditor.java",
+    "summary": "Table editor for matrix values",
+    "tags": [
+      "editor",
+      "table",
+      "matrix"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java",
+    "type": "file",
+    "name": "LED.java",
+    "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java",
+    "type": "file",
+    "name": "LEDPanel.java",
+    "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java",
+    "type": "file",
+    "name": "LED.java",
+    "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java",
+    "type": "file",
+    "name": "LEDPanel.java",
+    "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java",
+    "type": "file",
+    "name": "LED.java",
+    "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java",
+    "type": "file",
+    "name": "LEDPanel.java",
+    "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java",
+    "type": "file",
+    "name": "LED.java",
+    "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java",
+    "type": "file",
+    "name": "LEDPanel.java",
+    "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java",
+    "type": "file",
+    "name": "GaugeCircuit.java",
+    "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+    "type": "file",
+    "name": "GaugePanel.java",
+    "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+    "type": "file",
+    "name": "SchalterPanel.java",
+    "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+    "type": "file",
+    "name": "SchiebeSchalter.java",
+    "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+    "type": "file",
+    "name": "SchalterPanel.java",
+    "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+    "type": "file",
+    "name": "SchiebeSchalter.java",
+    "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "type": "file",
+    "name": "Ellipse.java",
+    "filePath": "FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "type": "file",
+    "name": "XImage.java",
+    "filePath": "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+    "type": "file",
+    "name": "XLabel.java",
+    "filePath": "FrontElements/2Dekoratoren/Label/src/XLabel.java",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/OscilloscopeXY2/src/FrameProperties.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/OscilloscopeXY2/src/FrameProperties.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/OscilloscopeXY2/src/Properties.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/OscilloscopeXY2/src/Properties.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/OscilloscopeXY2/src/Property.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/OscilloscopeXY2/src/Property.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java",
+    "type": "file",
+    "name": "FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Numerisch/Anzeige/src/Anzeige.java",
+    "type": "file",
+    "name": "FrontElements/2Numerisch/Anzeige/src/Anzeige.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java",
+    "type": "file",
+    "name": "FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java",
+    "type": "file",
+    "name": "FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Numerisch/Gauge2/src/GaugePanel.java",
+    "type": "file",
+    "name": "FrontElements/2Numerisch/Gauge2/src/GaugePanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Numerisch/Gauge2/src/Gauge.java",
+    "type": "file",
+    "name": "FrontElements/2Numerisch/Gauge2/src/Gauge.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java",
+    "type": "file",
+    "name": "FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+    "type": "file",
+    "name": "FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/GraphBackground.java",
+    "type": "file",
+    "name": "GraphBackground.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/GraphRenderer.java",
+    "type": "file",
+    "name": "GraphRenderer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/Oscilloscope.java",
+    "type": "file",
+    "name": "Oscilloscope.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/OscPanel.java",
+    "type": "file",
+    "name": "OscPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/OscilloscopeXY/src/OscPanel.java",
+    "type": "file",
+    "name": "OscPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/OscilloscopeXY/src/Properties.java",
+    "type": "file",
+    "name": "Properties.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/OscilloscopeXY/src/Property.java",
+    "type": "file",
+    "name": "Property.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+    "type": "file",
+    "name": "Oscilloscope.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+    "type": "file",
+    "name": "OscPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/2Graph/OscilloscopeXY2/src/FrameProperties.java",
+    "type": "file",
+    "name": "FrameProperties.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/2Graph/OscilloscopeXY2/src/Properties.java",
+    "type": "file",
+    "name": "Properties.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/2Graph/OscilloscopeXY2/src/Property.java",
+    "type": "file",
+    "name": "Property.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/GraphicPanel.java",
+    "type": "file",
+    "name": "GraphicPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/OscilloscopeXY2/src/FrameProperties.java",
+    "type": "file",
+    "name": "FrameProperties.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/OscilloscopeXY2/src/Oscilloscope.java",
+    "type": "file",
+    "name": "Oscilloscope.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/OscilloscopeXY2/src/OscPanel.java",
+    "type": "file",
+    "name": "OscPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/OscilloscopeXY2/src/Properties.java",
+    "type": "file",
+    "name": "Properties.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/OscilloscopeXY2/src/Property.java",
+    "type": "file",
+    "name": "Property.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/Schreiber_2_0/src/DiagrammPanel.java",
+    "type": "file",
+    "name": "DiagrammPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/Schreiber_2_0/src/FrameProperties.java",
+    "type": "file",
+    "name": "FrameProperties.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/Schreiber_2_0/src/IOPanel.java",
+    "type": "file",
+    "name": "IOPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/Schreiber_2_0/src/KurvenPanel.java",
+    "type": "file",
+    "name": "KurvenPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/Schreiber_2_0/src/Schreiber.java",
+    "type": "file",
+    "name": "Schreiber.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Version_2_0/Output/Schreiber_2_0/src/SchreiberPanel.java",
+    "type": "file",
+    "name": "SchreiberPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Drivers/HC-06/src/HC06.java",
+    "type": "file",
+    "name": "HC06.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Drivers/Laubs\u00e4ge/Laubs\u00e4ge.java",
+    "type": "file",
+    "name": "Laubs\u00e4ge.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Drivers/OpenCV/OpenCV.java",
+    "type": "file",
+    "name": "OpenCV.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Drivers/RobotArm/RobotArm.java",
+    "type": "file",
+    "name": "RobotArm.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Drivers/RobotArm/src/ArmCalc.java",
+    "type": "file",
+    "name": "ArmCalc.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/FrontElements/Drivers/Robotic_2WD/src/Robotic_2WD.java",
+    "type": "file",
+    "name": "Robotic_2WD.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/FrontElements/Drivers/Robotic_2WD/src/Servo.java",
+    "type": "file",
+    "name": "Servo.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/FrontElements/Drivers/Skat/Skat.java",
+    "type": "file",
+    "name": "Skat.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/FrontElements/Drivers/TinkerForge/TinkerForge.java",
+    "type": "file",
+    "name": "TinkerForge.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/CompTemplate/CompTemplate.java",
+    "type": "file",
+    "name": "CompTemplate.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/UserElementsTemplate/UserElementsTemplate.java",
+    "type": "file",
+    "name": "UserElementsTemplate.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/BinAnzeige.java",
+    "type": "file",
+    "name": "BinAnzeige.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/BinSchalter.java",
+    "type": "file",
+    "name": "BinSchalter.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp.java",
+    "type": "file",
+    "name": "CustomAnalogComp.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp2.java",
+    "type": "file",
+    "name": "CustomAnalogComp2.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp_1_JV.java",
+    "type": "file",
+    "name": "CustomAnalogComp_1_JV.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp_2_JV.java",
+    "type": "file",
+    "name": "CustomAnalogComp_2_JV.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Expression.java",
+    "type": "file",
+    "name": "Expression.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Gatter.java",
+    "type": "file",
+    "name": "Gatter.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Gatter2.java",
+    "type": "file",
+    "name": "Gatter2.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Gatter3.java",
+    "type": "file",
+    "name": "Gatter3.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/GatterProperties.java",
+    "type": "file",
+    "name": "GatterProperties.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/JVSMain.java",
+    "type": "file",
+    "name": "JVSMain.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/MainFlow.java",
+    "type": "file",
+    "name": "MainFlow.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/MCUMainFlow.java",
+    "type": "file",
+    "name": "MCUMainFlow.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Properties.java",
+    "type": "file",
+    "name": "Properties.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Scanner.java",
+    "type": "file",
+    "name": "Scanner.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/MyParser/Parser.java",
+    "type": "file",
+    "name": "Parser.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/VisualLogic/VMLInder.java",
+    "type": "file",
+    "name": "VMLInder.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/VisualLogic/VisualLogicSystem.java",
+    "type": "file",
+    "name": "VisualLogicSystem.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/VirtualMachines/JavaVM/src/JavaVM.java",
+    "type": "file",
+    "name": "JavaVM.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "module:VirtualMachines",
+    "type": "module",
+    "name": "VirtualMachines",
+    "filePath": "VirtualMachines",
+    "summary": "MyOpenLab Virtual Machines directory containing microcontroller compiler toolchains for Arduino (AVR), ATmega168/328, and PIC 16F877 \u2014 translates visual logic diagrams into C source code for embedded targets.",
+    "tags": [
+      "myopenlab",
+      "virtual-machines",
+      "compilers",
+      "microcontroller",
+      "c-code-generation"
+    ]
+  },
+  {
+    "id": "module:VirtualMachines/ArduinoCompiler",
+    "type": "module",
+    "name": "ArduinoCompiler",
+    "filePath": "VirtualMachines/ArduinoCompiler",
+    "summary": "Arduino C code compiler \u2014 translates MyOpenLab visual programs to Arduino-compatible C source. Contains a lexer, parser, stack interpreter, and code generator targeting the Arduino platform.",
+    "tags": [
+      "arduino",
+      "compiler",
+      "avr",
+      "c-code-gen",
+      "stack-interpreter"
+    ]
+  },
+  {
+    "id": "module:VirtualMachines/ATmega168_328Compiler",
+    "type": "module",
+    "name": "ATmega168_328Compiler",
+    "filePath": "VirtualMachines/ATmega168_328Compiler",
+    "summary": "ATmega168/328 C compiler \u2014 translates MyOpenLab visual programs to C code for ATmega168 and ATmega328 microcontrollers. Shares architecture with ArduinoCompiler but targets bare-metal AVR without the Arduino framework.",
+    "tags": [
+      "atmega",
+      "compiler",
+      "avr",
+      "c-code-gen",
+      "bare-metal"
+    ]
+  },
+  {
+    "id": "module:VirtualMachines/PIC_16F877_Compiler",
+    "type": "module",
+    "name": "PIC_16F877_Compiler",
+    "filePath": "VirtualMachines/PIC_16F877_Compiler",
+    "summary": "PIC 16F877 C compiler \u2014 translates MyOpenLab visual programs to C code for the Microchip PIC 16F877 microcontroller. Includes both Java compiler sources and a native C compiler helper.",
+    "tags": [
+      "pic",
+      "compiler",
+      "microchip",
+      "c-code-gen",
+      "embedded"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java",
+    "type": "file",
+    "name": "ArduinoCompiler.java",
+    "filePath": "VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java",
+    "summary": "Main entry point for the Arduino compiler \u2014 orchestrates lexing, parsing, stack interpretation, and C code generation for Arduino targets.",
+    "tags": [
+      "java",
+      "arduino",
+      "compiler-entry",
+      "code-generation"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ArduinoCompiler/src/C_Code.java",
+    "type": "file",
+    "name": "C_Code.java",
+    "filePath": "VirtualMachines/ArduinoCompiler/src/C_Code.java",
+    "summary": "C code generation utilities \u2014 builds Arduino C source strings from the interpreted program state, including setup() and loop() structure.",
+    "tags": [
+      "java",
+      "arduino",
+      "c-code-gen",
+      "code-emitter"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ArduinoCompiler/src/Compiler.java",
+    "type": "file",
+    "name": "Compiler.java",
+    "filePath": "VirtualMachines/ArduinoCompiler/src/Compiler.java",
+    "summary": "Core compiler backend \u2014 contains the parsing and code generation logic specific to the Arduino target platform.",
+    "tags": [
+      "java",
+      "arduino",
+      "compiler-backend",
+      "parsing"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ArduinoCompiler/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "VirtualMachines/ArduinoCompiler/src/Element.java",
+    "summary": "Visual program element model \u2014 represents a single block or node in the MyOpenLab visual program for the Arduino compiler.",
+    "tags": [
+      "java",
+      "arduino",
+      "element-model",
+      "visual-program-node"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ArduinoCompiler/src/GlobalVars.java",
+    "type": "file",
+    "name": "GlobalVars.java",
+    "filePath": "VirtualMachines/ArduinoCompiler/src/GlobalVars.java",
+    "summary": "Global variable management \u2014 defines the symbol table for global variables used across the compiled Arduino program.",
+    "tags": [
+      "java",
+      "arduino",
+      "global-variables",
+      "symbol-table"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java",
+    "type": "file",
+    "name": "MyStreamTokenizer.java",
+    "filePath": "VirtualMachines/ArduinoCompiler/src/MyStreamTokenizer.java",
+    "summary": "Custom stream tokenizer \u2014 tokenizes MyOpenLab visual program serialized format into tokens for the Arduino compiler.",
+    "tags": [
+      "java",
+      "arduino",
+      "tokenizer",
+      "lexer"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ArduinoCompiler/src/Node.java",
+    "type": "file",
+    "name": "Node.java",
+    "filePath": "VirtualMachines/ArduinoCompiler/src/Node.java",
+    "summary": "Abstract syntax tree node \u2014 represents a parsed program element in the Arduino compiler's internal tree representation.",
+    "tags": [
+      "java",
+      "arduino",
+      "ast-node",
+      "tree-structure"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java",
+    "type": "file",
+    "name": "StackInterpreter.java",
+    "filePath": "VirtualMachines/ArduinoCompiler/src/StackInterpreter.java",
+    "summary": "Stack-based interpreter \u2014 executes the visual program logic on a virtual stack machine to determine C code output for Arduino.",
+    "tags": [
+      "java",
+      "arduino",
+      "stack-interpreter",
+      "virtual-machine"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ArduinoCompiler/src/Var.java",
+    "type": "file",
+    "name": "Var.java",
+    "filePath": "VirtualMachines/ArduinoCompiler/src/Var.java",
+    "summary": "Variable representation \u2014 models a typed variable used in the Arduino compiler's internal state during code generation.",
+    "tags": [
+      "java",
+      "arduino",
+      "variable",
+      "type-system"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java",
+    "type": "file",
+    "name": "ATmegaCompiler.java",
+    "filePath": "VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java",
+    "summary": "Main entry point for the ATmega168/328 compiler \u2014 orchestrates compilation of visual programs to bare-metal AVR C code.",
+    "tags": [
+      "java",
+      "atmega",
+      "compiler-entry",
+      "avr",
+      "bare-metal"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ATmega168_328Compiler/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "VirtualMachines/ATmega168_328Compiler/src/Element.java",
+    "summary": "Visual program element model for ATmega compiler \u2014 represents a logic block in the MyOpenLab visual diagram.",
+    "tags": [
+      "java",
+      "atmega",
+      "element-model",
+      "visual-program"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ATmega168_328Compiler/src/GlobalVar.java",
+    "type": "file",
+    "name": "GlobalVar.java",
+    "filePath": "VirtualMachines/ATmega168_328Compiler/src/GlobalVar.java",
+    "summary": "Global variable management for ATmega compiler \u2014 symbol table for global variables in bare-metal AVR programs.",
+    "tags": [
+      "java",
+      "atmega",
+      "global-variables",
+      "symbol-table"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java",
+    "type": "file",
+    "name": "myStreamTokenizer.java",
+    "filePath": "VirtualMachines/ATmega168_328Compiler/src/myStreamTokenizer.java",
+    "summary": "Custom stream tokenizer for ATmega compiler \u2014 tokenizes serialized visual program data for parsing.",
+    "tags": [
+      "java",
+      "atmega",
+      "tokenizer",
+      "lexer"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ATmega168_328Compiler/src/Node.java",
+    "type": "file",
+    "name": "Node.java",
+    "filePath": "VirtualMachines/ATmega168_328Compiler/src/Node.java",
+    "summary": "AST node for ATmega compiler \u2014 represents a parsed program element in the internal tree representation.",
+    "tags": [
+      "java",
+      "atmega",
+      "ast-node",
+      "tree-structure"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java",
+    "type": "file",
+    "name": "StackInterpreter.java",
+    "filePath": "VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java",
+    "summary": "Stack-based interpreter for ATmega compiler \u2014 executes visual logic on a virtual stack machine for bare-metal C output.",
+    "tags": [
+      "java",
+      "atmega",
+      "stack-interpreter",
+      "virtual-machine"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ATmega168_328Compiler/src/Var.java",
+    "type": "file",
+    "name": "Var.java",
+    "filePath": "VirtualMachines/ATmega168_328Compiler/src/Var.java",
+    "summary": "Variable representation for ATmega compiler \u2014 typed variable model used during code generation.",
+    "tags": [
+      "java",
+      "atmega",
+      "variable",
+      "type-system"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/ATmega168_328Compiler/ATMega168_328Compiler.c",
+    "type": "file",
+    "name": "ATMega168_328Compiler.c",
+    "filePath": "VirtualMachines/ATmega168_328Compiler/ATMega168_328Compiler.c",
+    "summary": "Native C helper for the ATmega compiler \u2014 provides low-level AVR routines used in the generated code or as a reference compiler implementation.",
+    "tags": [
+      "c",
+      "atmega",
+      "native",
+      "avr-runtime"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/PIC_16F877_Compiler/16F877_Compiler.c",
+    "type": "file",
+    "name": "16F877_Compiler.c",
+    "filePath": "VirtualMachines/PIC_16F877_Compiler/16F877_Compiler.c",
+    "summary": "Native C compiler/helper for the PIC 16F877 \u2014 provides PIC-specific routines and code generation templates for the target microcontroller.",
+    "tags": [
+      "c",
+      "pic",
+      "16f877",
+      "native",
+      "microchip"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java",
+    "type": "file",
+    "name": "Compiler.java",
+    "filePath": "VirtualMachines/PIC_16F877_Compiler/src/Compiler.java",
+    "summary": "Core compiler backend for PIC 16F877 \u2014 parsing and C code generation logic for the Microchip PIC target.",
+    "tags": [
+      "java",
+      "pic",
+      "compiler-backend",
+      "parsing",
+      "microchip"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/PIC_16F877_Compiler/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "VirtualMachines/PIC_16F877_Compiler/src/Element.java",
+    "summary": "Visual program element model for PIC compiler \u2014 represents a logic block in the MyOpenLab diagram for PIC targets.",
+    "tags": [
+      "java",
+      "pic",
+      "element-model",
+      "visual-program"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/PIC_16F877_Compiler/src/GlobalVar.java",
+    "type": "file",
+    "name": "GlobalVar.java",
+    "filePath": "VirtualMachines/PIC_16F877_Compiler/src/GlobalVar.java",
+    "summary": "Global variable management for PIC compiler \u2014 symbol table for global variables in PIC C programs.",
+    "tags": [
+      "java",
+      "pic",
+      "global-variables",
+      "symbol-table"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java",
+    "type": "file",
+    "name": "myStreamTokenizer.java",
+    "filePath": "VirtualMachines/PIC_16F877_Compiler/src/myStreamTokenizer.java",
+    "summary": "Custom stream tokenizer for PIC compiler \u2014 tokenizes serialized visual program data for the PIC compiler's parser.",
+    "tags": [
+      "java",
+      "pic",
+      "tokenizer",
+      "lexer"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/PIC_16F877_Compiler/src/Node.java",
+    "type": "file",
+    "name": "Node.java",
+    "filePath": "VirtualMachines/PIC_16F877_Compiler/src/Node.java",
+    "summary": "AST node for PIC compiler \u2014 represents a parsed program element in the internal tree for PIC targets.",
+    "tags": [
+      "java",
+      "pic",
+      "ast-node",
+      "tree-structure"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java",
+    "type": "file",
+    "name": "StackInterpreter.java",
+    "filePath": "VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java",
+    "summary": "Stack-based interpreter for PIC compiler \u2014 executes visual logic on a virtual stack machine for PIC C output.",
+    "tags": [
+      "java",
+      "pic",
+      "stack-interpreter",
+      "virtual-machine"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/PIC_16F877_Compiler/src/Var.java",
+    "type": "file",
+    "name": "Var.java",
+    "filePath": "VirtualMachines/PIC_16F877_Compiler/src/Var.java",
+    "summary": "Variable representation for PIC compiler \u2014 typed variable model used during code generation for PIC targets.",
+    "tags": [
+      "java",
+      "pic",
+      "variable",
+      "type-system"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogicElemente/src/CorelDraw.java",
+    "type": "file",
+    "name": "CorelDraw.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogicElemente/src/Token.java",
+    "type": "file",
+    "name": "Token.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogicElemente/src/VM_Element.java",
+    "type": "file",
+    "name": "VM_Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogicElemente/src/XMLParser.java",
+    "type": "file",
+    "name": "XMLParser.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogicElements/src/CorelDraw.java",
+    "type": "file",
+    "name": "CorelDraw.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogicElements/src/element.java",
+    "type": "file",
+    "name": "element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogicElements/src/Loader.java",
+    "type": "file",
+    "name": "Loader.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogicElements/src/Token.java",
+    "type": "file",
+    "name": "Token.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogicElements/src/VM_Element.java",
+    "type": "file",
+    "name": "VM_Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogicElements/src/XMLParser.java",
+    "type": "file",
+    "name": "XMLParser.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogic/src/FlowChart.java",
+    "type": "file",
+    "name": "FlowChart.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogic/src/VisualLogic.java",
+    "type": "file",
+    "name": "VisualLogic.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogic/src/VisualSetupManager.java",
+    "type": "file",
+    "name": "VisualSetupManager.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogic2/src/VisualLogic2.java",
+    "type": "file",
+    "name": "VisualLogic2.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogic2/src/VisualLogicSetupManager.java",
+    "type": "file",
+    "name": "VisualLogicSetupManager.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogic3/src/VisualLogic3.java",
+    "type": "file",
+    "name": "VisualLogic3.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogic3/src/VisualLogicSetupManager.java",
+    "type": "file",
+    "name": "VisualLogicSetupManager.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogic3/src/VisualLogicElement.java",
+    "type": "file",
+    "name": "VisualLogicElement.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogic4/src/VisualLogic4.java",
+    "type": "file",
+    "name": "VisualLogic4.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogic4/src/VisualLogicSetupManager.java",
+    "type": "file",
+    "name": "VisualLogicSetupManager.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogic4/src/VisualLogicElement.java",
+    "type": "file",
+    "name": "VisualLogicElement.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogic5/src/VisualLogic5.java",
+    "type": "file",
+    "name": "VisualLogic5.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogic5/src/VisualLogicSetupManager.java",
+    "type": "file",
+    "name": "VisualLogicSetupManager.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogic5/src/VisualLogicElement.java",
+    "type": "file",
+    "name": "VisualLogicElement.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/VirtualMachines/VisualLogic6/src/VisualLogic6.java",
+    "type": "file",
+    "name": "VisualLogic6.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:ExpressionParser/Parser",
+    "type": "file",
+    "name": "Parser.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:ExpressionParser/Var",
+    "type": "file",
+    "name": "Var.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:ExpressionParser/Visual",
+    "type": "file",
+    "name": "Visual.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Subtrahierer",
+    "type": "file",
+    "name": "Subtrahierer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Multiplizierer",
+    "type": "file",
+    "name": "Multiplizierer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:SubString",
+    "type": "file",
+    "name": "SubString.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Length",
+    "type": "file",
+    "name": "Length.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:Concat",
+    "type": "file",
+    "name": "Concat.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/ASin/XASin.java",
+    "type": "file",
+    "name": "XASin.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/ATan/XATan.java",
+    "type": "file",
+    "name": "XATan.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/Cos/XCos.java",
+    "type": "file",
+    "name": "XCos.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/Exp/XExp.java",
+    "type": "file",
+    "name": "XExp.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/Log/Log.java",
+    "type": "file",
+    "name": "Log.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/Log10/Log10.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/trigonometrie/Log10/Log10.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/Sin/XSin.java",
+    "type": "file",
+    "name": "XSin.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/Sqrt/QSqrt.java",
+    "type": "file",
+    "name": "QSqrt.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/Tan/XTan.java",
+    "type": "file",
+    "name": "XTan.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/Wurzel/Sqrt.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/trigonometrie/Wurzel/Sqrt.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/arcCos/arcCos.java",
+    "type": "file",
+    "name": "arcCos.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/arcSin/arcSin.java",
+    "type": "file",
+    "name": "arcSin.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/arcTan/arcTan.java",
+    "type": "file",
+    "name": "arcTan.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/cosH/cosH.java",
+    "type": "file",
+    "name": "cosH.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/sinH/sinH.java",
+    "type": "file",
+    "name": "sinH.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/tanH/tanH.java",
+    "type": "file",
+    "name": "tanH.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/MathParser/src/MathParser.java",
+    "type": "file",
+    "name": "MathParser.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/MathParser/src/Node.java",
+    "type": "file",
+    "name": "Node.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/math2/Math2.java",
+    "type": "file",
+    "name": "Math2.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/math2/LogicCircuit.java",
+    "type": "file",
+    "name": "LogicCircuit.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/math2/LogicPanel.java",
+    "type": "file",
+    "name": "LogicPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/String/Contains/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/String/EndsWith/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/String/StartsWith/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/String/ToLower/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/sqrt/src/Sqrt.java",
+    "type": "file",
+    "name": "Sqrt.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/log/src/Log.java",
+    "type": "file",
+    "name": "Log.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/VisualLogic7/src/VisualLogic7.java",
+    "type": "file",
+    "name": "VisualLogic7.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/VisualLogic7/src/VisualLogicElement.java",
+    "type": "file",
+    "name": "VisualLogicElement.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/VisualLogic7/src/VisualLogicSetupManager.java",
+    "type": "file",
+    "name": "VisualLogicSetupManager.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/Math2/src/Math2.java",
+    "type": "file",
+    "name": "Math2.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/Math2/src/LogicCircuit.java",
+    "type": "file",
+    "name": "LogicCircuit.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/Math2/src/LogicPanel.java",
+    "type": "file",
+    "name": "LogicPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/UserConst/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/Subtrahierer_1_0/src/Subtrahierer.java",
+    "type": "file",
+    "name": "Subtrahierer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/Sinus_1_0/src/Sinus.java",
+    "type": "file",
+    "name": "Sinus.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/RandomConst/src/RandomConst.java",
+    "type": "file",
+    "name": "RandomConst.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/Negation/src/Negation.java",
+    "type": "file",
+    "name": "Negation.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/Multiplizierer_1_0/src/Multiplizierer.java",
+    "type": "file",
+    "name": "Multiplizierer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/Filter/FilterElement.java",
+    "type": "file",
+    "name": "FilterElement.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/ComplexConst/src/ComplexConst.java",
+    "type": "file",
+    "name": "ComplexConst.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/TypeCast/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Interface/Internet/SendEMail/src/SendEMail.java",
+    "type": "file",
+    "name": "SendEMail.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+    "type": "file",
+    "name": "HexToBytes.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+    "type": "file",
+    "name": "BytesToHEX.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+    "type": "file",
+    "name": "BytesToString.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+    "type": "file",
+    "name": "StringToBytes.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+    "type": "file",
+    "name": "DigitalCircuitSim.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+    "type": "file",
+    "name": "MyTableEditor.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Interface/Internet/SendUDP/src/SendUDP.java",
+    "type": "file",
+    "name": "SendUDP.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Interface/JavaView/JavaView.java",
+    "type": "file",
+    "name": "JavaView.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Interface/JFreeChart/JFreeChart.java",
+    "type": "file",
+    "name": "JFreeChart.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Interface/MediaPlayer/src/MediaPlayer.java",
+    "type": "file",
+    "name": "MediaPlayer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Interface/Monitor/src/Grid.java",
+    "type": "file",
+    "name": "Grid.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Interface/Monitor/src/Monitor.java",
+    "type": "file",
+    "name": "Monitor.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Interface/Monitor/src/Objekt.java",
+    "type": "file",
+    "name": "Objekt.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Interface/_Joystick/src/Joystick.java",
+    "type": "file",
+    "name": "Joystick.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Interface/_Joystick/src/JoystickPanel.java",
+    "type": "file",
+    "name": "JoystickPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Interface/_Keyboard/src/Keyboard.java",
+    "type": "file",
+    "name": "Keyboard.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Display/MatrixDisplay/src/Dot.java",
+    "type": "file",
+    "name": "Dot.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/Display/MatrixDisplay/src/MatrixPanel.java",
+    "type": "file",
+    "name": "MatrixPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/VectorenMatrix/1DMathInt4/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/VectorenMatrix/1DMathInt5/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/VectorenMatrix/1DMathInt6/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:/CircuitElements/VectorenMatrix/1DMinMax/src/Element.java",
+    "type": "file",
+    "name": "Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:file_Regler_java",
+    "type": "file",
+    "name": "Regler.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:file_ReglerPanel_java",
+    "type": "file",
+    "name": "ReglerPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:file_LED_java",
+    "type": "file",
+    "name": "LED.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:file_LEDPanel_java",
+    "type": "file",
+    "name": "LEDPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:file_Oscilloscope_java",
+    "type": "file",
+    "name": "Oscilloscope.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:file_OscPanel_java",
+    "type": "file",
+    "name": "OscPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:file_FrameProperties_java",
+    "type": "file",
+    "name": "FrameProperties.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:file_OscPropMain_java",
+    "type": "file",
+    "name": "Main.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:file_StatusDisplay_java",
+    "type": "file",
+    "name": "StatusDisplay.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:file_StatusAnzeige_Panel_java",
+    "type": "file",
+    "name": "Panel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:file_SVGImage_Panel_java",
+    "type": "file",
+    "name": "Panel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:file_UserDefBool_Circuit_java",
+    "type": "file",
+    "name": "Circuit.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:file_UserDefBool_Panel_java",
+    "type": "file",
+    "name": "Panel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/StatusAnzeige/src/StatusDisplay.java",
+    "type": "file",
+    "name": "FrontElements/Output/StatusAnzeige/src/StatusDisplay.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/SVGImage/src/Panel.java",
+    "type": "file",
+    "name": "FrontElements/Output/SVGImage/src/Panel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/UserdefinedBooleanDisplay/src/Circuit.java",
+    "type": "file",
+    "name": "FrontElements/Output/UserdefinedBooleanDisplay/src/Circuit.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/UserdefinedBooleanDisplay/src/Panel.java",
+    "type": "file",
+    "name": "FrontElements/Output/UserdefinedBooleanDisplay/src/Panel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/UserdefinedImageDisplay/src/Circuit.java",
+    "type": "file",
+    "name": "FrontElements/Output/UserdefinedImageDisplay/src/Circuit.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/UserdefinedImageDisplay/src/Panel.java",
+    "type": "file",
+    "name": "FrontElements/Output/UserdefinedImageDisplay/src/Panel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/UserdefinedTextDisplay/src/Circuit.java",
+    "type": "file",
+    "name": "FrontElements/Output/UserdefinedTextDisplay/src/Circuit.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/UserdefinedTextDisplay/src/Panel.java",
+    "type": "file",
+    "name": "FrontElements/Output/UserdefinedTextDisplay/src/Panel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/VerschiebbarerRegler_1_0/src/Regler.java",
+    "type": "file",
+    "name": "FrontElements/Output/VerschiebbarerRegler_1_0/src/Regler.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/VerschiebbarerRegler_1_0/src/ReglerPanel.java",
+    "type": "file",
+    "name": "FrontElements/Output/VerschiebbarerRegler_1_0/src/ReglerPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/WebCam/src/WebCam.java",
+    "type": "file",
+    "name": "FrontElements/Output/WebCam/src/WebCam.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/WebCam/src/WebCamPanel.java",
+    "type": "file",
+    "name": "FrontElements/Output/WebCam/src/WebCamPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/_Oscilloscope_2_0/src/Oscilloscope.java",
+    "type": "file",
+    "name": "FrontElements/Output/_Oscilloscope_2_0/src/Oscilloscope.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/_Oscilloscope_2_0/src/OscPanel.java",
+    "type": "file",
+    "name": "FrontElements/Output/_Oscilloscope_2_0/src/OscPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/_Oscilloscope_3_0/src/GraphBackground.java",
+    "type": "file",
+    "name": "FrontElements/Output/_Oscilloscope_3_0/src/GraphBackground.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/_Oscilloscope_3_0/src/GraphRenderer.java",
+    "type": "file",
+    "name": "FrontElements/Output/_Oscilloscope_3_0/src/GraphRenderer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/_Oscilloscope_3_0/src/Oscilloscope.java",
+    "type": "file",
+    "name": "FrontElements/Output/_Oscilloscope_3_0/src/Oscilloscope.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/_Oscilloscope_3_0/src/OscPanel.java",
+    "type": "file",
+    "name": "FrontElements/Output/_Oscilloscope_3_0/src/OscPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Drivers/HC-06/src/HC06.java",
+    "type": "file",
+    "name": "FrontElements/Drivers/HC-06/src/HC06.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Drivers/Laubs\u00e4ige/Laubs\u00e4ige.java",
+    "type": "file",
+    "name": "FrontElements/Drivers/Laubs\u00e4ige/Laubs\u00e4ige.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Drivers/OpenCV/OpenCV.java",
+    "type": "file",
+    "name": "FrontElements/Drivers/OpenCV/OpenCV.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Drivers/RobotArm/RobotArm.java",
+    "type": "file",
+    "name": "FrontElements/Drivers/RobotArm/RobotArm.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Drivers/RobotArm/src/ArmCalc.java",
+    "type": "file",
+    "name": "FrontElements/Drivers/RobotArm/src/ArmCalc.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Drivers/Robotic_2WD/src/Robotic_2WD.java",
+    "type": "file",
+    "name": "FrontElements/Drivers/Robotic_2WD/src/Robotic_2WD.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Drivers/Robotic_2WD/src/Servo.java",
+    "type": "file",
+    "name": "FrontElements/Drivers/Robotic_2WD/src/Servo.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Drivers/Skat/Skat.java",
+    "type": "file",
+    "name": "FrontElements/Drivers/Skat/Skat.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Drivers/TinkerForge/TinkerForge.java",
+    "type": "file",
+    "name": "FrontElements/Drivers/TinkerForge/TinkerForge.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CompTemplate/CompTemplate.java",
+    "type": "file",
+    "name": "CompTemplate/CompTemplate.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:UserElementsTemplate/UserElementsTemplate.java",
+    "type": "file",
+    "name": "UserElementsTemplate/UserElementsTemplate.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:VirtualMachines/JavaVM/src/JavaVM.java",
+    "type": "file",
+    "name": "VirtualMachines/JavaVM/src/JavaVM.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:VisualLogic/VMLInder.java",
+    "type": "file",
+    "name": "VisualLogic/VMLInder.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:VisualLogic/VisualLogicSystem.java",
+    "type": "file",
+    "name": "VisualLogic/VisualLogicSystem.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Version_2_0/Output/Schreiber_2019_0/src/DiagrammPanel.java",
+    "type": "file",
+    "name": "FrontElements/Version_2_0/Output/Schreiber_2019_0/src/DiagrammPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Version_2_0/Output/Schreiber_2019_0/src/FrameProperties.java",
+    "type": "file",
+    "name": "FrontElements/Version_2_0/Output/Schreiber_2019_0/src/FrameProperties.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Version_2_0/Output/Schreiber_2019_0/src/IOPanel.java",
+    "type": "file",
+    "name": "FrontElements/Version_2_0/Output/Schreiber_2019_0/src/IOPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Version_2_0/Output/Schreiber_2019_0/src/KurvenPanel.java",
+    "type": "file",
+    "name": "FrontElements/Version_2_0/Output/Schreiber_2019_0/src/KurvenPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Version_2_0/Output/Schreiber_2019_0/src/Schreiber.java",
+    "type": "file",
+    "name": "FrontElements/Version_2_0/Output/Schreiber_2019_0/src/Schreiber.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Version_2_0/Output/Schreiber_2019_0/src/SchreiberPanel.java",
+    "type": "file",
+    "name": "FrontElements/Version_2_0/Output/Schreiber_2019_0/src/SchreiberPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/Skript/src/Script.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/Skript/src/Script.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/Skript/src/Skript.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/Skript/src/Skript.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/StringToDouble/Element.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/StringToDouble/Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/StringToInt/Element.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/StringToInt/Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/ShortToInt/Element.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/ShortToInt/Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/IntToShort/Element.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/IntToShort/Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/DoubleToInteger/Element.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/DoubleToInteger/Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/IntToDouble/Element.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/IntToDouble/Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/IntToLong/Element.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/IntToLong/Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/LongToInt/Element.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/LongToInt/Element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/ShortConst/Const.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/ShortConst/Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/LongConst/Const.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/LongConst/Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/DoubleConst/Const.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/DoubleConst/Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/FloatConst/Const.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/FloatConst/Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/IntConst/Const.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/IntConst/Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/ByteConst/Const.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/ByteConst/Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/ByteToShort/ByteToShort.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/ByteToShort/ByteToShort.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/NumericConst/Const.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/NumericConst/Const.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/ConstString/ConstString.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/ConstString/ConstString.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/Output/Anzeige_1_3/Elem.java",
+    "type": "file",
+    "name": "FrontElements/Output/Anzeige_1_3/Elem.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/BalkenAnzeige/src/BalkenAnzeige.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/BalkenAnzeige/src/BalkenAnzeige.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/BalkenAnzeige/src/BalkenPanel.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/BalkenAnzeige/src/BalkenPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/Chart2D/Chart2D.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/Chart2D/Chart2D.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/Chart2D/src/ChartPanel.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/Chart2D/src/ChartPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/Chart2D/src/CustomChart.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/Chart2D/src/CustomChart.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/Chart2D_3_0/src/Chart2D.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/Chart2D_3_0/src/Chart2D.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/Chart2D_3_0/src/ChartPanel.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/Chart2D_3_0/src/ChartPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/Chart2D_3_0/src/CustomChart.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/Chart2D_3_0/src/CustomChart.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/Chart2D_3_0/src/DialogChart.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/Chart2D_3_0/src/DialogChart.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/Chart2D_3_0/src/DialogMain.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/Chart2D_3_0/src/DialogMain.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Graph/Compass/src/Compas.java",
+    "type": "file",
+    "name": "FrontElements/2Graph/Compass/src/Compas.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2/Graph/OscilloscopeXY/src/FrameProperties.java",
+    "type": "file",
+    "name": "FrontElements/2/Graph/OscilloscopeXY/src/FrameProperties.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2/Graph/OscilloscopeXY/src/GraphBackground.java",
+    "type": "file",
+    "name": "FrontElements/2/Graph/OscilloscopeXY/src/GraphBackground.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2/Graph/OscilloscopeXY/src/GraphRenderer.java",
+    "type": "file",
+    "name": "FrontElements/2/Graph/OscilloscopeXY/src/GraphRenderer.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2/Graph/OscilloscopeXY/src/GraphicPanel.java",
+    "type": "file",
+    "name": "FrontElements/2/Graph/OscilloscopeXY/src/GraphicPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2/Graph/OscilloscopeXY/src/XYChart.java",
+    "type": "file",
+    "name": "FrontElements/2/Graph/OscilloscopeXY/src/XYChart.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2Numerisch/UserConst/element.java",
+    "type": "file",
+    "name": "FrontElements/2Numerisch/UserConst/element.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Numerik/trigonometrie/QSqrt/QSqrt.java",
+    "type": "file",
+    "name": "CircuitElements/Numerik/trigonometrie/QSqrt/QSqrt.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2/Numerisch/XButton/Button.java",
+    "type": "file",
+    "name": "FrontElements/2/Numerisch/XButton/Button.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:FrontElements/2/Numerisch/XButton/ButtonPanel.java",
+    "type": "file",
+    "name": "FrontElements/2/Numerisch/XButton/ButtonPanel.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CircuitElements/Abfragen/isKleinerGleich/S /IsKleinerGleich.java",
+    "type": "file",
+    "name": "CircuitElements/Abfragen/isKleinerGleich/S /IsKleinerGleich.java",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  },
+  {
+    "id": "file:CompTemplate/comp.vlogic",
+    "type": "file",
+    "name": "CompTemplate/comp.vlogic",
+    "filePath": "",
+    "summary": "No summary available",
+    "tags": [
+      "untagged"
+    ]
+  }
+]

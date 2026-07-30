@@ -1,0 +1,1114 @@
+{
+  "nodes": [
+    {
+      "id": "file:CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+      "type": "file",
+      "label": "StrConst1D.java",
+      "properties": {
+        "path": "CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+        "language": "Java",
+        "lines": 116
+      }
+    },
+    {
+      "id": "class:VectorenMatrix.1DConstString.StrConst1D",
+      "type": "class",
+      "label": "StrConst1D",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "JVSMain"
+      }
+    },
+    {
+      "id": "function:VectorenMatrix.1DConstString.StrConst1D.xpaint",
+      "type": "function",
+      "label": "xpaint",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DConstString.StrConst1D.onDispose",
+      "type": "function",
+      "label": "onDispose",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DConstString.StrConst1D.init",
+      "type": "function",
+      "label": "init",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DConstString.StrConst1D.initInputPins",
+      "type": "function",
+      "label": "initInputPins",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DConstString.StrConst1D.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DConstString.StrConst1D.setPropertyEditor",
+      "type": "function",
+      "label": "setPropertyEditor",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DConstString.StrConst1D.propertyChanged",
+      "type": "function",
+      "label": "propertyChanged",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DConstString.StrConst1D.start",
+      "type": "function",
+      "label": "start",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DConstString.StrConst1D.process",
+      "type": "function",
+      "label": "process",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DConstString.StrConst1D.loadFromStream",
+      "type": "function",
+      "label": "loadFromStream",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DConstString.StrConst1D.saveToStream",
+      "type": "function",
+      "label": "saveToStream",
+      "properties": {}
+    },
+    {
+      "id": "import:VisualLogic.*",
+      "type": "import",
+      "label": "VisualLogic.*",
+      "properties": {}
+    },
+    {
+      "id": "import:VisualLogic.variables.*",
+      "type": "import",
+      "label": "VisualLogic.variables.*",
+      "properties": {}
+    },
+    {
+      "id": "import:tools.*",
+      "type": "import",
+      "label": "tools.*",
+      "properties": {}
+    },
+    {
+      "id": "import:java.awt.*",
+      "type": "import",
+      "label": "java.awt.*",
+      "properties": {}
+    },
+    {
+      "id": "import:java.awt.event.*",
+      "type": "import",
+      "label": "java.awt.event.*",
+      "properties": {}
+    },
+    {
+      "id": "import:java.util.*",
+      "type": "import",
+      "label": "java.util.*",
+      "properties": {}
+    },
+    {
+      "id": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+      "type": "file",
+      "label": "Copy1D.java",
+      "properties": {
+        "path": "CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+        "language": "Java",
+        "lines": 346
+      }
+    },
+    {
+      "id": "class:VectorenMatrix.1DCopy.Copy1D",
+      "type": "class",
+      "label": "Copy1D",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "JVSMain"
+      }
+    },
+    {
+      "id": "function:VectorenMatrix.1DCopy.Copy1D.paint",
+      "type": "function",
+      "label": "paint",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DCopy.Copy1D.onDispose",
+      "type": "function",
+      "label": "onDispose",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DCopy.Copy1D.init",
+      "type": "function",
+      "label": "init",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DCopy.Copy1D.initInputPins",
+      "type": "function",
+      "label": "initInputPins",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DCopy.Copy1D.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DCopy.Copy1D.checkPinDataType",
+      "type": "function",
+      "label": "checkPinDataType",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DCopy.Copy1D.start",
+      "type": "function",
+      "label": "start",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DCopy.Copy1D.mcCopy",
+      "type": "function",
+      "label": "mcCopy",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DCopy.Copy1D.process",
+      "type": "function",
+      "label": "process",
+      "properties": {}
+    },
+    {
+      "id": "import:VisualLogic.*",
+      "type": "import",
+      "label": "VisualLogic.*",
+      "properties": {}
+    },
+    {
+      "id": "import:VisualLogic.variables.*",
+      "type": "import",
+      "label": "VisualLogic.variables.*",
+      "properties": {}
+    },
+    {
+      "id": "import:tools.*",
+      "type": "import",
+      "label": "tools.*",
+      "properties": {}
+    },
+    {
+      "id": "import:java.awt.*",
+      "type": "import",
+      "label": "java.awt.*",
+      "properties": {}
+    },
+    {
+      "id": "import:java.awt.event.*",
+      "type": "import",
+      "label": "java.awt.event.*",
+      "properties": {}
+    },
+    {
+      "id": "import:java.util.*",
+      "type": "import",
+      "label": "java.util.*",
+      "properties": {}
+    },
+    {
+      "id": "import:javax.swing.*",
+      "type": "import",
+      "label": "javax.swing.*",
+      "properties": {}
+    },
+    {
+      "id": "file:CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+      "type": "file",
+      "label": "Element.java",
+      "properties": {
+        "path": "CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+        "language": "Java",
+        "lines": 115
+      }
+    },
+    {
+      "id": "class:VectorenMatrix.1DDoubleTo1DInteger.Element",
+      "type": "class",
+      "label": "Element",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "JVSMain"
+      }
+    },
+    {
+      "id": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.xpaint",
+      "type": "function",
+      "label": "xpaint",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.onDispose",
+      "type": "function",
+      "label": "onDispose",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.init",
+      "type": "function",
+      "label": "init",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.initInputPins",
+      "type": "function",
+      "label": "initInputPins",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.start",
+      "type": "function",
+      "label": "start",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.convert_1DDouble_to_1DInteger",
+      "type": "function",
+      "label": "convert_1DDouble_to_1DInteger",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.process",
+      "type": "function",
+      "label": "process",
+      "properties": {}
+    },
+    {
+      "id": "import:VisualLogic.*",
+      "type": "import",
+      "label": "VisualLogic.*",
+      "properties": {}
+    },
+    {
+      "id": "import:VisualLogic.variables.*",
+      "type": "import",
+      "label": "VisualLogic.variables.*",
+      "properties": {}
+    },
+    {
+      "id": "import:tools.*",
+      "type": "import",
+      "label": "tools.*",
+      "properties": {}
+    },
+    {
+      "id": "import:java.awt.*",
+      "type": "import",
+      "label": "java.awt.*",
+      "properties": {}
+    },
+    {
+      "id": "import:java.awt.event.*",
+      "type": "import",
+      "label": "java.awt.event.*",
+      "properties": {}
+    },
+    {
+      "id": "import:java.util.*",
+      "type": "import",
+      "label": "java.util.*",
+      "properties": {}
+    },
+    {
+      "id": "file:CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+      "type": "file",
+      "label": "Element.java",
+      "properties": {
+        "path": "CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+        "language": "Java",
+        "lines": 113
+      }
+    },
+    {
+      "id": "class:VectorenMatrix.1DIntegerTo1DDouble.Element",
+      "type": "class",
+      "label": "Element",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "extends": "JVSMain"
+      }
+    },
+    {
+      "id": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.xpaint",
+      "type": "function",
+      "label": "xpaint",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.onDispose",
+      "type": "function",
+      "label": "onDispose",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.init",
+      "type": "function",
+      "label": "init",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.initInputPins",
+      "type": "function",
+      "label": "initInputPins",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.start",
+      "type": "function",
+      "label": "start",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.convert_1DInteger_to_1DDouble",
+      "type": "function",
+      "label": "convert_1DInteger_to_1DDouble",
+      "properties": {}
+    },
+    {
+      "id": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.process",
+      "type": "function",
+      "label": "process",
+      "properties": {}
+    },
+    {
+      "id": "import:VisualLogic.*",
+      "type": "import",
+      "label": "VisualLogic.*",
+      "properties": {}
+    },
+    {
+      "id": "import:VisualLogic.variables.*",
+      "type": "import",
+      "label": "VisualLogic.variables.*",
+      "properties": {}
+    },
+    {
+      "id": "import:tools.*",
+      "type": "import",
+      "label": "tools.*",
+      "properties": {}
+    },
+    {
+      "id": "import:java.awt.*",
+      "type": "import",
+      "label": "java.awt.*",
+      "properties": {}
+    },
+    {
+      "id": "import:java.awt.event.*",
+      "type": "import",
+      "label": "java.awt.event.*",
+      "properties": {}
+    },
+    {
+      "id": "import:java.util.*",
+      "type": "import",
+      "label": "java.util.*",
+      "properties": {}
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+      "target": "class:VectorenMatrix.1DConstString.StrConst1D",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DConstString.StrConst1D",
+      "target": "function:VectorenMatrix.1DConstString.StrConst1D.xpaint",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DConstString.StrConst1D",
+      "target": "function:VectorenMatrix.1DConstString.StrConst1D.onDispose",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DConstString.StrConst1D",
+      "target": "function:VectorenMatrix.1DConstString.StrConst1D.init",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DConstString.StrConst1D",
+      "target": "function:VectorenMatrix.1DConstString.StrConst1D.initInputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DConstString.StrConst1D",
+      "target": "function:VectorenMatrix.1DConstString.StrConst1D.initOutputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DConstString.StrConst1D",
+      "target": "function:VectorenMatrix.1DConstString.StrConst1D.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DConstString.StrConst1D",
+      "target": "function:VectorenMatrix.1DConstString.StrConst1D.propertyChanged",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DConstString.StrConst1D",
+      "target": "function:VectorenMatrix.1DConstString.StrConst1D.start",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DConstString.StrConst1D",
+      "target": "function:VectorenMatrix.1DConstString.StrConst1D.process",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DConstString.StrConst1D",
+      "target": "function:VectorenMatrix.1DConstString.StrConst1D.loadFromStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DConstString.StrConst1D",
+      "target": "function:VectorenMatrix.1DConstString.StrConst1D.saveToStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+      "target": "import:java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+      "target": "import:java.util.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DConstString.StrConst1D",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+      "target": "class:VectorenMatrix.1DCopy.Copy1D",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DCopy.Copy1D",
+      "target": "function:VectorenMatrix.1DCopy.Copy1D.paint",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DCopy.Copy1D",
+      "target": "function:VectorenMatrix.1DCopy.Copy1D.onDispose",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DCopy.Copy1D",
+      "target": "function:VectorenMatrix.1DCopy.Copy1D.init",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DCopy.Copy1D",
+      "target": "function:VectorenMatrix.1DCopy.Copy1D.initInputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DCopy.Copy1D",
+      "target": "function:VectorenMatrix.1DCopy.Copy1D.initOutputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DCopy.Copy1D",
+      "target": "function:VectorenMatrix.1DCopy.Copy1D.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DCopy.Copy1D",
+      "target": "function:VectorenMatrix.1DCopy.Copy1D.start",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DCopy.Copy1D",
+      "target": "function:VectorenMatrix.1DCopy.Copy1D.mcCopy",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DCopy.Copy1D",
+      "target": "function:VectorenMatrix.1DCopy.Copy1D.process",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+      "target": "import:java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+      "target": "import:java.util.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+      "target": "import:javax.swing.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DCopy.Copy1D",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9,
+      "properties": {}
+    },
+    {
+      "source": "function:VectorenMatrix.1DCopy.Copy1D.process",
+      "target": "function:VectorenMatrix.1DCopy.Copy1D.mcCopy",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+      "target": "class:VectorenMatrix.1DDoubleTo1DInteger.Element",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DDoubleTo1DInteger.Element",
+      "target": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.xpaint",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DDoubleTo1DInteger.Element",
+      "target": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.onDispose",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DDoubleTo1DInteger.Element",
+      "target": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.init",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DDoubleTo1DInteger.Element",
+      "target": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.initInputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DDoubleTo1DInteger.Element",
+      "target": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.initOutputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DDoubleTo1DInteger.Element",
+      "target": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.start",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DDoubleTo1DInteger.Element",
+      "target": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.convert_1DDouble_to_1DInteger",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DDoubleTo1DInteger.Element",
+      "target": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.process",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+      "target": "import:java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+      "target": "import:java.util.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DDoubleTo1DInteger.Element",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9,
+      "properties": {}
+    },
+    {
+      "source": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.process",
+      "target": "function:VectorenMatrix.1DDoubleTo1DInteger.Element.convert_1DDouble_to_1DInteger",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+      "target": "class:VectorenMatrix.1DIntegerTo1DDouble.Element",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DIntegerTo1DDouble.Element",
+      "target": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.xpaint",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DIntegerTo1DDouble.Element",
+      "target": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.onDispose",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DIntegerTo1DDouble.Element",
+      "target": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.init",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DIntegerTo1DDouble.Element",
+      "target": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.initInputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DIntegerTo1DDouble.Element",
+      "target": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.initOutputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DIntegerTo1DDouble.Element",
+      "target": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.start",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DIntegerTo1DDouble.Element",
+      "target": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.convert_1DInteger_to_1DDouble",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DIntegerTo1DDouble.Element",
+      "target": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.process",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+      "target": "import:java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+      "target": "import:java.util.*",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "class:VectorenMatrix.1DIntegerTo1DDouble.Element",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9,
+      "properties": {}
+    },
+    {
+      "source": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.process",
+      "target": "function:VectorenMatrix.1DIntegerTo1DDouble.Element.convert_1DInteger_to_1DDouble",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    }
+  ],
+  "batchFiles": [
+    {
+      "path": "CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+      "language": "Java",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+      "language": "Java",
+      "sizeLines": 346,
+      "fileCategory": "code"
+    },
+    {
+      "path": "CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+      "language": "Java",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+      "language": "Java",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "CircuitElements/String/ToLower/src/Element.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/String/ToUpper/src/Element.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/String/Trim/src/Element.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/SubElement/SubElement.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/System/Beep/src/BeepSystem.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/System/CloseAll/src/CloseAll.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/System/DirChoose/src/ChooseDir.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/System/FileChoose/src/ChooseFile.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/System/getDate/src/GetDate.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/System/GetParam/src/GetParam.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/System/GetTickCount/src/GetTickCount.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/System/OpenURL/src/OpenURL.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/System/ProgrammEnd/src/ProgramEnd.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/System/ScreenCapture/src/ScreenCapture.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/System/SetClipboard/src/SetClipboard.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/System/Tastatur/src/Tastatur.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/System/WindowHandleTitel/src/GetWindowTitle.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/Thread/src/Thread.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/VectorenMatrix/1DIntMinMax/src/Element.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/VectorenMatrix/1DIntTo1DDouble/src/Element.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/VectorenMatrix/1DMathInt2/src/Element.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    },
+    {
+      "path": "CircuitElements/VectorenMatrix/1DMathInt3/src/Element.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "notFound"
+    }
+  ]
+}

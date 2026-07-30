@@ -1,0 +1,1489 @@
+{
+  "nodes": [
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/ASin/XASin.java",
+      "type": "file",
+      "name": "XASin.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/ASin/XASin.java",
+        "language": "java",
+        "exists": true
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/ATan/XATan.java",
+      "type": "file",
+      "name": "XATan.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/ATan/XATan.java",
+        "language": "java",
+        "exists": true
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/Cos/XCos.java",
+      "type": "file",
+      "name": "XCos.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/Cos/XCos.java",
+        "language": "java",
+        "exists": true
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/Exp/XExp.java",
+      "type": "file",
+      "name": "XExp.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/Exp/XExp.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/Log/Log.java",
+      "type": "file",
+      "name": "Log.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/Log/Log.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk. Analogous file exists at CircuitElements/Numerik/log/src/Log.java"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/Log10/Log10.java",
+      "type": "file",
+      "name": "Log10.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/Log10/Log10.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/Sin/XSin.java",
+      "type": "file",
+      "name": "XSin.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/Sin/XSin.java",
+        "language": "java",
+        "exists": true
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/Sqrt/QSqrt.java",
+      "type": "file",
+      "name": "QSqrt.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/Sqrt/QSqrt.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk. Analogous file exists at CircuitElements/Numerik/sqrt/src/Sqrt.java"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/Tan/XTan.java",
+      "type": "file",
+      "name": "XTan.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/Tan/XTan.java",
+        "language": "java",
+        "exists": true
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/Wurzel/Sqrt.java",
+      "type": "file",
+      "name": "Sqrt.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/Wurzel/Sqrt.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk. Analogous file exists at CircuitElements/Numerik/sqrt/src/Sqrt.java"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/arcCos/arcCos.java",
+      "type": "file",
+      "name": "arcCos.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/arcCos/arcCos.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk. Analogous file exists at CircuitElements/Numerik/trigonometrie/ACos/XACos.java"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/arcSin/arcSin.java",
+      "type": "file",
+      "name": "arcSin.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/arcSin/arcSin.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/arcTan/arcTan.java",
+      "type": "file",
+      "name": "arcTan.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/arcTan/arcTan.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/cosH/cosH.java",
+      "type": "file",
+      "name": "cosH.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/cosH/cosH.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/sinH/sinH.java",
+      "type": "file",
+      "name": "sinH.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/sinH/sinH.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/trigonometrie/tanH/tanH.java",
+      "type": "file",
+      "name": "tanH.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/trigonometrie/tanH/tanH.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/MathParser/src/MathParser.java",
+      "type": "file",
+      "name": "MathParser.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/MathParser/src/MathParser.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/MathParser/src/Node.java",
+      "type": "file",
+      "name": "Node.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/MathParser/src/Node.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/math2/Math2.java",
+      "type": "file",
+      "name": "Math2.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/math2/Math2.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/math2/LogicCircuit.java",
+      "type": "file",
+      "name": "LogicCircuit.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/math2/LogicCircuit.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/math2/LogicPanel.java",
+      "type": "file",
+      "name": "LogicPanel.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/math2/LogicPanel.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/String/Contains/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": {
+        "path": "CircuitElements/String/Contains/src/Element.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/String/EndsWith/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": {
+        "path": "CircuitElements/String/EndsWith/src/Element.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/String/StartsWith/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": {
+        "path": "CircuitElements/String/StartsWith/src/Element.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/String/ToLower/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": {
+        "path": "CircuitElements/String/ToLower/src/Element.java",
+        "language": "java",
+        "exists": false,
+        "note": "File not found on disk"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/sqrt/src/Sqrt.java",
+      "type": "file",
+      "name": "Sqrt.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/sqrt/src/Sqrt.java",
+        "language": "java",
+        "exists": true,
+        "note": "Actual location of the Sqrt element (listed by user as trigonometrie/Sqrt/QSqrt.java and trigonometrie/Wurzel/Sqrt.java)"
+      }
+    },
+    {
+      "id": "CircuitElements/Numerik/log/src/Log.java",
+      "type": "file",
+      "name": "Log.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/log/src/Log.java",
+        "language": "java",
+        "exists": true,
+        "note": "Actual location of the Log element (listed by user as trigonometrie/Log/Log.java)"
+      }
+    },
+    {
+      "id": "class:Numerik.trigonometrie.ASin.XASin",
+      "type": "class",
+      "name": "XASin",
+      "properties": {
+        "package": "Numerik.trigonometrie.ASin",
+        "visibility": "public",
+        "parentClass": "JVSMain"
+      }
+    },
+    {
+      "id": "class:Numerik.trigonometrie.ATan.XATan",
+      "type": "class",
+      "name": "XATan",
+      "properties": {
+        "package": "Numerik.trigonometrie.ATan",
+        "visibility": "public",
+        "parentClass": "JVSMain"
+      }
+    },
+    {
+      "id": "class:Numerik.trigonometrie.Cos.XCos",
+      "type": "class",
+      "name": "XCos",
+      "properties": {
+        "package": "Numerik.trigonometrie.Cos",
+        "visibility": "public",
+        "parentClass": "JVSMain"
+      }
+    },
+    {
+      "id": "class:Numerik.trigonometrie.Sin.XSin",
+      "type": "class",
+      "name": "XSin",
+      "properties": {
+        "package": "Numerik.trigonometrie.Sin",
+        "visibility": "public",
+        "parentClass": "JVSMain"
+      }
+    },
+    {
+      "id": "class:Numerik.trigonometrie.Tan.XTan",
+      "type": "class",
+      "name": "XTan",
+      "properties": {
+        "package": "Numerik.trigonometrie.Tan",
+        "visibility": "public",
+        "parentClass": "JVSMain"
+      }
+    },
+    {
+      "id": "class:Sqrt",
+      "type": "class",
+      "name": "Sqrt",
+      "properties": {
+        "package": "",
+        "visibility": "public",
+        "parentClass": "JVSMain"
+      }
+    },
+    {
+      "id": "class:Log",
+      "type": "class",
+      "name": "Log",
+      "properties": {
+        "package": "",
+        "visibility": "public",
+        "parentClass": "JVSMain"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.ASin.XASin.xpaint(java.awt.Graphics)",
+      "type": "function",
+      "name": "xpaint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.ASin.XASin.onDispose()",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.ASin.XASin.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.ASin.XASin.initInputPins()",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.ASin.XASin.initOutputPins()",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.ASin.XASin.process()",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.ATan.XATan.onDispose()",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.ATan.XATan.xpaint(java.awt.Graphics)",
+      "type": "function",
+      "name": "xpaint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.ATan.XATan.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.ATan.XATan.initInputPins()",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.ATan.XATan.initOutputPins()",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.ATan.XATan.process()",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Cos.XCos.xpaint(java.awt.Graphics)",
+      "type": "function",
+      "name": "xpaint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Cos.XCos.onDispose()",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Cos.XCos.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Cos.XCos.initInputPins()",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Cos.XCos.initOutputPins()",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Cos.XCos.process()",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Sin.XSin.xpaint(java.awt.Graphics)",
+      "type": "function",
+      "name": "xpaint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Sin.XSin.onDispose()",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Sin.XSin.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Sin.XSin.initInputPins()",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Sin.XSin.initOutputPins()",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Sin.XSin.process()",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Tan.XTan.xpaint(java.awt.Graphics)",
+      "type": "function",
+      "name": "xpaint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Tan.XTan.onDispose()",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Tan.XTan.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Tan.XTan.initInputPins()",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Tan.XTan.initOutputPins()",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Numerik.trigonometrie.Tan.XTan.process()",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Sqrt.xpaint(java.awt.Graphics)",
+      "type": "function",
+      "name": "xpaint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "fn:Sqrt.onDispose()",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Sqrt.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Sqrt.initInputPins()",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Sqrt.initOutputPins()",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Sqrt.checkPinDataType()",
+      "type": "function",
+      "name": "checkPinDataType",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Sqrt.process()",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Log.xpaint(java.awt.Graphics)",
+      "type": "function",
+      "name": "xpaint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "fn:Log.onDispose()",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Log.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Log.initInputPins()",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Log.initOutputPins()",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Log.checkPinDataType()",
+      "type": "function",
+      "name": "checkPinDataType",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "fn:Log.process()",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "import:java.awt",
+      "type": "import",
+      "name": "java.awt.*",
+      "properties": {
+        "package": "java.awt",
+        "scope": "wildcard"
+      }
+    },
+    {
+      "id": "import:java.awt.event",
+      "type": "import",
+      "name": "java.awt.event.*",
+      "properties": {
+        "package": "java.awt.event",
+        "scope": "wildcard"
+      }
+    },
+    {
+      "id": "import:tools",
+      "type": "import",
+      "name": "tools.*",
+      "properties": {
+        "package": "tools",
+        "scope": "wildcard"
+      }
+    },
+    {
+      "id": "import:VisualLogic",
+      "type": "import",
+      "name": "VisualLogic.*",
+      "properties": {
+        "package": "VisualLogic",
+        "scope": "wildcard"
+      }
+    },
+    {
+      "id": "import:VisualLogic.variables",
+      "type": "import",
+      "name": "VisualLogic.variables.*",
+      "properties": {
+        "package": "VisualLogic.variables",
+        "scope": "wildcard"
+      }
+    },
+    {
+      "id": "class:java.lang.Math",
+      "type": "class",
+      "name": "Math",
+      "properties": {
+        "builtin": true
+      }
+    },
+    {
+      "id": "class:VisualLogic.JVSMain",
+      "type": "class",
+      "name": "JVSMain",
+      "properties": {
+        "package": "VisualLogic",
+        "external": true
+      }
+    },
+    {
+      "id": "fn:java.lang.Math.asin(double)",
+      "type": "function",
+      "name": "asin",
+      "properties": {
+        "builtin": true
+      }
+    },
+    {
+      "id": "fn:java.lang.Math.atan(double)",
+      "type": "function",
+      "name": "atan",
+      "properties": {
+        "builtin": true
+      }
+    },
+    {
+      "id": "fn:java.lang.Math.cos(double)",
+      "type": "function",
+      "name": "cos",
+      "properties": {
+        "builtin": true
+      }
+    },
+    {
+      "id": "fn:java.lang.Math.sin(double)",
+      "type": "function",
+      "name": "sin",
+      "properties": {
+        "builtin": true
+      }
+    },
+    {
+      "id": "fn:java.lang.Math.tan(double)",
+      "type": "function",
+      "name": "tan",
+      "properties": {
+        "builtin": true
+      }
+    },
+    {
+      "id": "fn:java.lang.Math.sqrt(double)",
+      "type": "function",
+      "name": "sqrt",
+      "properties": {
+        "builtin": true
+      }
+    },
+    {
+      "id": "fn:java.lang.Math.log(double)",
+      "type": "function",
+      "name": "log",
+      "properties": {
+        "builtin": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/ASin/XASin.java",
+      "target": "class:Numerik.trigonometrie.ASin.XASin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/ATan/XATan.java",
+      "target": "class:Numerik.trigonometrie.ATan.XATan",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Cos/XCos.java",
+      "target": "class:Numerik.trigonometrie.Cos.XCos",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Sin/XSin.java",
+      "target": "class:Numerik.trigonometrie.Sin.XSin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Tan/XTan.java",
+      "target": "class:Numerik.trigonometrie.Tan.XTan",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "CircuitElements/Numerik/sqrt/src/Sqrt.java",
+      "target": "class:Sqrt",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "CircuitElements/Numerik/log/src/Log.java",
+      "target": "class:Log",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.ASin.XASin",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Numerik.trigonometrie.ATan.XATan",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Cos.XCos",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Sin.XSin",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Tan.XTan",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Sqrt",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Log",
+      "target": "class:VisualLogic.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/ASin/XASin.java",
+      "target": "import:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/ASin/XASin.java",
+      "target": "import:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/ASin/XASin.java",
+      "target": "import:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/ASin/XASin.java",
+      "target": "import:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/ASin/XASin.java",
+      "target": "import:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/ATan/XATan.java",
+      "target": "import:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/ATan/XATan.java",
+      "target": "import:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/ATan/XATan.java",
+      "target": "import:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/ATan/XATan.java",
+      "target": "import:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/ATan/XATan.java",
+      "target": "import:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Cos/XCos.java",
+      "target": "import:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Cos/XCos.java",
+      "target": "import:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Cos/XCos.java",
+      "target": "import:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Cos/XCos.java",
+      "target": "import:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Cos/XCos.java",
+      "target": "import:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Sin/XSin.java",
+      "target": "import:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Sin/XSin.java",
+      "target": "import:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Sin/XSin.java",
+      "target": "import:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Sin/XSin.java",
+      "target": "import:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Sin/XSin.java",
+      "target": "import:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Tan/XTan.java",
+      "target": "import:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Tan/XTan.java",
+      "target": "import:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Tan/XTan.java",
+      "target": "import:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Tan/XTan.java",
+      "target": "import:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/trigonometrie/Tan/XTan.java",
+      "target": "import:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/sqrt/src/Sqrt.java",
+      "target": "import:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/sqrt/src/Sqrt.java",
+      "target": "import:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/sqrt/src/Sqrt.java",
+      "target": "import:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/sqrt/src/Sqrt.java",
+      "target": "import:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/sqrt/src/Sqrt.java",
+      "target": "import:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/log/src/Log.java",
+      "target": "import:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/log/src/Log.java",
+      "target": "import:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/log/src/Log.java",
+      "target": "import:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/log/src/Log.java",
+      "target": "import:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "CircuitElements/Numerik/log/src/Log.java",
+      "target": "import:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Numerik.trigonometrie.ASin.XASin",
+      "target": "fn:Numerik.trigonometrie.ASin.XASin.xpaint(java.awt.Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.ASin.XASin",
+      "target": "fn:Numerik.trigonometrie.ASin.XASin.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.ASin.XASin",
+      "target": "fn:Numerik.trigonometrie.ASin.XASin.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.ASin.XASin",
+      "target": "fn:Numerik.trigonometrie.ASin.XASin.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.ASin.XASin",
+      "target": "fn:Numerik.trigonometrie.ASin.XASin.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.ASin.XASin",
+      "target": "fn:Numerik.trigonometrie.ASin.XASin.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.ATan.XATan",
+      "target": "fn:Numerik.trigonometrie.ATan.XATan.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.ATan.XATan",
+      "target": "fn:Numerik.trigonometrie.ATan.XATan.xpaint(java.awt.Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.ATan.XATan",
+      "target": "fn:Numerik.trigonometrie.ATan.XATan.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.ATan.XATan",
+      "target": "fn:Numerik.trigonometrie.ATan.XATan.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.ATan.XATan",
+      "target": "fn:Numerik.trigonometrie.ATan.XATan.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.ATan.XATan",
+      "target": "fn:Numerik.trigonometrie.ATan.XATan.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Cos.XCos",
+      "target": "fn:Numerik.trigonometrie.Cos.XCos.xpaint(java.awt.Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Cos.XCos",
+      "target": "fn:Numerik.trigonometrie.Cos.XCos.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Cos.XCos",
+      "target": "fn:Numerik.trigonometrie.Cos.XCos.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Cos.XCos",
+      "target": "fn:Numerik.trigonometrie.Cos.XCos.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Cos.XCos",
+      "target": "fn:Numerik.trigonometrie.Cos.XCos.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Cos.XCos",
+      "target": "fn:Numerik.trigonometrie.Cos.XCos.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Sin.XSin",
+      "target": "fn:Numerik.trigonometrie.Sin.XSin.xpaint(java.awt.Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Sin.XSin",
+      "target": "fn:Numerik.trigonometrie.Sin.XSin.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Sin.XSin",
+      "target": "fn:Numerik.trigonometrie.Sin.XSin.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Sin.XSin",
+      "target": "fn:Numerik.trigonometrie.Sin.XSin.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Sin.XSin",
+      "target": "fn:Numerik.trigonometrie.Sin.XSin.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Sin.XSin",
+      "target": "fn:Numerik.trigonometrie.Sin.XSin.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Tan.XTan",
+      "target": "fn:Numerik.trigonometrie.Tan.XTan.xpaint(java.awt.Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Tan.XTan",
+      "target": "fn:Numerik.trigonometrie.Tan.XTan.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Tan.XTan",
+      "target": "fn:Numerik.trigonometrie.Tan.XTan.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Tan.XTan",
+      "target": "fn:Numerik.trigonometrie.Tan.XTan.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Tan.XTan",
+      "target": "fn:Numerik.trigonometrie.Tan.XTan.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Numerik.trigonometrie.Tan.XTan",
+      "target": "fn:Numerik.trigonometrie.Tan.XTan.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Sqrt",
+      "target": "fn:Sqrt.xpaint(java.awt.Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Sqrt",
+      "target": "fn:Sqrt.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Sqrt",
+      "target": "fn:Sqrt.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Sqrt",
+      "target": "fn:Sqrt.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Sqrt",
+      "target": "fn:Sqrt.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Sqrt",
+      "target": "fn:Sqrt.checkPinDataType()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Sqrt",
+      "target": "fn:Sqrt.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Log",
+      "target": "fn:Log.xpaint(java.awt.Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Log",
+      "target": "fn:Log.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Log",
+      "target": "fn:Log.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Log",
+      "target": "fn:Log.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Log",
+      "target": "fn:Log.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Log",
+      "target": "fn:Log.checkPinDataType()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Log",
+      "target": "fn:Log.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "fn:Numerik.trigonometrie.ASin.XASin.process()",
+      "target": "fn:java.lang.Math.asin(double)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:Numerik.trigonometrie.ATan.XATan.process()",
+      "target": "fn:java.lang.Math.atan(double)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:Numerik.trigonometrie.Cos.XCos.process()",
+      "target": "fn:java.lang.Math.cos(double)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:Numerik.trigonometrie.Sin.XSin.process()",
+      "target": "fn:java.lang.Math.sin(double)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:Numerik.trigonometrie.Tan.XTan.process()",
+      "target": "fn:java.lang.Math.tan(double)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:Sqrt.process()",
+      "target": "fn:java.lang.Math.sqrt(double)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "fn:Log.process()",
+      "target": "fn:java.lang.Math.log(double)",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

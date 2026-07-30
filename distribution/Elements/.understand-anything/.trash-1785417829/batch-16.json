@@ -1,0 +1,878 @@
+{
+  "batch": 16,
+  "description": "FrontElements - Dekoratoren (RoundRect, SVGImage, SVGSalamanderImage, Triangle, XRectangle) and Graph (DataLogger)",
+  "files": [
+    {
+      "path": "FrontElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+      "exists": true,
+      "type": "source",
+      "language": "Java",
+      "nodes": [
+        {
+          "id": "file:FrontElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+          "type": "file",
+          "name": "RoundRect.java",
+          "properties": { "path": "FrontElements/2Dekoratoren/RoundRect/src/RoundRect.java" }
+        },
+        {
+          "id": "class:RoundRect",
+          "type": "class",
+          "name": "RoundRect",
+          "properties": { "visibility": "public", "extends": "JVSMain" }
+        },
+        {
+          "id": "method:RoundRect.paint(Graphics)",
+          "type": "function",
+          "name": "paint",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.awt.Graphics g"] }
+        },
+        {
+          "id": "method:RoundRect.init()",
+          "type": "function",
+          "name": "init",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:RoundRect.setPropertyEditor()",
+          "type": "function",
+          "name": "setPropertyEditor",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:RoundRect.localize()",
+          "type": "function",
+          "name": "localize",
+          "properties": { "visibility": "private", "return": "void" }
+        },
+        {
+          "id": "method:RoundRect.propertyChanged(Object)",
+          "type": "function",
+          "name": "propertyChanged",
+          "properties": { "visibility": "public", "return": "void", "params": ["Object o"] }
+        },
+        {
+          "id": "method:RoundRect.loadFromStream(FileInputStream)",
+          "type": "function",
+          "name": "loadFromStream",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.io.FileInputStream fis"] }
+        },
+        {
+          "id": "method:RoundRect.saveToStream(FileOutputStream)",
+          "type": "function",
+          "name": "saveToStream",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.io.FileOutputStream fos"] }
+        }
+      ],
+      "edges": [
+        { "from": "file:FrontElements/2Dekoratoren/RoundRect/src/RoundRect.java", "to": "class:RoundRect", "type": "contains", "weight": 1.0 },
+        { "from": "class:RoundRect", "to": "method:RoundRect.paint(Graphics)", "type": "contains", "weight": 1.0 },
+        { "from": "class:RoundRect", "to": "method:RoundRect.init()", "type": "contains", "weight": 1.0 },
+        { "from": "class:RoundRect", "to": "method:RoundRect.setPropertyEditor()", "type": "contains", "weight": 1.0 },
+        { "from": "class:RoundRect", "to": "method:RoundRect.localize()", "type": "contains", "weight": 1.0 },
+        { "from": "class:RoundRect", "to": "method:RoundRect.propertyChanged(Object)", "type": "contains", "weight": 1.0 },
+        { "from": "class:RoundRect", "to": "method:RoundRect.loadFromStream(FileInputStream)", "type": "contains", "weight": 1.0 },
+        { "from": "class:RoundRect", "to": "method:RoundRect.saveToStream(FileOutputStream)", "type": "contains", "weight": 1.0 },
+        { "from": "class:RoundRect", "to": "class:JVSMain", "type": "inherits", "weight": 0.9 },
+        { "from": "file:FrontElements/2Dekoratoren/RoundRect/src/RoundRect.java", "to": "pkg:VisualLogic", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/RoundRect/src/RoundRect.java", "to": "pkg:VisualLogic.variables", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/RoundRect/src/RoundRect.java", "to": "pkg:tools", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/RoundRect/src/RoundRect.java", "to": "pkg:java.awt", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/RoundRect/src/RoundRect.java", "to": "pkg:java.awt.event", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/RoundRect/src/RoundRect.java", "to": "pkg:javax.swing", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/RoundRect/src/RoundRect.java", "to": "pkg:javax.swing.Timer", "type": "imports", "weight": 0.7 }
+      ]
+    },
+    {
+      "path": "FrontElements/2Dekoratoren/SVGImage/src/Panel.java",
+      "exists": true,
+      "type": "source",
+      "language": "Java",
+      "nodes": [
+        {
+          "id": "file:FrontElements/2Dekoratoren/SVGImage/src/Panel.java",
+          "type": "file",
+          "name": "Panel.java",
+          "properties": { "path": "FrontElements/2Dekoratoren/SVGImage/src/Panel.java" }
+        },
+        {
+          "id": "class:SVGImage.Panel",
+          "type": "class",
+          "name": "Panel",
+          "properties": { "visibility": "public", "extends": "JVSMain" }
+        },
+        {
+          "id": "method:SVGImage.Panel.paint(Graphics)",
+          "type": "function",
+          "name": "paint",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.awt.Graphics g"] }
+        },
+        {
+          "id": "method:SVGImage.Panel.init()",
+          "type": "function",
+          "name": "init",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:SVGImage.Panel.xOnInit()",
+          "type": "function",
+          "name": "xOnInit",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:SVGImage.Panel.setPropertyEditor()",
+          "type": "function",
+          "name": "setPropertyEditor",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:SVGImage.Panel.localize()",
+          "type": "function",
+          "name": "localize",
+          "properties": { "visibility": "private", "return": "void" }
+        },
+        {
+          "id": "method:SVGImage.Panel.propertyChanged(Object)",
+          "type": "function",
+          "name": "propertyChanged",
+          "properties": { "visibility": "public", "return": "void", "params": ["Object o"] }
+        },
+        {
+          "id": "method:SVGImage.Panel.loadImage(String)",
+          "type": "function",
+          "name": "loadImage",
+          "properties": { "visibility": "public", "return": "void", "params": ["String fileName"] }
+        },
+        {
+          "id": "method:SVGImage.Panel.loadFromStream(FileInputStream)",
+          "type": "function",
+          "name": "loadFromStream",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.io.FileInputStream fis"] }
+        },
+        {
+          "id": "method:SVGImage.Panel.saveToStream(FileOutputStream)",
+          "type": "function",
+          "name": "saveToStream",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.io.FileOutputStream fos"] }
+        },
+        {
+          "id": "var:SVGImage.Panel.svgManager",
+          "type": "variable",
+          "name": "svgManager",
+          "properties": { "type": "SVGManager", "visibility": "private" }
+        },
+        {
+          "id": "var:SVGImage.Panel.file",
+          "type": "variable",
+          "name": "file",
+          "properties": { "type": "VSFile", "visibility": "private" }
+        },
+        {
+          "id": "var:SVGImage.Panel.xmlText",
+          "type": "variable",
+          "name": "xmlText",
+          "properties": { "type": "VSString", "visibility": "private" }
+        }
+      ],
+      "edges": [
+        { "from": "file:FrontElements/2Dekoratoren/SVGImage/src/Panel.java", "to": "class:SVGImage.Panel", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGImage.Panel", "to": "method:SVGImage.Panel.paint(Graphics)", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGImage.Panel", "to": "method:SVGImage.Panel.init()", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGImage.Panel", "to": "method:SVGImage.Panel.xOnInit()", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGImage.Panel", "to": "method:SVGImage.Panel.setPropertyEditor()", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGImage.Panel", "to": "method:SVGImage.Panel.localize()", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGImage.Panel", "to": "method:SVGImage.Panel.propertyChanged(Object)", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGImage.Panel", "to": "method:SVGImage.Panel.loadImage(String)", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGImage.Panel", "to": "method:SVGImage.Panel.loadFromStream(FileInputStream)", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGImage.Panel", "to": "method:SVGImage.Panel.saveToStream(FileOutputStream)", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGImage.Panel", "to": "class:JVSMain", "type": "inherits", "weight": 0.9 },
+        { "from": "class:SVGImage.Panel", "to": "var:SVGImage.Panel.svgManager", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGImage.Panel", "to": "var:SVGImage.Panel.file", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGImage.Panel", "to": "var:SVGImage.Panel.xmlText", "type": "contains", "weight": 1.0 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGImage/src/Panel.java", "to": "pkg:VisualLogic", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGImage/src/Panel.java", "to": "pkg:VisualLogic.variables", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGImage/src/Panel.java", "to": "pkg:tools", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGImage/src/Panel.java", "to": "pkg:java.awt", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGImage/src/Panel.java", "to": "pkg:javax.swing", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGImage/src/Panel.java", "to": "pkg:java.awt.event", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGImage/src/Panel.java", "to": "pkg:java.io", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGImage/src/Panel.java", "to": "pkg:java.net", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGImage/src/Panel.java", "to": "pkg:SVGViewer", "type": "imports", "weight": 0.7 },
+        { "from": "method:SVGImage.Panel.loadImage(String)", "to": "var:SVGImage.Panel.svgManager", "type": "calls", "weight": 0.8 },
+        { "from": "method:SVGImage.Panel.loadImage(String)", "to": "var:SVGImage.Panel.xmlText", "type": "calls", "weight": 0.8 },
+        { "from": "method:SVGImage.Panel.loadFromStream(FileInputStream)", "to": "var:SVGImage.Panel.xmlText", "type": "calls", "weight": 0.8 },
+        { "from": "method:SVGImage.Panel.loadFromStream(FileInputStream)", "to": "var:SVGImage.Panel.svgManager", "type": "calls", "weight": 0.8 },
+        { "from": "method:SVGImage.Panel.saveToStream(FileOutputStream)", "to": "var:SVGImage.Panel.xmlText", "type": "calls", "weight": 0.8 }
+      ]
+    },
+    {
+      "path": "FrontElements/2Dekoratoren/SVGSalamanderImage/src/Panel.java",
+      "exists": true,
+      "type": "source",
+      "language": "Java",
+      "nodes": [
+        {
+          "id": "file:FrontElements/2Dekoratoren/SVGSalamanderImage/src/Panel.java",
+          "type": "file",
+          "name": "Panel.java",
+          "properties": { "path": "FrontElements/2Dekoratoren/SVGSalamanderImage/src/Panel.java" }
+        },
+        {
+          "id": "class:SVGSalamanderImage.Panel",
+          "type": "class",
+          "name": "Panel",
+          "properties": { "visibility": "public", "extends": "JVSMain" }
+        },
+        {
+          "id": "method:SVGSalamanderImage.Panel.init()",
+          "type": "function",
+          "name": "init",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:SVGSalamanderImage.Panel.initSVG(String)",
+          "type": "function",
+          "name": "initSVG",
+          "properties": { "visibility": "public", "return": "void", "params": ["String xmlString"] }
+        },
+        {
+          "id": "method:SVGSalamanderImage.Panel.makeDynamicSVG()",
+          "type": "function",
+          "name": "makeDynamicSVG",
+          "properties": { "visibility": "private", "return": "String" }
+        },
+        {
+          "id": "method:SVGSalamanderImage.Panel.xOnInit()",
+          "type": "function",
+          "name": "xOnInit",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:SVGSalamanderImage.Panel.setPropertyEditor()",
+          "type": "function",
+          "name": "setPropertyEditor",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:SVGSalamanderImage.Panel.localize()",
+          "type": "function",
+          "name": "localize",
+          "properties": { "visibility": "private", "return": "void" }
+        },
+        {
+          "id": "method:SVGSalamanderImage.Panel.propertyChanged(Object)",
+          "type": "function",
+          "name": "propertyChanged",
+          "properties": { "visibility": "public", "return": "void", "params": ["Object o"] }
+        },
+        {
+          "id": "method:SVGSalamanderImage.Panel.loadImage(String)",
+          "type": "function",
+          "name": "loadImage",
+          "properties": { "visibility": "public", "return": "void", "params": ["String fileName"] }
+        },
+        {
+          "id": "method:SVGSalamanderImage.Panel.loadFromStream(FileInputStream)",
+          "type": "function",
+          "name": "loadFromStream",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.io.FileInputStream fis"] }
+        },
+        {
+          "id": "method:SVGSalamanderImage.Panel.saveToStream(FileOutputStream)",
+          "type": "function",
+          "name": "saveToStream",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.io.FileOutputStream fos"] }
+        },
+        {
+          "id": "var:SVGSalamanderImage.Panel.icon",
+          "type": "variable",
+          "name": "icon",
+          "properties": { "type": "SVGPanel", "visibility": "private" }
+        },
+        {
+          "id": "var:SVGSalamanderImage.Panel.file",
+          "type": "variable",
+          "name": "file",
+          "properties": { "type": "VSFile", "visibility": "private" }
+        },
+        {
+          "id": "var:SVGSalamanderImage.Panel.xmlText",
+          "type": "variable",
+          "name": "xmlText",
+          "properties": { "type": "VSString", "visibility": "private" }
+        },
+        {
+          "id": "var:SVGSalamanderImage.Panel.antialising",
+          "type": "variable",
+          "name": "antialising",
+          "properties": { "type": "VSBoolean", "visibility": "private" }
+        }
+      ],
+      "edges": [
+        { "from": "file:FrontElements/2Dekoratoren/SVGSalamanderImage/src/Panel.java", "to": "class:SVGSalamanderImage.Panel", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGSalamanderImage.Panel", "to": "method:SVGSalamanderImage.Panel.init()", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGSalamanderImage.Panel", "to": "method:SVGSalamanderImage.Panel.initSVG(String)", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGSalamanderImage.Panel", "to": "method:SVGSalamanderImage.Panel.makeDynamicSVG()", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGSalamanderImage.Panel", "to": "method:SVGSalamanderImage.Panel.xOnInit()", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGSalamanderImage.Panel", "to": "method:SVGSalamanderImage.Panel.setPropertyEditor()", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGSalamanderImage.Panel", "to": "method:SVGSalamanderImage.Panel.localize()", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGSalamanderImage.Panel", "to": "method:SVGSalamanderImage.Panel.propertyChanged(Object)", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGSalamanderImage.Panel", "to": "method:SVGSalamanderImage.Panel.loadImage(String)", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGSalamanderImage.Panel", "to": "method:SVGSalamanderImage.Panel.loadFromStream(FileInputStream)", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGSalamanderImage.Panel", "to": "method:SVGSalamanderImage.Panel.saveToStream(FileOutputStream)", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGSalamanderImage.Panel", "to": "var:SVGSalamanderImage.Panel.icon", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGSalamanderImage.Panel", "to": "var:SVGSalamanderImage.Panel.file", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGSalamanderImage.Panel", "to": "var:SVGSalamanderImage.Panel.xmlText", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGSalamanderImage.Panel", "to": "var:SVGSalamanderImage.Panel.antialising", "type": "contains", "weight": 1.0 },
+        { "from": "class:SVGSalamanderImage.Panel", "to": "class:JVSMain", "type": "inherits", "weight": 0.9 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGSalamanderImage/src/Panel.java", "to": "pkg:VisualLogic", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGSalamanderImage/src/Panel.java", "to": "pkg:VisualLogic.variables", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGSalamanderImage/src/Panel.java", "to": "pkg:tools", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGSalamanderImage/src/Panel.java", "to": "pkg:java.awt", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGSalamanderImage/src/Panel.java", "to": "pkg:javax.swing", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGSalamanderImage/src/Panel.java", "to": "pkg:java.awt.event", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGSalamanderImage/src/Panel.java", "to": "pkg:java.io", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGSalamanderImage/src/Panel.java", "to": "pkg:java.net", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGSalamanderImage/src/Panel.java", "to": "pkg:com.kitfox.svg", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/SVGSalamanderImage/src/Panel.java", "to": "pkg:com.kitfox.svg.app.beans", "type": "imports", "weight": 0.7 },
+        { "from": "method:SVGSalamanderImage.Panel.initSVG(String)", "to": "var:SVGSalamanderImage.Panel.icon", "type": "calls", "weight": 0.8 },
+        { "from": "method:SVGSalamanderImage.Panel.loadImage(String)", "to": "var:SVGSalamanderImage.Panel.xmlText", "type": "calls", "weight": 0.8 },
+        { "from": "method:SVGSalamanderImage.Panel.propertyChanged(Object)", "to": "var:SVGSalamanderImage.Panel.icon", "type": "calls", "weight": 0.8 },
+        { "from": "method:SVGSalamanderImage.Panel.propertyChanged(Object)", "to": "var:SVGSalamanderImage.Panel.antialising", "type": "calls", "weight": 0.8 }
+      ]
+    },
+    {
+      "path": "FrontElements/2Dekoratoren/Triangle/src/Triangle.java",
+      "exists": true,
+      "type": "source",
+      "language": "Java",
+      "nodes": [
+        {
+          "id": "file:FrontElements/2Dekoratoren/Triangle/src/Triangle.java",
+          "type": "file",
+          "name": "Triangle.java",
+          "properties": { "path": "FrontElements/2Dekoratoren/Triangle/src/Triangle.java" }
+        },
+        {
+          "id": "class:Triangle",
+          "type": "class",
+          "name": "Triangle",
+          "properties": { "visibility": "public", "extends": "JVSMain" }
+        },
+        {
+          "id": "method:Triangle.paint(Graphics)",
+          "type": "function",
+          "name": "paint",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.awt.Graphics g"] }
+        },
+        {
+          "id": "method:Triangle.init()",
+          "type": "function",
+          "name": "init",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:Triangle.setPropertyEditor()",
+          "type": "function",
+          "name": "setPropertyEditor",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:Triangle.localize()",
+          "type": "function",
+          "name": "localize",
+          "properties": { "visibility": "private", "return": "void" }
+        },
+        {
+          "id": "method:Triangle.propertyChanged(Object)",
+          "type": "function",
+          "name": "propertyChanged",
+          "properties": { "visibility": "public", "return": "void", "params": ["Object o"] }
+        },
+        {
+          "id": "method:Triangle.loadFromStream(FileInputStream)",
+          "type": "function",
+          "name": "loadFromStream",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.io.FileInputStream fis"] }
+        },
+        {
+          "id": "method:Triangle.saveToStream(FileOutputStream)",
+          "type": "function",
+          "name": "saveToStream",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.io.FileOutputStream fos"] }
+        }
+      ],
+      "edges": [
+        { "from": "file:FrontElements/2Dekoratoren/Triangle/src/Triangle.java", "to": "class:Triangle", "type": "contains", "weight": 1.0 },
+        { "from": "class:Triangle", "to": "method:Triangle.paint(Graphics)", "type": "contains", "weight": 1.0 },
+        { "from": "class:Triangle", "to": "method:Triangle.init()", "type": "contains", "weight": 1.0 },
+        { "from": "class:Triangle", "to": "method:Triangle.setPropertyEditor()", "type": "contains", "weight": 1.0 },
+        { "from": "class:Triangle", "to": "method:Triangle.localize()", "type": "contains", "weight": 1.0 },
+        { "from": "class:Triangle", "to": "method:Triangle.propertyChanged(Object)", "type": "contains", "weight": 1.0 },
+        { "from": "class:Triangle", "to": "method:Triangle.loadFromStream(FileInputStream)", "type": "contains", "weight": 1.0 },
+        { "from": "class:Triangle", "to": "method:Triangle.saveToStream(FileOutputStream)", "type": "contains", "weight": 1.0 },
+        { "from": "class:Triangle", "to": "class:JVSMain", "type": "inherits", "weight": 0.9 },
+        { "from": "file:FrontElements/2Dekoratoren/Triangle/src/Triangle.java", "to": "pkg:VisualLogic", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/Triangle/src/Triangle.java", "to": "pkg:VisualLogic.variables", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/Triangle/src/Triangle.java", "to": "pkg:tools", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/Triangle/src/Triangle.java", "to": "pkg:java.awt", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/Triangle/src/Triangle.java", "to": "pkg:java.awt.event", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/Triangle/src/Triangle.java", "to": "pkg:javax.swing", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/Triangle/src/Triangle.java", "to": "pkg:javax.swing.Timer", "type": "imports", "weight": 0.7 }
+      ]
+    },
+    {
+      "path": "FrontElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+      "exists": true,
+      "type": "source",
+      "language": "Java",
+      "nodes": [
+        {
+          "id": "file:FrontElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+          "type": "file",
+          "name": "XRectangle.java",
+          "properties": { "path": "FrontElements/2Dekoratoren/XRectangle/src/XRectangle.java" }
+        },
+        {
+          "id": "class:XRectangle",
+          "type": "class",
+          "name": "XRectangle",
+          "properties": { "visibility": "public", "extends": "JVSMain" }
+        },
+        {
+          "id": "method:XRectangle.paint(Graphics)",
+          "type": "function",
+          "name": "paint",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.awt.Graphics g"] }
+        },
+        {
+          "id": "method:XRectangle.init()",
+          "type": "function",
+          "name": "init",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:XRectangle.setPropertyEditor()",
+          "type": "function",
+          "name": "setPropertyEditor",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:XRectangle.localize()",
+          "type": "function",
+          "name": "localize",
+          "properties": { "visibility": "private", "return": "void" }
+        },
+        {
+          "id": "method:XRectangle.propertyChanged(Object)",
+          "type": "function",
+          "name": "propertyChanged",
+          "properties": { "visibility": "public", "return": "void", "params": ["Object o"] }
+        },
+        {
+          "id": "method:XRectangle.loadFromStream(FileInputStream)",
+          "type": "function",
+          "name": "loadFromStream",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.io.FileInputStream fis"] }
+        },
+        {
+          "id": "method:XRectangle.saveToStream(FileOutputStream)",
+          "type": "function",
+          "name": "saveToStream",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.io.FileOutputStream fos"] }
+        }
+      ],
+      "edges": [
+        { "from": "file:FrontElements/2Dekoratoren/XRectangle/src/XRectangle.java", "to": "class:XRectangle", "type": "contains", "weight": 1.0 },
+        { "from": "class:XRectangle", "to": "method:XRectangle.paint(Graphics)", "type": "contains", "weight": 1.0 },
+        { "from": "class:XRectangle", "to": "method:XRectangle.init()", "type": "contains", "weight": 1.0 },
+        { "from": "class:XRectangle", "to": "method:XRectangle.setPropertyEditor()", "type": "contains", "weight": 1.0 },
+        { "from": "class:XRectangle", "to": "method:XRectangle.localize()", "type": "contains", "weight": 1.0 },
+        { "from": "class:XRectangle", "to": "method:XRectangle.propertyChanged(Object)", "type": "contains", "weight": 1.0 },
+        { "from": "class:XRectangle", "to": "method:XRectangle.loadFromStream(FileInputStream)", "type": "contains", "weight": 1.0 },
+        { "from": "class:XRectangle", "to": "method:XRectangle.saveToStream(FileOutputStream)", "type": "contains", "weight": 1.0 },
+        { "from": "class:XRectangle", "to": "class:JVSMain", "type": "inherits", "weight": 0.9 },
+        { "from": "file:FrontElements/2Dekoratoren/XRectangle/src/XRectangle.java", "to": "pkg:VisualLogic", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/XRectangle/src/XRectangle.java", "to": "pkg:VisualLogic.variables", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/XRectangle/src/XRectangle.java", "to": "pkg:tools", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/XRectangle/src/XRectangle.java", "to": "pkg:java.awt", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/XRectangle/src/XRectangle.java", "to": "pkg:java.awt.event", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/XRectangle/src/XRectangle.java", "to": "pkg:javax.swing", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Dekoratoren/XRectangle/src/XRectangle.java", "to": "pkg:javax.swing.Timer", "type": "imports", "weight": 0.7 }
+      ]
+    },
+    {
+      "path": "FrontElements/2Graph/BalkenAnzeige/src/BalkenAnzeige.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/BalkenAnzeige/src/BalkenPanel.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/Chart2D/Chart2D.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/Chart2D/src/ChartPanel.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/Chart2D/src/CustomChart.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/Chart2D_3_0/src/Chart2D.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/Chart2D_3_0/src/ChartPanel.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/Chart2D_3_0/src/CustomChart.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/Chart2D_3_0/src/DialogChart.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/Chart2D_3_0/src/DialogMain.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/Compass/src/Compas.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/old/DataLogger/src/Panel.java",
+      "exists": true,
+      "type": "source",
+      "language": "Java",
+      "nodes": [
+        {
+          "id": "file:FrontElements/2Graph/old/DataLogger/src/Panel.java",
+          "type": "file",
+          "name": "Panel.java",
+          "properties": { "path": "FrontElements/2Graph/old/DataLogger/src/Panel.java" }
+        },
+        {
+          "id": "class:DataLogger.Panel",
+          "type": "class",
+          "name": "Panel",
+          "properties": { "visibility": "public", "extends": "JVSMain", "implements": "PanelIF" }
+        },
+        {
+          "id": "method:DataLogger.Panel.processPanel(int,double,Object)",
+          "type": "function",
+          "name": "processPanel",
+          "properties": { "visibility": "public", "return": "void", "params": ["int pinIndex", "double value", "Object obj"] }
+        },
+        {
+          "id": "method:DataLogger.Panel.paint(Graphics)",
+          "type": "function",
+          "name": "paint",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.awt.Graphics g"] }
+        },
+        {
+          "id": "method:DataLogger.Panel.drawGraph(Graphics,int,int,int,int)",
+          "type": "function",
+          "name": "drawGraph",
+          "properties": { "visibility": "public", "return": "void", "params": ["Graphics g", "int x", "int y", "int mitteX", "int mitteY"] }
+        },
+        {
+          "id": "method:DataLogger.Panel.init()",
+          "type": "function",
+          "name": "init",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:DataLogger.Panel.process()",
+          "type": "function",
+          "name": "process",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:DataLogger.Panel.openPropertyDialog()",
+          "type": "function",
+          "name": "openPropertyDialog",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:DataLogger.Panel.mousePressed(MouseEvent)",
+          "type": "function",
+          "name": "mousePressed",
+          "properties": { "visibility": "public", "return": "void", "params": ["MouseEvent e"] }
+        },
+        {
+          "id": "method:DataLogger.Panel.start()",
+          "type": "function",
+          "name": "start",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:DataLogger.Panel.stop()",
+          "type": "function",
+          "name": "stop",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:DataLogger.Panel.setPropertyEditor()",
+          "type": "function",
+          "name": "setPropertyEditor",
+          "properties": { "visibility": "public", "return": "void" }
+        },
+        {
+          "id": "method:DataLogger.Panel.localize()",
+          "type": "function",
+          "name": "localize",
+          "properties": { "visibility": "private", "return": "void" }
+        },
+        {
+          "id": "method:DataLogger.Panel.propertyChanged(Object)",
+          "type": "function",
+          "name": "propertyChanged",
+          "properties": { "visibility": "public", "return": "void", "params": ["Object o"] }
+        },
+        {
+          "id": "method:DataLogger.Panel.loadFromStream(FileInputStream)",
+          "type": "function",
+          "name": "loadFromStream",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.io.FileInputStream fis"] }
+        },
+        {
+          "id": "method:DataLogger.Panel.saveToStream(FileOutputStream)",
+          "type": "function",
+          "name": "saveToStream",
+          "properties": { "visibility": "public", "return": "void", "params": ["java.io.FileOutputStream fos"] }
+        }
+      ],
+      "edges": [
+        { "from": "file:FrontElements/2Graph/old/DataLogger/src/Panel.java", "to": "class:DataLogger.Panel", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Panel", "to": "method:DataLogger.Panel.processPanel(int,double,Object)", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Panel", "to": "method:DataLogger.Panel.paint(Graphics)", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Panel", "to": "method:DataLogger.Panel.drawGraph(Graphics,int,int,int,int)", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Panel", "to": "method:DataLogger.Panel.init()", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Panel", "to": "method:DataLogger.Panel.process()", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Panel", "to": "method:DataLogger.Panel.openPropertyDialog()", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Panel", "to": "method:DataLogger.Panel.mousePressed(MouseEvent)", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Panel", "to": "method:DataLogger.Panel.start()", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Panel", "to": "method:DataLogger.Panel.stop()", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Panel", "to": "method:DataLogger.Panel.setPropertyEditor()", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Panel", "to": "method:DataLogger.Panel.localize()", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Panel", "to": "method:DataLogger.Panel.propertyChanged(Object)", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Panel", "to": "method:DataLogger.Panel.loadFromStream(FileInputStream)", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Panel", "to": "method:DataLogger.Panel.saveToStream(FileOutputStream)", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Panel", "to": "class:JVSMain", "type": "inherits", "weight": 0.9 },
+        { "from": "class:DataLogger.Panel", "to": "interface:PanelIF", "type": "implements", "weight": 0.9 },
+        { "from": "method:DataLogger.Panel.openPropertyDialog()", "to": "class:DataLogger.FrameProperties", "type": "calls", "weight": 0.8 },
+        { "from": "file:FrontElements/2Graph/old/DataLogger/src/Panel.java", "to": "pkg:VisualLogic", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Graph/old/DataLogger/src/Panel.java", "to": "pkg:VisualLogic.variables", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Graph/old/DataLogger/src/Panel.java", "to": "pkg:tools", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Graph/old/DataLogger/src/Panel.java", "to": "pkg:java.awt", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Graph/old/DataLogger/src/Panel.java", "to": "pkg:java.awt.event", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Graph/old/DataLogger/src/Panel.java", "to": "pkg:javax.swing", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Graph/old/DataLogger/src/Panel.java", "to": "pkg:javax.swing.Timer", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Graph/old/DataLogger/src/Panel.java", "to": "pkg:java.text", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Graph/old/DataLogger/src/Panel.java", "to": "pkg:java.awt.geom.Rectangle2D", "type": "imports", "weight": 0.7 },
+        { "from": "file:FrontElements/2Graph/old/DataLogger/src/Panel.java", "to": "pkg:java.util.ArrayList", "type": "imports", "weight": 0.7 }
+      ]
+    },
+    {
+      "path": "FrontElements/2Graph/old/DataLogger/src/Properties/Properties/src/FrameProperties.java",
+      "exists": true,
+      "type": "source",
+      "language": "Java",
+      "nodes": [
+        {
+          "id": "file:FrontElements/2Graph/old/DataLogger/src/Properties/Properties/src/FrameProperties.java",
+          "type": "file",
+          "name": "FrameProperties.java",
+          "properties": { "path": "FrontElements/2Graph/old/DataLogger/src/Properties/Properties/src/FrameProperties.java" }
+        },
+        {
+          "id": "class:DataLogger.Properties.FrameProperties",
+          "type": "class",
+          "name": "FrameProperties",
+          "properties": { "visibility": "public", "extends": "javax.swing.JDialog" }
+        },
+        {
+          "id": "method:DataLogger.Properties.FrameProperties.FrameProperties(Frame,boolean)",
+          "type": "function",
+          "name": "FrameProperties",
+          "properties": { "visibility": "public", "return": "constructor", "params": ["java.awt.Frame parent", "boolean modal"] }
+        },
+        {
+          "id": "method:DataLogger.Properties.FrameProperties.initComponents()",
+          "type": "function",
+          "name": "initComponents",
+          "properties": { "visibility": "private", "return": "void" }
+        },
+        {
+          "id": "method:DataLogger.Properties.FrameProperties.jBtnOKActionPerformed(ActionEvent)",
+          "type": "function",
+          "name": "jBtnOKActionPerformed",
+          "properties": { "visibility": "private", "return": "void", "params": ["java.awt.event.ActionEvent evt"] }
+        },
+        {
+          "id": "method:DataLogger.Properties.FrameProperties.jBtnCancelActionPerformed(ActionEvent)",
+          "type": "function",
+          "name": "jBtnCancelActionPerformed",
+          "properties": { "visibility": "private", "return": "void", "params": ["java.awt.event.ActionEvent evt"] }
+        },
+        {
+          "id": "method:DataLogger.Properties.FrameProperties.jCheckBox1ActionPerformed(ActionEvent)",
+          "type": "function",
+          "name": "jCheckBox1ActionPerformed",
+          "properties": { "visibility": "private", "return": "void", "params": ["java.awt.event.ActionEvent evt"] }
+        },
+        {
+          "id": "method:DataLogger.Properties.FrameProperties.execute()",
+          "type": "function",
+          "name": "execute",
+          "properties": { "visibility": "public", "return": "boolean", "static": true }
+        }
+      ],
+      "edges": [
+        { "from": "file:FrontElements/2Graph/old/DataLogger/src/Properties/Properties/src/FrameProperties.java", "to": "class:DataLogger.Properties.FrameProperties", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Properties.FrameProperties", "to": "method:DataLogger.Properties.FrameProperties.FrameProperties(Frame,boolean)", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Properties.FrameProperties", "to": "method:DataLogger.Properties.FrameProperties.initComponents()", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Properties.FrameProperties", "to": "method:DataLogger.Properties.FrameProperties.jBtnOKActionPerformed(ActionEvent)", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Properties.FrameProperties", "to": "method:DataLogger.Properties.FrameProperties.jBtnCancelActionPerformed(ActionEvent)", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Properties.FrameProperties", "to": "method:DataLogger.Properties.FrameProperties.jCheckBox1ActionPerformed(ActionEvent)", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Properties.FrameProperties", "to": "method:DataLogger.Properties.FrameProperties.execute()", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Properties.FrameProperties", "to": "class:javax.swing.JDialog", "type": "inherits", "weight": 0.9 }
+      ]
+    },
+    {
+      "path": "FrontElements/2Graph/old/DataLogger/src/Properties/Properties/src/Main.java",
+      "exists": true,
+      "type": "source",
+      "language": "Java",
+      "nodes": [
+        {
+          "id": "file:FrontElements/2Graph/old/DataLogger/src/Properties/Properties/src/Main.java",
+          "type": "file",
+          "name": "Main.java",
+          "properties": { "path": "FrontElements/2Graph/old/DataLogger/src/Properties/Properties/src/Main.java" }
+        },
+        {
+          "id": "class:DataLogger.Properties.Main",
+          "type": "class",
+          "name": "Main",
+          "properties": { "visibility": "public" }
+        },
+        {
+          "id": "method:DataLogger.Properties.Main.Main()",
+          "type": "function",
+          "name": "Main",
+          "properties": { "visibility": "public", "return": "constructor" }
+        },
+        {
+          "id": "method:DataLogger.Properties.Main.main(String[])",
+          "type": "function",
+          "name": "main",
+          "properties": { "visibility": "public", "return": "void", "static": true, "params": ["String[] args"] }
+        }
+      ],
+      "edges": [
+        { "from": "file:FrontElements/2Graph/old/DataLogger/src/Properties/Properties/src/Main.java", "to": "class:DataLogger.Properties.Main", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Properties.Main", "to": "method:DataLogger.Properties.Main.Main()", "type": "contains", "weight": 1.0 },
+        { "from": "class:DataLogger.Properties.Main", "to": "method:DataLogger.Properties.Main.main(String[])", "type": "contains", "weight": 1.0 },
+        { "from": "method:DataLogger.Properties.Main.main(String[])", "to": "method:DataLogger.Properties.FrameProperties.execute()", "type": "calls", "weight": 0.8 }
+      ]
+    },
+    {
+      "path": "FrontElements/2Graph/old/DataLogger/src/Properties/Properties/src/PreviewCanvas.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/old/DataLogger/src/Properties/Properties/src/Properties.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/old/DataLogger/src/Properties/Properties/src/PropertiesCanvas.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/old/DataLogger/src/Properties/Properties/src/Property.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/old/DataLogger/src/Properties/Properties/src/PropertyDialog.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "path": "FrontElements/2Graph/old/DataLogger/src/Properties/Properties/src/PropertyTableModel.java",
+      "exists": false,
+      "type": "source",
+      "language": "Java",
+      "nodes": [],
+      "edges": []
+    }
+  ]
+}

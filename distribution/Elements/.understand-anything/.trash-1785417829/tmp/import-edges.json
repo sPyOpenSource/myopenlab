@@ -1,0 +1,6682 @@
+[
+  {
+    "source": "file:CircuitElements/1DArray/1DConstString/src/StrConst1D.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/1DArray/1DConstString/src/StrConst1D.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/1DArray/1DConstString/src/StrConst1D.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/1DArray/1DConstString/src/StrConst1D.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java",
+    "target": "file:pkg:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java",
+    "target": "file:pkg:java.util.Random",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "target": "file:pkg:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "target": "file:pkg:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:pkg:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:pkg:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:pkg:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+    "target": "file:pkg:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+    "target": "file:pkg:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+    "target": "file:pkg:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+    "target": "file:pkg:javax.swing.filechooser.FileFilter",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+    "target": "file:pkg:java.io.File",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+    "target": "file:pkg:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+    "target": "file:pkg:java.net",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+    "target": "file:pkg:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+    "target": "file:pkg:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+    "target": "file:pkg:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:pkg:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:pkg:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/abfrage/Abfrage.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/abfrage/Abfrage.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/abfrage/Abfrage.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/abfrage/Abfrage.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/abfrage/Abfrage.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/abfrage/Abfrage.java",
+    "target": "file:pkg:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/abfrage2/Abfrage.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/abfrage2/Abfrage.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/abfrage2/Abfrage.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/abfrage2/Abfrage.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/abfrage2/Abfrage.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/abfrage2/Abfrage.java",
+    "target": "file:pkg:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGleich/IsGleich.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGleich/IsGleich.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGleich/IsGleich.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGleich/IsGleich.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGleich/IsGleich.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGleich/IsGleich.java",
+    "target": "file:pkg:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGroesser/isGroesser.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGroesser/isGroesser.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGroesser/isGroesser.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGroesser/isGroesser.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGroesser/isGroesser.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGroesser/isGroesser.java",
+    "target": "file:pkg:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java",
+    "target": "file:pkg:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isKleiner/IsKleiner.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isKleiner/IsKleiner.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isKleiner/IsKleiner.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isKleiner/IsKleiner.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isKleiner/IsKleiner.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isKleiner/IsKleiner.java",
+    "target": "file:pkg:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java",
+    "target": "file:pkg:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+    "target": "file:pkg:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+    "target": "file:pkg:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+    "target": "file:pkg:java.util.Random",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+    "target": "file:pkg:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+    "target": "file:pkg:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+    "target": "file:pkg:javax.sound.sampled",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/AudioIn/src/AudioIn.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/AudioIn/src/AudioIn.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/AudioIn/src/AudioIn.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/AudioIn/src/AudioIn.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/AudioIn/src/AudioIn.java",
+    "target": "file:pkg:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/AudioIn/src/AudioIn.java",
+    "target": "file:pkg:javax.sound.sampled",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+    "target": "file:pkg:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+    "target": "file:pkg:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+    "target": "file:pkg:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+    "target": "file:pkg:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+    "target": "file:pkg:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+    "target": "file:pkg:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DCT/src/DCT.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DCT/src/DCT.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DCT/src/DCT.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DCT/src/DCT.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DCT/src/DCT.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/DCT/src/DCT.java",
+    "target": "file:pkg:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/FFT/src/FFT.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/FFT/src/FFT.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/FFT/src/FFT.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/FFT/src/FFT.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/FFT/src/FFT.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/FFT/src/FFT.java",
+    "target": "file:pkg:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/Generator_JV/src/Generator.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/Generator_JV/src/Generator.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/Generator_JV/src/Generator.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/Generator_JV/src/Generator.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/Generator_JV/src/Generator.java",
+    "target": "file:pkg:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+    "target": "file:pkg:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+    "target": "file:pkg:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+    "target": "file:pkg:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+    "target": "file:pkg:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+    "target": "file:pkg:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+    "target": "file:pkg:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+    "target": "file:pkg:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+    "target": "file:pkg:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Color/ColorConst/ColorConst.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Color/ColorConst/ColorConst.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Color/ColorConst/ColorConst.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Color/ColorConst/ColorConst.java",
+    "target": "file:import:java.awt.event.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Color/ColorConst/ColorConst.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Color/ColorConst/ColorConst.java",
+    "target": "file:import:java.util.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+    "target": "file:import:java.awt.event.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+    "target": "file:import:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+    "target": "file:import:javax.swing.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+    "target": "file:import:java.io.IOException",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+    "target": "file:import:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+    "target": "file:import:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+    "target": "file:import:java.io.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+    "target": "file:import:java.awt.event.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+    "target": "file:import:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+    "target": "file:import:javax.swing.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+    "target": "file:import:java.util.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+    "target": "file:import:java.awt.event.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+    "target": "file:import:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+    "target": "file:import:javax.swing.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/_ProcessSetter/ProcessSetter.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/_ProcessSetter/ProcessSetter.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/_ProcessSetter/ProcessSetter.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/_ProcessSetter/ProcessSetter.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/_ProcessSetter/ProcessSetter.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Dec/src/Dec.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Dec/src/Dec.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Dec/src/Dec.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Dec/src/Dec.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Dec/src/Dec.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Start/Start.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Start/Start.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Start/Start.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Start/Start.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Start/Start.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/FlowCharts/Start/Start.java",
+    "target": "file:package:MyParser",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Generator/Generator.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Generator/Generator.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Generator/Generator.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Generator/Generator.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Generator/Generator.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Generator/Generator.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Generator/Generator.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Generator/Generator.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:HexToBytes.java",
+    "target": "file:external:ExternalIF",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:HexToBytes.java",
+    "target": "file:external:ElementActionEvent",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:HexToBytes.java",
+    "target": "file:external:VS1DString",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:HexToBytes.java",
+    "target": "file:external:VS1DByte",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:HexToBytes.java",
+    "target": "file:external:Graphics",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:HexToBytes.java",
+    "target": "file:external:Image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:BytesToHEX.java",
+    "target": "file:external:ExternalIF",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:BytesToHEX.java",
+    "target": "file:external:ElementActionEvent",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:BytesToHEX.java",
+    "target": "file:external:VS1DString",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:BytesToHEX.java",
+    "target": "file:external:VS1DByte",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:BytesToHEX.java",
+    "target": "file:external:Graphics",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:BytesToHEX.java",
+    "target": "file:external:Image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:BytesToString.java",
+    "target": "file:external:ExternalIF",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:BytesToString.java",
+    "target": "file:external:ElementActionEvent",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:BytesToString.java",
+    "target": "file:external:VS1DByte",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:BytesToString.java",
+    "target": "file:external:VSString",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:BytesToString.java",
+    "target": "file:external:Graphics",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:BytesToString.java",
+    "target": "file:external:Image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:StringToBytes.java",
+    "target": "file:external:ExternalIF",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:StringToBytes.java",
+    "target": "file:external:ElementActionEvent",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:StringToBytes.java",
+    "target": "file:external:VSString",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:StringToBytes.java",
+    "target": "file:external:VS1DByte",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:StringToBytes.java",
+    "target": "file:external:Graphics",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:StringToBytes.java",
+    "target": "file:external:Image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Print_SerialPort_JV.java",
+    "target": "file:external:ExternalIF",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Print_SerialPort_JV.java",
+    "target": "file:external:VSBoolean",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Print_SerialPort_JV.java",
+    "target": "file:external:VSString",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Print_SerialPort_JV.java",
+    "target": "file:external:VSInteger",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Print_SerialPort_JV.java",
+    "target": "file:external:VSserialPort",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Print_SerialPort_JV.java",
+    "target": "file:external:NewSerialDriverManager",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Print_SerialPort_JV.java",
+    "target": "file:external:SerialPortException",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Read_SerialPort_JV.java",
+    "target": "file:external:ExternalIF",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Read_SerialPort_JV.java",
+    "target": "file:external:VSBoolean",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Read_SerialPort_JV.java",
+    "target": "file:external:VSString",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Read_SerialPort_JV.java",
+    "target": "file:external:VSInteger",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Read_SerialPort_JV.java",
+    "target": "file:external:VSserialPort",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Read_SerialPort_JV.java",
+    "target": "file:external:NewSerialDriverManager",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Read_SerialPort_JV.java",
+    "target": "file:external:SerialPortException",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Read_SerialPort_JV.java",
+    "target": "file:external:SerialPortTimeoutException",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Write_SerialPort_JV.java",
+    "target": "file:external:JVSMain",
+    "type": "imports",
+    "weight": 0.7,
+    "inferred": true,
+    "direction": "forward"
+  },
+  {
+    "source": "file:WriteAndRead_SerialPort_JV.java",
+    "target": "file:external:JVSMain",
+    "type": "imports",
+    "weight": 0.7,
+    "inferred": true,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Decision.java",
+    "target": "file:external:ExternalIF",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Decision.java",
+    "target": "file:external:VSFlowInfo",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Decision.java",
+    "target": "file:external:VSString",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Decision.java",
+    "target": "file:external:VSBasisIF",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Element_expr.java",
+    "target": "file:external:ExternalIF",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Element_expr.java",
+    "target": "file:external:VSFlowInfo",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Element_expr.java",
+    "target": "file:external:VSString",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Element_expr.java",
+    "target": "file:external:VSBasisIF",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Function.java",
+    "target": "file:external:ExternalIF",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Function.java",
+    "target": "file:external:VSFlowInfo",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Function.java",
+    "target": "file:external:VSString",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Function.java",
+    "target": "file:external:VSComboBox",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Function.java",
+    "target": "file:external:VSBasisIF",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Program.java",
+    "target": "file:external:JVSMain",
+    "type": "imports",
+    "weight": 0.7,
+    "inferred": true,
+    "direction": "forward"
+  },
+  {
+    "source": "file:ButtonAction.java",
+    "target": "file:external:JVSMain",
+    "type": "imports",
+    "weight": 0.7,
+    "inferred": true,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Compiler.java",
+    "target": "file:external:JVSMain",
+    "type": "imports",
+    "weight": 0.7,
+    "inferred": true,
+    "direction": "forward"
+  },
+  {
+    "source": "file:MCU_Compiler_JV.java",
+    "target": "file:external:JVSMain",
+    "type": "imports",
+    "weight": 0.7,
+    "inferred": true,
+    "direction": "forward"
+  },
+  {
+    "source": "file:MCU_Main.java",
+    "target": "file:external:JVSMain",
+    "type": "imports",
+    "weight": 0.7,
+    "inferred": true,
+    "direction": "forward"
+  },
+  {
+    "source": "file:MyPanel.java",
+    "target": "file:external:JVSMain",
+    "type": "imports",
+    "weight": 0.7,
+    "inferred": true,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Workspace.java",
+    "target": "file:external:JVSMain",
+    "type": "imports",
+    "weight": 0.7,
+    "inferred": true,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/addierer/Addierer.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/addierer/Addierer.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/addierer/Addierer.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/addierer/Addierer.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/addierer/Addierer.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/ByteConst/Const.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/ByteConst/Const.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/ByteConst/Const.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/ByteConst/Const.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/ByteConst/Const.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/ByteToInt/ByteToInt.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/ByteToInt/ByteToInt.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/ByteToInt/ByteToInt.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/ByteToInt/ByteToInt.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/ByteToInt/ByteToInt.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Parser.java",
+    "target": "file:import:java.text.DecimalFormat",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Parser.java",
+    "target": "file:import:java.util.ArrayList",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Parser.java",
+    "target": "file:import:java.util.StringTokenizer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Visual.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Visual.java",
+    "target": "file:import:java.awt.Paint",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java",
+    "target": "file:import:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java",
+    "target": "file:import:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java",
+    "target": "file:import:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java",
+    "target": "file:import:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java",
+    "target": "file:import:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java",
+    "target": "file:import:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java",
+    "target": "file:import:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java",
+    "target": "file:import:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java",
+    "target": "file:import:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+    "target": "file:import:java.awt.event.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DConstString/src/StrConst1D.java",
+    "target": "file:import:java.util.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+    "target": "file:import:java.awt.event.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+    "target": "file:import:java.util.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DCopy/src/Copy1D.java",
+    "target": "file:import:javax.swing.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+    "target": "file:import:java.awt.event.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DDoubleTo1DInteger/src/Element.java",
+    "target": "file:import:java.util.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+    "target": "file:import:java.awt.event.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/VectorenMatrix/1DIntegerTo1DDouble/src/Element.java",
+    "target": "file:import:java.util.*",
+    "type": "imports",
+    "weight": 0.7,
+    "properties": {},
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+    "target": "file:import:javax.swing.JPanel",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+    "target": "file:import:javax.swing.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+    "target": "file:import:java.awt.event.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+    "target": "file:import:java.awt.event.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+    "target": "file:import:javax.swing.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+    "target": "file:import:java.awt.event.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+    "target": "file:import:java.io.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+    "target": "file:import:java.awt.event.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "target": "file:import:java.awt.event.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+    "target": "file:import:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "target": "file:import:java.awt.event.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "target": "file:import:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "target": "file:import:javax.swing.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "target": "file:import:java.io.IOException",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "target": "file:import:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "target": "file:import:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+    "target": "file:import:java.io.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:import:VisualLogic.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:import:VisualLogic.variables.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:import:tools.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:import:java.awt.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:import:java.awt.event.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:import:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:import:javax.swing.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+    "target": "file:import:java.util.*",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:java.awt.image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+    "target": "file:package:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:java.awt.image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+    "target": "file:package:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:java.awt.image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+    "target": "file:package:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:java.awt.image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+    "target": "file:package:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:java.awt.image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+    "target": "file:package:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:java.awt.image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+    "target": "file:package:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:java.awt.image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+    "target": "file:package:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:java.awt.image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Input/Regler2/src/Regler.java",
+    "target": "file:package:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:java.awt.image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LED.java",
+    "target": "file:package:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:java.awt.image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/_LED/src/LEDPanel.java",
+    "target": "file:package:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:java.awt.image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+    "target": "file:package:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:java.awt.image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+    "target": "file:package:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:java.awt.image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+    "target": "file:package:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:java.awt.image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/Anzeige.java",
+    "target": "file:package:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:java.awt.geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:java.awt.image",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:javax.imageio.ImageIO",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:java.nio.ByteBuffer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+    "target": "file:package:SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/GraphBackground.java",
+    "target": "file:import:java.awt.Color",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/GraphBackground.java",
+    "target": "file:import:java.awt.Graphics",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/GraphBackground.java",
+    "target": "file:import:java.awt.Graphics2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/GraphBackground.java",
+    "target": "file:import:java.awt.RenderingHints",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/GraphRenderer.java",
+    "target": "file:import:java.awt.Color",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/GraphRenderer.java",
+    "target": "file:import:java.awt.Graphics",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/GraphRenderer.java",
+    "target": "file:import:java.awt.Graphics2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/GraphRenderer.java",
+    "target": "file:import:java.awt.Point",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/GraphRenderer.java",
+    "target": "file:import:java.text.DecimalFormat",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/GraphRenderer.java",
+    "target": "file:import:javax.swing.JPanel",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/Oscilloscope.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/Oscilloscope.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/Oscilloscope.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/Oscilloscope.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/Oscilloscope.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/OscPanel.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/OscPanel.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/OscPanel.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/OscPanel.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/OscPanel.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/OscPanel.java",
+    "target": "file:import:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/OscPanel.java",
+    "target": "file:import:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/OscPanel.java",
+    "target": "file:import:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/OscPanel.java",
+    "target": "file:import:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/OscPanel.java",
+    "target": "file:import:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/OscPanel.java",
+    "target": "file:import:MyGraph",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/OscilloscopeXY/src/OscPanel.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/OscilloscopeXY/src/OscPanel.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/OscilloscopeXY/src/OscPanel.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/OscilloscopeXY/src/OscPanel.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/OscilloscopeXY/src/OscPanel.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/OscilloscopeXY/src/OscPanel.java",
+    "target": "file:import:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/OscilloscopeXY/src/OscPanel.java",
+    "target": "file:import:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/OscilloscopeXY/src/OscPanel.java",
+    "target": "file:import:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/OscilloscopeXY/src/OscPanel.java",
+    "target": "file:import:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/OscilloscopeXY/src/OscPanel.java",
+    "target": "file:import:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/OscilloscopeXY/src/OscPanel.java",
+    "target": "file:import:MyGraph",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/OscilloscopeXY/src/Properties.java",
+    "target": "file:import:java.util.ArrayList",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/OscilloscopeXY/src/Property.java",
+    "target": "file:import:java.util.ArrayList",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/OscilloscopeXY/src/Property.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/Version_2_0/Output/OscilloscopeXY/src/Property.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+    "target": "file:import:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+    "target": "file:import:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+    "target": "file:import:java.text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+    "target": "file:import:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+    "target": "file:import:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+    "target": "file:import:MyGraph",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/FrameProperties.java",
+    "target": "file:import:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/Properties.java",
+    "target": "file:import:java.util.ArrayList",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/Property.java",
+    "target": "file:import:java.util.ArrayList",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/Property.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///FrontElements/2Graph/OscilloscopeXY2/src/Property.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/BinAnzeige.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/BinAnzeige.java",
+    "target": "file:package:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/BinAnzeige.java",
+    "target": "file:package:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp.java",
+    "target": "file:package:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/JVSMain.java",
+    "target": "file:package:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/JVSMain.java",
+    "target": "file:package:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///VirtualMachines/VisualLogicElements/src/VM_Element.java",
+    "target": "file:///VirtualMachines/VisualLogicElemente/src/VM_Element.java",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///VirtualMachines/VisualLogic/src/VisualLogic.java",
+    "target": "file:///VirtualMachines/VisualLogicElements/src/element.java",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///VirtualMachines/VisualLogic/src/VisualLogic.java",
+    "target": "file:///VirtualMachines/VisualLogicElements/src/Loader.java",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///VirtualMachines/VisualLogic2/src/VisualLogic2.java",
+    "target": "file:///VirtualMachines/VisualLogic/src/VisualLogic.java",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///VirtualMachines/VisualLogic3/src/VisualLogic3.java",
+    "target": "file:///VirtualMachines/VisualLogic2/src/VisualLogic2.java",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///VirtualMachines/VisualLogic4/src/VisualLogic4.java",
+    "target": "file:///VirtualMachines/VisualLogic3/src/VisualLogic3.java",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///VirtualMachines/VisualLogic5/src/VisualLogic5.java",
+    "target": "file:///VirtualMachines/VisualLogic4/src/VisualLogic4.java",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///VirtualMachines/VisualLogic6/src/VisualLogic6.java",
+    "target": "file:///VirtualMachines/VisualLogic5/src/VisualLogic5.java",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///VirtualMachines/VisualLogic2/src/VisualLogic2.java",
+    "target": "file:///VirtualMachines/VisualLogicElements/src/XMLParser.java",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:ExpressionParser/Visual",
+    "target": "class:java.awt.Graphics",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Subtrahierer",
+    "target": "class:VisualLogic.JVSMain",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Multiplizierer",
+    "target": "class:VisualLogic.JVSMain",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:SubString",
+    "target": "class:VisualLogic.JVSMain",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Length",
+    "target": "class:VisualLogic.JVSMain",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:Concat",
+    "target": "class:VisualLogic.JVSMain",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/ASin/XASin.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/ASin/XASin.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/ASin/XASin.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/ASin/XASin.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/ASin/XASin.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/ATan/XATan.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/ATan/XATan.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/ATan/XATan.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/ATan/XATan.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/ATan/XATan.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/Cos/XCos.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/Cos/XCos.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/Cos/XCos.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/Cos/XCos.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/Cos/XCos.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/Sin/XSin.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/Sin/XSin.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/Sin/XSin.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/Sin/XSin.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/Sin/XSin.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/Tan/XTan.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/Tan/XTan.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/Tan/XTan.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/Tan/XTan.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/trigonometrie/Tan/XTan.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/sqrt/src/Sqrt.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/sqrt/src/Sqrt.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/sqrt/src/Sqrt.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/sqrt/src/Sqrt.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/sqrt/src/Sqrt.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/log/src/Log.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/log/src/Log.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/log/src/Log.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/log/src/Log.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:CircuitElements/Numerik/log/src/Log.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+    "target": "file:import:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+    "target": "file:import:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+    "target": "file:import:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+    "target": "file:import:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+    "target": "file:import:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+    "target": "file:import:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+    "target": "file:import:java.util",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+    "target": "file:import:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+    "target": "file:import:VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+    "target": "file:import:VisualLogic.variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+    "target": "file:import:tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+    "target": "file:import:java.awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+    "target": "file:import:java.awt.event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+    "target": "file:import:java.io.BufferedReader",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+    "target": "file:import:java.io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+    "target": "file:import:java.util.ArrayList",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+    "target": "file:import:javax.swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+    "target": "file:import:javax.swing.JOptionPane",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+    "target": "file:import:javax.swing.JTable",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+    "target": "file:import:javax.swing.table.DefaultTableModel",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+    "target": "file:import:javax.swing.table.TableColumn",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_Regler_java",
+    "target": "file:pkg_VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_Regler_java",
+    "target": "file:pkg_VisualLogic_variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_Regler_java",
+    "target": "file:pkg_tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_Regler_java",
+    "target": "file:pkg_java_awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_Regler_java",
+    "target": "file:pkg_java_awt_event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_Regler_java",
+    "target": "file:pkg_java_awt_geom",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_Regler_java",
+    "target": "file:pkg_javax_swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_Regler_java",
+    "target": "file:pkg_java_text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_Regler_java",
+    "target": "class:__nofilepath__:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_ReglerPanel_java",
+    "target": "file:pkg_VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_ReglerPanel_java",
+    "target": "file:pkg_VisualLogic_variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_ReglerPanel_java",
+    "target": "file:pkg_tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_ReglerPanel_java",
+    "target": "file:pkg_java_awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_LED_java",
+    "target": "file:pkg_VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_LED_java",
+    "target": "file:pkg_VisualLogic_variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_LED_java",
+    "target": "file:pkg_java_awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_LED_java",
+    "target": "file:pkg_java_awt_event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_LED_java",
+    "target": "file:pkg_tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_LEDPanel_java",
+    "target": "file:pkg_VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_LEDPanel_java",
+    "target": "file:pkg_java_awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_LEDPanel_java",
+    "target": "file:pkg_javax_swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_LEDPanel_java",
+    "target": "file:pkg_java_awt_event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_LEDPanel_java",
+    "target": "file:pkg_VisualLogic_variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_LEDPanel_java",
+    "target": "file:pkg_tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_LEDPanel_java",
+    "target": "file:pkg_SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_Oscilloscope_java",
+    "target": "file:pkg_VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_Oscilloscope_java",
+    "target": "file:pkg_VisualLogic_variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_Oscilloscope_java",
+    "target": "file:pkg_tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_Oscilloscope_java",
+    "target": "file:pkg_java_awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_Oscilloscope_java",
+    "target": "file:pkg_java_awt_event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_OscPanel_java",
+    "target": "file:pkg_VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_OscPanel_java",
+    "target": "file:pkg_VisualLogic_variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_OscPanel_java",
+    "target": "file:pkg_tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_OscPanel_java",
+    "target": "file:pkg_java_awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_OscPanel_java",
+    "target": "file:pkg_java_awt_event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_OscPanel_java",
+    "target": "class:__nofilepath__:javax.swing.Timer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_OscPanel_java",
+    "target": "file:pkg_javax_swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_OscPanel_java",
+    "target": "file:pkg_java_text",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_OscPanel_java",
+    "target": "class:__nofilepath__:java.awt.geom.Rectangle2D",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_StatusDisplay_java",
+    "target": "file:pkg_VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_StatusDisplay_java",
+    "target": "file:pkg_VisualLogic_variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_StatusDisplay_java",
+    "target": "file:pkg_java_awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_StatusDisplay_java",
+    "target": "file:pkg_java_awt_event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_StatusDisplay_java",
+    "target": "file:pkg_tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_StatusAnzeige_Panel_java",
+    "target": "file:pkg_VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_StatusAnzeige_Panel_java",
+    "target": "file:pkg_VisualLogic_variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_StatusAnzeige_Panel_java",
+    "target": "file:pkg_tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_StatusAnzeige_Panel_java",
+    "target": "file:pkg_java_awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_StatusAnzeige_Panel_java",
+    "target": "file:pkg_javax_swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_StatusAnzeige_Panel_java",
+    "target": "file:pkg_java_awt_event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_StatusAnzeige_Panel_java",
+    "target": "file:pkg_java_io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_SVGImage_Panel_java",
+    "target": "file:pkg_VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_SVGImage_Panel_java",
+    "target": "file:pkg_java_awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_SVGImage_Panel_java",
+    "target": "file:pkg_javax_swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_SVGImage_Panel_java",
+    "target": "file:pkg_java_awt_event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_SVGImage_Panel_java",
+    "target": "file:pkg_VisualLogic_variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_SVGImage_Panel_java",
+    "target": "file:pkg_tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_SVGImage_Panel_java",
+    "target": "class:__nofilepath__:com.kitfox.svg.SVGCache",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_SVGImage_Panel_java",
+    "target": "class:__nofilepath__:com.kitfox.svg.SVGException",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_SVGImage_Panel_java",
+    "target": "class:__nofilepath__:com.kitfox.svg.app.beans.SVGIcon",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_SVGImage_Panel_java",
+    "target": "class:__nofilepath__:com.kitfox.svg.app.beans.SVGPanel",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_SVGImage_Panel_java",
+    "target": "class:__nofilepath__:javax.swing.filechooser.FileFilter",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_SVGImage_Panel_java",
+    "target": "class:__nofilepath__:java.io.File",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_SVGImage_Panel_java",
+    "target": "file:pkg_java_io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_SVGImage_Panel_java",
+    "target": "file:pkg_java_net",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_SVGImage_Panel_java",
+    "target": "file:pkg_SVGViewer",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_UserDefBool_Circuit_java",
+    "target": "file:pkg_VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_UserDefBool_Circuit_java",
+    "target": "file:pkg_VisualLogic_variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_UserDefBool_Circuit_java",
+    "target": "file:pkg_java_awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_UserDefBool_Circuit_java",
+    "target": "file:pkg_java_awt_event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_UserDefBool_Circuit_java",
+    "target": "file:pkg_tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_UserDefBool_Panel_java",
+    "target": "file:pkg_VisualLogic",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_UserDefBool_Panel_java",
+    "target": "file:pkg_VisualLogic_variables",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_UserDefBool_Panel_java",
+    "target": "file:pkg_tools",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_UserDefBool_Panel_java",
+    "target": "file:pkg_java_awt",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_UserDefBool_Panel_java",
+    "target": "file:pkg_javax_swing",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_UserDefBool_Panel_java",
+    "target": "file:pkg_java_awt_event",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  },
+  {
+    "source": "file:file_UserDefBool_Panel_java",
+    "target": "file:pkg_java_io",
+    "type": "imports",
+    "weight": 0.7,
+    "direction": "forward"
+  }
+]

@@ -1,0 +1,925 @@
+{
+  "nodes": [
+    {
+      "id": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Parser.java",
+      "type": "file",
+      "name": "Parser.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/Parser/Math Calc2/src/ExpressionParser/Parser.java",
+        "package": "ExpressionParser",
+        "language": "java",
+        "loc": 531
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Var.java",
+      "type": "file",
+      "name": "Var.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/Parser/Math Calc2/src/ExpressionParser/Var.java",
+        "package": "ExpressionParser",
+        "language": "java",
+        "loc": 34
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Visual.java",
+      "type": "file",
+      "name": "Visual.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/Parser/Math Calc2/src/ExpressionParser/Visual.java",
+        "package": "ExpressionParser",
+        "language": "java",
+        "loc": 149
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/RandomConst/src/RandomConst.java",
+      "type": "file",
+      "name": "RandomConst.java",
+      "properties": { "path": "CircuitElements/Numerik/RandomConst/src/RandomConst.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/ShortToInt/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/Numerik/ShortToInt/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Sinus_1_0/src/Sinus.java",
+      "type": "file",
+      "name": "Sinus.java",
+      "properties": { "path": "CircuitElements/Numerik/Sinus_1_0/src/Sinus.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Skript/src/Script.java",
+      "type": "file",
+      "name": "Script.java",
+      "properties": { "path": "CircuitElements/Numerik/Skript/src/Script.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Skript/src/Skript.java",
+      "type": "file",
+      "name": "Skript.java",
+      "properties": { "path": "CircuitElements/Numerik/Skript/src/Skript.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/StringToDouble/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/Numerik/StringToDouble/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/StringToInt/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/Numerik/StringToInt/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Subtrahierer_1_0/src/Subtrahierer.java",
+      "type": "file",
+      "name": "Subtrahierer.java",
+      "properties": { "path": "CircuitElements/Numerik/Subtrahierer_1_0/src/Subtrahierer.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/TypeCast/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/Numerik/TypeCast/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/String/CharAt/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/String/CharAt/src/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/String/Compare/src/Compare.java",
+      "type": "file",
+      "name": "Compare.java",
+      "properties": { "path": "CircuitElements/String/Compare/src/Compare.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/String/Concat/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/String/Concat/src/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java",
+      "type": "file",
+      "name": "Const.java",
+      "properties": {
+        "path": "CircuitElements/String/Constant_JV/Null_Const/Const.java",
+        "package": "String.Constant_JV.Null_Const",
+        "language": "java",
+        "loc": 168
+      }
+    },
+    {
+      "id": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java",
+      "type": "file",
+      "name": "Const.java",
+      "properties": {
+        "path": "CircuitElements/String/Constant_JV/SP_Const/Const.java",
+        "package": "String.Constant_JV.SP_Const",
+        "language": "java",
+        "loc": 168
+      }
+    },
+    {
+      "id": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java",
+      "type": "file",
+      "name": "Const.java",
+      "properties": {
+        "path": "CircuitElements/String/Constant_JV/TAB_Const/src/Const.java",
+        "language": "java",
+        "loc": 166
+      }
+    },
+    {
+      "id": "file:///CircuitElements/String/Contains/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/String/Contains/src/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/String/EndsWith/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/String/EndsWith/src/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/String/IndexOf/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/String/IndexOf/src/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/String/Length/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/String/Length/src/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/String/Replace/src/Replace.java",
+      "type": "file",
+      "name": "Replace.java",
+      "properties": { "path": "CircuitElements/String/Replace/src/Replace.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/String/Split/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/String/Split/src/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "file:///CircuitElements/String/Substring/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": { "path": "CircuitElements/String/Substring/src/Element.java", "language": "java", "loc": 0, "status": "not_found" }
+    },
+    {
+      "id": "class:ExpressionParser.Token",
+      "type": "class",
+      "name": "Token",
+      "properties": { "visibility": "package-private" }
+    },
+    {
+      "id": "class:ExpressionParser.Parser",
+      "type": "class",
+      "name": "Parser",
+      "properties": { "visibility": "public" }
+    },
+    {
+      "id": "class:ExpressionParser.Var",
+      "type": "class",
+      "name": "Var",
+      "properties": { "visibility": "public" }
+    },
+    {
+      "id": "class:ExpressionParser.Visual",
+      "type": "class",
+      "name": "Visual",
+      "properties": { "visibility": "public", "superclass": "javax.swing.JFrame" }
+    },
+    {
+      "id": "class:String.Constant_JV.Null_Const.Const",
+      "type": "class",
+      "name": "Const",
+      "properties": { "visibility": "public", "superclass": "JVSMain" }
+    },
+    {
+      "id": "class:String.Constant_JV.SP_Const.Const",
+      "type": "class",
+      "name": "Const",
+      "properties": { "visibility": "public", "superclass": "JVSMain" }
+    },
+    {
+      "id": "class:TAB_Const.Const",
+      "type": "class",
+      "name": "Const",
+      "properties": { "visibility": "public", "superclass": "JVSMain" }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.getErrorMessage",
+      "type": "function",
+      "name": "getErrorMessage",
+      "properties": { "visibility": "public", "returnType": "String" }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.setErrorMessage",
+      "type": "function",
+      "name": "setErrorMessage",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["String message"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.delErrorMessage",
+      "type": "function",
+      "name": "delErrorMessage",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.setExpression",
+      "type": "function",
+      "name": "setExpression",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["String expression"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.constructor",
+      "type": "function",
+      "name": "Parser",
+      "properties": { "visibility": "public", "returnType": "constructor", "params": ["String expression"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.fakultaet",
+      "type": "function",
+      "name": "fakultaet",
+      "properties": { "visibility": "private", "returnType": "double", "params": ["double a"], "static": true }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.optimize",
+      "type": "function",
+      "name": "optimize",
+      "properties": { "visibility": "private", "returnType": "ArrayList", "params": ["ArrayList vector"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.calc",
+      "type": "function",
+      "name": "calc",
+      "properties": { "visibility": "private", "returnType": "double", "params": ["ArrayList vector"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.sucheRechtsNachKlammer",
+      "type": "function",
+      "name": "sucheRechtsNachKlammer",
+      "properties": { "visibility": "private", "returnType": "int", "params": ["ArrayList tokenListe", "int pos"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.sucheLinksNachKlammer",
+      "type": "function",
+      "name": "sucheLinksNachKlammer",
+      "properties": { "visibility": "private", "returnType": "int", "params": ["ArrayList tokenListe", "int pos"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.getKlammerPlus",
+      "type": "function",
+      "name": "getKlammerPlus",
+      "properties": { "visibility": "private", "returnType": "int", "params": ["ArrayList tokenListe"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.handleMinusOperator",
+      "type": "function",
+      "name": "handleMinusOperator",
+      "properties": { "visibility": "private", "returnType": "void", "params": ["ArrayList tokenListe"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.klammere",
+      "type": "function",
+      "name": "klammere",
+      "properties": { "visibility": "private", "returnType": "void", "params": ["ArrayList tokenListe", "int ops"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.setVariablen",
+      "type": "function",
+      "name": "setVariablen",
+      "properties": { "visibility": "private", "returnType": "void", "params": ["ArrayList tokenListe"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.tokensToVector",
+      "type": "function",
+      "name": "tokensToVector",
+      "properties": { "visibility": "private", "returnType": "void", "params": ["ArrayList vector"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.clearVars",
+      "type": "function",
+      "name": "clearVars",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.addVar",
+      "type": "function",
+      "name": "addVar",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["String name", "double value"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.getVar",
+      "type": "function",
+      "name": "getVar",
+      "properties": { "visibility": "public", "returnType": "Var", "params": ["int index"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.getVarValue",
+      "type": "function",
+      "name": "getVarValue",
+      "properties": { "visibility": "public", "returnType": "double", "params": ["String name"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.varExist",
+      "type": "function",
+      "name": "varExist",
+      "properties": { "visibility": "public", "returnType": "boolean", "params": ["String name"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.parseString",
+      "type": "function",
+      "name": "parseString",
+      "properties": { "visibility": "public", "returnType": "double" }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.isNum",
+      "type": "function",
+      "name": "isNum",
+      "properties": { "visibility": "private", "returnType": "boolean", "params": ["String val"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.getTokens",
+      "type": "function",
+      "name": "getTokens",
+      "properties": { "visibility": "public", "returnType": "String" }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.isFunc",
+      "type": "function",
+      "name": "isFunc",
+      "properties": { "visibility": "private", "returnType": "boolean", "params": ["String val"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.isIn",
+      "type": "function",
+      "name": "isIn",
+      "properties": { "visibility": "private", "returnType": "boolean", "params": ["String a", "String set"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.isOP",
+      "type": "function",
+      "name": "isOP",
+      "properties": { "visibility": "private", "returnType": "boolean", "params": ["String val"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.isKLAMMER",
+      "type": "function",
+      "name": "isKLAMMER",
+      "properties": { "visibility": "private", "returnType": "boolean", "params": ["String val"] }
+    },
+    {
+      "id": "function:ExpressionParser.Parser.isString",
+      "type": "function",
+      "name": "isString",
+      "properties": { "visibility": "private", "returnType": "boolean", "params": ["String val"] }
+    },
+    {
+      "id": "function:ExpressionParser.Token.setNum",
+      "type": "function",
+      "name": "setNum",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["String num"] }
+    },
+    {
+      "id": "function:ExpressionParser.Token.setOp",
+      "type": "function",
+      "name": "setOp",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["String op"] }
+    },
+    {
+      "id": "function:ExpressionParser.Token.setVar",
+      "type": "function",
+      "name": "setVar",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["String str"] }
+    },
+    {
+      "id": "function:ExpressionParser.Token.setKlammer",
+      "type": "function",
+      "name": "setKlammer",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["String klammer"] }
+    },
+    {
+      "id": "function:ExpressionParser.Token.setFunc",
+      "type": "function",
+      "name": "setFunc",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["String func"] }
+    },
+    {
+      "id": "function:ExpressionParser.Var.constructor",
+      "type": "function",
+      "name": "Var",
+      "properties": { "visibility": "public", "returnType": "constructor", "params": ["String name", "double value"] }
+    },
+    {
+      "id": "function:ExpressionParser.Visual.constructor",
+      "type": "function",
+      "name": "Visual",
+      "properties": { "visibility": "public", "returnType": "constructor" }
+    },
+    {
+      "id": "function:ExpressionParser.Visual.initComponents",
+      "type": "function",
+      "name": "initComponents",
+      "properties": { "visibility": "private", "returnType": "void" }
+    },
+    {
+      "id": "function:ExpressionParser.Visual.jButton1ActionPerformed",
+      "type": "function",
+      "name": "jButton1ActionPerformed",
+      "properties": { "visibility": "private", "returnType": "void", "params": ["java.awt.event.ActionEvent evt"] }
+    },
+    {
+      "id": "function:ExpressionParser.Visual.main",
+      "type": "function",
+      "name": "main",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["String args[]"], "static": true }
+    },
+    {
+      "id": "function:ExpressionParser.Visual.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["java.awt.Graphics g"] }
+    },
+    {
+      "id": "function:String.Constant_JV.Null_Const.Const.constructor",
+      "type": "function",
+      "name": "Const",
+      "properties": { "visibility": "public", "returnType": "constructor" }
+    },
+    {
+      "id": "function:String.Constant_JV.Null_Const.Const.resizeWidth",
+      "type": "function",
+      "name": "resizeWidth",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.Null_Const.Const.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["java.awt.Graphics g"] }
+    },
+    {
+      "id": "function:String.Constant_JV.Null_Const.Const.init",
+      "type": "function",
+      "name": "init",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.Null_Const.Const.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.Null_Const.Const.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.Null_Const.Const.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.Null_Const.Const.localize",
+      "type": "function",
+      "name": "localize",
+      "properties": { "visibility": "private", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.Null_Const.Const.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["Object o"] }
+    },
+    {
+      "id": "function:String.Constant_JV.Null_Const.Const.start",
+      "type": "function",
+      "name": "start",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.Null_Const.Const.process",
+      "type": "function",
+      "name": "process",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.Null_Const.Const.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["java.io.FileInputStream fis"] }
+    },
+    {
+      "id": "function:String.Constant_JV.Null_Const.Const.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["java.io.FileOutputStream fos"] }
+    },
+    {
+      "id": "function:String.Constant_JV.SP_Const.Const.constructor",
+      "type": "function",
+      "name": "Const",
+      "properties": { "visibility": "public", "returnType": "constructor" }
+    },
+    {
+      "id": "function:String.Constant_JV.SP_Const.Const.resizeWidth",
+      "type": "function",
+      "name": "resizeWidth",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.SP_Const.Const.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["java.awt.Graphics g"] }
+    },
+    {
+      "id": "function:String.Constant_JV.SP_Const.Const.init",
+      "type": "function",
+      "name": "init",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.SP_Const.Const.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.SP_Const.Const.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.SP_Const.Const.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.SP_Const.Const.localize",
+      "type": "function",
+      "name": "localize",
+      "properties": { "visibility": "private", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.SP_Const.Const.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["Object o"] }
+    },
+    {
+      "id": "function:String.Constant_JV.SP_Const.Const.start",
+      "type": "function",
+      "name": "start",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.SP_Const.Const.process",
+      "type": "function",
+      "name": "process",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:String.Constant_JV.SP_Const.Const.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["java.io.FileInputStream fis"] }
+    },
+    {
+      "id": "function:String.Constant_JV.SP_Const.Const.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["java.io.FileOutputStream fos"] }
+    },
+    {
+      "id": "function:TAB_Const.Const.constructor",
+      "type": "function",
+      "name": "Const",
+      "properties": { "visibility": "public", "returnType": "constructor" }
+    },
+    {
+      "id": "function:TAB_Const.Const.resizeWidth",
+      "type": "function",
+      "name": "resizeWidth",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:TAB_Const.Const.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["java.awt.Graphics g"] }
+    },
+    {
+      "id": "function:TAB_Const.Const.init",
+      "type": "function",
+      "name": "init",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:TAB_Const.Const.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:TAB_Const.Const.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:TAB_Const.Const.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:TAB_Const.Const.localize",
+      "type": "function",
+      "name": "localize",
+      "properties": { "visibility": "private", "returnType": "void" }
+    },
+    {
+      "id": "function:TAB_Const.Const.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["Object o"] }
+    },
+    {
+      "id": "function:TAB_Const.Const.start",
+      "type": "function",
+      "name": "start",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:TAB_Const.Const.process",
+      "type": "function",
+      "name": "process",
+      "properties": { "visibility": "public", "returnType": "void" }
+    },
+    {
+      "id": "function:TAB_Const.Const.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["java.io.FileInputStream fis"] }
+    },
+    {
+      "id": "function:TAB_Const.Const.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": { "visibility": "public", "returnType": "void", "params": ["java.io.FileOutputStream fos"] }
+    },
+    {
+      "id": "import:VisualLogic",
+      "type": "import",
+      "name": "VisualLogic",
+      "properties": { "package": "VisualLogic" }
+    },
+    {
+      "id": "import:VisualLogic.variables",
+      "type": "import",
+      "name": "VisualLogic.variables",
+      "properties": { "package": "VisualLogic.variables" }
+    },
+    {
+      "id": "import:tools",
+      "type": "import",
+      "name": "tools",
+      "properties": { "package": "tools" }
+    },
+    {
+      "id": "import:java.awt",
+      "type": "import",
+      "name": "java.awt",
+      "properties": { "package": "java.awt" }
+    },
+    {
+      "id": "import:java.awt.event",
+      "type": "import",
+      "name": "java.awt.event",
+      "properties": { "package": "java.awt.event" }
+    },
+    {
+      "id": "import:javax.swing",
+      "type": "import",
+      "name": "javax.swing",
+      "properties": { "package": "javax.swing" }
+    },
+    {
+      "id": "import:java.text",
+      "type": "import",
+      "name": "java.text",
+      "properties": { "package": "java.text" }
+    },
+    {
+      "id": "import:java.awt.geom",
+      "type": "import",
+      "name": "java.awt.geom",
+      "properties": { "package": "java.awt.geom" }
+    },
+    {
+      "id": "import:java.text.DecimalFormat",
+      "type": "import",
+      "name": "java.text.DecimalFormat",
+      "properties": { "package": "java.text.DecimalFormat" }
+    },
+    {
+      "id": "import:java.util.ArrayList",
+      "type": "import",
+      "name": "java.util.ArrayList",
+      "properties": { "package": "java.util.ArrayList" }
+    },
+    {
+      "id": "import:java.util.StringTokenizer",
+      "type": "import",
+      "name": "java.util.StringTokenizer",
+      "properties": { "package": "java.util.StringTokenizer" }
+    },
+    {
+      "id": "import:java.awt.Paint",
+      "type": "import",
+      "name": "java.awt.Paint",
+      "properties": { "package": "java.awt.Paint" }
+    },
+    {
+      "id": "class:JVSMain",
+      "type": "class",
+      "name": "JVSMain",
+      "properties": { "visibility": "public", "superclass": null, "external": true }
+    }
+  ],
+  "edges": [
+    {"source": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Parser.java", "target": "class:ExpressionParser.Parser", "type": "contains", "weight": 1.0},
+    {"source": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Parser.java", "target": "class:ExpressionParser.Token", "type": "contains", "weight": 1.0},
+    {"source": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Var.java", "target": "class:ExpressionParser.Var", "type": "contains", "weight": 1.0},
+    {"source": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Visual.java", "target": "class:ExpressionParser.Visual", "type": "contains", "weight": 1.0},
+    {"source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java", "target": "class:String.Constant_JV.Null_Const.Const", "type": "contains", "weight": 1.0},
+    {"source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java", "target": "class:String.Constant_JV.SP_Const.Const", "type": "contains", "weight": 1.0},
+    {"source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java", "target": "class:TAB_Const.Const", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.getErrorMessage", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.setErrorMessage", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.delErrorMessage", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.setExpression", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.constructor", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.fakultaet", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.optimize", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.calc", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.sucheRechtsNachKlammer", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.sucheLinksNachKlammer", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.getKlammerPlus", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.handleMinusOperator", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.klammere", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.setVariablen", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.tokensToVector", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.clearVars", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.addVar", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.getVar", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.getVarValue", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.varExist", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.parseString", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.isNum", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.getTokens", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.isFunc", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.isIn", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.isOP", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.isKLAMMER", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Parser", "target": "function:ExpressionParser.Parser.isString", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Token", "target": "function:ExpressionParser.Token.setNum", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Token", "target": "function:ExpressionParser.Token.setOp", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Token", "target": "function:ExpressionParser.Token.setVar", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Token", "target": "function:ExpressionParser.Token.setKlammer", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Token", "target": "function:ExpressionParser.Token.setFunc", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Var", "target": "function:ExpressionParser.Var.constructor", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Visual", "target": "function:ExpressionParser.Visual.constructor", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Visual", "target": "function:ExpressionParser.Visual.initComponents", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Visual", "target": "function:ExpressionParser.Visual.jButton1ActionPerformed", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Visual", "target": "function:ExpressionParser.Visual.main", "type": "contains", "weight": 1.0},
+    {"source": "class:ExpressionParser.Visual", "target": "function:ExpressionParser.Visual.paint", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.Null_Const.Const", "target": "function:String.Constant_JV.Null_Const.Const.constructor", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.Null_Const.Const", "target": "function:String.Constant_JV.Null_Const.Const.resizeWidth", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.Null_Const.Const", "target": "function:String.Constant_JV.Null_Const.Const.paint", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.Null_Const.Const", "target": "function:String.Constant_JV.Null_Const.Const.init", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.Null_Const.Const", "target": "function:String.Constant_JV.Null_Const.Const.initInputPins", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.Null_Const.Const", "target": "function:String.Constant_JV.Null_Const.Const.initOutputPins", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.Null_Const.Const", "target": "function:String.Constant_JV.Null_Const.Const.setPropertyEditor", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.Null_Const.Const", "target": "function:String.Constant_JV.Null_Const.Const.localize", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.Null_Const.Const", "target": "function:String.Constant_JV.Null_Const.Const.propertyChanged", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.Null_Const.Const", "target": "function:String.Constant_JV.Null_Const.Const.start", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.Null_Const.Const", "target": "function:String.Constant_JV.Null_Const.Const.process", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.Null_Const.Const", "target": "function:String.Constant_JV.Null_Const.Const.loadFromStream", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.Null_Const.Const", "target": "function:String.Constant_JV.Null_Const.Const.saveToStream", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.SP_Const.Const", "target": "function:String.Constant_JV.SP_Const.Const.constructor", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.SP_Const.Const", "target": "function:String.Constant_JV.SP_Const.Const.resizeWidth", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.SP_Const.Const", "target": "function:String.Constant_JV.SP_Const.Const.paint", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.SP_Const.Const", "target": "function:String.Constant_JV.SP_Const.Const.init", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.SP_Const.Const", "target": "function:String.Constant_JV.SP_Const.Const.initInputPins", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.SP_Const.Const", "target": "function:String.Constant_JV.SP_Const.Const.initOutputPins", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.SP_Const.Const", "target": "function:String.Constant_JV.SP_Const.Const.setPropertyEditor", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.SP_Const.Const", "target": "function:String.Constant_JV.SP_Const.Const.localize", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.SP_Const.Const", "target": "function:String.Constant_JV.SP_Const.Const.propertyChanged", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.SP_Const.Const", "target": "function:String.Constant_JV.SP_Const.Const.start", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.SP_Const.Const", "target": "function:String.Constant_JV.SP_Const.Const.process", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.SP_Const.Const", "target": "function:String.Constant_JV.SP_Const.Const.loadFromStream", "type": "contains", "weight": 1.0},
+    {"source": "class:String.Constant_JV.SP_Const.Const", "target": "function:String.Constant_JV.SP_Const.Const.saveToStream", "type": "contains", "weight": 1.0},
+    {"source": "class:TAB_Const.Const", "target": "function:TAB_Const.Const.constructor", "type": "contains", "weight": 1.0},
+    {"source": "class:TAB_Const.Const", "target": "function:TAB_Const.Const.resizeWidth", "type": "contains", "weight": 1.0},
+    {"source": "class:TAB_Const.Const", "target": "function:TAB_Const.Const.paint", "type": "contains", "weight": 1.0},
+    {"source": "class:TAB_Const.Const", "target": "function:TAB_Const.Const.init", "type": "contains", "weight": 1.0},
+    {"source": "class:TAB_Const.Const", "target": "function:TAB_Const.Const.initInputPins", "type": "contains", "weight": 1.0},
+    {"source": "class:TAB_Const.Const", "target": "function:TAB_Const.Const.initOutputPins", "type": "contains", "weight": 1.0},
+    {"source": "class:TAB_Const.Const", "target": "function:TAB_Const.Const.setPropertyEditor", "type": "contains", "weight": 1.0},
+    {"source": "class:TAB_Const.Const", "target": "function:TAB_Const.Const.localize", "type": "contains", "weight": 1.0},
+    {"source": "class:TAB_Const.Const", "target": "function:TAB_Const.Const.propertyChanged", "type": "contains", "weight": 1.0},
+    {"source": "class:TAB_Const.Const", "target": "function:TAB_Const.Const.start", "type": "contains", "weight": 1.0},
+    {"source": "class:TAB_Const.Const", "target": "function:TAB_Const.Const.process", "type": "contains", "weight": 1.0},
+    {"source": "class:TAB_Const.Const", "target": "function:TAB_Const.Const.loadFromStream", "type": "contains", "weight": 1.0},
+    {"source": "class:TAB_Const.Const", "target": "function:TAB_Const.Const.saveToStream", "type": "contains", "weight": 1.0},
+    {"source": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Parser.java", "target": "import:java.text.DecimalFormat", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Parser.java", "target": "import:java.util.ArrayList", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Parser.java", "target": "import:java.util.StringTokenizer", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Visual.java", "target": "import:java.awt", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Visual.java", "target": "import:java.awt.Paint", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java", "target": "import:VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java", "target": "import:VisualLogic.variables", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java", "target": "import:tools", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java", "target": "import:java.awt", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java", "target": "import:java.awt.event", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java", "target": "import:javax.swing", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java", "target": "import:java.text", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/Null_Const/Const.java", "target": "import:java.awt.geom", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java", "target": "import:VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java", "target": "import:VisualLogic.variables", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java", "target": "import:tools", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java", "target": "import:java.awt", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java", "target": "import:java.awt.event", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java", "target": "import:javax.swing", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java", "target": "import:java.text", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/SP_Const/Const.java", "target": "import:java.awt.geom", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java", "target": "import:VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java", "target": "import:VisualLogic.variables", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java", "target": "import:tools", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java", "target": "import:java.awt", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java", "target": "import:java.awt.event", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java", "target": "import:javax.swing", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java", "target": "import:java.text", "type": "imports", "weight": 0.7},
+    {"source": "file:///CircuitElements/String/Constant_JV/TAB_Const/src/Const.java", "target": "import:java.awt.geom", "type": "imports", "weight": 0.7},
+    {"source": "class:ExpressionParser.Visual", "target": "class:javax.swing.JFrame", "type": "inherits", "weight": 0.9},
+    {"source": "class:String.Constant_JV.Null_Const.Const", "target": "class:JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "class:String.Constant_JV.SP_Const.Const", "target": "class:JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "class:TAB_Const.Const", "target": "class:JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "function:ExpressionParser.Parser.calc", "target": "function:ExpressionParser.Parser.fakultaet", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.setExpression", "target": "function:ExpressionParser.Parser.tokensToVector", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.setExpression", "target": "function:ExpressionParser.Parser.handleMinusOperator", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.setExpression", "target": "function:ExpressionParser.Parser.klammere", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.setExpression", "target": "function:ExpressionParser.Parser.optimize", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.setExpression", "target": "function:ExpressionParser.Parser.getKlammerPlus", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.setExpression", "target": "function:ExpressionParser.Parser.setErrorMessage", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.optimize", "target": "function:ExpressionParser.Parser.isNum", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.optimize", "target": "function:ExpressionParser.Parser.isString", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.optimize", "target": "function:ExpressionParser.Parser.isOP", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.optimize", "target": "function:ExpressionParser.Parser.isFunc", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.optimize", "target": "function:ExpressionParser.Parser.isKLAMMER", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.optimize", "target": "function:ExpressionParser.Parser.setErrorMessage", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.klammere", "target": "function:ExpressionParser.Parser.sucheRechtsNachKlammer", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.klammere", "target": "function:ExpressionParser.Parser.sucheLinksNachKlammer", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.klammere", "target": "function:ExpressionParser.Parser.isFunc", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.klammere", "target": "function:ExpressionParser.Parser.isNum", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.klammere", "target": "function:ExpressionParser.Parser.isString", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.klammere", "target": "function:ExpressionParser.Parser.isOP", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.setVariablen", "target": "function:ExpressionParser.Parser.varExist", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.setVariablen", "target": "function:ExpressionParser.Parser.getVarValue", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.setVariablen", "target": "function:ExpressionParser.Parser.setErrorMessage", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.parseString", "target": "function:ExpressionParser.Parser.setVariablen", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.parseString", "target": "function:ExpressionParser.Parser.calc", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.getVarValue", "target": "function:ExpressionParser.Parser.getVar", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.varExist", "target": "function:ExpressionParser.Parser.getVar", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.isOP", "target": "function:ExpressionParser.Parser.isIn", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.isKLAMMER", "target": "function:ExpressionParser.Parser.isIn", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.isString", "target": "function:ExpressionParser.Parser.isIn", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Parser.constructor", "target": "function:ExpressionParser.Parser.setExpression", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Visual.jButton1ActionPerformed", "target": "function:ExpressionParser.Parser.constructor", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Visual.paint", "target": "function:ExpressionParser.Parser.clearVars", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Visual.paint", "target": "function:ExpressionParser.Parser.addVar", "type": "calls", "weight": 0.8},
+    {"source": "function:ExpressionParser.Visual.paint", "target": "function:ExpressionParser.Parser.parseString", "type": "calls", "weight": 0.8}
+  ]
+}

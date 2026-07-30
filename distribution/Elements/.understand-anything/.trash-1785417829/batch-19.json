@@ -1,0 +1,4541 @@
+{
+  "nodes": [
+    {
+      "id": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "type": "code",
+      "name": "TasterPanel.java",
+      "summary": "Multi-position switch (Taster) panel element \u2014 cycles through switch positions on click, outputs integer value via ExternalIF",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": [
+        "myopenlab",
+        "java"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "package:VisualLogic",
+      "type": "dependency",
+      "name": "VisualLogic",
+      "summary": "VisualLogic framework core",
+      "complexity": "medium"
+    },
+    {
+      "id": "package:VisualLogic.variables",
+      "type": "dependency",
+      "name": "VisualLogic.variables",
+      "summary": "VisualLogic variable types",
+      "complexity": "medium"
+    },
+    {
+      "id": "package:tools",
+      "type": "dependency",
+      "name": "tools",
+      "summary": "Utility tools",
+      "complexity": "medium"
+    },
+    {
+      "id": "package:java.awt",
+      "type": "dependency",
+      "name": "java.awt",
+      "summary": "Java AWT",
+      "complexity": "medium"
+    },
+    {
+      "id": "package:java.awt.event",
+      "type": "dependency",
+      "name": "java.awt.event",
+      "summary": "Java AWT events",
+      "complexity": "medium"
+    },
+    {
+      "id": "package:java.awt.geom.Rectangle2D",
+      "type": "dependency",
+      "name": "java.awt.geom.Rectangle2D",
+      "summary": "Java 2D geometry",
+      "complexity": "medium"
+    },
+    {
+      "id": "package:javax.swing",
+      "type": "dependency",
+      "name": "javax.swing",
+      "summary": "Java Swing",
+      "complexity": "medium"
+    },
+    {
+      "id": "package:javax.swing.Timer",
+      "type": "dependency",
+      "name": "javax.swing.Timer",
+      "summary": "Swing Timer",
+      "complexity": "medium"
+    },
+    {
+      "id": "package:java.util",
+      "type": "dependency",
+      "name": "java.util",
+      "summary": "Java utilities",
+      "complexity": "medium"
+    },
+    {
+      "id": "package:java.text",
+      "type": "dependency",
+      "name": "java.text",
+      "summary": "Java text/formatting",
+      "complexity": "medium"
+    },
+    {
+      "id": "package:java.io",
+      "type": "dependency",
+      "name": "java.io",
+      "summary": "Java I/O",
+      "complexity": "medium"
+    },
+    {
+      "id": "package:java.awt.geom",
+      "type": "dependency",
+      "name": "java.awt.geom",
+      "summary": "Java 2D geometry",
+      "complexity": "medium"
+    },
+    {
+      "id": "package:java.awt.image",
+      "type": "dependency",
+      "name": "java.awt.image",
+      "summary": "Java image processing",
+      "complexity": "medium"
+    },
+    {
+      "id": "package:javax.imageio.ImageIO",
+      "type": "dependency",
+      "name": "javax.imageio.ImageIO",
+      "summary": "Image I/O",
+      "complexity": "medium"
+    },
+    {
+      "id": "package:java.nio.ByteBuffer",
+      "type": "dependency",
+      "name": "java.nio.ByteBuffer",
+      "summary": "NIO byte buffer",
+      "complexity": "medium"
+    },
+    {
+      "id": "package:SVGViewer",
+      "type": "dependency",
+      "name": "SVGViewer",
+      "summary": "SVG viewer library",
+      "complexity": "medium"
+    },
+    {
+      "id": "code:TasterPanel",
+      "type": "code",
+      "name": "TasterPanel",
+      "summary": "class TasterPanel extends JVSMain",
+      "tags": [
+        "class"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:JVSMain",
+      "type": "code",
+      "name": "JVSMain",
+      "summary": "Parent class JVSMain",
+      "tags": [
+        "class",
+        "external"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:TasterPanel.init()",
+      "type": "code",
+      "name": "init()",
+      "summary": "public void TasterPanel.init()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:TasterPanel.formMousePressed()",
+      "type": "code",
+      "name": "formMousePressed()",
+      "summary": "private void TasterPanel.formMousePressed(MouseEvent evt)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:TasterPanel.xOnInit()",
+      "type": "code",
+      "name": "xOnInit()",
+      "summary": "public void TasterPanel.xOnInit()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:TasterPanel.initInputPins()",
+      "type": "code",
+      "name": "initInputPins()",
+      "summary": "public void TasterPanel.initInputPins()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:TasterPanel.initOutputPins()",
+      "type": "code",
+      "name": "initOutputPins()",
+      "summary": "public void TasterPanel.initOutputPins()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:TasterPanel.start()",
+      "type": "code",
+      "name": "start()",
+      "summary": "public void TasterPanel.start()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:TasterPanel.setPropertyEditor()",
+      "type": "code",
+      "name": "setPropertyEditor()",
+      "summary": "public void TasterPanel.setPropertyEditor()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:TasterPanel.localize()",
+      "type": "code",
+      "name": "localize()",
+      "summary": "private void TasterPanel.localize()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:TasterPanel.getTextWithN()",
+      "type": "code",
+      "name": "getTextWithN()",
+      "summary": "private String TasterPanel.getTextWithN()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:TasterPanel.getTextWithKomma()",
+      "type": "code",
+      "name": "getTextWithKomma()",
+      "summary": "public String TasterPanel.getTextWithKomma()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:TasterPanel.propertyChanged()",
+      "type": "code",
+      "name": "propertyChanged()",
+      "summary": "public void TasterPanel.propertyChanged(Object o)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:TasterPanel.loadFromStream()",
+      "type": "code",
+      "name": "loadFromStream()",
+      "summary": "public void TasterPanel.loadFromStream(FileInputStream fis)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:TasterPanel.saveToStream()",
+      "type": "code",
+      "name": "saveToStream()",
+      "summary": "public void TasterPanel.saveToStream(FileOutputStream fos)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "type": "code",
+      "name": "Anzeige.java",
+      "summary": "Tank gauge display element \u2014 receives double/boolean input values and forwards to panel for rendering with overlay support",
+      "filePath": "FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "tags": [
+        "myopenlab",
+        "java"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Anzeige",
+      "type": "code",
+      "name": "Anzeige",
+      "summary": "class Anzeige extends JVSMain",
+      "tags": [
+        "class"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Anzeige.onDispose()",
+      "type": "code",
+      "name": "onDispose()",
+      "summary": "public void Anzeige.onDispose()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Anzeige.paint()",
+      "type": "code",
+      "name": "paint()",
+      "summary": "public void Anzeige.paint(Graphics g)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Anzeige.init()",
+      "type": "code",
+      "name": "init()",
+      "summary": "public void Anzeige.init()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Anzeige.initInputPins()",
+      "type": "code",
+      "name": "initInputPins()",
+      "summary": "public void Anzeige.initInputPins()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Anzeige.start()",
+      "type": "code",
+      "name": "start()",
+      "summary": "public void Anzeige.start()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Anzeige.initOutputPins()",
+      "type": "code",
+      "name": "initOutputPins()",
+      "summary": "public void Anzeige.initOutputPins()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Anzeige.checkPinDataType()",
+      "type": "code",
+      "name": "checkPinDataType()",
+      "summary": "public void Anzeige.checkPinDataType()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Anzeige.process()",
+      "type": "code",
+      "name": "process()",
+      "summary": "public void Anzeige.process()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "type": "code",
+      "name": "AnzeigePanel.java",
+      "summary": "Tank gauge panel with configurable appearance, fill levels, overlay thresholds, and multi-language localization",
+      "filePath": "FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "tags": [
+        "myopenlab",
+        "java"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel",
+      "type": "code",
+      "name": "AnzeigePanel",
+      "summary": "class AnzeigePanel extends JVSMain implements PanelIF",
+      "tags": [
+        "class"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:PanelIF",
+      "type": "code",
+      "name": "PanelIF",
+      "summary": "Interface PanelIF",
+      "tags": [
+        "interface"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.processPanel()",
+      "type": "code",
+      "name": "processPanel()",
+      "summary": "public void AnzeigePanel.processPanel(int pinIndex, double value, Object obj)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.paint()",
+      "type": "code",
+      "name": "paint()",
+      "summary": "public void AnzeigePanel.paint(Graphics g)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.start()",
+      "type": "code",
+      "name": "start()",
+      "summary": "public void AnzeigePanel.start()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.init()",
+      "type": "code",
+      "name": "init()",
+      "summary": "public void AnzeigePanel.init()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.setPropertyEditor()",
+      "type": "code",
+      "name": "setPropertyEditor()",
+      "summary": "public void AnzeigePanel.setPropertyEditor()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.xOnInit()",
+      "type": "code",
+      "name": "xOnInit()",
+      "summary": "public void AnzeigePanel.xOnInit()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.localize()",
+      "type": "code",
+      "name": "localize()",
+      "summary": "private void AnzeigePanel.localize()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.propertyChanged()",
+      "type": "code",
+      "name": "propertyChanged()",
+      "summary": "public void AnzeigePanel.propertyChanged(Object o)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.loadFromStream()",
+      "type": "code",
+      "name": "loadFromStream()",
+      "summary": "public void AnzeigePanel.loadFromStream(FileInputStream fis)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.saveToStream()",
+      "type": "code",
+      "name": "saveToStream()",
+      "summary": "public void AnzeigePanel.saveToStream(FileOutputStream fos)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "type": "code",
+      "name": "XImage.java",
+      "summary": "Image display decorator supporting file loading, tiled rendering, aspect-ratio keeping, interpolation, and serialization",
+      "filePath": "FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "tags": [
+        "myopenlab",
+        "java"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "code:XImage",
+      "type": "code",
+      "name": "XImage",
+      "summary": "class XImage extends JVSMain",
+      "tags": [
+        "class"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XImage.loadImage()",
+      "type": "code",
+      "name": "loadImage()",
+      "summary": "public void XImage.loadImage(String fileName)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XImage.drawTiled()",
+      "type": "code",
+      "name": "drawTiled()",
+      "summary": "public void XImage.drawTiled(Graphics2D g, Image image, Rectangle r)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XImage.paint()",
+      "type": "code",
+      "name": "paint()",
+      "summary": "public void XImage.paint(Graphics g)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XImage.init()",
+      "type": "code",
+      "name": "init()",
+      "summary": "public void XImage.init()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XImage.openPropertyDialog()",
+      "type": "code",
+      "name": "openPropertyDialog()",
+      "summary": "public void XImage.openPropertyDialog()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XImage.propertyChanged()",
+      "type": "code",
+      "name": "propertyChanged()",
+      "summary": "public void XImage.propertyChanged(Object o)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XImage.processAspect()",
+      "type": "code",
+      "name": "processAspect()",
+      "summary": "public void XImage.processAspect()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XImage.setPropertyEditor()",
+      "type": "code",
+      "name": "setPropertyEditor()",
+      "summary": "public void XImage.setPropertyEditor()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XImage.localize()",
+      "type": "code",
+      "name": "localize()",
+      "summary": "private void XImage.localize()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XImage.loadFromStream()",
+      "type": "code",
+      "name": "loadFromStream()",
+      "summary": "public void XImage.loadFromStream(FileInputStream fis)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XImage.onDispose()",
+      "type": "code",
+      "name": "onDispose()",
+      "summary": "public void XImage.onDispose()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XImage.saveToStream()",
+      "type": "code",
+      "name": "saveToStream()",
+      "summary": "public void XImage.saveToStream(FileOutputStream fos)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:ImageLoader",
+      "type": "code",
+      "name": "ImageLoader",
+      "summary": "Inner class ImageLoader",
+      "tags": [
+        "class",
+        "inner"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Component",
+      "type": "code",
+      "name": "Component",
+      "summary": "Parent Component",
+      "tags": [
+        "class",
+        "external"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:ImageLoader.ImageLoader()",
+      "type": "code",
+      "name": "ImageLoader()",
+      "summary": "public  ImageLoader.ImageLoader()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:ImageLoader.loadImage()",
+      "type": "code",
+      "name": "loadImage()",
+      "summary": "public Image ImageLoader.loadImage()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "type": "code",
+      "name": "XLabel.java",
+      "summary": "Text label decorator with configurable font, color, horizontal/vertical alignment, and localization support",
+      "filePath": "FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "tags": [
+        "myopenlab",
+        "java"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "code:XLabel",
+      "type": "code",
+      "name": "XLabel",
+      "summary": "class XLabel extends JVSMain",
+      "tags": [
+        "class"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XLabel.XLabel()",
+      "type": "code",
+      "name": "XLabel()",
+      "summary": "public  XLabel.XLabel()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XLabel.myInit()",
+      "type": "code",
+      "name": "myInit()",
+      "summary": "public void XLabel.myInit()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XLabel.paint()",
+      "type": "code",
+      "name": "paint()",
+      "summary": "public void XLabel.paint(Graphics g)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XLabel.init()",
+      "type": "code",
+      "name": "init()",
+      "summary": "public void XLabel.init()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XLabel.xOnInit()",
+      "type": "code",
+      "name": "xOnInit()",
+      "summary": "public void XLabel.xOnInit()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XLabel.setPropertyEditor()",
+      "type": "code",
+      "name": "setPropertyEditor()",
+      "summary": "public void XLabel.setPropertyEditor()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XLabel.localize()",
+      "type": "code",
+      "name": "localize()",
+      "summary": "private void XLabel.localize()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XLabel.propertyChanged()",
+      "type": "code",
+      "name": "propertyChanged()",
+      "summary": "public void XLabel.propertyChanged(Object o)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XLabel.loadFromStream()",
+      "type": "code",
+      "name": "loadFromStream()",
+      "summary": "public void XLabel.loadFromStream(FileInputStream fis)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XLabel.saveToStream()",
+      "type": "code",
+      "name": "saveToStream()",
+      "summary": "public void XLabel.saveToStream(FileOutputStream fos)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "type": "code",
+      "name": "XRectangle.java",
+      "summary": "Rectangle decorator with configurable fill color, stroke color, stroke width, and anti-aliased rendering",
+      "filePath": "FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "tags": [
+        "myopenlab",
+        "java"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "code:XRectangle",
+      "type": "code",
+      "name": "XRectangle",
+      "summary": "class XRectangle extends JVSMain",
+      "tags": [
+        "class"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XRectangle.paint()",
+      "type": "code",
+      "name": "paint()",
+      "summary": "public void XRectangle.paint(Graphics g)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XRectangle.init()",
+      "type": "code",
+      "name": "init()",
+      "summary": "public void XRectangle.init()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XRectangle.setPropertyEditor()",
+      "type": "code",
+      "name": "setPropertyEditor()",
+      "summary": "public void XRectangle.setPropertyEditor()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XRectangle.localize()",
+      "type": "code",
+      "name": "localize()",
+      "summary": "private void XRectangle.localize()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XRectangle.propertyChanged()",
+      "type": "code",
+      "name": "propertyChanged()",
+      "summary": "public void XRectangle.propertyChanged(Object o)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XRectangle.loadFromStream()",
+      "type": "code",
+      "name": "loadFromStream()",
+      "summary": "public void XRectangle.loadFromStream(FileInputStream fis)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:XRectangle.saveToStream()",
+      "type": "code",
+      "name": "saveToStream()",
+      "summary": "public void XRectangle.saveToStream(FileOutputStream fos)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "type": "code",
+      "name": "ReglerPanel.java",
+      "summary": "Knob/slider control panel extending CustomAnalogComp with configurable knob size and nibble length",
+      "filePath": "FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "tags": [
+        "myopenlab",
+        "java"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "code:ReglerPanel",
+      "type": "code",
+      "name": "ReglerPanel",
+      "summary": "class ReglerPanel extends CustomAnalogComp",
+      "tags": [
+        "class"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:CustomAnalogComp",
+      "type": "code",
+      "name": "CustomAnalogComp",
+      "summary": "Parent class CustomAnalogComp",
+      "tags": [
+        "class",
+        "external"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:ReglerPanel.init()",
+      "type": "code",
+      "name": "init()",
+      "summary": "public void ReglerPanel.init()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "type": "code",
+      "name": "Regler.java",
+      "summary": "Analog regulator/slider input element \u2014 outputs double value via pin, supports change notifications",
+      "filePath": "FrontElements/Input/Regler2/src/Regler.java",
+      "tags": [
+        "myopenlab",
+        "java"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "code:Regler",
+      "type": "code",
+      "name": "Regler",
+      "summary": "class Regler extends JVSMain",
+      "tags": [
+        "class"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Regler.onDispose()",
+      "type": "code",
+      "name": "onDispose()",
+      "summary": "public void Regler.onDispose()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Regler.paint()",
+      "type": "code",
+      "name": "paint()",
+      "summary": "public void Regler.paint(Graphics g)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Regler.init()",
+      "type": "code",
+      "name": "init()",
+      "summary": "public void Regler.init()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Regler.changePin()",
+      "type": "code",
+      "name": "changePin()",
+      "summary": "public void Regler.changePin(int pinIndex, Object value)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Regler.initInputPins()",
+      "type": "code",
+      "name": "initInputPins()",
+      "summary": "public void Regler.initInputPins()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Regler.initOutputPins()",
+      "type": "code",
+      "name": "initOutputPins()",
+      "summary": "public void Regler.initOutputPins()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Regler.process()",
+      "type": "code",
+      "name": "process()",
+      "summary": "public void Regler.process()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrontElements/Output/_LED/src/LED.java",
+      "type": "code",
+      "name": "LED.java",
+      "summary": "LED indicator output element \u2014 receives boolean input, relays on/off state to panel for visual rendering",
+      "filePath": "FrontElements/Output/_LED/src/LED.java",
+      "tags": [
+        "myopenlab",
+        "java"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LED",
+      "type": "code",
+      "name": "LED",
+      "summary": "class LED extends JVSMain",
+      "tags": [
+        "class"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LED.paint()",
+      "type": "code",
+      "name": "paint()",
+      "summary": "public void LED.paint(Graphics g)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LED.onDispose()",
+      "type": "code",
+      "name": "onDispose()",
+      "summary": "public void LED.onDispose()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LED.init()",
+      "type": "code",
+      "name": "init()",
+      "summary": "public void LED.init()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LED.initInputPins()",
+      "type": "code",
+      "name": "initInputPins()",
+      "summary": "public void LED.initInputPins()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LED.initOutputPins()",
+      "type": "code",
+      "name": "initOutputPins()",
+      "summary": "public void LED.initOutputPins()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LED.start()",
+      "type": "code",
+      "name": "start()",
+      "summary": "public void LED.start()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LED.process()",
+      "type": "code",
+      "name": "process()",
+      "summary": "public void LED.process()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "type": "code",
+      "name": "LEDPanel.java",
+      "summary": "LED panel with SVG-based rendering, configurable color, on/off state management",
+      "filePath": "FrontElements/Output/_LED/src/LEDPanel.java",
+      "tags": [
+        "myopenlab",
+        "java"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LEDPanel",
+      "type": "code",
+      "name": "LEDPanel",
+      "summary": "class LEDPanel extends JVSMain implements PanelIF",
+      "tags": [
+        "class"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LEDPanel.setOn()",
+      "type": "code",
+      "name": "setOn()",
+      "summary": "private void LEDPanel.setOn(boolean value)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LEDPanel.processPanel()",
+      "type": "code",
+      "name": "processPanel()",
+      "summary": "public void LEDPanel.processPanel(int pinIndex, double value, Object obj)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LEDPanel.paint()",
+      "type": "code",
+      "name": "paint()",
+      "summary": "public void LEDPanel.paint(Graphics g)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LEDPanel.init()",
+      "type": "code",
+      "name": "init()",
+      "summary": "public void LEDPanel.init()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LEDPanel.setPropertyEditor()",
+      "type": "code",
+      "name": "setPropertyEditor()",
+      "summary": "public void LEDPanel.setPropertyEditor()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LEDPanel.localize()",
+      "type": "code",
+      "name": "localize()",
+      "summary": "private void LEDPanel.localize()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LEDPanel.propertyChanged()",
+      "type": "code",
+      "name": "propertyChanged()",
+      "summary": "public void LEDPanel.propertyChanged(Object o)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LEDPanel.loadFromStream()",
+      "type": "code",
+      "name": "loadFromStream()",
+      "summary": "public void LEDPanel.loadFromStream(FileInputStream fis)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:LEDPanel.saveToStream()",
+      "type": "code",
+      "name": "saveToStream()",
+      "summary": "public void LEDPanel.saveToStream(FileOutputStream fos)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "type": "code",
+      "name": "Oscilloscope.java",
+      "summary": "Oscilloscope display element \u2014 receives VSGroup data and forwards to panel for XY waveform rendering",
+      "filePath": "FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "tags": [
+        "myopenlab",
+        "java"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Oscilloscope",
+      "type": "code",
+      "name": "Oscilloscope",
+      "summary": "class Oscilloscope extends JVSMain",
+      "tags": [
+        "class"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Oscilloscope.onDispose()",
+      "type": "code",
+      "name": "onDispose()",
+      "summary": "public void Oscilloscope.onDispose()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Oscilloscope.Oscilloscope()",
+      "type": "code",
+      "name": "Oscilloscope()",
+      "summary": "public  Oscilloscope.Oscilloscope()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Oscilloscope.paint()",
+      "type": "code",
+      "name": "paint()",
+      "summary": "public void Oscilloscope.paint(Graphics g)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Oscilloscope.init()",
+      "type": "code",
+      "name": "init()",
+      "summary": "public void Oscilloscope.init()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Oscilloscope.initInputPins()",
+      "type": "code",
+      "name": "initInputPins()",
+      "summary": "public void Oscilloscope.initInputPins()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Oscilloscope.initOutputPins()",
+      "type": "code",
+      "name": "initOutputPins()",
+      "summary": "public void Oscilloscope.initOutputPins()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Oscilloscope.process()",
+      "type": "code",
+      "name": "process()",
+      "summary": "public void Oscilloscope.process()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Oscilloscope.start()",
+      "type": "code",
+      "name": "start()",
+      "summary": "public void Oscilloscope.start()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "type": "code",
+      "name": "OscPanel.java",
+      "summary": "Oscilloscope panel with grid, axis labels, zoom, XY plotting, and configurable rendering options",
+      "filePath": "FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "tags": [
+        "myopenlab",
+        "java"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "code:OscPanel",
+      "type": "code",
+      "name": "OscPanel",
+      "summary": "class OscPanel extends JVSMain implements PanelIF",
+      "tags": [
+        "class"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:OscPanel.processPanel()",
+      "type": "code",
+      "name": "processPanel()",
+      "summary": "public void OscPanel.processPanel(int pinIndex, double value, Object obj)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:OscPanel.paint()",
+      "type": "code",
+      "name": "paint()",
+      "summary": "public void OscPanel.paint(Graphics g)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:OscPanel.processX()",
+      "type": "code",
+      "name": "processX()",
+      "summary": "private void OscPanel.processX(Graphics g, int x, int y, int mitteX, int mitteY, VSGroup obj)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:OscPanel.drawGraph()",
+      "type": "code",
+      "name": "drawGraph()",
+      "summary": "public void OscPanel.drawGraph(Graphics gx, int x, int y, int mitteX, int mitteY, VS1DDouble inX, VS1DDouble inY)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:OscPanel.init()",
+      "type": "code",
+      "name": "init()",
+      "summary": "public void OscPanel.init()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:OscPanel.process()",
+      "type": "code",
+      "name": "process()",
+      "summary": "public void OscPanel.process()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:OscPanel.openPropertyDialog()",
+      "type": "code",
+      "name": "openPropertyDialog()",
+      "summary": "public void OscPanel.openPropertyDialog()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:OscPanel.mousePressed()",
+      "type": "code",
+      "name": "mousePressed()",
+      "summary": "public void OscPanel.mousePressed(MouseEvent e)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:OscPanel.start()",
+      "type": "code",
+      "name": "start()",
+      "summary": "public void OscPanel.start()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:OscPanel.stop()",
+      "type": "code",
+      "name": "stop()",
+      "summary": "public void OscPanel.stop()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:OscPanel.setPropertyEditor()",
+      "type": "code",
+      "name": "setPropertyEditor()",
+      "summary": "public void OscPanel.setPropertyEditor()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:OscPanel.localize()",
+      "type": "code",
+      "name": "localize()",
+      "summary": "private void OscPanel.localize()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:OscPanel.propertyChanged()",
+      "type": "code",
+      "name": "propertyChanged()",
+      "summary": "public void OscPanel.propertyChanged(Object o)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:OscPanel.loadFromStream()",
+      "type": "code",
+      "name": "loadFromStream()",
+      "summary": "public void OscPanel.loadFromStream(FileInputStream fis)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:OscPanel.saveToStream()",
+      "type": "code",
+      "name": "saveToStream()",
+      "summary": "public void OscPanel.saveToStream(FileOutputStream fos)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "type": "code",
+      "name": "FrameProperties.java",
+      "summary": "Oscilloscope properties dialog \u2014 modal JDialog for configuring zoom, step, axis, grid, and display preferences",
+      "filePath": "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "tags": [
+        "myopenlab",
+        "java"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "code:FrameProperties",
+      "type": "code",
+      "name": "FrameProperties",
+      "summary": "class FrameProperties extends JDialog",
+      "tags": [
+        "class"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:JDialog",
+      "type": "code",
+      "name": "JDialog",
+      "summary": "Parent class JDialog",
+      "tags": [
+        "class",
+        "external"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrameProperties.FrameProperties()",
+      "type": "code",
+      "name": "FrameProperties()",
+      "summary": "public  FrameProperties.FrameProperties(Frame parent, boolean modal)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrameProperties.initComponents()",
+      "type": "code",
+      "name": "initComponents()",
+      "summary": "private void FrameProperties.initComponents()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrameProperties.jBtnOKActionPerformed()",
+      "type": "code",
+      "name": "jBtnOKActionPerformed()",
+      "summary": "private void FrameProperties.jBtnOKActionPerformed(ActionEvent evt)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrameProperties.jBtnCancelActionPerformed()",
+      "type": "code",
+      "name": "jBtnCancelActionPerformed()",
+      "summary": "private void FrameProperties.jBtnCancelActionPerformed(ActionEvent evt)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrameProperties.jCheckBox1ActionPerformed()",
+      "type": "code",
+      "name": "jCheckBox1ActionPerformed()",
+      "summary": "private void FrameProperties.jCheckBox1ActionPerformed(ActionEvent evt)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrameProperties.execute()",
+      "type": "code",
+      "name": "execute()",
+      "summary": "public static boolean FrameProperties.execute()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "type": "code",
+      "name": "Anzeige.java",
+      "summary": "Numeric display output element \u2014 receives double input and forwards formatted values to panel for rendering",
+      "filePath": "FrontElements/Output/Anzeige/src/Anzeige.java",
+      "tags": [
+        "myopenlab",
+        "java"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "code:Anzeige",
+      "type": "code",
+      "name": "Anzeige",
+      "summary": "class Anzeige extends JVSMain",
+      "tags": [
+        "class"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Anzeige.onDispose()",
+      "type": "code",
+      "name": "onDispose()",
+      "summary": "public void Anzeige.onDispose()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Anzeige.paint()",
+      "type": "code",
+      "name": "paint()",
+      "summary": "public void Anzeige.paint(Graphics g)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Anzeige.init()",
+      "type": "code",
+      "name": "init()",
+      "summary": "public void Anzeige.init()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Anzeige.initInputPins()",
+      "type": "code",
+      "name": "initInputPins()",
+      "summary": "public void Anzeige.initInputPins()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Anzeige.initOutputPins()",
+      "type": "code",
+      "name": "initOutputPins()",
+      "summary": "public void Anzeige.initOutputPins()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:Anzeige.process()",
+      "type": "code",
+      "name": "process()",
+      "summary": "public void Anzeige.process()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "type": "code",
+      "name": "AnzeigePanel.java",
+      "summary": "Numeric display panel with configurable format string, font, text color, and locale-aware decimal formatting",
+      "filePath": "FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "tags": [
+        "myopenlab",
+        "java"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel",
+      "type": "code",
+      "name": "AnzeigePanel",
+      "summary": "class AnzeigePanel extends JVSMain implements PanelIF",
+      "tags": [
+        "class"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.processPanel()",
+      "type": "code",
+      "name": "processPanel()",
+      "summary": "public void AnzeigePanel.processPanel(int pinIndex, double value, Object obj)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.paint()",
+      "type": "code",
+      "name": "paint()",
+      "summary": "public void AnzeigePanel.paint(Graphics g)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.init()",
+      "type": "code",
+      "name": "init()",
+      "summary": "public void AnzeigePanel.init()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.setPropertyEditor()",
+      "type": "code",
+      "name": "setPropertyEditor()",
+      "summary": "public void AnzeigePanel.setPropertyEditor()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.localize()",
+      "type": "code",
+      "name": "localize()",
+      "summary": "private void AnzeigePanel.localize()",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.propertyChanged()",
+      "type": "code",
+      "name": "propertyChanged()",
+      "summary": "public void AnzeigePanel.propertyChanged(Object o)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.loadFromStream()",
+      "type": "code",
+      "name": "loadFromStream()",
+      "summary": "public void AnzeigePanel.loadFromStream(FileInputStream fis)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "code:AnzeigePanel.saveToStream()",
+      "type": "code",
+      "name": "saveToStream()",
+      "summary": "public void AnzeigePanel.saveToStream(FileOutputStream fos)",
+      "tags": [
+        "method"
+      ],
+      "complexity": "medium"
+    },
+    {
+      "id": "missing:FrontElements/2Numerisch/Text_Control_JV/src/Text_Control_JV.java",
+      "type": "missing",
+      "name": "Text_Control_JV.java",
+      "summary": "File not found on disk: FrontElements/2Numerisch/Text_Control_JV/src/Text_Control_JV.java",
+      "filePath": "FrontElements/2Numerisch/Text_Control_JV/src/Text_Control_JV.java",
+      "tags": [
+        "missing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "missing:FrontElements/2Numerisch/Text_Control_JV/src/Text_Control_JV_App.java",
+      "type": "missing",
+      "name": "Text_Control_JV_App.java",
+      "summary": "File not found on disk: FrontElements/2Numerisch/Text_Control_JV/src/Text_Control_JV_App.java",
+      "filePath": "FrontElements/2Numerisch/Text_Control_JV/src/Text_Control_JV_App.java",
+      "tags": [
+        "missing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "missing:FrontElements/2Numerisch/Text_Output_JV/src/Text_Output_JV.java",
+      "type": "missing",
+      "name": "Text_Output_JV.java",
+      "summary": "File not found on disk: FrontElements/2Numerisch/Text_Output_JV/src/Text_Output_JV.java",
+      "filePath": "FrontElements/2Numerisch/Text_Output_JV/src/Text_Output_JV.java",
+      "tags": [
+        "missing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "missing:FrontElements/2Numerisch/Text_Output_JV/src/Text_Output_JV_App.java",
+      "type": "missing",
+      "name": "Text_Output_JV_App.java",
+      "summary": "File not found on disk: FrontElements/2Numerisch/Text_Output_JV/src/Text_Output_JV_App.java",
+      "filePath": "FrontElements/2Numerisch/Text_Output_JV/src/Text_Output_JV_App.java",
+      "tags": [
+        "missing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "missing:FrontElements/2Numerisch/UserConst/src/Element.java",
+      "type": "missing",
+      "name": "Element.java",
+      "summary": "File not found on disk: FrontElements/2Numerisch/UserConst/src/Element.java",
+      "filePath": "FrontElements/2Numerisch/UserConst/src/Element.java",
+      "tags": [
+        "missing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "missing:FrontElements/2Numerisch/ZahlRad_JV/src/ZahlRad.java",
+      "type": "missing",
+      "name": "ZahlRad.java",
+      "summary": "File not found on disk: FrontElements/2Numerisch/ZahlRad_JV/src/ZahlRad.java",
+      "filePath": "FrontElements/2Numerisch/ZahlRad_JV/src/ZahlRad.java",
+      "tags": [
+        "missing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "missing:FrontElements/2Numerisch/ZahlRad_JV/src/ZahlRadPanel.java",
+      "type": "missing",
+      "name": "ZahlRadPanel.java",
+      "summary": "File not found on disk: FrontElements/2Numerisch/ZahlRad_JV/src/ZahlRadPanel.java",
+      "filePath": "FrontElements/2Numerisch/ZahlRad_JV/src/ZahlRadPanel.java",
+      "tags": [
+        "missing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "missing:FrontElements/Input/DigitalJoystick_JV/src/Joystick.java",
+      "type": "missing",
+      "name": "Joystick.java",
+      "summary": "File not found on disk: FrontElements/Input/DigitalJoystick_JV/src/Joystick.java",
+      "filePath": "FrontElements/Input/DigitalJoystick_JV/src/Joystick.java",
+      "tags": [
+        "missing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "missing:FrontElements/Input/DigitalJoystick_JV/src/JoystickPanel.java",
+      "type": "missing",
+      "name": "JoystickPanel.java",
+      "summary": "File not found on disk: FrontElements/Input/DigitalJoystick_JV/src/JoystickPanel.java",
+      "filePath": "FrontElements/Input/DigitalJoystick_JV/src/JoystickPanel.java",
+      "tags": [
+        "missing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "missing:FrontElements/Input/Keyboard_JV/src/Keyboard.java",
+      "type": "missing",
+      "name": "Keyboard.java",
+      "summary": "File not found on disk: FrontElements/Input/Keyboard_JV/src/Keyboard.java",
+      "filePath": "FrontElements/Input/Keyboard_JV/src/Keyboard.java",
+      "tags": [
+        "missing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "missing:FrontElements/Input/Keyboard_JV/src/KeyboardPanel.java",
+      "type": "missing",
+      "name": "KeyboardPanel.java",
+      "summary": "File not found on disk: FrontElements/Input/Keyboard_JV/src/KeyboardPanel.java",
+      "filePath": "FrontElements/Input/Keyboard_JV/src/KeyboardPanel.java",
+      "tags": [
+        "missing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "missing:FrontElements/Output/Anzeige_1_3/Elem.java",
+      "type": "missing",
+      "name": "Elem.java",
+      "summary": "File not found on disk: FrontElements/Output/Anzeige_1_3/Elem.java",
+      "filePath": "FrontElements/Output/Anzeige_1_3/Elem.java",
+      "tags": [
+        "missing"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:java.awt.image",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "package:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "target": "code:TasterPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:TasterPanel",
+      "target": "code:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:TasterPanel",
+      "target": "code:TasterPanel.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:TasterPanel",
+      "target": "code:TasterPanel.formMousePressed()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:TasterPanel",
+      "target": "code:TasterPanel.xOnInit()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:TasterPanel",
+      "target": "code:TasterPanel.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:TasterPanel",
+      "target": "code:TasterPanel.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:TasterPanel",
+      "target": "code:TasterPanel.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:TasterPanel",
+      "target": "code:TasterPanel.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:TasterPanel",
+      "target": "code:TasterPanel.localize()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:TasterPanel",
+      "target": "code:TasterPanel.getTextWithN()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:TasterPanel",
+      "target": "code:TasterPanel.getTextWithKomma()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:TasterPanel",
+      "target": "code:TasterPanel.propertyChanged()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:TasterPanel",
+      "target": "code:TasterPanel.loadFromStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:TasterPanel",
+      "target": "code:TasterPanel.saveToStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:java.awt.image",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "package:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "target": "code:Anzeige",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:Anzeige.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:Anzeige.paint()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:Anzeige.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:Anzeige.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:Anzeige.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:Anzeige.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:Anzeige.checkPinDataType()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:Anzeige.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:java.awt.image",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "package:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "target": "code:AnzeigePanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:PanelIF",
+      "type": "implements",
+      "weight": 0.9
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.processPanel()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.paint()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.xOnInit()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.localize()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.propertyChanged()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.loadFromStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.saveToStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:java.awt.image",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "package:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "target": "code:XImage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XImage",
+      "target": "code:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:XImage",
+      "target": "code:XImage.loadImage()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XImage",
+      "target": "code:XImage.drawTiled()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XImage",
+      "target": "code:XImage.paint()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XImage",
+      "target": "code:XImage.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XImage",
+      "target": "code:XImage.openPropertyDialog()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XImage",
+      "target": "code:XImage.propertyChanged()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XImage",
+      "target": "code:XImage.processAspect()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XImage",
+      "target": "code:XImage.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XImage",
+      "target": "code:XImage.localize()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XImage",
+      "target": "code:XImage.loadFromStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XImage",
+      "target": "code:XImage.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XImage",
+      "target": "code:XImage.saveToStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XImage",
+      "target": "code:ImageLoader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:ImageLoader",
+      "target": "code:Component",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:ImageLoader",
+      "target": "code:ImageLoader.ImageLoader()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:ImageLoader",
+      "target": "code:ImageLoader.loadImage()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:java.awt.image",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "package:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "target": "code:XLabel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XLabel",
+      "target": "code:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:XLabel",
+      "target": "code:XLabel.XLabel()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XLabel",
+      "target": "code:XLabel.myInit()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XLabel",
+      "target": "code:XLabel.paint()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XLabel",
+      "target": "code:XLabel.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XLabel",
+      "target": "code:XLabel.xOnInit()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XLabel",
+      "target": "code:XLabel.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XLabel",
+      "target": "code:XLabel.localize()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XLabel",
+      "target": "code:XLabel.propertyChanged()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XLabel",
+      "target": "code:XLabel.loadFromStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XLabel",
+      "target": "code:XLabel.saveToStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:java.awt.image",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "package:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "code:XRectangle",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XRectangle",
+      "target": "code:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:XRectangle",
+      "target": "code:XRectangle.paint()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XRectangle",
+      "target": "code:XRectangle.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XRectangle",
+      "target": "code:XRectangle.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XRectangle",
+      "target": "code:XRectangle.localize()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XRectangle",
+      "target": "code:XRectangle.propertyChanged()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XRectangle",
+      "target": "code:XRectangle.loadFromStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:XRectangle",
+      "target": "code:XRectangle.saveToStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:java.awt.image",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "package:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "target": "code:ReglerPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:ReglerPanel",
+      "target": "code:CustomAnalogComp",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:ReglerPanel",
+      "target": "code:ReglerPanel.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:java.awt.image",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "package:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Input/Regler2/src/Regler.java",
+      "target": "code:Regler",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Regler",
+      "target": "code:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:Regler",
+      "target": "code:Regler.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Regler",
+      "target": "code:Regler.paint()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Regler",
+      "target": "code:Regler.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Regler",
+      "target": "code:Regler.changePin()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Regler",
+      "target": "code:Regler.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Regler",
+      "target": "code:Regler.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Regler",
+      "target": "code:Regler.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:java.awt.image",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "package:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LED.java",
+      "target": "code:LED",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LED",
+      "target": "code:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:LED",
+      "target": "code:LED.paint()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LED",
+      "target": "code:LED.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LED",
+      "target": "code:LED.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LED",
+      "target": "code:LED.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LED",
+      "target": "code:LED.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LED",
+      "target": "code:LED.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LED",
+      "target": "code:LED.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:java.awt.image",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "package:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/_LED/src/LEDPanel.java",
+      "target": "code:LEDPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LEDPanel",
+      "target": "code:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:LEDPanel",
+      "target": "code:PanelIF",
+      "type": "implements",
+      "weight": 0.9
+    },
+    {
+      "source": "code:LEDPanel",
+      "target": "code:LEDPanel.setOn()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LEDPanel",
+      "target": "code:LEDPanel.processPanel()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LEDPanel",
+      "target": "code:LEDPanel.paint()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LEDPanel",
+      "target": "code:LEDPanel.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LEDPanel",
+      "target": "code:LEDPanel.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LEDPanel",
+      "target": "code:LEDPanel.localize()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LEDPanel",
+      "target": "code:LEDPanel.propertyChanged()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LEDPanel",
+      "target": "code:LEDPanel.loadFromStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:LEDPanel",
+      "target": "code:LEDPanel.saveToStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:java.awt.image",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "package:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "target": "code:Oscilloscope",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Oscilloscope",
+      "target": "code:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:Oscilloscope",
+      "target": "code:Oscilloscope.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Oscilloscope",
+      "target": "code:Oscilloscope.Oscilloscope()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Oscilloscope",
+      "target": "code:Oscilloscope.paint()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Oscilloscope",
+      "target": "code:Oscilloscope.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Oscilloscope",
+      "target": "code:Oscilloscope.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Oscilloscope",
+      "target": "code:Oscilloscope.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Oscilloscope",
+      "target": "code:Oscilloscope.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Oscilloscope",
+      "target": "code:Oscilloscope.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:java.awt.image",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "package:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "target": "code:OscPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:PanelIF",
+      "type": "implements",
+      "weight": 0.9
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:OscPanel.processPanel()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:OscPanel.paint()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:OscPanel.processX()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:OscPanel.drawGraph()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:OscPanel.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:OscPanel.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:OscPanel.openPropertyDialog()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:OscPanel.mousePressed()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:OscPanel.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:OscPanel.stop()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:OscPanel.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:OscPanel.localize()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:OscPanel.propertyChanged()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:OscPanel.loadFromStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel",
+      "target": "code:OscPanel.saveToStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:java.awt.image",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "package:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "target": "code:FrameProperties",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrameProperties",
+      "target": "code:JDialog",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:FrameProperties",
+      "target": "code:FrameProperties.FrameProperties()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrameProperties",
+      "target": "code:FrameProperties.initComponents()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrameProperties",
+      "target": "code:FrameProperties.jBtnOKActionPerformed()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrameProperties",
+      "target": "code:FrameProperties.jBtnCancelActionPerformed()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrameProperties",
+      "target": "code:FrameProperties.jCheckBox1ActionPerformed()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrameProperties",
+      "target": "code:FrameProperties.execute()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:java.awt.image",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "package:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/Anzeige.java",
+      "target": "code:Anzeige",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:Anzeige.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:Anzeige.paint()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:Anzeige.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:Anzeige.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:Anzeige.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:Anzeige",
+      "target": "code:Anzeige.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:java.awt.image",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "package:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "code:FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "target": "code:AnzeigePanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:PanelIF",
+      "type": "implements",
+      "weight": 0.9
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.processPanel()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.paint()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.localize()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.propertyChanged()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.loadFromStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:AnzeigePanel",
+      "target": "code:AnzeigePanel.saveToStream()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "code:OscPanel.openPropertyDialog()",
+      "target": "code:FrameProperties.execute()",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "code:OscPanel.openPropertyDialog()",
+      "target": "code:FrameProperties",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ],
+  "batchFiles": [
+    {
+      "path": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "language": "Java",
+      "sizeLines": 263,
+      "fileCategory": "code"
+    },
+    {
+      "path": "FrontElements/2Numerisch/Tank_8_JV/src/Anzeige.java",
+      "language": "Java",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "FrontElements/2Numerisch/Tank_8_JV/src/AnzeigePanel.java",
+      "language": "Java",
+      "sizeLines": 642,
+      "fileCategory": "code"
+    },
+    {
+      "path": "FrontElements/Dekoratoren/Image_1_0/src/XImage.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "FrontElements/Dekoratoren/Label/src/XLabel.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "FrontElements/Dekoratoren/XRectangle/src/XRectangle.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "FrontElements/Input/Regler2/src/ReglerPanel.java",
+      "language": "Java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "FrontElements/Input/Regler2/src/Regler.java",
+      "language": "Java",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "FrontElements/Output/_LED/src/LED.java",
+      "language": "Java",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "FrontElements/Output/_LED/src/LEDPanel.java",
+      "language": "Java",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+      "language": "Java",
+      "sizeLines": 107,
+      "fileCategory": "code"
+    },
+    {
+      "path": "FrontElements/Output/Oscilloscope/src/OscPanel.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "FrontElements/Output/Anzeige/src/Anzeige.java",
+      "language": "Java",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "FrontElements/Output/Anzeige/src/AnzeigePanel.java",
+      "language": "Java",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "FrontElements/2Numerisch/Text_Control_JV/src/Text_Control_JV.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "missing"
+    },
+    {
+      "path": "FrontElements/2Numerisch/Text_Control_JV/src/Text_Control_JV_App.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "missing"
+    },
+    {
+      "path": "FrontElements/2Numerisch/Text_Output_JV/src/Text_Output_JV.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "missing"
+    },
+    {
+      "path": "FrontElements/2Numerisch/Text_Output_JV/src/Text_Output_JV_App.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "missing"
+    },
+    {
+      "path": "FrontElements/2Numerisch/UserConst/src/Element.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "missing"
+    },
+    {
+      "path": "FrontElements/2Numerisch/ZahlRad_JV/src/ZahlRad.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "missing"
+    },
+    {
+      "path": "FrontElements/2Numerisch/ZahlRad_JV/src/ZahlRadPanel.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "missing"
+    },
+    {
+      "path": "FrontElements/Input/DigitalJoystick_JV/src/Joystick.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "missing"
+    },
+    {
+      "path": "FrontElements/Input/DigitalJoystick_JV/src/JoystickPanel.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "missing"
+    },
+    {
+      "path": "FrontElements/Input/Keyboard_JV/src/Keyboard.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "missing"
+    },
+    {
+      "path": "FrontElements/Input/Keyboard_JV/src/KeyboardPanel.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "missing"
+    },
+    {
+      "path": "FrontElements/Output/Anzeige_1_3/Elem.java",
+      "language": "Java",
+      "sizeLines": 0,
+      "fileCategory": "missing"
+    }
+  ]
+}

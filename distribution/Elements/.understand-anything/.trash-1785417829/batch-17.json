@@ -1,0 +1,2686 @@
+{
+  "batch": 17,
+  "description": "FrontElements 2Graph (OscilloscopeXY2) and 2Numerisch (Anzeige, BalkenRegler, Gauge2, H-V-Slider)",
+  "summary": {
+    "files_requested": 25,
+    "files_found": 13,
+    "files_not_found": 12,
+    "nodes_total": 121,
+    "edges_total": 285,
+    "missing_files": [
+      "FrontElements/2Graph/Schreiber2_0_JV/src/DiagrammPanel.java",
+      "FrontElements/2Graph/Schreiber2_0_JV/src/FrameProperties.java",
+      "FrontElements/2Graph/Schreiber2_0_JV/src/IOPanel.java",
+      "FrontElements/2Graph/Schreiber2_0_JV/src/KurvenPanel.java",
+      "FrontElements/2Graph/Schreiber2_0_JV/src/Schreiber.java",
+      "FrontElements/2Graph/Schreiber2_0_JV/src/SchreiberPanel.java",
+      "FrontElements/2Graph/XYChart/src/FrameProperties.java",
+      "FrontElements/2Graph/XYChart/src/GraphBackground.java",
+      "FrontElements/2Graph/XYChart/src/GraphRenderer.java",
+      "FrontElements/2Graph/XYChart/src/GraphicPanel.java",
+      "FrontElements/2Graph/XYChart/src/XYChart.java",
+      "FrontElements/2Numerisch/DigitalAnzeige_1_0/src/DigitalAnzeige.java",
+      "FrontElements/2Numerisch/DigitalAnzeige_1_0/src/DigitalPanel.java",
+      "FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenReglerApp.java",
+      "FrontElements/2Numerisch/Gauge2/src/GaugeCircuit.java"
+    ],
+    "alias_notes": [
+      "FrontElements/2Numerisch/Gauge2/src/GaugeCircuit.java not found; Gauge.java analyzed as the equivalent circuit-class file"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "file:FrontElements/2Graph/OscilloscopeXY2/src/FrameProperties.java",
+      "type": "file",
+      "label": "FrameProperties.java",
+      "properties": {
+        "path": "FrontElements/2Graph/OscilloscopeXY2/src/FrameProperties.java",
+        "language": "java",
+        "lines": 477,
+        "package": "(default)"
+      }
+    },
+    {
+      "id": "file:FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+      "type": "file",
+      "label": "Oscilloscope.java",
+      "properties": {
+        "path": "FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+        "language": "java",
+        "lines": 112,
+        "package": "(default)"
+      }
+    },
+    {
+      "id": "file:FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+      "type": "file",
+      "label": "OscPanel.java",
+      "properties": {
+        "path": "FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+        "language": "java",
+        "lines": 180,
+        "package": "(default)"
+      }
+    },
+    {
+      "id": "file:FrontElements/2Graph/OscilloscopeXY2/src/Properties.java",
+      "type": "file",
+      "label": "Properties.java",
+      "properties": {
+        "path": "FrontElements/2Graph/OscilloscopeXY2/src/Properties.java",
+        "language": "java",
+        "lines": 49,
+        "package": "(default)"
+      }
+    },
+    {
+      "id": "file:FrontElements/2Graph/OscilloscopeXY2/src/Property.java",
+      "type": "file",
+      "label": "Property.java",
+      "properties": {
+        "path": "FrontElements/2Graph/OscilloscopeXY2/src/Property.java",
+        "language": "java",
+        "lines": 65,
+        "package": "(default)"
+      }
+    },
+    {
+      "id": "file:FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java",
+      "type": "file",
+      "label": "AnzeigePanel.java",
+      "properties": {
+        "path": "FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java",
+        "language": "java",
+        "lines": 140,
+        "package": "(default)"
+      }
+    },
+    {
+      "id": "file:FrontElements/2Numerisch/Anzeige/src/Anzeige.java",
+      "type": "file",
+      "label": "Anzeige.java",
+      "properties": {
+        "path": "FrontElements/2Numerisch/Anzeige/src/Anzeige.java",
+        "language": "java",
+        "lines": 141,
+        "package": "(default)"
+      }
+    },
+    {
+      "id": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java",
+      "type": "file",
+      "label": "AnzeigePanel.java (BalkenRegler)",
+      "properties": {
+        "path": "FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java",
+        "language": "java",
+        "lines": 376,
+        "package": "(default)"
+      }
+    },
+    {
+      "id": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java",
+      "type": "file",
+      "label": "BalkenRegler.java",
+      "properties": {
+        "path": "FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java",
+        "language": "java",
+        "lines": 99,
+        "package": "(default)"
+      }
+    },
+    {
+      "id": "file:FrontElements/2Numerisch/Gauge2/src/GaugePanel.java",
+      "type": "file",
+      "label": "GaugePanel.java",
+      "properties": {
+        "path": "FrontElements/2Numerisch/Gauge2/src/GaugePanel.java",
+        "language": "java",
+        "lines": 73,
+        "package": "(default)"
+      }
+    },
+    {
+      "id": "file:FrontElements/2Numerisch/Gauge2/src/Gauge.java",
+      "type": "file",
+      "label": "Gauge.java",
+      "properties": {
+        "path": "FrontElements/2Numerisch/Gauge2/src/Gauge.java",
+        "language": "java",
+        "lines": 147,
+        "package": "(default)",
+        "note": "user-requested GaugeCircuit.java not found; this is the equivalent circuit file"
+      }
+    },
+    {
+      "id": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java",
+      "type": "file",
+      "label": "Text_Control_JV.java",
+      "properties": {
+        "path": "FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java",
+        "language": "java",
+        "lines": 89,
+        "package": "(default)"
+      }
+    },
+    {
+      "id": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+      "type": "file",
+      "label": "Pane_Text_Control_JV.java",
+      "properties": {
+        "path": "FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+        "language": "java",
+        "lines": 427,
+        "package": "(default)"
+      }
+    },
+    {
+      "id": "class:FrameProperties",
+      "type": "class",
+      "label": "FrameProperties",
+      "properties": {
+        "visibility": "public",
+        "superclass": "javax.swing.JDialog",
+        "interfaces": [],
+        "isAbstract": false,
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/FrameProperties.java"
+      }
+    },
+    {
+      "id": "class:Oscilloscope",
+      "type": "class",
+      "label": "Oscilloscope",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain",
+        "interfaces": [],
+        "isAbstract": false,
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java"
+      }
+    },
+    {
+      "id": "class:OscPanel",
+      "type": "class",
+      "label": "OscPanel",
+      "properties": {
+        "visibility": "public",
+        "superclass": "VSMainWithPropertyManager",
+        "interfaces": ["PanelIF"],
+        "isAbstract": false,
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java"
+      }
+    },
+    {
+      "id": "class:Properties",
+      "type": "class",
+      "label": "Properties",
+      "properties": {
+        "visibility": "public",
+        "superclass": "java.lang.Object",
+        "interfaces": [],
+        "isAbstract": false,
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Properties.java"
+      }
+    },
+    {
+      "id": "class:Property",
+      "type": "class",
+      "label": "Property",
+      "properties": {
+        "visibility": "public",
+        "superclass": "java.lang.Object",
+        "interfaces": [],
+        "isAbstract": false,
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Property.java"
+      }
+    },
+    {
+      "id": "class:AnzeigePanel.Anzeige",
+      "type": "class",
+      "label": "AnzeigePanel (Anzeige)",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain",
+        "interfaces": ["PanelIF"],
+        "isAbstract": false,
+        "file": "FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "class:Anzeige",
+      "type": "class",
+      "label": "Anzeige",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain",
+        "interfaces": [],
+        "isAbstract": false,
+        "file": "FrontElements/2Numerisch/Anzeige/src/Anzeige.java"
+      }
+    },
+    {
+      "id": "class:AnzeigePanel.BalkenRegler",
+      "type": "class",
+      "label": "AnzeigePanel (BalkenRegler)",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain",
+        "interfaces": [],
+        "isAbstract": false,
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "class:BalkenRegler",
+      "type": "class",
+      "label": "BalkenRegler",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain",
+        "interfaces": [],
+        "isAbstract": false,
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java"
+      }
+    },
+    {
+      "id": "class:GaugePanel",
+      "type": "class",
+      "label": "GaugePanel",
+      "properties": {
+        "visibility": "public",
+        "superclass": "CustomAnalogComp2",
+        "interfaces": ["PanelIF"],
+        "isAbstract": false,
+        "file": "FrontElements/2Numerisch/Gauge2/src/GaugePanel.java"
+      }
+    },
+    {
+      "id": "class:Gauge",
+      "type": "class",
+      "label": "Gauge",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain",
+        "interfaces": [],
+        "isAbstract": false,
+        "file": "FrontElements/2Numerisch/Gauge2/src/Gauge.java"
+      }
+    },
+    {
+      "id": "class:Text_Control_JV",
+      "type": "class",
+      "label": "Text_Control_JV",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain",
+        "interfaces": [],
+        "isAbstract": false,
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "class:Pane_Text_Control_JV",
+      "type": "class",
+      "label": "Pane_Text_Control_JV",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain",
+        "interfaces": ["ChangeListener"],
+        "isAbstract": false,
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:FrameProperties.FrameProperties(java.awt.Frame,boolean)",
+      "type": "function",
+      "label": "FrameProperties(java.awt.Frame, boolean)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": true,
+        "params": "java.awt.Frame parent, boolean modal",
+        "class": "FrameProperties",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/FrameProperties.java"
+      }
+    },
+    {
+      "id": "func:FrameProperties.initComponents",
+      "type": "function",
+      "label": "initComponents()",
+      "properties": {
+        "visibility": "private",
+        "isConstructor": false,
+        "params": "",
+        "class": "FrameProperties",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/FrameProperties.java"
+      }
+    },
+    {
+      "id": "func:FrameProperties.jBtnOKActionPerformed",
+      "type": "function",
+      "label": "jBtnOKActionPerformed(java.awt.event.ActionEvent)",
+      "properties": {
+        "visibility": "private",
+        "isConstructor": false,
+        "params": "java.awt.event.ActionEvent evt",
+        "class": "FrameProperties",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/FrameProperties.java"
+      }
+    },
+    {
+      "id": "func:FrameProperties.jBtnCancelActionPerformed",
+      "type": "function",
+      "label": "jBtnCancelActionPerformed(java.awt.event.ActionEvent)",
+      "properties": {
+        "visibility": "private",
+        "isConstructor": false,
+        "params": "java.awt.event.ActionEvent evt",
+        "class": "FrameProperties",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/FrameProperties.java"
+      }
+    },
+    {
+      "id": "func:FrameProperties.jCheckBox1ActionPerformed",
+      "type": "function",
+      "label": "jCheckBox1ActionPerformed(java.awt.event.ActionEvent)",
+      "properties": {
+        "visibility": "private",
+        "isConstructor": false,
+        "params": "java.awt.event.ActionEvent evt",
+        "class": "FrameProperties",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/FrameProperties.java"
+      }
+    },
+    {
+      "id": "func:FrameProperties.execute",
+      "type": "function",
+      "label": "execute()",
+      "properties": {
+        "visibility": "public",
+        "isStatic": true,
+        "isConstructor": false,
+        "params": "",
+        "returnType": "boolean",
+        "class": "FrameProperties",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/FrameProperties.java"
+      }
+    },
+    {
+      "id": "func:Oscilloscope.onDispose",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Oscilloscope",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java"
+      }
+    },
+    {
+      "id": "func:Oscilloscope.Oscilloscope",
+      "type": "function",
+      "label": "Oscilloscope()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": true,
+        "params": "",
+        "class": "Oscilloscope",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java"
+      }
+    },
+    {
+      "id": "func:Oscilloscope.paint",
+      "type": "function",
+      "label": "paint(java.awt.Graphics)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.awt.Graphics g",
+        "class": "Oscilloscope",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java"
+      }
+    },
+    {
+      "id": "func:Oscilloscope.init",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Oscilloscope",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java"
+      }
+    },
+    {
+      "id": "func:Oscilloscope.initInputPins",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Oscilloscope",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java"
+      }
+    },
+    {
+      "id": "func:Oscilloscope.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Oscilloscope",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java"
+      }
+    },
+    {
+      "id": "func:Oscilloscope.process",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Oscilloscope",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java"
+      }
+    },
+    {
+      "id": "func:Oscilloscope.start",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Oscilloscope",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java"
+      }
+    },
+    {
+      "id": "func:OscPanel.onDispose",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "OscPanel",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java"
+      }
+    },
+    {
+      "id": "func:OscPanel.processPanel",
+      "type": "function",
+      "label": "processPanel(int, double, Object)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "int pinIndex, double value, Object obj",
+        "class": "OscPanel",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java"
+      }
+    },
+    {
+      "id": "func:OscPanel.start",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "OscPanel",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java"
+      }
+    },
+    {
+      "id": "func:OscPanel.init",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "OscPanel",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java"
+      }
+    },
+    {
+      "id": "func:OscPanel.xOnInit",
+      "type": "function",
+      "label": "xOnInit()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "OscPanel",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java"
+      }
+    },
+    {
+      "id": "func:OscPanel.stop",
+      "type": "function",
+      "label": "stop()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "OscPanel",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java"
+      }
+    },
+    {
+      "id": "func:OscPanel.setPropertyEditor",
+      "type": "function",
+      "label": "setPropertyEditor()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "OscPanel",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java"
+      }
+    },
+    {
+      "id": "func:OscPanel.setproperties",
+      "type": "function",
+      "label": "setproperties()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "OscPanel",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java"
+      }
+    },
+    {
+      "id": "func:OscPanel.propertyChanged",
+      "type": "function",
+      "label": "propertyChanged(Object)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "Object o",
+        "class": "OscPanel",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java"
+      }
+    },
+    {
+      "id": "func:OscPanel.loadFromStream",
+      "type": "function",
+      "label": "loadFromStream(java.io.FileInputStream)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.io.FileInputStream fis",
+        "class": "OscPanel",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java"
+      }
+    },
+    {
+      "id": "func:OscPanel.saveToStream",
+      "type": "function",
+      "label": "saveToStream(java.io.FileOutputStream)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.io.FileOutputStream fos",
+        "class": "OscPanel",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java"
+      }
+    },
+    {
+      "id": "func:Properties.get",
+      "type": "function",
+      "label": "get(int)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "int index",
+        "returnType": "Property",
+        "class": "Properties",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Properties.java"
+      }
+    },
+    {
+      "id": "func:Properties.add",
+      "type": "function",
+      "label": "add(Property)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "Property property",
+        "class": "Properties",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Properties.java"
+      }
+    },
+    {
+      "id": "func:Properties.size",
+      "type": "function",
+      "label": "size()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "returnType": "int",
+        "class": "Properties",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Properties.java"
+      }
+    },
+    {
+      "id": "func:Property.addLocation",
+      "type": "function",
+      "label": "addLocation(String, String)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "String language, String text",
+        "class": "Property",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Property.java"
+      }
+    },
+    {
+      "id": "func:Property.getLocation",
+      "type": "function",
+      "label": "getLocation(String)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "String language",
+        "returnType": "String",
+        "class": "Property",
+        "file": "FrontElements/2Graph/OscilloscopeXY2/src/Property.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.Anzeige.processPanel",
+      "type": "function",
+      "label": "processPanel(int, double, Object)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "int pinIndex, double value, Object obj",
+        "class": "AnzeigePanel (Anzeige)",
+        "file": "FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.Anzeige.paint",
+      "type": "function",
+      "label": "paint(java.awt.Graphics)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.awt.Graphics g",
+        "class": "AnzeigePanel (Anzeige)",
+        "file": "FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.Anzeige.init",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "AnzeigePanel (Anzeige)",
+        "file": "FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.Anzeige.setPropertyEditor",
+      "type": "function",
+      "label": "setPropertyEditor()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "AnzeigePanel (Anzeige)",
+        "file": "FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.Anzeige.localize",
+      "type": "function",
+      "label": "localize()",
+      "properties": {
+        "visibility": "private",
+        "isConstructor": false,
+        "params": "",
+        "class": "AnzeigePanel (Anzeige)",
+        "file": "FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.Anzeige.propertyChanged",
+      "type": "function",
+      "label": "propertyChanged(Object)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "Object o",
+        "class": "AnzeigePanel (Anzeige)",
+        "file": "FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.Anzeige.loadFromStream",
+      "type": "function",
+      "label": "loadFromStream(java.io.FileInputStream)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.io.FileInputStream fis",
+        "class": "AnzeigePanel (Anzeige)",
+        "file": "FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.Anzeige.saveToStream",
+      "type": "function",
+      "label": "saveToStream(java.io.FileOutputStream)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.io.FileOutputStream fos",
+        "class": "AnzeigePanel (Anzeige)",
+        "file": "FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:Anzeige.onDispose",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Anzeige",
+        "file": "FrontElements/2Numerisch/Anzeige/src/Anzeige.java"
+      }
+    },
+    {
+      "id": "func:Anzeige.paint",
+      "type": "function",
+      "label": "paint(java.awt.Graphics)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.awt.Graphics g",
+        "class": "Anzeige",
+        "file": "FrontElements/2Numerisch/Anzeige/src/Anzeige.java"
+      }
+    },
+    {
+      "id": "func:Anzeige.init",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Anzeige",
+        "file": "FrontElements/2Numerisch/Anzeige/src/Anzeige.java"
+      }
+    },
+    {
+      "id": "func:Anzeige.initInputPins",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Anzeige",
+        "file": "FrontElements/2Numerisch/Anzeige/src/Anzeige.java"
+      }
+    },
+    {
+      "id": "func:Anzeige.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Anzeige",
+        "file": "FrontElements/2Numerisch/Anzeige/src/Anzeige.java"
+      }
+    },
+    {
+      "id": "func:Anzeige.checkPinDataType",
+      "type": "function",
+      "label": "checkPinDataType()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Anzeige",
+        "file": "FrontElements/2Numerisch/Anzeige/src/Anzeige.java"
+      }
+    },
+    {
+      "id": "func:Anzeige.process",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Anzeige",
+        "file": "FrontElements/2Numerisch/Anzeige/src/Anzeige.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.BalkenRegler.paint",
+      "type": "function",
+      "label": "paint(java.awt.Graphics)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.awt.Graphics g",
+        "class": "AnzeigePanel (BalkenRegler)",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.BalkenRegler.init",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "AnzeigePanel (BalkenRegler)",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.BalkenRegler.start",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "AnzeigePanel (BalkenRegler)",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.BalkenRegler.setPropertyEditor",
+      "type": "function",
+      "label": "setPropertyEditor()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "AnzeigePanel (BalkenRegler)",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.BalkenRegler.localize",
+      "type": "function",
+      "label": "localize()",
+      "properties": {
+        "visibility": "private",
+        "isConstructor": false,
+        "params": "",
+        "class": "AnzeigePanel (BalkenRegler)",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.BalkenRegler.propertyChanged",
+      "type": "function",
+      "label": "propertyChanged(Object)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "Object o",
+        "class": "AnzeigePanel (BalkenRegler)",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.BalkenRegler.mousePressed",
+      "type": "function",
+      "label": "mousePressed(MouseEvent)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "MouseEvent e",
+        "class": "AnzeigePanel (BalkenRegler)",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.BalkenRegler.mouseDragged",
+      "type": "function",
+      "label": "mouseDragged(MouseEvent)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "MouseEvent e",
+        "class": "AnzeigePanel (BalkenRegler)",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.BalkenRegler.loadFromStream",
+      "type": "function",
+      "label": "loadFromStream(java.io.FileInputStream)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.io.FileInputStream fis",
+        "class": "AnzeigePanel (BalkenRegler)",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:AnzeigePanel.BalkenRegler.saveToStream",
+      "type": "function",
+      "label": "saveToStream(java.io.FileOutputStream)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.io.FileOutputStream fos",
+        "class": "AnzeigePanel (BalkenRegler)",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java"
+      }
+    },
+    {
+      "id": "func:BalkenRegler.onDispose",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "BalkenRegler",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java"
+      }
+    },
+    {
+      "id": "func:BalkenRegler.paint",
+      "type": "function",
+      "label": "paint(java.awt.Graphics)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.awt.Graphics g",
+        "class": "BalkenRegler",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java"
+      }
+    },
+    {
+      "id": "func:BalkenRegler.init",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "BalkenRegler",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java"
+      }
+    },
+    {
+      "id": "func:BalkenRegler.changePin",
+      "type": "function",
+      "label": "changePin(int, Object)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "int pinIndex, Object value",
+        "class": "BalkenRegler",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java"
+      }
+    },
+    {
+      "id": "func:BalkenRegler.initInputPins",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "BalkenRegler",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java"
+      }
+    },
+    {
+      "id": "func:BalkenRegler.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "BalkenRegler",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java"
+      }
+    },
+    {
+      "id": "func:BalkenRegler.process",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "BalkenRegler",
+        "file": "FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java"
+      }
+    },
+    {
+      "id": "func:GaugePanel.processPanel",
+      "type": "function",
+      "label": "processPanel(int, double, Object)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "int pinIndex, double value, Object obj",
+        "class": "GaugePanel",
+        "file": "FrontElements/2Numerisch/Gauge2/src/GaugePanel.java"
+      }
+    },
+    {
+      "id": "func:GaugePanel.init",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "GaugePanel",
+        "file": "FrontElements/2Numerisch/Gauge2/src/GaugePanel.java"
+      }
+    },
+    {
+      "id": "func:GaugePanel.mousePressed",
+      "type": "function",
+      "label": "mousePressed(MouseEvent)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "MouseEvent e",
+        "class": "GaugePanel",
+        "file": "FrontElements/2Numerisch/Gauge2/src/GaugePanel.java"
+      }
+    },
+    {
+      "id": "func:GaugePanel.mouseReleased",
+      "type": "function",
+      "label": "mouseReleased(MouseEvent)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "MouseEvent e",
+        "class": "GaugePanel",
+        "file": "FrontElements/2Numerisch/Gauge2/src/GaugePanel.java"
+      }
+    },
+    {
+      "id": "func:GaugePanel.mouseMoved",
+      "type": "function",
+      "label": "mouseMoved(MouseEvent)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "MouseEvent e",
+        "class": "GaugePanel",
+        "file": "FrontElements/2Numerisch/Gauge2/src/GaugePanel.java"
+      }
+    },
+    {
+      "id": "func:GaugePanel.mouseDragged",
+      "type": "function",
+      "label": "mouseDragged(MouseEvent)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "MouseEvent e",
+        "class": "GaugePanel",
+        "file": "FrontElements/2Numerisch/Gauge2/src/GaugePanel.java"
+      }
+    },
+    {
+      "id": "func:Gauge.onDispose",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Gauge",
+        "file": "FrontElements/2Numerisch/Gauge2/src/Gauge.java"
+      }
+    },
+    {
+      "id": "func:Gauge.paint",
+      "type": "function",
+      "label": "paint(java.awt.Graphics)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.awt.Graphics g",
+        "class": "Gauge",
+        "file": "FrontElements/2Numerisch/Gauge2/src/Gauge.java"
+      }
+    },
+    {
+      "id": "func:Gauge.init",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Gauge",
+        "file": "FrontElements/2Numerisch/Gauge2/src/Gauge.java"
+      }
+    },
+    {
+      "id": "func:Gauge.initInputPins",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Gauge",
+        "file": "FrontElements/2Numerisch/Gauge2/src/Gauge.java"
+      }
+    },
+    {
+      "id": "func:Gauge.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Gauge",
+        "file": "FrontElements/2Numerisch/Gauge2/src/Gauge.java"
+      }
+    },
+    {
+      "id": "func:Gauge.start",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Gauge",
+        "file": "FrontElements/2Numerisch/Gauge2/src/Gauge.java"
+      }
+    },
+    {
+      "id": "func:Gauge.checkPinDataType",
+      "type": "function",
+      "label": "checkPinDataType()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Gauge",
+        "file": "FrontElements/2Numerisch/Gauge2/src/Gauge.java"
+      }
+    },
+    {
+      "id": "func:Gauge.process",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Gauge",
+        "file": "FrontElements/2Numerisch/Gauge2/src/Gauge.java"
+      }
+    },
+    {
+      "id": "func:Text_Control_JV.paint",
+      "type": "function",
+      "label": "paint(java.awt.Graphics)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.awt.Graphics g",
+        "class": "Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Text_Control_JV.init",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Text_Control_JV.changePin",
+      "type": "function",
+      "label": "changePin(int, Object)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "int pinIndex, Object value",
+        "class": "Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Text_Control_JV.initInputPins",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Text_Control_JV.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Text_Control_JV.process",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Pane_Text_Control_JV.paint",
+      "type": "function",
+      "label": "paint(java.awt.Graphics)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.awt.Graphics g",
+        "class": "Pane_Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Pane_Text_Control_JV.onDispose",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Pane_Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Pane_Text_Control_JV.init",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Pane_Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Pane_Text_Control_JV.xOnInit",
+      "type": "function",
+      "label": "xOnInit()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Pane_Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Pane_Text_Control_JV.setPropertyEditor",
+      "type": "function",
+      "label": "setPropertyEditor()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Pane_Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Pane_Text_Control_JV.localize",
+      "type": "function",
+      "label": "localize()",
+      "properties": {
+        "visibility": "private",
+        "isConstructor": false,
+        "params": "",
+        "class": "Pane_Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Pane_Text_Control_JV.propertyChanged",
+      "type": "function",
+      "label": "propertyChanged(Object)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "Object o",
+        "class": "Pane_Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Pane_Text_Control_JV.start",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "",
+        "class": "Pane_Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Pane_Text_Control_JV.loadFromStream",
+      "type": "function",
+      "label": "loadFromStream(java.io.FileInputStream)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.io.FileInputStream fis",
+        "class": "Pane_Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Pane_Text_Control_JV.saveToStream",
+      "type": "function",
+      "label": "saveToStream(java.io.FileOutputStream)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "java.io.FileOutputStream fos",
+        "class": "Pane_Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java"
+      }
+    },
+    {
+      "id": "func:Pane_Text_Control_JV.stateChanged",
+      "type": "function",
+      "label": "stateChanged(ChangeEvent)",
+      "properties": {
+        "visibility": "public",
+        "isConstructor": false,
+        "params": "ChangeEvent e",
+        "class": "Pane_Text_Control_JV",
+        "file": "FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/FrameProperties.java",
+      "target": "class:FrameProperties",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:FrameProperties",
+      "target": "func:FrameProperties.FrameProperties(java.awt.Frame,boolean)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:FrameProperties",
+      "target": "func:FrameProperties.initComponents",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:FrameProperties",
+      "target": "func:FrameProperties.jBtnOKActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:FrameProperties",
+      "target": "func:FrameProperties.jBtnCancelActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:FrameProperties",
+      "target": "func:FrameProperties.jCheckBox1ActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:FrameProperties",
+      "target": "func:FrameProperties.execute",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:FrameProperties",
+      "target": "external:class:javax.swing.JDialog",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/FrameProperties.java",
+      "target": "external:pkg:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+      "target": "class:Oscilloscope",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Oscilloscope",
+      "target": "func:Oscilloscope.Oscilloscope",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Oscilloscope",
+      "target": "func:Oscilloscope.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Oscilloscope",
+      "target": "func:Oscilloscope.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Oscilloscope",
+      "target": "func:Oscilloscope.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Oscilloscope",
+      "target": "func:Oscilloscope.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Oscilloscope",
+      "target": "func:Oscilloscope.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Oscilloscope",
+      "target": "func:Oscilloscope.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Oscilloscope",
+      "target": "func:Oscilloscope.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Oscilloscope",
+      "target": "external:class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+      "target": "external:pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+      "target": "external:pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+      "target": "external:pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+      "target": "external:pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+      "target": "external:pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+      "target": "class:OscPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:OscPanel",
+      "target": "func:OscPanel.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:OscPanel",
+      "target": "func:OscPanel.processPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:OscPanel",
+      "target": "func:OscPanel.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:OscPanel",
+      "target": "func:OscPanel.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:OscPanel",
+      "target": "func:OscPanel.xOnInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:OscPanel",
+      "target": "func:OscPanel.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:OscPanel",
+      "target": "func:OscPanel.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:OscPanel",
+      "target": "func:OscPanel.setproperties",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:OscPanel",
+      "target": "func:OscPanel.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:OscPanel",
+      "target": "func:OscPanel.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:OscPanel",
+      "target": "func:OscPanel.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:OscPanel",
+      "target": "external:class:VSMainWithPropertyManager",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:OscPanel",
+      "target": "external:interface:PanelIF",
+      "type": "implements",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+      "target": "external:pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+      "target": "external:pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+      "target": "external:pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+      "target": "external:pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+      "target": "external:pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+      "target": "external:class:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+      "target": "external:pkg:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+      "target": "external:pkg:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+      "target": "external:class:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+      "target": "external:pkg:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/OscPanel.java",
+      "target": "external:pkg:MyGraph",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/Properties.java",
+      "target": "class:Properties",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Properties",
+      "target": "func:Properties.get",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Properties",
+      "target": "func:Properties.add",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Properties",
+      "target": "func:Properties.size",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/Properties.java",
+      "target": "external:class:java.util.ArrayList",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/Property.java",
+      "target": "class:Property",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Property",
+      "target": "func:Property.addLocation",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Property",
+      "target": "func:Property.getLocation",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/Property.java",
+      "target": "external:class:java.util.ArrayList",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/Property.java",
+      "target": "external:pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Graph/OscilloscopeXY2/src/Property.java",
+      "target": "external:pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java",
+      "target": "class:AnzeigePanel.Anzeige",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.Anzeige",
+      "target": "func:AnzeigePanel.Anzeige.processPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.Anzeige",
+      "target": "func:AnzeigePanel.Anzeige.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.Anzeige",
+      "target": "func:AnzeigePanel.Anzeige.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.Anzeige",
+      "target": "func:AnzeigePanel.Anzeige.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.Anzeige",
+      "target": "func:AnzeigePanel.Anzeige.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.Anzeige",
+      "target": "func:AnzeigePanel.Anzeige.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.Anzeige",
+      "target": "func:AnzeigePanel.Anzeige.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.Anzeige",
+      "target": "func:AnzeigePanel.Anzeige.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.Anzeige",
+      "target": "external:class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:AnzeigePanel.Anzeige",
+      "target": "external:interface:PanelIF",
+      "type": "implements",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java",
+      "target": "external:pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java",
+      "target": "external:pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java",
+      "target": "external:pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java",
+      "target": "external:pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java",
+      "target": "external:pkg:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java",
+      "target": "external:pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/AnzeigePanel.java",
+      "target": "external:class:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/Anzeige.java",
+      "target": "class:Anzeige",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Anzeige",
+      "target": "func:Anzeige.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Anzeige",
+      "target": "func:Anzeige.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Anzeige",
+      "target": "func:Anzeige.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Anzeige",
+      "target": "func:Anzeige.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Anzeige",
+      "target": "func:Anzeige.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Anzeige",
+      "target": "func:Anzeige.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Anzeige",
+      "target": "func:Anzeige.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Anzeige",
+      "target": "external:class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/Anzeige.java",
+      "target": "external:pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/Anzeige.java",
+      "target": "external:pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/Anzeige.java",
+      "target": "external:pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/Anzeige.java",
+      "target": "external:pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/Anzeige.java",
+      "target": "external:pkg:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/Anzeige.java",
+      "target": "external:pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Anzeige/src/Anzeige.java",
+      "target": "external:class:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java",
+      "target": "class:AnzeigePanel.BalkenRegler",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.BalkenRegler",
+      "target": "func:AnzeigePanel.BalkenRegler.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.BalkenRegler",
+      "target": "func:AnzeigePanel.BalkenRegler.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.BalkenRegler",
+      "target": "func:AnzeigePanel.BalkenRegler.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.BalkenRegler",
+      "target": "func:AnzeigePanel.BalkenRegler.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.BalkenRegler",
+      "target": "func:AnzeigePanel.BalkenRegler.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.BalkenRegler",
+      "target": "func:AnzeigePanel.BalkenRegler.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.BalkenRegler",
+      "target": "func:AnzeigePanel.BalkenRegler.mousePressed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.BalkenRegler",
+      "target": "func:AnzeigePanel.BalkenRegler.mouseDragged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.BalkenRegler",
+      "target": "func:AnzeigePanel.BalkenRegler.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.BalkenRegler",
+      "target": "func:AnzeigePanel.BalkenRegler.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:AnzeigePanel.BalkenRegler",
+      "target": "external:class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java",
+      "target": "external:pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java",
+      "target": "external:pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java",
+      "target": "external:pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java",
+      "target": "external:pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java",
+      "target": "external:class:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/AnzeigePanel.java",
+      "target": "external:pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java",
+      "target": "class:BalkenRegler",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:BalkenRegler",
+      "target": "func:BalkenRegler.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:BalkenRegler",
+      "target": "func:BalkenRegler.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:BalkenRegler",
+      "target": "func:BalkenRegler.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:BalkenRegler",
+      "target": "func:BalkenRegler.changePin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:BalkenRegler",
+      "target": "func:BalkenRegler.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:BalkenRegler",
+      "target": "func:BalkenRegler.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:BalkenRegler",
+      "target": "func:BalkenRegler.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:BalkenRegler",
+      "target": "external:class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java",
+      "target": "external:pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java",
+      "target": "external:pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java",
+      "target": "external:pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java",
+      "target": "external:pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java",
+      "target": "external:pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java",
+      "target": "external:pkg:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java",
+      "target": "external:class:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/GaugePanel.java",
+      "target": "class:GaugePanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:GaugePanel",
+      "target": "func:GaugePanel.processPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:GaugePanel",
+      "target": "func:GaugePanel.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:GaugePanel",
+      "target": "func:GaugePanel.mousePressed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:GaugePanel",
+      "target": "func:GaugePanel.mouseReleased",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:GaugePanel",
+      "target": "func:GaugePanel.mouseMoved",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:GaugePanel",
+      "target": "func:GaugePanel.mouseDragged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:GaugePanel",
+      "target": "external:class:CustomAnalogComp2",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:GaugePanel",
+      "target": "external:interface:PanelIF",
+      "type": "implements",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/GaugePanel.java",
+      "target": "external:pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/GaugePanel.java",
+      "target": "external:pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/GaugePanel.java",
+      "target": "external:pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/GaugePanel.java",
+      "target": "external:pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/GaugePanel.java",
+      "target": "external:pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/GaugePanel.java",
+      "target": "external:pkg:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/GaugePanel.java",
+      "target": "external:pkg:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/Gauge.java",
+      "target": "class:Gauge",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Gauge",
+      "target": "func:Gauge.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Gauge",
+      "target": "func:Gauge.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Gauge",
+      "target": "func:Gauge.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Gauge",
+      "target": "func:Gauge.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Gauge",
+      "target": "func:Gauge.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Gauge",
+      "target": "func:Gauge.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Gauge",
+      "target": "func:Gauge.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Gauge",
+      "target": "func:Gauge.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Gauge",
+      "target": "external:class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/Gauge.java",
+      "target": "external:pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/Gauge.java",
+      "target": "external:pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/Gauge.java",
+      "target": "external:pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/Gauge.java",
+      "target": "external:pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/Gauge.java",
+      "target": "external:pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/Gauge.java",
+      "target": "external:pkg:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/Gauge.java",
+      "target": "external:pkg:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/Gauge.java",
+      "target": "external:pkg:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/Gauge2/src/Gauge.java",
+      "target": "external:class:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java",
+      "target": "class:Text_Control_JV",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Text_Control_JV",
+      "target": "func:Text_Control_JV.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Text_Control_JV",
+      "target": "func:Text_Control_JV.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Text_Control_JV",
+      "target": "func:Text_Control_JV.changePin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Text_Control_JV",
+      "target": "func:Text_Control_JV.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Text_Control_JV",
+      "target": "func:Text_Control_JV.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Text_Control_JV",
+      "target": "func:Text_Control_JV.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Text_Control_JV",
+      "target": "external:class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java",
+      "target": "external:pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java",
+      "target": "external:pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java",
+      "target": "external:pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java",
+      "target": "external:pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java",
+      "target": "external:pkg:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java",
+      "target": "external:pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java",
+      "target": "external:class:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+      "target": "class:Pane_Text_Control_JV",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Pane_Text_Control_JV",
+      "target": "func:Pane_Text_Control_JV.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Pane_Text_Control_JV",
+      "target": "func:Pane_Text_Control_JV.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Pane_Text_Control_JV",
+      "target": "func:Pane_Text_Control_JV.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Pane_Text_Control_JV",
+      "target": "func:Pane_Text_Control_JV.xOnInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Pane_Text_Control_JV",
+      "target": "func:Pane_Text_Control_JV.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Pane_Text_Control_JV",
+      "target": "func:Pane_Text_Control_JV.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Pane_Text_Control_JV",
+      "target": "func:Pane_Text_Control_JV.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Pane_Text_Control_JV",
+      "target": "func:Pane_Text_Control_JV.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Pane_Text_Control_JV",
+      "target": "func:Pane_Text_Control_JV.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Pane_Text_Control_JV",
+      "target": "func:Pane_Text_Control_JV.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Pane_Text_Control_JV",
+      "target": "func:Pane_Text_Control_JV.stateChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Pane_Text_Control_JV",
+      "target": "external:class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Pane_Text_Control_JV",
+      "target": "external:interface:ChangeListener",
+      "type": "implements",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+      "target": "external:pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+      "target": "external:pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+      "target": "external:pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+      "target": "external:pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+      "target": "external:pkg:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+      "target": "external:pkg:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+      "target": "external:pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+      "target": "external:class:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+      "target": "external:pkg:javax.swing.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+      "target": "external:pkg:javax.swing.plaf",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Pane_Text_Control_JV.java",
+      "target": "external:pkg:javax.swing.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "func:AnzeigePanel.BalkenRegler.mousePressed",
+      "target": "func:AnzeigePanel.BalkenRegler.mouseDragged",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "func:FrameProperties.execute",
+      "target": "func:FrameProperties.FrameProperties(java.awt.Frame,boolean)",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+  "batch": 35,
+  "fileCount": 25,
+  "existingFiles": 4,
+  "missingFiles": 21,
+  "nodes": [
+    {
+      "id": "file:FrontElements/Output/StatusAnzeige/src/StatusDisplay.java",
+      "type": "file",
+      "path": "FrontElements/Output/StatusAnzeige/src/StatusDisplay.java",
+      "language": "Java",
+      "exists": true,
+      "loc": 97
+    },
+    {
+      "id": "class:StatusDisplay",
+      "type": "class",
+      "name": "StatusDisplay",
+      "superClass": "JVSMain",
+      "fileId": "file:FrontElements/Output/StatusAnzeige/src/StatusDisplay.java",
+      "exists": true,
+      "visibility": "public"
+    },
+    {
+      "id": "func:StatusDisplay.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "classId": "class:StatusDisplay",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:StatusDisplay.paint",
+      "type": "function",
+      "name": "paint",
+      "classId": "class:StatusDisplay",
+      "visibility": "public",
+      "params": ["java.awt.Graphics g"],
+      "exists": true
+    },
+    {
+      "id": "func:StatusDisplay.init",
+      "type": "function",
+      "name": "init",
+      "classId": "class:StatusDisplay",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:StatusDisplay.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "classId": "class:StatusDisplay",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:StatusDisplay.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "classId": "class:StatusDisplay",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:StatusDisplay.start",
+      "type": "function",
+      "name": "start",
+      "classId": "class:StatusDisplay",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:StatusDisplay.process",
+      "type": "function",
+      "name": "process",
+      "classId": "class:StatusDisplay",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "file:FrontElements/Output/SVGImage/src/Panel.java",
+      "type": "file",
+      "path": "FrontElements/Output/SVGImage/src/Panel.java",
+      "language": "Java",
+      "exists": true,
+      "loc": 247
+    },
+    {
+      "id": "class:Panel",
+      "type": "class",
+      "name": "Panel",
+      "superClass": "JVSMain",
+      "fileId": "file:FrontElements/Output/SVGImage/src/Panel.java",
+      "exists": true,
+      "visibility": "public"
+    },
+    {
+      "id": "func:Panel.paint",
+      "type": "function",
+      "name": "paint",
+      "classId": "class:Panel",
+      "visibility": "public",
+      "params": ["java.awt.Graphics g"],
+      "exists": true
+    },
+    {
+      "id": "func:Panel.configSVGIcon",
+      "type": "function",
+      "name": "configSVGIcon",
+      "classId": "class:Panel",
+      "visibility": "private",
+      "params": ["String imageFile"],
+      "exists": true
+    },
+    {
+      "id": "func:Panel.init",
+      "type": "function",
+      "name": "init",
+      "classId": "class:Panel",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:Panel.xOnInit",
+      "type": "function",
+      "name": "xOnInit",
+      "classId": "class:Panel",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:Panel.getBinDir",
+      "type": "function",
+      "name": "getBinDir",
+      "classId": "class:Panel",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:Panel.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "classId": "class:Panel",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:Panel.localize",
+      "type": "function",
+      "name": "localize",
+      "classId": "class:Panel",
+      "visibility": "private",
+      "exists": true
+    },
+    {
+      "id": "func:Panel.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "classId": "class:Panel",
+      "visibility": "public",
+      "params": ["Object o"],
+      "exists": true
+    },
+    {
+      "id": "func:Panel.loadImage",
+      "type": "function",
+      "name": "loadImage",
+      "classId": "class:Panel",
+      "visibility": "public",
+      "params": ["String fileName"],
+      "exists": true
+    },
+    {
+      "id": "func:Panel.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "classId": "class:Panel",
+      "visibility": "public",
+      "params": ["java.io.FileInputStream fis"],
+      "exists": true
+    },
+    {
+      "id": "func:Panel.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "classId": "class:Panel",
+      "visibility": "public",
+      "params": ["java.io.FileOutputStream fos"],
+      "exists": true
+    },
+    {
+      "id": "file:FrontElements/Output/UserdefinedBooleanDisplay/src/Circuit.java",
+      "type": "file",
+      "path": "FrontElements/Output/UserdefinedBooleanDisplay/src/Circuit.java",
+      "language": "Java",
+      "exists": true,
+      "loc": 101
+    },
+    {
+      "id": "class:Circuit",
+      "type": "class",
+      "name": "Circuit",
+      "superClass": "JVSMain",
+      "fileId": "file:FrontElements/Output/UserdefinedBooleanDisplay/src/Circuit.java",
+      "exists": true,
+      "visibility": "public"
+    },
+    {
+      "id": "func:Circuit.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "classId": "class:Circuit",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:Circuit.paint",
+      "type": "function",
+      "name": "paint",
+      "classId": "class:Circuit",
+      "visibility": "public",
+      "params": ["java.awt.Graphics g"],
+      "exists": true
+    },
+    {
+      "id": "func:Circuit.init",
+      "type": "function",
+      "name": "init",
+      "classId": "class:Circuit",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:Circuit.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "classId": "class:Circuit",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:Circuit.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "classId": "class:Circuit",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:Circuit.start",
+      "type": "function",
+      "name": "start",
+      "classId": "class:Circuit",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:Circuit.process",
+      "type": "function",
+      "name": "process",
+      "classId": "class:Circuit",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "file:FrontElements/Output/UserdefinedBooleanDisplay/src/Panel.java",
+      "type": "file",
+      "path": "FrontElements/Output/UserdefinedBooleanDisplay/src/Panel.java",
+      "language": "Java",
+      "exists": true,
+      "loc": 196
+    },
+    {
+      "id": "class:Panel_UBD",
+      "type": "class",
+      "name": "Panel",
+      "superClass": "JVSMain",
+      "implements": ["PanelIF"],
+      "fileId": "file:FrontElements/Output/UserdefinedBooleanDisplay/src/Panel.java",
+      "exists": true,
+      "visibility": "public"
+    },
+    {
+      "id": "func:Panel_UBD.processPanel",
+      "type": "function",
+      "name": "processPanel",
+      "classId": "class:Panel_UBD",
+      "visibility": "public",
+      "params": ["int pinIndex", "double value", "Object obj"],
+      "exists": true
+    },
+    {
+      "id": "func:Panel_UBD.Panel",
+      "type": "function",
+      "name": "Panel",
+      "classId": "class:Panel_UBD",
+      "isConstructor": true,
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:Panel_UBD.paint",
+      "type": "function",
+      "name": "paint",
+      "classId": "class:Panel_UBD",
+      "visibility": "public",
+      "params": ["java.awt.Graphics g"],
+      "exists": true
+    },
+    {
+      "id": "func:Panel_UBD.setValue",
+      "type": "function",
+      "name": "setValue",
+      "classId": "class:Panel_UBD",
+      "visibility": "private",
+      "params": ["VSBoolean bol"],
+      "exists": true
+    },
+    {
+      "id": "func:Panel_UBD.init",
+      "type": "function",
+      "name": "init",
+      "classId": "class:Panel_UBD",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:Panel_UBD.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "classId": "class:Panel_UBD",
+      "visibility": "public",
+      "exists": true
+    },
+    {
+      "id": "func:Panel_UBD.localize",
+      "type": "function",
+      "name": "localize",
+      "classId": "class:Panel_UBD",
+      "visibility": "private",
+      "exists": true
+    },
+    {
+      "id": "func:Panel_UBD.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "classId": "class:Panel_UBD",
+      "visibility": "public",
+      "params": ["Object o"],
+      "exists": true
+    },
+    {
+      "id": "func:Panel_UBD.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "classId": "class:Panel_UBD",
+      "visibility": "public",
+      "params": ["java.io.FileInputStream fis"],
+      "exists": true
+    },
+    {
+      "id": "func:Panel_UBD.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "classId": "class:Panel_UBD",
+      "visibility": "public",
+      "params": ["java.io.FileOutputStream fos"],
+      "exists": true
+    },
+    {"id": "file:FrontElements/Output/UserdefinedImageDisplay/src/Circuit.java", "type": "file", "path": "FrontElements/Output/UserdefinedImageDisplay/src/Circuit.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Output/UserdefinedImageDisplay/src/Panel.java", "type": "file", "path": "FrontElements/Output/UserdefinedImageDisplay/src/Panel.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Output/UserdefinedTextDisplay/src/Circuit.java", "type": "file", "path": "FrontElements/Output/UserdefinedTextDisplay/src/Circuit.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Output/UserdefinedTextDisplay/src/Panel.java", "type": "file", "path": "FrontElements/Output/UserdefinedTextDisplay/src/Panel.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Output/VerschiebbarerRegler_1_0/src/Regler.java", "type": "file", "path": "FrontElements/Output/VerschiebbarerRegler_1_0/src/Regler.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Output/VerschiebbarerRegler_1_0/src/ReglerPanel.java", "type": "file", "path": "FrontElements/Output/VerschiebbarerRegler_1_0/src/ReglerPanel.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Output/WebCam/src/WebCam.java", "type": "file", "path": "FrontElements/Output/WebCam/src/WebCam.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Output/WebCam/src/WebCamPanel.java", "type": "file", "path": "FrontElements/Output/WebCam/src/WebCamPanel.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Output/_Oscilloscope_2_0/src/Oscilloscope.java", "type": "file", "path": "FrontElements/Output/_Oscilloscope_2_0/src/Oscilloscope.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Output/_Oscilloscope_2_0/src/OscPanel.java", "type": "file", "path": "FrontElements/Output/_Oscilloscope_2_0/src/OscPanel.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Output/_Oscilloscope_3_0/src/GraphBackground.java", "type": "file", "path": "FrontElements/Output/_Oscilloscope_3_0/src/GraphBackground.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Output/_Oscilloscope_3_0/src/GraphRenderer.java", "type": "file", "path": "FrontElements/Output/_Oscilloscope_3_0/src/GraphRenderer.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Output/_Oscilloscope_3_0/src/Oscilloscope.java", "type": "file", "path": "FrontElements/Output/_Oscilloscope_3_0/src/Oscilloscope.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Output/_Oscilloscope_3_0/src/OscPanel.java", "type": "file", "path": "FrontElements/Output/_Oscilloscope_3_0/src/OscPanel.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Drivers/HC-06/src/HC06.java", "type": "file", "path": "FrontElements/Drivers/HC-06/src/HC06.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Drivers/Laubsäige/Laubsäige.java", "type": "file", "path": "FrontElements/Drivers/Laubsäge/Laubsäge.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Drivers/OpenCV/OpenCV.java", "type": "file", "path": "FrontElements/Drivers/OpenCV/OpenCV.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Drivers/RobotArm/RobotArm.java", "type": "file", "path": "FrontElements/Drivers/RobotArm/RobotArm.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Drivers/RobotArm/src/ArmCalc.java", "type": "file", "path": "FrontElements/Drivers/RobotArm/src/ArmCalc.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Drivers/Robotic_2WD/src/Robotic_2WD.java", "type": "file", "path": "FrontElements/Drivers/Robotic_2WD/src/Robotic_2WD.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/Drivers/Robotic_2WD/src/Servo.java", "type": "file", "path": "FrontElements/Drivers/Robotic_2WD/src/Servo.java", "language": "Java", "exists": false}
+  ],
+  "edges": [
+    {"from": "class:StatusDisplay", "to": "class:JVSMain", "type": "inherits"},
+    {"from": "file:FrontElements/Output/StatusAnzeige/src/StatusDisplay.java", "to": "class:StatusDisplay", "type": "contains"},
+    {"from": "class:StatusDisplay", "to": "func:StatusDisplay.onDispose", "type": "contains"},
+    {"from": "class:StatusDisplay", "to": "func:StatusDisplay.paint", "type": "contains"},
+    {"from": "class:StatusDisplay", "to": "func:StatusDisplay.init", "type": "contains"},
+    {"from": "class:StatusDisplay", "to": "func:StatusDisplay.initInputPins", "type": "contains"},
+    {"from": "class:StatusDisplay", "to": "func:StatusDisplay.initOutputPins", "type": "contains"},
+    {"from": "class:StatusDisplay", "to": "func:StatusDisplay.start", "type": "contains"},
+    {"from": "class:StatusDisplay", "to": "func:StatusDisplay.process", "type": "contains"},
+    {"from": "file:FrontElements/Output/SVGImage/src/Panel.java", "to": "class:Panel", "type": "contains"},
+    {"from": "class:Panel", "to": "class:JVSMain", "type": "inherits"},
+    {"from": "class:Panel", "to": "func:Panel.paint", "type": "contains"},
+    {"from": "class:Panel", "to": "func:Panel.configSVGIcon", "type": "contains"},
+    {"from": "class:Panel", "to": "func:Panel.init", "type": "contains"},
+    {"from": "class:Panel", "to": "func:Panel.xOnInit", "type": "contains"},
+    {"from": "class:Panel", "to": "func:Panel.getBinDir", "type": "contains"},
+    {"from": "class:Panel", "to": "func:Panel.setPropertyEditor", "type": "contains"},
+    {"from": "class:Panel", "to": "func:Panel.localize", "type": "contains"},
+    {"from": "class:Panel", "to": "func:Panel.propertyChanged", "type": "contains"},
+    {"from": "class:Panel", "to": "func:Panel.loadImage", "type": "contains"},
+    {"from": "class:Panel", "to": "func:Panel.loadFromStream", "type": "contains"},
+    {"from": "class:Panel", "to": "func:Panel.saveToStream", "type": "contains"},
+    {"from": "file:FrontElements/Output/UserdefinedBooleanDisplay/src/Circuit.java", "to": "class:Circuit", "type": "contains"},
+    {"from": "class:Circuit", "to": "class:JVSMain", "type": "inherits"},
+    {"from": "class:Circuit", "to": "func:Circuit.onDispose", "type": "contains"},
+    {"from": "class:Circuit", "to": "func:Circuit.paint", "type": "contains"},
+    {"from": "class:Circuit", "to": "func:Circuit.init", "type": "contains"},
+    {"from": "class:Circuit", "to": "func:Circuit.initInputPins", "type": "contains"},
+    {"from": "class:Circuit", "to": "func:Circuit.initOutputPins", "type": "contains"},
+    {"from": "class:Circuit", "to": "func:Circuit.start", "type": "contains"},
+    {"from": "class:Circuit", "to": "func:Circuit.process", "type": "contains"},
+    {"from": "file:FrontElements/Output/UserdefinedBooleanDisplay/src/Panel.java", "to": "class:Panel_UBD", "type": "contains"},
+    {"from": "class:Panel_UBD", "to": "class:JVSMain", "type": "inherits"},
+    {"from": "class:Panel_UBD", "to": "class:PanelIF", "type": "implements"},
+    {"from": "class:Panel_UBD", "to": "func:Panel_UBD.processPanel", "type": "contains"},
+    {"from": "class:Panel_UBD", "to": "func:Panel_UBD.Panel", "type": "contains"},
+    {"from": "class:Panel_UBD", "to": "func:Panel_UBD.paint", "type": "contains"},
+    {"from": "class:Panel_UBD", "to": "func:Panel_UBD.setValue", "type": "contains"},
+    {"from": "class:Panel_UBD", "to": "func:Panel_UBD.init", "type": "contains"},
+    {"from": "class:Panel_UBD", "to": "func:Panel_UBD.setPropertyEditor", "type": "contains"},
+    {"from": "class:Panel_UBD", "to": "func:Panel_UBD.localize", "type": "contains"},
+    {"from": "class:Panel_UBD", "to": "func:Panel_UBD.propertyChanged", "type": "contains"},
+    {"from": "class:Panel_UBD", "to": "func:Panel_UBD.loadFromStream", "type": "contains"},
+    {"from": "class:Panel_UBD", "to": "func:Panel_UBD.saveToStream", "type": "contains"}
+  ],
+  "imports": {
+    "file:FrontElements/Output/StatusAnzeige/src/StatusDisplay.java": ["VisualLogic.*", "VisualLogic.variables.*", "java.awt.*", "java.awt.event.*", "tools.*"],
+    "file:FrontElements/Output/SVGImage/src/Panel.java": ["VisualLogic.*", "java.awt.*", "javax.swing.*", "java.awt.event.*", "VisualLogic.variables.*", "tools.*", "com.kitfox.svg.SVGCache", "com.kitfox.svg.SVGException", "com.kitfox.svg.app.beans.SVGIcon", "com.kitfox.svg.app.beans.SVGPanel", "javax.swing.filechooser.FileFilter", "java.io.File", "java.io.*", "java.net.*", "SVGViewer.*"],
+    "file:FrontElements/Output/UserdefinedBooleanDisplay/src/Circuit.java": ["VisualLogic.*", "VisualLogic.variables.*", "java.awt.*", "java.awt.event.*", "tools.*"],
+    "file:FrontElements/Output/UserdefinedBooleanDisplay/src/Panel.java": ["VisualLogic.*", "VisualLogic.variables.*", "tools.*", "java.awt.*", "javax.swing.*", "java.awt.event.*", "java.io.*"]
+  }
+}

@@ -1,0 +1,1510 @@
+{
+  "batch": 22,
+  "description": "FrontElements - Drivers, tools, VirtualMachines, VisualLogic - Core framework files",
+  "nodes": [
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/FrontElements/Drivers/Robotic_2WD/src/Servo.java",
+      "type": "file",
+      "name": "Servo.java",
+      "properties": {
+        "path": "FrontElements/Drivers/Robotic_2WD/src/Servo.java",
+        "exists": false,
+        "note": "Java source file not found on disk"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/FrontElements/Drivers/Skat/Skat.java",
+      "type": "file",
+      "name": "Skat.java",
+      "properties": {
+        "path": "FrontElements/Drivers/Skat/Skat.java",
+        "exists": false,
+        "note": "Java source file not found on disk"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/FrontElements/Drivers/TinkerForge/TinkerForge.java",
+      "type": "file",
+      "name": "TinkerForge.java",
+      "properties": {
+        "path": "FrontElements/Drivers/TinkerForge/TinkerForge.java",
+        "exists": false,
+        "note": "Java source file not found on disk"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/CompTemplate/CompTemplate.java",
+      "type": "file",
+      "name": "CompTemplate.java",
+      "properties": {
+        "path": "CompTemplate/CompTemplate.java",
+        "exists": false,
+        "note": "Java source file not found on disk"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/UserElementsTemplate/UserElementsTemplate.java",
+      "type": "file",
+      "name": "UserElementsTemplate.java",
+      "properties": {
+        "path": "UserElementsTemplate/UserElementsTemplate.java",
+        "exists": false,
+        "note": "Java source file not found on disk"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/BinAnzeige.java",
+      "type": "file",
+      "name": "BinAnzeige.java",
+      "properties": {
+        "path": "tools/BinAnzeige.java",
+        "lines": 107,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.BinAnzeige",
+      "type": "class",
+      "name": "BinAnzeige",
+      "properties": {
+        "package": "tools",
+        "extends": "JVSMain",
+        "visibility": "public",
+        "description": "Binary display element showing ON/OFF state"
+      }
+    },
+    {
+      "id": "method:tools.BinAnzeige.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.BinAnzeige.process()",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.BinAnzeige.paint(Graphics)",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["Graphics g"]
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/BinSchalter.java",
+      "type": "file",
+      "name": "BinSchalter.java",
+      "properties": {
+        "path": "tools/BinSchalter.java",
+        "lines": 124,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.BinSchalter",
+      "type": "class",
+      "name": "BinSchalter",
+      "properties": {
+        "package": "tools",
+        "extends": "JVSMain",
+        "visibility": "public",
+        "description": "Binary switch element toggling ON/OFF with mouse"
+      }
+    },
+    {
+      "id": "method:tools.BinSchalter.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.BinSchalter.process()",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.BinSchalter.mousePressed(MouseEvent)",
+      "type": "function",
+      "name": "mousePressed",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["MouseEvent e"]
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp.java",
+      "type": "file",
+      "name": "CustomAnalogComp.java",
+      "properties": {
+        "path": "tools/CustomAnalogComp.java",
+        "lines": 808,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.CustomAnalogComp",
+      "type": "class",
+      "name": "CustomAnalogComp",
+      "properties": {
+        "package": "tools",
+        "extends": "JVSMain",
+        "visibility": "public",
+        "description": "Custom analog gauge component with rotary knob display"
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp.paint(Graphics)",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["Graphics g"]
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp.drawAnzeige(Graphics,int,int,int,int)",
+      "type": "function",
+      "name": "drawAnzeige",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["Graphics gx", "int x", "int y", "int w", "int h"]
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp.proc(MouseEvent)",
+      "type": "function",
+      "name": "proc",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["MouseEvent e"]
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp.propertyChanged(Object)",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["Object o"]
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp.setPropertyEditor()",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp.start()",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp.stop()",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp.loadFromStream(FileInputStream)",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["FileInputStream fis"]
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp.saveToStream(FileOutputStream)",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["FileOutputStream fos"]
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp.generateFromValuesSubElements()",
+      "type": "function",
+      "name": "generateFromValuesSubElements",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "class:tools.CustomAnalogComp.Beschriftung",
+      "type": "class",
+      "name": "Beschriftung",
+      "properties": {
+        "package": "tools",
+        "extends": "JPanel",
+        "visibility": "package",
+        "description": "Inner label class for CustomAnalogComp gauge markings"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp2.java",
+      "type": "file",
+      "name": "CustomAnalogComp2.java",
+      "properties": {
+        "path": "tools/CustomAnalogComp2.java",
+        "lines": 852,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.CustomAnalogComp2",
+      "type": "class",
+      "name": "CustomAnalogComp2",
+      "properties": {
+        "package": "tools",
+        "extends": "JVSMain",
+        "visibility": "public",
+        "description": "Custom analog gauge with bitmap needle support"
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp2.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp2.drawAnzeige(Graphics,int,int,int,int)",
+      "type": "function",
+      "name": "drawAnzeige",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["Graphics gx", "int x", "int y", "int w", "int h"]
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp2.proc(MouseEvent)",
+      "type": "function",
+      "name": "proc",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["MouseEvent e"]
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp2.propertyChanged(Object)",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["Object o"]
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp2.onDispose()",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "class:tools.CustomAnalogComp2.Beschriftung2",
+      "type": "class",
+      "name": "Beschriftung2",
+      "properties": {
+        "package": "tools",
+        "extends": "JPanel",
+        "visibility": "package",
+        "description": "Inner label class for CustomAnalogComp2"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp_1_JV.java",
+      "type": "file",
+      "name": "CustomAnalogComp_1_JV.java",
+      "properties": {
+        "path": "tools/CustomAnalogComp_1_JV.java",
+        "lines": 938,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.CustomAnalogComp_1_JV",
+      "type": "class",
+      "name": "CustomAnalogComp_1_JV",
+      "properties": {
+        "package": "tools",
+        "extends": "JVSMain",
+        "visibility": "public",
+        "description": "Custom analog gauge JV variant with VSColorAdvanced and stroke control"
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp_1_JV.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp_1_JV.drawAnzeige(Graphics,int,int,int,int)",
+      "type": "function",
+      "name": "drawAnzeige",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["Graphics gx", "int x", "int y", "int w", "int h"]
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp_1_JV.proc(MouseEvent)",
+      "type": "function",
+      "name": "proc",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["MouseEvent e"]
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp_1_JV.propertyChanged(Object)",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["Object o"]
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp_1_JV.setPropertyEditor()",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "class:tools.CustomAnalogComp_1_JV.Beschriftung",
+      "type": "class",
+      "name": "Beschriftung",
+      "properties": {
+        "package": "tools",
+        "extends": "JPanel",
+        "visibility": "package",
+        "description": "Inner label class for CustomAnalogComp_1_JV"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp_2_JV.java",
+      "type": "file",
+      "name": "CustomAnalogComp_2_JV.java",
+      "properties": {
+        "path": "tools/CustomAnalogComp_2_JV.java",
+        "lines": 1033,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.CustomAnalogComp_2_JV",
+      "type": "class",
+      "name": "CustomAnalogComp_2_JV",
+      "properties": {
+        "package": "tools",
+        "extends": "JVSMain",
+        "visibility": "public",
+        "description": "Custom analog gauge JV variant 2 with combo box nibble color, radial gradients"
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp_2_JV.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp_2_JV.drawAnzeige(Graphics,int,int,int,int)",
+      "type": "function",
+      "name": "drawAnzeige",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["Graphics gx", "int x", "int y", "int w", "int h"]
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp_2_JV.proc(MouseEvent)",
+      "type": "function",
+      "name": "proc",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["MouseEvent e"]
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp_2_JV.propertyChanged(Object)",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["Object o"]
+      }
+    },
+    {
+      "id": "method:tools.CustomAnalogComp_2_JV.setPropertyEditor()",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "class:tools.CustomAnalogComp_2_JV.Beschriftung2",
+      "type": "class",
+      "name": "Beschriftung2",
+      "properties": {
+        "package": "tools",
+        "extends": "JPanel",
+        "visibility": "package",
+        "description": "Inner label class for CustomAnalogComp_2_JV"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Expression.java",
+      "type": "file",
+      "name": "Expression.java",
+      "properties": {
+        "path": "tools/Expression.java",
+        "lines": 564,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.Expression",
+      "type": "class",
+      "name": "Expression",
+      "properties": {
+        "package": "tools",
+        "extends": "Object",
+        "visibility": "public",
+        "description": "LALR parser for mathematical expressions, generating bytecode-like instruction list"
+      }
+    },
+    {
+      "id": "class:tools.Expression.yyInput",
+      "type": "class",
+      "name": "yyInput",
+      "properties": {
+        "package": "tools",
+        "visibility": "public",
+        "description": "Scanner interface for Expression parser"
+      }
+    },
+    {
+      "id": "class:tools.Expression.yyException",
+      "type": "class",
+      "name": "yyException",
+      "properties": {
+        "package": "tools",
+        "extends": "Exception",
+        "visibility": "public",
+        "description": "Parser error exception"
+      }
+    },
+    {
+      "id": "method:tools.Expression.yyparse(yyInput)",
+      "type": "function",
+      "name": "yyparse",
+      "properties": {
+        "visibility": "public",
+        "return": "Object",
+        "params": ["yyInput yyLex"]
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Gatter.java",
+      "type": "file",
+      "name": "Gatter.java",
+      "properties": {
+        "path": "tools/Gatter.java",
+        "lines": 99,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.Gatter",
+      "type": "class",
+      "name": "Gatter",
+      "properties": {
+        "package": "tools",
+        "extends": "JVSMain",
+        "visibility": "public",
+        "description": "Simple logic gate component with fixed pin count"
+      }
+    },
+    {
+      "id": "method:tools.Gatter.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.Gatter.initInputPins()",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.Gatter.initOutputPins()",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Gatter2.java",
+      "type": "file",
+      "name": "Gatter2.java",
+      "properties": {
+        "path": "tools/Gatter2.java",
+        "lines": 159,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.Gatter2",
+      "type": "class",
+      "name": "Gatter2",
+      "properties": {
+        "package": "tools",
+        "extends": "JVSMain",
+        "visibility": "public",
+        "description": "Logic gate with user-configurable pin count via property editor"
+      }
+    },
+    {
+      "id": "method:tools.Gatter2.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.Gatter2.initPins()",
+      "type": "function",
+      "name": "initPins",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.Gatter2.propertyChanged(Object)",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "return": "void",
+        "params": ["Object o"]
+      }
+    },
+    {
+      "id": "method:tools.Gatter2.setPropertyEditor()",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Gatter3.java",
+      "type": "file",
+      "name": "Gatter3.java",
+      "properties": {
+        "path": "tools/Gatter3.java",
+        "lines": 179,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.Gatter3",
+      "type": "class",
+      "name": "Gatter3",
+      "properties": {
+        "package": "tools",
+        "extends": "JVSMain",
+        "visibility": "public",
+        "description": "Logic gate with configurable delay and clock notification support"
+      }
+    },
+    {
+      "id": "method:tools.Gatter3.init()",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "method:tools.Gatter3.start()",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "return": "void"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/GatterProperties.java",
+      "type": "file",
+      "name": "GatterProperties.java",
+      "properties": {
+        "path": "tools/GatterProperties.java",
+        "lines": 176,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.GatterProperties",
+      "type": "class",
+      "name": "GatterProperties",
+      "properties": {
+        "package": "tools",
+        "extends": "JDialog",
+        "visibility": "public",
+        "description": "Configuration dialog for gate input count (2-10)"
+      }
+    },
+    {
+      "id": "method:tools.GatterProperties.showDialog(Frame)",
+      "type": "function",
+      "name": "showDialog",
+      "properties": {
+        "visibility": "public",
+        "return": "int",
+        "params": ["Frame frame"],
+        "static": true
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/JVSMain.java",
+      "type": "file",
+      "name": "JVSMain.java",
+      "properties": {
+        "path": "tools/JVSMain.java",
+        "lines": 199,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.JVSMain",
+      "type": "class",
+      "name": "JVSMain",
+      "properties": {
+        "package": "tools",
+        "extends": "Object",
+        "implements": ["ElementIF"],
+        "visibility": "public",
+        "description": "BASE CLASS for all MyOpenLab elements - implements ElementIF, provides lifecycle methods and pin management"
+      }
+    },
+    {
+      "id": "method:tools.JVSMain.init()",
+      "type": "function",
+      "name": "init",
+      "properties": { "visibility": "public", "return": "void" }
+    },
+    {
+      "id": "method:tools.JVSMain.start()",
+      "type": "function",
+      "name": "start",
+      "properties": { "visibility": "public", "return": "void" }
+    },
+    {
+      "id": "method:tools.JVSMain.stop()",
+      "type": "function",
+      "name": "stop",
+      "properties": { "visibility": "public", "return": "void" }
+    },
+    {
+      "id": "method:tools.JVSMain.process()",
+      "type": "function",
+      "name": "process",
+      "properties": { "visibility": "public", "return": "void" }
+    },
+    {
+      "id": "method:tools.JVSMain.initPins(int,int,int,int)",
+      "type": "function",
+      "name": "initPins",
+      "properties": { "visibility": "public", "return": "void", "params": ["int topPins", "int rightPins", "int bottomPins", "int leftPins"] }
+    },
+    {
+      "id": "method:tools.JVSMain.setPin(int,int,byte)",
+      "type": "function",
+      "name": "setPin",
+      "properties": { "visibility": "public", "return": "void", "params": ["int pinIndex", "int dataType", "byte io"] }
+    },
+    {
+      "id": "method:tools.JVSMain.drawImageCentred(Graphics,Image)",
+      "type": "function",
+      "name": "drawImageCentred",
+      "properties": { "visibility": "public", "return": "void", "params": ["Graphics g", "Image image"] }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/MainFlow.java",
+      "type": "file",
+      "name": "MainFlow.java",
+      "properties": {
+        "path": "tools/MainFlow.java",
+        "lines": 251,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.MainFlow",
+      "type": "class",
+      "name": "MainFlow",
+      "properties": {
+        "package": "tools",
+        "extends": "JVSMain",
+        "visibility": "public",
+        "description": "Main program flow element with editable variable text field"
+      }
+    },
+    {
+      "id": "method:tools.MainFlow.xOnInit()",
+      "type": "function",
+      "name": "xOnInit",
+      "properties": { "visibility": "public", "return": "void" }
+    },
+    {
+      "id": "method:tools.MainFlow.paint(Graphics)",
+      "type": "function",
+      "name": "paint",
+      "properties": { "visibility": "public", "return": "void", "params": ["Graphics g"] }
+    },
+    {
+      "id": "method:tools.MainFlow.resizeWidth()",
+      "type": "function",
+      "name": "resizeWidth",
+      "properties": { "visibility": "public", "return": "void" }
+    },
+    {
+      "id": "method:tools.MainFlow.mousePressedOnIdle(MouseEvent)",
+      "type": "function",
+      "name": "mousePressedOnIdle",
+      "properties": { "visibility": "public", "return": "void", "params": ["MouseEvent e"] }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/MCUMainFlow.java",
+      "type": "file",
+      "name": "MCUMainFlow.java",
+      "properties": {
+        "path": "tools/MCUMainFlow.java",
+        "lines": 366,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.MCUMainFlow",
+      "type": "class",
+      "name": "MCUMainFlow",
+      "properties": {
+        "package": "tools",
+        "extends": "JVSMain",
+        "visibility": "public",
+        "description": "MCU program flow element with expression-to-MCU-code generation"
+      }
+    },
+    {
+      "id": "class:tools.MCUMainFlow.MCUMainFlow_Property",
+      "type": "class",
+      "name": "MCUMainFlow_Property",
+      "properties": {
+        "package": "tools",
+        "visibility": "package",
+        "description": "Property descriptor for MCU elements"
+      }
+    },
+    {
+      "id": "method:tools.MCUMainFlow.generateMCUCodeFromExpression(String)",
+      "type": "function",
+      "name": "generateMCUCodeFromExpression",
+      "properties": { "visibility": "public", "return": "String", "params": ["String param"] }
+    },
+    {
+      "id": "method:tools.MCUMainFlow.drawCaption(Graphics,String,int)",
+      "type": "function",
+      "name": "drawCaption",
+      "properties": { "visibility": "public", "return": "void", "params": ["Graphics g", "String caption", "int leftRightDistance"] }
+    },
+    {
+      "id": "method:tools.MCUMainFlow.checkProperty(String,String,int)",
+      "type": "function",
+      "name": "checkProperty",
+      "properties": { "visibility": "public", "return": "String", "params": ["String name", "String value", "int type"] }
+    },
+    {
+      "id": "method:tools.MCUMainFlow.isConst(String)",
+      "type": "function",
+      "name": "isConst",
+      "properties": { "visibility": "public", "return": "boolean", "params": ["String value"] }
+    },
+    {
+      "id": "method:tools.MCUMainFlow.isVariable(String)",
+      "type": "function",
+      "name": "isVariable",
+      "properties": { "visibility": "public", "return": "boolean", "params": ["String value"] }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Properties.java",
+      "type": "file",
+      "name": "Properties.java",
+      "properties": {
+        "path": "tools/Properties.java",
+        "lines": 84,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.Properties",
+      "type": "class",
+      "name": "Properties",
+      "properties": {
+        "package": "tools",
+        "extends": "JDialog",
+        "visibility": "public",
+        "description": "Simple text editing dialog with OK/Cancel"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Scanner.java",
+      "type": "file",
+      "name": "Scanner.java",
+      "properties": {
+        "path": "tools/Scanner.java",
+        "lines": 148,
+        "package": "tools"
+      }
+    },
+    {
+      "id": "class:tools.Scanner",
+      "type": "class",
+      "name": "Scanner",
+      "properties": {
+        "package": "tools",
+        "extends": "StreamTokenizer",
+        "implements": ["Expression.yyInput"],
+        "visibility": "public",
+        "description": "Token scanner for the Expression parser, recognizes variables and constants"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/MyParser/Parser.java",
+      "type": "file",
+      "name": "Parser.java",
+      "properties": {
+        "path": "MyParser/Parser.java",
+        "lines": 516,
+        "package": "ExpressionParser"
+      }
+    },
+    {
+      "id": "class:ExpressionParser.Parser",
+      "type": "class",
+      "name": "Parser",
+      "properties": {
+        "package": "ExpressionParser",
+        "extends": "Object",
+        "visibility": "public",
+        "description": "Recursive descent math expression parser with function support (sin, cos, sqrt, etc.)"
+      }
+    },
+    {
+      "id": "class:ExpressionParser.Parser.Token",
+      "type": "class",
+      "name": "Token",
+      "properties": {
+        "package": "ExpressionParser",
+        "visibility": "package",
+        "description": "Token representation for expression parsing"
+      }
+    },
+    {
+      "id": "method:ExpressionParser.Parser.setExpression(String)",
+      "type": "function",
+      "name": "setExpression",
+      "properties": { "visibility": "public", "return": "void", "params": ["String expression"] }
+    },
+    {
+      "id": "method:ExpressionParser.Parser.parseString()",
+      "type": "function",
+      "name": "parseString",
+      "properties": { "visibility": "public", "return": "double" }
+    },
+    {
+      "id": "method:ExpressionParser.Parser.addVar(String,double)",
+      "type": "function",
+      "name": "addVar",
+      "properties": { "visibility": "public", "return": "void", "params": ["String name", "double value"] }
+    },
+    {
+      "id": "method:ExpressionParser.Parser.calc(ArrayList)",
+      "type": "function",
+      "name": "calc",
+      "properties": { "visibility": "private", "return": "double", "params": ["ArrayList vector"] }
+    },
+    {
+      "id": "method:ExpressionParser.Parser.klammere(ArrayList,int)",
+      "type": "function",
+      "name": "klammere",
+      "properties": { "visibility": "private", "return": "void", "params": ["ArrayList tokenListe", "int ops"] }
+    },
+    {
+      "id": "method:ExpressionParser.Parser.optimize(ArrayList)",
+      "type": "function",
+      "name": "optimize",
+      "properties": { "visibility": "private", "return": "ArrayList", "params": ["ArrayList vector"] }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/VisualLogic/VMLInder.java",
+      "type": "file",
+      "name": "VMLInder.java",
+      "properties": {
+        "path": "VisualLogic/VMLInder.java",
+        "exists": false,
+        "note": "Java source file not found on disk (only .class files exist in VisualLogic/)"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/VisualLogic/VisualLogicSystem.java",
+      "type": "file",
+      "name": "VisualLogicSystem.java",
+      "properties": {
+        "path": "VisualLogic/VisualLogicSystem.java",
+        "exists": false,
+        "note": "Java source file not found on disk (only .class files exist in VisualLogic/)"
+      }
+    },
+    {
+      "id": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/VirtualMachines/JavaVM/src/JavaVM.java",
+      "type": "file",
+      "name": "JavaVM.java",
+      "properties": {
+        "path": "VirtualMachines/JavaVM/src/JavaVM.java",
+        "exists": false,
+        "note": "Java source file not found on disk"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/BinAnzeige.java",
+      "target": "class:tools.BinAnzeige",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.BinAnzeige",
+      "target": "class:tools.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/BinAnzeige.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/BinAnzeige.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/BinAnzeige.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/BinSchalter.java",
+      "target": "class:tools.BinSchalter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.BinSchalter",
+      "target": "class:tools.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp.java",
+      "target": "class:tools.CustomAnalogComp",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.CustomAnalogComp",
+      "target": "class:tools.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp.java",
+      "target": "class:tools.CustomAnalogComp.Beschriftung",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.CustomAnalogComp.Beschriftung",
+      "target": "class:javax.swing.JPanel",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "method:tools.CustomAnalogComp.propertyChanged(Object)",
+      "target": "class:tools.Properties",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:tools.CustomAnalogComp.start()",
+      "target": "interface:VisualLogic.ExternalIF",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp2.java",
+      "target": "class:tools.CustomAnalogComp2",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.CustomAnalogComp2",
+      "target": "class:tools.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp2.java",
+      "target": "class:tools.CustomAnalogComp2.Beschriftung2",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.CustomAnalogComp2.Beschriftung2",
+      "target": "class:javax.swing.JPanel",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp_1_JV.java",
+      "target": "class:tools.CustomAnalogComp_1_JV",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.CustomAnalogComp_1_JV",
+      "target": "class:tools.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp_1_JV.java",
+      "target": "class:tools.CustomAnalogComp_1_JV.Beschriftung",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.CustomAnalogComp_1_JV.Beschriftung",
+      "target": "class:javax.swing.JPanel",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp_2_JV.java",
+      "target": "class:tools.CustomAnalogComp_2_JV",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.CustomAnalogComp_2_JV",
+      "target": "class:tools.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/CustomAnalogComp_2_JV.java",
+      "target": "class:tools.CustomAnalogComp_2_JV.Beschriftung2",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.CustomAnalogComp_2_JV.Beschriftung2",
+      "target": "class:javax.swing.JPanel",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Expression.java",
+      "target": "class:tools.Expression",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Expression.java",
+      "target": "class:tools.Expression.yyInput",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Expression.java",
+      "target": "class:tools.Expression.yyException",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.Expression.yyException",
+      "target": "class:java.lang.Exception",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "method:tools.Expression.yyparse(yyInput)",
+      "target": "class:tools.Expression.yyInput",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Gatter.java",
+      "target": "class:tools.Gatter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.Gatter",
+      "target": "class:tools.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Gatter2.java",
+      "target": "class:tools.Gatter2",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.Gatter2",
+      "target": "class:tools.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Gatter3.java",
+      "target": "class:tools.Gatter3",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.Gatter3",
+      "target": "class:tools.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/GatterProperties.java",
+      "target": "class:tools.GatterProperties",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.GatterProperties",
+      "target": "class:javax.swing.JDialog",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/JVSMain.java",
+      "target": "class:tools.JVSMain",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.JVSMain",
+      "target": "interface:VisualLogic.ElementIF",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/JVSMain.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/JVSMain.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/MainFlow.java",
+      "target": "class:tools.MainFlow",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.MainFlow",
+      "target": "class:tools.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/MCUMainFlow.java",
+      "target": "class:tools.MCUMainFlow",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.MCUMainFlow",
+      "target": "class:tools.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/MCUMainFlow.java",
+      "target": "class:tools.MCUMainFlow.MCUMainFlow_Property",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "method:tools.MCUMainFlow.generateMCUCodeFromExpression(String)",
+      "target": "class:tools.Expression",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:tools.MCUMainFlow.generateMCUCodeFromExpression(String)",
+      "target": "class:tools.Scanner",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:tools.MCUMainFlow.isVariable(String)",
+      "target": "interface:VisualLogic.VSBasisIF",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Properties.java",
+      "target": "class:tools.Properties",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.Properties",
+      "target": "class:javax.swing.JDialog",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Scanner.java",
+      "target": "class:tools.Scanner",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:tools.Scanner",
+      "target": "class:java.io.StreamTokenizer",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:tools.Scanner",
+      "target": "class:tools.Expression.yyInput",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "method:tools.Scanner.token()",
+      "target": "class:tools.Expression",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/MyParser/Parser.java",
+      "target": "class:ExpressionParser.Parser",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/MyParser/Parser.java",
+      "target": "class:ExpressionParser.Parser.Token",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:ExpressionParser.Parser.Token",
+      "target": "class:java.lang.Object",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "method:tools.CustomAnalogComp_1_JV.propertyChanged(Object)",
+      "target": "class:tools.Properties",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:tools.CustomAnalogComp2.propertyChanged(Object)",
+      "target": "class:tools.Properties",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:tools.CustomAnalogComp_2_JV.propertyChanged(Object)",
+      "target": "class:tools.Properties",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:tools.CustomAnalogComp_2_JV.start()",
+      "target": "interface:VisualLogic.ExternalIF",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:tools.BinAnzeige.process()",
+      "target": "interface:VisualLogic.ExternalIF",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:tools.BinSchalter.process()",
+      "target": "interface:VisualLogic.ExternalIF",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:tools.Gatter.init()",
+      "target": "interface:VisualLogic.ExternalIF",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:tools.Gatter2.propertyChanged(Object)",
+      "target": "interface:VisualLogic.ExternalIF",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:tools.Gatter3.start()",
+      "target": "interface:VisualLogic.ExternalIF",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:tools.MainFlow.mousePressedOnIdle(MouseEvent)",
+      "target": "class:javax.swing.SwingUtilities",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:tools.MCUMainFlow.xOnInit()",
+      "target": "interface:VisualLogic.ExternalIF",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,2570 @@
+{
+  "nodes": [
+    {
+      "id": "class:JVSMain",
+      "type": "class",
+      "name": "JVSMain",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:javax.swing.JDialog",
+      "type": "class",
+      "name": "JDialog",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:javax.swing.table.DefaultTableModel",
+      "type": "class",
+      "name": "DefaultTableModel",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+      "type": "file",
+      "name": "HexToBytes.java",
+      "properties": {
+        "path": "CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+        "language": "java",
+        "loc": 140
+      }
+    },
+    {
+      "id": "import:VisualLogic",
+      "type": "import",
+      "name": "VisualLogic",
+      "properties": {
+        "package": "VisualLogic"
+      }
+    },
+    {
+      "id": "import:VisualLogic.variables",
+      "type": "import",
+      "name": "variables",
+      "properties": {
+        "package": "VisualLogic.variables"
+      }
+    },
+    {
+      "id": "import:tools",
+      "type": "import",
+      "name": "tools",
+      "properties": {
+        "package": "tools"
+      }
+    },
+    {
+      "id": "import:java.awt",
+      "type": "import",
+      "name": "awt",
+      "properties": {
+        "package": "java.awt"
+      }
+    },
+    {
+      "id": "import:java.util",
+      "type": "import",
+      "name": "util",
+      "properties": {
+        "package": "java.util"
+      }
+    },
+    {
+      "id": "import:java.awt.event",
+      "type": "import",
+      "name": "event",
+      "properties": {
+        "package": "java.awt.event"
+      }
+    },
+    {
+      "id": "import:javax.swing",
+      "type": "import",
+      "name": "swing",
+      "properties": {
+        "package": "javax.swing"
+      }
+    },
+    {
+      "id": "class:HexToBytes",
+      "type": "class",
+      "name": "HexToBytes",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain"
+      }
+    },
+    {
+      "id": "function:HexToBytes.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.awt.Graphics g"
+        ]
+      }
+    },
+    {
+      "id": "function:HexToBytes.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:HexToBytes.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:HexToBytes.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:HexToBytes.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:HexToBytes.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:HexToBytes.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:HexToBytes.toUnsigned",
+      "type": "function",
+      "name": "toUnsigned",
+      "properties": {
+        "visibility": "public",
+        "returnType": "byte",
+        "params": [
+          "short value"
+        ],
+        "static": true
+      }
+    },
+    {
+      "id": "function:HexToBytes.sendString",
+      "type": "function",
+      "name": "sendString",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "VS1DString values"
+        ]
+      }
+    },
+    {
+      "id": "function:HexToBytes.elementActionPerformed",
+      "type": "function",
+      "name": "elementActionPerformed",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "ElementActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+      "type": "file",
+      "name": "BytesToHEX.java",
+      "properties": {
+        "path": "CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+        "language": "java",
+        "loc": 197,
+        "package": "Interface.Processing.BytesToHex"
+      }
+    },
+    {
+      "id": "import:VisualLogic",
+      "type": "import",
+      "name": "VisualLogic",
+      "properties": {
+        "package": "VisualLogic"
+      }
+    },
+    {
+      "id": "import:VisualLogic.variables",
+      "type": "import",
+      "name": "variables",
+      "properties": {
+        "package": "VisualLogic.variables"
+      }
+    },
+    {
+      "id": "import:tools",
+      "type": "import",
+      "name": "tools",
+      "properties": {
+        "package": "tools"
+      }
+    },
+    {
+      "id": "import:java.awt",
+      "type": "import",
+      "name": "awt",
+      "properties": {
+        "package": "java.awt"
+      }
+    },
+    {
+      "id": "import:java.util",
+      "type": "import",
+      "name": "util",
+      "properties": {
+        "package": "java.util"
+      }
+    },
+    {
+      "id": "import:java.awt.event",
+      "type": "import",
+      "name": "event",
+      "properties": {
+        "package": "java.awt.event"
+      }
+    },
+    {
+      "id": "import:javax.swing",
+      "type": "import",
+      "name": "swing",
+      "properties": {
+        "package": "javax.swing"
+      }
+    },
+    {
+      "id": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "type": "class",
+      "name": "BytesToHEX",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToHex.BytesToHEX.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.awt.Graphics g"
+        ]
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToHex.BytesToHEX.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToHex.BytesToHEX.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToHex.BytesToHEX.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToHex.BytesToHEX.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToHex.BytesToHEX.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToHex.BytesToHEX.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToHex.BytesToHEX.toSigned",
+      "type": "function",
+      "name": "toSigned",
+      "properties": {
+        "visibility": "public",
+        "returnType": "short",
+        "params": [
+          "byte value"
+        ],
+        "static": true
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToHex.BytesToHEX.toSigned",
+      "type": "function",
+      "name": "toSigned",
+      "properties": {
+        "visibility": "public",
+        "returnType": "int",
+        "params": [
+          "short value"
+        ],
+        "static": true
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToHex.BytesToHEX.copyBits",
+      "type": "function",
+      "name": "copyBits",
+      "properties": {
+        "visibility": "private",
+        "returnType": "long",
+        "params": [
+          "long value",
+          "byte bits"
+        ],
+        "static": true
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToHex.BytesToHEX.toUnsigned",
+      "type": "function",
+      "name": "toUnsigned",
+      "properties": {
+        "visibility": "public",
+        "returnType": "byte",
+        "params": [
+          "short value"
+        ],
+        "static": true
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToHex.BytesToHEX.sendString",
+      "type": "function",
+      "name": "sendString",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "VS1DByte input"
+        ]
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToHex.BytesToHEX.elementActionPerformed",
+      "type": "function",
+      "name": "elementActionPerformed",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "ElementActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+      "type": "file",
+      "name": "BytesToString.java",
+      "properties": {
+        "path": "CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+        "language": "java",
+        "loc": 130,
+        "package": "Interface.Processing.BytesToString"
+      }
+    },
+    {
+      "id": "import:VisualLogic",
+      "type": "import",
+      "name": "VisualLogic",
+      "properties": {
+        "package": "VisualLogic"
+      }
+    },
+    {
+      "id": "import:VisualLogic.variables",
+      "type": "import",
+      "name": "variables",
+      "properties": {
+        "package": "VisualLogic.variables"
+      }
+    },
+    {
+      "id": "import:tools",
+      "type": "import",
+      "name": "tools",
+      "properties": {
+        "package": "tools"
+      }
+    },
+    {
+      "id": "import:java.awt",
+      "type": "import",
+      "name": "awt",
+      "properties": {
+        "package": "java.awt"
+      }
+    },
+    {
+      "id": "import:java.util",
+      "type": "import",
+      "name": "util",
+      "properties": {
+        "package": "java.util"
+      }
+    },
+    {
+      "id": "import:java.awt.event",
+      "type": "import",
+      "name": "event",
+      "properties": {
+        "package": "java.awt.event"
+      }
+    },
+    {
+      "id": "import:javax.swing",
+      "type": "import",
+      "name": "swing",
+      "properties": {
+        "package": "javax.swing"
+      }
+    },
+    {
+      "id": "class:Interface.Processing.BytesToString.BytesToString",
+      "type": "class",
+      "name": "BytesToString",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToString.BytesToString.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.awt.Graphics g"
+        ]
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToString.BytesToString.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToString.BytesToString.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToString.BytesToString.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToString.BytesToString.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToString.BytesToString.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToString.BytesToString.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToString.BytesToString.sendString",
+      "type": "function",
+      "name": "sendString",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "VS1DByte input"
+        ]
+      }
+    },
+    {
+      "id": "function:Interface.Processing.BytesToString.BytesToString.elementActionPerformed",
+      "type": "function",
+      "name": "elementActionPerformed",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "ElementActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+      "type": "file",
+      "name": "StringToBytes.java",
+      "properties": {
+        "path": "CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+        "language": "java",
+        "loc": 119,
+        "package": "Interface.Processing.StringToBytes"
+      }
+    },
+    {
+      "id": "import:VisualLogic",
+      "type": "import",
+      "name": "VisualLogic",
+      "properties": {
+        "package": "VisualLogic"
+      }
+    },
+    {
+      "id": "import:VisualLogic.variables",
+      "type": "import",
+      "name": "variables",
+      "properties": {
+        "package": "VisualLogic.variables"
+      }
+    },
+    {
+      "id": "import:tools",
+      "type": "import",
+      "name": "tools",
+      "properties": {
+        "package": "tools"
+      }
+    },
+    {
+      "id": "import:java.awt",
+      "type": "import",
+      "name": "awt",
+      "properties": {
+        "package": "java.awt"
+      }
+    },
+    {
+      "id": "import:java.util",
+      "type": "import",
+      "name": "util",
+      "properties": {
+        "package": "java.util"
+      }
+    },
+    {
+      "id": "import:java.awt.event",
+      "type": "import",
+      "name": "event",
+      "properties": {
+        "package": "java.awt.event"
+      }
+    },
+    {
+      "id": "import:javax.swing",
+      "type": "import",
+      "name": "swing",
+      "properties": {
+        "package": "javax.swing"
+      }
+    },
+    {
+      "id": "class:Interface.Processing.StringToBytes.StringToBytes",
+      "type": "class",
+      "name": "StringToBytes",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.StringToBytes.StringToBytes.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.awt.Graphics g"
+        ]
+      }
+    },
+    {
+      "id": "function:Interface.Processing.StringToBytes.StringToBytes.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.StringToBytes.StringToBytes.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.StringToBytes.StringToBytes.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.StringToBytes.StringToBytes.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.StringToBytes.StringToBytes.start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.StringToBytes.StringToBytes.stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:Interface.Processing.StringToBytes.StringToBytes.sendString",
+      "type": "function",
+      "name": "sendString",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "String str"
+        ]
+      }
+    },
+    {
+      "id": "function:Interface.Processing.StringToBytes.StringToBytes.elementActionPerformed",
+      "type": "function",
+      "name": "elementActionPerformed",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "ElementActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "type": "file",
+      "name": "DigitalCircuitSim.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+        "language": "java",
+        "loc": 325
+      }
+    },
+    {
+      "id": "import:VisualLogic",
+      "type": "import",
+      "name": "VisualLogic",
+      "properties": {
+        "package": "VisualLogic"
+      }
+    },
+    {
+      "id": "import:VisualLogic.variables",
+      "type": "import",
+      "name": "variables",
+      "properties": {
+        "package": "VisualLogic.variables"
+      }
+    },
+    {
+      "id": "import:tools",
+      "type": "import",
+      "name": "tools",
+      "properties": {
+        "package": "tools"
+      }
+    },
+    {
+      "id": "import:java.awt",
+      "type": "import",
+      "name": "awt",
+      "properties": {
+        "package": "java.awt"
+      }
+    },
+    {
+      "id": "import:java.awt.event",
+      "type": "import",
+      "name": "event",
+      "properties": {
+        "package": "java.awt.event"
+      }
+    },
+    {
+      "id": "import:java.io.BufferedReader",
+      "type": "import",
+      "name": "BufferedReader",
+      "properties": {
+        "package": "java.io.BufferedReader"
+      }
+    },
+    {
+      "id": "import:java.io",
+      "type": "import",
+      "name": "io",
+      "properties": {
+        "package": "java.io"
+      }
+    },
+    {
+      "id": "import:java.util.ArrayList",
+      "type": "import",
+      "name": "ArrayList",
+      "properties": {
+        "package": "java.util.ArrayList"
+      }
+    },
+    {
+      "id": "import:javax.swing",
+      "type": "import",
+      "name": "swing",
+      "properties": {
+        "package": "javax.swing"
+      }
+    },
+    {
+      "id": "class:DigitalCircuitSim",
+      "type": "class",
+      "name": "DigitalCircuitSim",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain"
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.parseString",
+      "type": "function",
+      "name": "parseString",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "String line",
+          "boolean array[]"
+        ]
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.awt.Graphics g"
+        ]
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.xOnInit",
+      "type": "function",
+      "name": "xOnInit",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.initAllPins",
+      "type": "function",
+      "name": "initAllPins",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.copyVSArrayToStringArray",
+      "type": "function",
+      "name": "copyVSArrayToStringArray",
+      "properties": {
+        "visibility": "private",
+        "returnType": "String[]",
+        "params": [
+          "VS1DString values"
+        ]
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.openDataDialog",
+      "type": "function",
+      "name": "openDataDialog",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "Object o"
+        ]
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.sucheInpuitString",
+      "type": "function",
+      "name": "sucheInpuitString",
+      "properties": {
+        "visibility": "public",
+        "returnType": "int",
+        "params": [
+          "String val"
+        ]
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.io.FileInputStream fis"
+        ]
+      }
+    },
+    {
+      "id": "function:DigitalCircuitSim.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "java.io.FileOutputStream fos"
+        ]
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+      "type": "file",
+      "name": "MyTableEditor.java",
+      "properties": {
+        "path": "CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+        "language": "java",
+        "loc": 673
+      }
+    },
+    {
+      "id": "import:javax.swing.JOptionPane",
+      "type": "import",
+      "name": "JOptionPane",
+      "properties": {
+        "package": "javax.swing.JOptionPane"
+      }
+    },
+    {
+      "id": "import:javax.swing.JTable",
+      "type": "import",
+      "name": "JTable",
+      "properties": {
+        "package": "javax.swing.JTable"
+      }
+    },
+    {
+      "id": "import:javax.swing.table.DefaultTableModel",
+      "type": "import",
+      "name": "DefaultTableModel",
+      "properties": {
+        "package": "javax.swing.table.DefaultTableModel"
+      }
+    },
+    {
+      "id": "import:javax.swing.table.TableColumn",
+      "type": "import",
+      "name": "TableColumn",
+      "properties": {
+        "package": "javax.swing.table.TableColumn"
+      }
+    },
+    {
+      "id": "class:BooleanModel",
+      "type": "class",
+      "name": "BooleanModel",
+      "properties": {
+        "visibility": "package-private",
+        "superclass": "javax.swing.table.DefaultTableModel"
+      }
+    },
+    {
+      "id": "function:BooleanModel.getColumnClass",
+      "type": "function",
+      "name": "getColumnClass",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Class",
+        "params": [
+          "int columnIndex"
+        ]
+      }
+    },
+    {
+      "id": "class:MyTableEditor",
+      "type": "class",
+      "name": "MyTableEditor",
+      "properties": {
+        "visibility": "public",
+        "superclass": "javax.swing.JDialog"
+      }
+    },
+    {
+      "id": "function:MyTableEditor.MyTableEditor",
+      "type": "function",
+      "name": "MyTableEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "constructor",
+        "params": [
+          "java.awt.Frame parent",
+          "boolean modal"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.clearTable",
+      "type": "function",
+      "name": "clearTable",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "DefaultTableModel model"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.parseString",
+      "type": "function",
+      "name": "parseString",
+      "properties": {
+        "visibility": "private",
+        "returnType": "Boolean[]",
+        "params": [
+          "String str"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.setInputs",
+      "type": "function",
+      "name": "setInputs",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "String[] inputs"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.setInputColumns",
+      "type": "function",
+      "name": "setInputColumns",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "String cols"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.getInputColumns",
+      "type": "function",
+      "name": "getInputColumns",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String"
+      }
+    },
+    {
+      "id": "function:MyTableEditor.getOutputColumns",
+      "type": "function",
+      "name": "getOutputColumns",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String"
+      }
+    },
+    {
+      "id": "function:MyTableEditor.setOutputColumns",
+      "type": "function",
+      "name": "setOutputColumns",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "String cols"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.setOutputs",
+      "type": "function",
+      "name": "setOutputs",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "String[] outputs"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.getData",
+      "type": "function",
+      "name": "getData",
+      "properties": {
+        "visibility": "private",
+        "returnType": "String[]",
+        "params": [
+          "DefaultTableModel model"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.getInputs",
+      "type": "function",
+      "name": "getInputs",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String[]"
+      }
+    },
+    {
+      "id": "function:MyTableEditor.geOutputs",
+      "type": "function",
+      "name": "geOutputs",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String[]"
+      }
+    },
+    {
+      "id": "function:MyTableEditor.initComponents",
+      "type": "function",
+      "name": "initComponents",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "function:MyTableEditor.mniEraseOutputDataActionPerformed",
+      "type": "function",
+      "name": "mniEraseOutputDataActionPerformed",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "java.awt.event.ActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.mniEditOutputColumnsActionPerformed",
+      "type": "function",
+      "name": "mniEditOutputColumnsActionPerformed",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "java.awt.event.ActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.mniEraseInDataActionPerformed",
+      "type": "function",
+      "name": "mniEraseInDataActionPerformed",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "java.awt.event.ActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.mniEditInputColumnsActionPerformed",
+      "type": "function",
+      "name": "mniEditInputColumnsActionPerformed",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "java.awt.event.ActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.mniGenInputDataActionPerformed",
+      "type": "function",
+      "name": "mniGenInputDataActionPerformed",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "java.awt.event.ActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.eraseData",
+      "type": "function",
+      "name": "eraseData",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "DefaultTableModel model"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.test",
+      "type": "function",
+      "name": "test",
+      "properties": {
+        "visibility": "private",
+        "returnType": "String",
+        "params": [
+          "JTable table",
+          "DefaultTableModel model"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.shiftRight",
+      "type": "function",
+      "name": "shiftRight",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "String[] inputs"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.IntToBin",
+      "type": "function",
+      "name": "IntToBin",
+      "properties": {
+        "visibility": "private",
+        "returnType": "String",
+        "params": [
+          "int value",
+          "int digits"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.jButton2ActionPerformed",
+      "type": "function",
+      "name": "jButton2ActionPerformed",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "java.awt.event.ActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.jButton1ActionPerformed",
+      "type": "function",
+      "name": "jButton1ActionPerformed",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": [
+          "java.awt.event.ActionEvent evt"
+        ]
+      }
+    },
+    {
+      "id": "function:MyTableEditor.main",
+      "type": "function",
+      "name": "main",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": [
+          "String args[]"
+        ],
+        "static": true
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Interface/Internet/SendUDP/src/SendUDP.java",
+      "type": "file",
+      "name": "SendUDP.java",
+      "properties": {
+        "path": "CircuitElements/Interface/Internet/SendUDP/src/SendUDP.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Interface/JavaView/JavaView.java",
+      "type": "file",
+      "name": "JavaView.java",
+      "properties": {
+        "path": "CircuitElements/Interface/JavaView/JavaView.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Interface/JFreeChart/JFreeChart.java",
+      "type": "file",
+      "name": "JFreeChart.java",
+      "properties": {
+        "path": "CircuitElements/Interface/JFreeChart/JFreeChart.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Interface/MediaPlayer/src/MediaPlayer.java",
+      "type": "file",
+      "name": "MediaPlayer.java",
+      "properties": {
+        "path": "CircuitElements/Interface/MediaPlayer/src/MediaPlayer.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Interface/Monitor/src/Grid.java",
+      "type": "file",
+      "name": "Grid.java",
+      "properties": {
+        "path": "CircuitElements/Interface/Monitor/src/Grid.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Interface/Monitor/src/Monitor.java",
+      "type": "file",
+      "name": "Monitor.java",
+      "properties": {
+        "path": "CircuitElements/Interface/Monitor/src/Monitor.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Interface/Monitor/src/Objekt.java",
+      "type": "file",
+      "name": "Objekt.java",
+      "properties": {
+        "path": "CircuitElements/Interface/Monitor/src/Objekt.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Interface/_Joystick/src/Joystick.java",
+      "type": "file",
+      "name": "Joystick.java",
+      "properties": {
+        "path": "CircuitElements/Interface/_Joystick/src/Joystick.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Interface/_Joystick/src/JoystickPanel.java",
+      "type": "file",
+      "name": "JoystickPanel.java",
+      "properties": {
+        "path": "CircuitElements/Interface/_Joystick/src/JoystickPanel.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Interface/_Keyboard/src/Keyboard.java",
+      "type": "file",
+      "name": "Keyboard.java",
+      "properties": {
+        "path": "CircuitElements/Interface/_Keyboard/src/Keyboard.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Display/MatrixDisplay/src/Dot.java",
+      "type": "file",
+      "name": "Dot.java",
+      "properties": {
+        "path": "CircuitElements/Display/MatrixDisplay/src/Dot.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Display/MatrixDisplay/src/MatrixPanel.java",
+      "type": "file",
+      "name": "MatrixPanel.java",
+      "properties": {
+        "path": "CircuitElements/Display/MatrixDisplay/src/MatrixPanel.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Parser/ExpressionParser.java",
+      "type": "file",
+      "name": "ExpressionParser.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/Parser/ExpressionParser.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Funktionen.java",
+      "type": "file",
+      "name": "Funktionen.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/Parser/Math Calc2/src/ExpressionParser/Funktionen.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/Numerik/Parser/Math%20Calc2/src/ExpressionParser/Node.java",
+      "type": "file",
+      "name": "Node.java",
+      "properties": {
+        "path": "CircuitElements/Numerik/Parser/Math Calc2/src/ExpressionParser/Node.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/VectorenMatrix/1DMathInt4/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": {
+        "path": "CircuitElements/VectorenMatrix/1DMathInt4/src/Element.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/VectorenMatrix/1DMathInt5/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": {
+        "path": "CircuitElements/VectorenMatrix/1DMathInt5/src/Element.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/VectorenMatrix/1DMathInt6/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": {
+        "path": "CircuitElements/VectorenMatrix/1DMathInt6/src/Element.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "file:///CircuitElements/VectorenMatrix/1DMinMax/src/Element.java",
+      "type": "file",
+      "name": "Element.java",
+      "properties": {
+        "path": "CircuitElements/VectorenMatrix/1DMinMax/src/Element.java",
+        "language": "java",
+        "loc": 0,
+        "status": "not_found"
+      }
+    },
+    {
+      "id": "class:java.lang.String",
+      "type": "class",
+      "name": "String",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:java.lang.Object",
+      "type": "class",
+      "name": "Object",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:java.lang.Thread",
+      "type": "class",
+      "name": "Thread",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:javax.swing.JFrame",
+      "type": "class",
+      "name": "JFrame",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:javax.swing.JDialog",
+      "type": "class",
+      "name": "JDialog",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:javax.swing.JPanel",
+      "type": "class",
+      "name": "JPanel",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:java.awt.Image",
+      "type": "class",
+      "name": "Image",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:java.awt.Graphics",
+      "type": "class",
+      "name": "Graphics",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:java.io.FileInputStream",
+      "type": "class",
+      "name": "FileInputStream",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:java.io.FileOutputStream",
+      "type": "class",
+      "name": "FileOutputStream",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:java.awt.event.ActionEvent",
+      "type": "class",
+      "name": "ActionEvent",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:javax.swing.JOptionPane",
+      "type": "class",
+      "name": "JOptionPane",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:javax.swing.JTable",
+      "type": "class",
+      "name": "JTable",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:javax.swing.table.DefaultTableModel",
+      "type": "class",
+      "name": "DefaultTableModel",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:javax.swing.table.TableColumn",
+      "type": "class",
+      "name": "TableColumn",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:javax.swing.JFrame",
+      "type": "class",
+      "name": "JFrame",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "class:javax.swing.JDialog",
+      "type": "class",
+      "name": "JDialog",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+      "target": "import:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+      "target": "import:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+      "target": "import:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+      "target": "import:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+      "target": "import:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+      "target": "import:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+      "target": "import:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/1DHexStrTo1DBytes/src/HexToBytes.java",
+      "target": "class:HexToBytes",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:HexToBytes",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:HexToBytes",
+      "target": "function:HexToBytes.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:HexToBytes",
+      "target": "function:HexToBytes.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:HexToBytes",
+      "target": "function:HexToBytes.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:HexToBytes",
+      "target": "function:HexToBytes.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:HexToBytes",
+      "target": "function:HexToBytes.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:HexToBytes",
+      "target": "function:HexToBytes.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:HexToBytes",
+      "target": "function:HexToBytes.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:HexToBytes",
+      "target": "function:HexToBytes.toUnsigned",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:HexToBytes",
+      "target": "function:HexToBytes.sendString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:HexToBytes",
+      "target": "function:HexToBytes.elementActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+      "target": "import:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+      "target": "import:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+      "target": "import:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+      "target": "import:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+      "target": "import:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+      "target": "import:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+      "target": "import:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToHex/BytesToHEX.java",
+      "target": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "target": "function:Interface.Processing.BytesToHex.BytesToHEX.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "target": "function:Interface.Processing.BytesToHex.BytesToHEX.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "target": "function:Interface.Processing.BytesToHex.BytesToHEX.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "target": "function:Interface.Processing.BytesToHex.BytesToHEX.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "target": "function:Interface.Processing.BytesToHex.BytesToHEX.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "target": "function:Interface.Processing.BytesToHex.BytesToHEX.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "target": "function:Interface.Processing.BytesToHex.BytesToHEX.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "target": "function:Interface.Processing.BytesToHex.BytesToHEX.toSigned",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "target": "function:Interface.Processing.BytesToHex.BytesToHEX.toSigned",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "target": "function:Interface.Processing.BytesToHex.BytesToHEX.copyBits",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "target": "function:Interface.Processing.BytesToHex.BytesToHEX.toUnsigned",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "target": "function:Interface.Processing.BytesToHex.BytesToHEX.sendString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToHex.BytesToHEX",
+      "target": "function:Interface.Processing.BytesToHex.BytesToHEX.elementActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+      "target": "import:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+      "target": "import:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+      "target": "import:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+      "target": "import:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+      "target": "import:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+      "target": "import:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+      "target": "import:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/BytesToString/BytesToString.java",
+      "target": "class:Interface.Processing.BytesToString.BytesToString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToString.BytesToString",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Interface.Processing.BytesToString.BytesToString",
+      "target": "function:Interface.Processing.BytesToString.BytesToString.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToString.BytesToString",
+      "target": "function:Interface.Processing.BytesToString.BytesToString.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToString.BytesToString",
+      "target": "function:Interface.Processing.BytesToString.BytesToString.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToString.BytesToString",
+      "target": "function:Interface.Processing.BytesToString.BytesToString.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToString.BytesToString",
+      "target": "function:Interface.Processing.BytesToString.BytesToString.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToString.BytesToString",
+      "target": "function:Interface.Processing.BytesToString.BytesToString.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToString.BytesToString",
+      "target": "function:Interface.Processing.BytesToString.BytesToString.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToString.BytesToString",
+      "target": "function:Interface.Processing.BytesToString.BytesToString.sendString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.BytesToString.BytesToString",
+      "target": "function:Interface.Processing.BytesToString.BytesToString.elementActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+      "target": "import:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+      "target": "import:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+      "target": "import:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+      "target": "import:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+      "target": "import:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+      "target": "import:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+      "target": "import:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Interface/Processing/StringToBytes/StringToBytes.java",
+      "target": "class:Interface.Processing.StringToBytes.StringToBytes",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.StringToBytes.StringToBytes",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Interface.Processing.StringToBytes.StringToBytes",
+      "target": "function:Interface.Processing.StringToBytes.StringToBytes.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.StringToBytes.StringToBytes",
+      "target": "function:Interface.Processing.StringToBytes.StringToBytes.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.StringToBytes.StringToBytes",
+      "target": "function:Interface.Processing.StringToBytes.StringToBytes.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.StringToBytes.StringToBytes",
+      "target": "function:Interface.Processing.StringToBytes.StringToBytes.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.StringToBytes.StringToBytes",
+      "target": "function:Interface.Processing.StringToBytes.StringToBytes.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.StringToBytes.StringToBytes",
+      "target": "function:Interface.Processing.StringToBytes.StringToBytes.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.StringToBytes.StringToBytes",
+      "target": "function:Interface.Processing.StringToBytes.StringToBytes.stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.StringToBytes.StringToBytes",
+      "target": "function:Interface.Processing.StringToBytes.StringToBytes.sendString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Interface.Processing.StringToBytes.StringToBytes",
+      "target": "function:Interface.Processing.StringToBytes.StringToBytes.elementActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "import:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "import:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "import:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "import:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "import:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "import:java.io.BufferedReader",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "import:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "import:java.util.ArrayList",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "import:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/DigitalCircuitSim.java",
+      "target": "class:DigitalCircuitSim",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.parseString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.xOnInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.initAllPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.copyVSArrayToStringArray",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.openDataDialog",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.sucheInpuitString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:DigitalCircuitSim",
+      "target": "function:DigitalCircuitSim.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+      "target": "import:javax.swing.JOptionPane",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+      "target": "import:javax.swing.JTable",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+      "target": "import:javax.swing.table.DefaultTableModel",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+      "target": "import:javax.swing.table.TableColumn",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+      "target": "class:BooleanModel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:BooleanModel",
+      "target": "class:javax.swing.table.DefaultTableModel",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:BooleanModel",
+      "target": "function:BooleanModel.getColumnClass",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:///CircuitElements/Boolean/DigitalCircuitSim/src/MyTableEditor.java",
+      "target": "class:MyTableEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "class:javax.swing.JDialog",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.MyTableEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.clearTable",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.parseString",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.setInputs",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.setInputColumns",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.getInputColumns",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.getOutputColumns",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.setOutputColumns",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.setOutputs",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.getData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.getInputs",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.geOutputs",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.initComponents",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.mniEraseOutputDataActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.mniEditOutputColumnsActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.mniEraseInDataActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.mniEditInputColumnsActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.mniGenInputDataActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.eraseData",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.test",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.shiftRight",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.IntToBin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.jButton2ActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.jButton1ActionPerformed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:MyTableEditor",
+      "target": "function:MyTableEditor.main",
+      "type": "contains",
+      "weight": 1.0
+    }
+  ]
+}

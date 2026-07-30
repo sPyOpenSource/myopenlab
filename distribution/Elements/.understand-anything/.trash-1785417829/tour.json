@@ -1,0 +1,113 @@
+[
+  {
+    "order": 1,
+    "title": "Project Overview",
+    "description": "The Elements library is organized as a MyOpenLab distribution with root-level configuration (update.txt version tracking, config.txt captions), a Documentations directory with multi-language (DE/EN/ES) descriptions and XML metadata manifests, and top-level element directories. Start here to understand the project structure and packaging conventions.",
+    "nodeIds": [
+      "config:update.txt",
+      "config:config.txt",
+      "config:Documentations/info.xml",
+      "config:Documentations/definition.def",
+      "document:Documentations/description_en.html",
+      "document:Documentations/description_de.html",
+      "document:Documentations/description_es.html"
+    ]
+  },
+  {
+    "order": 2,
+    "title": "Core Framework: JVSMain Base Class",
+    "description": "JVSMain is the abstract base class that every MyOpenLab circuit element extends. It defines the element lifecycle (init, process, start, paint, loadFromStream, saveToStream), pin management (initInputPins, initOutputPins), property editors, and the VisualLogic integration contract. Understanding JVSMain is essential for grasping how all elements work.",
+    "nodeIds": [
+      "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/JVSMain.java"
+    ]
+  },
+  {
+    "order": 3,
+    "title": "Core Framework: Execution Flow and Gate Base Classes",
+    "description": "MainFlow and MCUMainFlow orchestrate element execution during simulation, while Gatter/Gatter2/Gatter3 are reusable base classes for boolean logic gates with 2-input, multi-input, and clock-delay variants respectively. These form the backbone of the simulation engine and logic gate hierarchy.",
+    "nodeIds": [
+      "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/MainFlow.java",
+      "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/MCUMainFlow.java",
+      "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Gatter.java",
+      "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Gatter2.java",
+      "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Gatter3.java"
+    ]
+  },
+  {
+    "order": 4,
+    "title": "Circuit Elements",
+    "description": "The CircuitElements directory contains hundreds of visual programming nodes organized by category: boolean logic gates (AND, OR, NOT, NAND, NOR, XOR), bitwise operations, math/numeric (add, subtract, multiply, trig, filters), analog signal processing (FFT, DCT, generators, triggers), automation (PID, Fuzzy Logic), string operations, 1D arrays/vectors, display drivers, event/timer components, file I/O, and interfaces (email, UDP, charts, media, joystick). Each element extends JVSMain and follows a consistent pattern of initInputPins/initOutputPins/process.",
+    "nodeIds": [
+      "file:java:CircuitElements/Boolean/AND/src/AND.java",
+      "file:java:CircuitElements/Boolean/NOT/src/NOT.java",
+      "file:java:CircuitElements/Boolean/NOR/src/NOR.java",
+      "file:java:CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+      "file:java:CircuitElements/Boolean/const/src/Const.java",
+      "file:java:CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+      "file:java:CircuitElements/BitOperations/AND/AND.java",
+      "file:java:CircuitElements/BitOperations/OR/OR.java",
+      "file:java:CircuitElements/BitOperations/XOR/XOR.java",
+      "file:java:CircuitElements/Analoge/FFT/src/FFT.java",
+      "file:java:CircuitElements/Analoge/DCT/src/DCT.java",
+      "file:java:CircuitElements/Analoge/IDCT/IDCT.java",
+      "file:java:CircuitElements/Automation/PID/PID.java",
+      "file:java:CircuitElements/Automation/FuzzyControl/Fuzzy.java",
+      "file:CircuitElements/Numerik/trigonometrie/Sin/XSin.java",
+      "file:CircuitElements/Numerik/trigonometrie/Cos/XCos.java",
+      "file:CircuitElements/Numerik/addierer/Addierer.java",
+      "file:CircuitElements/Event/Timer/src/Timer.java",
+      "file:CircuitElements/Error/Error.java"
+    ]
+  },
+  {
+    "order": 5,
+    "title": "Front Panel Elements",
+    "description": "The FrontElements directory provides UI components for building graphical front panels: gauges, numeric displays, sliders (H-V-Slider), boolean indicators (light bulbs, switches), oscilloscopes (XY, strip-chart), bar charts, compasses, 2D decorators (ellipse, labels, images), and chart widgets. These elements render interactive or display-only panels that bind to circuit variables for real-time visualization.",
+    "nodeIds": [
+      "file:FrontElements/2Numerisch/Gauge2/src/Gauge.java",
+      "file:FrontElements/2Numerisch/BalkenRegler_JV/src/BalkenRegler.java",
+      "file:FrontElements/2Numerisch/Anzeige/src/Anzeige.java",
+      "file:FrontElements/2Numerisch/H-V-Slider_JV/src/Text_Control_JV.java",
+      "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java",
+      "file:FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+      "file:FrontElements/2Graph/OscilloscopeXY2/src/Oscilloscope.java",
+      "file:FrontElements/2Graph/BalkenAnzeige/src/BalkenAnzeige.java",
+      "file:FrontElements/2Graph/Chart2D/Chart2D.java",
+      "file:FrontElements/2Graph/Compass/src/Compas.java",
+      "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+      "file:FrontElements/Output/WebCam/src/WebCam.java"
+    ]
+  },
+  {
+    "order": 6,
+    "title": "Code Generation Backends",
+    "description": "The VirtualMachines directory contains compiler toolchains that translate MyOpenLab visual programs into executable C code for microcontrollers (Arduino/AVR, ATmega168/328, PIC 16F877) and a Java VM runtime. Each compiler follows the same architecture: tokenizer, parser, stack interpreter, and C code emitter. The VisualLogic versions (1-7) provide the runtime VM for executing visual programs on the desktop.",
+    "nodeIds": [
+      "module:VirtualMachines",
+      "module:VirtualMachines/ArduinoCompiler",
+      "module:VirtualMachines/ATmega168_328Compiler",
+      "module:VirtualMachines/PIC_16F877_Compiler",
+      "file:VirtualMachines/ArduinoCompiler/src/ArduinoCompiler.java",
+      "file:VirtualMachines/ArduinoCompiler/src/C_Code.java",
+      "file:VirtualMachines/ArduinoCompiler/src/StackInterpreter.java",
+      "file:VirtualMachines/ATmega168_328Compiler/src/ATmegaCompiler.java",
+      "file:VirtualMachines/ATmega168_328Compiler/src/StackInterpreter.java",
+      "file:VirtualMachines/PIC_16F877_Compiler/src/Compiler.java",
+      "file:VirtualMachines/PIC_16F877_Compiler/src/StackInterpreter.java",
+      "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/VirtualMachines/JavaVM/src/JavaVM.java",
+      "file:/VirtualMachines/VisualLogic/src/VisualLogic.java",
+      "file:/VirtualMachines/VisualLogic7/src/VisualLogic7.java"
+    ]
+  },
+  {
+    "order": 7,
+    "title": "Expression Parser and Scanner",
+    "description": "The Expression class and Scanner tokenizer implement a mathematical expression evaluator used by elements to parse user-defined formulas at runtime. The MyParser/Parser provides a separate recursive-descent parser for the MyOpenLab visual logic expression language. These components enable dynamic computation without hardcoded logic.",
+    "nodeIds": [
+      "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Expression.java",
+      "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/tools/Scanner.java",
+      "file:/Users/xuyi/Source/Java/myopenlab/distribution/Elements/MyParser/Parser.java"
+    ]
+  }
+]

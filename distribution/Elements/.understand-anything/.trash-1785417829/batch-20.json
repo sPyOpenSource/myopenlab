@@ -1,0 +1,740 @@
+{
+  "batch": 20,
+  "description": "FrontElements Output display components: StatusAnzeige, SVGImage, UserdefinedBooleanDisplay, Oscilloscope_3_0 (Properties framework, MyGraph)",
+  "files": [
+    {
+      "path": "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+      "nodes": [
+        {"id": "file:Output/Oscilloscope/Properties/FrameProperties.java", "type": "file", "name": "FrameProperties.java", "properties": {"module": "Oscilloscope Properties"}},
+        {"id": "class:Output/Oscilloscope/Properties/FrameProperties", "type": "class", "name": "FrameProperties", "properties": {"superclass": "javax.swing.JDialog", "isPublic": true}},
+        {"id": "func:Output/Oscilloscope/Properties/FrameProperties.<init>", "type": "function", "name": "FrameProperties", "properties": {"params": "java.awt.Frame,boolean", "access": "public"}},
+        {"id": "func:Output/Oscilloscope/Properties/FrameProperties.initComponents", "type": "function", "name": "initComponents", "properties": {"access": "private"}},
+        {"id": "func:Output/Oscilloscope/Properties/FrameProperties.jBtnOKActionPerformed", "type": "function", "name": "jBtnOKActionPerformed", "properties": {"params": "java.awt.event.ActionEvent", "access": "private"}},
+        {"id": "func:Output/Oscilloscope/Properties/FrameProperties.jBtnCancelActionPerformed", "type": "function", "name": "jBtnCancelActionPerformed", "properties": {"params": "java.awt.event.ActionEvent", "access": "private"}},
+        {"id": "func:Output/Oscilloscope/Properties/FrameProperties.jCheckBox1ActionPerformed", "type": "function", "name": "jCheckBox1ActionPerformed", "properties": {"params": "java.awt.event.ActionEvent", "access": "private"}},
+        {"id": "func:Output/Oscilloscope/Properties/FrameProperties.execute", "type": "function", "name": "execute", "properties": {"returns": "boolean", "static": true, "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Output/Oscilloscope/Properties/FrameProperties.java", "target": "class:Output/Oscilloscope/Properties/FrameProperties", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/Oscilloscope/Properties/FrameProperties", "target": "func:Output/Oscilloscope/Properties/FrameProperties.<init>", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/Oscilloscope/Properties/FrameProperties", "target": "func:Output/Oscilloscope/Properties/FrameProperties.initComponents", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/Oscilloscope/Properties/FrameProperties", "target": "func:Output/Oscilloscope/Properties/FrameProperties.jBtnOKActionPerformed", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/Oscilloscope/Properties/FrameProperties", "target": "func:Output/Oscilloscope/Properties/FrameProperties.jBtnCancelActionPerformed", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/Oscilloscope/Properties/FrameProperties", "target": "func:Output/Oscilloscope/Properties/FrameProperties.jCheckBox1ActionPerformed", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/Oscilloscope/Properties/FrameProperties", "target": "func:Output/Oscilloscope/Properties/FrameProperties.execute", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/Oscilloscope/Properties/FrameProperties", "target": "class:javax.swing.JDialog", "type": "inherits", "weight": 0.9}
+      ]
+    },
+    {
+      "path": "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/Main.java",
+      "nodes": [
+        {"id": "file:Output/Oscilloscope/Properties/Main.java", "type": "file", "name": "Main.java", "properties": {"module": "Oscilloscope Properties"}},
+        {"id": "class:Output/Oscilloscope/Properties/Main", "type": "class", "name": "Main", "properties": {"isPublic": true}},
+        {"id": "func:Output/Oscilloscope/Properties/Main.<init>", "type": "function", "name": "Main", "properties": {"access": "public"}},
+        {"id": "func:Output/Oscilloscope/Properties/Main.main", "type": "function", "name": "main", "properties": {"params": "String[]", "static": true, "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Output/Oscilloscope/Properties/Main.java", "target": "class:Output/Oscilloscope/Properties/Main", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/Oscilloscope/Properties/Main", "target": "func:Output/Oscilloscope/Properties/Main.<init>", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/Oscilloscope/Properties/Main", "target": "func:Output/Oscilloscope/Properties/Main.main", "type": "contains", "weight": 1.0},
+        {"source": "func:Output/Oscilloscope/Properties/Main.main", "target": "func:Output/Oscilloscope/Properties/FrameProperties.execute", "type": "calls", "weight": 0.8}
+      ]
+    },
+    {
+      "path": "FrontElements/Output/StatusAnzeige/src/StatusDisplay.java",
+      "nodes": [
+        {"id": "file:Output/StatusAnzeige/StatusDisplay.java", "type": "file", "name": "StatusDisplay.java", "properties": {"module": "StatusAnzeige"}},
+        {"id": "class:Output/StatusAnzeige/StatusDisplay", "type": "class", "name": "StatusDisplay", "properties": {"superclass": "JVSMain", "isPublic": true}},
+        {"id": "func:Output/StatusAnzeige/StatusDisplay.onDispose", "type": "function", "name": "onDispose", "properties": {"access": "public"}},
+        {"id": "func:Output/StatusAnzeige/StatusDisplay.paint", "type": "function", "name": "paint", "properties": {"params": "java.awt.Graphics", "access": "public"}},
+        {"id": "func:Output/StatusAnzeige/StatusDisplay.init", "type": "function", "name": "init", "properties": {"access": "public"}},
+        {"id": "func:Output/StatusAnzeige/StatusDisplay.initInputPins", "type": "function", "name": "initInputPins", "properties": {"access": "public"}},
+        {"id": "func:Output/StatusAnzeige/StatusDisplay.initOutputPins", "type": "function", "name": "initOutputPins", "properties": {"access": "public"}},
+        {"id": "func:Output/StatusAnzeige/StatusDisplay.start", "type": "function", "name": "start", "properties": {"access": "public"}},
+        {"id": "func:Output/StatusAnzeige/StatusDisplay.process", "type": "function", "name": "process", "properties": {"access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Output/StatusAnzeige/StatusDisplay.java", "target": "class:Output/StatusAnzeige/StatusDisplay", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/StatusDisplay", "target": "func:Output/StatusAnzeige/StatusDisplay.onDispose", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/StatusDisplay", "target": "func:Output/StatusAnzeige/StatusDisplay.paint", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/StatusDisplay", "target": "func:Output/StatusAnzeige/StatusDisplay.init", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/StatusDisplay", "target": "func:Output/StatusAnzeige/StatusDisplay.initInputPins", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/StatusDisplay", "target": "func:Output/StatusAnzeige/StatusDisplay.initOutputPins", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/StatusDisplay", "target": "func:Output/StatusAnzeige/StatusDisplay.start", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/StatusDisplay", "target": "func:Output/StatusAnzeige/StatusDisplay.process", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/StatusDisplay", "target": "class:JVSMain", "type": "inherits", "weight": 0.9},
+        {"source": "file:Output/StatusAnzeige/StatusDisplay.java", "target": "package:VisualLogic", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/StatusAnzeige/StatusDisplay.java", "target": "package:VisualLogic.variables", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/StatusAnzeige/StatusDisplay.java", "target": "package:java.awt", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/StatusAnzeige/StatusDisplay.java", "target": "package:java.awt.event", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/StatusAnzeige/StatusDisplay.java", "target": "package:tools", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/Output/StatusAnzeige/src/Panel.java",
+      "nodes": [
+        {"id": "file:Output/StatusAnzeige/Panel.java", "type": "file", "name": "Panel.java", "properties": {"module": "StatusAnzeige"}},
+        {"id": "class:Output/StatusAnzeige/Panel", "type": "class", "name": "Panel", "properties": {"superclass": "JVSMain", "interfaces": ["PanelIF"], "isPublic": true}},
+        {"id": "func:Output/StatusAnzeige/Panel.processPanel", "type": "function", "name": "processPanel", "properties": {"params": "int,double,Object", "access": "public"}},
+        {"id": "func:Output/StatusAnzeige/Panel.<init>", "type": "function", "name": "Panel", "properties": {"access": "public"}},
+        {"id": "func:Output/StatusAnzeige/Panel.paint", "type": "function", "name": "paint", "properties": {"params": "java.awt.Graphics", "access": "public"}},
+        {"id": "func:Output/StatusAnzeige/Panel.setValue", "type": "function", "name": "setValue", "properties": {"params": "VSBoolean", "access": "private"}},
+        {"id": "func:Output/StatusAnzeige/Panel.init", "type": "function", "name": "init", "properties": {"access": "public"}},
+        {"id": "func:Output/StatusAnzeige/Panel.setPropertyEditor", "type": "function", "name": "setPropertyEditor", "properties": {"access": "public"}},
+        {"id": "func:Output/StatusAnzeige/Panel.localize", "type": "function", "name": "localize", "properties": {"access": "private"}},
+        {"id": "func:Output/StatusAnzeige/Panel.propertyChanged", "type": "function", "name": "propertyChanged", "properties": {"params": "Object", "access": "public"}},
+        {"id": "func:Output/StatusAnzeige/Panel.loadFromStream", "type": "function", "name": "loadFromStream", "properties": {"params": "java.io.FileInputStream", "access": "public"}},
+        {"id": "func:Output/StatusAnzeige/Panel.saveToStream", "type": "function", "name": "saveToStream", "properties": {"params": "java.io.FileOutputStream", "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Output/StatusAnzeige/Panel.java", "target": "class:Output/StatusAnzeige/Panel", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/Panel", "target": "func:Output/StatusAnzeige/Panel.processPanel", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/Panel", "target": "func:Output/StatusAnzeige/Panel.<init>", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/Panel", "target": "func:Output/StatusAnzeige/Panel.paint", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/Panel", "target": "func:Output/StatusAnzeige/Panel.setValue", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/Panel", "target": "func:Output/StatusAnzeige/Panel.init", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/Panel", "target": "func:Output/StatusAnzeige/Panel.setPropertyEditor", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/Panel", "target": "func:Output/StatusAnzeige/Panel.localize", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/Panel", "target": "func:Output/StatusAnzeige/Panel.propertyChanged", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/Panel", "target": "func:Output/StatusAnzeige/Panel.loadFromStream", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/Panel", "target": "func:Output/StatusAnzeige/Panel.saveToStream", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/StatusAnzeige/Panel", "target": "class:JVSMain", "type": "inherits", "weight": 0.9},
+        {"source": "class:Output/StatusAnzeige/Panel", "target": "interface:PanelIF", "type": "inherits", "weight": 0.9},
+        {"source": "file:Output/StatusAnzeige/Panel.java", "target": "package:VisualLogic", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/StatusAnzeige/Panel.java", "target": "package:VisualLogic.variables", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/StatusAnzeige/Panel.java", "target": "package:tools", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/StatusAnzeige/Panel.java", "target": "package:java.awt", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/StatusAnzeige/Panel.java", "target": "package:javax.swing", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/StatusAnzeige/Panel.java", "target": "package:java.awt.event", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/StatusAnzeige/Panel.java", "target": "package:java.io", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/Output/SVGImage/src/Panel.java",
+      "nodes": [
+        {"id": "file:Output/SVGImage/Panel.java", "type": "file", "name": "Panel.java", "properties": {"module": "SVGImage"}},
+        {"id": "class:Output/SVGImage/Panel", "type": "class", "name": "Panel", "properties": {"superclass": "JVSMain", "isPublic": true}},
+        {"id": "func:Output/SVGImage/Panel.paint", "type": "function", "name": "paint", "properties": {"params": "java.awt.Graphics", "access": "public"}},
+        {"id": "func:Output/SVGImage/Panel.configSVGIcon", "type": "function", "name": "configSVGIcon", "properties": {"params": "String", "returns": "SVGPanel", "access": "private"}},
+        {"id": "func:Output/SVGImage/Panel.init", "type": "function", "name": "init", "properties": {"access": "public"}},
+        {"id": "func:Output/SVGImage/Panel.xOnInit", "type": "function", "name": "xOnInit", "properties": {"access": "public"}},
+        {"id": "func:Output/SVGImage/Panel.getBinDir", "type": "function", "name": "getBinDir", "properties": {"returns": "String", "access": "public"}},
+        {"id": "func:Output/SVGImage/Panel.setPropertyEditor", "type": "function", "name": "setPropertyEditor", "properties": {"access": "public"}},
+        {"id": "func:Output/SVGImage/Panel.localize", "type": "function", "name": "localize", "properties": {"access": "private"}},
+        {"id": "func:Output/SVGImage/Panel.propertyChanged", "type": "function", "name": "propertyChanged", "properties": {"params": "Object", "access": "public"}},
+        {"id": "func:Output/SVGImage/Panel.loadImage", "type": "function", "name": "loadImage", "properties": {"params": "String", "access": "public"}},
+        {"id": "func:Output/SVGImage/Panel.loadFromStream", "type": "function", "name": "loadFromStream", "properties": {"params": "java.io.FileInputStream", "access": "public"}},
+        {"id": "func:Output/SVGImage/Panel.saveToStream", "type": "function", "name": "saveToStream", "properties": {"params": "java.io.FileOutputStream", "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Output/SVGImage/Panel.java", "target": "class:Output/SVGImage/Panel", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/SVGImage/Panel", "target": "func:Output/SVGImage/Panel.paint", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/SVGImage/Panel", "target": "func:Output/SVGImage/Panel.configSVGIcon", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/SVGImage/Panel", "target": "func:Output/SVGImage/Panel.init", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/SVGImage/Panel", "target": "func:Output/SVGImage/Panel.xOnInit", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/SVGImage/Panel", "target": "func:Output/SVGImage/Panel.getBinDir", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/SVGImage/Panel", "target": "func:Output/SVGImage/Panel.setPropertyEditor", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/SVGImage/Panel", "target": "func:Output/SVGImage/Panel.localize", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/SVGImage/Panel", "target": "func:Output/SVGImage/Panel.propertyChanged", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/SVGImage/Panel", "target": "func:Output/SVGImage/Panel.loadImage", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/SVGImage/Panel", "target": "func:Output/SVGImage/Panel.loadFromStream", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/SVGImage/Panel", "target": "func:Output/SVGImage/Panel.saveToStream", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/SVGImage/Panel", "target": "class:JVSMain", "type": "inherits", "weight": 0.9},
+        {"source": "file:Output/SVGImage/Panel.java", "target": "package:VisualLogic", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/SVGImage/Panel.java", "target": "package:java.awt", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/SVGImage/Panel.java", "target": "package:javax.swing", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/SVGImage/Panel.java", "target": "package:java.awt.event", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/SVGImage/Panel.java", "target": "package:VisualLogic.variables", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/SVGImage/Panel.java", "target": "package:tools", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/SVGImage/Panel.java", "target": "class:com.kitfox.svg.SVGCache", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/SVGImage/Panel.java", "target": "class:com.kitfox.svg.SVGException", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/SVGImage/Panel.java", "target": "class:com.kitfox.svg.app.beans.SVGIcon", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/SVGImage/Panel.java", "target": "class:com.kitfox.svg.app.beans.SVGPanel", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/SVGImage/Panel.java", "target": "package:javax.swing.filechooser", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/SVGImage/Panel.java", "target": "package:java.io", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/SVGImage/Panel.java", "target": "package:java.net", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/SVGImage/Panel.java", "target": "package:SVGViewer", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/Output/UserdefinedBooleanDisplay/src/Circuit.java",
+      "nodes": [
+        {"id": "file:Output/UserdefinedBooleanDisplay/Circuit.java", "type": "file", "name": "Circuit.java", "properties": {"module": "UserdefinedBooleanDisplay"}},
+        {"id": "class:Output/UserdefinedBooleanDisplay/Circuit", "type": "class", "name": "Circuit", "properties": {"superclass": "JVSMain", "isPublic": true}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Circuit.onDispose", "type": "function", "name": "onDispose", "properties": {"access": "public"}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Circuit.paint", "type": "function", "name": "paint", "properties": {"params": "java.awt.Graphics", "access": "public"}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Circuit.init", "type": "function", "name": "init", "properties": {"access": "public"}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Circuit.initInputPins", "type": "function", "name": "initInputPins", "properties": {"access": "public"}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Circuit.initOutputPins", "type": "function", "name": "initOutputPins", "properties": {"access": "public"}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Circuit.start", "type": "function", "name": "start", "properties": {"access": "public"}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Circuit.process", "type": "function", "name": "process", "properties": {"access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Output/UserdefinedBooleanDisplay/Circuit.java", "target": "class:Output/UserdefinedBooleanDisplay/Circuit", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Circuit", "target": "func:Output/UserdefinedBooleanDisplay/Circuit.onDispose", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Circuit", "target": "func:Output/UserdefinedBooleanDisplay/Circuit.paint", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Circuit", "target": "func:Output/UserdefinedBooleanDisplay/Circuit.init", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Circuit", "target": "func:Output/UserdefinedBooleanDisplay/Circuit.initInputPins", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Circuit", "target": "func:Output/UserdefinedBooleanDisplay/Circuit.initOutputPins", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Circuit", "target": "func:Output/UserdefinedBooleanDisplay/Circuit.start", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Circuit", "target": "func:Output/UserdefinedBooleanDisplay/Circuit.process", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Circuit", "target": "class:JVSMain", "type": "inherits", "weight": 0.9},
+        {"source": "file:Output/UserdefinedBooleanDisplay/Circuit.java", "target": "package:VisualLogic", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/UserdefinedBooleanDisplay/Circuit.java", "target": "package:VisualLogic.variables", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/UserdefinedBooleanDisplay/Circuit.java", "target": "package:java.awt", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/UserdefinedBooleanDisplay/Circuit.java", "target": "package:java.awt.event", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/UserdefinedBooleanDisplay/Circuit.java", "target": "package:tools", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/Output/UserdefinedBooleanDisplay/src/Panel.java",
+      "nodes": [
+        {"id": "file:Output/UserdefinedBooleanDisplay/Panel.java", "type": "file", "name": "Panel.java", "properties": {"module": "UserdefinedBooleanDisplay"}},
+        {"id": "class:Output/UserdefinedBooleanDisplay/Panel", "type": "class", "name": "Panel", "properties": {"superclass": "JVSMain", "interfaces": ["PanelIF"], "isPublic": true}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Panel.processPanel", "type": "function", "name": "processPanel", "properties": {"params": "int,double,Object", "access": "public"}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Panel.<init>", "type": "function", "name": "Panel", "properties": {"access": "public"}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Panel.paint", "type": "function", "name": "paint", "properties": {"params": "java.awt.Graphics", "access": "public"}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Panel.setValue", "type": "function", "name": "setValue", "properties": {"params": "VSBoolean", "access": "private"}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Panel.init", "type": "function", "name": "init", "properties": {"access": "public"}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Panel.setPropertyEditor", "type": "function", "name": "setPropertyEditor", "properties": {"access": "public"}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Panel.localize", "type": "function", "name": "localize", "properties": {"access": "private"}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Panel.propertyChanged", "type": "function", "name": "propertyChanged", "properties": {"params": "Object", "access": "public"}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Panel.loadFromStream", "type": "function", "name": "loadFromStream", "properties": {"params": "java.io.FileInputStream", "access": "public"}},
+        {"id": "func:Output/UserdefinedBooleanDisplay/Panel.saveToStream", "type": "function", "name": "saveToStream", "properties": {"params": "java.io.FileOutputStream", "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Output/UserdefinedBooleanDisplay/Panel.java", "target": "class:Output/UserdefinedBooleanDisplay/Panel", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Panel", "target": "func:Output/UserdefinedBooleanDisplay/Panel.processPanel", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Panel", "target": "func:Output/UserdefinedBooleanDisplay/Panel.<init>", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Panel", "target": "func:Output/UserdefinedBooleanDisplay/Panel.paint", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Panel", "target": "func:Output/UserdefinedBooleanDisplay/Panel.setValue", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Panel", "target": "func:Output/UserdefinedBooleanDisplay/Panel.init", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Panel", "target": "func:Output/UserdefinedBooleanDisplay/Panel.setPropertyEditor", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Panel", "target": "func:Output/UserdefinedBooleanDisplay/Panel.localize", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Panel", "target": "func:Output/UserdefinedBooleanDisplay/Panel.propertyChanged", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Panel", "target": "func:Output/UserdefinedBooleanDisplay/Panel.loadFromStream", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Panel", "target": "func:Output/UserdefinedBooleanDisplay/Panel.saveToStream", "type": "contains", "weight": 1.0},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Panel", "target": "class:JVSMain", "type": "inherits", "weight": 0.9},
+        {"source": "class:Output/UserdefinedBooleanDisplay/Panel", "target": "interface:PanelIF", "type": "inherits", "weight": 0.9},
+        {"source": "file:Output/UserdefinedBooleanDisplay/Panel.java", "target": "package:VisualLogic", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/UserdefinedBooleanDisplay/Panel.java", "target": "package:VisualLogic.variables", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/UserdefinedBooleanDisplay/Panel.java", "target": "package:tools", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/UserdefinedBooleanDisplay/Panel.java", "target": "package:java.awt", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/UserdefinedBooleanDisplay/Panel.java", "target": "package:javax.swing", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/UserdefinedBooleanDisplay/Panel.java", "target": "package:java.awt.event", "type": "imports", "weight": 0.7},
+        {"source": "file:Output/UserdefinedBooleanDisplay/Panel.java", "target": "package:java.io", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/2Graph/Oscilloscope_3_0/src/Oscilloscope.java",
+      "nodes": [
+        {"id": "file:2Graph/Oscilloscope_3_0/Oscilloscope.java", "type": "file", "name": "Oscilloscope.java", "properties": {"module": "Oscilloscope_3_0 (2Graph)"}},
+        {"id": "class:2Graph/Oscilloscope_3_0/Oscilloscope", "type": "class", "name": "Oscilloscope", "properties": {"superclass": "JVSMain", "isPublic": true}},
+        {"id": "func:2Graph/Oscilloscope_3_0/Oscilloscope.onDispose", "type": "function", "name": "onDispose", "properties": {"access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/Oscilloscope.<init>", "type": "function", "name": "Oscilloscope", "properties": {"access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/Oscilloscope.paint", "type": "function", "name": "paint", "properties": {"params": "java.awt.Graphics", "access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/Oscilloscope.init", "type": "function", "name": "init", "properties": {"access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/Oscilloscope.initInputPins", "type": "function", "name": "initInputPins", "properties": {"access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/Oscilloscope.initOutputPins", "type": "function", "name": "initOutputPins", "properties": {"access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/Oscilloscope.process", "type": "function", "name": "process", "properties": {"access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/Oscilloscope.start", "type": "function", "name": "start", "properties": {"access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:2Graph/Oscilloscope_3_0/Oscilloscope.java", "target": "class:2Graph/Oscilloscope_3_0/Oscilloscope", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/Oscilloscope", "target": "func:2Graph/Oscilloscope_3_0/Oscilloscope.onDispose", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/Oscilloscope", "target": "func:2Graph/Oscilloscope_3_0/Oscilloscope.<init>", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/Oscilloscope", "target": "func:2Graph/Oscilloscope_3_0/Oscilloscope.paint", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/Oscilloscope", "target": "func:2Graph/Oscilloscope_3_0/Oscilloscope.init", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/Oscilloscope", "target": "func:2Graph/Oscilloscope_3_0/Oscilloscope.initInputPins", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/Oscilloscope", "target": "func:2Graph/Oscilloscope_3_0/Oscilloscope.initOutputPins", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/Oscilloscope", "target": "func:2Graph/Oscilloscope_3_0/Oscilloscope.process", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/Oscilloscope", "target": "func:2Graph/Oscilloscope_3_0/Oscilloscope.start", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/Oscilloscope", "target": "class:JVSMain", "type": "inherits", "weight": 0.9},
+        {"source": "file:2Graph/Oscilloscope_3_0/Oscilloscope.java", "target": "package:VisualLogic", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/Oscilloscope.java", "target": "package:VisualLogic.variables", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/Oscilloscope.java", "target": "package:tools", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/Oscilloscope.java", "target": "package:java.awt", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/Oscilloscope.java", "target": "package:java.awt.event", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/2Graph/Oscilloscope_3_0/src/OscPanel.java",
+      "nodes": [
+        {"id": "file:2Graph/Oscilloscope_3_0/OscPanel.java", "type": "file", "name": "OscPanel.java", "properties": {"module": "Oscilloscope_3_0 (2Graph)"}},
+        {"id": "class:2Graph/Oscilloscope_3_0/OscPanel", "type": "class", "name": "OscPanel", "properties": {"superclass": "VSMainWithPropertyManager", "interfaces": ["PanelIF"], "isPublic": true}},
+        {"id": "func:2Graph/Oscilloscope_3_0/OscPanel.onDispose", "type": "function", "name": "onDispose", "properties": {"access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/OscPanel.processGraph", "type": "function", "name": "processGraph", "properties": {"access": "private"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/OscPanel.processLineColor", "type": "function", "name": "processLineColor", "properties": {"access": "private"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/OscPanel.processLineType", "type": "function", "name": "processLineType", "properties": {"access": "private"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/OscPanel.processPanel", "type": "function", "name": "processPanel", "properties": {"params": "int,double,Object", "access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/OscPanel.start", "type": "function", "name": "start", "properties": {"access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/OscPanel.init", "type": "function", "name": "init", "properties": {"access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/OscPanel.xOnInit", "type": "function", "name": "xOnInit", "properties": {"access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/OscPanel.stop", "type": "function", "name": "stop", "properties": {"access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/OscPanel.setPropertyEditor", "type": "function", "name": "setPropertyEditor", "properties": {"access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/OscPanel.setproperties", "type": "function", "name": "setproperties", "properties": {"access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/OscPanel.propertyChanged", "type": "function", "name": "propertyChanged", "properties": {"params": "Object", "access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/OscPanel.loadFromStream", "type": "function", "name": "loadFromStream", "properties": {"params": "java.io.FileInputStream", "access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/OscPanel.saveToStream", "type": "function", "name": "saveToStream", "properties": {"params": "java.io.FileOutputStream", "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:2Graph/Oscilloscope_3_0/OscPanel.java", "target": "class:2Graph/Oscilloscope_3_0/OscPanel", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "func:2Graph/Oscilloscope_3_0/OscPanel.onDispose", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "func:2Graph/Oscilloscope_3_0/OscPanel.processGraph", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "func:2Graph/Oscilloscope_3_0/OscPanel.processLineColor", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "func:2Graph/Oscilloscope_3_0/OscPanel.processLineType", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "func:2Graph/Oscilloscope_3_0/OscPanel.processPanel", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "func:2Graph/Oscilloscope_3_0/OscPanel.start", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "func:2Graph/Oscilloscope_3_0/OscPanel.init", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "func:2Graph/Oscilloscope_3_0/OscPanel.xOnInit", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "func:2Graph/Oscilloscope_3_0/OscPanel.stop", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "func:2Graph/Oscilloscope_3_0/OscPanel.setPropertyEditor", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "func:2Graph/Oscilloscope_3_0/OscPanel.setproperties", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "func:2Graph/Oscilloscope_3_0/OscPanel.propertyChanged", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "func:2Graph/Oscilloscope_3_0/OscPanel.loadFromStream", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "func:2Graph/Oscilloscope_3_0/OscPanel.saveToStream", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "class:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager", "type": "inherits", "weight": 0.9},
+        {"source": "class:2Graph/Oscilloscope_3_0/OscPanel", "target": "interface:PanelIF", "type": "inherits", "weight": 0.9},
+        {"source": "file:2Graph/Oscilloscope_3_0/OscPanel.java", "target": "package:VisualLogic", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/OscPanel.java", "target": "package:VisualLogic.variables", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/OscPanel.java", "target": "package:tools", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/OscPanel.java", "target": "package:java.awt", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/OscPanel.java", "target": "package:java.awt.event", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/OscPanel.java", "target": "package:java.text", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/OscPanel.java", "target": "package:java.awt.geom", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/OscPanel.java", "target": "package:java.util", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/OscPanel.java", "target": "package:javax.swing", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/OscPanel.java", "target": "package:MyGraph", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/2Graph/Oscilloscope_3_0/src/FrameProperties.java",
+      "nodes": [
+        {"id": "file:2Graph/Oscilloscope_3_0/FrameProperties.java", "type": "file", "name": "FrameProperties.java", "properties": {"module": "Oscilloscope_3_0 (2Graph)"}},
+        {"id": "class:2Graph/Oscilloscope_3_0/FrameProperties", "type": "class", "name": "FrameProperties", "properties": {"superclass": "javax.swing.JDialog", "isPublic": true}},
+        {"id": "func:2Graph/Oscilloscope_3_0/FrameProperties.<init>", "type": "function", "name": "FrameProperties", "properties": {"params": "java.awt.Frame,boolean", "access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/FrameProperties.initComponents", "type": "function", "name": "initComponents", "properties": {"access": "private"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/FrameProperties.jBtnOKActionPerformed", "type": "function", "name": "jBtnOKActionPerformed", "properties": {"params": "java.awt.event.ActionEvent", "access": "private"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/FrameProperties.jBtnCancelActionPerformed", "type": "function", "name": "jBtnCancelActionPerformed", "properties": {"params": "java.awt.event.ActionEvent", "access": "private"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/FrameProperties.jCheckBox1ActionPerformed", "type": "function", "name": "jCheckBox1ActionPerformed", "properties": {"params": "java.awt.event.ActionEvent", "access": "private"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/FrameProperties.execute", "type": "function", "name": "execute", "properties": {"returns": "boolean", "static": true, "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:2Graph/Oscilloscope_3_0/FrameProperties.java", "target": "class:2Graph/Oscilloscope_3_0/FrameProperties", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/FrameProperties", "target": "func:2Graph/Oscilloscope_3_0/FrameProperties.<init>", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/FrameProperties", "target": "func:2Graph/Oscilloscope_3_0/FrameProperties.initComponents", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/FrameProperties", "target": "func:2Graph/Oscilloscope_3_0/FrameProperties.jBtnOKActionPerformed", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/FrameProperties", "target": "func:2Graph/Oscilloscope_3_0/FrameProperties.jBtnCancelActionPerformed", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/FrameProperties", "target": "func:2Graph/Oscilloscope_3_0/FrameProperties.jCheckBox1ActionPerformed", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/FrameProperties", "target": "func:2Graph/Oscilloscope_3_0/FrameProperties.execute", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/FrameProperties", "target": "class:javax.swing.JDialog", "type": "inherits", "weight": 0.9},
+        {"source": "file:2Graph/Oscilloscope_3_0/FrameProperties.java", "target": "package:java.util", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/2Graph/Oscilloscope_3_0/src/Properties.java",
+      "nodes": [
+        {"id": "file:2Graph/Oscilloscope_3_0/Properties.java", "type": "file", "name": "Properties.java", "properties": {"module": "Oscilloscope_3_0 Properties"}},
+        {"id": "class:2Graph/Oscilloscope_3_0/Properties", "type": "class", "name": "Properties", "properties": {"isPublic": true}},
+        {"id": "func:2Graph/Oscilloscope_3_0/Properties.get", "type": "function", "name": "get", "properties": {"params": "int", "returns": "Property", "access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/Properties.add", "type": "function", "name": "add", "properties": {"params": "Property", "access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/Properties.size", "type": "function", "name": "size", "properties": {"returns": "int", "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:2Graph/Oscilloscope_3_0/Properties.java", "target": "class:2Graph/Oscilloscope_3_0/Properties", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/Properties", "target": "func:2Graph/Oscilloscope_3_0/Properties.get", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/Properties", "target": "func:2Graph/Oscilloscope_3_0/Properties.add", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/Properties", "target": "func:2Graph/Oscilloscope_3_0/Properties.size", "type": "contains", "weight": 1.0},
+        {"source": "file:2Graph/Oscilloscope_3_0/Properties.java", "target": "package:java.util", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/2Graph/Oscilloscope_3_0/src/Property.java",
+      "nodes": [
+        {"id": "file:2Graph/Oscilloscope_3_0/Property.java", "type": "file", "name": "Property.java", "properties": {"module": "Oscilloscope_3_0 Properties"}},
+        {"id": "class:2Graph/Oscilloscope_3_0/Property", "type": "class", "name": "Property", "properties": {"isPublic": true}},
+        {"id": "func:2Graph/Oscilloscope_3_0/Property.addLocation", "type": "function", "name": "addLocation", "properties": {"params": "String,String", "access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/Property.getLocation", "type": "function", "name": "getLocation", "properties": {"params": "String", "returns": "String", "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:2Graph/Oscilloscope_3_0/Property.java", "target": "class:2Graph/Oscilloscope_3_0/Property", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/Property", "target": "func:2Graph/Oscilloscope_3_0/Property.addLocation", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/Property", "target": "func:2Graph/Oscilloscope_3_0/Property.getLocation", "type": "contains", "weight": 1.0},
+        {"source": "file:2Graph/Oscilloscope_3_0/Property.java", "target": "package:java.util", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/Property.java", "target": "package:VisualLogic", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/Property.java", "target": "package:VisualLogic.variables", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/2Graph/Oscilloscope_3_0/src/PropertyLanguage.java",
+      "nodes": [
+        {"id": "file:2Graph/Oscilloscope_3_0/PropertyLanguage.java", "type": "file", "name": "PropertyLanguage.java", "properties": {"module": "Oscilloscope_3_0 Properties"}},
+        {"id": "class:2Graph/Oscilloscope_3_0/PropertyLanguage", "type": "class", "name": "PropertyLanguage", "properties": {"isPublic": true}},
+        {"id": "func:2Graph/Oscilloscope_3_0/PropertyLanguage.<init>", "type": "function", "name": "PropertyLanguage", "properties": {"params": "String,String", "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:2Graph/Oscilloscope_3_0/PropertyLanguage.java", "target": "class:2Graph/Oscilloscope_3_0/PropertyLanguage", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/PropertyLanguage", "target": "func:2Graph/Oscilloscope_3_0/PropertyLanguage.<init>", "type": "contains", "weight": 1.0}
+      ]
+    },
+    {
+      "path": "FrontElements/2Graph/Oscilloscope_3_0/src/VSPropertyManager.java",
+      "nodes": [
+        {"id": "file:2Graph/Oscilloscope_3_0/VSPropertyManager.java", "type": "file", "name": "VSPropertyManager.java", "properties": {"module": "Oscilloscope_3_0 Properties"}},
+        {"id": "class:2Graph/Oscilloscope_3_0/VSPropertyManager", "type": "class", "name": "VSPropertyManager", "properties": {"isPublic": true}},
+        {"id": "func:2Graph/Oscilloscope_3_0/VSPropertyManager.<init>", "type": "function", "name": "VSPropertyManager", "properties": {"params": "Properties,Object", "access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/VSPropertyManager.getMethodReturnValue", "type": "function", "name": "getMethodReturnValue", "properties": {"params": "String", "returns": "Object", "access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/VSPropertyManager.getMethodReturnType", "type": "function", "name": "getMethodReturnType", "properties": {"params": "String", "returns": "Class", "access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/VSPropertyManager.setMethodValue", "type": "function", "name": "setMethodValue", "properties": {"params": "String,Object", "access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/VSPropertyManager.GenerateVSObjects", "type": "function", "name": "GenerateVSObjects", "properties": {"access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:2Graph/Oscilloscope_3_0/VSPropertyManager.java", "target": "class:2Graph/Oscilloscope_3_0/VSPropertyManager", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/VSPropertyManager", "target": "func:2Graph/Oscilloscope_3_0/VSPropertyManager.<init>", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/VSPropertyManager", "target": "func:2Graph/Oscilloscope_3_0/VSPropertyManager.getMethodReturnValue", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/VSPropertyManager", "target": "func:2Graph/Oscilloscope_3_0/VSPropertyManager.getMethodReturnType", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/VSPropertyManager", "target": "func:2Graph/Oscilloscope_3_0/VSPropertyManager.setMethodValue", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/VSPropertyManager", "target": "func:2Graph/Oscilloscope_3_0/VSPropertyManager.GenerateVSObjects", "type": "contains", "weight": 1.0},
+        {"source": "file:2Graph/Oscilloscope_3_0/VSPropertyManager.java", "target": "package:VisualLogic", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/VSPropertyManager.java", "target": "package:VisualLogic.variables", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/VSPropertyManager.java", "target": "package:java.awt", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/VSPropertyManager.java", "target": "package:java.lang.reflect", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/VSPropertyManager.java", "target": "package:java.util", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/2Graph/Oscilloscope_3_0/src/VSMainWithPropertyManager.java",
+      "nodes": [
+        {"id": "file:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.java", "type": "file", "name": "VSMainWithPropertyManager.java", "properties": {"module": "Oscilloscope_3_0 (2Graph)"}},
+        {"id": "class:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager", "type": "class", "name": "VSMainWithPropertyManager", "properties": {"superclass": "JVSMain", "isPublic": true}},
+        {"id": "func:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.addProp", "type": "function", "name": "addProp", "properties": {"params": "String,String,String,double,double", "access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.applyComponent", "type": "function", "name": "applyComponent", "properties": {"params": "Component", "access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.setPropertyEditor", "type": "function", "name": "setPropertyEditor", "properties": {"access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.localize", "type": "function", "name": "localize", "properties": {"access": "private"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.setproperties", "type": "function", "name": "setproperties", "properties": {"access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.loadFromStream", "type": "function", "name": "loadFromStream", "properties": {"params": "java.io.FileInputStream", "access": "public"}},
+        {"id": "func:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.saveToStream", "type": "function", "name": "saveToStream", "properties": {"params": "java.io.FileOutputStream", "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "class:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "func:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.addProp", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "func:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.applyComponent", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "func:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.setPropertyEditor", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "func:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.localize", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "func:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.setproperties", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "func:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.loadFromStream", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "func:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.saveToStream", "type": "contains", "weight": 1.0},
+        {"source": "class:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "class:JVSMain", "type": "inherits", "weight": 0.9},
+        {"source": "file:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:VisualLogic", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:VisualLogic.variables", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:tools", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:java.awt", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:java.awt.event", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:java.text", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:java.awt.geom", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:java.util", "type": "imports", "weight": 0.7},
+        {"source": "file:2Graph/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:javax.swing", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/FrameMain.java",
+      "nodes": [
+        {"id": "file:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain.java", "type": "file", "name": "FrameMain.java", "properties": {"module": "Oscilloscope_3_0 MyGraph", "package": "MyGraph"}},
+        {"id": "class:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain", "type": "class", "name": "FrameMain", "properties": {"superclass": "javax.swing.JFrame", "package": "MyGraph", "isPublic": true}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain.<init>", "type": "function", "name": "FrameMain", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain.initComponents", "type": "function", "name": "initComponents", "properties": {"access": "private"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain.formComponentResized", "type": "function", "name": "formComponentResized", "properties": {"params": "java.awt.event.ComponentEvent", "access": "private"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain.main", "type": "function", "name": "main", "properties": {"params": "String[]", "static": true, "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain.java", "target": "class:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain.<init>", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain.initComponents", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain.formComponentResized", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain.main", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain", "target": "class:javax.swing.JFrame", "type": "inherits", "weight": 0.9},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain.java", "target": "package:java.awt", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/MyGraph/FrameMain.java", "target": "package:javax.swing", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/GraphBackground.java",
+      "nodes": [
+        {"id": "file:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.java", "type": "file", "name": "GraphBackground.java", "properties": {"module": "Oscilloscope_3_0 MyGraph", "package": "MyGraph"}},
+        {"id": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground", "type": "class", "name": "GraphBackground", "properties": {"superclass": "javax.swing.JPanel", "package": "MyGraph", "isPublic": true}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.getBackgroundTransparent", "type": "function", "name": "getBackgroundTransparent", "properties": {"returns": "boolean", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.setBackgroundTransparent", "type": "function", "name": "setBackgroundTransparent", "properties": {"params": "boolean", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.<init>", "type": "function", "name": "GraphBackground", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.setStepXInProzent", "type": "function", "name": "setStepXInProzent", "properties": {"params": "double", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.setStepYInProzent", "type": "function", "name": "setStepYInProzent", "properties": {"params": "double", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.initComponents", "type": "function", "name": "initComponents", "properties": {"access": "private"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.formMouseMoved", "type": "function", "name": "formMouseMoved", "properties": {"params": "java.awt.event.MouseEvent", "access": "private"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.paintComponent", "type": "function", "name": "paintComponent", "properties": {"params": "Graphics", "access": "protected"}}
+      ],
+      "edges": [
+        {"source": "file:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.java", "target": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.getBackgroundTransparent", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.setBackgroundTransparent", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.<init>", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.setStepXInProzent", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.setStepYInProzent", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.initComponents", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.formMouseMoved", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.paintComponent", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground", "target": "class:javax.swing.JPanel", "type": "inherits", "weight": 0.9},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/MyGraph/GraphBackground.java", "target": "package:java.awt", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/MyGraph/src/MyGraph/GraphRenderer.java",
+      "nodes": [
+        {"id": "file:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.java", "type": "file", "name": "GraphRenderer.java", "properties": {"module": "Oscilloscope_3_0 MyGraph", "package": "MyGraph"}},
+        {"id": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer", "type": "class", "name": "GraphRenderer", "properties": {"superclass": "JPanel", "package": "MyGraph", "isPublic": true}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.getLineColor", "type": "function", "name": "getLineColor", "properties": {"returns": "Color", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.setLineColor", "type": "function", "name": "setLineColor", "properties": {"params": "Color", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.<init>", "type": "function", "name": "GraphRenderer", "properties": {"params": "BackGraphXY", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.genTestValues", "type": "function", "name": "genTestValues", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.init", "type": "function", "name": "init", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.convertPoint", "type": "function", "name": "convertPoint", "properties": {"params": "double,double,Point", "access": "private"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.paintComponent", "type": "function", "name": "paintComponent", "properties": {"params": "Graphics", "access": "protected"}}
+      ],
+      "edges": [
+        {"source": "file:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.java", "target": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.getLineColor", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.setLineColor", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.<init>", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.genTestValues", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.init", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.convertPoint", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer", "target": "func:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.paintComponent", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer", "target": "class:javax.swing.JPanel", "type": "inherits", "weight": 0.9},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.java", "target": "package:java.awt", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.java", "target": "package:java.text", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/MyGraph/GraphRenderer.java", "target": "package:javax.swing", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/Oscilloscope.java",
+      "nodes": [
+        {"id": "file:Version_2_0/Oscilloscope_3_0/Oscilloscope.java", "type": "file", "name": "Oscilloscope.java", "properties": {"module": "Oscilloscope_3_0 (Version_2_0)"}},
+        {"id": "class:Version_2_0/Oscilloscope_3_0/Oscilloscope", "type": "class", "name": "Oscilloscope", "properties": {"superclass": "JVSMain", "isPublic": true}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.onDispose", "type": "function", "name": "onDispose", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.<init>", "type": "function", "name": "Oscilloscope", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.paint", "type": "function", "name": "paint", "properties": {"params": "java.awt.Graphics", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.init", "type": "function", "name": "init", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.initInputPins", "type": "function", "name": "initInputPins", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.initOutputPins", "type": "function", "name": "initOutputPins", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.process", "type": "function", "name": "process", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.start", "type": "function", "name": "start", "properties": {"access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Version_2_0/Oscilloscope_3_0/Oscilloscope.java", "target": "class:Version_2_0/Oscilloscope_3_0/Oscilloscope", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/Oscilloscope", "target": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.onDispose", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/Oscilloscope", "target": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.<init>", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/Oscilloscope", "target": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.paint", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/Oscilloscope", "target": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.init", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/Oscilloscope", "target": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.initInputPins", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/Oscilloscope", "target": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.initOutputPins", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/Oscilloscope", "target": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.process", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/Oscilloscope", "target": "func:Version_2_0/Oscilloscope_3_0/Oscilloscope.start", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/Oscilloscope", "target": "class:JVSMain", "type": "inherits", "weight": 0.9},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/Oscilloscope.java", "target": "package:VisualLogic", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/Oscilloscope.java", "target": "package:VisualLogic.variables", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/Oscilloscope.java", "target": "package:tools", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/Oscilloscope.java", "target": "package:java.awt", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/Oscilloscope.java", "target": "package:java.awt.event", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/OscPanel.java",
+      "nodes": [
+        {"id": "file:Version_2_0/Oscilloscope_3_0/OscPanel.java", "type": "file", "name": "OscPanel.java", "properties": {"module": "Oscilloscope_3_0 (Version_2_0)"}},
+        {"id": "class:Version_2_0/Oscilloscope_3_0/OscPanel", "type": "class", "name": "OscPanel", "properties": {"superclass": "VSMainWithPropertyManager", "interfaces": ["PanelIF"], "isPublic": true}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/OscPanel.processPanel", "type": "function", "name": "processPanel", "properties": {"params": "int,double,Object", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/OscPanel.init", "type": "function", "name": "init", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/OscPanel.xOnInit", "type": "function", "name": "xOnInit", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/OscPanel.stop", "type": "function", "name": "stop", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/OscPanel.setPropertyEditor", "type": "function", "name": "setPropertyEditor", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/OscPanel.setproperties", "type": "function", "name": "setproperties", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/OscPanel.propertyChanged", "type": "function", "name": "propertyChanged", "properties": {"params": "Object", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/OscPanel.loadFromStream", "type": "function", "name": "loadFromStream", "properties": {"params": "java.io.FileInputStream", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/OscPanel.saveToStream", "type": "function", "name": "saveToStream", "properties": {"params": "java.io.FileOutputStream", "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Version_2_0/Oscilloscope_3_0/OscPanel.java", "target": "class:Version_2_0/Oscilloscope_3_0/OscPanel", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/OscPanel", "target": "func:Version_2_0/Oscilloscope_3_0/OscPanel.processPanel", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/OscPanel", "target": "func:Version_2_0/Oscilloscope_3_0/OscPanel.init", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/OscPanel", "target": "func:Version_2_0/Oscilloscope_3_0/OscPanel.xOnInit", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/OscPanel", "target": "func:Version_2_0/Oscilloscope_3_0/OscPanel.stop", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/OscPanel", "target": "func:Version_2_0/Oscilloscope_3_0/OscPanel.setPropertyEditor", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/OscPanel", "target": "func:Version_2_0/Oscilloscope_3_0/OscPanel.setproperties", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/OscPanel", "target": "func:Version_2_0/Oscilloscope_3_0/OscPanel.propertyChanged", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/OscPanel", "target": "func:Version_2_0/Oscilloscope_3_0/OscPanel.loadFromStream", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/OscPanel", "target": "func:Version_2_0/Oscilloscope_3_0/OscPanel.saveToStream", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/OscPanel", "target": "class:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager", "type": "inherits", "weight": 0.9},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/OscPanel", "target": "interface:PanelIF", "type": "inherits", "weight": 0.9},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/OscPanel.java", "target": "package:VisualLogic", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/OscPanel.java", "target": "package:VisualLogic.variables", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/OscPanel.java", "target": "package:tools", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/OscPanel.java", "target": "package:java.awt", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/OscPanel.java", "target": "package:java.awt.event", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/OscPanel.java", "target": "package:java.text", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/OscPanel.java", "target": "package:java.awt.geom", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/OscPanel.java", "target": "package:java.util", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/OscPanel.java", "target": "package:javax.swing", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/OscPanel.java", "target": "package:MyGraph", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/Properties.java",
+      "nodes": [
+        {"id": "file:Version_2_0/Oscilloscope_3_0/Properties.java", "type": "file", "name": "Properties.java", "properties": {"module": "Oscilloscope_3_0 Properties (Version_2_0)"}},
+        {"id": "class:Version_2_0/Oscilloscope_3_0/Properties", "type": "class", "name": "Properties", "properties": {"isPublic": true}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/Properties.get", "type": "function", "name": "get", "properties": {"params": "int", "returns": "Property", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/Properties.add", "type": "function", "name": "add", "properties": {"params": "Property", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/Properties.size", "type": "function", "name": "size", "properties": {"returns": "int", "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Version_2_0/Oscilloscope_3_0/Properties.java", "target": "class:Version_2_0/Oscilloscope_3_0/Properties", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/Properties", "target": "func:Version_2_0/Oscilloscope_3_0/Properties.get", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/Properties", "target": "func:Version_2_0/Oscilloscope_3_0/Properties.add", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/Properties", "target": "func:Version_2_0/Oscilloscope_3_0/Properties.size", "type": "contains", "weight": 1.0},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/Properties.java", "target": "package:java.util", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/Property.java",
+      "nodes": [
+        {"id": "file:Version_2_0/Oscilloscope_3_0/Property.java", "type": "file", "name": "Property.java", "properties": {"module": "Oscilloscope_3_0 Properties (Version_2_0)"}},
+        {"id": "class:Version_2_0/Oscilloscope_3_0/Property", "type": "class", "name": "Property", "properties": {"isPublic": true}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/Property.addLocation", "type": "function", "name": "addLocation", "properties": {"params": "String,String", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/Property.getLocation", "type": "function", "name": "getLocation", "properties": {"params": "String", "returns": "String", "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Version_2_0/Oscilloscope_3_0/Property.java", "target": "class:Version_2_0/Oscilloscope_3_0/Property", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/Property", "target": "func:Version_2_0/Oscilloscope_3_0/Property.addLocation", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/Property", "target": "func:Version_2_0/Oscilloscope_3_0/Property.getLocation", "type": "contains", "weight": 1.0},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/Property.java", "target": "package:java.util", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/Property.java", "target": "package:VisualLogic", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/Property.java", "target": "package:VisualLogic.variables", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/PropertyLanguage.java",
+      "nodes": [
+        {"id": "file:Version_2_0/Oscilloscope_3_0/PropertyLanguage.java", "type": "file", "name": "PropertyLanguage.java", "properties": {"module": "Oscilloscope_3_0 Properties (Version_2_0)"}},
+        {"id": "class:Version_2_0/Oscilloscope_3_0/PropertyLanguage", "type": "class", "name": "PropertyLanguage", "properties": {"isPublic": true}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/PropertyLanguage.<init>", "type": "function", "name": "PropertyLanguage", "properties": {"params": "String,String", "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Version_2_0/Oscilloscope_3_0/PropertyLanguage.java", "target": "class:Version_2_0/Oscilloscope_3_0/PropertyLanguage", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/PropertyLanguage", "target": "func:Version_2_0/Oscilloscope_3_0/PropertyLanguage.<init>", "type": "contains", "weight": 1.0}
+      ]
+    },
+    {
+      "path": "FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/VSPropertyManager.java",
+      "nodes": [
+        {"id": "file:Version_2_0/Oscilloscope_3_0/VSPropertyManager.java", "type": "file", "name": "VSPropertyManager.java", "properties": {"module": "Oscilloscope_3_0 Properties (Version_2_0)"}},
+        {"id": "class:Version_2_0/Oscilloscope_3_0/VSPropertyManager", "type": "class", "name": "VSPropertyManager", "properties": {"isPublic": true}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/VSPropertyManager.<init>", "type": "function", "name": "VSPropertyManager", "properties": {"params": "Properties,Object", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/VSPropertyManager.getMethodReturnValue", "type": "function", "name": "getMethodReturnValue", "properties": {"params": "String", "returns": "Object", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/VSPropertyManager.getMethodReturnType", "type": "function", "name": "getMethodReturnType", "properties": {"params": "String", "returns": "Class", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/VSPropertyManager.setMethodValue", "type": "function", "name": "setMethodValue", "properties": {"params": "String,Object", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/VSPropertyManager.GenerateVSObjects", "type": "function", "name": "GenerateVSObjects", "properties": {"access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSPropertyManager.java", "target": "class:Version_2_0/Oscilloscope_3_0/VSPropertyManager", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/VSPropertyManager", "target": "func:Version_2_0/Oscilloscope_3_0/VSPropertyManager.<init>", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/VSPropertyManager", "target": "func:Version_2_0/Oscilloscope_3_0/VSPropertyManager.getMethodReturnValue", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/VSPropertyManager", "target": "func:Version_2_0/Oscilloscope_3_0/VSPropertyManager.getMethodReturnType", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/VSPropertyManager", "target": "func:Version_2_0/Oscilloscope_3_0/VSPropertyManager.setMethodValue", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/VSPropertyManager", "target": "func:Version_2_0/Oscilloscope_3_0/VSPropertyManager.GenerateVSObjects", "type": "contains", "weight": 1.0},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSPropertyManager.java", "target": "package:VisualLogic", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSPropertyManager.java", "target": "package:VisualLogic.variables", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSPropertyManager.java", "target": "package:java.awt", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSPropertyManager.java", "target": "package:java.lang.reflect", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSPropertyManager.java", "target": "package:java.util", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/VSMainWithPropertyManager.java",
+      "nodes": [
+        {"id": "file:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.java", "type": "file", "name": "VSMainWithPropertyManager.java", "properties": {"module": "Oscilloscope_3_0 (Version_2_0)"}},
+        {"id": "class:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager", "type": "class", "name": "VSMainWithPropertyManager", "properties": {"superclass": "JVSMain", "isPublic": true}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.addProp", "type": "function", "name": "addProp", "properties": {"params": "String,String,String,double,double", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.applyComponent", "type": "function", "name": "applyComponent", "properties": {"params": "Component", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.setPropertyEditor", "type": "function", "name": "setPropertyEditor", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.localize", "type": "function", "name": "localize", "properties": {"access": "private"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.setproperties", "type": "function", "name": "setproperties", "properties": {"access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.loadFromStream", "type": "function", "name": "loadFromStream", "properties": {"params": "java.io.FileInputStream", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.saveToStream", "type": "function", "name": "saveToStream", "properties": {"params": "java.io.FileOutputStream", "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "class:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "func:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.addProp", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "func:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.applyComponent", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "func:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.setPropertyEditor", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "func:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.localize", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "func:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.setproperties", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "func:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.loadFromStream", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "func:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.saveToStream", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager", "target": "class:JVSMain", "type": "inherits", "weight": 0.9},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:VisualLogic", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:VisualLogic.variables", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:tools", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:java.awt", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:java.awt.event", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:java.text", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:java.awt.geom", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:java.util", "type": "imports", "weight": 0.7},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/VSMainWithPropertyManager.java", "target": "package:javax.swing", "type": "imports", "weight": 0.7}
+      ]
+    },
+    {
+      "path": "FrontElements/Version_2_0/Output/Oscilloscope_3_0/src/FrameProperties.java",
+      "nodes": [
+        {"id": "file:Version_2_0/Oscilloscope_3_0/FrameProperties.java", "type": "file", "name": "FrameProperties.java", "properties": {"module": "Oscilloscope_3_0 (Version_2_0)"}},
+        {"id": "class:Version_2_0/Oscilloscope_3_0/FrameProperties", "type": "class", "name": "FrameProperties", "properties": {"superclass": "javax.swing.JDialog", "isPublic": true}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/FrameProperties.<init>", "type": "function", "name": "FrameProperties", "properties": {"params": "java.awt.Frame,boolean", "access": "public"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/FrameProperties.initComponents", "type": "function", "name": "initComponents", "properties": {"access": "private"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/FrameProperties.jBtnOKActionPerformed", "type": "function", "name": "jBtnOKActionPerformed", "properties": {"params": "java.awt.event.ActionEvent", "access": "private"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/FrameProperties.jBtnCancelActionPerformed", "type": "function", "name": "jBtnCancelActionPerformed", "properties": {"params": "java.awt.event.ActionEvent", "access": "private"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/FrameProperties.jCheckBox1ActionPerformed", "type": "function", "name": "jCheckBox1ActionPerformed", "properties": {"params": "java.awt.event.ActionEvent", "access": "private"}},
+        {"id": "func:Version_2_0/Oscilloscope_3_0/FrameProperties.execute", "type": "function", "name": "execute", "properties": {"returns": "boolean", "static": true, "access": "public"}}
+      ],
+      "edges": [
+        {"source": "file:Version_2_0/Oscilloscope_3_0/FrameProperties.java", "target": "class:Version_2_0/Oscilloscope_3_0/FrameProperties", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/FrameProperties", "target": "func:Version_2_0/Oscilloscope_3_0/FrameProperties.<init>", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/FrameProperties", "target": "func:Version_2_0/Oscilloscope_3_0/FrameProperties.initComponents", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/FrameProperties", "target": "func:Version_2_0/Oscilloscope_3_0/FrameProperties.jBtnOKActionPerformed", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/FrameProperties", "target": "func:Version_2_0/Oscilloscope_3_0/FrameProperties.jBtnCancelActionPerformed", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/FrameProperties", "target": "func:Version_2_0/Oscilloscope_3_0/FrameProperties.jCheckBox1ActionPerformed", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/FrameProperties", "target": "func:Version_2_0/Oscilloscope_3_0/FrameProperties.execute", "type": "contains", "weight": 1.0},
+        {"source": "class:Version_2_0/Oscilloscope_3_0/FrameProperties", "target": "class:javax.swing.JDialog", "type": "inherits", "weight": 0.9},
+        {"source": "file:Version_2_0/Oscilloscope_3_0/FrameProperties.java", "target": "package:java.util", "type": "imports", "weight": 0.7}
+      ]
+    }
+  ],
+  "missing_files": [
+    "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/Properties.java",
+    "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/PropertiesCanvas.java",
+    "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/Property.java",
+    "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/PropertyDialog.java",
+    "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/PropertyTableModel.java",
+    "FrontElements/Output/StatusAnzeige/src/StatusDisplayPanel.java",
+    "FrontElements/Output/UserdefinedImageDisplay/src/Circuit.java",
+    "FrontElements/Output/UserdefinedImageDisplay/src/Panel.java",
+    "FrontElements/Output/UserdefinedTextDisplay/src/Circuit.java",
+    "FrontElements/Output/UserdefinedTextDisplay/src/Panel.java",
+    "FrontElements/Output/VerschiebbarerRegler_1_0/src/Regler.java",
+    "FrontElements/Output/VerschiebbarerRegler_1_0/src/ReglerPanel.java",
+    "FrontElements/Output/WebCam/src/WebCam.java",
+    "FrontElements/Output/WebCam/src/WebCamPanel.java",
+    "FrontElements/Output/_Oscilloscope_2_0/src/Oscilloscope.java",
+    "FrontElements/Output/_Oscilloscope_2_0/src/OscPanel.java",
+    "FrontElements/Output/_Oscilloscope_3_0/src/GraphBackground.java",
+    "FrontElements/Output/_Oscilloscope_3_0/src/GraphRenderer.java",
+    "FrontElements/Output/_Oscilloscope_3_0/src/Oscilloscope.java",
+    "FrontElements/Output/_Oscilloscope_3_0/src/OscPanel.java"
+  ]
+}

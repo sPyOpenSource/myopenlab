@@ -1,0 +1,1715 @@
+{
+  "batch": 34,
+  "description": "FrontElements batch 34 - 13 Java files (12 missing) from Input/Regler2, Output/_LED, Output/Oscilloscope, Output/StatusAnzeige, Output/SVGImage, Output/UserdefinedBooleanDisplay",
+  "missingFiles": [
+    "FrontElements/Input/Keyboard_JV/src/Keyboard.java",
+    "FrontElements/Input/Keyboard_JV/src/KeyboardPanel.java",
+    "FrontElements/Output/Anzeige_1_3/Elem.java",
+    "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/PreviewCanvas.java",
+    "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/Properties.java",
+    "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/PropertiesCanvas.java",
+    "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/Property.java",
+    "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/PropertyDialog.java",
+    "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/PropertyTableModel.java",
+    "FrontElements/Output/StatusAnzeige/src/StatusDisplayPanel.java",
+    "FrontElements/Output/UserdefinedImageDisplay/src/Circuit.java",
+    "FrontElements/Output/UserdefinedImageDisplay/src/Panel.java",
+    "FrontElements/Output/UserdefinedTextDisplay/src/Circuit.java"
+  ],
+  "nodes": [
+    {
+      "id": "file_Regler_java",
+      "type": "file",
+      "name": "Regler.java",
+      "properties": {
+        "path": "FrontElements/Input/Regler2/src/Regler.java",
+        "language": "Java",
+        "loc": 100
+      }
+    },
+    {
+      "id": "file_ReglerPanel_java",
+      "type": "file",
+      "name": "ReglerPanel.java",
+      "properties": {
+        "path": "FrontElements/Input/Regler2/src/ReglerPanel.java",
+        "language": "Java",
+        "loc": 51
+      }
+    },
+    {
+      "id": "file_LED_java",
+      "type": "file",
+      "name": "LED.java",
+      "properties": {
+        "path": "FrontElements/Output/_LED/src/LED.java",
+        "language": "Java",
+        "loc": 105
+      }
+    },
+    {
+      "id": "file_LEDPanel_java",
+      "type": "file",
+      "name": "LEDPanel.java",
+      "properties": {
+        "path": "FrontElements/Output/_LED/src/LEDPanel.java",
+        "language": "Java",
+        "loc": 119
+      }
+    },
+    {
+      "id": "file_Oscilloscope_java",
+      "type": "file",
+      "name": "Oscilloscope.java",
+      "properties": {
+        "path": "FrontElements/Output/Oscilloscope/src/Oscilloscope.java",
+        "language": "Java",
+        "loc": 107
+      }
+    },
+    {
+      "id": "file_OscPanel_java",
+      "type": "file",
+      "name": "OscPanel.java",
+      "properties": {
+        "path": "FrontElements/Output/Oscilloscope/src/OscPanel.java",
+        "language": "Java",
+        "loc": 604
+      }
+    },
+    {
+      "id": "file_FrameProperties_java",
+      "type": "file",
+      "name": "FrameProperties.java",
+      "properties": {
+        "path": "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/FrameProperties.java",
+        "language": "Java",
+        "loc": 410
+      }
+    },
+    {
+      "id": "file_OscPropMain_java",
+      "type": "file",
+      "name": "Main.java",
+      "properties": {
+        "path": "FrontElements/Output/Oscilloscope/src/Properties/Properties/src/Main.java",
+        "language": "Java",
+        "loc": 41
+      }
+    },
+    {
+      "id": "file_StatusDisplay_java",
+      "type": "file",
+      "name": "StatusDisplay.java",
+      "properties": {
+        "path": "FrontElements/Output/StatusAnzeige/src/StatusDisplay.java",
+        "language": "Java",
+        "loc": 97
+      }
+    },
+    {
+      "id": "file_StatusAnzeige_Panel_java",
+      "type": "file",
+      "name": "Panel.java",
+      "properties": {
+        "path": "FrontElements/Output/StatusAnzeige/src/Panel.java",
+        "language": "Java",
+        "loc": 202,
+        "note": "Actual file for StatusDisplayPanel.java"
+      }
+    },
+    {
+      "id": "file_SVGImage_Panel_java",
+      "type": "file",
+      "name": "Panel.java",
+      "properties": {
+        "path": "FrontElements/Output/SVGImage/src/Panel.java",
+        "language": "Java",
+        "loc": 247
+      }
+    },
+    {
+      "id": "file_UserDefBool_Circuit_java",
+      "type": "file",
+      "name": "Circuit.java",
+      "properties": {
+        "path": "FrontElements/Output/UserdefinedBooleanDisplay/src/Circuit.java",
+        "language": "Java",
+        "loc": 101
+      }
+    },
+    {
+      "id": "file_UserDefBool_Panel_java",
+      "type": "file",
+      "name": "Panel.java",
+      "properties": {
+        "path": "FrontElements/Output/UserdefinedBooleanDisplay/src/Panel.java",
+        "language": "Java",
+        "loc": 196
+      }
+    },
+    {
+      "id": "class_Regler",
+      "type": "class",
+      "name": "Regler",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain"
+      }
+    },
+    {
+      "id": "class_ReglerPanel",
+      "type": "class",
+      "name": "ReglerPanel",
+      "properties": {
+        "visibility": "public",
+        "superclass": "CustomAnalogComp"
+      }
+    },
+    {
+      "id": "class_LED",
+      "type": "class",
+      "name": "LED",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain"
+      }
+    },
+    {
+      "id": "class_LEDPanel",
+      "type": "class",
+      "name": "LEDPanel",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain",
+        "interfaces": ["PanelIF"]
+      }
+    },
+    {
+      "id": "class_Oscilloscope",
+      "type": "class",
+      "name": "Oscilloscope",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain"
+      }
+    },
+    {
+      "id": "class_OscPanel",
+      "type": "class",
+      "name": "OscPanel",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain",
+        "interfaces": ["PanelIF"]
+      }
+    },
+    {
+      "id": "class_FrameProperties",
+      "type": "class",
+      "name": "FrameProperties",
+      "properties": {
+        "visibility": "public",
+        "superclass": "javax.swing.JDialog"
+      }
+    },
+    {
+      "id": "class_OscPropMain",
+      "type": "class",
+      "name": "Main",
+      "properties": {
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "class_StatusDisplay",
+      "type": "class",
+      "name": "StatusDisplay",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain"
+      }
+    },
+    {
+      "id": "class_StatusAnzeige_Panel",
+      "type": "class",
+      "name": "Panel (StatusAnzeige)",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain",
+        "interfaces": ["PanelIF"]
+      }
+    },
+    {
+      "id": "class_SVGImage_Panel",
+      "type": "class",
+      "name": "Panel (SVGImage)",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain"
+      }
+    },
+    {
+      "id": "class_UserDefBool_Circuit",
+      "type": "class",
+      "name": "Circuit",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain"
+      }
+    },
+    {
+      "id": "class_UserDefBool_Panel",
+      "type": "class",
+      "name": "Panel (UserDefBool)",
+      "properties": {
+        "visibility": "public",
+        "superclass": "JVSMain",
+        "interfaces": ["PanelIF"]
+      }
+    },
+    {
+      "id": "method_Regler_onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_Regler_paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "method_Regler_init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_Regler_changePin",
+      "type": "function",
+      "name": "changePin",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["int pinIndex", "Object value"]
+      }
+    },
+    {
+      "id": "method_Regler_initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_Regler_initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_Regler_process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_ReglerPanel_init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_LED_paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "method_LED_onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_LED_init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_LED_initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_LED_initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_LED_start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_LED_process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_LEDPanel_setOn",
+      "type": "function",
+      "name": "setOn",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": ["boolean value"]
+      }
+    },
+    {
+      "id": "method_LEDPanel_processPanel",
+      "type": "function",
+      "name": "processPanel",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["int pinIndex", "double value", "Object obj"]
+      }
+    },
+    {
+      "id": "method_LEDPanel_paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "method_LEDPanel_init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_LEDPanel_setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_LEDPanel_localize",
+      "type": "function",
+      "name": "localize",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_LEDPanel_propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["Object o"]
+      }
+    },
+    {
+      "id": "method_LEDPanel_loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.io.FileInputStream fis"]
+      }
+    },
+    {
+      "id": "method_LEDPanel_saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.io.FileOutputStream fos"]
+      }
+    },
+    {
+      "id": "method_Oscilloscope_onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_Oscilloscope_init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_Oscilloscope_Oscilloscope",
+      "type": "function",
+      "name": "Oscilloscope",
+      "properties": {
+        "visibility": "public",
+        "returnType": "constructor"
+      }
+    },
+    {
+      "id": "method_Oscilloscope_paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "method_Oscilloscope_initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_Oscilloscope_initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_Oscilloscope_process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_Oscilloscope_start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_OscPanel_processPanel",
+      "type": "function",
+      "name": "processPanel",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["int pinIndex", "double value", "Object obj"]
+      }
+    },
+    {
+      "id": "method_OscPanel_paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "method_OscPanel_processX",
+      "type": "function",
+      "name": "processX",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": ["Graphics g", "int x", "int y", "int mitteX", "int mitteY", "VSGroup obj"]
+      }
+    },
+    {
+      "id": "method_OscPanel_drawGraph",
+      "type": "function",
+      "name": "drawGraph",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["Graphics gx", "int x", "int y", "int mitteX", "int mitteY", "VS1DDouble inX", "VS1DDouble inY"]
+      }
+    },
+    {
+      "id": "method_OscPanel_init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_OscPanel_process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_OscPanel_openPropertyDialog",
+      "type": "function",
+      "name": "openPropertyDialog",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_OscPanel_mousePressed",
+      "type": "function",
+      "name": "mousePressed",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["MouseEvent e"]
+      }
+    },
+    {
+      "id": "method_OscPanel_start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_OscPanel_stop",
+      "type": "function",
+      "name": "stop",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_OscPanel_setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_OscPanel_localize",
+      "type": "function",
+      "name": "localize",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_OscPanel_propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["Object o"]
+      }
+    },
+    {
+      "id": "method_OscPanel_loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.io.FileInputStream fis"]
+      }
+    },
+    {
+      "id": "method_OscPanel_saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.io.FileOutputStream fos"]
+      }
+    },
+    {
+      "id": "method_FrameProperties_FrameProperties",
+      "type": "function",
+      "name": "FrameProperties",
+      "properties": {
+        "visibility": "public",
+        "returnType": "constructor",
+        "params": ["java.awt.Frame parent", "boolean modal"]
+      }
+    },
+    {
+      "id": "method_FrameProperties_initComponents",
+      "type": "function",
+      "name": "initComponents",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_FrameProperties_jBtnOKActionPerformed",
+      "type": "function",
+      "name": "jBtnOKActionPerformed",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": ["java.awt.event.ActionEvent evt"]
+      }
+    },
+    {
+      "id": "method_FrameProperties_jBtnCancelActionPerformed",
+      "type": "function",
+      "name": "jBtnCancelActionPerformed",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": ["java.awt.event.ActionEvent evt"]
+      }
+    },
+    {
+      "id": "method_FrameProperties_jCheckBox1ActionPerformed",
+      "type": "function",
+      "name": "jCheckBox1ActionPerformed",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": ["java.awt.event.ActionEvent evt"]
+      }
+    },
+    {
+      "id": "method_FrameProperties_execute",
+      "type": "function",
+      "name": "execute",
+      "properties": {
+        "visibility": "public",
+        "returnType": "static boolean"
+      }
+    },
+    {
+      "id": "method_OscPropMain_Main",
+      "type": "function",
+      "name": "Main",
+      "properties": {
+        "visibility": "public",
+        "returnType": "constructor"
+      }
+    },
+    {
+      "id": "method_OscPropMain_main",
+      "type": "function",
+      "name": "main",
+      "properties": {
+        "visibility": "public",
+        "returnType": "static void",
+        "params": ["String[] args"]
+      }
+    },
+    {
+      "id": "method_StatusDisplay_onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_StatusDisplay_paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "method_StatusDisplay_init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_StatusDisplay_initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_StatusDisplay_initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_StatusDisplay_start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_StatusDisplay_process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_StatusAnzeige_Panel_processPanel",
+      "type": "function",
+      "name": "processPanel",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["int pinIndex", "double value", "Object obj"]
+      }
+    },
+    {
+      "id": "method_StatusAnzeige_Panel_Panel",
+      "type": "function",
+      "name": "Panel",
+      "properties": {
+        "visibility": "public",
+        "returnType": "constructor"
+      }
+    },
+    {
+      "id": "method_StatusAnzeige_Panel_paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "method_StatusAnzeige_Panel_setValue",
+      "type": "function",
+      "name": "setValue",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": ["VSBoolean bol"]
+      }
+    },
+    {
+      "id": "method_StatusAnzeige_Panel_init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_StatusAnzeige_Panel_setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_StatusAnzeige_Panel_localize",
+      "type": "function",
+      "name": "localize",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_StatusAnzeige_Panel_propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["Object o"]
+      }
+    },
+    {
+      "id": "method_StatusAnzeige_Panel_loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.io.FileInputStream fis"]
+      }
+    },
+    {
+      "id": "method_StatusAnzeige_Panel_saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.io.FileOutputStream fos"]
+      }
+    },
+    {
+      "id": "method_SVGImage_Panel_paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "method_SVGImage_Panel_configSVGIcon",
+      "type": "function",
+      "name": "configSVGIcon",
+      "properties": {
+        "visibility": "private",
+        "returnType": "SVGPanel",
+        "params": ["String imageFile"]
+      }
+    },
+    {
+      "id": "method_SVGImage_Panel_init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_SVGImage_Panel_xOnInit",
+      "type": "function",
+      "name": "xOnInit",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_SVGImage_Panel_getBinDir",
+      "type": "function",
+      "name": "getBinDir",
+      "properties": {
+        "visibility": "public",
+        "returnType": "String"
+      }
+    },
+    {
+      "id": "method_SVGImage_Panel_setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_SVGImage_Panel_localize",
+      "type": "function",
+      "name": "localize",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_SVGImage_Panel_propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["Object o"]
+      }
+    },
+    {
+      "id": "method_SVGImage_Panel_loadImage",
+      "type": "function",
+      "name": "loadImage",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["String fileName"]
+      }
+    },
+    {
+      "id": "method_SVGImage_Panel_loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.io.FileInputStream fis"]
+      }
+    },
+    {
+      "id": "method_SVGImage_Panel_saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.io.FileOutputStream fos"]
+      }
+    },
+    {
+      "id": "method_UserDefBool_Circuit_onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_UserDefBool_Circuit_paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "method_UserDefBool_Circuit_init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_UserDefBool_Circuit_initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_UserDefBool_Circuit_initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_UserDefBool_Circuit_start",
+      "type": "function",
+      "name": "start",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_UserDefBool_Circuit_process",
+      "type": "function",
+      "name": "process",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_UserDefBool_Panel_processPanel",
+      "type": "function",
+      "name": "processPanel",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["int pinIndex", "double value", "Object obj"]
+      }
+    },
+    {
+      "id": "method_UserDefBool_Panel_Panel",
+      "type": "function",
+      "name": "Panel",
+      "properties": {
+        "visibility": "public",
+        "returnType": "constructor"
+      }
+    },
+    {
+      "id": "method_UserDefBool_Panel_paint",
+      "type": "function",
+      "name": "paint",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "method_UserDefBool_Panel_setValue",
+      "type": "function",
+      "name": "setValue",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void",
+        "params": ["VSBoolean bol"]
+      }
+    },
+    {
+      "id": "method_UserDefBool_Panel_init",
+      "type": "function",
+      "name": "init",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_UserDefBool_Panel_setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_UserDefBool_Panel_localize",
+      "type": "function",
+      "name": "localize",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method_UserDefBool_Panel_propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["Object o"]
+      }
+    },
+    {
+      "id": "method_UserDefBool_Panel_loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.io.FileInputStream fis"]
+      }
+    },
+    {
+      "id": "method_UserDefBool_Panel_saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void",
+        "params": ["java.io.FileOutputStream fos"]
+      }
+    },
+    {
+      "id": "pkg_VisualLogic",
+      "type": "package",
+      "name": "VisualLogic",
+      "properties": { "import": "VisualLogic.*" }
+    },
+    {
+      "id": "pkg_VisualLogic_variables",
+      "type": "package",
+      "name": "VisualLogic.variables",
+      "properties": { "import": "VisualLogic.variables.*" }
+    },
+    {
+      "id": "pkg_tools",
+      "type": "package",
+      "name": "tools",
+      "properties": { "import": "tools.*" }
+    },
+    {
+      "id": "pkg_java_awt",
+      "type": "package",
+      "name": "java.awt",
+      "properties": { "import": "java.awt.*" }
+    },
+    {
+      "id": "pkg_java_awt_event",
+      "type": "package",
+      "name": "java.awt.event",
+      "properties": { "import": "java.awt.event.*" }
+    },
+    {
+      "id": "pkg_java_awt_geom",
+      "type": "package",
+      "name": "java.awt.geom",
+      "properties": { "import": "java.awt.geom.*" }
+    },
+    {
+      "id": "pkg_javax_swing",
+      "type": "package",
+      "name": "javax.swing",
+      "properties": { "import": "javax.swing.*" }
+    },
+    {
+      "id": "pkg_java_text",
+      "type": "package",
+      "name": "java.text",
+      "properties": { "import": "java.text.*" }
+    },
+    {
+      "id": "cls_java_awt_geom_Rectangle2D",
+      "type": "class",
+      "name": "java.awt.geom.Rectangle2D",
+      "properties": { "import": "java.awt.geom.Rectangle2D" }
+    },
+    {
+      "id": "pkg_SVGViewer",
+      "type": "package",
+      "name": "SVGViewer",
+      "properties": { "import": "SVGViewer.*" }
+    },
+    {
+      "id": "cls_javax_swing_Timer",
+      "type": "class",
+      "name": "javax.swing.Timer",
+      "properties": { "import": "javax.swing.Timer" }
+    },
+    {
+      "id": "cls_com_kitfox_svg_SVGCache",
+      "type": "class",
+      "name": "com.kitfox.svg.SVGCache",
+      "properties": { "import": "com.kitfox.svg.SVGCache" }
+    },
+    {
+      "id": "cls_com_kitfox_svg_SVGException",
+      "type": "class",
+      "name": "com.kitfox.svg.SVGException",
+      "properties": { "import": "com.kitfox.svg.SVGException" }
+    },
+    {
+      "id": "cls_com_kitfox_svg_app_beans_SVGIcon",
+      "type": "class",
+      "name": "com.kitfox.svg.app.beans.SVGIcon",
+      "properties": { "import": "com.kitfox.svg.app.beans.SVGIcon" }
+    },
+    {
+      "id": "cls_com_kitfox_svg_app_beans_SVGPanel",
+      "type": "class",
+      "name": "com.kitfox.svg.app.beans.SVGPanel",
+      "properties": { "import": "com.kitfox.svg.app.beans.SVGPanel" }
+    },
+    {
+      "id": "cls_javax_swing_filechooser_FileFilter",
+      "type": "class",
+      "name": "javax.swing.filechooser.FileFilter",
+      "properties": { "import": "javax.swing.filechooser.FileFilter" }
+    },
+    {
+      "id": "cls_java_io_File",
+      "type": "class",
+      "name": "java.io.File",
+      "properties": { "import": "java.io.File" }
+    },
+    {
+      "id": "pkg_java_io",
+      "type": "package",
+      "name": "java.io",
+      "properties": { "import": "java.io.*" }
+    },
+    {
+      "id": "pkg_java_net",
+      "type": "package",
+      "name": "java.net",
+      "properties": { "import": "java.net.*" }
+    },
+    {
+      "id": "cls_JVSMain",
+      "type": "class",
+      "name": "JVSMain",
+      "properties": { "library": "VisualLogic" }
+    },
+    {
+      "id": "cls_ExternalIF",
+      "type": "class",
+      "name": "ExternalIF",
+      "properties": { "library": "VisualLogic" }
+    },
+    {
+      "id": "cls_PanelIF",
+      "type": "class",
+      "name": "PanelIF",
+      "properties": { "library": "VisualLogic" }
+    },
+    {
+      "id": "cls_VSDouble",
+      "type": "class",
+      "name": "VSDouble",
+      "properties": { "library": "VisualLogic.variables" }
+    },
+    {
+      "id": "cls_VSBoolean",
+      "type": "class",
+      "name": "VSBoolean",
+      "properties": { "library": "VisualLogic.variables" }
+    },
+    {
+      "id": "cls_VSObject",
+      "type": "class",
+      "name": "VSObject",
+      "properties": { "library": "VisualLogic.variables" }
+    },
+    {
+      "id": "cls_VSGroup",
+      "type": "class",
+      "name": "VSGroup",
+      "properties": { "library": "VisualLogic.variables" }
+    },
+    {
+      "id": "cls_VSInteger",
+      "type": "class",
+      "name": "VSInteger",
+      "properties": { "library": "VisualLogic.variables" }
+    },
+    {
+      "id": "cls_VS1DDouble",
+      "type": "class",
+      "name": "VS1DDouble",
+      "properties": { "library": "VisualLogic.variables" }
+    },
+    {
+      "id": "cls_VSColor",
+      "type": "class",
+      "name": "VSColor",
+      "properties": { "library": "VisualLogic.variables" }
+    },
+    {
+      "id": "cls_VSImage",
+      "type": "class",
+      "name": "VSImage",
+      "properties": { "library": "VisualLogic.variables" }
+    },
+    {
+      "id": "cls_VSFile",
+      "type": "class",
+      "name": "VSFile",
+      "properties": { "library": "VisualLogic.variables" }
+    },
+    {
+      "id": "cls_VSPropertyDialog",
+      "type": "class",
+      "name": "VSPropertyDialog",
+      "properties": { "library": "VisualLogic" }
+    },
+    {
+      "id": "cls_SVGManager",
+      "type": "class",
+      "name": "SVGManager",
+      "properties": { "library": "SVGViewer" }
+    },
+    {
+      "id": "cls_SVGObject",
+      "type": "class",
+      "name": "SVGObject",
+      "properties": { "library": "SVGViewer" }
+    },
+    {
+      "id": "cls_CustomAnalogComp",
+      "type": "class",
+      "name": "CustomAnalogComp",
+      "properties": { "library": "VisualLogic" }
+    },
+    {
+      "id": "cls_javax_swing_JDialog",
+      "type": "class",
+      "name": "javax.swing.JDialog",
+      "properties": { "library": "javax.swing" }
+    }
+  ],
+  "edges": [
+    {"source": "file_Regler_java", "target": "class_Regler", "type": "contains", "weight": 1.0},
+    {"source": "file_ReglerPanel_java", "target": "class_ReglerPanel", "type": "contains", "weight": 1.0},
+    {"source": "file_LED_java", "target": "class_LED", "type": "contains", "weight": 1.0},
+    {"source": "file_LEDPanel_java", "target": "class_LEDPanel", "type": "contains", "weight": 1.0},
+    {"source": "file_Oscilloscope_java", "target": "class_Oscilloscope", "type": "contains", "weight": 1.0},
+    {"source": "file_OscPanel_java", "target": "class_OscPanel", "type": "contains", "weight": 1.0},
+    {"source": "file_FrameProperties_java", "target": "class_FrameProperties", "type": "contains", "weight": 1.0},
+    {"source": "file_OscPropMain_java", "target": "class_OscPropMain", "type": "contains", "weight": 1.0},
+    {"source": "file_StatusDisplay_java", "target": "class_StatusDisplay", "type": "contains", "weight": 1.0},
+    {"source": "file_StatusAnzeige_Panel_java", "target": "class_StatusAnzeige_Panel", "type": "contains", "weight": 1.0},
+    {"source": "file_SVGImage_Panel_java", "target": "class_SVGImage_Panel", "type": "contains", "weight": 1.0},
+    {"source": "file_UserDefBool_Circuit_java", "target": "class_UserDefBool_Circuit", "type": "contains", "weight": 1.0},
+    {"source": "file_UserDefBool_Panel_java", "target": "class_UserDefBool_Panel", "type": "contains", "weight": 1.0},
+    {"source": "class_Regler", "target": "method_Regler_onDispose", "type": "contains", "weight": 1.0},
+    {"source": "class_Regler", "target": "method_Regler_paint", "type": "contains", "weight": 1.0},
+    {"source": "class_Regler", "target": "method_Regler_init", "type": "contains", "weight": 1.0},
+    {"source": "class_Regler", "target": "method_Regler_changePin", "type": "contains", "weight": 1.0},
+    {"source": "class_Regler", "target": "method_Regler_initInputPins", "type": "contains", "weight": 1.0},
+    {"source": "class_Regler", "target": "method_Regler_initOutputPins", "type": "contains", "weight": 1.0},
+    {"source": "class_Regler", "target": "method_Regler_process", "type": "contains", "weight": 1.0},
+    {"source": "class_ReglerPanel", "target": "method_ReglerPanel_init", "type": "contains", "weight": 1.0},
+    {"source": "class_LED", "target": "method_LED_paint", "type": "contains", "weight": 1.0},
+    {"source": "class_LED", "target": "method_LED_onDispose", "type": "contains", "weight": 1.0},
+    {"source": "class_LED", "target": "method_LED_init", "type": "contains", "weight": 1.0},
+    {"source": "class_LED", "target": "method_LED_initInputPins", "type": "contains", "weight": 1.0},
+    {"source": "class_LED", "target": "method_LED_initOutputPins", "type": "contains", "weight": 1.0},
+    {"source": "class_LED", "target": "method_LED_start", "type": "contains", "weight": 1.0},
+    {"source": "class_LED", "target": "method_LED_process", "type": "contains", "weight": 1.0},
+    {"source": "class_LEDPanel", "target": "method_LEDPanel_setOn", "type": "contains", "weight": 1.0},
+    {"source": "class_LEDPanel", "target": "method_LEDPanel_processPanel", "type": "contains", "weight": 1.0},
+    {"source": "class_LEDPanel", "target": "method_LEDPanel_paint", "type": "contains", "weight": 1.0},
+    {"source": "class_LEDPanel", "target": "method_LEDPanel_init", "type": "contains", "weight": 1.0},
+    {"source": "class_LEDPanel", "target": "method_LEDPanel_setPropertyEditor", "type": "contains", "weight": 1.0},
+    {"source": "class_LEDPanel", "target": "method_LEDPanel_localize", "type": "contains", "weight": 1.0},
+    {"source": "class_LEDPanel", "target": "method_LEDPanel_propertyChanged", "type": "contains", "weight": 1.0},
+    {"source": "class_LEDPanel", "target": "method_LEDPanel_loadFromStream", "type": "contains", "weight": 1.0},
+    {"source": "class_LEDPanel", "target": "method_LEDPanel_saveToStream", "type": "contains", "weight": 1.0},
+    {"source": "class_Oscilloscope", "target": "method_Oscilloscope_onDispose", "type": "contains", "weight": 1.0},
+    {"source": "class_Oscilloscope", "target": "method_Oscilloscope_Oscilloscope", "type": "contains", "weight": 1.0},
+    {"source": "class_Oscilloscope", "target": "method_Oscilloscope_paint", "type": "contains", "weight": 1.0},
+    {"source": "class_Oscilloscope", "target": "method_Oscilloscope_init", "type": "contains", "weight": 1.0},
+    {"source": "class_Oscilloscope", "target": "method_Oscilloscope_initInputPins", "type": "contains", "weight": 1.0},
+    {"source": "class_Oscilloscope", "target": "method_Oscilloscope_initOutputPins", "type": "contains", "weight": 1.0},
+    {"source": "class_Oscilloscope", "target": "method_Oscilloscope_process", "type": "contains", "weight": 1.0},
+    {"source": "class_Oscilloscope", "target": "method_Oscilloscope_start", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPanel", "target": "method_OscPanel_processPanel", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPanel", "target": "method_OscPanel_paint", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPanel", "target": "method_OscPanel_processX", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPanel", "target": "method_OscPanel_drawGraph", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPanel", "target": "method_OscPanel_init", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPanel", "target": "method_OscPanel_process", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPanel", "target": "method_OscPanel_openPropertyDialog", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPanel", "target": "method_OscPanel_mousePressed", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPanel", "target": "method_OscPanel_start", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPanel", "target": "method_OscPanel_stop", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPanel", "target": "method_OscPanel_setPropertyEditor", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPanel", "target": "method_OscPanel_localize", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPanel", "target": "method_OscPanel_propertyChanged", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPanel", "target": "method_OscPanel_loadFromStream", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPanel", "target": "method_OscPanel_saveToStream", "type": "contains", "weight": 1.0},
+    {"source": "class_FrameProperties", "target": "method_FrameProperties_FrameProperties", "type": "contains", "weight": 1.0},
+    {"source": "class_FrameProperties", "target": "method_FrameProperties_initComponents", "type": "contains", "weight": 1.0},
+    {"source": "class_FrameProperties", "target": "method_FrameProperties_jBtnOKActionPerformed", "type": "contains", "weight": 1.0},
+    {"source": "class_FrameProperties", "target": "method_FrameProperties_jBtnCancelActionPerformed", "type": "contains", "weight": 1.0},
+    {"source": "class_FrameProperties", "target": "method_FrameProperties_jCheckBox1ActionPerformed", "type": "contains", "weight": 1.0},
+    {"source": "class_FrameProperties", "target": "method_FrameProperties_execute", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPropMain", "target": "method_OscPropMain_Main", "type": "contains", "weight": 1.0},
+    {"source": "class_OscPropMain", "target": "method_OscPropMain_main", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusDisplay", "target": "method_StatusDisplay_onDispose", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusDisplay", "target": "method_StatusDisplay_paint", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusDisplay", "target": "method_StatusDisplay_init", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusDisplay", "target": "method_StatusDisplay_initInputPins", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusDisplay", "target": "method_StatusDisplay_initOutputPins", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusDisplay", "target": "method_StatusDisplay_start", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusDisplay", "target": "method_StatusDisplay_process", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusAnzeige_Panel", "target": "method_StatusAnzeige_Panel_processPanel", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusAnzeige_Panel", "target": "method_StatusAnzeige_Panel_Panel", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusAnzeige_Panel", "target": "method_StatusAnzeige_Panel_paint", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusAnzeige_Panel", "target": "method_StatusAnzeige_Panel_setValue", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusAnzeige_Panel", "target": "method_StatusAnzeige_Panel_init", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusAnzeige_Panel", "target": "method_StatusAnzeige_Panel_setPropertyEditor", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusAnzeige_Panel", "target": "method_StatusAnzeige_Panel_localize", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusAnzeige_Panel", "target": "method_StatusAnzeige_Panel_propertyChanged", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusAnzeige_Panel", "target": "method_StatusAnzeige_Panel_loadFromStream", "type": "contains", "weight": 1.0},
+    {"source": "class_StatusAnzeige_Panel", "target": "method_StatusAnzeige_Panel_saveToStream", "type": "contains", "weight": 1.0},
+    {"source": "class_SVGImage_Panel", "target": "method_SVGImage_Panel_paint", "type": "contains", "weight": 1.0},
+    {"source": "class_SVGImage_Panel", "target": "method_SVGImage_Panel_configSVGIcon", "type": "contains", "weight": 1.0},
+    {"source": "class_SVGImage_Panel", "target": "method_SVGImage_Panel_init", "type": "contains", "weight": 1.0},
+    {"source": "class_SVGImage_Panel", "target": "method_SVGImage_Panel_xOnInit", "type": "contains", "weight": 1.0},
+    {"source": "class_SVGImage_Panel", "target": "method_SVGImage_Panel_getBinDir", "type": "contains", "weight": 1.0},
+    {"source": "class_SVGImage_Panel", "target": "method_SVGImage_Panel_setPropertyEditor", "type": "contains", "weight": 1.0},
+    {"source": "class_SVGImage_Panel", "target": "method_SVGImage_Panel_localize", "type": "contains", "weight": 1.0},
+    {"source": "class_SVGImage_Panel", "target": "method_SVGImage_Panel_propertyChanged", "type": "contains", "weight": 1.0},
+    {"source": "class_SVGImage_Panel", "target": "method_SVGImage_Panel_loadImage", "type": "contains", "weight": 1.0},
+    {"source": "class_SVGImage_Panel", "target": "method_SVGImage_Panel_loadFromStream", "type": "contains", "weight": 1.0},
+    {"source": "class_SVGImage_Panel", "target": "method_SVGImage_Panel_saveToStream", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Circuit", "target": "method_UserDefBool_Circuit_onDispose", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Circuit", "target": "method_UserDefBool_Circuit_paint", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Circuit", "target": "method_UserDefBool_Circuit_init", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Circuit", "target": "method_UserDefBool_Circuit_initInputPins", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Circuit", "target": "method_UserDefBool_Circuit_initOutputPins", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Circuit", "target": "method_UserDefBool_Circuit_start", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Circuit", "target": "method_UserDefBool_Circuit_process", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Panel", "target": "method_UserDefBool_Panel_processPanel", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Panel", "target": "method_UserDefBool_Panel_Panel", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Panel", "target": "method_UserDefBool_Panel_paint", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Panel", "target": "method_UserDefBool_Panel_setValue", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Panel", "target": "method_UserDefBool_Panel_init", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Panel", "target": "method_UserDefBool_Panel_setPropertyEditor", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Panel", "target": "method_UserDefBool_Panel_localize", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Panel", "target": "method_UserDefBool_Panel_propertyChanged", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Panel", "target": "method_UserDefBool_Panel_loadFromStream", "type": "contains", "weight": 1.0},
+    {"source": "class_UserDefBool_Panel", "target": "method_UserDefBool_Panel_saveToStream", "type": "contains", "weight": 1.0},
+    {"source": "class_Regler", "target": "cls_JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "class_ReglerPanel", "target": "cls_CustomAnalogComp", "type": "inherits", "weight": 0.9},
+    {"source": "class_LED", "target": "cls_JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "class_LEDPanel", "target": "cls_JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "class_LEDPanel", "target": "cls_PanelIF", "type": "implements", "weight": 0.9},
+    {"source": "class_Oscilloscope", "target": "cls_JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "class_OscPanel", "target": "cls_JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "class_OscPanel", "target": "cls_PanelIF", "type": "implements", "weight": 0.9},
+    {"source": "class_FrameProperties", "target": "cls_javax_swing_JDialog", "type": "inherits", "weight": 0.9},
+    {"source": "class_StatusDisplay", "target": "cls_JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "class_StatusAnzeige_Panel", "target": "cls_JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "class_StatusAnzeige_Panel", "target": "cls_PanelIF", "type": "implements", "weight": 0.9},
+    {"source": "class_SVGImage_Panel", "target": "cls_JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "class_UserDefBool_Circuit", "target": "cls_JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "class_UserDefBool_Panel", "target": "cls_JVSMain", "type": "inherits", "weight": 0.9},
+    {"source": "class_UserDefBool_Panel", "target": "cls_PanelIF", "type": "implements", "weight": 0.9},
+    {"source": "file_Regler_java", "target": "pkg_VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file_Regler_java", "target": "pkg_VisualLogic_variables", "type": "imports", "weight": 0.7},
+    {"source": "file_Regler_java", "target": "pkg_tools", "type": "imports", "weight": 0.7},
+    {"source": "file_Regler_java", "target": "pkg_java_awt", "type": "imports", "weight": 0.7},
+    {"source": "file_Regler_java", "target": "pkg_java_awt_event", "type": "imports", "weight": 0.7},
+    {"source": "file_Regler_java", "target": "pkg_java_awt_geom", "type": "imports", "weight": 0.7},
+    {"source": "file_Regler_java", "target": "pkg_javax_swing", "type": "imports", "weight": 0.7},
+    {"source": "file_Regler_java", "target": "pkg_java_text", "type": "imports", "weight": 0.7},
+    {"source": "file_Regler_java", "target": "cls_java_awt_geom_Rectangle2D", "type": "imports", "weight": 0.7},
+    {"source": "file_ReglerPanel_java", "target": "pkg_VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file_ReglerPanel_java", "target": "pkg_VisualLogic_variables", "type": "imports", "weight": 0.7},
+    {"source": "file_ReglerPanel_java", "target": "pkg_tools", "type": "imports", "weight": 0.7},
+    {"source": "file_ReglerPanel_java", "target": "pkg_java_awt", "type": "imports", "weight": 0.7},
+    {"source": "file_LED_java", "target": "pkg_VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file_LED_java", "target": "pkg_VisualLogic_variables", "type": "imports", "weight": 0.7},
+    {"source": "file_LED_java", "target": "pkg_java_awt", "type": "imports", "weight": 0.7},
+    {"source": "file_LED_java", "target": "pkg_java_awt_event", "type": "imports", "weight": 0.7},
+    {"source": "file_LED_java", "target": "pkg_tools", "type": "imports", "weight": 0.7},
+    {"source": "file_LEDPanel_java", "target": "pkg_VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file_LEDPanel_java", "target": "pkg_java_awt", "type": "imports", "weight": 0.7},
+    {"source": "file_LEDPanel_java", "target": "pkg_javax_swing", "type": "imports", "weight": 0.7},
+    {"source": "file_LEDPanel_java", "target": "pkg_java_awt_event", "type": "imports", "weight": 0.7},
+    {"source": "file_LEDPanel_java", "target": "pkg_VisualLogic_variables", "type": "imports", "weight": 0.7},
+    {"source": "file_LEDPanel_java", "target": "pkg_tools", "type": "imports", "weight": 0.7},
+    {"source": "file_LEDPanel_java", "target": "pkg_SVGViewer", "type": "imports", "weight": 0.7},
+    {"source": "file_Oscilloscope_java", "target": "pkg_VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file_Oscilloscope_java", "target": "pkg_VisualLogic_variables", "type": "imports", "weight": 0.7},
+    {"source": "file_Oscilloscope_java", "target": "pkg_tools", "type": "imports", "weight": 0.7},
+    {"source": "file_Oscilloscope_java", "target": "pkg_java_awt", "type": "imports", "weight": 0.7},
+    {"source": "file_Oscilloscope_java", "target": "pkg_java_awt_event", "type": "imports", "weight": 0.7},
+    {"source": "file_OscPanel_java", "target": "pkg_VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file_OscPanel_java", "target": "pkg_VisualLogic_variables", "type": "imports", "weight": 0.7},
+    {"source": "file_OscPanel_java", "target": "pkg_tools", "type": "imports", "weight": 0.7},
+    {"source": "file_OscPanel_java", "target": "pkg_java_awt", "type": "imports", "weight": 0.7},
+    {"source": "file_OscPanel_java", "target": "pkg_java_awt_event", "type": "imports", "weight": 0.7},
+    {"source": "file_OscPanel_java", "target": "cls_javax_swing_Timer", "type": "imports", "weight": 0.7},
+    {"source": "file_OscPanel_java", "target": "pkg_javax_swing", "type": "imports", "weight": 0.7},
+    {"source": "file_OscPanel_java", "target": "pkg_java_text", "type": "imports", "weight": 0.7},
+    {"source": "file_OscPanel_java", "target": "cls_java_awt_geom_Rectangle2D", "type": "imports", "weight": 0.7},
+    {"source": "file_StatusDisplay_java", "target": "pkg_VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file_StatusDisplay_java", "target": "pkg_VisualLogic_variables", "type": "imports", "weight": 0.7},
+    {"source": "file_StatusDisplay_java", "target": "pkg_java_awt", "type": "imports", "weight": 0.7},
+    {"source": "file_StatusDisplay_java", "target": "pkg_java_awt_event", "type": "imports", "weight": 0.7},
+    {"source": "file_StatusDisplay_java", "target": "pkg_tools", "type": "imports", "weight": 0.7},
+    {"source": "file_StatusAnzeige_Panel_java", "target": "pkg_VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file_StatusAnzeige_Panel_java", "target": "pkg_VisualLogic_variables", "type": "imports", "weight": 0.7},
+    {"source": "file_StatusAnzeige_Panel_java", "target": "pkg_tools", "type": "imports", "weight": 0.7},
+    {"source": "file_StatusAnzeige_Panel_java", "target": "pkg_java_awt", "type": "imports", "weight": 0.7},
+    {"source": "file_StatusAnzeige_Panel_java", "target": "pkg_javax_swing", "type": "imports", "weight": 0.7},
+    {"source": "file_StatusAnzeige_Panel_java", "target": "pkg_java_awt_event", "type": "imports", "weight": 0.7},
+    {"source": "file_StatusAnzeige_Panel_java", "target": "pkg_java_io", "type": "imports", "weight": 0.7},
+    {"source": "file_SVGImage_Panel_java", "target": "pkg_VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file_SVGImage_Panel_java", "target": "pkg_java_awt", "type": "imports", "weight": 0.7},
+    {"source": "file_SVGImage_Panel_java", "target": "pkg_javax_swing", "type": "imports", "weight": 0.7},
+    {"source": "file_SVGImage_Panel_java", "target": "pkg_java_awt_event", "type": "imports", "weight": 0.7},
+    {"source": "file_SVGImage_Panel_java", "target": "pkg_VisualLogic_variables", "type": "imports", "weight": 0.7},
+    {"source": "file_SVGImage_Panel_java", "target": "pkg_tools", "type": "imports", "weight": 0.7},
+    {"source": "file_SVGImage_Panel_java", "target": "cls_com_kitfox_svg_SVGCache", "type": "imports", "weight": 0.7},
+    {"source": "file_SVGImage_Panel_java", "target": "cls_com_kitfox_svg_SVGException", "type": "imports", "weight": 0.7},
+    {"source": "file_SVGImage_Panel_java", "target": "cls_com_kitfox_svg_app_beans_SVGIcon", "type": "imports", "weight": 0.7},
+    {"source": "file_SVGImage_Panel_java", "target": "cls_com_kitfox_svg_app_beans_SVGPanel", "type": "imports", "weight": 0.7},
+    {"source": "file_SVGImage_Panel_java", "target": "cls_javax_swing_filechooser_FileFilter", "type": "imports", "weight": 0.7},
+    {"source": "file_SVGImage_Panel_java", "target": "cls_java_io_File", "type": "imports", "weight": 0.7},
+    {"source": "file_SVGImage_Panel_java", "target": "pkg_java_io", "type": "imports", "weight": 0.7},
+    {"source": "file_SVGImage_Panel_java", "target": "pkg_java_net", "type": "imports", "weight": 0.7},
+    {"source": "file_SVGImage_Panel_java", "target": "pkg_SVGViewer", "type": "imports", "weight": 0.7},
+    {"source": "file_UserDefBool_Circuit_java", "target": "pkg_VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file_UserDefBool_Circuit_java", "target": "pkg_VisualLogic_variables", "type": "imports", "weight": 0.7},
+    {"source": "file_UserDefBool_Circuit_java", "target": "pkg_java_awt", "type": "imports", "weight": 0.7},
+    {"source": "file_UserDefBool_Circuit_java", "target": "pkg_java_awt_event", "type": "imports", "weight": 0.7},
+    {"source": "file_UserDefBool_Circuit_java", "target": "pkg_tools", "type": "imports", "weight": 0.7},
+    {"source": "file_UserDefBool_Panel_java", "target": "pkg_VisualLogic", "type": "imports", "weight": 0.7},
+    {"source": "file_UserDefBool_Panel_java", "target": "pkg_VisualLogic_variables", "type": "imports", "weight": 0.7},
+    {"source": "file_UserDefBool_Panel_java", "target": "pkg_tools", "type": "imports", "weight": 0.7},
+    {"source": "file_UserDefBool_Panel_java", "target": "pkg_java_awt", "type": "imports", "weight": 0.7},
+    {"source": "file_UserDefBool_Panel_java", "target": "pkg_javax_swing", "type": "imports", "weight": 0.7},
+    {"source": "file_UserDefBool_Panel_java", "target": "pkg_java_awt_event", "type": "imports", "weight": 0.7},
+    {"source": "file_UserDefBool_Panel_java", "target": "pkg_java_io", "type": "imports", "weight": 0.7},
+    {"source": "method_Regler_init", "target": "method_Regler_init", "type": "calls", "weight": 0.8, "properties": {"detail": "initPins, setSize, initPinVisibility, element.jSetResizable, element.jLoadImage, setPin, element.jSetPinDescription, setName"}},
+    {"source": "method_Regler_changePin", "target": "method_Regler_changePin", "type": "calls", "weight": 0.8, "properties": {"detail": "VSDouble.setValue, element.notifyPin"}},
+    {"source": "method_Regler_initOutputPins", "target": "method_Regler_initOutputPins", "type": "calls", "weight": 0.8, "properties": {"detail": "element.setPinOutputReference"}},
+    {"source": "method_Regler_paint", "target": "method_Regler_paint", "type": "calls", "weight": 0.8, "properties": {"detail": "drawImageCentred"}},
+    {"source": "method_Regler_onDispose", "target": "method_Regler_onDispose", "type": "calls", "weight": 0.8, "properties": {"detail": "image.flush"}},
+    {"source": "method_ReglerPanel_init", "target": "method_ReglerPanel_init", "type": "calls", "weight": 0.8, "properties": {"detail": "super.init, setSize, knobSizeInProzent.setValue, nibbleLenInProzent.setValue, showBackground.setValue"}},
+    {"source": "method_LED_init", "target": "method_LED_init", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jSetInnerBorderVisibility, initPins, setSize, initPinVisibility, setPin, element.jLoadImage, setName, element.jSetResizable"}},
+    {"source": "method_LED_start", "target": "method_LED_start", "type": "calls", "weight": 0.8, "properties": {"detail": "element.getPanelElement, panelElement.jProcessPanel"}},
+    {"source": "method_LED_process", "target": "method_LED_process", "type": "calls", "weight": 0.8, "properties": {"detail": "panelElement.jProcessPanel, panelElement.jRepaint"}},
+    {"source": "method_LED_paint", "target": "method_LED_paint", "type": "calls", "weight": 0.8, "properties": {"detail": "drawImageCentred"}},
+    {"source": "method_LED_initInputPins", "target": "method_LED_initInputPins", "type": "calls", "weight": 0.8, "properties": {"detail": "element.getPinInputReference"}},
+    {"source": "method_LEDPanel_setOn", "target": "method_LEDPanel_setOn", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jRepaint"}},
+    {"source": "method_LEDPanel_processPanel", "target": "method_LEDPanel_setOn", "type": "calls", "weight": 0.8},
+    {"source": "method_LEDPanel_paint", "target": "method_LEDPanel_paint", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jGetBounds, svgManager.getSVGObject, svgManager.paint"}},
+    {"source": "method_LEDPanel_init", "target": "method_LEDPanel_init", "type": "calls", "weight": 0.8, "properties": {"detail": "initPins, initPinVisibility, setSize, element.jSetInnerBorderVisibility, element.jSetResizeSynchron, element.jSetResizable, svgManager.loadFromFile, setName"}},
+    {"source": "method_LEDPanel_setPropertyEditor", "target": "method_LEDPanel_setPropertyEditor", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jAddPEItem, localize"}},
+    {"source": "method_LEDPanel_propertyChanged", "target": "method_LEDPanel_propertyChanged", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jRepaint"}},
+    {"source": "method_LEDPanel_loadFromStream", "target": "method_LEDPanel_loadFromStream", "type": "calls", "weight": 0.8, "properties": {"detail": "col.loadFromStream"}},
+    {"source": "method_LEDPanel_saveToStream", "target": "method_LEDPanel_saveToStream", "type": "calls", "weight": 0.8, "properties": {"detail": "col.saveToStream"}},
+    {"source": "method_Oscilloscope_init", "target": "method_Oscilloscope_init", "type": "calls", "weight": 0.8, "properties": {"detail": "initPins, setSize, initPinVisibility, setPin, element.jSetPinDescription, element.jLoadImage, element.jSetCaptionVisible, element.jSetCaption, setName"}},
+    {"source": "method_Oscilloscope_process", "target": "method_Oscilloscope_process", "type": "calls", "weight": 0.8, "properties": {"detail": "panelElement.jProcessPanel"}},
+    {"source": "method_Oscilloscope_start", "target": "method_Oscilloscope_start", "type": "calls", "weight": 0.8, "properties": {"detail": "element.getPanelElement, panelElement.jRepaint"}},
+    {"source": "method_Oscilloscope_paint", "target": "method_Oscilloscope_paint", "type": "calls", "weight": 0.8, "properties": {"detail": "drawImageCentred"}},
+    {"source": "method_Oscilloscope_initInputPins", "target": "method_Oscilloscope_initInputPins", "type": "calls", "weight": 0.8, "properties": {"detail": "element.getPinInputReference"}},
+    {"source": "method_OscPanel_processPanel", "target": "method_OscPanel_processPanel", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jRepaint"}},
+    {"source": "method_OscPanel_paint", "target": "method_OscPanel_paint", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jGetBounds, element.jRepaint trigger, processX"}},
+    {"source": "method_OscPanel_paint", "target": "method_OscPanel_processX", "type": "calls", "weight": 0.8},
+    {"source": "method_OscPanel_processX", "target": "method_OscPanel_drawGraph", "type": "calls", "weight": 0.8},
+    {"source": "method_OscPanel_openPropertyDialog", "target": "method_FrameProperties_execute", "type": "calls", "weight": 0.8},
+    {"source": "method_OscPanel_openPropertyDialog", "target": "method_OscPanel_openPropertyDialog", "type": "calls", "weight": 0.8, "properties": {"detail": "FrameProperties static fields access, element.jRepaint"}},
+    {"source": "method_OscPanel_init", "target": "method_OscPanel_init", "type": "calls", "weight": 0.8, "properties": {"detail": "initPins, setSize, element.jSetInnerBorderVisibility, element.jSetResizable, setName"}},
+    {"source": "method_OscPanel_start", "target": "method_OscPanel_start", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jRepaint"}},
+    {"source": "method_OscPanel_stop", "target": "method_OscPanel_stop", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jRepaint"}},
+    {"source": "method_OscPanel_setPropertyEditor", "target": "method_OscPanel_setPropertyEditor", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jAddPEItem, localize"}},
+    {"source": "method_OscPanel_propertyChanged", "target": "method_OscPanel_propertyChanged", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jRepaint"}},
+    {"source": "method_OscPanel_loadFromStream", "target": "method_OscPanel_loadFromStream", "type": "calls", "weight": 0.8, "properties": {"detail": "DataInputStream, showBackground.loadFromStream, showGrid.loadFromStream, antialising.loadFromStream, stream.readDouble, element.jException"}},
+    {"source": "method_OscPanel_saveToStream", "target": "method_OscPanel_saveToStream", "type": "calls", "weight": 0.8, "properties": {"detail": "DataOutputStream, showBackground.saveToStream, showGrid.saveToStream, antialising.saveToStream, dos.writeDouble, element.jException"}},
+    {"source": "method_FrameProperties_FrameProperties", "target": "method_FrameProperties_initComponents", "type": "calls", "weight": 0.8},
+    {"source": "method_FrameProperties_execute", "target": "method_FrameProperties_FrameProperties", "type": "calls", "weight": 0.8, "properties": {"detail": "creates new FrameProperties, sets values on components, setVisible"}},
+    {"source": "method_OscPropMain_main", "target": "method_FrameProperties_execute", "type": "calls", "weight": 0.8},
+    {"source": "method_StatusDisplay_init", "target": "method_StatusDisplay_init", "type": "calls", "weight": 0.8, "properties": {"detail": "initPins, setSize, initPinVisibility, setPin, element.jLoadImage, setName"}},
+    {"source": "method_StatusDisplay_initInputPins", "target": "method_StatusDisplay_initInputPins", "type": "calls", "weight": 0.8, "properties": {"detail": "element.getPinInputReference"}},
+    {"source": "method_StatusDisplay_start", "target": "method_StatusDisplay_start", "type": "calls", "weight": 0.8, "properties": {"detail": "element.getPanelElement"}},
+    {"source": "method_StatusDisplay_process", "target": "method_StatusDisplay_process", "type": "calls", "weight": 0.8, "properties": {"detail": "panelElement.jProcessPanel"}},
+    {"source": "method_StatusDisplay_paint", "target": "method_StatusDisplay_paint", "type": "calls", "weight": 0.8, "properties": {"detail": "drawImageCentred"}},
+    {"source": "method_StatusAnzeige_Panel_processPanel", "target": "method_StatusAnzeige_Panel_processPanel", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jRepaint"}},
+    {"source": "method_StatusAnzeige_Panel_paint", "target": "method_StatusAnzeige_Panel_paint", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jGetBounds, g2.drawImage, g2.setRenderingHint"}},
+    {"source": "method_StatusAnzeige_Panel_setValue", "target": "method_StatusAnzeige_Panel_setValue", "type": "calls", "weight": 0.8, "properties": {"detail": "element.getCircuitElement, circuitElement.Change"}},
+    {"source": "method_StatusAnzeige_Panel_init", "target": "method_StatusAnzeige_Panel_init", "type": "calls", "weight": 0.8, "properties": {"detail": "initPins, setSize, initPinVisibility, element.jSetInnerBorderVisibility, element.jSetResizable, element.jGetSourcePath, images[].loadImage, setName"}},
+    {"source": "method_StatusAnzeige_Panel_setPropertyEditor", "target": "method_StatusAnzeige_Panel_setPropertyEditor", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jAddPEItem, localize"}},
+    {"source": "method_StatusAnzeige_Panel_propertyChanged", "target": "method_StatusAnzeige_Panel_propertyChanged", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jRepaint"}},
+    {"source": "method_StatusAnzeige_Panel_loadFromStream", "target": "method_StatusAnzeige_Panel_loadFromStream", "type": "calls", "weight": 0.8, "properties": {"detail": "interpoliert.loadFromStream, images[].loadFromStream, element.jRepaint"}},
+    {"source": "method_StatusAnzeige_Panel_saveToStream", "target": "method_StatusAnzeige_Panel_saveToStream", "type": "calls", "weight": 0.8, "properties": {"detail": "interpoliert.saveToStream, images[].saveToStream"}},
+    {"source": "method_UserDefBool_Circuit_init", "target": "method_UserDefBool_Circuit_init", "type": "calls", "weight": 0.8, "properties": {"detail": "initPins, setSize, initPinVisibility, setPin, element.jLoadImage, setName"}},
+    {"source": "method_UserDefBool_Circuit_initInputPins", "target": "method_UserDefBool_Circuit_initInputPins", "type": "calls", "weight": 0.8, "properties": {"detail": "element.getPinInputReference"}},
+    {"source": "method_UserDefBool_Circuit_start", "target": "method_UserDefBool_Circuit_start", "type": "calls", "weight": 0.8, "properties": {"detail": "element.getPanelElement"}},
+    {"source": "method_UserDefBool_Circuit_process", "target": "method_UserDefBool_Circuit_process", "type": "calls", "weight": 0.8, "properties": {"detail": "panelElement.jProcessPanel"}},
+    {"source": "method_UserDefBool_Circuit_paint", "target": "method_UserDefBool_Circuit_paint", "type": "calls", "weight": 0.8, "properties": {"detail": "drawImageCentred"}},
+    {"source": "method_UserDefBool_Panel_processPanel", "target": "method_UserDefBool_Panel_processPanel", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jRepaint"}},
+    {"source": "method_UserDefBool_Panel_paint", "target": "method_UserDefBool_Panel_paint", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jGetBounds, g2.drawImage, g2.setRenderingHint"}},
+    {"source": "method_UserDefBool_Panel_setValue", "target": "method_UserDefBool_Panel_setValue", "type": "calls", "weight": 0.8, "properties": {"detail": "element.getCircuitElement, circuitElement.Change"}},
+    {"source": "method_UserDefBool_Panel_init", "target": "method_UserDefBool_Panel_init", "type": "calls", "weight": 0.8, "properties": {"detail": "initPins, setSize, initPinVisibility, element.jSetInnerBorderVisibility, element.jSetResizable, element.jGetSourcePath, images[].loadImage, setName"}},
+    {"source": "method_UserDefBool_Panel_setPropertyEditor", "target": "method_UserDefBool_Panel_setPropertyEditor", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jAddPEItem, localize"}},
+    {"source": "method_UserDefBool_Panel_propertyChanged", "target": "method_UserDefBool_Panel_propertyChanged", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jRepaint"}},
+    {"source": "method_UserDefBool_Panel_loadFromStream", "target": "method_UserDefBool_Panel_loadFromStream", "type": "calls", "weight": 0.8, "properties": {"detail": "interpoliert.loadFromStream, images[].loadFromStream, element.jRepaint"}},
+    {"source": "method_UserDefBool_Panel_saveToStream", "target": "method_UserDefBool_Panel_saveToStream", "type": "calls", "weight": 0.8, "properties": {"detail": "interpoliert.saveToStream, images[].saveToStream"}},
+    {"source": "method_SVGImage_Panel_init", "target": "method_SVGImage_Panel_init", "type": "calls", "weight": 0.8, "properties": {"detail": "initPins, initPinVisibility, setSize, element.jSetInnerBorderVisibility, element.jSetResizeSynchron, element.jSetResizable, setName, file.clearExtensions, file.addExtension, file.setDescription"}},
+    {"source": "method_SVGImage_Panel_xOnInit", "target": "method_SVGImage_Panel_xOnInit", "type": "calls", "weight": 0.8, "properties": {"detail": "element.getFrontPanel, panel.setLayout, panel.add"}},
+    {"source": "method_SVGImage_Panel_setPropertyEditor", "target": "method_SVGImage_Panel_setPropertyEditor", "type": "calls", "weight": 0.8, "properties": {"detail": "element.jAddPEItem, localize"}},
+    {"source": "method_SVGImage_Panel_propertyChanged", "target": "method_SVGImage_Panel_loadImage", "type": "calls", "weight": 0.8},
+    {"source": "method_SVGImage_Panel_loadImage", "target": "method_SVGImage_Panel_loadImage", "type": "calls", "weight": 0.8, "properties": {"detail": "SVGCache.getSVGUniverse().loadSVG, pnl.setAntiAlias, pnl.setSvgURI, element.jRepaint"}},
+    {"source": "method_SVGImage_Panel_loadFromStream", "target": "method_SVGImage_Panel_loadFromStream", "type": "calls", "weight": 0.8, "properties": {"detail": "SVGCache.getSVGUniverse().loadSVG, pnl.setAntiAlias, pnl.setSvgURI, element.jRepaint"}},
+    {"source": "method_SVGImage_Panel_saveToStream", "target": "method_SVGImage_Panel_saveToStream", "type": "calls", "weight": 0.8, "properties": {"detail": "dos.writeInt, fos.write"}},
+    {"source": "method_SVGImage_Panel_configSVGIcon", "target": "method_SVGImage_Panel_configSVGIcon", "type": "calls", "weight": 0.8, "properties": {"detail": "SVGCache.getSVGUniverse().loadSVG, svgIcon.setAntiAlias, svgIcon.setSvgURI"}},
+    {"source": "method_SVGImage_Panel_getBinDir", "target": "method_SVGImage_Panel_getBinDir", "type": "calls", "weight": 0.8, "properties": {"detail": "new File(element.jGetProjectPath()).getParentFile().getPath()"}}
+  ]
+}

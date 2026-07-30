@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "config:config.txt",
+      "type": "config",
+      "name": "SubVM Captions Config",
+      "filePath": "config.txt",
+      "summary": "Multi-language caption definitions (DE, EN, ES) for the SubVM element, mapping display names across three locales.",
+      "tags": ["config", "captions", "localization", "subvm", "i18n"],
+      "complexity": "simple",
+      "languageNotes": "3 lines of plain text key=value pairs"
+    },
+    {
+      "id": "document:start.html",
+      "type": "document",
+      "name": "Element Help Page",
+      "filePath": "start.html",
+      "summary": "HTML help page for the Ellipse element, displaying placeholder text in German instructing users to click an element to view its help.",
+      "tags": ["documentation", "html", "help", "ellipse", "ui"],
+      "complexity": "simple",
+      "languageNotes": "13-line HTML 4.01 Transitional document with ISO-8859-1 encoding, German localization"
+    },
+    {
+      "id": "config:update.txt",
+      "type": "config",
+      "name": "Version File",
+      "filePath": "update.txt",
+      "summary": "Single-line version identifier tracking the current distribution version of the Elements library.",
+      "tags": ["config", "version", "distribution", "release"],
+      "complexity": "simple",
+      "languageNotes": "1 line containing version string '3.004'"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:config.txt",
+      "target": "document:start.html",
+      "type": "related",
+      "weight": 0.5,
+      "description": "Both files describe the same element family — config.txt defines captions while start.html provides the help page."
+    },
+    {
+      "source": "config:update.txt",
+      "target": "config:config.txt",
+      "type": "related",
+      "weight": 0.5,
+      "description": "Both are configuration artifacts in the Elements distribution root, tracking version and element metadata respectively."
+    },
+    {
+      "source": "config:update.txt",
+      "target": "document:start.html",
+      "type": "related",
+      "weight": 0.5,
+      "description": "Distribution artifacts co-located in the Elements project root, version file and documentation for the element library."
+    }
+  ]
+}

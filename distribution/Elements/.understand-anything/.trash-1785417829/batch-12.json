@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "id": "file:CircuitElements/VectorenMatrix/Matrix/DialogNew.java",
+      "type": "file",
+      "name": "DialogNew.java",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/DialogNew.java",
+      "summary": "Dialog for creating new matrix",
+      "tags": [
+        "dialog",
+        "matrix",
+        "ui"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "type": "file",
+      "name": "MatrixNXM.java",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "summary": "NxM matrix operations element",
+      "tags": [
+        "matrix",
+        "operations"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:CircuitElements/VectorenMatrix/Matrix_NXM/src/MyTableEditor/MyTableEditor.java",
+      "type": "file",
+      "name": "MyTableEditor.java",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix_NXM/src/MyTableEditor/MyTableEditor.java",
+      "summary": "Table editor for matrix values",
+      "tags": [
+        "editor",
+        "table",
+        "matrix"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

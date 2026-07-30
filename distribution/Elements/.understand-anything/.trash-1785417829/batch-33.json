@@ -1,0 +1,1362 @@
+{
+  "nodes": [
+    {
+      "id": "file:CircuitElements/VectorenMatrix/Matrix/DialogNew.java",
+      "type": "code",
+      "name": "DialogNew.java",
+      "summary": "JDialog for creating a new NxM matrix — collects column/row count from user via text fields with OK/Cancel buttons",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/DialogNew.java",
+      "tags": ["java", "dialog", "matrix", "myopenlab"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:DialogNew",
+      "type": "class",
+      "name": "DialogNew",
+      "summary": "JDialog subclass providing a modal dialog to input matrix dimensions (columns x rows) and returning result via static fields",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/DialogNew.java",
+      "tags": ["java", "class", "dialog", "jdialog"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:DialogNew.DialogNew(java.awt.Frame,boolean)",
+      "type": "method",
+      "name": "DialogNew",
+      "summary": "Constructor — initializes UI components and calls init(0,0)",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/DialogNew.java",
+      "tags": ["java", "constructor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:DialogNew.initComponents()",
+      "type": "method",
+      "name": "initComponents",
+      "summary": "Auto-generated Swing form initializer — creates labels, text fields, buttons with layout and action listeners",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/DialogNew.java",
+      "tags": ["java", "method", "swing", "ui"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:DialogNew.showMessage(String)",
+      "type": "method",
+      "name": "showMessage",
+      "summary": "Static helper to display an error message dialog via JOptionPane",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/DialogNew.java",
+      "tags": ["java", "method", "static", "utility"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:DialogNew.jButton2ActionPerformed(java.awt.event.ActionEvent)",
+      "type": "method",
+      "name": "jButton2ActionPerformed",
+      "summary": "Cancel button handler — sets result=false and disposes the dialog",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/DialogNew.java",
+      "tags": ["java", "method", "event-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:DialogNew.jButton1ActionPerformed(java.awt.event.ActionEvent)",
+      "type": "method",
+      "name": "jButton1ActionPerformed",
+      "summary": "OK button handler — parses column/row values from text fields, validates as integers, sets result=true and disposes",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/DialogNew.java",
+      "tags": ["java", "method", "event-handler", "validation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:DialogNew.init(int,int)",
+      "type": "method",
+      "name": "init",
+      "summary": "Initializes text fields with given column and row values",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/DialogNew.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "type": "code",
+      "name": "MatrixNXM.java",
+      "summary": "MyOpenLab visual element representing an NxM double matrix with a property editor that opens MyTableEditor for inline editing",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "tags": ["java", "element", "matrix", "myopenlab"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:MatrixNXM",
+      "type": "class",
+      "name": "MatrixNXM",
+      "summary": "JVSMain subclass implementing a visual circuit element for NxM double matrix with init, paint, load/save, and property editing via MyTableEditor",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "tags": ["java", "class", "jvsmain", "element"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "method:MatrixNXM.onDispose()",
+      "type": "method",
+      "name": "onDispose",
+      "summary": "Flushes and nullifies the cached image resource",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MatrixNXM.paint(java.awt.Graphics)",
+      "type": "method",
+      "name": "paint",
+      "summary": "Draws element image centered on the graphics context",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "tags": ["java", "method", "paint"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MatrixNXM.init()",
+      "type": "method",
+      "name": "init",
+      "summary": "Initializes pins (0 in, 1 out), loads icon, sets name/caption and non-resizable size",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "tags": ["java", "method", "init"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MatrixNXM.xOnInit()",
+      "type": "method",
+      "name": "xOnInit",
+      "summary": "Post-init hook (empty override)",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MatrixNXM.initInputPins()",
+      "type": "method",
+      "name": "initInputPins",
+      "summary": "Input pin initialization (empty — no inputs)",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MatrixNXM.initOutputPins()",
+      "type": "method",
+      "name": "initOutputPins",
+      "summary": "Sets up output pin reference with a VS2DDouble copy of the matrix data",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MatrixNXM.setPropertyEditor()",
+      "type": "method",
+      "name": "setPropertyEditor",
+      "summary": "Registers property editor items including 'Values' and calls localize for translations",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "tags": ["java", "method", "property-editor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MatrixNXM.localize()",
+      "type": "method",
+      "name": "localize",
+      "summary": "Private helper to set locale-specific captions for property editor items (en_US, es_ES)",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "tags": ["java", "method", "i18n"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MatrixNXM.propertyChanged(Object)",
+      "type": "method",
+      "name": "propertyChanged",
+      "summary": "Responds to property changes — opens MyTableEditor dialog to let user edit matrix values, updates matrix data on OK",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "tags": ["java", "method", "property-listener"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "method:MatrixNXM.start()",
+      "type": "method",
+      "name": "start",
+      "summary": "Element start — notifies output pin",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MatrixNXM.process()",
+      "type": "method",
+      "name": "process",
+      "summary": "Process cycle (empty — no runtime logic)",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MatrixNXM.loadFromStream(java.io.FileInputStream)",
+      "type": "method",
+      "name": "loadFromStream",
+      "summary": "Restores matrix data from an input stream",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "tags": ["java", "method", "serialization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MatrixNXM.saveToStream(java.io.FileOutputStream)",
+      "type": "method",
+      "name": "saveToStream",
+      "summary": "Persists matrix data to an output stream",
+      "filePath": "CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "tags": ["java", "method", "serialization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "type": "code",
+      "name": "MyTableEditor.java",
+      "summary": "JDialog-based table editor for integer matrix data with column/row labels, New matrix menu, and static main method for standalone testing",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "dialog", "table-editor", "matrix", "myopenlab"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:IntegerModel",
+      "type": "class",
+      "name": "IntegerModel",
+      "summary": "Inner class extending DefaultTableModel — overrides getColumnClass to return Integer.class",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "class", "table-model"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:IntegerModel.getColumnClass(int)",
+      "type": "method",
+      "name": "getColumnClass",
+      "summary": "Returns Integer.class for all columns, enabling proper cell rendering",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "method", "table-model"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:MyTableEditor",
+      "type": "class",
+      "name": "MyTableEditor",
+      "summary": "JDialog subclass providing a full table editor for integer matrices with menu, OK/Cancel, and data import/export",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "class", "dialog", "table-editor"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "method:MyTableEditor.MyTableEditor(java.awt.Frame,boolean)",
+      "type": "method",
+      "name": "MyTableEditor",
+      "summary": "Constructor — initializes UI and sets the IntegerModel on the table",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "constructor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MyTableEditor.clearTable(DefaultTableModel)",
+      "type": "method",
+      "name": "clearTable",
+      "summary": "Private helper that clears all columns and rows from the given table model",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MyTableEditor.setInputs(int[][],int,int)",
+      "type": "method",
+      "name": "setInputs",
+      "summary": "Populates the table with a 2D int array using given column and row counts",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "method"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "method:MyTableEditor.setInputColumns(String)",
+      "type": "method",
+      "name": "setInputColumns",
+      "summary": "Sets column headers from a comma-separated string",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MyTableEditor.getInputColumns()",
+      "type": "method",
+      "name": "getInputColumns",
+      "summary": "Returns column headers as a comma-separated string",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MyTableEditor.getData(DefaultTableModel)",
+      "type": "method",
+      "name": "getData",
+      "summary": "Private method that extracts a 2D int array from the table model columns and rows",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "method"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "method:MyTableEditor.getInputs()",
+      "type": "method",
+      "name": "getInputs",
+      "summary": "Public accessor that returns the table data as a 2D int array via getData",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MyTableEditor.initComponents()",
+      "type": "method",
+      "name": "initComponents",
+      "summary": "Auto-generated Swing form initializer — lays out panel, buttons, scrollable table, menu bar, and menu items with action listeners",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "method", "swing", "ui"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "method:MyTableEditor.jmiNewActionPerformed(java.awt.event.ActionEvent)",
+      "type": "method",
+      "name": "jmiNewActionPerformed",
+      "summary": "Handler for 'New' menu item — opens DialogNew to get dimensions, creates a zero-filled matrix, and populates the table",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "method", "event-handler"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "method:MyTableEditor.jButton1ActionPerformed(java.awt.event.ActionEvent)",
+      "type": "method",
+      "name": "jButton1ActionPerformed",
+      "summary": "OK button handler — saves current inputs to static fields and disposes",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "method", "event-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MyTableEditor.jButton2ActionPerformed(java.awt.event.ActionEvent)",
+      "type": "method",
+      "name": "jButton2ActionPerformed",
+      "summary": "Cancel button handler — sets result=false and disposes",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "method", "event-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:MyTableEditor.main(String[])",
+      "type": "method",
+      "name": "main",
+      "summary": "Standalone test entry point — creates and displays MyTableEditor with a sample 3x3 integer matrix",
+      "filePath": "CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "tags": ["java", "method", "main", "test"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "type": "code",
+      "name": "Taster.java",
+      "summary": "MyOpenLab front element — a 2-position numeric switch that outputs an integer value via its pin",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "tags": ["java", "element", "switch", "front-panel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Taster",
+      "type": "class",
+      "name": "Taster",
+      "summary": "JVSMain subclass implementing a numeric switch element with an integer output pin responding to external pin changes",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "tags": ["java", "class", "jvsmain", "switch"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:Taster.onDispose()",
+      "type": "method",
+      "name": "onDispose",
+      "summary": "Flushes and nullifies the cached image resource",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:Taster.paint(java.awt.Graphics)",
+      "type": "method",
+      "name": "paint",
+      "summary": "Draws switch icon image centered on the element",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "tags": ["java", "method", "paint"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:Taster.Taster()",
+      "type": "method",
+      "name": "Taster",
+      "summary": "Default constructor",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "tags": ["java", "constructor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:Taster.init()",
+      "type": "method",
+      "name": "init",
+      "summary": "Initializes pins (0 in, 1 out), loads icon, sets data type to C_INTEGER, sets name 'Switcher2'",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "tags": ["java", "method", "init"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:Taster.changePin(int,Object)",
+      "type": "method",
+      "name": "changePin",
+      "summary": "Receives an input pin change, extracts integer value, sets output and notifies",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "tags": ["java", "method", "pin-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:Taster.initInputPins()",
+      "type": "method",
+      "name": "initInputPins",
+      "summary": "Input pin initialization (empty)",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:Taster.initOutputPins()",
+      "type": "method",
+      "name": "initOutputPins",
+      "summary": "Sets output pin reference to the VSInteger value holder",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:Taster.process()",
+      "type": "method",
+      "name": "process",
+      "summary": "Process cycle (empty)",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "type": "code",
+      "name": "TasterPanel.java",
+      "summary": "MyOpenLab front panel element — multi-position numeric switch with configurable positions, colors, fonts, captions, and persistence",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": ["java", "element", "switch", "front-panel", "multi-switch"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:TasterPanel",
+      "type": "class",
+      "name": "TasterPanel",
+      "summary": "JVSMain subclass implementing a multi-position numeric switch with property editor for font, color, switch count, captions, and init value; supports load/save persistence",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": ["java", "class", "jvsmain", "switch", "multi-switch"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "method:TasterPanel.init()",
+      "type": "method",
+      "name": "init",
+      "summary": "Initializes element with no pins, sets size, creates MultiSwitch and its descriptions",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": ["java", "method", "init"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:TasterPanel.formMousePressed(java.awt.event.MouseEvent)",
+      "type": "method",
+      "name": "formMousePressed",
+      "summary": "Private handler — cycles switch status, sets value, and notifies circuit element of change",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": ["java", "method", "event-handler"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:TasterPanel.xOnInit()",
+      "type": "method",
+      "name": "xOnInit",
+      "summary": "Post-init hook — adds the MultiSwitch component to the front panel and attaches mouse listener",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": ["java", "method", "ui"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:TasterPanel.initInputPins()",
+      "type": "method",
+      "name": "initInputPins",
+      "summary": "Input pin initialization (empty)",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:TasterPanel.initOutputPins()",
+      "type": "method",
+      "name": "initOutputPins",
+      "summary": "Output pin initialization (empty)",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:TasterPanel.start()",
+      "type": "method",
+      "name": "start",
+      "summary": "Element start — sets value from initValue, repaints, retrieves circuit element and sends initial change",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": ["java", "method", "start"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:TasterPanel.setPropertyEditor()",
+      "type": "method",
+      "name": "setPropertyEditor",
+      "summary": "Registers property editor items for font, font color, switch count, captions, init value; calls localize",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": ["java", "method", "property-editor"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:TasterPanel.localize()",
+      "type": "method",
+      "name": "localize",
+      "summary": "Private i18n helper — sets en_US and es_ES locale captions for property editor items",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": ["java", "method", "i18n"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:TasterPanel.getTextWithN()",
+      "type": "method",
+      "name": "getTextWithN",
+      "summary": "Private helper — joins values array into a single string separated by newlines",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:TasterPanel.getTextWithKomma()",
+      "type": "method",
+      "name": "getTextWithKomma",
+      "summary": "Joins values array into a comma-separated string",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": ["java", "method"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:TasterPanel.propertyChanged(Object)",
+      "type": "method",
+      "name": "propertyChanged",
+      "summary": "Responds to property changes — updates switch positions, handles captions editor via Properties dialog, regenerates switch sub-elements",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": ["java", "method", "property-listener"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "method:TasterPanel.loadFromStream(java.io.FileInputStream)",
+      "type": "method",
+      "name": "loadFromStream",
+      "summary": "Restores all configurable fields (initValue, anzahlStellungen, fontColor, font, values) from stream and recreates captions",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": ["java", "method", "serialization"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "method:TasterPanel.saveToStream(java.io.FileOutputStream)",
+      "type": "method",
+      "name": "saveToStream",
+      "summary": "Persists all configurable fields to an output stream",
+      "filePath": "FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "tags": ["java", "method", "serialization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/1DReverse/src/Element.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/1DReverse/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/1DReverse/src/Element.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/1DSort/src/Element.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/1DSort/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/1DSort/src/Element.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/1DStringTo1DInt/src/Element.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/1DStringTo1DInt/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/1DStringTo1DInt/src/Element.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/1DSum/src/Element.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/1DSum/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/1DSum/src/Element.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/1DToMatrix/src/Element.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/1DToMatrix/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/1DToMatrix/src/Element.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/2DConstString/src/StrConst2D.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/2DConstString/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/2DConstString/src/StrConst2D.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/2DCreate/src/Element.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/2DCreate/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/2DCreate/src/Element.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/2DValue/src/Element.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/2DValue/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/2DValue/src/Element.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/ConstString2D/src/StrConst2D.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/ConstString2D/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/ConstString2D/src/StrConst2D.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/Copy2D/src/Copy2D.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/Copy2D/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/Copy2D/src/Copy2D.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/MatrixCols/src/Element.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/MatrixCols/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/MatrixCols/src/Element.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/MatrixRows/src/Element.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/MatrixRows/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/MatrixRows/src/Element.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/MatrixTiledView/src/FrameMain.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/MatrixTiledView/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/MatrixTiledView/src/FrameMain.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/MatrixTiledView/src/MatrixModel.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/MatrixTiledView/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/MatrixTiledView/src/MatrixModel.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/MatrixTiledView/src/MatrixRenderer.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/MatrixTiledView/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/MatrixTiledView/src/MatrixRenderer.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/MatrixTo1D/src/Element.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/MatrixTo1D/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/MatrixTo1D/src/Element.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/MatrixTranspose/src/Element.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/MatrixTranspose/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/MatrixTranspose/src/Element.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:CircuitElements/VectorenMatrix/MatrixValue/src/Element.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory CircuitElements/VectorenMatrix/MatrixValue/ does not exist",
+      "filePath": "CircuitElements/VectorenMatrix/MatrixValue/src/Element.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:FrontElements/Input/DigitalJoystick_JV/src/Joystick.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory FrontElements/Input/DigitalJoystick_JV/ does not exist",
+      "filePath": "FrontElements/Input/DigitalJoystick_JV/src/Joystick.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    },
+    {
+      "id": "error:FrontElements/Input/DigitalJoystick_JV/src/JoystickPanel.java",
+      "type": "error",
+      "name": "NOT_FOUND",
+      "summary": "File not found on disk — directory FrontElements/Input/DigitalJoystick_JV/ does not exist",
+      "filePath": "FrontElements/Input/DigitalJoystick_JV/src/JoystickPanel.java",
+      "tags": ["error", "missing"],
+      "complexity": "unknown"
+    }
+  ],
+  "edges": [
+    {
+      "sourceId": "file:CircuitElements/VectorenMatrix/Matrix/DialogNew.java",
+      "targetId": "class:DialogNew",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:DialogNew",
+      "targetId": "javax.swing.JDialog",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "sourceId": "class:DialogNew",
+      "targetId": "method:DialogNew.DialogNew(java.awt.Frame,boolean)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:DialogNew",
+      "targetId": "method:DialogNew.initComponents()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:DialogNew",
+      "targetId": "method:DialogNew.showMessage(String)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:DialogNew",
+      "targetId": "method:DialogNew.jButton2ActionPerformed(java.awt.event.ActionEvent)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:DialogNew",
+      "targetId": "method:DialogNew.jButton1ActionPerformed(java.awt.event.ActionEvent)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:DialogNew",
+      "targetId": "method:DialogNew.init(int,int)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "file:CircuitElements/VectorenMatrix/Matrix/DialogNew.java",
+      "targetId": "javax.swing.JOptionPane",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "method:DialogNew.jButton1ActionPerformed(java.awt.event.ActionEvent)",
+      "targetId": "method:DialogNew.showMessage(String)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "sourceId": "file:CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "targetId": "class:MatrixNXM",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MatrixNXM",
+      "targetId": "tools.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "sourceId": "class:MatrixNXM",
+      "targetId": "method:MatrixNXM.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MatrixNXM",
+      "targetId": "method:MatrixNXM.paint(java.awt.Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MatrixNXM",
+      "targetId": "method:MatrixNXM.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MatrixNXM",
+      "targetId": "method:MatrixNXM.xOnInit()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MatrixNXM",
+      "targetId": "method:MatrixNXM.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MatrixNXM",
+      "targetId": "method:MatrixNXM.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MatrixNXM",
+      "targetId": "method:MatrixNXM.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MatrixNXM",
+      "targetId": "method:MatrixNXM.localize()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MatrixNXM",
+      "targetId": "method:MatrixNXM.propertyChanged(Object)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MatrixNXM",
+      "targetId": "method:MatrixNXM.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MatrixNXM",
+      "targetId": "method:MatrixNXM.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MatrixNXM",
+      "targetId": "method:MatrixNXM.loadFromStream(java.io.FileInputStream)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MatrixNXM",
+      "targetId": "method:MatrixNXM.saveToStream(java.io.FileOutputStream)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "file:CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "targetId": "VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "targetId": "VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "targetId": "tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "targetId": "java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "targetId": "java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:CircuitElements/VectorenMatrix/Matrix/MatrixNXM.java",
+      "targetId": "javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "method:MatrixNXM.propertyChanged(Object)",
+      "targetId": "class:MyTableEditor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "sourceId": "file:CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "targetId": "class:IntegerModel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:IntegerModel",
+      "targetId": "method:IntegerModel.getColumnClass(int)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:IntegerModel",
+      "targetId": "javax.swing.table.DefaultTableModel",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "sourceId": "file:CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "targetId": "class:MyTableEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MyTableEditor",
+      "targetId": "javax.swing.JDialog",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "sourceId": "class:MyTableEditor",
+      "targetId": "method:MyTableEditor.MyTableEditor(java.awt.Frame,boolean)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MyTableEditor",
+      "targetId": "method:MyTableEditor.clearTable(DefaultTableModel)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MyTableEditor",
+      "targetId": "method:MyTableEditor.setInputs(int[][],int,int)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MyTableEditor",
+      "targetId": "method:MyTableEditor.setInputColumns(String)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MyTableEditor",
+      "targetId": "method:MyTableEditor.getInputColumns()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MyTableEditor",
+      "targetId": "method:MyTableEditor.getData(DefaultTableModel)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MyTableEditor",
+      "targetId": "method:MyTableEditor.getInputs()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MyTableEditor",
+      "targetId": "method:MyTableEditor.initComponents()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MyTableEditor",
+      "targetId": "method:MyTableEditor.jmiNewActionPerformed(java.awt.event.ActionEvent)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MyTableEditor",
+      "targetId": "method:MyTableEditor.jButton1ActionPerformed(java.awt.event.ActionEvent)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MyTableEditor",
+      "targetId": "method:MyTableEditor.jButton2ActionPerformed(java.awt.event.ActionEvent)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:MyTableEditor",
+      "targetId": "method:MyTableEditor.main(String[])",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "file:CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "targetId": "javax.swing.JOptionPane",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:CircuitElements/VectorenMatrix/StringMatrix/src/MyTableEditor/src/MyTableEditor.java",
+      "targetId": "javax.swing.table.DefaultTableModel",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "method:MyTableEditor.setInputs(int[][],int,int)",
+      "targetId": "method:MyTableEditor.clearTable(DefaultTableModel)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "sourceId": "method:MyTableEditor.getInputs()",
+      "targetId": "method:MyTableEditor.getData(DefaultTableModel)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "sourceId": "method:MyTableEditor.jmiNewActionPerformed(java.awt.event.ActionEvent)",
+      "targetId": "class:DialogNew",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "sourceId": "method:MyTableEditor.jmiNewActionPerformed(java.awt.event.ActionEvent)",
+      "targetId": "method:MyTableEditor.setInputs(int[][],int,int)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "sourceId": "method:MyTableEditor.jButton1ActionPerformed(java.awt.event.ActionEvent)",
+      "targetId": "method:MyTableEditor.getInputs()",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "sourceId": "method:MyTableEditor.main(String[])",
+      "targetId": "method:MyTableEditor.MyTableEditor(java.awt.Frame,boolean)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "sourceId": "method:MyTableEditor.main(String[])",
+      "targetId": "method:MyTableEditor.setInputs(int[][],int,int)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "sourceId": "method:MyTableEditor.main(String[])",
+      "targetId": "method:MyTableEditor.getInputs()",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "sourceId": "file:FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "targetId": "class:Taster",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:Taster",
+      "targetId": "tools.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "sourceId": "class:Taster",
+      "targetId": "method:Taster.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:Taster",
+      "targetId": "method:Taster.paint(java.awt.Graphics)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:Taster",
+      "targetId": "method:Taster.Taster()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:Taster",
+      "targetId": "method:Taster.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:Taster",
+      "targetId": "method:Taster.changePin(int,Object)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:Taster",
+      "targetId": "method:Taster.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:Taster",
+      "targetId": "method:Taster.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:Taster",
+      "targetId": "method:Taster.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "file:FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "targetId": "VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "targetId": "VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "targetId": "java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "targetId": "java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:FrontElements/2Numerisch/Switch2/src/Taster.java",
+      "targetId": "tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "targetId": "class:TasterPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:TasterPanel",
+      "targetId": "tools.JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "sourceId": "class:TasterPanel",
+      "targetId": "method:TasterPanel.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:TasterPanel",
+      "targetId": "method:TasterPanel.formMousePressed(java.awt.event.MouseEvent)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:TasterPanel",
+      "targetId": "method:TasterPanel.xOnInit()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:TasterPanel",
+      "targetId": "method:TasterPanel.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:TasterPanel",
+      "targetId": "method:TasterPanel.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:TasterPanel",
+      "targetId": "method:TasterPanel.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:TasterPanel",
+      "targetId": "method:TasterPanel.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:TasterPanel",
+      "targetId": "method:TasterPanel.localize()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:TasterPanel",
+      "targetId": "method:TasterPanel.getTextWithN()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:TasterPanel",
+      "targetId": "method:TasterPanel.getTextWithKomma()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:TasterPanel",
+      "targetId": "method:TasterPanel.propertyChanged(Object)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:TasterPanel",
+      "targetId": "method:TasterPanel.loadFromStream(java.io.FileInputStream)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "class:TasterPanel",
+      "targetId": "method:TasterPanel.saveToStream(java.io.FileOutputStream)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "sourceId": "file:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "targetId": "VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "targetId": "VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "targetId": "javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "targetId": "java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "targetId": "java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "targetId": "tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "targetId": "java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "file:FrontElements/2Numerisch/Switch2/src/TasterPanel.java",
+      "targetId": "java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "sourceId": "method:TasterPanel.propertyChanged(Object)",
+      "targetId": "tools.Properties",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "sourceId": "method:TasterPanel.propertyChanged(Object)",
+      "targetId": "method:TasterPanel.getTextWithN()",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "sourceId": "method:TasterPanel.propertyChanged(Object)",
+      "targetId": "method:TasterPanel.getTextWithKomma()",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,3044 @@
+{
+  "batch": 15,
+  "description": "FrontElements Valves, Boolean elements, Dekoratoren",
+  "files": {
+    "found": [
+      "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java",
+      "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java",
+      "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java",
+      "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java",
+      "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java",
+      "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java",
+      "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java",
+      "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java",
+      "FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java",
+      "FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+      "FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+      "FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+      "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+      "FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+      "FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "FrontElements/2Dekoratoren/Label/src/XLabel.java"
+    ],
+    "not_found": [
+      "FrontElements/2Boolean/Schliesser_JV/src/GaugeCircuit.java",
+      "FrontElements/2Boolean/Schliesser_JV/src/GaugePanel.java",
+      "FrontElements/2Boolean/Taster_JV/src/GaugeCircuit.java",
+      "FrontElements/2Boolean/Taster_JV/src/GaugePanel.java",
+      "FrontElements/2Boolean/Wechsler_JV/src/GaugeCircuit.java",
+      "FrontElements/2Boolean/Wechsler_JV/src/GaugePanel.java",
+      "FrontElements/2Boolean/XButton/src/Button.java",
+      "FrontElements/2Boolean/XButton/src/ButtonPanel.java"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java",
+      "type": "file",
+      "name": "LED.java",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java",
+      "language": "java"
+    },
+    {
+      "id": "class:Down_Valve_JV.LED",
+      "type": "class",
+      "name": "LED",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LED.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LED.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LED.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LED.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LED.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LED.start",
+      "type": "function",
+      "name": "start",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LED.process",
+      "type": "function",
+      "name": "process",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java",
+      "type": "file",
+      "name": "LEDPanel.java",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java",
+      "language": "java"
+    },
+    {
+      "id": "class:Down_Valve_JV.LEDPanel",
+      "type": "class",
+      "name": "LEDPanel",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LEDPanel.setOn",
+      "type": "function",
+      "name": "setOn",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LEDPanel.processPanel",
+      "type": "function",
+      "name": "processPanel",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LEDPanel.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LEDPanel.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LEDPanel.start",
+      "type": "function",
+      "name": "start",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LEDPanel.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LEDPanel.localize",
+      "type": "function",
+      "name": "localize",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LEDPanel.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LEDPanel.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Down_Valve_JV.LEDPanel.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "filePath": "FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java",
+      "type": "file",
+      "name": "LED.java",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java",
+      "language": "java"
+    },
+    {
+      "id": "class:Left_Valve_JV.LED",
+      "type": "class",
+      "name": "LED",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LED.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LED.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LED.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LED.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LED.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LED.start",
+      "type": "function",
+      "name": "start",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LED.process",
+      "type": "function",
+      "name": "process",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java",
+      "type": "file",
+      "name": "LEDPanel.java",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java",
+      "language": "java"
+    },
+    {
+      "id": "class:Left_Valve_JV.LEDPanel",
+      "type": "class",
+      "name": "LEDPanel",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LEDPanel.setOn",
+      "type": "function",
+      "name": "setOn",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LEDPanel.processPanel",
+      "type": "function",
+      "name": "processPanel",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LEDPanel.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LEDPanel.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LEDPanel.start",
+      "type": "function",
+      "name": "start",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LEDPanel.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LEDPanel.localize",
+      "type": "function",
+      "name": "localize",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LEDPanel.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LEDPanel.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Left_Valve_JV.LEDPanel.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "filePath": "FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java",
+      "type": "file",
+      "name": "LED.java",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java",
+      "language": "java"
+    },
+    {
+      "id": "class:Right_Valve_JV.LED",
+      "type": "class",
+      "name": "LED",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LED.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LED.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LED.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LED.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LED.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LED.start",
+      "type": "function",
+      "name": "start",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LED.process",
+      "type": "function",
+      "name": "process",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java",
+      "type": "file",
+      "name": "LEDPanel.java",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java",
+      "language": "java"
+    },
+    {
+      "id": "class:Right_Valve_JV.LEDPanel",
+      "type": "class",
+      "name": "LEDPanel",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LEDPanel.setOn",
+      "type": "function",
+      "name": "setOn",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LEDPanel.processPanel",
+      "type": "function",
+      "name": "processPanel",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LEDPanel.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LEDPanel.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LEDPanel.start",
+      "type": "function",
+      "name": "start",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LEDPanel.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LEDPanel.localize",
+      "type": "function",
+      "name": "localize",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LEDPanel.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LEDPanel.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Right_Valve_JV.LEDPanel.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "filePath": "FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java",
+      "type": "file",
+      "name": "LED.java",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java",
+      "language": "java"
+    },
+    {
+      "id": "class:Up_Valve_JV.LED",
+      "type": "class",
+      "name": "LED",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LED.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LED.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LED.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LED.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LED.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LED.start",
+      "type": "function",
+      "name": "start",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LED.process",
+      "type": "function",
+      "name": "process",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java"
+    },
+    {
+      "id": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java",
+      "type": "file",
+      "name": "LEDPanel.java",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java",
+      "language": "java"
+    },
+    {
+      "id": "class:Up_Valve_JV.LEDPanel",
+      "type": "class",
+      "name": "LEDPanel",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LEDPanel.setOn",
+      "type": "function",
+      "name": "setOn",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LEDPanel.processPanel",
+      "type": "function",
+      "name": "processPanel",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LEDPanel.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LEDPanel.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LEDPanel.start",
+      "type": "function",
+      "name": "start",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LEDPanel.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LEDPanel.localize",
+      "type": "function",
+      "name": "localize",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LEDPanel.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LEDPanel.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "function:Up_Valve_JV.LEDPanel.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "filePath": "FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java"
+    },
+    {
+      "id": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java",
+      "type": "file",
+      "name": "GaugeCircuit.java",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java",
+      "language": "java"
+    },
+    {
+      "id": "class:LigthBulb_JV.GaugeCircuit",
+      "type": "class",
+      "name": "GaugeCircuit",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugeCircuit.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugeCircuit.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugeCircuit.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugeCircuit.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugeCircuit.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugeCircuit.checkPinDataType",
+      "type": "function",
+      "name": "checkPinDataType",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugeCircuit.start",
+      "type": "function",
+      "name": "start",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugeCircuit.process",
+      "type": "function",
+      "name": "process",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java"
+    },
+    {
+      "id": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+      "type": "file",
+      "name": "GaugePanel.java",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+      "language": "java"
+    },
+    {
+      "id": "class:LigthBulb_JV.GaugePanel",
+      "type": "class",
+      "name": "GaugePanel",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugePanel.processPanel",
+      "type": "function",
+      "name": "processPanel",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugePanel.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugePanel.GaugeSet",
+      "type": "function",
+      "name": "GaugeSet",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugePanel.start",
+      "type": "function",
+      "name": "start",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugePanel.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugePanel.xOnInit",
+      "type": "function",
+      "name": "xOnInit",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugePanel.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugePanel.localize",
+      "type": "function",
+      "name": "localize",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugePanel.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugePanel.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java"
+    },
+    {
+      "id": "function:LigthBulb_JV.GaugePanel.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "filePath": "FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java"
+    },
+    {
+      "id": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+      "type": "file",
+      "name": "SchalterPanel.java",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+      "language": "java"
+    },
+    {
+      "id": "class:SchiebeSchalter.SchalterPanel",
+      "type": "class",
+      "name": "SchalterPanel",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchalterPanel.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchalterPanel.setValue",
+      "type": "function",
+      "name": "setValue",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchalterPanel.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchalterPanel.start",
+      "type": "function",
+      "name": "start",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchalterPanel.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchalterPanel.localize",
+      "type": "function",
+      "name": "localize",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchalterPanel.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchalterPanel.mousePressed",
+      "type": "function",
+      "name": "mousePressed",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchalterPanel.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchalterPanel.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java"
+    },
+    {
+      "id": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+      "type": "file",
+      "name": "SchiebeSchalter.java",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+      "language": "java"
+    },
+    {
+      "id": "class:SchiebeSchalter.SchiebeSchalter",
+      "type": "class",
+      "name": "SchiebeSchalter",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchiebeSchalter.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchiebeSchalter.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchiebeSchalter.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchiebeSchalter.changePin",
+      "type": "function",
+      "name": "changePin",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchiebeSchalter.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchiebeSchalter.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "function:SchiebeSchalter.SchiebeSchalter.process",
+      "type": "function",
+      "name": "process",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+      "type": "file",
+      "name": "SchalterPanel.java",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+      "language": "java"
+    },
+    {
+      "id": "class:SchiebeSchalter2.SchalterPanel",
+      "type": "class",
+      "name": "SchalterPanel",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java"
+    },
+    {
+      "id": "class:SchiebeSchalter2.ImageLoader",
+      "type": "class",
+      "name": "ImageLoader",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.ImageLoader.ImageLoader",
+      "type": "function",
+      "name": "ImageLoader",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.ImageLoader.loadImage",
+      "type": "function",
+      "name": "loadImage",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchalterPanel.loadImage",
+      "type": "function",
+      "name": "loadImage",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchalterPanel.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchalterPanel.setValue",
+      "type": "function",
+      "name": "setValue",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchalterPanel.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchalterPanel.start",
+      "type": "function",
+      "name": "start",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchalterPanel.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchalterPanel.localize",
+      "type": "function",
+      "name": "localize",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchalterPanel.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchalterPanel.mousePressed",
+      "type": "function",
+      "name": "mousePressed",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchalterPanel.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchalterPanel.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java"
+    },
+    {
+      "id": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+      "type": "file",
+      "name": "SchiebeSchalter.java",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+      "language": "java"
+    },
+    {
+      "id": "class:SchiebeSchalter2.SchiebeSchalter",
+      "type": "class",
+      "name": "SchiebeSchalter",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchiebeSchalter.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchiebeSchalter.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchiebeSchalter.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchiebeSchalter.changePin",
+      "type": "function",
+      "name": "changePin",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchiebeSchalter.initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchiebeSchalter.initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "function:SchiebeSchalter2.SchiebeSchalter.process",
+      "type": "function",
+      "name": "process",
+      "filePath": "FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java"
+    },
+    {
+      "id": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "type": "file",
+      "name": "Ellipse.java",
+      "filePath": "FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "language": "java"
+    },
+    {
+      "id": "class:Ellipse.Ellipse",
+      "type": "class",
+      "name": "Ellipse",
+      "filePath": "FrontElements/2Dekoratoren/ellipse/src/Ellipse.java"
+    },
+    {
+      "id": "function:Ellipse.Ellipse.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Dekoratoren/ellipse/src/Ellipse.java"
+    },
+    {
+      "id": "function:Ellipse.Ellipse.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Dekoratoren/ellipse/src/Ellipse.java"
+    },
+    {
+      "id": "function:Ellipse.Ellipse.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "filePath": "FrontElements/2Dekoratoren/ellipse/src/Ellipse.java"
+    },
+    {
+      "id": "function:Ellipse.Ellipse.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "filePath": "FrontElements/2Dekoratoren/ellipse/src/Ellipse.java"
+    },
+    {
+      "id": "function:Ellipse.Ellipse.localize",
+      "type": "function",
+      "name": "localize",
+      "filePath": "FrontElements/2Dekoratoren/ellipse/src/Ellipse.java"
+    },
+    {
+      "id": "function:Ellipse.Ellipse.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "filePath": "FrontElements/2Dekoratoren/ellipse/src/Ellipse.java"
+    },
+    {
+      "id": "function:Ellipse.Ellipse.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "filePath": "FrontElements/2Dekoratoren/ellipse/src/Ellipse.java"
+    },
+    {
+      "id": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "type": "file",
+      "name": "XImage.java",
+      "filePath": "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "language": "java"
+    },
+    {
+      "id": "class:XImage.XImage",
+      "type": "class",
+      "name": "XImage",
+      "filePath": "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java"
+    },
+    {
+      "id": "function:XImage.XImage.drawTiled",
+      "type": "function",
+      "name": "drawTiled",
+      "filePath": "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java"
+    },
+    {
+      "id": "function:XImage.XImage.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java"
+    },
+    {
+      "id": "function:XImage.XImage.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java"
+    },
+    {
+      "id": "function:XImage.XImage.xOnInit",
+      "type": "function",
+      "name": "xOnInit",
+      "filePath": "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java"
+    },
+    {
+      "id": "function:XImage.XImage.openPropertyDialog",
+      "type": "function",
+      "name": "openPropertyDialog",
+      "filePath": "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java"
+    },
+    {
+      "id": "function:XImage.XImage.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "filePath": "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java"
+    },
+    {
+      "id": "function:XImage.XImage.processAspect",
+      "type": "function",
+      "name": "processAspect",
+      "filePath": "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java"
+    },
+    {
+      "id": "function:XImage.XImage.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "filePath": "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java"
+    },
+    {
+      "id": "function:XImage.XImage.localize",
+      "type": "function",
+      "name": "localize",
+      "filePath": "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java"
+    },
+    {
+      "id": "function:XImage.XImage.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "filePath": "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java"
+    },
+    {
+      "id": "function:XImage.XImage.onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "filePath": "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java"
+    },
+    {
+      "id": "function:XImage.XImage.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "filePath": "FrontElements/2Dekoratoren/Image_2_0/src/XImage.java"
+    },
+    {
+      "id": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+      "type": "file",
+      "name": "XLabel.java",
+      "filePath": "FrontElements/2Dekoratoren/Label/src/XLabel.java",
+      "language": "java"
+    },
+    {
+      "id": "class:XLabel.XLabel",
+      "type": "class",
+      "name": "XLabel",
+      "filePath": "FrontElements/2Dekoratoren/Label/src/XLabel.java"
+    },
+    {
+      "id": "function:XLabel.XLabel.XLabel",
+      "type": "function",
+      "name": "XLabel",
+      "filePath": "FrontElements/2Dekoratoren/Label/src/XLabel.java"
+    },
+    {
+      "id": "function:XLabel.XLabel.myInit",
+      "type": "function",
+      "name": "myInit",
+      "filePath": "FrontElements/2Dekoratoren/Label/src/XLabel.java"
+    },
+    {
+      "id": "function:XLabel.XLabel.paint",
+      "type": "function",
+      "name": "paint",
+      "filePath": "FrontElements/2Dekoratoren/Label/src/XLabel.java"
+    },
+    {
+      "id": "function:XLabel.XLabel.init",
+      "type": "function",
+      "name": "init",
+      "filePath": "FrontElements/2Dekoratoren/Label/src/XLabel.java"
+    },
+    {
+      "id": "function:XLabel.XLabel.xOnInit",
+      "type": "function",
+      "name": "xOnInit",
+      "filePath": "FrontElements/2Dekoratoren/Label/src/XLabel.java"
+    },
+    {
+      "id": "function:XLabel.XLabel.setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "filePath": "FrontElements/2Dekoratoren/Label/src/XLabel.java"
+    },
+    {
+      "id": "function:XLabel.XLabel.localize",
+      "type": "function",
+      "name": "localize",
+      "filePath": "FrontElements/2Dekoratoren/Label/src/XLabel.java"
+    },
+    {
+      "id": "function:XLabel.XLabel.propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "filePath": "FrontElements/2Dekoratoren/Label/src/XLabel.java"
+    },
+    {
+      "id": "function:XLabel.XLabel.loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "filePath": "FrontElements/2Dekoratoren/Label/src/XLabel.java"
+    },
+    {
+      "id": "function:XLabel.XLabel.saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "filePath": "FrontElements/2Dekoratoren/Label/src/XLabel.java"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java",
+      "target": "class:Down_Valve_JV.LED",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LED",
+      "target": "function:Down_Valve_JV.LED.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LED",
+      "target": "function:Down_Valve_JV.LED.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LED",
+      "target": "function:Down_Valve_JV.LED.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LED",
+      "target": "function:Down_Valve_JV.LED.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LED",
+      "target": "function:Down_Valve_JV.LED.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LED",
+      "target": "function:Down_Valve_JV.LED.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LED",
+      "target": "function:Down_Valve_JV.LED.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LED",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LED.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java",
+      "target": "class:Down_Valve_JV.LEDPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LEDPanel",
+      "target": "function:Down_Valve_JV.LEDPanel.setOn",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LEDPanel",
+      "target": "function:Down_Valve_JV.LEDPanel.processPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LEDPanel",
+      "target": "function:Down_Valve_JV.LEDPanel.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LEDPanel",
+      "target": "function:Down_Valve_JV.LEDPanel.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LEDPanel",
+      "target": "function:Down_Valve_JV.LEDPanel.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LEDPanel",
+      "target": "function:Down_Valve_JV.LEDPanel.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LEDPanel",
+      "target": "function:Down_Valve_JV.LEDPanel.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LEDPanel",
+      "target": "function:Down_Valve_JV.LEDPanel.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LEDPanel",
+      "target": "function:Down_Valve_JV.LEDPanel.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LEDPanel",
+      "target": "function:Down_Valve_JV.LEDPanel.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Down_Valve_JV.LEDPanel",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Down_Valve_JV.LEDPanel",
+      "target": "implement:PanelIF",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Down_Valve_JV/src/LEDPanel.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "function:Down_Valve_JV.LED.process",
+      "target": "instanceof:VSBoolean",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:Down_Valve_JV.LED.process",
+      "target": "ExternalIF.jProcessPanel",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:Down_Valve_JV.LED.process",
+      "target": "ExternalIF.jRepaint",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:Down_Valve_JV.LED.init",
+      "target": "JVSMain.initPins",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:Down_Valve_JV.LED.init",
+      "target": "ExternalIF.jSetInnerBorderVisibility",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:Down_Valve_JV.LED.init",
+      "target": "ExternalIF.jSetPinDescription",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:Down_Valve_JV.LED.init",
+      "target": "ExternalIF.jLoadImage",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:Down_Valve_JV.LED.init",
+      "target": "ExternalIF.jGetSourcePath",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:Down_Valve_JV.LED.init",
+      "target": "ExternalIF.jSetResizable",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:Down_Valve_JV.LEDPanel.start",
+      "target": "JVSMain.start",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:Down_Valve_JV.LEDPanel.paint",
+      "target": "java.awt.Graphics2D",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:Down_Valve_JV.LEDPanel.loadFromStream",
+      "target": "VSBoolean.loadFromStream",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:Down_Valve_JV.LEDPanel.saveToStream",
+      "target": "VSBoolean.saveToStream",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:Down_Valve_JV.LEDPanel.saveToStream",
+      "target": "VSColorAdvanced.saveToStream",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java",
+      "target": "class:Left_Valve_JV.LED",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LED",
+      "target": "function:Left_Valve_JV.LED.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LED",
+      "target": "function:Left_Valve_JV.LED.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LED",
+      "target": "function:Left_Valve_JV.LED.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LED",
+      "target": "function:Left_Valve_JV.LED.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LED",
+      "target": "function:Left_Valve_JV.LED.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LED",
+      "target": "function:Left_Valve_JV.LED.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LED",
+      "target": "function:Left_Valve_JV.LED.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LED",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LED.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java",
+      "target": "class:Left_Valve_JV.LEDPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LEDPanel",
+      "target": "function:Left_Valve_JV.LEDPanel.setOn",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LEDPanel",
+      "target": "function:Left_Valve_JV.LEDPanel.processPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LEDPanel",
+      "target": "function:Left_Valve_JV.LEDPanel.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LEDPanel",
+      "target": "function:Left_Valve_JV.LEDPanel.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LEDPanel",
+      "target": "function:Left_Valve_JV.LEDPanel.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LEDPanel",
+      "target": "function:Left_Valve_JV.LEDPanel.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LEDPanel",
+      "target": "function:Left_Valve_JV.LEDPanel.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LEDPanel",
+      "target": "function:Left_Valve_JV.LEDPanel.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LEDPanel",
+      "target": "function:Left_Valve_JV.LEDPanel.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LEDPanel",
+      "target": "function:Left_Valve_JV.LEDPanel.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Left_Valve_JV.LEDPanel",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Left_Valve_JV.LEDPanel",
+      "target": "implement:PanelIF",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Left_Valve_JV/src/LEDPanel.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java",
+      "target": "class:Right_Valve_JV.LED",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LED",
+      "target": "function:Right_Valve_JV.LED.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LED",
+      "target": "function:Right_Valve_JV.LED.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LED",
+      "target": "function:Right_Valve_JV.LED.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LED",
+      "target": "function:Right_Valve_JV.LED.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LED",
+      "target": "function:Right_Valve_JV.LED.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LED",
+      "target": "function:Right_Valve_JV.LED.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LED",
+      "target": "function:Right_Valve_JV.LED.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LED",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LED.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java",
+      "target": "class:Right_Valve_JV.LEDPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LEDPanel",
+      "target": "function:Right_Valve_JV.LEDPanel.setOn",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LEDPanel",
+      "target": "function:Right_Valve_JV.LEDPanel.processPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LEDPanel",
+      "target": "function:Right_Valve_JV.LEDPanel.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LEDPanel",
+      "target": "function:Right_Valve_JV.LEDPanel.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LEDPanel",
+      "target": "function:Right_Valve_JV.LEDPanel.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LEDPanel",
+      "target": "function:Right_Valve_JV.LEDPanel.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LEDPanel",
+      "target": "function:Right_Valve_JV.LEDPanel.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LEDPanel",
+      "target": "function:Right_Valve_JV.LEDPanel.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LEDPanel",
+      "target": "function:Right_Valve_JV.LEDPanel.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LEDPanel",
+      "target": "function:Right_Valve_JV.LEDPanel.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Right_Valve_JV.LEDPanel",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Right_Valve_JV.LEDPanel",
+      "target": "implement:PanelIF",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Right_Valve_JV/src/LEDPanel.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java",
+      "target": "class:Up_Valve_JV.LED",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LED",
+      "target": "function:Up_Valve_JV.LED.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LED",
+      "target": "function:Up_Valve_JV.LED.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LED",
+      "target": "function:Up_Valve_JV.LED.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LED",
+      "target": "function:Up_Valve_JV.LED.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LED",
+      "target": "function:Up_Valve_JV.LED.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LED",
+      "target": "function:Up_Valve_JV.LED.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LED",
+      "target": "function:Up_Valve_JV.LED.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LED",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LED.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java",
+      "target": "class:Up_Valve_JV.LEDPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LEDPanel",
+      "target": "function:Up_Valve_JV.LEDPanel.setOn",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LEDPanel",
+      "target": "function:Up_Valve_JV.LEDPanel.processPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LEDPanel",
+      "target": "function:Up_Valve_JV.LEDPanel.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LEDPanel",
+      "target": "function:Up_Valve_JV.LEDPanel.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LEDPanel",
+      "target": "function:Up_Valve_JV.LEDPanel.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LEDPanel",
+      "target": "function:Up_Valve_JV.LEDPanel.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LEDPanel",
+      "target": "function:Up_Valve_JV.LEDPanel.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LEDPanel",
+      "target": "function:Up_Valve_JV.LEDPanel.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LEDPanel",
+      "target": "function:Up_Valve_JV.LEDPanel.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LEDPanel",
+      "target": "function:Up_Valve_JV.LEDPanel.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Up_Valve_JV.LEDPanel",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Up_Valve_JV.LEDPanel",
+      "target": "implement:PanelIF",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Automation/Valves_JV/Up_Valve_JV/src/LEDPanel.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java",
+      "target": "class:LigthBulb_JV.GaugeCircuit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugeCircuit",
+      "target": "function:LigthBulb_JV.GaugeCircuit.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugeCircuit",
+      "target": "function:LigthBulb_JV.GaugeCircuit.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugeCircuit",
+      "target": "function:LigthBulb_JV.GaugeCircuit.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugeCircuit",
+      "target": "function:LigthBulb_JV.GaugeCircuit.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugeCircuit",
+      "target": "function:LigthBulb_JV.GaugeCircuit.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugeCircuit",
+      "target": "function:LigthBulb_JV.GaugeCircuit.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugeCircuit",
+      "target": "function:LigthBulb_JV.GaugeCircuit.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugeCircuit",
+      "target": "function:LigthBulb_JV.GaugeCircuit.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugeCircuit",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugeCircuit.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+      "target": "class:LigthBulb_JV.GaugePanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugePanel",
+      "target": "function:LigthBulb_JV.GaugePanel.processPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugePanel",
+      "target": "function:LigthBulb_JV.GaugePanel.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugePanel",
+      "target": "function:LigthBulb_JV.GaugePanel.GaugeSet",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugePanel",
+      "target": "function:LigthBulb_JV.GaugePanel.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugePanel",
+      "target": "function:LigthBulb_JV.GaugePanel.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugePanel",
+      "target": "function:LigthBulb_JV.GaugePanel.xOnInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugePanel",
+      "target": "function:LigthBulb_JV.GaugePanel.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugePanel",
+      "target": "function:LigthBulb_JV.GaugePanel.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugePanel",
+      "target": "function:LigthBulb_JV.GaugePanel.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugePanel",
+      "target": "function:LigthBulb_JV.GaugePanel.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugePanel",
+      "target": "function:LigthBulb_JV.GaugePanel.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugePanel",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:LigthBulb_JV.GaugePanel",
+      "target": "implement:PanelIF",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+      "target": "import:eu.hansolo.steelseries.extras.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+      "target": "import:eu.hansolo.steelseries.tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/LigthBulb_JV/src/GaugePanel.java",
+      "target": "import:javax.swing.JPanel",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "function:LigthBulb_JV.GaugePanel.GaugeSet",
+      "target": "LightBulb.setGlowColor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:LigthBulb_JV.GaugePanel.xOnInit",
+      "target": "JPanel.add",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+      "target": "class:SchiebeSchalter.SchalterPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchalterPanel",
+      "target": "function:SchiebeSchalter.SchalterPanel.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchalterPanel",
+      "target": "function:SchiebeSchalter.SchalterPanel.setValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchalterPanel",
+      "target": "function:SchiebeSchalter.SchalterPanel.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchalterPanel",
+      "target": "function:SchiebeSchalter.SchalterPanel.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchalterPanel",
+      "target": "function:SchiebeSchalter.SchalterPanel.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchalterPanel",
+      "target": "function:SchiebeSchalter.SchalterPanel.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchalterPanel",
+      "target": "function:SchiebeSchalter.SchalterPanel.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchalterPanel",
+      "target": "function:SchiebeSchalter.SchalterPanel.mousePressed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchalterPanel",
+      "target": "function:SchiebeSchalter.SchalterPanel.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchalterPanel",
+      "target": "function:SchiebeSchalter.SchalterPanel.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchalterPanel",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+      "target": "import:javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+      "target": "import:java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchalterPanel.java",
+      "target": "import:SVGViewer.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "function:SchiebeSchalter.SchalterPanel.setValue",
+      "target": "ExternalIF.Change",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:SchiebeSchalter.SchalterPanel.mousePressed",
+      "target": "ExternalIF.Change",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+      "target": "class:SchiebeSchalter.SchiebeSchalter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchiebeSchalter",
+      "target": "function:SchiebeSchalter.SchiebeSchalter.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchiebeSchalter",
+      "target": "function:SchiebeSchalter.SchiebeSchalter.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchiebeSchalter",
+      "target": "function:SchiebeSchalter.SchiebeSchalter.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchiebeSchalter",
+      "target": "function:SchiebeSchalter.SchiebeSchalter.changePin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchiebeSchalter",
+      "target": "function:SchiebeSchalter.SchiebeSchalter.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchiebeSchalter",
+      "target": "function:SchiebeSchalter.SchiebeSchalter.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchiebeSchalter",
+      "target": "function:SchiebeSchalter.SchiebeSchalter.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter.SchiebeSchalter",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+      "target": "import:java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter/src/SchiebeSchalter.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "function:SchiebeSchalter.SchiebeSchalter.changePin",
+      "target": "element.notifyPin",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+      "target": "class:SchiebeSchalter2.SchalterPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+      "target": "class:SchiebeSchalter2.ImageLoader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.ImageLoader",
+      "target": "function:SchiebeSchalter2.ImageLoader.ImageLoader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.ImageLoader",
+      "target": "function:SchiebeSchalter2.ImageLoader.loadImage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.ImageLoader",
+      "target": "inherit:Component",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchalterPanel",
+      "target": "function:SchiebeSchalter2.SchalterPanel.loadImage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchalterPanel",
+      "target": "function:SchiebeSchalter2.SchalterPanel.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchalterPanel",
+      "target": "function:SchiebeSchalter2.SchalterPanel.setValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchalterPanel",
+      "target": "function:SchiebeSchalter2.SchalterPanel.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchalterPanel",
+      "target": "function:SchiebeSchalter2.SchalterPanel.start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchalterPanel",
+      "target": "function:SchiebeSchalter2.SchalterPanel.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchalterPanel",
+      "target": "function:SchiebeSchalter2.SchalterPanel.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchalterPanel",
+      "target": "function:SchiebeSchalter2.SchalterPanel.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchalterPanel",
+      "target": "function:SchiebeSchalter2.SchalterPanel.mousePressed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchalterPanel",
+      "target": "function:SchiebeSchalter2.SchalterPanel.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchalterPanel",
+      "target": "function:SchiebeSchalter2.SchalterPanel.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchalterPanel",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+      "target": "import:javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+      "target": "import:java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchalterPanel.java",
+      "target": "import:java.io.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "function:SchiebeSchalter2.SchalterPanel.setValue",
+      "target": "ExternalIF.Change",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:SchiebeSchalter2.SchalterPanel.mousePressed",
+      "target": "ExternalIF.Change",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+      "target": "class:SchiebeSchalter2.SchiebeSchalter",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchiebeSchalter",
+      "target": "function:SchiebeSchalter2.SchiebeSchalter.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchiebeSchalter",
+      "target": "function:SchiebeSchalter2.SchiebeSchalter.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchiebeSchalter",
+      "target": "function:SchiebeSchalter2.SchiebeSchalter.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchiebeSchalter",
+      "target": "function:SchiebeSchalter2.SchiebeSchalter.changePin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchiebeSchalter",
+      "target": "function:SchiebeSchalter2.SchiebeSchalter.initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchiebeSchalter",
+      "target": "function:SchiebeSchalter2.SchiebeSchalter.initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchiebeSchalter",
+      "target": "function:SchiebeSchalter2.SchiebeSchalter.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:SchiebeSchalter2.SchiebeSchalter",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+      "target": "import:java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Boolean/SchiebeSchalter2/src/SchiebeSchalter.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "function:SchiebeSchalter2.SchiebeSchalter.changePin",
+      "target": "element.notifyPin",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "class:Ellipse.Ellipse",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Ellipse.Ellipse",
+      "target": "function:Ellipse.Ellipse.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Ellipse.Ellipse",
+      "target": "function:Ellipse.Ellipse.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Ellipse.Ellipse",
+      "target": "function:Ellipse.Ellipse.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Ellipse.Ellipse",
+      "target": "function:Ellipse.Ellipse.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Ellipse.Ellipse",
+      "target": "function:Ellipse.Ellipse.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Ellipse.Ellipse",
+      "target": "function:Ellipse.Ellipse.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Ellipse.Ellipse",
+      "target": "function:Ellipse.Ellipse.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Ellipse.Ellipse",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "import:java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "import:java.text.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "import:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "class:XImage.XImage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XImage.XImage",
+      "target": "function:XImage.XImage.drawTiled",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XImage.XImage",
+      "target": "function:XImage.XImage.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XImage.XImage",
+      "target": "function:XImage.XImage.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XImage.XImage",
+      "target": "function:XImage.XImage.xOnInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XImage.XImage",
+      "target": "function:XImage.XImage.openPropertyDialog",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XImage.XImage",
+      "target": "function:XImage.XImage.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XImage.XImage",
+      "target": "function:XImage.XImage.processAspect",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XImage.XImage",
+      "target": "function:XImage.XImage.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XImage.XImage",
+      "target": "function:XImage.XImage.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XImage.XImage",
+      "target": "function:XImage.XImage.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XImage.XImage",
+      "target": "function:XImage.XImage.onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XImage.XImage",
+      "target": "function:XImage.XImage.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XImage.XImage",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "import:java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "import:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "import:javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "import:java.io.IOException",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "import:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "import:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "import:java.io.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "class:XLabel.XLabel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XLabel.XLabel",
+      "target": "function:XLabel.XLabel.XLabel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XLabel.XLabel",
+      "target": "function:XLabel.XLabel.myInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XLabel.XLabel",
+      "target": "function:XLabel.XLabel.paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XLabel.XLabel",
+      "target": "function:XLabel.XLabel.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XLabel.XLabel",
+      "target": "function:XLabel.XLabel.xOnInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XLabel.XLabel",
+      "target": "function:XLabel.XLabel.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XLabel.XLabel",
+      "target": "function:XLabel.XLabel.localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XLabel.XLabel",
+      "target": "function:XLabel.XLabel.propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XLabel.XLabel",
+      "target": "function:XLabel.XLabel.loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XLabel.XLabel",
+      "target": "function:XLabel.XLabel.saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:XLabel.XLabel",
+      "target": "inherit:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "function:XLabel.XLabel.XLabel",
+      "target": "function:XLabel.XLabel.myInit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "import:java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "import:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "import:javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:FrontElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "import:java.util.*",
+      "type": "imports",
+      "weight": 0.7
+    }
+  ]
+}

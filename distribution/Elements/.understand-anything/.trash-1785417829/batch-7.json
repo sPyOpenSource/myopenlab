@@ -1,0 +1,2507 @@
+{
+  "batch": 7,
+  "description": "Files: ProcessSetter, Beep, Dec, Inc, Start, Generator, DeGruppierer, Gruppierer (19 of 25 listed paths do not exist in codebase)",
+  "missingFiles": [
+    "CircuitElements/FlowCharts/Ende/src/End.java",
+    "CircuitElements/FlowCharts/Inc/src/Inc.java (exists at Inc/Inc.java)",
+    "CircuitElements/FlowCharts/MessageBox/src/MessageBox.java",
+    "CircuitElements/FlowCharts/OpenDialog/src/OpenDialog.java",
+    "CircuitElements/FlowCharts/SaveDialog/src/SaveDialog.java",
+    "CircuitElements/FlowCharts/Sleep/src/Sleep.java",
+    "CircuitElements/FlowCharts/Start/src/Start.java (exists at Start/Start.java)",
+    "CircuitElements/FlowCharts/SubroutineCall/src/SubroutineCall.java",
+    "CircuitElements/FlowCharts/SubroutineDefinition/src/SubDefinition.java",
+    "CircuitElements/FlowCharts/WaitForCondition/src/WaitForCondition.java",
+    "CircuitElements/FlowCharts/While/src/While.java (exists as While/src/XWhile.java)",
+    "CircuitElements/Interface/Internet/SendEMail/src/SendEMail.java",
+    "CircuitElements/Interface/Internet/SendUDP/src/SendUDP.java",
+    "CircuitElements/Interface/JavaView/JavaView.java",
+    "CircuitElements/Interface/JFreeChart/JFreeChart.java",
+    "CircuitElements/Interface/MediaPlayer/src/MediaPlayer.java",
+    "CircuitElements/Interface/Monitor/src/Grid.java",
+    "CircuitElements/Interface/Monitor/src/Monitor.java",
+    "CircuitElements/Interface/Monitor/src/Objekt.java"
+  ],
+  "nodes": [
+    {
+      "id": "file:CircuitElements/FlowCharts/_ProcessSetter/ProcessSetter.java",
+      "type": "file",
+      "label": "ProcessSetter.java",
+      "properties": {
+        "path": "CircuitElements/FlowCharts/_ProcessSetter/ProcessSetter.java",
+        "language": "Java",
+        "package": "FlowCharts._ProcessSetter"
+      }
+    },
+    {
+      "id": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+      "type": "file",
+      "label": "Beep.java",
+      "properties": {
+        "path": "CircuitElements/FlowCharts/Beep/src/Beep.java",
+        "language": "Java",
+        "package": null
+      }
+    },
+    {
+      "id": "file:CircuitElements/FlowCharts/Dec/src/Dec.java",
+      "type": "file",
+      "label": "Dec.java",
+      "properties": {
+        "path": "CircuitElements/FlowCharts/Dec/src/Dec.java",
+        "language": "Java",
+        "package": null
+      }
+    },
+    {
+      "id": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+      "type": "file",
+      "label": "Inc.java",
+      "properties": {
+        "path": "CircuitElements/FlowCharts/Inc/Inc.java",
+        "language": "Java",
+        "package": "FlowCharts.Inc"
+      }
+    },
+    {
+      "id": "file:CircuitElements/FlowCharts/Start/Start.java",
+      "type": "file",
+      "label": "Start.java",
+      "properties": {
+        "path": "CircuitElements/FlowCharts/Start/Start.java",
+        "language": "Java",
+        "package": "FlowCharts.Start"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Generator/Generator.java",
+      "type": "file",
+      "label": "Generator.java",
+      "properties": {
+        "path": "CircuitElements/Generator/Generator.java",
+        "language": "Java",
+        "package": "Generator"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+      "type": "file",
+      "label": "DeGruppierer.java",
+      "properties": {
+        "path": "CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+        "language": "Java",
+        "package": "Gruppe.DeGruppierer"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+      "type": "file",
+      "label": "Gruppierer.java",
+      "properties": {
+        "path": "CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+        "language": "Java",
+        "package": "Gruppe.Gruppierer"
+      }
+    },
+    {
+      "id": "class:FlowCharts._ProcessSetter.ProcessSetter",
+      "type": "class",
+      "label": "ProcessSetter",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "superClass": "MainFlow"
+      }
+    },
+    {
+      "id": "class:Beep",
+      "type": "class",
+      "label": "Beep",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "superClass": "MainFlow"
+      }
+    },
+    {
+      "id": "class:Dec",
+      "type": "class",
+      "label": "Dec",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "superClass": "MainFlow"
+      }
+    },
+    {
+      "id": "class:FlowCharts.Inc.Inc",
+      "type": "class",
+      "label": "Inc",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "superClass": "MainFlow"
+      }
+    },
+    {
+      "id": "class:FlowCharts.Start.Start",
+      "type": "class",
+      "label": "Start",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "superClass": "MainFlow"
+      }
+    },
+    {
+      "id": "class:Generator.Generator",
+      "type": "class",
+      "label": "Generator",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "superClass": "JVSMain"
+      }
+    },
+    {
+      "id": "class:Gruppe.DeGruppierer.DeGruppierer",
+      "type": "class",
+      "label": "DeGruppierer",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "superClass": "JVSMain"
+      }
+    },
+    {
+      "id": "class:Gruppe.Gruppierer.Gruppierer",
+      "type": "class",
+      "label": "Gruppierer",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "superClass": "JVSMain"
+      }
+    },
+    {
+      "id": "method:ProcessSetter.paint",
+      "type": "function",
+      "label": "paint",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.awt.Graphics g"],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:ProcessSetter.init",
+      "type": "function",
+      "label": "init",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:ProcessSetter.xOnInit",
+      "type": "function",
+      "label": "xOnInit",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:ProcessSetter.initInputPins",
+      "type": "function",
+      "label": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:ProcessSetter.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:ProcessSetter.start",
+      "type": "function",
+      "label": "start",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:ProcessSetter.stop",
+      "type": "function",
+      "label": "stop",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:ProcessSetter.checkPinDataType",
+      "type": "function",
+      "label": "checkPinDataType",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:ProcessSetter.elementActionPerformed",
+      "type": "function",
+      "label": "elementActionPerformed",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["ElementActionEvent evt"],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Beep.paint",
+      "type": "function",
+      "label": "paint",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "method:Beep.init",
+      "type": "function",
+      "label": "init",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Beep.xOnInit",
+      "type": "function",
+      "label": "xOnInit",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Beep.initInputPins",
+      "type": "function",
+      "label": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Beep.mousePressedOnIdle",
+      "type": "function",
+      "label": "mousePressedOnIdle",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["MouseEvent e"]
+      }
+    },
+    {
+      "id": "method:Beep.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Beep.process",
+      "type": "function",
+      "label": "process",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Beep.loadFromStream",
+      "type": "function",
+      "label": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.io.FileInputStream fis"]
+      }
+    },
+    {
+      "id": "method:Beep.saveToStream",
+      "type": "function",
+      "label": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.io.FileOutputStream fos"]
+      }
+    },
+    {
+      "id": "method:Dec.paint",
+      "type": "function",
+      "label": "paint",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.awt.Graphics g"],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Dec.init",
+      "type": "function",
+      "label": "init",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Dec.initInputPins",
+      "type": "function",
+      "label": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Dec.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Dec.process",
+      "type": "function",
+      "label": "process",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Dec.loadFromStream",
+      "type": "function",
+      "label": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.io.FileInputStream fis"],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Dec.saveToStream",
+      "type": "function",
+      "label": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.io.FileOutputStream fos"],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Inc.paint",
+      "type": "function",
+      "label": "paint",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "method:Inc.init",
+      "type": "function",
+      "label": "init",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Inc.xOnInit",
+      "type": "function",
+      "label": "xOnInit",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Inc.initInputPins",
+      "type": "function",
+      "label": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Inc.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Inc.process",
+      "type": "function",
+      "label": "process",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Inc.loadFromStream",
+      "type": "function",
+      "label": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.io.FileInputStream fis"]
+      }
+    },
+    {
+      "id": "method:Inc.saveToStream",
+      "type": "function",
+      "label": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.io.FileOutputStream fos"]
+      }
+    },
+    {
+      "id": "method:Start.paint",
+      "type": "function",
+      "label": "paint",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.awt.Graphics g"],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Start.evalMethodExpression",
+      "type": "function",
+      "label": "evalMethodExpression",
+      "properties": {
+        "visibility": "private",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["String expression"]
+      }
+    },
+    {
+      "id": "method:Start.init",
+      "type": "function",
+      "label": "init",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Start.xOnInit",
+      "type": "function",
+      "label": "xOnInit",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Start.checkPinDataType",
+      "type": "function",
+      "label": "checkPinDataType",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Start.start",
+      "type": "function",
+      "label": "start",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Start.initInputPins",
+      "type": "function",
+      "label": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Start.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Start.process",
+      "type": "function",
+      "label": "process",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": [],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Start.processMethod",
+      "type": "function",
+      "label": "processMethod",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["VSFlowInfo flowInfo"],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Start.loadFromStream",
+      "type": "function",
+      "label": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.io.FileInputStream fis"],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Start.saveToStream",
+      "type": "function",
+      "label": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.io.FileOutputStream fos"],
+        "hasOverride": true
+      }
+    },
+    {
+      "id": "method:Generator.Generator",
+      "type": "function",
+      "label": "Generator",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": null,
+        "parameters": [],
+        "isConstructor": true
+      }
+    },
+    {
+      "id": "method:Generator.onDispose",
+      "type": "function",
+      "label": "onDispose",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Generator.paint",
+      "type": "function",
+      "label": "paint",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "method:Generator.init",
+      "type": "function",
+      "label": "init",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Generator.initInputPins",
+      "type": "function",
+      "label": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Generator.setPropertyEditor",
+      "type": "function",
+      "label": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Generator.localize",
+      "type": "function",
+      "label": "localize",
+      "properties": {
+        "visibility": "private",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Generator.propertyChanged",
+      "type": "function",
+      "label": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["Object o"]
+      }
+    },
+    {
+      "id": "method:Generator.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Generator.start",
+      "type": "function",
+      "label": "start",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Generator.process",
+      "type": "function",
+      "label": "process",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Generator.processor",
+      "type": "function",
+      "label": "processor",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Generator.loadFromStream",
+      "type": "function",
+      "label": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.io.FileInputStream fis"]
+      }
+    },
+    {
+      "id": "method:Generator.saveToStream",
+      "type": "function",
+      "label": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.io.FileOutputStream fos"]
+      }
+    },
+    {
+      "id": "method:DeGruppierer.xpaint",
+      "type": "function",
+      "label": "xpaint",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "method:DeGruppierer.init",
+      "type": "function",
+      "label": "init",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:DeGruppierer.initInputPins",
+      "type": "function",
+      "label": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:DeGruppierer.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:DeGruppierer.initPins",
+      "type": "function",
+      "label": "initPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:DeGruppierer.checkPinDataType",
+      "type": "function",
+      "label": "checkPinDataType",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:DeGruppierer.process",
+      "type": "function",
+      "label": "process",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:DeGruppierer.loadFromStream",
+      "type": "function",
+      "label": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.io.FileInputStream fis"]
+      }
+    },
+    {
+      "id": "method:DeGruppierer.saveToStream",
+      "type": "function",
+      "label": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.io.FileOutputStream fos"]
+      }
+    },
+    {
+      "id": "method:Gruppierer.xpaint",
+      "type": "function",
+      "label": "xpaint",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.awt.Graphics g"]
+      }
+    },
+    {
+      "id": "method:Gruppierer.init",
+      "type": "function",
+      "label": "init",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Gruppierer.initInputPins",
+      "type": "function",
+      "label": "initInputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Gruppierer.initOutputPins",
+      "type": "function",
+      "label": "initOutputPins",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Gruppierer.setPropertyEditor",
+      "type": "function",
+      "label": "setPropertyEditor",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Gruppierer.localize",
+      "type": "function",
+      "label": "localize",
+      "properties": {
+        "visibility": "private",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Gruppierer.setPinDT2",
+      "type": "function",
+      "label": "setPinDT2",
+      "properties": {
+        "visibility": "private",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["int pinIndex", "VSComboBox dtPin"]
+      }
+    },
+    {
+      "id": "method:Gruppierer.propertyChanged",
+      "type": "function",
+      "label": "propertyChanged",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["Object o"]
+      }
+    },
+    {
+      "id": "method:Gruppierer.checkPinDataType",
+      "type": "function",
+      "label": "checkPinDataType",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Gruppierer.start",
+      "type": "function",
+      "label": "start",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Gruppierer.stop",
+      "type": "function",
+      "label": "stop",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Gruppierer.process",
+      "type": "function",
+      "label": "process",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": []
+      }
+    },
+    {
+      "id": "method:Gruppierer.loadFromStream",
+      "type": "function",
+      "label": "loadFromStream",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.io.FileInputStream fis"]
+      }
+    },
+    {
+      "id": "method:Gruppierer.saveToStream",
+      "type": "function",
+      "label": "saveToStream",
+      "properties": {
+        "visibility": "public",
+        "static": false,
+        "returnType": "void",
+        "parameters": ["java.io.FileOutputStream fos"]
+      }
+    },
+    {
+      "id": "package:VisualLogic",
+      "type": "package",
+      "label": "VisualLogic",
+      "properties": {}
+    },
+    {
+      "id": "package:VisualLogic.variables",
+      "type": "package",
+      "label": "VisualLogic.variables",
+      "properties": {}
+    },
+    {
+      "id": "package:java.awt",
+      "type": "package",
+      "label": "java.awt",
+      "properties": {}
+    },
+    {
+      "id": "package:tools",
+      "type": "package",
+      "label": "tools",
+      "properties": {}
+    },
+    {
+      "id": "package:java.awt.geom",
+      "type": "package",
+      "label": "java.awt.geom",
+      "properties": {}
+    },
+    {
+      "id": "package:java.awt.event",
+      "type": "package",
+      "label": "java.awt.event",
+      "properties": {}
+    },
+    {
+      "id": "package:javax.swing",
+      "type": "package",
+      "label": "javax.swing",
+      "properties": {}
+    },
+    {
+      "id": "package:java.util",
+      "type": "package",
+      "label": "java.util",
+      "properties": {}
+    },
+    {
+      "id": "package:java.text",
+      "type": "package",
+      "label": "java.text",
+      "properties": {}
+    },
+    {
+      "id": "package:MyParser",
+      "type": "package",
+      "label": "MyParser",
+      "properties": {}
+    },
+    {
+      "id": "class:MainFlow",
+      "type": "class",
+      "label": "MainFlow",
+      "properties": {
+        "superClass": null
+      }
+    },
+    {
+      "id": "class:JVSMain",
+      "type": "class",
+      "label": "JVSMain",
+      "properties": {
+        "superClass": null
+      }
+    },
+    {
+      "id": "class:ElementActionEvent",
+      "type": "class",
+      "label": "ElementActionEvent",
+      "properties": {}
+    },
+    {
+      "id": "type:MouseEvent",
+      "type": "class",
+      "label": "MouseEvent",
+      "properties": {}
+    },
+    {
+      "id": "type:VSFlowInfo",
+      "type": "class",
+      "label": "VSFlowInfo",
+      "properties": {}
+    },
+    {
+      "id": "type:VSBasisIF",
+      "type": "class",
+      "label": "VSBasisIF",
+      "properties": {}
+    },
+    {
+      "id": "type:VSObject",
+      "type": "class",
+      "label": "VSObject",
+      "properties": {}
+    },
+    {
+      "id": "type:VSBoolean",
+      "type": "class",
+      "label": "VSBoolean",
+      "properties": {}
+    },
+    {
+      "id": "type:VSString",
+      "type": "class",
+      "label": "VSString",
+      "properties": {}
+    },
+    {
+      "id": "type:VSDouble",
+      "type": "class",
+      "label": "VSDouble",
+      "properties": {}
+    },
+    {
+      "id": "type:ExternalIF",
+      "type": "class",
+      "label": "ExternalIF",
+      "properties": {}
+    },
+    {
+      "id": "type:VSGroup",
+      "type": "class",
+      "label": "VSGroup",
+      "properties": {}
+    },
+    {
+      "id": "type:VS1DDouble",
+      "type": "class",
+      "label": "VS1DDouble",
+      "properties": {}
+    },
+    {
+      "id": "type:VSInteger",
+      "type": "class",
+      "label": "VSInteger",
+      "properties": {}
+    },
+    {
+      "id": "type:VS1DByte",
+      "type": "class",
+      "label": "VS1DByte",
+      "properties": {}
+    },
+    {
+      "id": "type:OpenVariable",
+      "type": "class",
+      "label": "OpenVariable",
+      "properties": {}
+    },
+    {
+      "id": "type:VSComboBox",
+      "type": "class",
+      "label": "VSComboBox",
+      "properties": {}
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:CircuitElements/FlowCharts/_ProcessSetter/ProcessSetter.java",
+      "target": "class:FlowCharts._ProcessSetter.ProcessSetter",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+      "target": "class:Beep",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Dec/src/Dec.java",
+      "target": "class:Dec",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+      "target": "class:FlowCharts.Inc.Inc",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Start/Start.java",
+      "target": "class:FlowCharts.Start.Start",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Generator/Generator.java",
+      "target": "class:Generator.Generator",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+      "target": "class:Gruppe.DeGruppierer.DeGruppierer",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+      "target": "class:Gruppe.Gruppierer.Gruppierer",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts._ProcessSetter.ProcessSetter",
+      "target": "class:MainFlow",
+      "type": "inherits",
+      "weight": 0.9,
+      "properties": {}
+    },
+    {
+      "source": "class:Beep",
+      "target": "class:MainFlow",
+      "type": "inherits",
+      "weight": 0.9,
+      "properties": {}
+    },
+    {
+      "source": "class:Dec",
+      "target": "class:MainFlow",
+      "type": "inherits",
+      "weight": 0.9,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Inc.Inc",
+      "target": "class:MainFlow",
+      "type": "inherits",
+      "weight": 0.9,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Start.Start",
+      "target": "class:MainFlow",
+      "type": "inherits",
+      "weight": 0.9,
+      "properties": {}
+    },
+    {
+      "source": "class:Generator.Generator",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.DeGruppierer.DeGruppierer",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.Gruppierer.Gruppierer",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/_ProcessSetter/ProcessSetter.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/_ProcessSetter/ProcessSetter.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/_ProcessSetter/ProcessSetter.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/_ProcessSetter/ProcessSetter.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/_ProcessSetter/ProcessSetter.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Beep/src/Beep.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Dec/src/Dec.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Dec/src/Dec.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Dec/src/Dec.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Dec/src/Dec.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Dec/src/Dec.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Inc/Inc.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Start/Start.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Start/Start.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Start/Start.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Start/Start.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Start/Start.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/FlowCharts/Start/Start.java",
+      "target": "package:MyParser",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Generator/Generator.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Generator/Generator.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Generator/Generator.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Generator/Generator.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Generator/Generator.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Generator/Generator.java",
+      "target": "package:java.text",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Generator/Generator.java",
+      "target": "package:java.awt.geom",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Generator/Generator.java",
+      "target": "package:java.util",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Gruppe/DeGruppierer/DeGruppierer.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+      "target": "package:VisualLogic",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+      "target": "package:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+      "target": "package:tools",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+      "target": "package:java.awt",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+      "target": "package:javax.swing",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "file:CircuitElements/Gruppe/Gruppierer/Gruppierer.java",
+      "target": "package:java.awt.event",
+      "type": "imports",
+      "weight": 0.7,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts._ProcessSetter.ProcessSetter",
+      "target": "method:ProcessSetter.paint",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts._ProcessSetter.ProcessSetter",
+      "target": "method:ProcessSetter.init",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts._ProcessSetter.ProcessSetter",
+      "target": "method:ProcessSetter.xOnInit",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts._ProcessSetter.ProcessSetter",
+      "target": "method:ProcessSetter.initInputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts._ProcessSetter.ProcessSetter",
+      "target": "method:ProcessSetter.initOutputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts._ProcessSetter.ProcessSetter",
+      "target": "method:ProcessSetter.start",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts._ProcessSetter.ProcessSetter",
+      "target": "method:ProcessSetter.stop",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts._ProcessSetter.ProcessSetter",
+      "target": "method:ProcessSetter.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts._ProcessSetter.ProcessSetter",
+      "target": "method:ProcessSetter.elementActionPerformed",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Beep",
+      "target": "method:Beep.paint",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Beep",
+      "target": "method:Beep.init",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Beep",
+      "target": "method:Beep.xOnInit",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Beep",
+      "target": "method:Beep.initInputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Beep",
+      "target": "method:Beep.mousePressedOnIdle",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Beep",
+      "target": "method:Beep.initOutputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Beep",
+      "target": "method:Beep.process",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Beep",
+      "target": "method:Beep.loadFromStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Beep",
+      "target": "method:Beep.saveToStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Dec",
+      "target": "method:Dec.paint",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Dec",
+      "target": "method:Dec.init",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Dec",
+      "target": "method:Dec.initInputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Dec",
+      "target": "method:Dec.initOutputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Dec",
+      "target": "method:Dec.process",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Dec",
+      "target": "method:Dec.loadFromStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Dec",
+      "target": "method:Dec.saveToStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Inc.Inc",
+      "target": "method:Inc.paint",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Inc.Inc",
+      "target": "method:Inc.init",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Inc.Inc",
+      "target": "method:Inc.xOnInit",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Inc.Inc",
+      "target": "method:Inc.initInputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Inc.Inc",
+      "target": "method:Inc.initOutputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Inc.Inc",
+      "target": "method:Inc.process",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Inc.Inc",
+      "target": "method:Inc.loadFromStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Inc.Inc",
+      "target": "method:Inc.saveToStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Start.Start",
+      "target": "method:Start.paint",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Start.Start",
+      "target": "method:Start.evalMethodExpression",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Start.Start",
+      "target": "method:Start.init",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Start.Start",
+      "target": "method:Start.xOnInit",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Start.Start",
+      "target": "method:Start.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Start.Start",
+      "target": "method:Start.start",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Start.Start",
+      "target": "method:Start.initInputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Start.Start",
+      "target": "method:Start.initOutputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Start.Start",
+      "target": "method:Start.process",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Start.Start",
+      "target": "method:Start.processMethod",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Start.Start",
+      "target": "method:Start.loadFromStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:FlowCharts.Start.Start",
+      "target": "method:Start.saveToStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Generator.Generator",
+      "target": "method:Generator.Generator",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Generator.Generator",
+      "target": "method:Generator.onDispose",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Generator.Generator",
+      "target": "method:Generator.paint",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Generator.Generator",
+      "target": "method:Generator.init",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Generator.Generator",
+      "target": "method:Generator.initInputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Generator.Generator",
+      "target": "method:Generator.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Generator.Generator",
+      "target": "method:Generator.localize",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Generator.Generator",
+      "target": "method:Generator.propertyChanged",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Generator.Generator",
+      "target": "method:Generator.initOutputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Generator.Generator",
+      "target": "method:Generator.start",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Generator.Generator",
+      "target": "method:Generator.process",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Generator.Generator",
+      "target": "method:Generator.processor",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Generator.Generator",
+      "target": "method:Generator.loadFromStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Generator.Generator",
+      "target": "method:Generator.saveToStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.DeGruppierer.DeGruppierer",
+      "target": "method:DeGruppierer.xpaint",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.DeGruppierer.DeGruppierer",
+      "target": "method:DeGruppierer.init",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.DeGruppierer.DeGruppierer",
+      "target": "method:DeGruppierer.initInputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.DeGruppierer.DeGruppierer",
+      "target": "method:DeGruppierer.initOutputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.DeGruppierer.DeGruppierer",
+      "target": "method:DeGruppierer.initPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.DeGruppierer.DeGruppierer",
+      "target": "method:DeGruppierer.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.DeGruppierer.DeGruppierer",
+      "target": "method:DeGruppierer.process",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.DeGruppierer.DeGruppierer",
+      "target": "method:DeGruppierer.loadFromStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.DeGruppierer.DeGruppierer",
+      "target": "method:DeGruppierer.saveToStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.Gruppierer.Gruppierer",
+      "target": "method:Gruppierer.xpaint",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.Gruppierer.Gruppierer",
+      "target": "method:Gruppierer.init",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.Gruppierer.Gruppierer",
+      "target": "method:Gruppierer.initInputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.Gruppierer.Gruppierer",
+      "target": "method:Gruppierer.initOutputPins",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.Gruppierer.Gruppierer",
+      "target": "method:Gruppierer.setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.Gruppierer.Gruppierer",
+      "target": "method:Gruppierer.localize",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.Gruppierer.Gruppierer",
+      "target": "method:Gruppierer.setPinDT2",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.Gruppierer.Gruppierer",
+      "target": "method:Gruppierer.propertyChanged",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.Gruppierer.Gruppierer",
+      "target": "method:Gruppierer.checkPinDataType",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.Gruppierer.Gruppierer",
+      "target": "method:Gruppierer.start",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.Gruppierer.Gruppierer",
+      "target": "method:Gruppierer.stop",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.Gruppierer.Gruppierer",
+      "target": "method:Gruppierer.process",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.Gruppierer.Gruppierer",
+      "target": "method:Gruppierer.loadFromStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "class:Gruppe.Gruppierer.Gruppierer",
+      "target": "method:Gruppierer.saveToStream",
+      "type": "contains",
+      "weight": 1.0,
+      "properties": {}
+    },
+    {
+      "source": "method:ProcessSetter.xOnInit",
+      "target": "class:MainFlow",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {
+        "callType": "super"
+      }
+    },
+    {
+      "source": "method:ProcessSetter.paint",
+      "target": "class:MainFlow",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {
+        "callType": "super"
+      }
+    },
+    {
+      "source": "method:ProcessSetter.elementActionPerformed",
+      "target": "type:VSBasisIF",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "method:ProcessSetter.elementActionPerformed",
+      "target": "type:VSBoolean",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "method:ProcessSetter.elementActionPerformed",
+      "target": "type:VSString",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "method:ProcessSetter.elementActionPerformed",
+      "target": "type:VSDouble",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "method:ProcessSetter.checkPinDataType",
+      "target": "type:ExternalIF",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "method:Beep.paint",
+      "target": "class:MainFlow",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {
+        "callType": "super"
+      }
+    },
+    {
+      "source": "method:Beep.xOnInit",
+      "target": "class:MainFlow",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {
+        "callType": "super"
+      }
+    },
+    {
+      "source": "method:Beep.process",
+      "target": "type:Toolkit",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "method:Dec.paint",
+      "target": "class:MainFlow",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {
+        "callType": "super"
+      }
+    },
+    {
+      "source": "method:Dec.process",
+      "target": "type:VSBasisIF",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "method:Inc.paint",
+      "target": "class:MainFlow",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {
+        "callType": "super"
+      }
+    },
+    {
+      "source": "method:Inc.xOnInit",
+      "target": "class:MainFlow",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {
+        "callType": "super"
+      }
+    },
+    {
+      "source": "method:Start.paint",
+      "target": "class:MainFlow",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {
+        "callType": "super"
+      }
+    },
+    {
+      "source": "method:Start.xOnInit",
+      "target": "class:MainFlow",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {
+        "callType": "super"
+      }
+    },
+    {
+      "source": "method:Generator.process",
+      "target": "method:Generator.processor",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "method:Generator.propertyChanged",
+      "target": "type:VSGroup",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "method:Generator.loadFromStream",
+      "target": "type:VSGroup",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "method:DeGruppierer.loadFromStream",
+      "target": "method:DeGruppierer.init",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "method:Gruppierer.propertyChanged",
+      "target": "method:Gruppierer.init",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    },
+    {
+      "source": "method:Gruppierer.loadFromStream",
+      "target": "method:Gruppierer.init",
+      "type": "calls",
+      "weight": 0.8,
+      "properties": {}
+    }
+  ]
+}

@@ -1,0 +1,1719 @@
+{
+  "nodes": [
+    {
+      "id": "file:CircuitElements/Color/ColorConst/ColorConst.java",
+      "type": "file",
+      "label": "ColorConst.java",
+      "properties": {
+        "exists": true,
+        "package": "Color.ColorConst"
+      }
+    },
+    {
+      "id": "class:Color.ColorConst.ColorConst",
+      "type": "class",
+      "label": "ColorConst",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "static": false
+      }
+    },
+    {
+      "id": "class:JVSMain",
+      "type": "class",
+      "label": "JVSMain",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "import:VisualLogic.*",
+      "type": "import",
+      "label": "VisualLogic.*",
+      "properties": {
+        "external": true
+      }
+    },
+    {
+      "id": "import:VisualLogic.variables.*",
+      "type": "import",
+      "label": "VisualLogic.variables.*",
+      "properties": {
+        "external": true
+      }
+    },
+    {
+      "id": "import:java.awt.*",
+      "type": "import",
+      "label": "java.awt.*",
+      "properties": {
+        "external": true
+      }
+    },
+    {
+      "id": "import:java.awt.event.*",
+      "type": "import",
+      "label": "java.awt.event.*",
+      "properties": {
+        "external": true
+      }
+    },
+    {
+      "id": "import:tools.*",
+      "type": "import",
+      "label": "tools.*",
+      "properties": {
+        "external": true
+      }
+    },
+    {
+      "id": "import:java.util.*",
+      "type": "import",
+      "label": "java.util.*",
+      "properties": {
+        "external": true
+      }
+    },
+    {
+      "id": "field:Color.ColorConst.ColorConst.out",
+      "type": "field",
+      "label": "out",
+      "properties": {
+        "type": "VSColor",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "field:Color.ColorConst.ColorConst.aColor",
+      "type": "field",
+      "label": "aColor",
+      "properties": {
+        "type": "VSColor",
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "field:Color.ColorConst.ColorConst.changed",
+      "type": "field",
+      "label": "changed",
+      "properties": {
+        "type": "boolean",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "method:Color.ColorConst.ColorConst.paint(Graphics g)",
+      "type": "function",
+      "label": "paint(Graphics g)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Color.ColorConst.ColorConst.init()",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Color.ColorConst.ColorConst.setPropertyEditor()",
+      "type": "function",
+      "label": "setPropertyEditor()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Color.ColorConst.ColorConst.localize()",
+      "type": "function",
+      "label": "localize()",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Color.ColorConst.ColorConst.propertyChanged(Object o)",
+      "type": "function",
+      "label": "propertyChanged(Object o)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Color.ColorConst.ColorConst.initInputPins()",
+      "type": "function",
+      "label": "initInputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Color.ColorConst.ColorConst.initOutputPins()",
+      "type": "function",
+      "label": "initOutputPins()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Color.ColorConst.ColorConst.start()",
+      "type": "function",
+      "label": "start()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Color.ColorConst.ColorConst.process()",
+      "type": "function",
+      "label": "process()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Color.ColorConst.ColorConst.loadFromStream(FileInputStream fis)",
+      "type": "function",
+      "label": "loadFromStream(FileInputStream fis)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Color.ColorConst.ColorConst.saveToStream(FileOutputStream fos)",
+      "type": "function",
+      "label": "saveToStream(FileOutputStream fos)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+      "type": "file",
+      "label": "XImage.java",
+      "properties": {
+        "exists": true,
+        "package": "Dekoratoren.Image_1_0"
+      }
+    },
+    {
+      "id": "import:javax.swing.Timer",
+      "type": "import",
+      "label": "javax.swing.Timer",
+      "properties": {
+        "external": true
+      }
+    },
+    {
+      "id": "import:javax.swing.*",
+      "type": "import",
+      "label": "javax.swing.*",
+      "properties": {
+        "external": true
+      }
+    },
+    {
+      "id": "import:java.io.IOException",
+      "type": "import",
+      "label": "java.io.IOException",
+      "properties": {
+        "external": true
+      }
+    },
+    {
+      "id": "import:java.nio.ByteBuffer",
+      "type": "import",
+      "label": "java.nio.ByteBuffer",
+      "properties": {
+        "external": true
+      }
+    },
+    {
+      "id": "import:javax.imageio.ImageIO",
+      "type": "import",
+      "label": "javax.imageio.ImageIO",
+      "properties": {
+        "external": true
+      }
+    },
+    {
+      "id": "import:java.io.*",
+      "type": "import",
+      "label": "java.io.*",
+      "properties": {
+        "external": true
+      }
+    },
+    {
+      "id": "class:Dekoratoren.Image_1_0.ImageLoader",
+      "type": "class",
+      "label": "ImageLoader",
+      "properties": {
+        "visibility": "package-private",
+        "abstract": false,
+        "static": false
+      }
+    },
+    {
+      "id": "class:java.awt.Component",
+      "type": "class",
+      "label": "Component",
+      "properties": {
+        "visibility": "public",
+        "external": true
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Image_1_0.ImageLoader.ImageLoader()",
+      "type": "function",
+      "label": "ImageLoader()",
+      "properties": {
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Image_1_0.ImageLoader.loadImage(Image img)",
+      "type": "function",
+      "label": "loadImage(Image img)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "Image"
+      }
+    },
+    {
+      "id": "class:Dekoratoren.Image_1_0.XImage",
+      "type": "class",
+      "label": "XImage",
+      "properties": {
+        "visibility": "public",
+        "abstract": false,
+        "static": false
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Image_1_0.XImage.image",
+      "type": "field",
+      "label": "image",
+      "properties": {
+        "type": "Image",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Image_1_0.XImage.noImage",
+      "type": "field",
+      "label": "noImage",
+      "properties": {
+        "type": "Image",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Image_1_0.XImage.file",
+      "type": "field",
+      "label": "file",
+      "properties": {
+        "type": "VSFile",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Image_1_0.XImage.interpoliert",
+      "type": "field",
+      "label": "interpoliert",
+      "properties": {
+        "type": "VSBoolean",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Image_1_0.XImage.keepAcpect",
+      "type": "field",
+      "label": "keepAcpect",
+      "properties": {
+        "type": "VSBoolean",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Image_1_0.XImage.imageBytes",
+      "type": "field",
+      "label": "imageBytes",
+      "properties": {
+        "type": "byte[]",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Image_1_0.XImage.aspect",
+      "type": "field",
+      "label": "aspect",
+      "properties": {
+        "type": "double",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Image_1_0.XImage.tiled",
+      "type": "field",
+      "label": "tiled",
+      "properties": {
+        "type": "VSBoolean",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Image_1_0.XImage.tiledWidth",
+      "type": "field",
+      "label": "tiledWidth",
+      "properties": {
+        "type": "VSInteger",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Image_1_0.XImage.tiledHeight",
+      "type": "field",
+      "label": "tiledHeight",
+      "properties": {
+        "type": "VSInteger",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Image_1_0.XImage.loadImage(String fileName)",
+      "type": "function",
+      "label": "loadImage(String fileName)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Image_1_0.XImage.drawTiled(Graphics2D g, Image image, Rectangle r)",
+      "type": "function",
+      "label": "drawTiled(Graphics2D g, Image image, Rectangle r)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Image_1_0.XImage.paint(Graphics g)",
+      "type": "function",
+      "label": "paint(Graphics g)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Image_1_0.XImage.init()",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Image_1_0.XImage.openPropertyDialog()",
+      "type": "function",
+      "label": "openPropertyDialog()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Image_1_0.XImage.propertyChanged(Object o)",
+      "type": "function",
+      "label": "propertyChanged(Object o)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Image_1_0.XImage.processAspect()",
+      "type": "function",
+      "label": "processAspect()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Image_1_0.XImage.setPropertyEditor()",
+      "type": "function",
+      "label": "setPropertyEditor()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Image_1_0.XImage.localize()",
+      "type": "function",
+      "label": "localize()",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Image_1_0.XImage.loadFromStream(FileInputStream fis)",
+      "type": "function",
+      "label": "loadFromStream(FileInputStream fis)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Image_1_0.XImage.onDispose()",
+      "type": "function",
+      "label": "onDispose()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Image_1_0.XImage.saveToStream(FileOutputStream fos)",
+      "type": "function",
+      "label": "saveToStream(FileOutputStream fos)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+      "type": "file",
+      "label": "YLabel.java",
+      "properties": {
+        "exists": true,
+        "package": "Dekoratoren.Label"
+      }
+    },
+    {
+      "id": "class:Dekoratoren.Label.YLabel",
+      "type": "class",
+      "label": "YLabel",
+      "properties": {
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Label.YLabel.image",
+      "type": "field",
+      "label": "image",
+      "properties": {
+        "type": "Image",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Label.YLabel.strText",
+      "type": "field",
+      "label": "strText",
+      "properties": {
+        "type": "VSString",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Label.YLabel.ausrichtungH",
+      "type": "field",
+      "label": "ausrichtungH",
+      "properties": {
+        "type": "VSInteger",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Label.YLabel.ausrichtungV",
+      "type": "field",
+      "label": "ausrichtungV",
+      "properties": {
+        "type": "VSInteger",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Label.YLabel.font",
+      "type": "field",
+      "label": "font",
+      "properties": {
+        "type": "VSFont",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Label.YLabel.fontColor",
+      "type": "field",
+      "label": "fontColor",
+      "properties": {
+        "type": "VSColor",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Label.YLabel.values",
+      "type": "field",
+      "label": "values",
+      "properties": {
+        "type": "String[]",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.Label.YLabel.label",
+      "type": "field",
+      "label": "label",
+      "properties": {
+        "type": "JLabel",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Label.YLabel.YLabel()",
+      "type": "function",
+      "label": "YLabel()",
+      "properties": {
+        "visibility": "public",
+        "returnType": ""
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Label.YLabel.myInit()",
+      "type": "function",
+      "label": "myInit()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Label.YLabel.paint(Graphics g)",
+      "type": "function",
+      "label": "paint(Graphics g)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Label.YLabel.init()",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Label.YLabel.xOnInit()",
+      "type": "function",
+      "label": "xOnInit()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Label.YLabel.setPropertyEditor()",
+      "type": "function",
+      "label": "setPropertyEditor()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Label.YLabel.localize()",
+      "type": "function",
+      "label": "localize()",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Label.YLabel.propertyChanged(Object o)",
+      "type": "function",
+      "label": "propertyChanged(Object o)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Label.YLabel.loadFromStream(FileInputStream fis)",
+      "type": "function",
+      "label": "loadFromStream(FileInputStream fis)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.Label.YLabel.saveToStream(FileOutputStream fos)",
+      "type": "function",
+      "label": "saveToStream(FileOutputStream fos)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+      "type": "file",
+      "label": "XRectangle.java",
+      "properties": {
+        "exists": true,
+        "package": "Dekoratoren.XRectangle"
+      }
+    },
+    {
+      "id": "class:Dekoratoren.XRectangle.XRectangle",
+      "type": "class",
+      "label": "XRectangle",
+      "properties": {
+        "visibility": "public"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.XRectangle.XRectangle.fillColor",
+      "type": "field",
+      "label": "fillColor",
+      "properties": {
+        "type": "VSColor",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.XRectangle.XRectangle.strokeColor",
+      "type": "field",
+      "label": "strokeColor",
+      "properties": {
+        "type": "VSColor",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "field:Dekoratoren.XRectangle.XRectangle.strokeWidth",
+      "type": "field",
+      "label": "strokeWidth",
+      "properties": {
+        "type": "VSInteger",
+        "visibility": "private"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.XRectangle.XRectangle.paint(Graphics g)",
+      "type": "function",
+      "label": "paint(Graphics g)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.XRectangle.XRectangle.init()",
+      "type": "function",
+      "label": "init()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.XRectangle.XRectangle.setPropertyEditor()",
+      "type": "function",
+      "label": "setPropertyEditor()",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.XRectangle.XRectangle.localize()",
+      "type": "function",
+      "label": "localize()",
+      "properties": {
+        "visibility": "private",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.XRectangle.XRectangle.propertyChanged(Object o)",
+      "type": "function",
+      "label": "propertyChanged(Object o)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.XRectangle.XRectangle.loadFromStream(FileInputStream fis)",
+      "type": "function",
+      "label": "loadFromStream(FileInputStream fis)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "method:Dekoratoren.XRectangle.XRectangle.saveToStream(FileOutputStream fos)",
+      "type": "function",
+      "label": "saveToStream(FileOutputStream fos)",
+      "properties": {
+        "visibility": "public",
+        "returnType": "void"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Color/ColorPicker/src/ColorPicker.java",
+      "type": "file",
+      "label": "ColorPicker.java",
+      "properties": {
+        "exists": false,
+        "package": "Color.ColorPicker",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Color/RGBToColor/RGBToColor.java",
+      "type": "file",
+      "label": "RGBToColor.java",
+      "properties": {
+        "exists": false,
+        "package": "Color.RGBToColor",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Color/UserDefConst/src/Elem.java",
+      "type": "file",
+      "label": "Elem.java",
+      "properties": {
+        "exists": false,
+        "package": "Color.UserDefConst",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Dekoratoren/AnalogeAnzeige_1_3/Elem.java",
+      "type": "file",
+      "label": "Elem.java",
+      "properties": {
+        "exists": false,
+        "package": "Dekoratoren.AnalogeAnzeige_1_3",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Dekoratoren/Anzeige/Elem.java",
+      "type": "file",
+      "label": "Elem.java",
+      "properties": {
+        "exists": false,
+        "package": "Dekoratoren.Anzeige",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Dekoratoren/Browser/src/Browser.java",
+      "type": "file",
+      "label": "Browser.java",
+      "properties": {
+        "exists": false,
+        "package": "Dekoratoren.Browser",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Dekoratoren/Calendar/src/Calendar.java",
+      "type": "file",
+      "label": "Calendar.java",
+      "properties": {
+        "exists": false,
+        "package": "Dekoratoren.Calendar",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Dekoratoren/DataGridView/src/Elem.java",
+      "type": "file",
+      "label": "Elem.java",
+      "properties": {
+        "exists": false,
+        "package": "Dekoratoren.DataGridView",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Display/7SegmentDisplay/src/Display.java",
+      "type": "file",
+      "label": "Display.java",
+      "properties": {
+        "exists": false,
+        "package": "Display.SevenSegmentDisplay",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Display/MatrixDisplay/MatrixDisplay.java",
+      "type": "file",
+      "label": "MatrixDisplay.java",
+      "properties": {
+        "exists": false,
+        "package": "Display.MatrixDisplay",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Display/MatrixDisplay/src/Dot.java",
+      "type": "file",
+      "label": "Dot.java",
+      "properties": {
+        "exists": false,
+        "package": "Display.MatrixDisplay",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Display/MatrixDisplay/src/MatrixPanel.java",
+      "type": "file",
+      "label": "MatrixPanel.java",
+      "properties": {
+        "exists": false,
+        "package": "Display.MatrixDisplay",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Error/Error.java",
+      "type": "file",
+      "label": "Error.java",
+      "properties": {
+        "exists": false,
+        "package": "Error",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Event/Delay/Delay.java",
+      "type": "file",
+      "label": "Delay.java",
+      "properties": {
+        "exists": false,
+        "package": "Event.Delay",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Event/EventCount/src/Count.java",
+      "type": "file",
+      "label": "Count.java",
+      "properties": {
+        "exists": false,
+        "package": "Event.EventCount",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Event/EventDelay/src/Delay.java",
+      "type": "file",
+      "label": "Delay.java",
+      "properties": {
+        "exists": false,
+        "package": "Event.EventDelay",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Event/TimeConst/src/Const.java",
+      "type": "file",
+      "label": "Const.java",
+      "properties": {
+        "exists": false,
+        "package": "Event.TimeConst",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Event/TimeConst/src/TimeConst.java",
+      "type": "file",
+      "label": "TimeConst.java",
+      "properties": {
+        "exists": false,
+        "package": "Event.TimeConst",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Event/Timer/src/Timer.java",
+      "type": "file",
+      "label": "Timer.java",
+      "properties": {
+        "exists": false,
+        "package": "Event.Timer",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/Event/Timer1ms/src/Timer1ms.java",
+      "type": "file",
+      "label": "Timer1ms.java",
+      "properties": {
+        "exists": false,
+        "package": "Event.Timer1ms",
+        "note": "file not found at specified path"
+      }
+    },
+    {
+      "id": "file:CircuitElements/File/BinaryFileWriteRead/src/BinaryFile.java",
+      "type": "file",
+      "label": "BinaryFile.java",
+      "properties": {
+        "exists": false,
+        "package": "File.BinaryFileWriteRead",
+        "note": "file not found at specified path"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:CircuitElements/Color/ColorConst/ColorConst.java",
+      "target": "class:Color.ColorConst.ColorConst",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Color.ColorConst.ColorConst",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Color/ColorConst/ColorConst.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Color/ColorConst/ColorConst.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Color/ColorConst/ColorConst.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Color/ColorConst/ColorConst.java",
+      "target": "import:java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Color/ColorConst/ColorConst.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Color/ColorConst/ColorConst.java",
+      "target": "import:java.util.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Color.ColorConst.ColorConst",
+      "target": "field:Color.ColorConst.ColorConst.out",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Color.ColorConst.ColorConst",
+      "target": "field:Color.ColorConst.ColorConst.aColor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Color.ColorConst.ColorConst",
+      "target": "field:Color.ColorConst.ColorConst.changed",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Color.ColorConst.ColorConst",
+      "target": "method:Color.ColorConst.ColorConst.paint(Graphics g)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Color.ColorConst.ColorConst",
+      "target": "method:Color.ColorConst.ColorConst.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Color.ColorConst.ColorConst",
+      "target": "method:Color.ColorConst.ColorConst.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Color.ColorConst.ColorConst",
+      "target": "method:Color.ColorConst.ColorConst.localize()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Color.ColorConst.ColorConst",
+      "target": "method:Color.ColorConst.ColorConst.propertyChanged(Object o)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Color.ColorConst.ColorConst",
+      "target": "method:Color.ColorConst.ColorConst.initInputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Color.ColorConst.ColorConst",
+      "target": "method:Color.ColorConst.ColorConst.initOutputPins()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Color.ColorConst.ColorConst",
+      "target": "method:Color.ColorConst.ColorConst.start()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Color.ColorConst.ColorConst",
+      "target": "method:Color.ColorConst.ColorConst.process()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Color.ColorConst.ColorConst",
+      "target": "method:Color.ColorConst.ColorConst.loadFromStream(FileInputStream fis)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Color.ColorConst.ColorConst",
+      "target": "method:Color.ColorConst.ColorConst.saveToStream(FileOutputStream fos)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "method:Color.ColorConst.ColorConst.setPropertyEditor()",
+      "target": "method:Color.ColorConst.ColorConst.localize()",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+      "target": "import:java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+      "target": "import:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+      "target": "import:javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+      "target": "import:java.io.IOException",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+      "target": "import:java.nio.ByteBuffer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+      "target": "import:javax.imageio.ImageIO",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+      "target": "import:java.io.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+      "target": "class:Dekoratoren.Image_1_0.ImageLoader",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.ImageLoader",
+      "target": "class:java.awt.Component",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.ImageLoader",
+      "target": "method:Dekoratoren.Image_1_0.ImageLoader.ImageLoader()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.ImageLoader",
+      "target": "method:Dekoratoren.Image_1_0.ImageLoader.loadImage(Image img)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Image_1_0/XImage.java",
+      "target": "class:Dekoratoren.Image_1_0.XImage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "field:Dekoratoren.Image_1_0.XImage.image",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "field:Dekoratoren.Image_1_0.XImage.noImage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "field:Dekoratoren.Image_1_0.XImage.file",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "field:Dekoratoren.Image_1_0.XImage.interpoliert",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "field:Dekoratoren.Image_1_0.XImage.keepAcpect",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "field:Dekoratoren.Image_1_0.XImage.imageBytes",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "field:Dekoratoren.Image_1_0.XImage.aspect",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "field:Dekoratoren.Image_1_0.XImage.tiled",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "field:Dekoratoren.Image_1_0.XImage.tiledWidth",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "field:Dekoratoren.Image_1_0.XImage.tiledHeight",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "method:Dekoratoren.Image_1_0.XImage.loadImage(String fileName)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "method:Dekoratoren.Image_1_0.XImage.drawTiled(Graphics2D g, Image image, Rectangle r)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "method:Dekoratoren.Image_1_0.XImage.paint(Graphics g)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "method:Dekoratoren.Image_1_0.XImage.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "method:Dekoratoren.Image_1_0.XImage.openPropertyDialog()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "method:Dekoratoren.Image_1_0.XImage.propertyChanged(Object o)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "method:Dekoratoren.Image_1_0.XImage.processAspect()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "method:Dekoratoren.Image_1_0.XImage.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "method:Dekoratoren.Image_1_0.XImage.localize()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "method:Dekoratoren.Image_1_0.XImage.loadFromStream(FileInputStream fis)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "method:Dekoratoren.Image_1_0.XImage.onDispose()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Image_1_0.XImage",
+      "target": "method:Dekoratoren.Image_1_0.XImage.saveToStream(FileOutputStream fos)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "method:Dekoratoren.Image_1_0.XImage.init()",
+      "target": "method:Dekoratoren.Image_1_0.XImage.processAspect()",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:Dekoratoren.Image_1_0.XImage.propertyChanged(Object o)",
+      "target": "method:Dekoratoren.Image_1_0.XImage.loadImage(String fileName)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:Dekoratoren.Image_1_0.XImage.propertyChanged(Object o)",
+      "target": "method:Dekoratoren.Image_1_0.XImage.processAspect()",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:Dekoratoren.Image_1_0.XImage.loadFromStream(FileInputStream fis)",
+      "target": "method:Dekoratoren.Image_1_0.XImage.processAspect()",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:Dekoratoren.Image_1_0.XImage.loadImage(String fileName)",
+      "target": "method:Dekoratoren.Image_1_0.ImageLoader.ImageLoader()",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:Dekoratoren.Image_1_0.XImage.loadImage(String fileName)",
+      "target": "method:Dekoratoren.Image_1_0.ImageLoader.loadImage(Image img)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:Dekoratoren.Image_1_0.XImage.loadFromStream(FileInputStream fis)",
+      "target": "method:Dekoratoren.Image_1_0.ImageLoader.ImageLoader()",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:Dekoratoren.Image_1_0.XImage.loadFromStream(FileInputStream fis)",
+      "target": "method:Dekoratoren.Image_1_0.ImageLoader.loadImage(Image img)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+      "target": "import:java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+      "target": "import:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+      "target": "import:javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+      "target": "import:java.util.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/Label/YLabel.java",
+      "target": "class:Dekoratoren.Label.YLabel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "field:Dekoratoren.Label.YLabel.image",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "field:Dekoratoren.Label.YLabel.strText",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "field:Dekoratoren.Label.YLabel.ausrichtungH",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "field:Dekoratoren.Label.YLabel.ausrichtungV",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "field:Dekoratoren.Label.YLabel.font",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "field:Dekoratoren.Label.YLabel.fontColor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "field:Dekoratoren.Label.YLabel.values",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "field:Dekoratoren.Label.YLabel.label",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "method:Dekoratoren.Label.YLabel.YLabel()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "method:Dekoratoren.Label.YLabel.myInit()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "method:Dekoratoren.Label.YLabel.paint(Graphics g)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "method:Dekoratoren.Label.YLabel.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "method:Dekoratoren.Label.YLabel.xOnInit()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "method:Dekoratoren.Label.YLabel.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "method:Dekoratoren.Label.YLabel.localize()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "method:Dekoratoren.Label.YLabel.propertyChanged(Object o)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "method:Dekoratoren.Label.YLabel.loadFromStream(FileInputStream fis)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.Label.YLabel",
+      "target": "method:Dekoratoren.Label.YLabel.saveToStream(FileOutputStream fos)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "method:Dekoratoren.Label.YLabel.YLabel()",
+      "target": "method:Dekoratoren.Label.YLabel.myInit()",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "method:Dekoratoren.Label.YLabel.loadFromStream(FileInputStream fis)",
+      "target": "method:Dekoratoren.Label.YLabel.propertyChanged(Object o)",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+      "target": "import:VisualLogic.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+      "target": "import:VisualLogic.variables.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+      "target": "import:tools.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+      "target": "import:java.awt.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+      "target": "import:java.awt.event.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+      "target": "import:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+      "target": "import:javax.swing.*",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Dekoratoren/XRectangle/XRectangle.java",
+      "target": "class:Dekoratoren.XRectangle.XRectangle",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.XRectangle.XRectangle",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Dekoratoren.XRectangle.XRectangle",
+      "target": "field:Dekoratoren.XRectangle.XRectangle.fillColor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.XRectangle.XRectangle",
+      "target": "field:Dekoratoren.XRectangle.XRectangle.strokeColor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.XRectangle.XRectangle",
+      "target": "field:Dekoratoren.XRectangle.XRectangle.strokeWidth",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.XRectangle.XRectangle",
+      "target": "method:Dekoratoren.XRectangle.XRectangle.paint(Graphics g)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.XRectangle.XRectangle",
+      "target": "method:Dekoratoren.XRectangle.XRectangle.init()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.XRectangle.XRectangle",
+      "target": "method:Dekoratoren.XRectangle.XRectangle.setPropertyEditor()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.XRectangle.XRectangle",
+      "target": "method:Dekoratoren.XRectangle.XRectangle.localize()",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.XRectangle.XRectangle",
+      "target": "method:Dekoratoren.XRectangle.XRectangle.propertyChanged(Object o)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.XRectangle.XRectangle",
+      "target": "method:Dekoratoren.XRectangle.XRectangle.loadFromStream(FileInputStream fis)",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Dekoratoren.XRectangle.XRectangle",
+      "target": "method:Dekoratoren.XRectangle.XRectangle.saveToStream(FileOutputStream fos)",
+      "type": "contains",
+      "weight": 1.0
+    }
+  ]
+}

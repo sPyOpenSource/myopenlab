@@ -1,0 +1,1412 @@
+{
+  "nodes": [
+    {
+      "id": "java:CircuitElements/Analoge/IDCT/IDCT.java",
+      "type": "file",
+      "name": "IDCT.java",
+      "summary": "IDCT (Inverse Discrete Cosine Transform) element — MyOpenLab visual programming element that performs inverse DCT on 1D signal arrays, extends JVSMain with group input/output pins",
+      "filePath": "CircuitElements/Analoge/IDCT/IDCT.java",
+      "tags": ["java", "myopenlab", "dct", "signal-processing", "analog"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:Analoge.IDCT.IDCT",
+      "type": "class",
+      "name": "IDCT",
+      "summary": "Main element class for Inverse Discrete Cosine Transform — extends JVSMain, processes VSGroup input into DCT-transformed output arrays",
+      "filePath": "CircuitElements/Analoge/IDCT/IDCT.java",
+      "tags": ["java", "myopenlab", "class", "dct", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "method:IDCT.init",
+      "type": "method",
+      "name": "init",
+      "summary": "Initializes element pins, loads icon, sets up group output with two VS1DDouble arrays",
+      "filePath": "CircuitElements/Analoge/IDCT/IDCT.java",
+      "tags": ["java", "myopenlab"],
+      "complexity": "simple"
+    },
+    {
+      "id": "method:IDCT.process",
+      "type": "method",
+      "name": "process",
+      "summary": "Main processing loop — reads input signal arrays, applies inverseDCT1D, writes result to output pins",
+      "filePath": "CircuitElements/Analoge/IDCT/IDCT.java",
+      "tags": ["java", "myopenlab"],
+      "complexity": "medium"
+    },
+    {
+      "id": "method:IDCT.dct1D",
+      "type": "method",
+      "name": "dct1D",
+      "summary": "Static 1D Discrete Cosine Transform implementation — computes DCT coefficients for a double array",
+      "filePath": "CircuitElements/Analoge/IDCT/IDCT.java",
+      "tags": ["java", "myopenlab", "dct"],
+      "complexity": "medium"
+    },
+    {
+      "id": "method:IDCT.inverseDCT1D",
+      "type": "method",
+      "name": "inverseDCT1D",
+      "summary": "Static 1D Inverse Discrete Cosine Transform implementation — reconstructs signal from DCT coefficients",
+      "filePath": "CircuitElements/Analoge/IDCT/IDCT.java",
+      "tags": ["java", "myopenlab", "idct"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/Analoge/Ton-Generator/src/TonGenrator.java",
+      "type": "file",
+      "name": "TonGenrator.java",
+      "summary": "Tone Generator element — MyOpenLab visual element that generates synthetic audio tones and plays them via javax.sound, extends JVSMain",
+      "filePath": "CircuitElements/Analoge/Ton-Generator/src/TonGenrator.java",
+      "tags": ["java", "myopenlab", "audio", "sound", "tone-generator", "analog"],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:TonGenrator",
+      "type": "class",
+      "name": "TonGenrator",
+      "summary": "Tone generator element — accepts VSGroup input of audio data arrays, plays them as sound through SourceDataLine, with inner classes ListenThread and SynGen",
+      "filePath": "CircuitElements/Analoge/Ton-Generator/src/TonGenrator.java",
+      "tags": ["java", "myopenlab", "class", "audio", "jvsmain"],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:TonGenrator.ListenThread",
+      "type": "class",
+      "name": "ListenThread",
+      "summary": "Inner class extending Thread — plays audio data through SourceDataLine in a background thread",
+      "filePath": "CircuitElements/Analoge/Ton-Generator/src/TonGenrator.java",
+      "tags": ["java", "myopenlab", "inner-class", "thread", "audio"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:TonGenrator.SynGen",
+      "type": "class",
+      "name": "SynGen",
+      "summary": "Inner signal generator class — generates synthetic audio signals (sine waves) using ByteBuffer/ShortBuffer",
+      "filePath": "CircuitElements/Analoge/Ton-Generator/src/TonGenrator.java",
+      "tags": ["java", "myopenlab", "inner-class", "audio", "signal"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/Analoge/Trigger/Trigger.java",
+      "type": "file",
+      "name": "Trigger.java",
+      "summary": "Trigger element — MyOpenLab visual element that detects zero-crossing triggers in signal arrays, extends JVSMain",
+      "filePath": "CircuitElements/Analoge/Trigger/Trigger.java",
+      "tags": ["java", "myopenlab", "trigger", "zero-crossing", "analog"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:Analoge.Trigger.Trigger",
+      "type": "class",
+      "name": "Trigger",
+      "summary": "Trigger element — detects zero-crossing in signal arrays and shifts data to align at trigger point",
+      "filePath": "CircuitElements/Analoge/Trigger/Trigger.java",
+      "tags": ["java", "myopenlab", "class", "trigger", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/Analoge/Trunc/Trigger.java",
+      "type": "file",
+      "name": "Trigger.java",
+      "summary": "Trunc element — MyOpenLab visual element that truncates small signal values (below threshold) to zero, extends JVSMain",
+      "filePath": "CircuitElements/Analoge/Trunc/Trigger.java",
+      "tags": ["java", "myopenlab", "trunc", "threshold", "analog"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Analoge.Trunc.Trigger",
+      "type": "class",
+      "name": "Trigger",
+      "summary": "Trunc element — zeroes out signal values with absolute value below threshold (20.0)",
+      "filePath": "CircuitElements/Analoge/Trunc/Trigger.java",
+      "tags": ["java", "myopenlab", "class", "trunc", "jvsmain"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java:CircuitElements/Automation/FuzzyControl/DialogChart.java",
+      "type": "file",
+      "name": "DialogChart.java",
+      "summary": "Dialog chart window for Fuzzy Control element — displays JFreeChart charts for fuzzy variables, extends JDialog",
+      "filePath": "CircuitElements/Automation/FuzzyControl/DialogChart.java",
+      "tags": ["java", "myopenlab", "fuzzy", "chart", "jfreechart", "automation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Automation.FuzzyControl.DialogChart",
+      "type": "class",
+      "name": "DialogChart",
+      "summary": "JDialog subclass for displaying fuzzy variable charts using JFreeChart, with update and close lifecycle",
+      "filePath": "CircuitElements/Automation/FuzzyControl/DialogChart.java",
+      "tags": ["java", "myopenlab", "class", "dialog", "chart", "fuzzy"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Automation.FuzzyControl.MyPanel",
+      "type": "class",
+      "name": "MyPanel",
+      "summary": "JPanel inner class that renders a JFreeChart in its paintComponent",
+      "filePath": "CircuitElements/Automation/FuzzyControl/DialogChart.java",
+      "tags": ["java", "myopenlab", "panel", "chart"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java:CircuitElements/Automation/FuzzyControl/Fuzzy.java",
+      "type": "file",
+      "name": "Fuzzy.java",
+      "summary": "Fuzzy Logic Control element — MyOpenLab visual element integrating jFuzzyLogic for fuzzy inference with FCL files, extends JVSMain",
+      "filePath": "CircuitElements/Automation/FuzzyControl/Fuzzy.java",
+      "tags": ["java", "myopenlab", "fuzzy", "fuzzy-logic", "control", "automation"],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Automation.FuzzyControl.Fuzzy",
+      "type": "class",
+      "name": "Fuzzy",
+      "summary": "Fuzzy Logic Controller — loads FCL files, manages input/output variables, evaluates fuzzy rules, displays charts",
+      "filePath": "CircuitElements/Automation/FuzzyControl/Fuzzy.java",
+      "tags": ["java", "myopenlab", "class", "fuzzy", "jfuzzylogic", "jvsmain"],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Automation.FuzzyControl.MyNode",
+      "type": "class",
+      "name": "MyNode",
+      "summary": "Package-private helper class storing fuzzy variable node metadata (name, VSDouble ref, pin index)",
+      "filePath": "CircuitElements/Automation/FuzzyControl/Fuzzy.java",
+      "tags": ["java", "myopenlab", "helper"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java:CircuitElements/Automation/FuzzyControl/NewJDialog.java",
+      "type": "file",
+      "name": "NewJDialog.java",
+      "summary": "FCL editor dialog — JDialog for editing Fuzzy Control Language text with OK/Cancel buttons",
+      "filePath": "CircuitElements/Automation/FuzzyControl/NewJDialog.java",
+      "tags": ["java", "myopenlab", "fuzzy", "editor", "dialog", "automation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Automation.FuzzyControl.NewJDialog",
+      "type": "class",
+      "name": "NewJDialog",
+      "summary": "JDialog editor for FCL (Fuzzy Control Language) text — with OK/Cancel, stores result in static fields",
+      "filePath": "CircuitElements/Automation/FuzzyControl/NewJDialog.java",
+      "tags": ["java", "myopenlab", "class", "dialog", "editor", "fcl"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java:CircuitElements/Automation/PID/PID.java",
+      "type": "file",
+      "name": "PID.java",
+      "summary": "PID Controller element — MyOpenLab visual element implementing PID (Proportional-Integral-Derivative) regulator, extends JVSMain",
+      "filePath": "CircuitElements/Automation/PID/PID.java",
+      "tags": ["java", "myopenlab", "pid", "controller", "regulation", "automation"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:Automation.PID.PID",
+      "type": "class",
+      "name": "PID",
+      "summary": "PID Regulator — computes control output y = Kp*e + Ki*Ta*sum(e) + Kd*(e-e_prev)/Ta from error input e and tuning parameters",
+      "filePath": "CircuitElements/Automation/PID/PID.java",
+      "tags": ["java", "myopenlab", "class", "pid", "controller", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/BitOperations/AND/AND.java",
+      "type": "file",
+      "name": "AND.java",
+      "summary": "Bitwise AND element — MyOpenLab visual element performing bitwise AND on integer/byte inputs, extends JVSMain",
+      "filePath": "CircuitElements/BitOperations/AND/AND.java",
+      "tags": ["java", "myopenlab", "bitwise", "and", "bit-operations"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:BitOperations.AND.AND",
+      "type": "class",
+      "name": "AND",
+      "summary": "Bitwise AND operation element — applies & operator to VSInteger or VSByte inputs with dynamic pin data type detection",
+      "filePath": "CircuitElements/BitOperations/AND/AND.java",
+      "tags": ["java", "myopenlab", "class", "bitwise", "and", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/BitOperations/OR/OR.java",
+      "type": "file",
+      "name": "OR.java",
+      "summary": "Bitwise OR element — MyOpenLab visual element performing bitwise OR on integer/byte inputs, extends JVSMain",
+      "filePath": "CircuitElements/BitOperations/OR/OR.java",
+      "tags": ["java", "myopenlab", "bitwise", "or", "bit-operations"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:BitOperations.OR.OR",
+      "type": "class",
+      "name": "OR",
+      "summary": "Bitwise OR operation element — applies | operator to VSInteger or VSByte inputs with dynamic pin data type detection",
+      "filePath": "CircuitElements/BitOperations/OR/OR.java",
+      "tags": ["java", "myopenlab", "class", "bitwise", "or", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/BitOperations/SHIFT_LEFT/ShiftLeft.java",
+      "type": "file",
+      "name": "ShiftLeft.java",
+      "summary": "Bitwise Shift Left element — MyOpenLab visual element performing left shift (<<) on integer/byte inputs, extends JVSMain",
+      "filePath": "CircuitElements/BitOperations/SHIFT_LEFT/ShiftLeft.java",
+      "tags": ["java", "myopenlab", "bitwise", "shift-left", "bit-operations"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:BitOperations.SHIFT_LEFT.ShiftLeft",
+      "type": "class",
+      "name": "ShiftLeft",
+      "summary": "Bitwise left shift element — applies << operator to VSInteger or VSByte inputs",
+      "filePath": "CircuitElements/BitOperations/SHIFT_LEFT/ShiftLeft.java",
+      "tags": ["java", "myopenlab", "class", "bitwise", "shift", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/BitOperations/SHIFT_RIGHT/ShiftRight.java",
+      "type": "file",
+      "name": "ShiftRight.java",
+      "summary": "Bitwise Shift Right element — MyOpenLab visual element performing right shift (>>) on integer/byte inputs, extends JVSMain",
+      "filePath": "CircuitElements/BitOperations/SHIFT_RIGHT/ShiftRight.java",
+      "tags": ["java", "myopenlab", "bitwise", "shift-right", "bit-operations"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:BitOperations.SHIFT_RIGHT.ShiftRight",
+      "type": "class",
+      "name": "ShiftRight",
+      "summary": "Bitwise right shift element — applies >> operator to VSInteger or VSByte inputs",
+      "filePath": "CircuitElements/BitOperations/SHIFT_RIGHT/ShiftRight.java",
+      "tags": ["java", "myopenlab", "class", "bitwise", "shift", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/BitOperations/XOR/XOR.java",
+      "type": "file",
+      "name": "XOR.java",
+      "summary": "Bitwise XOR element — MyOpenLab visual element performing bitwise XOR (^) on integer/byte inputs, extends JVSMain",
+      "filePath": "CircuitElements/BitOperations/XOR/XOR.java",
+      "tags": ["java", "myopenlab", "bitwise", "xor", "bit-operations"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:BitOperations.XOR.XOR",
+      "type": "class",
+      "name": "XOR",
+      "summary": "Bitwise XOR operation element — applies ^ operator to VSInteger or VSByte inputs with dynamic pin data type detection",
+      "filePath": "CircuitElements/BitOperations/XOR/XOR.java",
+      "tags": ["java", "myopenlab", "class", "bitwise", "xor", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/Boolean/AND/src/AND.java",
+      "type": "file",
+      "name": "AND.java",
+      "summary": "Boolean AND gate (2-input) — MyOpenLab visual element implementing logical AND of two boolean inputs, extends Gatter",
+      "filePath": "CircuitElements/Boolean/AND/src/AND.java",
+      "tags": ["java", "myopenlab", "boolean", "and", "logic-gate"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:AND",
+      "type": "class",
+      "name": "AND",
+      "summary": "2-input Boolean AND gate — extends Gatter, computes a & b from two VSBoolean inputs",
+      "filePath": "CircuitElements/Boolean/AND/src/AND.java",
+      "tags": ["java", "myopenlab", "class", "and", "gatter", "logic-gate"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java:CircuitElements/Boolean/AND2/src/AND.java",
+      "type": "file",
+      "name": "AND.java",
+      "summary": "Boolean AND gate (multi-input) — MyOpenLab visual element implementing logical AND of N boolean inputs, extends Gatter2",
+      "filePath": "CircuitElements/Boolean/AND2/src/AND.java",
+      "tags": ["java", "myopenlab", "boolean", "and", "logic-gate"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:AND2.AND",
+      "type": "class",
+      "name": "AND",
+      "summary": "Multi-input Boolean AND gate — extends Gatter2, checks all inputs are true, triggers on change",
+      "filePath": "CircuitElements/Boolean/AND2/src/AND.java",
+      "tags": ["java", "myopenlab", "class", "and", "gatter2", "logic-gate"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java:CircuitElements/Boolean/AND3/src/AND.java",
+      "type": "file",
+      "name": "AND.java",
+      "summary": "Boolean AND gate with clock delay — MyOpenLab visual element implementing AND with configurable delay via processClock, extends Gatter3",
+      "filePath": "CircuitElements/Boolean/AND3/src/AND.java",
+      "tags": ["java", "myopenlab", "boolean", "and", "delay", "logic-gate"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:AND3.AND",
+      "type": "class",
+      "name": "AND",
+      "summary": "AND gate with configurable delay — extends Gatter3, uses nanoTime-based delay before propagating output",
+      "filePath": "CircuitElements/Boolean/AND3/src/AND.java",
+      "tags": ["java", "myopenlab", "class", "and", "gatter3", "delay", "logic-gate"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/Boolean/Bin2Dec/src/BinDec.java",
+      "type": "file",
+      "name": "BinDec.java",
+      "summary": "Binary to Decimal converter — MyOpenLab visual element converting N boolean inputs to integer output, extends JVSMain",
+      "filePath": "CircuitElements/Boolean/Bin2Dec/src/BinDec.java",
+      "tags": ["java", "myopenlab", "binary", "decimal", "converter"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:BinDec",
+      "type": "class",
+      "name": "BinDec",
+      "summary": "Binary to Decimal converter — reads configurable number of VSBoolean inputs, computes integer sum of weighted bits",
+      "filePath": "CircuitElements/Boolean/Bin2Dec/src/BinDec.java",
+      "tags": ["java", "myopenlab", "class", "binary", "decimal", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/Boolean/const/src/Const.java",
+      "type": "file",
+      "name": "Const.java",
+      "summary": "Boolean Constant element — MyOpenLab visual element that outputs a configurable constant boolean value (true/false), extends JVSMain",
+      "filePath": "CircuitElements/Boolean/const/src/Const.java",
+      "tags": ["java", "myopenlab", "boolean", "constant", "const"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Const",
+      "type": "class",
+      "name": "Const",
+      "summary": "Boolean Constant — emits a user-configurable VSBoolean value on start, with property editor for value selection",
+      "filePath": "CircuitElements/Boolean/const/src/Const.java",
+      "tags": ["java", "myopenlab", "class", "constant", "boolean", "jvsmain"],
+      "complexity": "simple"
+    },
+    {
+      "id": "java:CircuitElements/Boolean/Counter/4BitCounter/src/Counter4Bit.java",
+      "type": "file",
+      "name": "Counter4Bit.java",
+      "summary": "4-bit Counter element — MyOpenLab visual element implementing a 4-bit binary counter with timer and reset inputs, extends JVSMain",
+      "filePath": "CircuitElements/Boolean/Counter/4BitCounter/src/Counter4Bit.java",
+      "tags": ["java", "myopenlab", "counter", "4bit", "binary", "boolean"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:Counter4Bit",
+      "type": "class",
+      "name": "Counter4Bit",
+      "summary": "4-bit binary counter — counts from 0-15 on timer signal, outputs 4 boolean pins, resets on reset signal",
+      "filePath": "CircuitElements/Boolean/Counter/4BitCounter/src/Counter4Bit.java",
+      "tags": ["java", "myopenlab", "class", "counter", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/Boolean/Dec2Bin/Dec2Bin.java",
+      "type": "file",
+      "name": "Dec2Bin.java",
+      "summary": "Decimal to Binary converter — MyOpenLab visual element converting integer input to N boolean outputs, extends JVSMain",
+      "filePath": "CircuitElements/Boolean/Dec2Bin/Dec2Bin.java",
+      "tags": ["java", "myopenlab", "decimal", "binary", "converter"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:Boolean.Dec2Bin.Dec2Bin",
+      "type": "class",
+      "name": "Dec2Bin",
+      "summary": "Decimal to Binary converter — reads integer input, sets N boolean output pins to represent binary value",
+      "filePath": "CircuitElements/Boolean/Dec2Bin/Dec2Bin.java",
+      "tags": ["java", "myopenlab", "class", "decimal", "binary", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/Boolean/Decoder/Bin2Dec/src/BinDec.java",
+      "type": "file",
+      "name": "BinDec.java",
+      "summary": "Binary to Decimal decoder — MyOpenLab decoder element converting N boolean inputs to integer output, extends JVSMain",
+      "filePath": "CircuitElements/Boolean/Decoder/Bin2Dec/src/BinDec.java",
+      "tags": ["java", "myopenlab", "binary", "decimal", "decoder"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:Decoder.BinDec",
+      "type": "class",
+      "name": "BinDec",
+      "summary": "Binary to Decimal decoder — similar to Bin2Dec converter, reads VSBoolean inputs, outputs weighted integer sum",
+      "filePath": "CircuitElements/Boolean/Decoder/Bin2Dec/src/BinDec.java",
+      "tags": ["java", "myopenlab", "class", "decoder", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/Boolean/Decoder/Dec2Bin/src/Dec2Bin.java",
+      "type": "file",
+      "name": "Dec2Bin.java",
+      "summary": "Decimal to Binary decoder — MyOpenLab decoder element converting integer input to N boolean outputs, extends JVSMain",
+      "filePath": "CircuitElements/Boolean/Decoder/Dec2Bin/src/Dec2Bin.java",
+      "tags": ["java", "myopenlab", "decimal", "binary", "decoder"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:Decoder.Dec2Bin",
+      "type": "class",
+      "name": "Dec2Bin",
+      "summary": "Decimal to Binary decoder — reads integer input, sets N boolean output pins via repeated division",
+      "filePath": "CircuitElements/Boolean/Decoder/Dec2Bin/src/Dec2Bin.java",
+      "tags": ["java", "myopenlab", "class", "decoder", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/Boolean/Decoder/SiebenSegDecoder/src/Logic.java",
+      "type": "file",
+      "name": "Logic.java",
+      "summary": "7-Segment Decoder element — MyOpenLab visual element implementing a 7-segment display decoder with lookup table, extends JVSMain",
+      "filePath": "CircuitElements/Boolean/Decoder/SiebenSegDecoder/src/Logic.java",
+      "tags": ["java", "myopenlab", "7-segment", "decoder", "display"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:Logic",
+      "type": "class",
+      "name": "Logic",
+      "summary": "7-Segment Decoder — maps 4-bit binary input to 7 boolean outputs (segments a-g) via lookup table",
+      "filePath": "CircuitElements/Boolean/Decoder/SiebenSegDecoder/src/Logic.java",
+      "tags": ["java", "myopenlab", "class", "decoder", "7segment", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+      "type": "file",
+      "name": "Demultiplexer.java",
+      "summary": "Demultiplexer element — MyOpenLab visual element routing a boolean input to one of 8 outputs based on 3-bit address, extends JVSMain",
+      "filePath": "CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+      "tags": ["java", "myopenlab", "demultiplexer", "boolean", "mux"],
+      "complexity": "medium"
+    },
+    {
+      "id": "class:Demultiplexer",
+      "type": "class",
+      "name": "Demultiplexer",
+      "summary": "Demultiplexer — routes input boolean to one of 8 output pins selected by 3-bit address pins",
+      "filePath": "CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+      "tags": ["java", "myopenlab", "class", "demultiplexer", "jvsmain"],
+      "complexity": "medium"
+    },
+    {
+      "id": "java:CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+      "type": "file",
+      "name": "DFlipFlop.java",
+      "summary": "D Flip-Flop element — MyOpenLab visual element implementing a toggle flip-flop with Q1/Q2 outputs, extends JVSMain",
+      "filePath": "CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+      "tags": ["java", "myopenlab", "flipflop", "d-flipflop", "boolean"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Boolean.DFlipFlop.DFlipFlop",
+      "type": "class",
+      "name": "DFlipFlop",
+      "summary": "D Flip-Flop — toggles Q1/Q2 boolean outputs on each timer (T) pulse, alternating state between true/false",
+      "filePath": "CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+      "tags": ["java", "myopenlab", "class", "flipflop", "jvsmain"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "java:CircuitElements/Analoge/IDCT/IDCT.java",
+      "target": "class:Analoge.IDCT.IDCT",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Analoge.IDCT.IDCT",
+      "target": "method:IDCT.init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Analoge.IDCT.IDCT",
+      "target": "method:IDCT.process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Analoge.IDCT.IDCT",
+      "target": "method:IDCT.dct1D",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Analoge.IDCT.IDCT",
+      "target": "method:IDCT.inverseDCT1D",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Analoge/Ton-Generator/src/TonGenrator.java",
+      "target": "class:TonGenrator",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:TonGenrator",
+      "target": "class:TonGenrator.ListenThread",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:TonGenrator",
+      "target": "class:TonGenrator.SynGen",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Analoge/Trigger/Trigger.java",
+      "target": "class:Analoge.Trigger.Trigger",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Analoge/Trunc/Trigger.java",
+      "target": "class:Analoge.Trunc.Trigger",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Automation/FuzzyControl/DialogChart.java",
+      "target": "class:Automation.FuzzyControl.DialogChart",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Automation/FuzzyControl/DialogChart.java",
+      "target": "class:Automation.FuzzyControl.MyPanel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Automation/FuzzyControl/Fuzzy.java",
+      "target": "class:Automation.FuzzyControl.Fuzzy",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Automation/FuzzyControl/Fuzzy.java",
+      "target": "class:Automation.FuzzyControl.MyNode",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Automation/FuzzyControl/NewJDialog.java",
+      "target": "class:Automation.FuzzyControl.NewJDialog",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Automation/PID/PID.java",
+      "target": "class:Automation.PID.PID",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/BitOperations/AND/AND.java",
+      "target": "class:BitOperations.AND.AND",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/BitOperations/OR/OR.java",
+      "target": "class:BitOperations.OR.OR",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/BitOperations/SHIFT_LEFT/ShiftLeft.java",
+      "target": "class:BitOperations.SHIFT_LEFT.ShiftLeft",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/BitOperations/SHIFT_RIGHT/ShiftRight.java",
+      "target": "class:BitOperations.SHIFT_RIGHT.ShiftRight",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/BitOperations/XOR/XOR.java",
+      "target": "class:BitOperations.XOR.XOR",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Boolean/AND/src/AND.java",
+      "target": "class:AND",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Boolean/AND2/src/AND.java",
+      "target": "class:AND2.AND",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Boolean/AND3/src/AND.java",
+      "target": "class:AND3.AND",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Boolean/Bin2Dec/src/BinDec.java",
+      "target": "class:BinDec",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Boolean/const/src/Const.java",
+      "target": "class:Const",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Boolean/Counter/4BitCounter/src/Counter4Bit.java",
+      "target": "class:Counter4Bit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Boolean/Dec2Bin/Dec2Bin.java",
+      "target": "class:Boolean.Dec2Bin.Dec2Bin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Boolean/Decoder/Bin2Dec/src/BinDec.java",
+      "target": "class:Decoder.BinDec",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Boolean/Decoder/Dec2Bin/src/Dec2Bin.java",
+      "target": "class:Decoder.Dec2Bin",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Boolean/Decoder/SiebenSegDecoder/src/Logic.java",
+      "target": "class:Logic",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+      "target": "class:Demultiplexer",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "java:CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+      "target": "class:Boolean.DFlipFlop.DFlipFlop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:Analoge.IDCT.IDCT",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:TonGenrator",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:TonGenrator.ListenThread",
+      "target": "class:Thread",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Analoge.Trigger.Trigger",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Analoge.Trunc.Trigger",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Automation.FuzzyControl.DialogChart",
+      "target": "class:javax.swing.JDialog",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Automation.FuzzyControl.MyPanel",
+      "target": "class:javax.swing.JPanel",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Automation.FuzzyControl.Fuzzy",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Automation.FuzzyControl.NewJDialog",
+      "target": "class:javax.swing.JDialog",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Automation.PID.PID",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:BitOperations.AND.AND",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:BitOperations.OR.OR",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:BitOperations.SHIFT_LEFT.ShiftLeft",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:BitOperations.SHIFT_RIGHT.ShiftRight",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:BitOperations.XOR.XOR",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:AND",
+      "target": "class:Gatter",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:AND2.AND",
+      "target": "class:Gatter2",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:AND3.AND",
+      "target": "class:Gatter3",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:BinDec",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Const",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Counter4Bit",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Boolean.Dec2Bin.Dec2Bin",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Decoder.BinDec",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Decoder.Dec2Bin",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Logic",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Demultiplexer",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Boolean.DFlipFlop.DFlipFlop",
+      "target": "class:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:Analoge.IDCT.IDCT",
+      "target": "class:VSGroup",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Analoge.IDCT.IDCT",
+      "target": "class:VS1DDouble",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:TonGenrator",
+      "target": "class:VSGroup",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:TonGenrator",
+      "target": "class:VS1DDouble",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:TonGenrator",
+      "target": "class:AudioFormat",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:TonGenrator",
+      "target": "class:SourceDataLine",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Analoge.Trigger.Trigger",
+      "target": "class:VSGroup",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Analoge.Trigger.Trigger",
+      "target": "class:VS1DDouble",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Analoge.Trunc.Trigger",
+      "target": "class:VSGroup",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Analoge.Trunc.Trigger",
+      "target": "class:VS1DDouble",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Automation.FuzzyControl.Fuzzy",
+      "target": "class:FIS",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Automation.FuzzyControl.Fuzzy",
+      "target": "class:FuzzyRuleSet",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Automation.FuzzyControl.Fuzzy",
+      "target": "class:Variable",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Automation.FuzzyControl.Fuzzy",
+      "target": "class:VSDouble",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Automation.FuzzyControl.Fuzzy",
+      "target": "class:VSBoolean",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Automation.FuzzyControl.Fuzzy",
+      "target": "class:VSPropertyDialog",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Automation.FuzzyControl.Fuzzy",
+      "target": "class:JFreeChart",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Automation.FuzzyControl.Fuzzy",
+      "target": "class:DialogChart",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:Automation.FuzzyControl.Fuzzy",
+      "target": "class:NewJDialog",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:Automation.PID.PID",
+      "target": "class:VSDouble",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BitOperations.AND.AND",
+      "target": "class:VSInteger",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BitOperations.AND.AND",
+      "target": "class:VSByte",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BitOperations.AND.AND",
+      "target": "class:VSObject",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BitOperations.OR.OR",
+      "target": "class:VSInteger",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BitOperations.OR.OR",
+      "target": "class:VSByte",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BitOperations.OR.OR",
+      "target": "class:VSObject",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BitOperations.SHIFT_LEFT.ShiftLeft",
+      "target": "class:VSInteger",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BitOperations.SHIFT_LEFT.ShiftLeft",
+      "target": "class:VSByte",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BitOperations.SHIFT_LEFT.ShiftLeft",
+      "target": "class:VSObject",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BitOperations.SHIFT_RIGHT.ShiftRight",
+      "target": "class:VSInteger",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BitOperations.SHIFT_RIGHT.ShiftRight",
+      "target": "class:VSByte",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BitOperations.SHIFT_RIGHT.ShiftRight",
+      "target": "class:VSObject",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BitOperations.XOR.XOR",
+      "target": "class:VSInteger",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BitOperations.XOR.XOR",
+      "target": "class:VSByte",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BitOperations.XOR.XOR",
+      "target": "class:VSObject",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:AND",
+      "target": "class:VSBoolean",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:AND2.AND",
+      "target": "class:VSBoolean",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:AND3.AND",
+      "target": "class:VSBoolean",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BinDec",
+      "target": "class:VSBoolean",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:BinDec",
+      "target": "class:VSInteger",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Const",
+      "target": "class:VSBoolean",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Counter4Bit",
+      "target": "class:VSBoolean",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Boolean.Dec2Bin.Dec2Bin",
+      "target": "class:VSBoolean",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Boolean.Dec2Bin.Dec2Bin",
+      "target": "class:VSInteger",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Decoder.BinDec",
+      "target": "class:VSBoolean",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Decoder.BinDec",
+      "target": "class:VSInteger",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Decoder.Dec2Bin",
+      "target": "class:VSBoolean",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Decoder.Dec2Bin",
+      "target": "class:VSInteger",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Logic",
+      "target": "class:VSBoolean",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Demultiplexer",
+      "target": "class:VSBoolean",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Boolean.DFlipFlop.DFlipFlop",
+      "target": "class:VSBoolean",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Automation.FuzzyControl.DialogChart",
+      "target": "class:JFreeChart",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Automation.FuzzyControl.DialogChart",
+      "target": "class:Variable",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:Automation.FuzzyControl.DialogChart",
+      "target": "class:MyNode",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:BitOperations.AND.AND",
+      "target": "class:BitOperations.OR.OR",
+      "type": "calls",
+      "weight": 0.5
+    },
+    {
+      "source": "class:BitOperations.AND.AND",
+      "target": "class:BitOperations.XOR.XOR",
+      "type": "calls",
+      "weight": 0.5
+    },
+    {
+      "source": "class:BitOperations.AND.AND",
+      "target": "class:BitOperations.SHIFT_LEFT.ShiftLeft",
+      "type": "calls",
+      "weight": 0.5
+    },
+    {
+      "source": "class:BitOperations.AND.AND",
+      "target": "class:BitOperations.SHIFT_RIGHT.ShiftRight",
+      "type": "calls",
+      "weight": 0.5
+    },
+    {
+      "source": "class:BinDec",
+      "target": "class:Decoder.BinDec",
+      "type": "calls",
+      "weight": 0.6
+    },
+    {
+      "source": "class:Boolean.Dec2Bin.Dec2Bin",
+      "target": "class:Decoder.Dec2Bin",
+      "type": "calls",
+      "weight": 0.6
+    },
+    {
+      "source": "class:Analoge.Trigger.Trigger",
+      "target": "class:Analoge.Trunc.Trigger",
+      "type": "calls",
+      "weight": 0.5
+    },
+    {
+      "source": "class:Analoge.Trigger.Trigger",
+      "target": "class:Analoge.IDCT.IDCT",
+      "type": "calls",
+      "weight": 0.5
+    }
+  ],
+  "batchFiles": [
+    {
+      "path": "CircuitElements/Analoge/IDCT/IDCT.java",
+      "language": "java",
+      "sizeLines": 241,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Analoge/Ton-Generator/src/TonGenrator.java",
+      "language": "java",
+      "sizeLines": 385,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Analoge/Trigger/Trigger.java",
+      "language": "java",
+      "sizeLines": 173,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Analoge/Trunc/Trigger.java",
+      "language": "java",
+      "sizeLines": 163,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Automation/FuzzyControl/DialogChart.java",
+      "language": "java",
+      "sizeLines": 114,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Automation/FuzzyControl/Fuzzy.java",
+      "language": "java",
+      "sizeLines": 433,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Automation/FuzzyControl/NewJDialog.java",
+      "language": "java",
+      "sizeLines": 110,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Automation/PID/PID.java",
+      "language": "java",
+      "sizeLines": 144,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/BitOperations/AND/AND.java",
+      "language": "java",
+      "sizeLines": 246,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/BitOperations/OR/OR.java",
+      "language": "java",
+      "sizeLines": 245,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/BitOperations/SHIFT_LEFT/ShiftLeft.java",
+      "language": "java",
+      "sizeLines": 246,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/BitOperations/SHIFT_RIGHT/ShiftRight.java",
+      "language": "java",
+      "sizeLines": 246,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/BitOperations/XOR/XOR.java",
+      "language": "java",
+      "sizeLines": 245,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Boolean/AND/src/AND.java",
+      "language": "java",
+      "sizeLines": 73,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Boolean/AND2/src/AND.java",
+      "language": "java",
+      "sizeLines": 87,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Boolean/AND3/src/AND.java",
+      "language": "java",
+      "sizeLines": 110,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Boolean/Bin2Dec/src/BinDec.java",
+      "language": "java",
+      "sizeLines": 179,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Boolean/const/src/Const.java",
+      "language": "java",
+      "sizeLines": 156,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Boolean/Counter/4BitCounter/src/Counter4Bit.java",
+      "language": "java",
+      "sizeLines": 209,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Boolean/Dec2Bin/Dec2Bin.java",
+      "language": "java",
+      "sizeLines": 185,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Boolean/Decoder/Bin2Dec/src/BinDec.java",
+      "language": "java",
+      "sizeLines": 179,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Boolean/Decoder/Dec2Bin/src/Dec2Bin.java",
+      "language": "java",
+      "sizeLines": 183,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Boolean/Decoder/SiebenSegDecoder/src/Logic.java",
+      "language": "java",
+      "sizeLines": 192,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Boolean/Demultiplexer/src/Demultiplexer.java",
+      "language": "java",
+      "sizeLines": 179,
+      "fileCategory": "source"
+    },
+    {
+      "path": "CircuitElements/Boolean/DFlipFlop/DFlipFlop.java",
+      "language": "java",
+      "sizeLines": 160,
+      "fileCategory": "source"
+    }
+  ]
+}

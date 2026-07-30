@@ -1,0 +1,5421 @@
+{
+  "nodes": [
+    {
+      "id": "pkg:VisualLogic",
+      "type": "library",
+      "name": "VisualLogic",
+      "labels": [
+        "Package",
+        "Framework"
+      ]
+    },
+    {
+      "id": "pkg:VisualLogic.variables",
+      "type": "library",
+      "name": "VisualLogic.variables",
+      "labels": [
+        "Package",
+        "Framework"
+      ]
+    },
+    {
+      "id": "pkg:tools",
+      "type": "library",
+      "name": "tools",
+      "labels": [
+        "Package",
+        "Framework"
+      ]
+    },
+    {
+      "id": "pkg:java.awt",
+      "type": "library",
+      "name": "java.awt",
+      "labels": [
+        "Package",
+        "JDK"
+      ]
+    },
+    {
+      "id": "pkg:java.awt.event",
+      "type": "library",
+      "name": "java.awt.event",
+      "labels": [
+        "Package",
+        "JDK"
+      ]
+    },
+    {
+      "id": "pkg:java.text",
+      "type": "library",
+      "name": "java.text",
+      "labels": [
+        "Package",
+        "JDK"
+      ]
+    },
+    {
+      "id": "pkg:java.awt.geom.Rectangle2D",
+      "type": "library",
+      "name": "java.awt.geom.Rectangle2D",
+      "labels": [
+        "Package",
+        "JDK"
+      ]
+    },
+    {
+      "id": "pkg:java.util",
+      "type": "library",
+      "name": "java.util",
+      "labels": [
+        "Package",
+        "JDK"
+      ]
+    },
+    {
+      "id": "pkg:java.util.Random",
+      "type": "library",
+      "name": "java.util.Random",
+      "labels": [
+        "Package",
+        "JDK"
+      ]
+    },
+    {
+      "id": "pkg:javax.swing.Timer",
+      "type": "library",
+      "name": "javax.swing.Timer",
+      "labels": [
+        "Package",
+        "JDK"
+      ]
+    },
+    {
+      "id": "pkg:javax.swing",
+      "type": "library",
+      "name": "javax.swing",
+      "labels": [
+        "Package",
+        "JDK"
+      ]
+    },
+    {
+      "id": "pkg:SVGViewer",
+      "type": "library",
+      "name": "SVGViewer",
+      "labels": [
+        "Package",
+        "Library"
+      ]
+    },
+    {
+      "id": "pkg:javax.swing.filechooser.FileFilter",
+      "type": "library",
+      "name": "javax.swing.filechooser.FileFilter",
+      "labels": [
+        "Package",
+        "JDK"
+      ]
+    },
+    {
+      "id": "pkg:java.io.File",
+      "type": "library",
+      "name": "java.io.File",
+      "labels": [
+        "Package",
+        "JDK"
+      ]
+    },
+    {
+      "id": "pkg:java.io",
+      "type": "library",
+      "name": "java.io",
+      "labels": [
+        "Package",
+        "JDK"
+      ]
+    },
+    {
+      "id": "pkg:java.net",
+      "type": "library",
+      "name": "java.net",
+      "labels": [
+        "Package",
+        "JDK"
+      ]
+    },
+    {
+      "id": "pkg:javax.sound.sampled",
+      "type": "library",
+      "name": "javax.sound.sampled",
+      "labels": [
+        "Package",
+        "JDK"
+      ]
+    },
+    {
+      "id": "pkg:JVSMain",
+      "type": "library",
+      "name": "JVSMain",
+      "labels": [
+        "Class",
+        "FrameworkBase"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/1DArray/1DConstString/src/StrConst1D.java",
+      "type": "file",
+      "name": "StrConst1D.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:StrConst1D",
+      "type": "class",
+      "name": "StrConst1D",
+      "labels": [
+        "Class",
+        "CircuitElement"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:xpaint",
+      "type": "function",
+      "name": "xpaint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:start",
+      "type": "function",
+      "name": "start",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java",
+      "type": "file",
+      "name": "NoiseGenerator1D.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "type": "class",
+      "name": "NoiseGenerator1D",
+      "labels": [
+        "Class",
+        "CircuitElement"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "type": "function",
+      "name": "NoiseGenerator1D",
+      "labels": [
+        "Constructor"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:xpaint",
+      "type": "function",
+      "name": "xpaint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:localize",
+      "type": "function",
+      "name": "localize",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:start",
+      "type": "function",
+      "name": "start",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:processor",
+      "type": "function",
+      "name": "processor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "type": "file",
+      "name": "Ellipse.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:Ellipse",
+      "type": "class",
+      "name": "Ellipse",
+      "labels": [
+        "Class",
+        "Decorator"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:localize",
+      "type": "function",
+      "name": "localize",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "type": "file",
+      "name": "XImage.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:XImage",
+      "type": "class",
+      "name": "XImage",
+      "labels": [
+        "Class",
+        "Decorator"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:drawTiled",
+      "type": "function",
+      "name": "drawTiled",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:xOnInit",
+      "type": "function",
+      "name": "xOnInit",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:openPropertyDialog",
+      "type": "function",
+      "name": "openPropertyDialog",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:processAspect",
+      "type": "function",
+      "name": "processAspect",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:localize",
+      "type": "function",
+      "name": "localize",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+      "type": "file",
+      "name": "XLabel.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "type": "class",
+      "name": "XLabel",
+      "labels": [
+        "Class",
+        "Decorator"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "type": "function",
+      "name": "XLabel",
+      "labels": [
+        "Constructor"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:myInit",
+      "type": "function",
+      "name": "myInit",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:xOnInit",
+      "type": "function",
+      "name": "xOnInit",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:localize",
+      "type": "function",
+      "name": "localize",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+      "type": "file",
+      "name": "RoundRect.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:RoundRect",
+      "type": "class",
+      "name": "RoundRect",
+      "labels": [
+        "Class",
+        "Decorator"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:localize",
+      "type": "function",
+      "name": "localize",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+      "type": "file",
+      "name": "Panel.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:Panel",
+      "type": "class",
+      "name": "Panel",
+      "labels": [
+        "Class",
+        "Decorator"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:xOnInit",
+      "type": "function",
+      "name": "xOnInit",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:localize",
+      "type": "function",
+      "name": "localize",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:loadImage",
+      "type": "function",
+      "name": "loadImage",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+      "type": "file",
+      "name": "Triangle.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:Triangle",
+      "type": "class",
+      "name": "Triangle",
+      "labels": [
+        "Class",
+        "Decorator"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:localize",
+      "type": "function",
+      "name": "localize",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+      "type": "file",
+      "name": "XRectangle.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:XRectangle",
+      "type": "class",
+      "name": "XRectangle",
+      "labels": [
+        "Class",
+        "Decorator"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:localize",
+      "type": "function",
+      "name": "localize",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Abfragen/abfrage/Abfrage.java",
+      "type": "file",
+      "name": "Abfrage.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Abfragen/abfrage/Abfrage.java:Abfrage",
+      "type": "class",
+      "name": "Abfrage",
+      "labels": [
+        "Class",
+        "Query"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:checkPinDataType",
+      "type": "function",
+      "name": "checkPinDataType",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:start",
+      "type": "function",
+      "name": "start",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Abfragen/abfrage2/Abfrage.java",
+      "type": "file",
+      "name": "Abfrage.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Abfragen/abfrage2/Abfrage.java:Abfrage",
+      "type": "class",
+      "name": "Abfrage",
+      "labels": [
+        "Class",
+        "Query"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:checkPinDataType",
+      "type": "function",
+      "name": "checkPinDataType",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:start",
+      "type": "function",
+      "name": "start",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Abfragen/isGleich/IsGleich.java",
+      "type": "file",
+      "name": "IsGleich.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Abfragen/isGleich/IsGleich.java:IsGleich",
+      "type": "class",
+      "name": "IsGleich",
+      "labels": [
+        "Class",
+        "Query"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGleich/IsGleich.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGleich/IsGleich.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGleich/IsGleich.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGleich/IsGleich.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGleich/IsGleich.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGleich/IsGleich.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGleich/IsGleich.java:onChangeElement",
+      "type": "function",
+      "name": "onChangeElement",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Abfragen/isGroesser/isGroesser.java",
+      "type": "file",
+      "name": "isGroesser.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Abfragen/isGroesser/isGroesser.java:isGroesser",
+      "type": "class",
+      "name": "isGroesser",
+      "labels": [
+        "Class",
+        "Query"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGroesser/isGroesser.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGroesser/isGroesser.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGroesser/isGroesser.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGroesser/isGroesser.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGroesser/isGroesser.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGroesser/isGroesser.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGroesser/isGroesser.java:onChangeElement",
+      "type": "function",
+      "name": "onChangeElement",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java",
+      "type": "file",
+      "name": "isGroesserGleich.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:isGroesserGleich",
+      "type": "class",
+      "name": "isGroesserGleich",
+      "labels": [
+        "Class",
+        "Query"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:onChangeElement",
+      "type": "function",
+      "name": "onChangeElement",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Abfragen/isKleiner/IsKleiner.java",
+      "type": "file",
+      "name": "IsKleiner.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Abfragen/isKleiner/IsKleiner.java:IsKleiner",
+      "type": "class",
+      "name": "IsKleiner",
+      "labels": [
+        "Class",
+        "Query"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isKleiner/IsKleiner.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isKleiner/IsKleiner.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isKleiner/IsKleiner.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isKleiner/IsKleiner.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isKleiner/IsKleiner.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isKleiner/IsKleiner.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isKleiner/IsKleiner.java:onChangeElement",
+      "type": "function",
+      "name": "onChangeElement",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java",
+      "type": "file",
+      "name": "isKleinerGleich.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:isKleinerGleich",
+      "type": "class",
+      "name": "isKleinerGleich",
+      "labels": [
+        "Class",
+        "Query"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:onChangeElement",
+      "type": "function",
+      "name": "onChangeElement",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+      "type": "file",
+      "name": "AudioIn.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "type": "class",
+      "name": "AudioIn",
+      "labels": [
+        "Class",
+        "Audio"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:getAudioFormat",
+      "type": "function",
+      "name": "getAudioFormat",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:captureAudio",
+      "type": "function",
+      "name": "captureAudio",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "type": "function",
+      "name": "AudioIn",
+      "labels": [
+        "Constructor"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:start",
+      "type": "function",
+      "name": "start",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:stop",
+      "type": "function",
+      "name": "stop",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:CaptureThread",
+      "type": "class",
+      "name": "CaptureThread",
+      "labels": [
+        "InnerClass",
+        "Thread"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:CaptureThread.CaptureThread",
+      "type": "function",
+      "name": "CaptureThread.CaptureThread",
+      "labels": [
+        "Constructor"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:CaptureThread.run",
+      "type": "function",
+      "name": "CaptureThread.run",
+      "labels": [
+        "Constructor"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Analoge/AudioIn/src/AudioIn.java",
+      "type": "file",
+      "name": "AudioIn.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "type": "class",
+      "name": "AudioIn",
+      "labels": [
+        "Class",
+        "Audio"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:getAudioFormat",
+      "type": "function",
+      "name": "getAudioFormat",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:captureAudio",
+      "type": "function",
+      "name": "captureAudio",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "type": "function",
+      "name": "AudioIn",
+      "labels": [
+        "Constructor"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:start",
+      "type": "function",
+      "name": "start",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:stop",
+      "type": "function",
+      "name": "stop",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:CaptureThread",
+      "type": "class",
+      "name": "CaptureThread",
+      "labels": [
+        "InnerClass",
+        "Thread"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:CaptureThread.CaptureThread",
+      "type": "function",
+      "name": "CaptureThread.CaptureThread",
+      "labels": [
+        "Constructor"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:CaptureThread.run",
+      "type": "function",
+      "name": "CaptureThread.run",
+      "labels": [
+        "Constructor"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+      "type": "file",
+      "name": "Datalogger.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "type": "class",
+      "name": "Datalogger",
+      "labels": [
+        "Class",
+        "DataLogger"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "type": "function",
+      "name": "Datalogger",
+      "labels": [
+        "Constructor"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:localize",
+      "type": "function",
+      "name": "localize",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:reset",
+      "type": "function",
+      "name": "reset",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:start",
+      "type": "function",
+      "name": "start",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:redim",
+      "type": "function",
+      "name": "redim",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+      "type": "file",
+      "name": "Datalogger.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "type": "class",
+      "name": "Datalogger",
+      "labels": [
+        "Class",
+        "DataLogger"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "type": "function",
+      "name": "Datalogger",
+      "labels": [
+        "Constructor"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:localize",
+      "type": "function",
+      "name": "localize",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:reset",
+      "type": "function",
+      "name": "reset",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:start",
+      "type": "function",
+      "name": "start",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:redim",
+      "type": "function",
+      "name": "redim",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Analoge/DCT/src/DCT.java",
+      "type": "file",
+      "name": "DCT.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Analoge/DCT/src/DCT.java:DCT",
+      "type": "class",
+      "name": "DCT",
+      "labels": [
+        "Class",
+        "DSP"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DCT/src/DCT.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DCT/src/DCT.java:xpaint",
+      "type": "function",
+      "name": "xpaint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DCT/src/DCT.java:getNextValue",
+      "type": "function",
+      "name": "getNextValue",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DCT/src/DCT.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DCT/src/DCT.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DCT/src/DCT.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DCT/src/DCT.java:start",
+      "type": "function",
+      "name": "start",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DCT/src/DCT.java:dct1D",
+      "type": "function",
+      "name": "dct1D",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DCT/src/DCT.java:inverseDCT1D",
+      "type": "function",
+      "name": "inverseDCT1D",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/DCT/src/DCT.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Analoge/FFT/src/FastFourierTransform.java",
+      "type": "file",
+      "name": "FastFourierTransform.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Analoge/FFT/src/FastFourierTransform.java:FastFourierTransform",
+      "type": "class",
+      "name": "FastFourierTransform",
+      "labels": [
+        "Class",
+        "DSP"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/FFT/src/FastFourierTransform.java:bitrev",
+      "type": "function",
+      "name": "bitrev",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/FFT/src/FastFourierTransform.java:fftMag",
+      "type": "function",
+      "name": "fftMag",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Analoge/FFT/src/FFT.java",
+      "type": "file",
+      "name": "FFT.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Analoge/FFT/src/FFT.java:FFT",
+      "type": "class",
+      "name": "FFT",
+      "labels": [
+        "Class",
+        "DSP"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/FFT/src/FFT.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/FFT/src/FFT.java:xpaint",
+      "type": "function",
+      "name": "xpaint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/FFT/src/FFT.java:getNextValue",
+      "type": "function",
+      "name": "getNextValue",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/FFT/src/FFT.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/FFT/src/FFT.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/FFT/src/FFT.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/FFT/src/FFT.java:start",
+      "type": "function",
+      "name": "start",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/FFT/src/FFT.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Analoge/Generator_JV/src/Generator.java",
+      "type": "file",
+      "name": "Generator.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "type": "class",
+      "name": "Generator",
+      "labels": [
+        "Class",
+        "Generator"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "type": "function",
+      "name": "Generator",
+      "labels": [
+        "Constructor"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:localize",
+      "type": "function",
+      "name": "localize",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:start",
+      "type": "function",
+      "name": "start",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:processor",
+      "type": "function",
+      "name": "processor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "file:CircuitElements/Analoge/Generator/Generator.java",
+      "type": "file",
+      "name": "Generator.java",
+      "labels": [
+        "Source File"
+      ]
+    },
+    {
+      "id": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "type": "class",
+      "name": "Generator",
+      "labels": [
+        "Class",
+        "Generator"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "type": "function",
+      "name": "Generator",
+      "labels": [
+        "Constructor"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:onDispose",
+      "type": "function",
+      "name": "onDispose",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:paint",
+      "type": "function",
+      "name": "paint",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:init",
+      "type": "function",
+      "name": "init",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:initInputPins",
+      "type": "function",
+      "name": "initInputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:setPropertyEditor",
+      "type": "function",
+      "name": "setPropertyEditor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:localize",
+      "type": "function",
+      "name": "localize",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:propertyChanged",
+      "type": "function",
+      "name": "propertyChanged",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:initOutputPins",
+      "type": "function",
+      "name": "initOutputPins",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:dreieck",
+      "type": "function",
+      "name": "dreieck",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:saegezahn",
+      "type": "function",
+      "name": "saegezahn",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:rechteck",
+      "type": "function",
+      "name": "rechteck",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:start",
+      "type": "function",
+      "name": "start",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:process",
+      "type": "function",
+      "name": "process",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:processor",
+      "type": "function",
+      "name": "processor",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:loadFromStream",
+      "type": "function",
+      "name": "loadFromStream",
+      "labels": [
+        "Method"
+      ]
+    },
+    {
+      "id": "function:CircuitElements/Analoge/Generator/Generator.java:saveToStream",
+      "type": "function",
+      "name": "saveToStream",
+      "labels": [
+        "Method"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:CircuitElements/1DArray/1DConstString/src/StrConst1D.java",
+      "target": "class:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:StrConst1D",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:StrConst1D",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/1DArray/1DConstString/src/StrConst1D.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/1DArray/1DConstString/src/StrConst1D.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/1DArray/1DConstString/src/StrConst1D.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/1DArray/1DConstString/src/StrConst1D.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:StrConst1D",
+      "target": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:xpaint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:StrConst1D",
+      "target": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:StrConst1D",
+      "target": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:StrConst1D",
+      "target": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:StrConst1D",
+      "target": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:StrConst1D",
+      "target": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:StrConst1D",
+      "target": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:StrConst1D",
+      "target": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:StrConst1D",
+      "target": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:StrConst1D",
+      "target": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:StrConst1D",
+      "target": "function:CircuitElements/1DArray/1DConstString/src/StrConst1D.java:saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java",
+      "target": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java",
+      "target": "pkg:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java",
+      "target": "pkg:java.util.Random",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:xpaint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:processor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:NoiseGenerator1D",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:start",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:processor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:process",
+      "target": "function:CircuitElements/1DArray/1DNoiseGenerator/src/NoiseGenerator1D.java:processor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "class:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:Ellipse",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:Ellipse",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "pkg:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java",
+      "target": "pkg:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:Ellipse",
+      "target": "function:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:Ellipse",
+      "target": "function:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:Ellipse",
+      "target": "function:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:Ellipse",
+      "target": "function:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:Ellipse",
+      "target": "function:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:Ellipse",
+      "target": "function:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:Ellipse",
+      "target": "function:CircuitElements/2Dekoratoren/ellipse/src/Ellipse.java:saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "class:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:XImage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:XImage",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:XImage",
+      "target": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:drawTiled",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:XImage",
+      "target": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:XImage",
+      "target": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:XImage",
+      "target": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:xOnInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:XImage",
+      "target": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:openPropertyDialog",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:XImage",
+      "target": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:XImage",
+      "target": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:processAspect",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:XImage",
+      "target": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:XImage",
+      "target": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:XImage",
+      "target": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:XImage",
+      "target": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:XImage",
+      "target": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:init",
+      "target": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:processAspect",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:xOnInit",
+      "target": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:processAspect",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:propertyChanged",
+      "target": "function:CircuitElements/2Dekoratoren/Image_2_0/src/XImage.java:processAspect",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "class:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "pkg:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "pkg:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Label/src/XLabel.java",
+      "target": "pkg:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "target": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "target": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:myInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "target": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "target": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "target": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:xOnInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "target": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "target": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "target": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "target": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "target": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:XLabel",
+      "target": "function:CircuitElements/2Dekoratoren/Label/src/XLabel.java:myInit",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+      "target": "class:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:RoundRect",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:RoundRect",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+      "target": "pkg:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java",
+      "target": "pkg:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:RoundRect",
+      "target": "function:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:RoundRect",
+      "target": "function:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:RoundRect",
+      "target": "function:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:RoundRect",
+      "target": "function:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:RoundRect",
+      "target": "function:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:RoundRect",
+      "target": "function:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:RoundRect",
+      "target": "function:CircuitElements/2Dekoratoren/RoundRect/src/RoundRect.java:saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+      "target": "class:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:Panel",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:Panel",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+      "target": "pkg:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+      "target": "pkg:javax.swing.filechooser.FileFilter",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+      "target": "pkg:java.io.File",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+      "target": "pkg:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+      "target": "pkg:java.net",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java",
+      "target": "pkg:SVGViewer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:Panel",
+      "target": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:Panel",
+      "target": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:Panel",
+      "target": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:xOnInit",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:Panel",
+      "target": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:Panel",
+      "target": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:Panel",
+      "target": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:Panel",
+      "target": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:loadImage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:Panel",
+      "target": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:Panel",
+      "target": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:propertyChanged",
+      "target": "function:CircuitElements/2Dekoratoren/SVGImage/src/Panel.java:loadImage",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+      "target": "class:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:Triangle",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:Triangle",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+      "target": "pkg:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java",
+      "target": "pkg:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:Triangle",
+      "target": "function:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:Triangle",
+      "target": "function:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:Triangle",
+      "target": "function:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:Triangle",
+      "target": "function:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:Triangle",
+      "target": "function:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:Triangle",
+      "target": "function:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:Triangle",
+      "target": "function:CircuitElements/2Dekoratoren/Triangle/src/Triangle.java:saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "class:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:XRectangle",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:XRectangle",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "pkg:javax.swing.Timer",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java",
+      "target": "pkg:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:XRectangle",
+      "target": "function:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:XRectangle",
+      "target": "function:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:XRectangle",
+      "target": "function:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:XRectangle",
+      "target": "function:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:XRectangle",
+      "target": "function:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:XRectangle",
+      "target": "function:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:XRectangle",
+      "target": "function:CircuitElements/2Dekoratoren/XRectangle/src/XRectangle.java:saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/abfrage/Abfrage.java",
+      "target": "class:CircuitElements/Abfragen/abfrage/Abfrage.java:Abfrage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage/Abfrage.java:Abfrage",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/abfrage/Abfrage.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/abfrage/Abfrage.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/abfrage/Abfrage.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/abfrage/Abfrage.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/abfrage/Abfrage.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/abfrage/Abfrage.java",
+      "target": "pkg:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:checkPinDataType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage/Abfrage.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/abfrage2/Abfrage.java",
+      "target": "class:CircuitElements/Abfragen/abfrage2/Abfrage.java:Abfrage",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage2/Abfrage.java:Abfrage",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/abfrage2/Abfrage.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/abfrage2/Abfrage.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/abfrage2/Abfrage.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/abfrage2/Abfrage.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/abfrage2/Abfrage.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/abfrage2/Abfrage.java",
+      "target": "pkg:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage2/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage2/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage2/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage2/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:checkPinDataType",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage2/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage2/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage2/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/abfrage2/Abfrage.java:Abfrage",
+      "target": "function:CircuitElements/Abfragen/abfrage2/Abfrage.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGleich/IsGleich.java",
+      "target": "class:CircuitElements/Abfragen/isGleich/IsGleich.java:IsGleich",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGleich/IsGleich.java:IsGleich",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGleich/IsGleich.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGleich/IsGleich.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGleich/IsGleich.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGleich/IsGleich.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGleich/IsGleich.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGleich/IsGleich.java",
+      "target": "pkg:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGleich/IsGleich.java:IsGleich",
+      "target": "function:CircuitElements/Abfragen/isGleich/IsGleich.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGleich/IsGleich.java:IsGleich",
+      "target": "function:CircuitElements/Abfragen/isGleich/IsGleich.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGleich/IsGleich.java:IsGleich",
+      "target": "function:CircuitElements/Abfragen/isGleich/IsGleich.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGleich/IsGleich.java:IsGleich",
+      "target": "function:CircuitElements/Abfragen/isGleich/IsGleich.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGleich/IsGleich.java:IsGleich",
+      "target": "function:CircuitElements/Abfragen/isGleich/IsGleich.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGleich/IsGleich.java:IsGleich",
+      "target": "function:CircuitElements/Abfragen/isGleich/IsGleich.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGleich/IsGleich.java:IsGleich",
+      "target": "function:CircuitElements/Abfragen/isGleich/IsGleich.java:onChangeElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGroesser/isGroesser.java",
+      "target": "class:CircuitElements/Abfragen/isGroesser/isGroesser.java:isGroesser",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesser/isGroesser.java:isGroesser",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGroesser/isGroesser.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGroesser/isGroesser.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGroesser/isGroesser.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGroesser/isGroesser.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGroesser/isGroesser.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGroesser/isGroesser.java",
+      "target": "pkg:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesser/isGroesser.java:isGroesser",
+      "target": "function:CircuitElements/Abfragen/isGroesser/isGroesser.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesser/isGroesser.java:isGroesser",
+      "target": "function:CircuitElements/Abfragen/isGroesser/isGroesser.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesser/isGroesser.java:isGroesser",
+      "target": "function:CircuitElements/Abfragen/isGroesser/isGroesser.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesser/isGroesser.java:isGroesser",
+      "target": "function:CircuitElements/Abfragen/isGroesser/isGroesser.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesser/isGroesser.java:isGroesser",
+      "target": "function:CircuitElements/Abfragen/isGroesser/isGroesser.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesser/isGroesser.java:isGroesser",
+      "target": "function:CircuitElements/Abfragen/isGroesser/isGroesser.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesser/isGroesser.java:isGroesser",
+      "target": "function:CircuitElements/Abfragen/isGroesser/isGroesser.java:onChangeElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java",
+      "target": "class:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:isGroesserGleich",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:isGroesserGleich",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java",
+      "target": "pkg:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:isGroesserGleich",
+      "target": "function:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:isGroesserGleich",
+      "target": "function:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:isGroesserGleich",
+      "target": "function:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:isGroesserGleich",
+      "target": "function:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:isGroesserGleich",
+      "target": "function:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:isGroesserGleich",
+      "target": "function:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:isGroesserGleich",
+      "target": "function:CircuitElements/Abfragen/isGroesserGleich/isGroesserGleich.java:onChangeElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isKleiner/IsKleiner.java",
+      "target": "class:CircuitElements/Abfragen/isKleiner/IsKleiner.java:IsKleiner",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleiner/IsKleiner.java:IsKleiner",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isKleiner/IsKleiner.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isKleiner/IsKleiner.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isKleiner/IsKleiner.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isKleiner/IsKleiner.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isKleiner/IsKleiner.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isKleiner/IsKleiner.java",
+      "target": "pkg:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleiner/IsKleiner.java:IsKleiner",
+      "target": "function:CircuitElements/Abfragen/isKleiner/IsKleiner.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleiner/IsKleiner.java:IsKleiner",
+      "target": "function:CircuitElements/Abfragen/isKleiner/IsKleiner.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleiner/IsKleiner.java:IsKleiner",
+      "target": "function:CircuitElements/Abfragen/isKleiner/IsKleiner.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleiner/IsKleiner.java:IsKleiner",
+      "target": "function:CircuitElements/Abfragen/isKleiner/IsKleiner.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleiner/IsKleiner.java:IsKleiner",
+      "target": "function:CircuitElements/Abfragen/isKleiner/IsKleiner.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleiner/IsKleiner.java:IsKleiner",
+      "target": "function:CircuitElements/Abfragen/isKleiner/IsKleiner.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleiner/IsKleiner.java:IsKleiner",
+      "target": "function:CircuitElements/Abfragen/isKleiner/IsKleiner.java:onChangeElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java",
+      "target": "class:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:isKleinerGleich",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:isKleinerGleich",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java",
+      "target": "pkg:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:isKleinerGleich",
+      "target": "function:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:isKleinerGleich",
+      "target": "function:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:isKleinerGleich",
+      "target": "function:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:isKleinerGleich",
+      "target": "function:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:isKleinerGleich",
+      "target": "function:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:isKleinerGleich",
+      "target": "function:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:isKleinerGleich",
+      "target": "function:CircuitElements/Abfragen/isKleinerGleich/src/isKleinerGleich.java:onChangeElement",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+      "target": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+      "target": "pkg:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+      "target": "pkg:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+      "target": "pkg:java.util.Random",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+      "target": "pkg:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+      "target": "pkg:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/_AudioIn/src/AudioIn.java",
+      "target": "pkg:javax.sound.sampled",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:getAudioFormat",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:captureAudio",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:start",
+      "target": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:captureAudio",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:AudioIn",
+      "target": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:CaptureThread",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:CaptureThread",
+      "target": "pkg:Thread",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:CaptureThread",
+      "target": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:CaptureThread.CaptureThread",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:CaptureThread",
+      "target": "function:CircuitElements/Analoge/_AudioIn/src/AudioIn.java:CaptureThread.run",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:CircuitElements/Analoge/AudioIn/src/AudioIn.java",
+      "target": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Analoge/AudioIn/src/AudioIn.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/AudioIn/src/AudioIn.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/AudioIn/src/AudioIn.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/AudioIn/src/AudioIn.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/AudioIn/src/AudioIn.java",
+      "target": "pkg:java.io",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/AudioIn/src/AudioIn.java",
+      "target": "pkg:javax.sound.sampled",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:getAudioFormat",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:captureAudio",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "target": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:stop",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:start",
+      "target": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:captureAudio",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:AudioIn",
+      "target": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:CaptureThread",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:CaptureThread",
+      "target": "pkg:Thread",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:CaptureThread",
+      "target": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:CaptureThread.CaptureThread",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/AudioIn/src/AudioIn.java:CaptureThread",
+      "target": "function:CircuitElements/Analoge/AudioIn/src/AudioIn.java:CaptureThread.run",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+      "target": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+      "target": "pkg:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+      "target": "pkg:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger/Datalogger.java",
+      "target": "pkg:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:reset",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:redim",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:start",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:reset",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:process",
+      "target": "function:CircuitElements/Analoge/DataLogger/Datalogger.java:reset",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+      "target": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+      "target": "pkg:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+      "target": "pkg:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DataLogger2/Datalogger.java",
+      "target": "pkg:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:reset",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:redim",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DataLogger2/Datalogger.java:Datalogger",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:start",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:redim",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:process",
+      "target": "function:CircuitElements/Analoge/DataLogger2/Datalogger.java:setValue",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DCT/src/DCT.java",
+      "target": "class:CircuitElements/Analoge/DCT/src/DCT.java:DCT",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DCT/src/DCT.java:DCT",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DCT/src/DCT.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DCT/src/DCT.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DCT/src/DCT.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DCT/src/DCT.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DCT/src/DCT.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/DCT/src/DCT.java",
+      "target": "pkg:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DCT/src/DCT.java:DCT",
+      "target": "function:CircuitElements/Analoge/DCT/src/DCT.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DCT/src/DCT.java:DCT",
+      "target": "function:CircuitElements/Analoge/DCT/src/DCT.java:xpaint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DCT/src/DCT.java:DCT",
+      "target": "function:CircuitElements/Analoge/DCT/src/DCT.java:getNextValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DCT/src/DCT.java:DCT",
+      "target": "function:CircuitElements/Analoge/DCT/src/DCT.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DCT/src/DCT.java:DCT",
+      "target": "function:CircuitElements/Analoge/DCT/src/DCT.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DCT/src/DCT.java:DCT",
+      "target": "function:CircuitElements/Analoge/DCT/src/DCT.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DCT/src/DCT.java:DCT",
+      "target": "function:CircuitElements/Analoge/DCT/src/DCT.java:start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DCT/src/DCT.java:DCT",
+      "target": "function:CircuitElements/Analoge/DCT/src/DCT.java:dct1D",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DCT/src/DCT.java:DCT",
+      "target": "function:CircuitElements/Analoge/DCT/src/DCT.java:inverseDCT1D",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/DCT/src/DCT.java:DCT",
+      "target": "function:CircuitElements/Analoge/DCT/src/DCT.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "function:CircuitElements/Analoge/DCT/src/DCT.java:process",
+      "target": "function:CircuitElements/Analoge/DCT/src/DCT.java:dct1D",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:CircuitElements/Analoge/DCT/src/DCT.java:process",
+      "target": "function:CircuitElements/Analoge/DCT/src/DCT.java:getNextValue",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:CircuitElements/Analoge/FFT/src/FastFourierTransform.java",
+      "target": "class:CircuitElements/Analoge/FFT/src/FastFourierTransform.java:FastFourierTransform",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/FFT/src/FastFourierTransform.java:FastFourierTransform",
+      "target": "function:CircuitElements/Analoge/FFT/src/FastFourierTransform.java:bitrev",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/FFT/src/FastFourierTransform.java:FastFourierTransform",
+      "target": "function:CircuitElements/Analoge/FFT/src/FastFourierTransform.java:fftMag",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "function:CircuitElements/Analoge/FFT/src/FastFourierTransform.java:fftMag",
+      "target": "function:CircuitElements/Analoge/FFT/src/FastFourierTransform.java:bitrev",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:CircuitElements/Analoge/FFT/src/FFT.java",
+      "target": "class:CircuitElements/Analoge/FFT/src/FFT.java:FFT",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/FFT/src/FFT.java:FFT",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Analoge/FFT/src/FFT.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/FFT/src/FFT.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/FFT/src/FFT.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/FFT/src/FFT.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/FFT/src/FFT.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/FFT/src/FFT.java",
+      "target": "pkg:javax.swing",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/Analoge/FFT/src/FFT.java:FFT",
+      "target": "function:CircuitElements/Analoge/FFT/src/FFT.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/FFT/src/FFT.java:FFT",
+      "target": "function:CircuitElements/Analoge/FFT/src/FFT.java:xpaint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/FFT/src/FFT.java:FFT",
+      "target": "function:CircuitElements/Analoge/FFT/src/FFT.java:getNextValue",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/FFT/src/FFT.java:FFT",
+      "target": "function:CircuitElements/Analoge/FFT/src/FFT.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/FFT/src/FFT.java:FFT",
+      "target": "function:CircuitElements/Analoge/FFT/src/FFT.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/FFT/src/FFT.java:FFT",
+      "target": "function:CircuitElements/Analoge/FFT/src/FFT.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/FFT/src/FFT.java:FFT",
+      "target": "function:CircuitElements/Analoge/FFT/src/FFT.java:start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/FFT/src/FFT.java:FFT",
+      "target": "function:CircuitElements/Analoge/FFT/src/FFT.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "function:CircuitElements/Analoge/FFT/src/FFT.java:process",
+      "target": "function:CircuitElements/Analoge/FFT/src/FFT.java:getNextValue",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:CircuitElements/Analoge/Generator_JV/src/Generator.java",
+      "target": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Analoge/Generator_JV/src/Generator.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/Generator_JV/src/Generator.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/Generator_JV/src/Generator.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/Generator_JV/src/Generator.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/Generator_JV/src/Generator.java",
+      "target": "pkg:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:processor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator_JV/src/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:start",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:processor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:process",
+      "target": "function:CircuitElements/Analoge/Generator_JV/src/Generator.java:processor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+      "target": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "pkg:JVSMain",
+      "type": "inherits",
+      "weight": 0.9
+    },
+    {
+      "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+      "target": "pkg:VisualLogic",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+      "target": "pkg:VisualLogic.variables",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+      "target": "pkg:tools",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+      "target": "pkg:java.awt",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+      "target": "pkg:java.awt.event",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+      "target": "pkg:java.text",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+      "target": "pkg:java.awt.geom.Rectangle2D",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:CircuitElements/Analoge/Generator/Generator.java",
+      "target": "pkg:java.util",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:onDispose",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:paint",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:init",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:initInputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:setPropertyEditor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:localize",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:propertyChanged",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:initOutputPins",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:dreieck",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:saegezahn",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:rechteck",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:start",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:process",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:processor",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:loadFromStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "class:CircuitElements/Analoge/Generator/Generator.java:Generator",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:saveToStream",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "function:CircuitElements/Analoge/Generator/Generator.java:start",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:processor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:CircuitElements/Analoge/Generator/Generator.java:process",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:processor",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:CircuitElements/Analoge/Generator/Generator.java:processor",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:dreieck",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:CircuitElements/Analoge/Generator/Generator.java:processor",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:saegezahn",
+      "type": "calls",
+      "weight": 0.8
+    },
+    {
+      "source": "function:CircuitElements/Analoge/Generator/Generator.java:processor",
+      "target": "function:CircuitElements/Analoge/Generator/Generator.java:rechteck",
+      "type": "calls",
+      "weight": 0.8
+    }
+  ]
+}

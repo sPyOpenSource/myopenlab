@@ -1,0 +1,17 @@
+{
+  "batch": 38,
+  "fileCount": 7,
+  "existingFiles": 0,
+  "missingFiles": 7,
+  "nodes": [
+    {"id": "file:CircuitElements/Numerik/trigonometrie/Log10/Log10.java", "type": "file", "path": "CircuitElements/Numerik/trigonometrie/Log10/Log10.java", "language": "Java", "exists": false},
+    {"id": "file:CircuitElements/Numerik/trigonometrie/Wurzel/Sqrt.java", "type": "file", "path": "CircuitElements/Numerik/trigonometrie/Wurzel/Sqrt.java", "language": "Java", "exists": false},
+    {"id": "file:CircuitElements/Numerik/trigonometrie/QSqrt/QSqrt.java", "type": "file", "path": "CircuitElements/Numerik/trigonometrie/QSqrt/QSqrt.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/2/Numerisch/XButton/Button.java", "type": "file", "path": "FrontElements/2/Numerisch/XButton/Button.java", "language": "Java", "exists": false},
+    {"id": "file:FrontElements/2/Numerisch/XButton/ButtonPanel.java", "type": "file", "path": "FrontElements/2/Numerisch/XButton/ButtonPanel.java", "language": "Java", "exists": false},
+    {"id": "file:CircuitElements/Abfragen/isKleinerGleich/S /IsKleinerGleich.java", "type": "file", "path": "CircuitElements/Abfragen/isKleinerGleich/S /IsKleinerGleich.java", "language": "Java", "exists": false},
+    {"id": "file:CompTemplate/comp.vlogic", "type": "file", "path": "CompTemplate/comp.vlogic", "language": "VisualLogic", "exists": false}
+  ],
+  "edges": [],
+  "imports": {}
+}

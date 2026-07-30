@@ -1,0 +1,113 @@
+{
+  "nodes": [
+    {
+      "id": "config:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/definition.def",
+      "type": "config",
+      "name": "definition.def",
+      "summary": "MyOpenLab directory definition for the Tutorials documentation element — declares ISDIRECTORY=TRUE, captions in EN/ES/DE, icon reference, and VM_DIR_EDITABLE flag",
+      "filePath": "Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/definition.def",
+      "tags": ["myopenlab", "definition", "tutorials", "documentation", "directory-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_en.html",
+      "type": "document",
+      "name": "description_en.html",
+      "summary": "English description HTML for the Tutorials documentation element",
+      "filePath": "Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_en.html",
+      "tags": ["myopenlab", "documentation", "description", "english"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_de.html",
+      "type": "document",
+      "name": "description_de.html",
+      "summary": "German description HTML for the Tutorials documentation element",
+      "filePath": "Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_de.html",
+      "tags": ["myopenlab", "documentation", "description", "german"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_es.html",
+      "type": "document",
+      "name": "description_es.html",
+      "summary": "Spanish description HTML for the Tutorials documentation element",
+      "filePath": "Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_es.html",
+      "tags": ["myopenlab", "documentation", "description", "spanish"],
+      "complexity": "simple"
+    },
+    {
+      "id": "infra:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/info.xml",
+      "type": "infra",
+      "name": "info.xml",
+      "summary": "XML metadata for the Tutorials documentation element — includes captions, category (Education), author (Prof. José Manuel Ruiz Gutiérrez), version 1.0.0.0, date, and destination path",
+      "filePath": "Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/info.xml",
+      "tags": ["myopenlab", "metadata", "tutorials", "documentation", "xml"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/definition.def",
+      "target": "document:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_en.html",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "config:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/definition.def",
+      "target": "document:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_de.html",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "config:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/definition.def",
+      "target": "document:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_es.html",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "config:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/definition.def",
+      "target": "infra:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/info.xml",
+      "type": "contains",
+      "weight": 1.0
+    },
+    {
+      "source": "infra:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/info.xml",
+      "target": "config:Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/definition.def",
+      "type": "documents",
+      "weight": 0.5
+    }
+  ],
+  "batchFiles": [
+    {
+      "path": "Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/definition.def",
+      "language": "text",
+      "sizeLines": 6,
+      "fileCategory": "config"
+    },
+    {
+      "path": "Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_de.html",
+      "language": "html",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_en.html",
+      "language": "html",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/description_es.html",
+      "language": "html",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Documentations/dc-68f8102c-5160-4399-bc42-339db1b14e36/info.xml",
+      "language": "xml",
+      "sizeLines": 16,
+      "fileCategory": "infra"
+    }
+  ]
+}
