@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reference: MyOpenLab Module Glossary</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+<h1>MyOpenLab Module Glossary</h1>
+<div class="lesson-meta">
+  Reference &middot; Print-friendly &middot; Terminology used across all lessons
+</div>
+
+<h2>Module system</h2>
+
+<table>
+<thead><tr><th>Term</th><th>Meaning</th><th>Where in code</th></tr></thead>
+<tbody>
+<tr><td><strong>Module / Element</strong></td><td>A directory under <span class="file">Elements/</span> containing a <span class="file">definition.def</span>, <span class="file">src/</span>, <span class="file">bin/</span>, icon and descriptions. The unit the palette shows and the user drags onto a canvas.</td><td><span class="file">distribution/Elements/</span></td></tr>
+<tr><td><strong>definition.def</strong></td><td>Key-value metadata file (<code>KEY = value</code>). Says whether a dir is a category (<code>ISDIRECTORY = TRUE</code>) or a leaf element, plus localized captions, the Java class to load, and the icon.</td><td><span class="file">src/VisualLogic/Tools.java:641</span></td></tr>
+<tr><td><strong>classCircuit</strong></td><td>The Java class (no package prefix) that implements the element's logic. Loaded by reflection from <span class="file">bin/</span>.</td><td><span class="file">src/VisualLogic/Element.java:653</span></td></tr>
+<tr><td><strong>classfront</strong></td><td>The Java class for the front-panel (GUI) side of an element. Usually empty for circuit elements.</td><td><span class="file">src/VisualLogic/Tools.java:611</span></td></tr>
+<tr><td><strong>Element</strong> (class)</td><td>The GUI wrapper: a <code>JPanel</code> that draws pins, wires, border, label. Implements <code>ExternalIF</code> — the interface the module's code uses to control it.</td><td><span class="file">src/VisualLogic/Element.java</span></td></tr>
+<tr><td><strong>JVSMain</strong></td><td>Base class every module's logic class extends. Implements <code>ElementIF</code>. Holds <code>public ExternalIF element;</code> and the lifecycle methods.</td><td><span class="file">src/tools/JVSMain.java</span></td></tr>
+<tr><td><strong>Loader</strong></td><td>Builds a <code>URLClassLoader</code> over the element's <span class="file">bin/</span> dirs and instantiates the class via <code>newInstance()</code>.</td><td><span class="file">src/VisualLogic/Loader.java</span></td></tr>
+</tbody>
+</table>
+
+<h2>Runtime model</h2>
+
+<table>
+<thead><tr><th>Term</th><th>Meaning</th><th>Where in code</th></tr></thead>
+<tbody>
+<tr><td><strong>VM</strong></td><td>Virtual Machine — a canvas (circuit = logic, or front panel = UI) that owns elements and wires. Not a Java VM.</td><td><span class="file">src/VisualLogic/VMObject.java</span></td></tr>
+<tr><td><strong>Pin</strong></td><td>A connection point on an element's edge. Has an index, a data type, and an I/O direction (<code>PIN_INPUT</code> / <code>PIN_OUTPUT</code>).</td><td><span class="file">src/VisualLogic/ExternalIF.java:69</span></td></tr>
+<tr><td><strong>Draht</strong> (wire)</td><td>Connects a source pin to a destination pin. When a source writes an output, its wire is queued in the VM's <code>processList</code>.</td><td><span class="file">src/VisualLogic/Draht.java</span></td></tr>
+<tr><td><strong>processList</strong></td><td>The event queue of wires awaiting delivery. The run loop pops one, finds its destination element, and calls <code>xonProcess()</code>.</td><td><span class="file">src/VisualLogic/VMObject.java:1781</span></td></tr>
+<tr><td><strong>process()</strong></td><td>Runs on the <em>destination</em> element each time new data arrives on a wire. The core of the event-driven model.</td><td><span class="file">src/VisualLogic/VMObject.java:1843</span></td></tr>
+<tr><td><strong>processClock()</strong></td><td>Runs periodically for elements that registered via <code>element.jNotifyMeForClock()</code>.</td><td><span class="file">src/VisualLogic/VMObject.java:1685</span></td></tr>
+</tbody>
+</table>
+
+<h2>Data types &amp; variables</h2>
+
+<table>
+<thead><tr><th>Term</th><th>Meaning</th><th>Where in code</th></tr></thead>
+<tbody>
+<tr><td><strong>VSObject</strong> (+ subclasses)</td><td>Base of all pin-value objects: <code>VSBoolean</code>, <code>VSString</code>, <code>VSInteger</code>, <code>VSDouble</code>, <code>VSColor</code>, <code>VSImage</code>, <code>VSFlowInfo</code>, 1D/2D arrays, etc.</td><td><span class="file">src/VisualLogic/variables/</span></td></tr>
+<tr><td><strong>changed flag</strong></td><td>Each <code>VSObject</code> carries <code>isChanged()</code>; <code>setValue()</code> sets it. The VM resets all flags after each cycle. Elements react only to fresh data.</td><td><span class="file">src/VisualLogic/variables/VSObject.java:57</span></td></tr>
+<tr><td><strong>C_* type constants</strong></td><td>Pin data-type ids: <code>C_BOOLEAN</code>, <code>C_INTEGER</code>, <code>C_DOUBLE</code>, <code>C_STRING</code>, <code>C_ARRAY1D_*</code>, <code>C_VARIANT</code>, …</td><td><span class="file">src/VisualLogic/ExternalIF.java:38</span></td></tr>
+<tr><td><strong>copyReferenceFrom</strong></td><td>Wires share the <em>same</em> VS object reference with the destination, so both sides see the same value and changed-flag.</td><td><span class="file">src/VisualLogic/variables/VSBoolean.java:60</span></td></tr>
+</tbody>
+</table>
+
+<h2>Lifecycle methods (on a JVSMain subclass)</h2>
+
+<table>
+<thead><tr><th>Method</th><th>When it runs</th></tr></thead>
+<tbody>
+<tr><td><code>init()</code></td><td>Once, at placement: declares pins, size, icon, captions.</td></tr>
+<tr><td><code>initInputPins()</code> / <code>initOutputPins()</code></td><td>Binds the module's <code>VS*</code> fields to pin references.</td></tr>
+<tr><td><code>process()</code></td><td>Each time a wire delivers data to this element.</td></tr>
+<tr><td><code>processClock()</code></td><td>Periodically, if clock-registered.</td></tr>
+<tr><td><code>start()</code> / <code>stop()</code></td><td>Simulation start / stop.</td></tr>
+<tr><td><code>paint(Graphics)</code></td><td>Custom drawing of the element on the canvas.</td></tr>
+<tr><td><code>onDispose()</code></td><td>Element destroyed — release resources.</td></tr>
+<tr><td><code>openPropertyDialog()</code></td><td>User opens the property editor.</td></tr>
+<tr><td><code>saveToStream()</code> / <code>loadFromStream()</code></td><td>Persist / restore state in the project file.</td></tr>
+</tbody>
+</table>
+
+<h2>Creating a module (workflow)</h2>
+
+<table>
+<thead><tr><th>Step</th><th>What happens</th><th>Where</th></tr></thead>
+<tbody>
+<tr><td>1. Open the wizard</td><td>New Java Component → <code>DialogNewJavaComponentAssistent</code></td><td><span class="file">FrameMain.java:3733</span></td></tr>
+<tr><td>2. Configure</td><td>Type (circuit/front), name, group, pins (per edge, type, in/out), properties</td><td><span class="file">DialogNewJavaComponentAssistent.java</span></td></tr>
+<tr><td>3. Generated</td><td><code>definition.def</code>, <code>src/CompName.java</code> skeleton, <code>make.bat</code>, <code>icon.gif</code>, <code>image.gif</code></td><td><span class="file">FrameMain.java:3754-3760</span></td></tr>
+<tr><td>4. Write logic</td><td>Fill <code>process()</code>, <code>setPropertyEditor()</code>, declare pins/images in <code>init()</code></td><td>module <span class="file">src/</span></td></tr>
+<tr><td>5. Compile</td><td>IDE Compile button (<code>Tools.compileFile</code>) or <code>make.bat</code> (<code>javac -d ..\bin *.java</code>)</td><td><span class="file">Tools.java:156</span></td></tr>
+<tr><td>6. Use</td><td>Palette refreshed → drag element onto canvas → <code>Element</code> loads class from <code>bin/</code></td><td><span class="file">Element.java:653</span></td></tr>
+</tbody>
+</table>
+
+<h2>Output-push pattern</h2>
+
+<div class="diagram">out.setPin(0);                   // pin index this VS object belongs to
+out.setValue("hello");           // put data in
+element.addToProcesslist(out);   // queue wire → destination process()</div>
+
+<p class="cite">Real example: <span class="file">GetFile.java:66-94,107-108</span></p>
+
+<h2>See also</h2>
+<ul>
+  <li><a href="../lessons/0001-what-is-a-vm.html">Lesson 001 — What is a VM?</a></li>
+  <li><a href="../lessons/0002-anatomy-of-a-module.html">Lesson 002 — Anatomy of a Module</a></li>
+  <li><a href="../lessons/0003-creating-your-own-module.html">Lesson 003 — Creating Your Own Module</a></li>
+</ul>
+
+</body>
+</html>

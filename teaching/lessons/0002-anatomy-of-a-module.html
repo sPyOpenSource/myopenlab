@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 002: Anatomy of a Module</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+<h1>Lesson 002: Anatomy of a Module</h1>
+<div class="lesson-meta">
+  Lesson 2 &middot; MyOpenLab Module Architecture &middot;
+  <a href="../MISSION.md">Mission</a> &middot;
+  <a href="../reference/glossary.html">Glossary</a>
+</div>
+
+<h2>One win for you</h2>
+
+<p>By the end of this lesson you can open <em>any</em> element's folder in <span class="file">distribution/Elements/</span>, read its <span class="file">definition.def</span> and its Java source, and explain what each piece is for.</p>
+
+<h2>A module is a folder</h2>
+
+<p>A MyOpenLab <strong>module</strong> (also called an element) is literally a directory. Take the <code>Starter</code> element as our specimen:</p>
+
+<div class="diagram">Starter/
+├── definition.def      ← metadata the IDE reads
+├── src/Starter.java    ← the logic, in source
+├── bin/                ← compiled classes the Loader picks up
+└── bin/icon.png        ← palette icon</div>
+
+<p class="cite">Real example: <span class="file">distribution/Elements/CircuitElements/Extras/Starter/</span></p>
+
+<h2>definition.def — the module's ID card</h2>
+
+<p>The IDE discovers elements by walking folders and parsing <span class="file">definition.def</span> as <code>KEY = value</code> lines. Two keys decide everything:</p>
+
+<div class="diagram">ISDIRECTORY = FALSE          ← TRUE means "category folder", recurse in
+CAPTION     = Starter         ← shown in the palette (localized variants exist)
+classCircuit = Starter        ← Java class to load at runtime
+Icon        = bin/icon.png</div>
+
+<p>The parser is <span class="file">src/VisualLogic/Tools.java:641</span>. Every key you may see — <code>classfront</code>, <code>claspath</code>, <code>vm</code>, <code>redirect</code>, <code>resizesynchron</code> — is written/read there.</p>
+
+<h2>The Java side: extend JVSMain</h2>
+
+<p>The class named by <code>classCircuit</code> extends <code>JVSMain</code>. When the element is placed on a canvas, the wrapper <code>Element</code> (<code>src/VisualLogic/Element.java:653</code>) does this:</p>
+
+<div class="diagram">1. Loader builds a URLClassLoader over bin/
+2. Class.forName(...).newInstance()        Loader.java:41-45
+3. classRef.beforeInit(args)
+4. classRef.xsetExternalIF(this)  →  element = externalIF; init();</div>
+
+<p>Step 4 is the handshake. Your module gets a public field <code>element</code> of type <code>ExternalIF</code> — a giant interface that lets your logic control the wrapper (set pins, sizes, captions, load images). <span class="file">src/tools/JVSMain.java:30</span>, <span class="file">src/tools/JVSMain.java:194</span>.</p>
+
+<h2>The lifecycle methods you override</h2>
+
+<p>Look at <code>Starter.java</code> — it overrides four things:</p>
+
+<div class="diagram">init()              → declare pins, size, icon
+initInputPins()     → bind VS fields to pin references
+process()           → react when data arrives
+paint(Graphics g)   → draw the element
+onDispose()         → free resources</div>
+
+<p>Inside <code>init()</code> the pins are declared. <code>initPins(top, right, bottom, left)</code> creates pins in four regions; <code>setPin(i, type, io)</code> gives each a data type and direction:</p>
+
+<div class="diagram">initPins(0, 0, 0, 3);                     // 3 pins, all on the left edge
+setPin(0, ExternalIF.C_STRING,  element.PIN_INPUT);
+setPin(1, ExternalIF.C_STRING,  element.PIN_INPUT);
+setPin(2, ExternalIF.C_BOOLEAN, element.PIN_INPUT);</div>
+
+<p>Then <code>initInputPins()</code> grabs the live references:</p>
+
+<div class="diagram">inApplication = (VSString) element.getPinInputReference(0);
+inRun         = (VSBoolean) element.getPinInputReference(1);</div>
+
+<p class="cite"><span class="file">distribution/Elements/CircuitElements/Extras/Starter/Starter.java:60-105</span></p>
+
+<h2>The crucial mental model</h2>
+
+<div class="key-concept">
+  <strong>Key Concept:</strong> <code>process()</code> runs on the <em>destination</em> element, every time a wire delivers new data to it. A module does not poll — it gets called. The VM keeps a queue (<code>processList</code>) of wires that have data; it pops one and calls the destination's <code>xonProcess()</code> (= <code>process()</code>). See <span class="file">src/VisualLogic/VMObject.java:1781</span> and <span class="file">:1843</span>.
+</div>
+
+<p>That is why Starter's <code>process()</code> checks <code>inRun.isChanged()</code> — only act when the boolean <em>actually changed</em>, not on every cycle.</p>
+
+<h2>Quiz — recall from memory</h2>
+
+<div class="quiz" id="quiz1">
+  <h3>Check your understanding</h3>
+  <p>Where does <code>process()</code> execute when a wire delivers data?</p>
+  <label><input type="radio" name="q1" value="a"> On the source element that wrote the value</label>
+  <label><input type="radio" name="q1" value="b"> On the destination element the wire connects to</label>
+  <label><input type="radio" name="q1" value="c"> On every element in the VM, every cycle</label>
+  <label><input type="radio" name="q1" value="d"> In a separate background thread pool</label>
+  <div class="feedback" id="feedback1"></div>
+</div>
+
+<div class="quiz" id="quiz2">
+  <h3>Check your understanding</h3>
+  <p>What decides whether a folder is a category or a loadable element?</p>
+  <label><input type="radio" name="q2" value="a"> The <code>info.xml</code> file's <code>&lt;type&gt;</code> tag</label>
+  <label><input type="radio" name="q2" value="b"> Whether <code>src/</code> contains Java files</label>
+  <label><input type="radio" name="q2" value="c"> The <code>ISDIRECTORY</code> key in <code>definition.def</code></label>
+  <label><input type="radio" name="q2" value="d"> The presence of an <code>icon32.png</code></label>
+  <div class="feedback" id="feedback2"></div>
+</div>
+
+<h2>Recommended primary source</h2>
+
+<p>Read <code>Starter.java</code> end-to-end (<span class="file">distribution/Elements/CircuitElements/Extras/Starter/src/Starter.java</span>, 141 lines), then trace its loading in <span class="file">src/VisualLogic/Element.java:653-805</span>. Then browse the <a href="../reference/glossary.html">glossary</a>.</p>
+
+<p><strong>Questions?</strong> Ask me anything about module folders, <code>definition.def</code>, or the lifecycle — I'm your teacher.</p>
+
+<nav>
+  <a href="0001-what-is-a-vm.html">← Previous: What is a VM?</a>
+  <span></span>
+</nav>
+
+<script>
+function wireQuiz(id, correct) {
+  document.getElementById(id).addEventListener('change', function(e) {
+    var fb = document.getElementById(id.replace('quiz', 'feedback'));
+    if (e.target.value === correct) {
+      fb.textContent = 'Correct!';
+      fb.className = 'feedback correct';
+    } else {
+      fb.textContent = 'Not quite — re-read the "crucial mental model" and definition.def sections.';
+      fb.className = 'feedback incorrect';
+    }
+    fb.style.display = 'block';
+  });
+}
+wireQuiz('quiz1', 'b');
+wireQuiz('quiz2', 'c');
+</script>
+
+</body>
+</html>

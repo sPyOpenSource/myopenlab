@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 003: Creating Your Own Module</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+<h1>Lesson 003: Creating Your Own Module</h1>
+<div class="lesson-meta">
+  Lesson 3 &middot; MyOpenLab Module Architecture &middot;
+  <a href="../MISSION.md">Mission</a> &middot;
+  <a href="../reference/glossary.html">Glossary</a> &middot;
+  <a href="0002-anatomy-of-a-module.html">← Lesson 2</a>
+</div>
+
+<h2>One win for you</h2>
+
+<p>By the end of this lesson you can generate a working module skeleton from the IDE wizard, fill in its <code>process()</code> logic, compile it, and see it appear in the palette.</p>
+
+<h2>Path A: the IDE wizard (the fast route)</h2>
+
+<p>MyOpenLab ships a <strong>New Java Component</strong> wizard (<span class="file">src/VisualLogic/gui/DialogNewJavaComponentAssistent.java</span>). It generates the whole folder structure for you — the same anatomy you studied in Lesson 2.</p>
+
+<ol>
+  <li>Open the menu item that triggers <code>jmniCreateNewJavaComponentActionPerformed</code> (<span class="file">src/VisualLogic/gui/FrameMain.java:3733</span>). <em>Requires a JDK, not a plain JRE.</em></li>
+  <li>Choose type: <strong>Circuit Element</strong> (logic) or <strong>Front Panel Element</strong> (GUI).</li>
+  <li>Enter the name and the palette group (folder) to drop it into.</li>
+  <li>Define pins per edge (top/right/bottom/left), each with a name, data type, and input/output.</li>
+  <li>Optionally add properties (they become VS objects + property-editor rows).</li>
+  <li>Press OK.</li>
+</ol>
+
+<p>The wizard then (<span class="file">FrameMain.java:3746-3789</span>):</p>
+
+<div class="diagram">compName/
+├── definition.def      ← generated (ISDIRECTORY=FALSE, CLASSCIRCUIT=…, ICON=icon.gif)
+├── icon.gif            ← copied from compTemplate
+├── src/
+│   ├── make.bat        ← copied; "javac -d ..\bin *.java"
+│   └── CompName.java   ← generated skeleton
+└── bin/
+    ├── image.gif       ← copied from compTemplate
+    └── (your .class here after compiling)</div>
+
+<p>It also refreshes the palette and opens the code editor. You'll get a reminder: <em>"Don't forget to compile the new Element."</em></p>
+
+<h2>The generated skeleton</h2>
+
+<p>The wizard writes a complete <code>JVSMain</code> subclass via <code>generateSrcFiles()</code> (<span class="file">DialogNewJavaComponentAssistent.java:1672</span>). Its shape should look familiar from Lesson 2:</p>
+
+<div class="diagram">public class CompName extends JVSMain
+{
+  private Image image;
+  // Properties, Inputs, Outputs — declared as VS* fields
+
+  public void init() {
+    initPins(top,right,bottom,left);        // create pin slots
+    initPinVisibility(t,r,b,l);
+    setSize(30+w,30+h);
+    image = element.jLoadImage(element.jGetSourcePath()+"image.gif");
+    setPin(0, ExternalIF.C_BOOLEAN, ExternalIF.PIN_INPUT);  // per pin
+    element.jSetResizable(false);
+  }
+
+  public void initInputPins() {
+    input0 = (VSBoolean) element.getPinInputReference(0);   // bind inputs
+  }
+
+  public void initOutputPins() {
+    element.setPinOutputReference(0, output0);              // register output
+  }
+
+  public void process() {  }   // ← YOUR LOGIC GOES HERE
+}</div>
+
+<p>This is the same contract you traced in Lesson 2 — <code>init()</code> declares, <code>initInputPins()</code>/<code>initOutputPins()</code> bind references, <code>process()</code> reacts.</p>
+
+<h2>What you actually write</h2>
+
+<p>The generated skeleton is runnable but does nothing. Your job is three things:</p>
+
+<div class="diagram">// 1. In init(): declare pins, image, size
+// 2. In initOutputPins(): register your output VS objects
+// 3. In process(): read inputs, compute, push outputs</div>
+
+<p>To <strong>push a value out</strong>, the pattern is (see <span class="file">GetFile.java:66-94,107-108</span>):</p>
+
+<div class="diagram">out.setPin(0);                    // remember which pin this VS object belongs to
+out.setValue("hello");            // put data in
+element.addToProcesslist(out);    // queue the wire → destination process() runs</div>
+
+<p>To <strong>react to an input</strong>, check the changed flag (from Lesson 2):</p>
+
+<div class="diagram">if (input0 != null && input0.isChanged()) {
+  boolean v = input0.getValue();
+  // …do something…
+}</div>
+
+<p>Properties you add to the wizard appear in <code>setPropertyEditor()</code> as <code>element.jAddPEItem(...)</code> rows (<span class="file">Gatter3.java:109-115</span>).</p>
+
+<h2>Compiling</h2>
+
+<p>Two ways, both need a JDK:</p>
+
+<ul>
+  <li><strong>In the IDE:</strong> the code editor's <strong>Compile</strong> button → <code>Tools.compileFile(...)</code> (<span class="file">src/VisualLogic/Tools.java:156</span>), which compiles to <span class="file">bin/</span> using the JDK's in-memory compiler.</li>
+  <li><strong>By hand:</strong> run <span class="file">make.bat</span> in <span class="file">src/</span> — it runs <code>javac -d ..\bin *.java</code>.</li>
+</ul>
+
+<p>Compiled <code>.class</code> files land in <span class="file">bin/</span>, where the <code>Loader</code> picks them up on next placement. Palette refresh already happened — drag your new element onto a canvas.</p>
+
+<h2>Quiz — recall from memory</h2>
+
+<div class="quiz" id="quiz1">
+  <h3>Check your understanding</h3>
+  <p>Which two calls together make an element push a value down a wire?</p>
+  <label><input type="radio" name="q1" value="a"> element.addToProcesslist(out) and element.setPinOutputReference(0, out)</label>
+  <label><input type="radio" name="q1" value="b"> out.setValue(v) and element.addToProcesslist(out)</label>
+  <label><input type="radio" name="q1" value="c"> element.jRepaint() and element.jRefreshVM()</label>
+  <label><input type="radio" name="q1" value="d"> initPins(0,0,0,1) and setPin(0, C_BOOLEAN, PIN_INPUT)</label>
+  <div class="feedback" id="feedback1"></div>
+</div>
+
+<div class="quiz" id="quiz2">
+  <h3>Check your understanding</h3>
+  <p>What does the wizard's <code>make.bat</code> in <span class="file">src/</span> do when you run it?</p>
+  <label><input type="radio" name="q2" value="a"> Launches the MyOpenLab IDE</label>
+  <label><input type="radio" name="q2" value="b"> Copies template icons into bin/</label>
+  <label><input type="radio" name="q2" value="c"> Compiles src/*.java into ../bin/</label>
+  <label><input type="radio" name="q2" value="d"> Regenerates definition.def</label>
+  <div class="feedback" id="feedback2"></div>
+</div>
+
+<h2>Recommended primary source</h2>
+
+<p>Open the wizard itself: <span class="file">src/VisualLogic/gui/DialogNewJavaComponentAssistent.java</span> — read <code>generateCircuitJavaFile()</code> (<span class="file">:1683</span>) to see exactly what skeleton gets written, and <code>generateDefinitionDef()</code> (<span class="file">:1641</span>). Then compare with the hand-built <span class="file">GetFile.java</span> for the output pattern.</p>
+
+<p><strong>Questions?</strong> Ask me anything about the wizard, the skeleton, or pushing outputs — I'm your teacher.</p>
+
+<nav>
+  <a href="0002-anatomy-of-a-module.html">← Previous: Anatomy of a Module</a>
+  <a href="../reference/glossary.html">Glossary</a>
+</nav>
+
+<script>
+function wireQuiz(id, correct) {
+  document.getElementById(id).addEventListener('change', function(e) {
+    var fb = document.getElementById(id.replace('quiz', 'feedback'));
+    if (e.target.value === correct) {
+      fb.textContent = 'Correct!';
+      fb.className = 'feedback correct';
+    } else {
+      fb.textContent = 'Not quite — re-read the "push a value out" pattern and the Compiling section.';
+      fb.className = 'feedback incorrect';
+    }
+    fb.style.display = 'block';
+  });
+}
+wireQuiz('quiz1', 'b');
+wireQuiz('quiz2', 'c');
+</script>
+
+</body>
+</html>
