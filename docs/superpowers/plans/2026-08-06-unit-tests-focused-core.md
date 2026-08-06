@@ -10,7 +10,7 @@
 
 ## Global Constraints
 
-- JUnit 4 only. The bundled `distribution/lib/junit.jar` contains **no hamcrest**, so tests MUST NOT use `assertThat`, `Assume.assumeThat`, or any hamcrest `Matcher`. Use `assertEquals`, `assertTrue`, `assertFalse`, `assertNull`, `assertNotNull`, `assertArrayEquals`, `fail`.
+- JUnit 4 only. The bundled `distribution/lib/junit.jar` is **JUnit 4.11**, whose `org.junit.Assert` class requires hamcrest-core at class load. `hamcrest-core-1.3.jar` is therefore vendored at `distribution/lib/hamcrest-core-1.3.jar` (Task 1b) and placed on the test classpath. Tests still prefer basic asserts (`assertEquals`, `assertTrue`, `assertFalse`, `assertNull`, `assertNotNull`, `assertArrayEquals`, `fail`) and avoid `assertThat`.
 - **Zero production code changes.** Only files under `test/` plus `nbproject/project.properties` may be modified. Do not edit anything under `src/`.
 - Java 11 source/target, UTF-8 source encoding (`source.encoding=UTF-8` in project.properties).
 - Every test file starts with the GPL v3 header (copy the header block verbatim from `src/VisualLogic/Settings.java` lines 1-17).
@@ -74,6 +74,56 @@ git commit -m "test: wire junit.jar into Ant test classpath"
 
 ---
 
+### Task 1b: Vendor hamcrest-core and add it to the test classpath
+
+JUnit 4.11's `org.junit.Assert` references `org.hamcrest.Matcher` in method signatures, so hamcrest-core is required at class load even when tests never call `assertThat`. Verified: without it, `ant test-single` fails with `NoClassDefFoundError: org/hamcrest/SelfDescribing`.
+
+**Files:**
+- Create: `distribution/lib/hamcrest-core-1.3.jar` (copy of `/Users/xuyi/Source/Java/lib/hamcrest-core-1.3.jar`)
+- Modify: `nbproject/project.properties`
+
+**Interfaces:**
+- Consumes: nothing. The source jar already exists on the machine at `/Users/xuyi/Source/Java/lib/hamcrest-core-1.3.jar`.
+- Produces: `org.hamcrest.*` resolvable on the test classpath.
+
+- [ ] **Step 1: Copy the jar into the repo**
+
+Run: `cp /Users/xuyi/Source/Java/lib/hamcrest-core-1.3.jar distribution/lib/hamcrest-core-1.3.jar`
+
+- [ ] **Step 2: Add the file reference**
+
+In `nbproject/project.properties`, immediately after the `file.reference.junit.jar=distribution/lib/junit.jar` line, add:
+
+```
+file.reference.hamcrest-core-1.3.jar=distribution/lib/hamcrest-core-1.3.jar
+```
+
+- [ ] **Step 3: Add it to the test classpath**
+
+Change `javac.test.classpath` to:
+
+```
+javac.test.classpath=\
+    ${javac.classpath}:\
+    ${file.reference.junit.jar}:\
+    ${file.reference.hamcrest-core-1.3.jar}:\
+    ${build.classes.dir}
+```
+
+- [ ] **Step 4: Verify the class resolves**
+
+Run: `ant test`
+Expected: `BUILD SUCCESSFUL` (still zero tests — real verification comes in Task 2).
+
+- [ ] **Step 5: Commit**
+
+```bash
+git add distribution/lib/hamcrest-core-1.3.jar nbproject/project.properties
+git commit -m "test: vendor hamcrest-core for JUnit 4.11 test classpath"
+```
+
+---
+
 ### Task 2: CredentialCryptoTest
 
 **Files:**
@@ -81,7 +131,7 @@ git commit -m "test: wire junit.jar into Ant test classpath"
 - Test target: `src/VisualLogic/CredentialCrypto.java`
 
 **Interfaces:**
-- Consumes: `VisualLogic.CredentialCrypto.encrypt(String) -> String` and `decrypt(String) -> String` (both public static). Empty/null input maps to `""`; non-`enc:v1:` or un-decryptable input passes through unchanged.
+- Consumes: `VisualLogic.CredentialCrypto.encrypt(String) -> String` and `decrypt(String) -> String` (both public static). `encrypt(null|"")` → `""`. `decrypt(null)` → `null` (guard returns input unchanged), `decrypt("")` → `""`; non-`enc:v1:` or un-decryptable input passes through unchanged.
 - Produces: nothing consumed by other tasks.
 
 - [ ] **Step 1: Write the test**
@@ -110,6 +160,7 @@ package VisualLogic;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
@@ -133,7 +184,7 @@ public class CredentialCryptoTest {
     @Test
     public void decryptEmptyOrNullReturnsUnchanged() {
         assertEquals("", CredentialCrypto.decrypt(""));
-        assertEquals("", CredentialCrypto.decrypt(null));
+        assertNull(CredentialCrypto.decrypt(null));
     }
 
     @Test

@@ -20,7 +20,9 @@ Where an API is slightly awkward (e.g. `MyParser.Expression` writes into a stati
 
 In scope:
 
-- Test classpath wiring in `nbproject/project.properties` (only non-test file touched).
+- Test classpath wiring in `nbproject/project.properties` and vendoring of
+  `hamcrest-core-1.3.jar` into `distribution/lib/` (needed because the shipped JUnit
+  4.11 jar loads hamcrest at class load). These are the only non-test files touched.
 - Seven JUnit 4 test classes under `test/` (see table below).
 
 Out of scope (explicitly):
@@ -45,7 +47,7 @@ Out of scope (explicitly):
 
 | Test class | Production class under test | Cases |
 |---|---|---|
-| `test/VisualLogic/CredentialCryptoTest` | `src/VisualLogic/CredentialCrypto.java` | encrypt→decrypt roundtrip; empty/null → `""`; non-`enc:v1:` value passes through `decrypt` unchanged; tampered payload passes through unchanged; random IV — two encryptions of the same input differ |
+| `test/VisualLogic/CredentialCryptoTest` | `src/VisualLogic/CredentialCrypto.java` | encrypt→decrypt roundtrip; `encrypt` empty/null → `""`; `decrypt` empty → `""`, `decrypt(null)` → `null` (passthrough, per production contract); non-`enc:v1:` value passes through `decrypt` unchanged; tampered payload passes through unchanged; random IV — two encryptions of the same input differ |
 | `test/VisualLogic/SafeXmlTest` | `src/VisualLogic/SafeXml.java` | XML with DOCTYPE/external entity rejected at parse time; well-formed XML parses successfully |
 | `test/VisualLogic/XMLSerializerTest` | `src/VisualLogic/XMLSerializer.java` | `Settings` write→read roundtrip; `java.awt.Point`, `String`, `java.util.ArrayList` payloads allowed; XML declaring `class="java.lang.Runtime"` → `SecurityException`; XML with DOCTYPE blocked |
 | `test/de/myopenlab/update/UnzipFilesTest` | `src/de/myopenlab/update/UnzipFiles.java` | Normal zip (multiple files + subdirectory) extracts to temp dir with correct content; zip containing `../evil.txt` → `IOException`, nothing written outside destination |
@@ -55,8 +57,9 @@ Out of scope (explicitly):
 
 ## Conventions
 
-- JUnit 4 only (`org.junit.Test`, `org.junit.Assert.*`). The jar already ships at
-  `distribution/lib/junit.jar`.
+- JUnit 4 only. The shipped `distribution/lib/junit.jar` is JUnit 4.11, whose `Assert`
+  class requires hamcrest-core at class load; `hamcrest-core-1.3.jar` is vendored at
+  `distribution/lib/` and added to the test classpath. Tests avoid `assertThat`.
 - GPL header comment on each test file, matching repo style.
 - Java 11, UTF-8 source encoding.
 - JUnit 4 `TemporaryFolder` rule for temp files/directories.
@@ -68,7 +71,7 @@ Out of scope (explicitly):
 - `ant test` compiles the full project and runs all tests; all pass.
 - `ant test-report` generates an HTML report (spot-checked, not required to pass CI).
 - Sanity: no changes under `src/`; `git status` shows only `test/`,
-  `nbproject/project.properties`, and this spec.
+  `nbproject/project.properties`, `distribution/lib/hamcrest-core-1.3.jar`, and this spec.
 
 ## Risks / notes
 
