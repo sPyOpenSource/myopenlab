@@ -1,4 +1,3 @@
-
 package de.myopenlab.update;
 
 import java.io.BufferedOutputStream;
@@ -8,57 +7,43 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
- 
+
 public class UnzipFiles {
-    
-     /**
-     * Size of the buffer to read/write data
-     */
+
     private static final int BUFFER_SIZE = 4096;
-    /**
-     * Extracts a zip file specified by the zipFilePath to a directory specified by
-     * destDirectory (will be created if does not exists)
-     * @param zipFilePath
-     * @param destDirectory
-     * @throws IOException
-     */
+
     public void unzip(String zipFilePath, String destDirectory) throws IOException {
         File destDir = new File(destDirectory);
         if (!destDir.exists()) {
-            destDir.mkdir();
+            destDir.mkdirs();
         }
+        String destCanonical = destDir.getCanonicalPath();
         ZipInputStream zipIn = new ZipInputStream(new FileInputStream(zipFilePath));
-        ZipEntry entry = zipIn.getNextEntry();
-        // iterates over entries in the zip file
-        while (entry != null) {
-            
-            String filePath = destDirectory + File.separator + entry.getName();
-            if (!entry.isDirectory()) {
-                
-                String tmp=new File(filePath).getParent();
-                new File(tmp).mkdirs();
-                
-                // if the entry is a file, extracts it
-                
-                extractFile(zipIn, filePath);
-            } else {
-                // if the entry is a directory, make the directory
-                File dir = new File(filePath);
-                dir.mkdir();
+        try {
+            ZipEntry entry = zipIn.getNextEntry();
+            while (entry != null) {
+                String entryName = entry.getName();
+                File entryFile = new File(destDir, entryName);
+                String entryCanonical = entryFile.getCanonicalPath();
+                if (!entryCanonical.equals(destCanonical)
+                        && !entryCanonical.startsWith(destCanonical + File.separator)) {
+                    throw new IOException("Blocked zip entry outside destination directory: " + entryName);
+                }
+                if (!entry.isDirectory()) {
+                    entryFile.getParentFile().mkdirs();
+                    extractFile(zipIn, entryFile);
+                } else {
+                    entryFile.mkdirs();
+                }
+                zipIn.closeEntry();
+                entry = zipIn.getNextEntry();
             }
-            zipIn.closeEntry();
-            entry = zipIn.getNextEntry();
+        } finally {
+            zipIn.close();
         }
-        zipIn.close();
     }
-    
-    /**
-     * Extracts a zip entry (file entry)
-     * @param zipIn
-     * @param filePath
-     * @throws IOException
-     */
-    private void extractFile(ZipInputStream zipIn, String filePath) throws IOException {
+
+    private void extractFile(ZipInputStream zipIn, File filePath) throws IOException {
         BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(filePath));
         byte[] bytesIn = new byte[BUFFER_SIZE];
         int read = 0;
@@ -67,5 +52,5 @@ public class UnzipFiles {
         }
         bos.close();
     }
- 
+
 }

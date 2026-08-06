@@ -45,7 +45,6 @@ import java.awt.HeadlessException;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import java.beans.XMLDecoder;
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -762,7 +761,13 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
             String fileName_xml = getUserURL().getFile() + System.getProperty("file.separator") + "config.xml";
            
-            XMLSerializer.write(settings, fileName_xml);
+            String storedPassword = settings.getRepository_login_password();
+            settings.setRepository_login_password(CredentialCrypto.encrypt(storedPassword));
+            try {
+                XMLSerializer.write(settings, fileName_xml);
+            } finally {
+                settings.setRepository_login_password(storedPassword);
+            }
         } catch (Exception e) {
 
         }
@@ -1879,12 +1884,11 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         File fxml = new File(fileNameXML);
         if (fxml.exists()) {
             try {
-                XMLDecoder d = new XMLDecoder(new BufferedInputStream(new FileInputStream(fxml.getAbsolutePath())));
-                settings = (Settings) d.readObject();
-                d.close();
+                settings = (Settings) XMLSerializer.read(fileNameXML);
+                settings.setRepository_login_password(CredentialCrypto.decrypt(settings.getRepository_login_password()));
 
                 config_file_loaded = true;
-            } catch (FileNotFoundException ioe) {
+            } catch (Exception ioe) {
                 choiceLanguage(this);
             }
         }

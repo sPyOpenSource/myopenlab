@@ -62,7 +62,7 @@ public class Server extends Thread
     {
         try
         {
-            server = new ServerSocket(1024);
+            server = new ServerSocket(1024, 50, InetAddress.getByName("127.0.0.1"));
             while (true)
             {
                 Socket c = server.accept();

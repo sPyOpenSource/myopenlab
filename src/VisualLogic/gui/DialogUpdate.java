@@ -372,7 +372,7 @@ public class DialogUpdate extends javax.swing.JDialog
         
         String supdateTXT = parent.elementPath+"/update.txt";
         
-        if (downloadVersionFile("http://www.myopenlab.de/downloads/update.txt", supdateTXT))
+        if (downloadVersionFile("https://www.myopenlab.de/downloads/update.txt", supdateTXT))
         {
 
             double ver=0;
@@ -388,7 +388,7 @@ public class DialogUpdate extends javax.swing.JDialog
             if (verX>ver)
             {        
                 jLabel5.setText(""+verX);
-                download("http://www.myopenlab.de/downloads/c-exp-lab.jar", parent.elementPath+"/update.jar");
+                download("https://www.myopenlab.de/downloads/c-exp-lab.jar", parent.elementPath+"/update.jar");
                 jButton1.setEnabled(false);
                 jButton2.setEnabled(true);
                 jLabel1.setText(java.util.ResourceBundle.getBundle("VisualLogic/DialogUpdate").getString("Downloading...._(Please_Wait)"));

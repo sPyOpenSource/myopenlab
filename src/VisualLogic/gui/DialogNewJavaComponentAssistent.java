@@ -29,6 +29,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.ObjectInputStream;
+import java.io.ObjectInputFilter;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
@@ -1388,6 +1389,8 @@ public class DialogNewJavaComponentAssistent extends javax.swing.JDialog impleme
             if (file.exists())
             {
                 ObjectInputStream ois= new ObjectInputStream(new FileInputStream(file.getAbsolutePath()));
+                ois.setObjectInputFilter(ObjectInputFilter.Config.createFilter(
+                    "java.base/*;VisualLogic.**;maxdepth=20;maxbytes=1048576;!*"));
                 settings=(NewJavaCompSettings)ois.readObject();
                 ois.close();
             }

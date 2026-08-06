@@ -115,6 +115,8 @@ class Server extends Thread
           clientSocket=serverSocket.accept();
 
           serverIn = new ObjectInputStream(clientSocket.getInputStream());
+          serverIn.setObjectInputFilter(ObjectInputFilter.Config.createFilter(
+              "java.base/*;VisualLogic.**;maxdepth=20;maxarray=1000000;maxrefs=10000;maxbytes=8388608;!*"));
           serverOut= new ObjectOutputStream (clientSocket.getOutputStream());
 
           System.out.println("Verbindung zu Socket " + clientSocket.getRemoteSocketAddress()+ " aufgenommen");

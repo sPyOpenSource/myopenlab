@@ -6,6 +6,7 @@
 package de.myopenlab.update;
 
 import VisualLogic.DFProperties;
+import VisualLogic.SafeXml;
 import VisualLogic.gui.DialogSaveAsModul;
 import VisualLogic.gui.FrameMain;
 import VisualLogic.Tools;
@@ -31,8 +32,6 @@ import java.net.PasswordAuthentication;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.file.Files;
-import java.security.KeyManagementException;
-import java.security.NoSuchAlgorithmException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,11 +39,6 @@ import java.util.Locale;
 import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.X509TrustManager;
 
 import javax.swing.DefaultListModel;
 import javax.swing.ImageIcon;
@@ -56,7 +50,6 @@ import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.table.TableColumn;
 
 import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.json.JSONArray;
@@ -125,12 +118,8 @@ public class frmUpdate extends javax.swing.JFrame {
         String JSON_DATA = "";
         try {
 
-            String domain = settings.getRepository_domain();
-            
-            if (domain.trim().equalsIgnoreCase("http://myopenlab.de")){
-                domain="https://myopenlab.de";
-            }
-            
+            String domain = settings.getRepositoryDomainSecure();
+
             JSON_DATA = getStringFromUrl(domain + "/repository/index.php");
             System.out.println(JSON_DATA);
         } catch (Exception ex) {
@@ -277,13 +266,13 @@ public class frmUpdate extends javax.swing.JFrame {
 
                 if (files.indexOf(row.getEntry_name()) == -1 && row.getType().equalsIgnoreCase(type)) {
 
-                    String url = settings.getRepository_domain() + "/repository/new/" + row.getType() + "/" + row.getEntry_name() + "/definition.def";
+                    String url = settings.getRepositoryDomainSecure() + "/repository/new/" + row.getType() + "/" + row.getEntry_name() + "/definition.def";
 
                     url = url.replaceAll(" ", "%20");
                     String definition_def = getStringFromUrl(url);
                     DFProperties definition = Tools.getProertiesFromDefinitionString(definition_def);
 
-                    URL icon_url = new URL(settings.getRepository_domain() + "/repository/new/" + row.getType() + "/" + row.getEntry_name() + "/" + definition.iconFilename);
+                    URL icon_url = new URL(settings.getRepositoryDomainSecure() + "/repository/new/" + row.getType() + "/" + row.getEntry_name() + "/" + definition.iconFilename);
                     ImageIcon icon = new ImageIcon(icon_url);
 
                     MyTableRow newRow = new MyTableRow(false, icon, row.getEntry_name(), row.getCategorie(), row.getDate(), row.getAuthor(), row.getType());
@@ -376,8 +365,7 @@ public class frmUpdate extends javax.swing.JFrame {
 
                         //String directory = myopenlabpath + "/Elements/" + type;
                         try {
-                            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-                            DocumentBuilder builder = factory.newDocumentBuilder();
+                            DocumentBuilder builder = SafeXml.newDocumentBuilder();
                             Document document;
                             document = builder.parse(f.getAbsoluteFile());
 
@@ -495,8 +483,7 @@ public class frmUpdate extends javax.swing.JFrame {
 
                         //String directory = myopenlabpath + "/Elements/" + type;
                         try {
-                            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-                            DocumentBuilder builder = factory.newDocumentBuilder();
+                            DocumentBuilder builder = SafeXml.newDocumentBuilder();
                             Document document;
                             document = builder.parse(f.getAbsoluteFile());
 
@@ -642,34 +629,6 @@ public class frmUpdate extends javax.swing.JFrame {
             jMenuItemUploadPackage.setEnabled(true);
         } else {
             jMenuItemUploadPackage.setEnabled(false);
-        }
-
-        // Create a new trust manager that trust all certificates
-        TrustManager[] trustAllCerts = new TrustManager[]{
-            new X509TrustManager() {
-                @Override
-                public java.security.cert.X509Certificate[] getAcceptedIssuers() {
-                    return null;
-                }
-
-                @Override
-                public void checkClientTrusted(
-                        java.security.cert.X509Certificate[] certs, String authType) {
-                }
-
-                @Override
-                public void checkServerTrusted(
-                        java.security.cert.X509Certificate[] certs, String authType) {
-                }
-            }
-        };
-
-// Activate the new trust manager
-        try {
-            SSLContext sc = SSLContext.getInstance("SSL");
-            sc.init(null, trustAllCerts, new java.security.SecureRandom());
-            HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
-        } catch (KeyManagementException | NoSuchAlgorithmException e) {
         }
 
         // Fenster mittig anzeigen!
@@ -1290,7 +1249,7 @@ public class frmUpdate extends javax.swing.JFrame {
 
                 zipFiles.zipDirectory(dir, zipDirName);
 
-                String url = settings.getRepository_domain() + "/upload/upload.php";
+                String url = settings.getRepositoryDomainSecure() + "/upload/upload.php";
                 String charset = "UTF-8";
                 File binaryFile = temp;
 

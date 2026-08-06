@@ -347,6 +347,8 @@ public class SocketClient extends JVSMain
 
             serverOut= new ObjectOutputStream (clientSocket.getOutputStream());
             serverIn = new ObjectInputStream(clientSocket.getInputStream());
+            serverIn.setObjectInputFilter(ObjectInputFilter.Config.createFilter(
+                "java.base/*;VisualLogic.**;maxdepth=20;maxarray=1000000;maxrefs=10000;maxbytes=8388608;!*"));
 
             System.out.println(clientSocket.getRemoteSocketAddress());
 

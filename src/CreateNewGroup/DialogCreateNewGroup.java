@@ -1,6 +1,7 @@
 package CreateNewGroup;
 
 import VisualLogic.DFProperties;
+import VisualLogic.SafeXml;
 import VisualLogic.gui.DialogSaveAsModul;
 import VisualLogic.gui.FrameMain;
 import VisualLogic.Tools;
@@ -29,7 +30,6 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.w3c.dom.Document;
@@ -131,8 +131,7 @@ public class DialogCreateNewGroup extends javax.swing.JDialog {
 
             try {
 
-                DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-                DocumentBuilder builder = factory.newDocumentBuilder();
+                DocumentBuilder builder = SafeXml.newDocumentBuilder();
                 Document document;
 
                 File info_xml = new File(directory + "/info.xml");

@@ -703,6 +703,18 @@ public class Settings {
     }
 
     /**
+     * Repository domain always upgraded to HTTPS so repository credentials are
+     * never sent in cleartext.
+     */
+    public String getRepositoryDomainSecure() {
+        String domain = repository_domain == null ? "" : repository_domain.trim();
+        if (domain.toLowerCase().startsWith("http://")) {
+            return "https://" + domain.substring(7);
+        }
+        return domain;
+    }
+
+    /**
      * @return the repository_login_username
      */
     public String getRepository_login_username() {

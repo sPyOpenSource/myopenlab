@@ -37,7 +37,6 @@ import javax.tools.JavaCompiler;
 import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
 import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.swing.*;
 
@@ -1549,8 +1548,7 @@ public class Tools
 
             //String directory = myopenlabpath + "/Elements/" + type;
             try {
-                DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-                DocumentBuilder builder = factory.newDocumentBuilder();
+                DocumentBuilder builder = SafeXml.newDocumentBuilder();
                 Document document;
                 document = builder.parse(f.getAbsoluteFile());
 
