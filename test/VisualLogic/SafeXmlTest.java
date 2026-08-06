@@ -44,7 +44,7 @@ public class SafeXmlTest {
     @Test(expected = SAXException.class)
     public void rejectsExternalParameterEntity() throws Exception {
         SafeXml.newDocumentBuilder().parse(new ByteArrayInputStream(
-                ("<!DOCTYPE foo [<!ENTITY % p \"file:///etc/hosts\">]>"
+                ("<!DOCTYPE foo [<!ENTITY % p SYSTEM \"file:///etc/hosts\"> %p;]>"
                         + "<root/>").getBytes(StandardCharsets.UTF_8)));
     }
 }
