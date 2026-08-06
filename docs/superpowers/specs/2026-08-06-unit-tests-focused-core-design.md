@@ -51,7 +51,7 @@ Out of scope (explicitly):
 | `test/de/myopenlab/update/UnzipFilesTest` | `src/de/myopenlab/update/UnzipFiles.java` | Normal zip (multiple files + subdirectory) extracts to temp dir with correct content; zip containing `../evil.txt` → `IOException`, nothing written outside destination |
 | `test/de/myopenlab/update/IniFileTest` | `src/de/myopenlab/update/IniFile.java` | Multi-section parse; `getString/getInt/getFloat/getDouble` with present values; missing section/key returns default |
 | `test/de/myopenlab/update/Tools2Test` | `src/de/myopenlab/update/Tools2.java` | `deleteFolder` removes nested directory tree; `copy` transfers bytes, including content spanning multiple buffers |
-| `test/MyParser/ExpressionTest` | `src/MyParser/Expression.java` | `1+2` → `[PUSHI 1, PUSHI 2, ADD]`; assignment `a=5`; trig `SIN(1)`; relational `1<2`; malformed `1+` → `yyException` |
+| `test/MyParser/ExpressionTest` | `src/MyParser/Expression.java` | `1+2` → `[PUSHB 1, PUSHB 2, ADD]`; assignment `a=5` → `[PUSHB 5, POPI a]`; trig `SIN(1)` → `[PUSHB 1, SIN ]`; relational `1<2` → `[PUSHB 1, PUSHB 2, IF_A<B ]`; malformed `1+` → `yyException`. Note: literals ≤255 emit `PUSHB`, 256–65535 emit `PUSHI` (verified against actual parser output) |
 
 ## Conventions
 
@@ -76,5 +76,7 @@ Out of scope (explicitly):
   expected noise in test output, not a failure.
 - `Expression.yyparse` throws `Expression.yyException` for malformed input; tests assert
   on that.
+- The `Expression` expectations in this spec (PUSHB/PUSHI/POPI token lists) were verified
+  by running the parser standalone against each sample input.
 - `XMLSerializer.read` validates via `SafeXml` (DOCTYPE blocking) before the class
   allowlist; the two security layers are therefore exercised together.
