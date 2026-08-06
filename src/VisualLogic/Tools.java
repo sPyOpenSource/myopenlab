@@ -233,11 +233,9 @@ public class Tools
 
     public static void openPaint(File file)
     {
-        String cmd = "cmd /c start " + Tools.settings.getGraphicEditor() + " \"" + file.getAbsolutePath() + "\"";
-
         try
         {
-            Runtime.getRuntime().exec(cmd);
+            new ProcessBuilder(Tools.settings.getGraphicEditor(), file.getAbsolutePath()).start();
         }
         catch (IOException bx)
         {
@@ -414,9 +412,7 @@ public class Tools
 
     public static void runApplication(String app, String param) throws IOException
     {
-        String cmd = "cmd /c start " + app + " " + param;
-
-        Runtime.getRuntime().exec(cmd);
+        new ProcessBuilder(app, param).start();
     }
 
     public static void copyFile(File source, File dest) throws IOException

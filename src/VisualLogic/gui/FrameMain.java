@@ -48,6 +48,7 @@ import java.beans.PropertyChangeListener;
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URI;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Locale;
@@ -441,7 +442,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
                 if (htmlEditor != null && htmlEditor.length() > 0 && new File(htmlEditor).exists()) {
                     try {
-                        Runtime.getRuntime().exec(settings.getHTMLEditor() + " \"" + str + "\"");
+                        new ProcessBuilder(settings.getHTMLEditor(), str).start();
                         return;
                     } catch (IOException ex) {
                         Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
@@ -452,7 +453,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             if (ext.equalsIgnoreCase("gif") || ext.equalsIgnoreCase("jpg") || ext.equalsIgnoreCase("png")) {
                 if (settings.getGraphicEditor() != null && settings.getGraphicEditor().length() > 0 && new File(settings.getGraphicEditor()).exists()) {
                     try {
-                        Runtime.getRuntime().exec(settings.getGraphicEditor() + " \"" + str + "\"");
+                        new ProcessBuilder(settings.getGraphicEditor(), str).start();
                     } catch (IOException ex) {
                         Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
                     }
@@ -1900,13 +1901,13 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         this.setLocation(settings.getMainFrameLocation());
 
         if (settings.getLanguage().equalsIgnoreCase("de_DE")) {
-            Locale.setDefault(new Locale("de", "DE"));
+            Locale.setDefault(Locale.forLanguageTag("de-DE"));
         }
         if (settings.getLanguage().equalsIgnoreCase("en_US")) {
-            Locale.setDefault(new Locale("en", "US"));
+            Locale.setDefault(Locale.forLanguageTag("en-US"));
         }
         if (settings.getLanguage().equalsIgnoreCase("es_ES")) {
-            Locale.setDefault(new Locale("es", "ES"));
+            Locale.setDefault(Locale.forLanguageTag("es-ES"));
         }
 
         errorWarnings = new FrameErrorWarnings();
@@ -1970,7 +1971,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         }
 
         try {
-            FrameMain.userURL = new URL("file:" + System.getProperty("user.home") + System.getProperty("file.separator") + "VisualLogic");
+            FrameMain.userURL = new File(System.getProperty("user.home") + System.getProperty("file.separator") + "VisualLogic").toURI().toURL();
         } catch (MalformedURLException ex) {
             Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2702,7 +2703,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             }
         });
 
-        jmiNewProject.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK));
+        jmiNewProject.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmiNewProject.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/16x16/document-new.png"))); // NOI18N
         jmiNewProject.setText(bundle.getString("NewProject")); // NOI18N
         jmiNewProject.addActionListener(new java.awt.event.ActionListener() {
@@ -2712,7 +2713,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         });
         jmnuDatei.add(jmiNewProject);
 
-        jmiOpenProject.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.ALT_MASK));
+        jmiOpenProject.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmiOpenProject.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/open24Project.gif"))); // NOI18N
         jmiOpenProject.setText(bundle.getString("openProject")); // NOI18N
         jmiOpenProject.addActionListener(new java.awt.event.ActionListener() {
@@ -2790,7 +2791,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         jmnuEdit.setText(bundle.getString("Bearbeiten")); // NOI18N
 
-        jmiUndo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Z, java.awt.event.InputEvent.CTRL_MASK));
+        jmiUndo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Z, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jmiUndo.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/16x16/edit-undo.png"))); // NOI18N
         jmiUndo.setText(bundle.getString("Rückgängig")); // NOI18N
         jmiUndo.addActionListener(new java.awt.event.ActionListener() {
@@ -2800,7 +2801,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         });
         jmnuEdit.add(jmiUndo);
 
-        jmiRedo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.ALT_MASK));
+        jmiRedo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmiRedo.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/16x16/edit-redo.png"))); // NOI18N
         jmiRedo.setText(bundle.getString("Wiederholen")); // NOI18N
         jmiRedo.addActionListener(new java.awt.event.ActionListener() {
@@ -2811,7 +2812,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         jmnuEdit.add(jmiRedo);
         jmnuEdit.add(jSeparator2);
 
-        jmiCut.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_MASK));
+        jmiCut.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jmiCut.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/16x16/edit-cut.png"))); // NOI18N
         jmiCut.setText(bundle.getString("Ausschneiden")); // NOI18N
         jmiCut.addActionListener(new java.awt.event.ActionListener() {
@@ -2821,7 +2822,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         });
         jmnuEdit.add(jmiCut);
 
-        jmiCopy.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
+        jmiCopy.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jmiCopy.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/16x16/edit-copy.png"))); // NOI18N
         jmiCopy.setText(bundle.getString("Kopieren")); // NOI18N
         jmiCopy.addActionListener(new java.awt.event.ActionListener() {
@@ -2831,7 +2832,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         });
         jmnuEdit.add(jmiCopy);
 
-        jmiPaste.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_MASK));
+        jmiPaste.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jmiPaste.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/16x16/edit-paste.png"))); // NOI18N
         jmiPaste.setText(bundle.getString("Einfügen")); // NOI18N
         jmiPaste.addActionListener(new java.awt.event.ActionListener() {
@@ -2841,7 +2842,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         });
         jmnuEdit.add(jmiPaste);
 
-        jmiSelectAny.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
+        jmiSelectAny.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jmiSelectAny.setText(bundle.getString("Alles_markieren")); // NOI18N
         jmiSelectAny.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2859,7 +2860,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             }
         });
 
-        jmiStart.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_J, java.awt.event.InputEvent.ALT_MASK));
+        jmiStart.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_J, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmiStart.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/play16.gif"))); // NOI18N
         jmiStart.setText(bundle.getString("Start")); // NOI18N
         jmiStart.addActionListener(new java.awt.event.ActionListener() {
@@ -2869,7 +2870,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         });
         jmnuVM.add(jmiStart);
 
-        jmiStop.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.ALT_MASK));
+        jmiStop.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmiStop.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/stop16.gif"))); // NOI18N
         jmiStop.setText(bundle.getString("Stop")); // NOI18N
         jmiStop.addActionListener(new java.awt.event.ActionListener() {
@@ -2879,7 +2880,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         });
         jmnuVM.add(jmiStop);
 
-        jmiPause.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.ALT_MASK));
+        jmiPause.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmiPause.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/pause16.gif"))); // NOI18N
         jmiPause.setText(bundle.getString("Pause")); // NOI18N
         jmiPause.addActionListener(new java.awt.event.ActionListener() {
@@ -2889,7 +2890,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         });
         jmnuVM.add(jmiPause);
 
-        jmiResume.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.ALT_MASK));
+        jmiResume.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmiResume.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/Resume16.GIF"))); // NOI18N
         jmiResume.setMnemonic('F');
         jmiResume.setText(bundle.getString("Weiter")); // NOI18N
@@ -2917,7 +2918,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         });
         jmnuVM.add(jmiEigenschaten);
 
-        jmniDefineVariables.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.InputEvent.ALT_MASK));
+        jmniDefineVariables.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmniDefineVariables.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/variables16.png"))); // NOI18N
         jmniDefineVariables.setText(bundle.getString("variable_definition")); // NOI18N
         jmniDefineVariables.addActionListener(new java.awt.event.ActionListener() {
@@ -2954,7 +2955,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             }
         });
 
-        jmniOptions.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.ALT_MASK));
+        jmniOptions.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmniOptions.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/16x16/preferences-desktop.png"))); // NOI18N
         jmniOptions.setText(bundle.getString("Options")); // NOI18N
         jmniOptions.addActionListener(new java.awt.event.ActionListener() {
@@ -2990,7 +2991,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         });
         jmnuExtras.add(jmniCreateNewJavaComponent);
 
-        jmniUpdater.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.ALT_MASK));
+        jmniUpdater.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmniUpdater.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/16x16/storage.png"))); // NOI18N
         jmniUpdater.setText(bundle.getString("FrameMain.jmniUpdater.text")); // NOI18N
         jmniUpdater.addActionListener(new java.awt.event.ActionListener() {
@@ -3004,7 +3005,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         jmnuWindow.setText(bundle.getString("Fenster")); // NOI18N
 
-        jmiLegend.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.ALT_MASK));
+        jmiLegend.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmiLegend.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/16x16/legenge16.png"))); // NOI18N
         jmiLegend.setText(bundle.getString("Datentyp-Legende")); // NOI18N
         jmiLegend.addActionListener(new java.awt.event.ActionListener() {
@@ -3023,7 +3024,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         });
         jmnuWindow.add(jmiVariableWatcher);
 
-        jmiShowAnalogWindow.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_MASK));
+        jmiShowAnalogWindow.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmiShowAnalogWindow.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/graphDouble16x16.gif"))); // NOI18N
         jmiShowAnalogWindow.setText(bundle.getString("NumerikGraphWindow")); // NOI18N
         jmiShowAnalogWindow.addActionListener(new java.awt.event.ActionListener() {
@@ -3033,7 +3034,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         });
         jmnuWindow.add(jmiShowAnalogWindow);
 
-        jmiShowDigitalWindow.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.ALT_MASK));
+        jmiShowDigitalWindow.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmiShowDigitalWindow.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/graphBoolean16x16.gif"))); // NOI18N
         jmiShowDigitalWindow.setText(bundle.getString("DigitalGraphWindow")); // NOI18N
         jmiShowDigitalWindow.addActionListener(new java.awt.event.ActionListener() {
@@ -3043,7 +3044,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         });
         jmnuWindow.add(jmiShowDigitalWindow);
 
-        jmiShowTestpointWindow.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.ALT_MASK));
+        jmiShowTestpointWindow.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmiShowTestpointWindow.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/testpoint.PNG"))); // NOI18N
         jmiShowTestpointWindow.setText(bundle.getString("TestpointWindow")); // NOI18N
         jmiShowTestpointWindow.addActionListener(new java.awt.event.ActionListener() {
@@ -3123,7 +3124,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         });
         jmnuHelp.add(jmniUpdate);
 
-        jmiInfo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.ALT_MASK));
+        jmiInfo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmiInfo.setIcon(new javax.swing.ImageIcon(assets.getURL("/assets/Bilder/gif/Information16.gif"))); // NOI18N
         jmiInfo.setText(bundle.getString("Info")); // NOI18N
         jmiInfo.addActionListener(new java.awt.event.ActionListener() {
@@ -4331,7 +4332,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
                 }
 
                 try {
-                    Runtime.getRuntime().exec(javaeditor + " " + strFileA + " " + strFileB);
+                    new ProcessBuilder(javaeditor, strFileA, strFileB).start();
                 } catch (IOException ex) {
                     Tools.showMessage(java.util.ResourceBundle.getBundle("BasisStatus/StatusIdle").getString("Javaeditor_not_found!"));
                 }
@@ -5523,7 +5524,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         }
 
         try {
-            url = new URL("file:" + filename);
+            url = new File(filename).toURI().toURL();
         } catch (MalformedURLException ex) {
             Logger.getLogger(FrameMain.class.getName()).log(Level.SEVERE, null, ex);
         }

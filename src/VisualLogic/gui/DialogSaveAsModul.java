@@ -94,7 +94,7 @@ public class DialogSaveAsModul extends javax.swing.JDialog implements ElementPal
 
     public void loadFile(JEditorPane pane, String filename) {
         try {
-            pane.setPage(new URL("file:" + filename));
+            pane.setPage(new File(filename).toURI().toURL());
             pane.setContentType("text/html");
             pane.setCaretPosition(0);
 

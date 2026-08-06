@@ -285,7 +285,7 @@ public class PanelDokumentation extends javax.swing.JPanel {
         }
 
         try {
-            url = new URL("file:" + filename);
+            url = new File(filename).toURI().toURL();
         } catch (Exception ex) {
 
         }

@@ -197,7 +197,7 @@ public class PanelEditor extends javax.swing.JPanel implements CommandIF {
         
         this.filename=filename;
         try {
-            pane.setPage(new URL("file:"+filename));
+            pane.setPage(new File(filename).toURI().toURL());
             
             //System.out.println("filename="+filename);
             

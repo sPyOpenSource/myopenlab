@@ -42,14 +42,14 @@ public class Tools2 {
 
     public static void getPackageZip(String urlzip, String destfilename, Settings settings) throws Exception {
 
-        URL url = new URL(urlzip);
+        URL url = new java.net.URI(urlzip).toURL();
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
         String username = settings.getRepository_login_username();
         String password = settings.getRepository_login_password();
 
         String userpass = username + ":" + password;
-        String basicAuth = "Basic " + javax.xml.bind.DatatypeConverter.printBase64Binary(userpass.getBytes());
+        String basicAuth = "Basic " + java.util.Base64.getEncoder().encodeToString(userpass.getBytes());
 
         connection.setRequestProperty("Authorization", basicAuth);
 

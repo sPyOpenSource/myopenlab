@@ -105,7 +105,7 @@ public class VMEditorPanel extends javax.swing.JPanel implements ElementPaletteI
         URL url = null;
         try
         {
-            url = new URL("file://" + filename);
+            url = new File(filename).toURI().toURL();
         } catch(MalformedURLException ex)
         {
             

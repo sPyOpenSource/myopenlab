@@ -42,7 +42,7 @@ public class Loader
                 
         Class<?> c = cl.loadClass(klassename );
         
-        o = c.newInstance();     
+        o = c.getDeclaredConstructor().newInstance();     
     } 
     catch (Exception | UnsupportedClassVersionError ex)
     {
@@ -60,7 +60,7 @@ public class Loader
         
         Class<?> c = cl.loadClass( klassename );
         
-        o = c.newInstance();    
+        o = c.getDeclaredConstructor().newInstance();    
     } catch (Exception | UnsupportedClassVersionError ex)
     {
         Logger.getLogger(Loader.class.getName()).log(Level.SEVERE, null, ex);     

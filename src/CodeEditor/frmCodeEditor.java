@@ -165,7 +165,7 @@ public class frmCodeEditor extends javax.swing.JFrame
         jMenuBar2.add(jmnuFile);
 
         jmnuEdit.setText(bundle.getString("Edit")); // NOI18N
-        jmniUndo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Z, java.awt.event.InputEvent.CTRL_MASK));
+        jmniUndo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Z, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jmniUndo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/edit-undo.png")));
         jmniUndo.setText(bundle.getString("Undo")); // NOI18N
         jmniUndo.addActionListener(new java.awt.event.ActionListener() {
@@ -176,7 +176,7 @@ public class frmCodeEditor extends javax.swing.JFrame
 
         jmnuEdit.add(jmniUndo);
 
-        jmnuRedo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Y, java.awt.event.InputEvent.CTRL_MASK));
+        jmnuRedo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Y, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jmnuRedo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/edit-redo.png")));
         jmnuRedo.setText(bundle.getString("Redo")); // NOI18N
         jmnuRedo.addActionListener(new java.awt.event.ActionListener() {
@@ -189,7 +189,7 @@ public class frmCodeEditor extends javax.swing.JFrame
 
         jmnuEdit.add(jSeparator1);
 
-        jmniCut.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_MASK));
+        jmniCut.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jmniCut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/edit-cut.png")));
         jmniCut.setText(bundle.getString("Cut")); // NOI18N
         jmniCut.addActionListener(new java.awt.event.ActionListener() {
@@ -200,7 +200,7 @@ public class frmCodeEditor extends javax.swing.JFrame
 
         jmnuEdit.add(jmniCut);
 
-        jmniCopy.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
+        jmniCopy.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jmniCopy.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/edit-copy.png")));
         jmniCopy.setText(bundle.getString("Copy")); // NOI18N
         jmniCopy.addActionListener(new java.awt.event.ActionListener() {
@@ -211,7 +211,7 @@ public class frmCodeEditor extends javax.swing.JFrame
 
         jmnuEdit.add(jmniCopy);
 
-        jmniPaste.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_MASK));
+        jmniPaste.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jmniPaste.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/edit-paste.png")));
         jmniPaste.setText(bundle.getString("Paste")); // NOI18N
         jmniPaste.addActionListener(new java.awt.event.ActionListener() {
@@ -224,7 +224,7 @@ public class frmCodeEditor extends javax.swing.JFrame
 
         jmnuEdit.add(jSeparator2);
 
-        jmniSearch.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_MASK));
+        jmniSearch.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jmniSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assets/Bilder/16x16/system-search.png")));
         jmniSearch.setText(bundle.getString("Search")); // NOI18N
         jmniSearch.addActionListener(new java.awt.event.ActionListener() {

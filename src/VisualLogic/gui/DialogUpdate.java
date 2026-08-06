@@ -27,6 +27,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.URISyntaxException;
 
 import java.net.URL;
 import java.net.URLConnection;
@@ -71,7 +72,7 @@ public class DialogUpdate extends javax.swing.JDialog
                 try
                 {
                     String urlText = addressX;
-                    URL url = new URL(urlText);
+                    URL url = new java.net.URI(urlText).toURL();
                     URLConnection urlConnection = url.openConnection();
                     jProgressBar1.setMaximum(urlConnection.getContentLength());
                     
@@ -108,6 +109,8 @@ public class DialogUpdate extends javax.swing.JDialog
                 catch (IOException e)
                 {
                     Tools.showMessage("No Connection!");
+                } catch (URISyntaxException ex) {
+                    System.getLogger(DialogUpdate.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
                 }
                 finally
                 {
@@ -151,7 +154,7 @@ public class DialogUpdate extends javax.swing.JDialog
         try
         {
             String urlText = address;
-            URL url = new URL(urlText);
+            URL url = new java.net.URI(urlText).toURL();
             URLConnection urlConnection = url.openConnection();
             jProgressBar1.setMaximum(urlConnection.getContentLength());
 

@@ -210,7 +210,7 @@ public class StatusIdle extends Object implements StatusBasisIF {
                                         }
                                     }
                                     try {
-                                        Runtime.getRuntime().exec(htmlEditor + " " + docFileName);
+                                        new ProcessBuilder(htmlEditor, docFileName).start();
                                     } catch (IOException ex) {
                                         Tools.showMessage("can not open: "+htmlEditor);
                                     }
@@ -820,7 +820,7 @@ public class StatusIdle extends Object implements StatusBasisIF {
 
             vmObject.reorderWireFrames();
 
-            if (e.getModifiers() == InputEvent.CTRL_MASK + InputEvent.BUTTON1_MASK) {
+            if (e.getModifiersEx() == (InputEvent.CTRL_DOWN_MASK | InputEvent.BUTTON1_DOWN_MASK)) {
                 // ermittle die zwei PolyPoints der Linie implements Draht
                 Point p1 = line.getStartPoint();
                 Point p2 = line.getEndPoint();

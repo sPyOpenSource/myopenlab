@@ -29,6 +29,7 @@ import java.net.Authenticator;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.PasswordAuthentication;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.file.Files;
@@ -79,14 +80,14 @@ public class frmUpdate extends javax.swing.JFrame {
     // HTTP GET request
     public String getStringFromUrl(String url) throws Exception {
 
-        URL obj = new URL(url);
+        URL obj = new java.net.URI(url).toURL();
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
         String username = settings.getRepository_login_username();
         String password = settings.getRepository_login_password();
 
         String userpass = username + ":" + password;
-        String basicAuth = "Basic " + javax.xml.bind.DatatypeConverter.printBase64Binary(userpass.getBytes());
+        String basicAuth = "Basic " + java.util.Base64.getEncoder().encodeToString(userpass.getBytes());
 
         con.setRequestProperty("Authorization", basicAuth);
 
@@ -272,7 +273,7 @@ public class frmUpdate extends javax.swing.JFrame {
                     String definition_def = getStringFromUrl(url);
                     DFProperties definition = Tools.getProertiesFromDefinitionString(definition_def);
 
-                    URL icon_url = new URL(settings.getRepositoryDomainSecure() + "/repository/new/" + row.getType() + "/" + row.getEntry_name() + "/" + definition.iconFilename);
+                    URL icon_url = new java.net.URI(settings.getRepositoryDomainSecure() + "/repository/new/" + row.getType() + "/" + row.getEntry_name() + "/" + definition.iconFilename).toURL();
                     ImageIcon icon = new ImageIcon(icon_url);
 
                     MyTableRow newRow = new MyTableRow(false, icon, row.getEntry_name(), row.getCategorie(), row.getDate(), row.getAuthor(), row.getType());
@@ -1255,7 +1256,7 @@ public class frmUpdate extends javax.swing.JFrame {
 
                 String boundary = Long.toHexString(System.currentTimeMillis()); // Just generate some unique random value.
                 String CRLF = "\r\n"; // Line separator required by multipart/form-data.
-                URLConnection connection = new URL(url).openConnection();
+                URLConnection connection = new java.net.URI(url).toURL().openConnection();
                 connection.setDoOutput(true);
                 connection.setRequestProperty("Content-Type", "multipart/form-data; boundary=" + boundary);
                 try (
@@ -1308,6 +1309,8 @@ public class frmUpdate extends javax.swing.JFrame {
             }
         } catch (IOException ex) {
             Logger.getLogger(frmUpdate.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (URISyntaxException ex) {
+            System.getLogger(frmUpdate.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
         }
     }//GEN-LAST:event_jMenuItemUploadPackageActionPerformed
 

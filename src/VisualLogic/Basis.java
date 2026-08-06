@@ -1869,11 +1869,6 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
 
     @Override
     public void onDispose() {
-        try {// Added on v3.12.0
-            this.finalize();
-        } catch (Throwable ex) {
-            Logger.getLogger(Basis.class.getName()).log(Level.SEVERE, null, ex);
-        }
     }
 
     @Override
