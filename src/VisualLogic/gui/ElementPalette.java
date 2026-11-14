@@ -318,7 +318,9 @@ public class ElementPalette extends javax.swing.JPanel {
         addButton(backbtn);
         //jPanelButtons.add(backbtn);
 
-        if (fileAccessService != null) {
+        // Remote browsing only when the folder is not available locally
+        // (avoids slow network calls for locally installed elements).
+        if (fileAccessService != null && !f.exists()) {
             loadFolderRemote(path);
             reorderButtons();
             return;
