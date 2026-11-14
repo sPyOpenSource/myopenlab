@@ -26,6 +26,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.MouseEvent;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -76,6 +77,11 @@ public class ElementPalette extends javax.swing.JPanel {
     private final String aktuellesVerz = "";
     private String toCopyPath = "";
     private String elementPath;
+    private FileAccessService fileAccessService = null;
+
+    public FileAccessService getFileAccessService() {
+        return fileAccessService;
+    }
 
     private boolean modusCut = false;
     private boolean gruppenAuswahlMode = false;
@@ -118,6 +124,16 @@ public class ElementPalette extends javax.swing.JPanel {
 
         loadFolder(aktuellesVerzeichniss);
 
+    }
+
+    /**
+     * Same as {@link #init(ElementPaletteIF, Basis, String, String)} but also
+     * injects a {@link FileAccessService} used to browse remote elements.
+     */
+    public void init(ElementPaletteIF elementPalette, Basis basis, String elementPath, String rootPath,
+                     FileAccessService fas) {
+        init(elementPalette, basis, elementPath, rootPath);
+        this.fileAccessService = fas;
     }
 
     public void setGruppenAuswahlMode(boolean value) {
@@ -301,6 +317,12 @@ public class ElementPalette extends javax.swing.JPanel {
         backbtn.setBackground(new Color(255, 255, 255));
         addButton(backbtn);
         //jPanelButtons.add(backbtn);
+
+        if (fileAccessService != null) {
+            loadFolderRemote(path);
+            reorderButtons();
+            return;
+        }
 
         if (f.exists()) {
             File files[];
@@ -521,6 +543,242 @@ public class ElementPalette extends javax.swing.JPanel {
          System.out.println("y="+p.y);
          jPanelButtons.setPreferredSize(new Dimension(jPanelButtons.getWidth(),p.y));
          }*/
+    }
+
+    /*--------------------------------------------------------------------------
+     * Remote element browsing via the FileAccessService seam. Used when
+     * FrameMain injects a GitHubFileAccessService; the local File-based path
+     * above is unchanged and keeps its exact previous behavior.
+     --------------------------------------------------------------------------*/
+
+    /**
+     * Lists and renders a remote element folder via the FileAccessService seam
+     * (Contents API listing + raw-URL definition/icon reads backed by disk cache).
+     */
+    private void loadFolderRemote(String path) {
+        // 1. List entries via the GitHub Contents API
+        String[] listed = fileAccessService.listFiles(path);
+        if (listed == null) {
+            listed = new String[0];
+        }
+
+        List<String> names = new ArrayList<>();
+        for (String n : listed) {
+            if (listOnlyUUIDs && n.split("-").length != 6) {
+                continue; // same UUID filter as the local File.listFiles branch
+            }
+            names.add(n);
+        }
+
+        // 2. Breadcrumb captions
+        String[] slipttedPath = path.split("/");
+        StringBuilder xxx = new StringBuilder();
+        String ppp = "";
+        for (String segment : slipttedPath) {
+            ppp += "/" + segment;
+            xxx.append(readDirCaptionRemote(ppp)).append("/");
+        }
+        pwd.setText(xxx.toString());
+
+        // 3. Sort entries according to remote sort.def (listed entries keep order)
+        List<String> ordered = sortBySortDefRemote(names, path);
+
+        // 4. Current directory properties + vm_dir_editable flag
+        DFProperties thisDirProps = readDirDefinitionRemote(path);
+        if (thisDirProps == null) {
+            thisDirProps = new DFProperties();
+        }
+        if (thisDirProps.vm_dir_editable.length() > 0) {
+            areVMsEditable = Boolean.parseBoolean(thisDirProps.vm_dir_editable);
+        } else {
+            areVMsEditable = false;
+        }
+
+        // 5. Build buttons
+        for (String name : ordered) {
+            String logicalPath = path + "/" + name;
+            DFProperties props = readDirDefinitionRemote(logicalPath);
+            if (props == null) {
+                continue; // cannot determine entry type without definition.def
+            }
+            BufferedImage image = readDirImageRemote(logicalPath, props.iconFilename);
+
+            if (!gruppenAuswahlMode && !props.isDirectory
+                    && (props.classcircuit.length() > 0 || props.classfront.length() > 0
+                    || props.vm.length() > 0 || props.loader.length() > 0)) {
+                addElementButtonRemote(logicalPath, name, props, image);
+            }
+            if (props.isDirectory) {
+                // arrow.png is a local UI asset, not a remote element
+                BufferedImage folder = loadTransparentImage(elementPath + "/" + "arrow.png");
+                addDirectoryButtonRemote(logicalPath, name, props, image, folder);
+            }
+        }
+    }
+
+    private String readDirCaptionRemote(String logicalPath) {
+        DFProperties props = readDirDefinitionRemote(logicalPath);
+        if (props == null) {
+            return "";
+        }
+        Locale locale = Locale.getDefault();
+        String lang = locale.getLanguage();
+        switch (lang) {
+            case "de":
+                return props.captionDE;
+            case "en":
+                return props.captionEN;
+            case "es":
+                return props.captionES;
+            default:
+                return props.captionDE;
+        }
+    }
+
+    private DFProperties readDirDefinitionRemote(String logicalPath) {
+        String text = fileAccessService.readText(logicalPath + "/definition.def");
+        if (text == null) {
+            return null;
+        }
+        return Tools.getProertiesFromDefinitionString(text);
+    }
+
+    private BufferedImage readDirImageRemote(String logicalPath, String iconFilename) {
+        if (iconFilename == null || iconFilename.isEmpty()) {
+            return null;
+        }
+        return fileAccessService.readImage(logicalPath + "/" + iconFilename);
+    }
+
+    private List<String> sortBySortDefRemote(List<String> names, String path) {
+        String text = fileAccessService.readText(path + "/sort.def");
+        if (text == null) {
+            return names;
+        }
+        List<String> order = new ArrayList<>();
+        for (String line : text.split("\n")) {
+            String entry = line.trim();
+            if (entry.isEmpty()) {
+                continue;
+            }
+            if (names.contains(entry)) {
+                order.add(entry);
+            }
+        }
+        for (String n : names) {
+            if (!order.contains(n)) {
+                order.add(n);
+            }
+        }
+        return order;
+    }
+
+    private void addElementButtonRemote(String logicalPath, String filename, DFProperties props, BufferedImage image) {
+        MyButton btn = new MyButton();
+        btn.setPreferredSize(new Dimension(38, 38));
+
+        if (props.elementImage.length() == 0) {
+            props.elementImage = props.iconFilename;
+        }
+
+        String[] params = new String[6];
+        Action actionCmd = new CommandAction(params, elementPalette);
+
+        if (props.loader.length() > 0) {
+            params[0] = props.loader;
+            params[1] = props.classcircuit;
+            params[2] = props.classfront;
+            params[3] = props.elementImage;
+            params[4] = logicalPath + "/" + filename;
+            params[5] = "LOADER";
+        } else if (props.vm.length() > 0) {
+            params[0] = logicalPath + "/" + filename;
+            params[1] = props.vm;
+            params[2] = props.captionInternationalized;
+            params[3] = params[0] + "/" + props.elementImage;
+            params[4] = props.classfront;
+            params[5] = "VM";
+        } else {
+            params[0] = logicalPath + "/" + filename;
+            params[1] = props.classcircuit;
+            params[2] = props.classfront;
+            params[3] = "";
+            params[4] = "";
+            params[5] = "NORMAL";
+        }
+
+        btn.setAction(actionCmd);
+        BufferedImage imageToUse = image != null ? image : new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB);
+        Image img = createImage(imageToUse.getSource());
+        ImageIcon icon = new ImageIcon(img);
+        btn.setIcon(icon);
+        btn.setBackground(new Color(255, 255, 255));
+        btn.setToolTipText(props.captionInternationalized);
+        btn.filePath = logicalPath;
+        btn.caption = props.captionInternationalized;
+
+        if (jToggleButton1.isSelected()) {
+            btn.setText(btn.caption);
+        }
+
+        addButton(btn);
+
+        btn.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mousePressed(java.awt.event.MouseEvent e) {
+                if (e.getButton() == MouseEvent.BUTTON3) {
+                    MyButton button = (MyButton) e.getSource();
+                    aktiveButton = button;
+                    if (areVMsEditable) {
+                        jPopupMenu1.show(button, e.getX(), getY() + e.getY());
+                    }
+                }
+            }
+        });
+    }
+
+    private void addDirectoryButtonRemote(String logicalPath, String name, DFProperties props, BufferedImage image,
+                                          BufferedImage folder) {
+        MyButton btn = new MyButton();
+        btn.setPreferredSize(new Dimension(38, 38));
+
+        BufferedImage imageToUse = image != null ? image : new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB);
+        if (folder != null) {
+            java.awt.Graphics2D g = imageToUse.createGraphics();
+            g.drawImage(folder, 0, 0, null);
+            g.dispose();
+        }
+
+        Image img = createImage(imageToUse.getSource());
+        ImageIcon icon = new ImageIcon(img);
+        btn.setIcon(icon);
+        btn.setToolTipText(props.captionInternationalized);
+        btn.setActionCommand(name);
+
+        if (jToggleButton1.isSelected()) {
+            btn.setText(props.captionInternationalized);
+        }
+
+        addButton(btn);
+        btn.filePath = logicalPath;
+        btn.caption = props.captionInternationalized;
+
+        btn.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mousePressed(java.awt.event.MouseEvent e) {
+                if (e.getButton() == MouseEvent.BUTTON3) {
+                    MyButton button = (MyButton) e.getSource();
+                    aktiveButton = button;
+                    jPopupMenu3.show(button, e.getX(), getY() + e.getY());
+                }
+            }
+        });
+
+        btn.addActionListener((java.awt.event.ActionEvent evt) -> {
+            String cmd = evt.getActionCommand();
+            MyButton button = (MyButton) evt.getSource();
+            loadFolder(thePath + "/" + cmd);
+        });
     }
 
     /**
