@@ -132,6 +132,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     private String driverPath;
     private Element oldElement = null;
     private Assets assets = new Assets();
+    private GitHubFileAccessService elementFileAccess;
     
     private void reLoadElementPaletteDipendentFromProjectType() {
         Basis basis = getActualBasis();
@@ -139,11 +140,11 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
             ProjectProperties props = Tools.openProjectFile(new File(basis.projectPath));
 
             if (props.projectType.equalsIgnoreCase("SPS")) { //NOI18N
-                elementPaletteCircuit.init(this, basis, elementPath, "/CircuitElements/MCU/StackInterpreter/"); //NOI18N
-                elementPaletteFront.init(this, basis, elementPath, "/FrontElements/MCU/Interpreter"); //NOI18N
+                elementPaletteCircuit.init(this, basis, elementPath, "/CircuitElements/MCU/StackInterpreter/", elementFileAccess); //NOI18N
+                elementPaletteFront.init(this, basis, elementPath, "/FrontElements/MCU/Interpreter", elementFileAccess); //NOI18N
             } else {
-                elementPaletteCircuit.init(this, basis, elementPath, "/CircuitElements"); //NOI18N
-                elementPaletteFront.init(this, basis, elementPath, "/FrontElements"); //NOI18N
+                elementPaletteCircuit.init(this, basis, elementPath, "/CircuitElements", elementFileAccess); //NOI18N
+                elementPaletteFront.init(this, basis, elementPath, "/FrontElements", elementFileAccess); //NOI18N
             }
         }
     }
@@ -151,8 +152,8 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
     public void reloadElementPalettes() {
         Basis basis = getActualBasis();
 
-        elementPaletteCircuit.init(this, basis, elementPath, elementPaletteCircuit.aktuellesVerzeichniss);
-        elementPaletteFront.init(this, basis, elementPath, elementPaletteFront.aktuellesVerzeichniss);
+        elementPaletteCircuit.init(this, basis, elementPath, elementPaletteCircuit.aktuellesVerzeichniss, elementFileAccess);
+        elementPaletteFront.init(this, basis, elementPath, elementPaletteFront.aktuellesVerzeichniss, elementFileAccess);
     }
 
     //------- BEGIN  INTERFACES Implementation ---------------------
@@ -1278,6 +1279,14 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
 
         Tools.userElementPath = settings.getUserdefinedElementsPath();
 
+        // Remote element loading seam: build the GitHub-backed file access
+        // service once and inject it into Tools, Element and the palettes.
+        GitHubConfig remoteConfig = new GitHubConfig();
+        elementFileAccess = new GitHubFileAccessService(remoteConfig);
+        Tools.setFileAccessService(elementFileAccess);
+        Element.setFileAccessService(elementFileAccess);
+        Element.setRemoteConfig(remoteConfig);
+
         // myopenlab.path speichert immer das verzeichniss wo
         // sich MyOpenLab befindet!
         fileName = getUserURL().getFile() + File.separator + "myopenlab.path";
@@ -1364,7 +1373,7 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         settings.setVersion(Version.strApplicationVersion);
 
         // Load Drivers from "Drivers" Directory"
-        Tools.driverManager = new DriverManager(this);
+        Tools.driverManager = new DriverManager(this, elementFileAccess);
         
         NewSerialDriverManager.NewDriverManager(this); // v3.12.0
 
@@ -1422,8 +1431,8 @@ public class FrameMain extends javax.swing.JFrame implements MyOpenLabOwnerIF, p
         elementPaletteFront = new ElementPalette(this);
         elementPaletteFront.frameCircuit = this;
 
-        elementPaletteCircuit.init(this, null, elementPath, "/CircuitElements");
-        elementPaletteFront.init(this, null, elementPath, "/FrontElements");
+        elementPaletteCircuit.init(this, null, elementPath, "/CircuitElements", elementFileAccess);
+        elementPaletteFront.init(this, null, elementPath, "/FrontElements", elementFileAccess);
 
         jPanelElementPalette.add(elementPaletteCircuit);
 
