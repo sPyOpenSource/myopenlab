@@ -68,4 +68,39 @@ public class Loader
     return o;
   }
 
+  /**
+   * Loads and instantiates a class from a single HTTP/JAR/URL base.
+   * The url is normalized to a directory base (trailing "/") before building
+   * the URLClassLoader, so callers may pass either ".../bin/" or ".../bin/Foo.class".
+   */
+  public Object loadClasseFromURL(URL url, String klassename) throws Exception
+  {
+    Object o = null;
+    try
+    {
+        URL base = normalizeBaseUrl(url);
+        URLClassLoader cl = new URLClassLoader(new URL[]{base}, Thread.currentThread().getContextClassLoader());
+        Class<?> c = cl.loadClass(klassename);
+        o = c.getDeclaredConstructor().newInstance();
+    } catch (Exception | UnsupportedClassVersionError ex)
+    {
+        java.util.logging.Logger.getLogger(Loader.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+    }
+    return o;
+  }
+
+  private static URL normalizeBaseUrl(URL url) throws MalformedURLException
+  {
+    String spec = url.toString();
+    if (!spec.endsWith("/")) {
+        int lastSlash = spec.lastIndexOf('/');
+        if (lastSlash >= 0) {
+            spec = spec.substring(0, lastSlash + 1);
+        } else {
+            spec = spec + "/";
+        }
+    }
+    return new URL(spec);
+  }
+
 }
