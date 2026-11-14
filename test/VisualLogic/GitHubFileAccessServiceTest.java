@@ -151,6 +151,9 @@ public class GitHubFileAccessServiceTest {
     @Test
     public void existsTrueForCachedFile() {
         service.readText("/CircuitElements/Analoge/Generator/definition.def");
+        // Stop the server so only the cache branch can return true (a HEAD would fail).
+        server.stop(0);
+        server = null;
         assertTrue(service.exists("/CircuitElements/Analoge/Generator/definition.def"));
     }
 
@@ -159,6 +162,7 @@ public class GitHubFileAccessServiceTest {
         BufferedImage image = service.readImage("/CircuitElements/Analoge/Generator/icon32.png");
         assertNotNull(image);
         assertEquals(2, image.getWidth());
+        assertEquals(2, image.getHeight());
     }
 
     @Test
