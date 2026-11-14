@@ -57,6 +57,16 @@ public class Tools
     public static String elementPath = "";
     public static String userElementPath = "";
 
+    private static FileAccessService fileAccessService = null;
+
+    public static void setFileAccessService(FileAccessService fas) {
+        fileAccessService = fas;
+    }
+
+    public static FileAccessService getFileAccessService() {
+        return fileAccessService;
+    }
+
     /** Creates a new instance of Tools */
     public Tools()
     {
@@ -65,8 +75,36 @@ public class Tools
     public static String bereinigeDateiname(String name) {
         return name.replaceAll("[^A-Za-z0-9+-]", "_");
     }
-    
+
+    /**
+     * Maps a local path under the element base path to a remote logical path
+     * such as "/CircuitElements/Analoge/Generator". Returns null when the path
+     * is not managed remotely (no service, empty base, or user-defined elements).
+     */
+    public static String toLogicalElementPath(String localPath) {
+        if (fileAccessService == null || localPath == null || localPath.isEmpty()
+                || elementPath == null || elementPath.isEmpty()) {
+            return null;
+        }
+        String base = new File(elementPath).getAbsoluteFile().getPath();
+        String target = new File(localPath).getAbsoluteFile().getPath();
+        if (!target.startsWith(base + File.separator)) {
+            return null;
+        }
+        if (userElementPath != null && !userElementPath.isEmpty()) {
+            String userBase = new File(userElementPath).getAbsoluteFile().getPath();
+            if (target.equals(userBase) || target.startsWith(userBase + File.separator)) {
+                return null;
+            }
+        }
+        return target.substring(base.length()).replace(File.separatorChar, '/');
+    }
+
     public static String readFile(String filename) {
+        String logicalPath = toLogicalElementPath(filename);
+        if (logicalPath != null) {
+            return fileAccessService.readText(logicalPath);
+        }
         String content = null;
         File file = new File(filename); //for ex foo.txt
         FileReader reader = null;
@@ -635,6 +673,12 @@ public class Tools
 
     public static DFProperties getProertiesFromDefinitionFile(File file)
     {
+        String logicalPath = toLogicalElementPath(file.getAbsolutePath() + File.separator + "definition.def");
+        if (logicalPath != null) {
+            String text = fileAccessService.readText(logicalPath);
+            return text == null ? new DFProperties() : getProertiesFromDefinitionString(text);
+        }
+
         DFProperties tmp = new DFProperties();
 
         try
