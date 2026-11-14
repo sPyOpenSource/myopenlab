@@ -763,15 +763,17 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
         }
         
         File fileX = new File(korrigiereFileSeparator(elementPath + this.definitionPath));
-        if (fileAccessService != null) {
+        // Local definition file first (fast); fall back to remote elements only
+        // when the local definition.def is not available.
+        File localDef = new File(fileX.getAbsolutePath() + File.separator + "definition.def");
+        if (localDef.exists()) {
+            definition_def = Tools.getProertiesFromDefinitionFile(fileX);
+        } else if (fileAccessService != null) {
             String logicalDef = elementToLogicalPath(fileX.getAbsolutePath() + File.separator + "definition.def");
             if (logicalDef != null) {
                 String text = fileAccessService.readText(logicalDef);
-                if (text != null) {
-                    definition_def = Tools.getProertiesFromDefinitionString(text);
-                } else {
-                    definition_def = Tools.getProertiesFromDefinitionFile(fileX);
-                }
+                definition_def = text == null ? new DFProperties()
+                        : Tools.getProertiesFromDefinitionString(text);
             } else {
                 definition_def = Tools.getProertiesFromDefinitionFile(fileX);
             }
@@ -794,10 +796,29 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
             classRef = null; // also Dummy!
         } else {
             try {
-                // Remote element class loading via FileAccessService raw URL.
-                // Falls back to the local File-based URLClassLoader when no service
-                // is configured, the path cannot be mapped remotely, or loading fails.
-                if (fileAccessService != null && remoteConfig != null) {
+                // Local class loading first (fast); fall back to remote elements
+                // when the class cannot be loaded from the local filesystem.
+                if (!definition_def.classPath.equalsIgnoreCase("")) {
+                    URL url1 = new File(elementPath).toURI().toURL();
+                    URL url2 = new File(elementPath + myClassPath + "/bin/").toURI().toURL();
+
+                    String classPaths = getKorrectClassPaths(elementPath, mainPath, definition_def.classPath);
+                    URL url3 = new File(classPaths).toURI().toURL();
+
+                    if (definition_def.classPath2.trim().length() > 0) {
+                        classPaths = getKorrectClassPaths(elementPath, mainPath, definition_def.classPath2);
+                        URL url4 = new File(classPaths).toURI().toURL();
+                        classRef = (ElementIF) loader.ladeClasseDriver(new URL[]{url1, url2, url3, url4}, this.className);
+                    } else
+                        classRef = (ElementIF) loader.ladeClasseDriver(new URL[]{url1, url2, url3}, this.className);
+                } else {
+                    String pfad = Tools.mapFile(elementPath + myClassPath + "/bin");
+                    //File file = new File(pfad);
+                    classRef = (ElementIF) loader.ladeClasse(elementPath, pfad, this.className);
+                }
+
+                // Remote fallback: only try the network when local loading produced nothing.
+                if (classRef == null && fileAccessService != null && remoteConfig != null) {
                     String binDir = elementPath + myClassPath + "/bin";
                     String logicalBin = elementToLogicalPath(binDir);
                     if (logicalBin != null) {
@@ -808,29 +829,8 @@ public class Element extends Shape implements MouseListener, MouseMotionListener
                                 classRef = (ElementIF) loaded;
                             }
                         } catch (Exception ex) {
-                            // fall through to local file-based loading below
+                            // leave classRef null; local already failed
                         }
-                    }
-                }
-
-                if (classRef == null) {
-                    if (!definition_def.classPath.equalsIgnoreCase("")) {
-                        URL url1 = new File(elementPath).toURI().toURL();
-                        URL url2 = new File(elementPath + myClassPath + "/bin/").toURI().toURL();
-
-                        String classPaths = getKorrectClassPaths(elementPath, mainPath, definition_def.classPath);
-                        URL url3 = new File(classPaths).toURI().toURL();
-
-                        if (definition_def.classPath2.trim().length() > 0) {
-                            classPaths = getKorrectClassPaths(elementPath, mainPath, definition_def.classPath2);
-                            URL url4 = new File(classPaths).toURI().toURL();
-                            classRef = (ElementIF) loader.ladeClasseDriver(new URL[]{url1, url2, url3, url4}, this.className);
-                        } else
-                            classRef = (ElementIF) loader.ladeClasseDriver(new URL[]{url1, url2, url3}, this.className);
-                    } else {
-                        String pfad = Tools.mapFile(elementPath + myClassPath + "/bin");
-                        //File file = new File(pfad);
-                        classRef = (ElementIF) loader.ladeClasse(elementPath, pfad, this.className);
                     }
                 }
 
