@@ -102,7 +102,10 @@ public class Tools
 
     public static String readFile(String filename) {
         String logicalPath = toLogicalElementPath(filename);
-        if (logicalPath != null) {
+        // Local file system first (fast); fall back to remote elements only when
+        // the file is not available locally (avoids slow network calls).
+        File localFile = new File(filename);
+        if (!localFile.exists() && logicalPath != null) {
             return fileAccessService.readText(logicalPath);
         }
         String content = null;
@@ -674,9 +677,14 @@ public class Tools
     public static DFProperties getProertiesFromDefinitionFile(File file)
     {
         String logicalPath = toLogicalElementPath(file.getAbsolutePath() + File.separator + "definition.def");
-        if (logicalPath != null) {
+        // Local definition file first (fast); fall back to remote elements only
+        // when the local definition.def is not available.
+        File localDef = new File(file.getAbsolutePath() + File.separator + "definition.def");
+        if (!localDef.exists() && logicalPath != null) {
             String text = fileAccessService.readText(logicalPath);
-            return text == null ? new DFProperties() : getProertiesFromDefinitionString(text);
+            if (text != null) {
+                return getProertiesFromDefinitionString(text);
+            }
         }
 
         DFProperties tmp = new DFProperties();
