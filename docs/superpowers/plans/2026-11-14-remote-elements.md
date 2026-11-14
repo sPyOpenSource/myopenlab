@@ -202,7 +202,7 @@ public class GitHubFileAccessService implements FileAccessService {
     @Override
     public String[] listFiles(String dir) {
         // dir is a logical path like "/CircuitElements/Analoge" or ""
-        String apiUrl = config.apiBaseUrl() + dir;
+        String apiUrl = config.apiUrlFor(dir);
         try {
             String json = getText(apiUrl);
             if (json == null || json.isEmpty()) {
@@ -234,7 +234,7 @@ public class GitHubFileAccessService implements FileAccessService {
                 try { Files.delete(cache); } catch (IOException ignore) {}
             }
         }
-        String rawUrl = config.rawBaseUrl() + path;
+        String rawUrl = config.rawUrlFor(path);
         try {
             byte[] data = downloadBytes(rawUrl);
             if (data != null) {
@@ -267,7 +267,7 @@ public class GitHubFileAccessService implements FileAccessService {
         if (Files.exists(cache)) {
             return true;
         }
-        String rawUrl = config.rawBaseUrl() + path;
+        String rawUrl = config.rawUrlFor(path);
         try {
             HttpURLConnection con = (HttpURLConnection) new URL(rawUrl).openConnection();
             con.setRequestMethod("HEAD");
@@ -640,7 +640,7 @@ In `Element` constructor where `definition_def = Tools.getProertiesFromDefinitio
 
 - [ ] **Step 3: Load `.class` through FileAccessService URL**
 
-In the class-loading branch (around lines 746-763), build `URL url = new URL(config.rawBaseUrl() + logicalPath + "/bin/" + className + ".class")` and call `loader.loadClasseFromURL(url, this.className)` when `fileAccessService != null`. Fall back to the existing `File`-based `URLClassLoader` path when null.
+In the class-loading branch (around lines 746-763), build `URL url = new URL(config.rawUrlFor(logicalPath + "/bin/" + className + ".class"))` and call `loader.loadClasseFromURL(url, this.className)` when `fileAccessService != null`. Fall back to the existing `File`-based `URLClassLoader` path when null.
 
 - [ ] **Step 4: Compile check**
 
@@ -726,7 +726,7 @@ git commit -m "feat: ElementPalette browses remote elements via FileAccessServic
 
 - [ ] **Step 2: `registerDriver` / `MyOpenLabDriver` loads class via remote URL**
 
-In `MyOpenLabDriver` constructor, instead of `new File(driverPath + info.classpath).toURI().toURL()`, build a `URL` from `config.rawBaseUrl() + driverPath + info.classpath` (logical path) and pass it to `loader.ladeClasseDriver(new URL[]{url1, url2}, info.Classe)`; `url2` (the Jar) similarly via `readBytes`-to-cache then `cache.toURI().toURL()`, or a raw URL. Fall back to existing `File`-based URLs when `fileAccessService == null`.
+In `MyOpenLabDriver` constructor, instead of `new File(driverPath + info.classpath).toURI().toURL()`, build a `URL` from `config.rawUrlFor(driverPath + info.classpath)` (logical path) and pass it to `loader.ladeClasseDriver(new URL[]{url1, url2}, info.Classe)`; `url2` (the Jar) similarly via `readBytes`-to-cache then `cache.toURI().toURL()`, or a raw URL. Fall back to existing `File`-based URLs when `fileAccessService == null`.
 
 - [ ] **Step 3: Compile check**
 
