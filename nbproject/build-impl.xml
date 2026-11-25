@@ -619,7 +619,7 @@ is divided into following sections:
                     </fileset>
                 </union>
                 <taskdef classname="org.testng.TestNGAntTask" classpath="${run.test.classpath}" name="testng"/>
-                <testng classfilesetref="test.set" failureProperty="tests.failed" listeners="org.testng.reporters.VerboseReporter" methods="${testng.methods.arg}" mode="${testng.mode}" outputdir="${build.test.results.dir}" suitename="OpenLab" testname="TestNG tests" workingDir="${work.dir}">
+                <testng classfilesetref="test.set" failureProperty="tests.failed" methods="${testng.methods.arg}" mode="${testng.mode}" outputdir="${build.test.results.dir}" suitename="OpenLab" testname="TestNG tests" verbose="5" workingDir="${work.dir}">
                     <xmlfileset dir="${build.test.classes.dir}" includes="@{testincludes}"/>
                     <propertyset>
                         <propertyref prefix="test-sys-prop."/>
@@ -727,7 +727,7 @@ is divided into following sections:
                         <jvmarg value="-ea"/>
                         <arg line="${testng.debug.mode}"/>
                         <arg line="-d ${build.test.results.dir}"/>
-                        <arg line="-listener org.testng.reporters.VerboseReporter"/>
+                        <arg line="-verbose 5"/>
                         <arg line="${testng.cmd.args}"/>
                     </customizeDebuggee>
                 </j2seproject3:debug>
